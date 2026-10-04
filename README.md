@@ -1,7 +1,12 @@
-# Audioguía de París · El corazón de París
+# Audioguías · free tours de bolsillo
 
-Web app gratuita (PWA) para recorrer a pie el centro de París con una audioguía estilo free tour.
-9 paradas, del Hôtel de Ville al jardín de las Tullerías, unos 2,7 km.
+Web app gratuita (PWA) con audioguías a pie estilo free tour, organizada por ciudades y rutas.
+
+- **París**: «El corazón de París» (9 paradas, del Hôtel de Ville a las Tullerías, unos 2,7 km). Otras rutas en preparación.
+- **Londres** y **Sevilla**: en preparación (WIP).
+
+Pantallas: Inicio (ciudades) → Ciudad (rutas) → Ruta (mapa + tarjeta). Cada ruta tiene su enlace directo,
+por ejemplo `.../Audioguias/#paris/centro`, y guarda su propio progreso.
 
 ## Qué hace
 
@@ -14,7 +19,7 @@ Web app gratuita (PWA) para recorrer a pie el centro de París con una audioguí
 - Recuerda qué paradas has visitado.
 
 Limitación: en iPhone, una web app solo usa el GPS y la voz con la pantalla encendida y la app abierta.
-Los avisos con la pantalla apagada llegarán con la versión nativa (fase 2), que reutilizará el mismo `data/paris-centro.json`.
+Los avisos con la pantalla apagada llegarán con la versión nativa (fase 2), que reutilizará los mismos archivos de `data/`.
 
 ## Estructura
 
@@ -22,7 +27,8 @@ Los avisos con la pantalla apagada llegarán con la versión nativa (fase 2), qu
 index.html                 la app
 css/app.css                estilos
 js/app.js                  lógica (mapa, GPS, avisos, voz)
-data/paris-centro.json     EL CONTENIDO: paradas, textos, coordenadas y ruta
+data/catalogo.json         ciudades y rutas (nombre de la app, textos de portada, estado WIP/listo)
+data/paris/centro.json     EL CONTENIDO de una ruta: paradas, textos, coordenadas y trazado
 sw.js                      service worker (uso sin conexión)
 manifest.webmanifest       nombre e icono al instalarla
 vendor/maplibre/           librería de mapas (MapLibre GL 4.7.1)
@@ -31,7 +37,21 @@ icons/                     iconos
 
 ## Editar el contenido
 
-Todo está en `data/paris-centro.json`:
+### Añadir una ciudad o una ruta
+
+1. En `data/catalogo.json`, añade la ciudad (o la ruta dentro de su ciudad). Mientras no esté lista,
+   déjala con `"status": "wip"` y sin `file`: aparecerá como «En preparación».
+2. Crea el archivo de la ruta, por ejemplo `data/londres/westminster.json`, copiando la estructura de
+   `data/paris/centro.json`.
+3. Cuando esté lista, pon `"status": "ready"` y `"file": "data/londres/westminster.json"` en el catálogo.
+4. Añade el archivo nuevo a la lista `FILES` de `sw.js` para que funcione sin conexión.
+
+El aspecto de la placa de cada ciudad se elige con `"sign"` (`paris`, `london`, `sevilla`) y el texto con
+`"signText"` / `"signSmall"`.
+
+### Editar una ruta
+
+Cada archivo de ruta, como `data/paris/centro.json`, contiene:
 
 - `stops`: cada parada tiene `title`, `subtitle`, `lat`, `lng`, `radius` (metros para el aviso),
   `where` (dónde ponerse), `paras` (párrafos del guion) y `toNext` (cómo llegar a la siguiente).

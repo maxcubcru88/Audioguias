@@ -3,46 +3,75 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>El corazón de París · Audioguía</title>
-<meta name="description" content="Audioguía gratuita a pie por el centro de París: del Ayuntamiento a las Tullerías.">
+<title>Audioguías</title>
+<meta name="description" content="Audioguías gratuitas a pie: free tours de bolsillo por París, Londres y Sevilla.">
 <meta name="theme-color" content="#1E3E66">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icons/icon-192.png">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="París">
+<meta name="apple-mobile-web-app-title" content="Audioguías">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:wght@700&display=swap">
 <link rel="stylesheet" href="vendor/maplibre/maplibre-gl.css">
-<link rel="stylesheet" href="css/app.css?v=11">
+<link rel="stylesheet" href="css/app.css?v=12">
 </head>
 <body>
 
 <div id="map" aria-label="Mapa del recorrido"></div>
 
-<div class="map-top">
-  <span class="pill" id="modeBadge" hidden>Modo prueba · toca el mapa para moverte</span>
-  <div class="map-btns">
-    <button class="round" id="btnLocate" type="button" aria-label="Centrar el mapa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg></button>
-    <button class="round" id="btnMenu" type="button" aria-label="Paradas y ajustes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+<!-- Interfaz de la ruta: botones del mapa y tarjeta -->
+<div id="tourUI" hidden>
+  <div class="map-top">
+    <span class="pill" id="modeBadge" hidden>Modo prueba · toca el mapa para moverte</span>
+    <div class="map-btns">
+      <button class="round" id="btnLocate" type="button" aria-label="Centrar el mapa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg></button>
+      <button class="round" id="btnMenu" type="button" aria-label="Paradas y ajustes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
   </div>
+  <section id="card" class="card" aria-live="polite"></section>
 </div>
 
-<section id="card" class="card" aria-live="polite"></section>
+<!-- Inicio: ciudades -->
+<main id="home" class="screen">
+  <div class="screen-inner">
+    <header class="home-head">
+      <p class="eyebrow">Gratis · a pie · a tu ritmo</p>
+      <h1 id="appName">Audioguías</h1>
+      <p class="lede" id="appTagline">Free tours de bolsillo: camina, llega y escucha.</p>
+    </header>
+    <ul id="cityList" class="city-list"></ul>
+    <p class="intro-note" id="homeNote" hidden></p>
+  </div>
+</main>
 
-<!-- Pantalla de inicio -->
-<div id="intro" class="intro">
-  <div class="intro-card">
-    <p class="plaque plaque-lg">Zone Centre</p>
-    <h1 id="introTitle">El corazón de París</h1>
-    <p class="intro-sub" id="introSub">Del Ayuntamiento a las Tullerías, cruzando la isla de la Cité.</p>
-    <p class="intro-stats" id="introStats">9 paradas · 2,7 km a pie · unas 1,5 horas</p>
+<!-- Ciudad: rutas -->
+<main id="city" class="screen" hidden>
+  <div class="screen-inner">
+    <a class="back" href="#">‹ Ciudades</a>
+    <header class="city-head">
+      <span id="citySign"></span>
+      <h1 id="cityName"></h1>
+      <p class="lede" id="cityBlurb"></p>
+    </header>
+    <ol id="routeList" class="route-list"></ol>
+  </div>
+</main>
+
+<!-- Ruta: presentación -->
+<div id="intro" class="screen intro" hidden>
+  <div class="screen-inner intro-card">
+    <a class="back" id="introBack" href="#">‹ Volver</a>
+    <span id="introSign"></span>
+    <p class="eyebrow" id="introLabel"></p>
+    <h1 id="introTitle"></h1>
+    <p class="intro-sub" id="introSub"></p>
+    <p class="intro-stats" id="introStats"></p>
     <p class="intro-tip">Ponte los auriculares y lleva la pantalla encendida: la app te avisa al llegar a cada parada y empieza a contarte la historia.</p>
     <button class="btn btn-primary btn-big" id="startGps" type="button">Empezar el recorrido</button>
     <button class="btn btn-ghost btn-big" id="startSim" type="button">Probar desde casa</button>
-    <p class="intro-note" id="introNote" hidden></p>
   </div>
 </div>
 
@@ -51,7 +80,7 @@
   <div class="sheet-card" role="dialog" aria-labelledby="sheetTitle">
     <div class="sheet-head">
       <div>
-        <h2 id="sheetTitle">El corazón de París</h2>
+        <h2 id="sheetTitle"></h2>
         <p class="sheet-sub" id="sheetSub"></p>
       </div>
       <button class="round flat" id="sheetClose" type="button" aria-label="Cerrar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
@@ -75,7 +104,10 @@
       </div>
     </div>
     <p class="help" id="offlineMsg"></p>
-    <button class="link danger" id="btnReset" type="button">Reiniciar el recorrido</button>
+    <div class="sheet-links">
+      <a class="link" id="exitRoute" href="#">‹ Salir de la ruta</a>
+      <button class="link danger" id="btnReset" type="button">Reiniciar el recorrido</button>
+    </div>
     <p class="credits">Audioguía gratuita · Mapa: OpenFreeMap · © OpenStreetMap</p>
   </div>
 </div>
@@ -83,6 +115,6 @@
 <div id="toast" class="toast" hidden></div>
 
 <script src="vendor/maplibre/maplibre-gl.js"></script>
-<script src="js/app.js?v=11"></script>
+<script src="js/app.js?v=12"></script>
 </body>
 </html>

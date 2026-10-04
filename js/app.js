@@ -1,11 +1,13 @@
-/* Audioguía de París · zona Centro
-   Mapa a pantalla completa y una sola tarjeta: caminando → has llegado → (al terminar) caminando.
-   Una sola fuente de datos (data/paris-centro.json) alimenta el mapa, los avisos y la voz. */
+/* Audioguías · free tours de bolsillo
+   Pantallas: Inicio (ciudades) → Ciudad (rutas) → Ruta (mapa + tarjeta).
+   Enlaces: #paris  ·  #paris/centro
+   Todo el contenido sale de data/catalogo.json y de un archivo JSON por ruta. */
 (function () {
   'use strict';
 
-  const TOUR_URL = 'data/paris-centro.json';
-  const STORE = 'audioguia-paris-centro-v1';
+  const CATALOG_URL = 'data/catalogo.json';
+  const PREFS = 'audioguias-prefs-v1';     // voz y velocidad: comunes a todas las rutas
+  let STORE = '';                          // progreso: uno por ruta (audioguia-<ciudad>-<ruta>-v1)
   // Mapa gratuito, sin clave y sin límites: https://openfreemap.org
   const STYLE_URL = 'https://tiles.openfreemap.org/styles/positron';
   const MAP_CACHE = 'map-v1';
@@ -35,22 +37,28 @@
 
   // ---------- Estado ----------
   // view: parada que muestra la tarjeta (null = modo caminando)
-  const S = { mode: null, target: 0, visited: [], showText: false, rate: 1, voiceName: '', mapSaved: false, pos: null, acc: null, arrived: null, view: null };
+  const fresh = () => ({ mode: null, target: 0, visited: [], showText: false, rate: 1, voiceName: '', mapSaved: false, pos: null, acc: null, arrived: null, view: null });
+  let S = fresh();
+  let catalog = null, city = null, routeMeta = null;
+  const tourCache = {};
   const P = { playing: false, stop: -1, c: 0, session: 0 };
   let tour, map, userDot, markers = [], lastMarkerTap = 0, cardH = 0;
   let speechReady = false, audioCtx = null, wake = null, watchId = null, voice = null, gpsError = '';
   const synth = window.speechSynthesis || null;
 
+  function readJSON(key) { try { return JSON.parse(localStorage.getItem(key) || '{}'); } catch (e) { return {}; } }
   function load() {
-    try {
-      const d = JSON.parse(localStorage.getItem(STORE) || '{}');
-      ['mode', 'target', 'visited', 'showText', 'rate', 'voiceName', 'mapSaved'].forEach(k => { if (k in d) S[k] = d[k]; });
-    } catch (e) {}
+    const d = STORE ? readJSON(STORE) : {};
+    ['mode', 'target', 'visited', 'mapSaved'].forEach(k => { if (k in d) S[k] = d[k]; });
+    const pr = readJSON(PREFS);
+    if ('rate' in pr) S.rate = pr.rate; else if ('rate' in d) S.rate = d.rate;
+    if ('voiceName' in pr) S.voiceName = pr.voiceName; else if ('voiceName' in d) S.voiceName = d.voiceName;
   }
   function save() {
     try {
-      const { mode, target, visited, showText, rate, voiceName, mapSaved } = S;
-      localStorage.setItem(STORE, JSON.stringify({ mode, target, visited, showText, rate, voiceName, mapSaved }));
+      const { mode, target, visited, mapSaved, rate, voiceName } = S;
+      if (STORE) localStorage.setItem(STORE, JSON.stringify({ mode, target, visited, mapSaved }));
+      localStorage.setItem(PREFS, JSON.stringify({ rate, voiceName }));
     } catch (e) {}
   }
 
@@ -100,7 +108,9 @@
       }))
     };
   }
-  function initMap() {
+  let mapReady = null;
+  function ensureMap() {
+    if (map) return mapReady;
     map = new maplibregl.Map({
       container: 'map', style: STYLE_URL,
       bounds: routeBounds(), fitBoundsOptions: { padding: { top: 64, bottom: 220, left: 36, right: 64 } },
@@ -108,7 +118,7 @@
       dragRotate: false, pitchWithRotate: false, touchPitch: false, maxZoom: 19
     });
     map.touchZoomRotate.disableRotation();
-    map.on('load', () => {
+    mapReady = new Promise(res => map.on('load', () => {
       map.addSource('legs', { type: 'geojson', data: legsData() });
       map.addLayer({ id: 'legs-casing', type: 'line', source: 'legs', filter: ['!=', ['get', 'state'], 'done'],
         layout: { 'line-cap': 'round', 'line-join': 'round' },
@@ -119,8 +129,16 @@
       map.addLayer({ id: 'legs-main', type: 'line', source: 'legs', filter: ['!=', ['get', 'state'], 'done'],
         layout: { 'line-cap': 'round', 'line-join': 'round' },
         paint: { 'line-color': '#1E3E66', 'line-width': ['match', ['get', 'state'], 'next', 6, 4], 'line-opacity': ['match', ['get', 'state'], 'next', 1, .55] } });
-      refreshMap();
+      res();
+    }));
+    map.on('click', e => {
+      if (Date.now() - lastMarkerTap < 400) return;
+      if (S.mode === 'sim' && tour) setPos(e.lngLat.lat, e.lngLat.lng, 5);
     });
+    return mapReady;
+  }
+  function drawRoute() {
+    markers.forEach(m => m.m.remove()); markers = [];
     tour.stops.forEach((st, i) => {
       const el = document.createElement('button');
       el.type = 'button'; el.className = 'mk';
@@ -133,10 +151,9 @@
       });
       markers.push({ el, m: new maplibregl.Marker({ element: el }).setLngLat([st.lng, st.lat]).addTo(map) });
     });
-    map.on('click', e => {
-      if (Date.now() - lastMarkerTap < 400) return;
-      if (S.mode === 'sim') setPos(e.lngLat.lat, e.lngLat.lng, 5);
-    });
+    map.resize();
+    map.fitBounds(routeBounds(), { padding: { top: 64, bottom: 220, left: 36, right: 64 }, duration: 0 });
+    mapReady.then(refreshMap);
   }
   function fitRoute() { map.fitBounds(routeBounds(), { padding: fitPad(), duration: 600 }); }
   function flyTo(lat, lng, zoom) {
@@ -559,8 +576,9 @@
   }
   function begin(mode) {
     unlockAudio(); requestWake();
-    $('#intro').hidden = true;
+    showScreen('tour');
     map.resize();
+    measureCard();
     setMode(mode);
     if (!S.mapSaved) setTimeout(saveOffline, 4000);
   }
@@ -623,33 +641,139 @@
     window.addEventListener('resize', () => measureCard());
   }
 
-  // ---------- Arranque ----------
-  async function boot() {
-    load();
-    try {
-      const res = await fetch(TOUR_URL, { cache: 'no-cache' });
-      tour = await res.json();
-    } catch (e) {
-      $('#introNote').hidden = false; $('#introNote').textContent = 'No se pudo cargar el recorrido. Comprueba la conexión y recarga.'; return;
+  // ---------- Pantallas y navegación ----------
+  function showScreen(name) {
+    $('#home').hidden = name !== 'home';
+    $('#city').hidden = name !== 'city';
+    $('#intro').hidden = name !== 'intro';
+    $('#tourUI').hidden = name !== 'tour';
+    closeSheet();
+  }
+  function signHTML(c, small) {
+    return '<span class="sign sign-' + c.sign + (small ? ' sm' : '') + '">' + esc(c.signText) + (c.signSmall ? ' <small>' + esc(c.signSmall) + '</small>' : '') + '</span>';
+  }
+  async function getTour(c, r) {
+    const key = c.id + '/' + r.id;
+    if (!tourCache[key]) {
+      const res = await fetch(r.file, { cache: 'no-cache' });
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      const t = await res.json(); prepare(t); tourCache[key] = t;
     }
-    prepare(tour);
+    return tourCache[key];
+  }
+  const hoursText = t => (Math.round(t.totalH * 2) / 2).toString().replace('.', ',');
+  const readyRoutes = c => (c.routes || []).filter(r => r.status === 'ready' && r.file);
+
+  function leaveRoute() {
+    if (!tour) return;
+    pauseSpeech(); stopGps();
+    markers.forEach(m => m.m.remove()); markers = [];
+    if (userDot) { userDot.remove(); userDot = null; }
+    tour = null; routeMeta = null; STORE = '';
+    S = fresh(); load();
+    P.stop = -1; P.c = 0;
+  }
+
+  function renderHome() {
+    leaveRoute();
+    document.title = catalog.app;
+    $('#cityList').innerHTML = catalog.cities.map(c => {
+      const n = readyRoutes(c).length;
+      const wip = c.status !== 'ready' || !n;
+      const meta = wip ? 'En preparación · ' + (c.routes || []).length + ' rutas previstas' : n + (n > 1 ? ' rutas disponibles' : ' ruta disponible') + ' · ' + esc(c.country);
+      return '<li><a class="city-card' + (wip ? ' is-wip' : '') + '" href="#' + c.id + '">' + signHTML(c, true) +
+        '<span><span class="cc-name">' + esc(c.name) + '</span><span class="cc-meta">' + meta + '</span></span>' +
+        (wip ? '<span class="badge">WIP</span>' : '<span class="chev" aria-hidden="true">›</span>') + '</a></li>';
+    }).join('');
+    showScreen('home');
+  }
+
+  async function renderCity(cid) {
+    leaveRoute();
+    city = catalog.cities.find(c => c.id === cid);
+    if (!city) { location.hash = ''; return; }
+    document.title = city.name + ' · ' + catalog.app;
+    $('#citySign').innerHTML = signHTML(city);
+    $('#cityName').textContent = city.name;
+    $('#cityBlurb').textContent = city.blurb || '';
+    const list = $('#routeList');
+    if (!(city.routes || []).length) list.innerHTML = '<li><p class="empty">Estamos preparando las rutas de ' + esc(city.name) + '.</p></li>';
+    else list.innerHTML = city.routes.map(r => {
+      const ready = r.status === 'ready' && r.file;
+      const inner = '<span class="eyebrow"><span>' + esc(r.label || '') + '</span>' + (ready ? '' : '<span class="badge">WIP</span>') + '</span>' +
+        '<span class="rc-title">' + esc(r.title) + '</span><span class="rc-sub">' + esc(r.subtitle || '') + '</span>' +
+        (ready ? '<span class="rc-meta" data-meta="' + r.id + '"></span>' : '<span class="rc-sub">Próximamente</span>');
+      return '<li>' + (ready ? '<a class="route-card" href="#' + city.id + '/' + r.id + '">' + inner + '</a>' : '<div class="route-card is-wip">' + inner + '</div>') + '</li>';
+    }).join('');
+    showScreen('city');
+    $('#city').scrollTop = 0;
+    for (const r of readyRoutes(city)) {
+      try {
+        const t = await getTour(city, r);
+        const el = list.querySelector('[data-meta="' + r.id + '"]');
+        if (el) el.textContent = t.stops.length + ' paradas · ' + fmtDist(t.totalM) + ' · unas ' + hoursText(t) + ' h';
+      } catch (e) {}
+    }
+  }
+
+  async function openRoute(cid, rid) {
+    const c = catalog.cities.find(x => x.id === cid);
+    const r = c && (c.routes || []).find(x => x.id === rid);
+    if (!c || !r || r.status !== 'ready' || !r.file) { location.hash = c ? c.id : ''; return; }
+    if (tour && routeMeta === r) { showScreen('intro'); return; }
+    leaveRoute();
+    city = c; routeMeta = r;
+    try { tour = await getTour(c, r); }
+    catch (e) { toast('No se pudo cargar la ruta. Comprueba la conexión.'); location.hash = c.id; return; }
+    STORE = 'audioguia-' + c.id + '-' + r.id + '-v1';
+    S = fresh(); load();
     if (S.target != null && !tour.stops[S.target]) S.target = 0;
     S.visited = (S.visited || []).filter(i => tour.stops[i]);
 
-    const hours = (Math.round(tour.totalH * 2) / 2).toString().replace('.', ',');
+    const hours = hoursText(tour);
+    document.title = tour.title + ' · ' + catalog.app;
+    $('#introBack').href = '#' + c.id; $('#introBack').textContent = '‹ ' + c.name;
+    $('#exitRoute').href = '#' + c.id;
+    $('#introSign').innerHTML = signHTML(c);
+    $('#introLabel').textContent = r.label || '';
     $('#introTitle').textContent = tour.title;
     $('#introSub').textContent = tour.subtitle + '.';
     $('#introStats').textContent = tour.stops.length + ' paradas · ' + fmtDist(tour.totalM) + ' a pie · unas ' + hours + ' horas';
     $('#sheetTitle').textContent = tour.title;
     $('#sheetSub').textContent = tour.stops.length + ' paradas · ' + fmtDist(tour.totalM) + ' · unas ' + hours + ' h';
-    if (S.visited.length && S.target != null) $('#startGps').textContent = 'Continuar el recorrido (' + S.visited.length + '/' + tour.stops.length + ')';
+    $('#startGps').textContent = (S.visited.length && S.target != null) ? 'Continuar el recorrido (' + S.visited.length + '/' + tour.stops.length + ')' : 'Empezar el recorrido';
     $('#optRate').value = String(S.rate);
     $('#offlineMsg').textContent = S.mapSaved ? 'Mapa de la zona guardado: funciona sin datos.' : 'El mapa de la zona se guarda solo al empezar, para usarlo sin datos.';
+    if (synth) loadVoices();
 
-    initMap();
-    bind();
+    showScreen('intro');
+    ensureMap();
+    drawRoute();
     renderCard();
+  }
+
+  function router() {
+    const [cid, rid] = location.hash.replace(/^#\/?/, '').split('/');
+    if (!cid) renderHome();
+    else if (!rid) renderCity(cid);
+    else openRoute(cid, rid);
+  }
+
+  // ---------- Arranque ----------
+  async function boot() {
+    load();
+    try {
+      const res = await fetch(CATALOG_URL, { cache: 'no-cache' });
+      catalog = await res.json();
+    } catch (e) {
+      $('#homeNote').hidden = false; $('#homeNote').textContent = 'No se pudieron cargar las ciudades. Comprueba la conexión y recarga.'; return;
+    }
+    $('#appName').textContent = catalog.app;
+    $('#appTagline').textContent = catalog.tagline || '';
+    bind();
     if (synth) { loadVoices(); if ('onvoiceschanged' in synth) synth.onvoiceschanged = loadVoices; }
+    window.addEventListener('hashchange', router);
+    router();
 
     if ('serviceWorker' in navigator && location.protocol !== 'file:') {
       navigator.serviceWorker.register('sw.js').catch(() => {});

@@ -1,0 +1,92 @@
+{
+  "app": "Audioguías",
+  "tagline": "Free tours de bolsillo: camina, llega y escucha.",
+  "cities": [
+    {
+      "id": "paris",
+      "name": "París",
+      "country": "Francia",
+      "sign": "paris",
+      "signText": "Paris",
+      "signSmall": "",
+      "blurb": "Puentes, palacios y cotilleos reales: la ciudad de la luz contada como en un free tour.",
+      "status": "ready",
+      "routes": [
+        {
+          "id": "centro",
+          "label": "Día 1 · Mañana",
+          "title": "El corazón de París",
+          "subtitle": "Del Ayuntamiento a las Tullerías, cruzando la isla de la Cité",
+          "file": "data/paris/centro.json",
+          "status": "ready"
+        },
+        {
+          "id": "oeste",
+          "label": "Día 1 · Tarde",
+          "title": "Torre Eiffel e Inválidos",
+          "subtitle": "Trocadéro, Torre Eiffel, Campo de Marte, Inválidos y Orsay",
+          "status": "wip"
+        },
+        {
+          "id": "norte",
+          "label": "Día 2",
+          "title": "Montmartre y Le Marais",
+          "subtitle": "Pintores, molinos y el barrio más vivo de París",
+          "status": "wip"
+        }
+      ]
+    },
+    {
+      "id": "londres",
+      "name": "Londres",
+      "country": "Reino Unido",
+      "sign": "london",
+      "signText": "London",
+      "signSmall": "SW1",
+      "blurb": "Reyes, espías y un reloj muy puntual: Londres a pie, de Westminster a la Torre.",
+      "status": "wip",
+      "routes": [
+        {
+          "id": "westminster",
+          "label": "Día 1",
+          "title": "Westminster y el Támesis",
+          "subtitle": "Big Ben, la Abadía, Downing Street y Trafalgar",
+          "status": "wip"
+        },
+        {
+          "id": "city",
+          "label": "Día 2",
+          "title": "La City y Tower Bridge",
+          "subtitle": "San Pablo, el Puente del Milenio y la Torre de Londres",
+          "status": "wip"
+        }
+      ]
+    },
+    {
+      "id": "sevilla",
+      "name": "Sevilla",
+      "country": "España",
+      "sign": "sevilla",
+      "signText": "Sevilla",
+      "signSmall": "",
+      "blurb": "Azulejos, naranjos y leyendas: Sevilla contada a la sombra.",
+      "status": "wip",
+      "routes": [
+        {
+          "id": "centro",
+          "label": "Día 1",
+          "title": "Catedral, Alcázar y Santa Cruz",
+          "subtitle": "La Giralda, el Alcázar y los callejones de la judería",
+          "status": "wip"
+        },
+        {
+          "id": "triana",
+          "label": "Día 2",
+          "title": "Triana y el río",
+          "subtitle": "Plaza de España, la Torre del Oro y el barrio de Triana",
+          "status": "wip"
+        }
+      ]
+    }
+  ]
+}
