@@ -100,6 +100,11 @@ python tools\generar_audios.py data\paris\centro.json --voz VOICE_ID            
 - Consumo: la parada 1 son unos 2.500 caracteres y la ruta de París unos 20.000.
   El plan gratuito (10.000/mes) sirve para probar, pero no permite uso comercial; el Starter (30.000/mes) da para la ruta entera.
 - La app indica en la portada de la ruta que la voz está generada con IA.
+- **Sin conexión**: en la portada de la ruta (y en el menú ☰) está «Audios sin conexión · Descargar». Guarda todos los
+  audios en el móvil; si alguno cambia (se ha regenerado), aparece «Actualizar» y solo baja los nuevos.
+  Si no se han descargado y no hay conexión, esa parte la lee la voz del móvil y el recorrido sigue.
+- El generador anota en el bloque `audio.files` la versión (`v`) y el tamaño (`b`) de cada archivo; la app los usa
+  para descargar y para no reproducir copias antiguas.
 
 ## Probarla en el ordenador
 

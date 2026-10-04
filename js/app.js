@@ -12,6 +12,7 @@
   const STYLE_URL = 'https://tiles.openfreemap.org/styles/positron';
   const MAP_CACHE = 'map-v1';
   const MEDIA_CACHE = 'media-v1';          // imágenes de las rutas (sw.js usa el mismo nombre)
+  const AUDIO_CACHE = 'audio-v1';          // audios descargados para usar sin conexión (ídem)
   const WPM = 150;
 
   const $ = s => document.querySelector(s);
@@ -90,14 +91,13 @@
       const au = t.audio && t.audio.stops && t.audio.stops[st.id];
       if (au && au.paras && au.paras.length === parts.length) {
         // Audio grabado: un archivo por párrafo y otro para la pregunta
-        const base = t.audio.base || '';
         st.isAudio = true;
-        st.audio = { ok: au.ok && base + au.ok, ko: au.ko && base + au.ko, skip: au.skip && base + au.skip };
+        st.audio = { ok: audioUrl(t, au.ok), ko: audioUrl(t, au.ko), skip: audioUrl(t, au.skip) };
         const text = {}; st.chunks.forEach(c => { text[c.quiz ? 'q' : c.pi] = (text[c.quiz ? 'q' : c.pi] || '') + ' ' + c.s; });
         st.chunks = [];
         parts.forEach((p, pi) => {
-          if (st.quiz && st.quiz.before === pi && au.quiz) st.chunks.push({ pi, quiz: true, src: base + au.quiz, s: text.q || '' });
-          st.chunks.push({ pi, src: base + au.paras[pi], s: p });
+          if (st.quiz && st.quiz.before === pi && au.quiz) st.chunks.push({ pi, quiz: true, src: audioUrl(t, au.quiz), s: text.q || '' });
+          st.chunks.push({ pi, src: audioUrl(t, au.paras[pi]), s: p });
         });
         st.chunks.forEach(c => { c.dur = c.s.split(/\s+/).length / WPM * 60; });
       }
@@ -105,9 +105,25 @@
       st.min = Math.max(1, Math.round(st.words / WPM));
       st.legNext = t.legs[i] ? pathLen(t.legs[i]) : 0;
     });
+    // Lista de audios de la ruta (para descargarlos y usarlos sin conexión)
+    t.audioList = [];
+    if (t.audio && t.audio.stops) {
+      const seen = new Set();
+      Object.values(t.audio.stops).forEach(e => [].concat(e.paras || [], e.quiz || [], e.ok || [], e.ko || [], e.skip || []).forEach(f => {
+        const u = audioUrl(t, f); if (seen.has(u)) return; seen.add(u);
+        t.audioList.push({ u, b: (t.audio.files && t.audio.files[f] && t.audio.files[f].b) || 0 });
+      }));
+    }
     t.totalM = t.legs.reduce((s, l) => s + pathLen(l), 0);
     const audioMin = t.stops.reduce((s, st) => s + st.words, 0) / WPM;
     t.totalH = (audioMin + t.totalM / 75 + t.stops.length * 3) / 60; // ~4,5 km/h y 3 min de margen por parada
+  }
+
+  // URL de un audio; ?v= cambia cuando se regenera, para no usar una copia antigua
+  function audioUrl(t, f) {
+    if (!f) return f;
+    const x = t.audio.files && t.audio.files[f];
+    return (t.audio.base || '') + f + (x ? '?v=' + x.v : '');
   }
 
   function recalcTimes(st) {
@@ -330,8 +346,20 @@
       if (ch.quiz && S.askQuiz) { waitQuiz(); return; }
       P.c++; P.off = 0; playItem(0);
     };
+    let failed = false;
     player.onerror = () => {
-      if (id !== P.session) return;
+      if (id !== P.session || failed) return;
+      failed = true;
+      // Sin conexión y sin descargar: esa parte la lee la voz del móvil y se sigue con el audio
+      if (synth && ch.s) {
+        if (!offlineWarned) { offlineWarned = true; toast('Sin conexión: leo con la voz del móvil. Descarga los audios para usarla sin datos.', 5000); }
+        const u = new SpeechSynthesisUtterance(ch.s);
+        u.lang = voice ? voice.lang : tour.lang; if (voice) u.voice = voice; u.rate = S.rate;
+        u.onend = () => { if (id !== P.session || !P.playing) return; player.onended(); };
+        u.onerror = u.onend;
+        synth.speak(u);
+        return;
+      }
       P.playing = false; renderPlayer();
       toast('No se pudo cargar el audio. Comprueba la conexión.');
     };
@@ -341,9 +369,11 @@
     player.playbackRate = S.rate;
     if (offset > 0.3) player.addEventListener('loadedmetadata', () => { if (id === P.session) { try { player.currentTime = offset; } catch (e) {} } }, { once: true });
     const pr = player.play();
-    if (pr) pr.catch(() => { if (id !== P.session) return; P.playing = false; renderPlayer(); toast('Pulsa ▶ para escuchar.'); });
+    // Solo si el navegador bloquea el sonido; los fallos de carga los resuelve onerror
+    if (pr) pr.catch(err => { if (id !== P.session || failed || (err && err.name !== 'NotAllowedError')) return; P.playing = false; renderPlayer(); toast('Pulsa ▶ para escuchar.'); });
     renderPlayer(true);
   }
+  let offlineWarned = false;
   function buzz() {
     try { if (navigator.vibrate) navigator.vibrate([180, 90, 180]); } catch (e) {}
     if (!audioCtx) return;
@@ -595,6 +625,81 @@
         for (const im of st.images) { if (!(await c.match(im.src))) { try { await c.add(im.src); } catch (e) {} } }
       }
     } catch (e) {}
+  }
+
+  // ---------- Audios sin conexión ----------
+  const DL = { busy: false, done: 0, total: 0, have: 0, bytes: 0, got: 0 };
+  const fmtMB = b => (b / 1048576).toFixed(b < 10485760 ? 1 : 0).replace('.', ',') + ' MB';
+  async function audioStatus() {
+    const list = (tour && tour.audioList) || [];
+    DL.total = list.length; DL.bytes = list.reduce((s, x) => s + x.b, 0); DL.have = 0;
+    if (!list.length || !('caches' in window)) return;
+    try {
+      const c = await caches.open(AUDIO_CACHE);
+      const keys = new Set((await c.keys()).map(r => r.url));
+      DL.have = list.filter(x => keys.has(new URL(x.u, location.href).href)).length;
+    } catch (e) {}
+  }
+  function renderDl() {
+    const boxes = document.querySelectorAll('.dl-box');
+    const show = !!(tour && tour.audioList && tour.audioList.length && 'caches' in window);
+    boxes.forEach(box => {
+      box.hidden = !show; if (!show) return;
+      let help, btn = '';
+      if (DL.busy) {
+        const pct = DL.total ? Math.round(100 * DL.done / DL.total) : 0;
+        help = 'Descargando… ' + pct + ' %';
+        btn = '<div class="dl-bar"><span style="width:' + pct + '%"></span></div>';
+      } else if (DL.have >= DL.total) {
+        help = 'Guardados en el móvil (' + fmtMB(DL.bytes) + '): la ruta suena sin datos.';
+        btn = '<button class="link" type="button" data-dl="del">Borrar</button>';
+      } else if (DL.have > 0) {
+        help = 'Hay ' + (DL.total - DL.have) + ' audios nuevos o sin descargar.';
+        btn = '<button class="btn btn-ghost dl-btn" type="button" data-dl="get">Actualizar</button>';
+      } else {
+        help = fmtMB(DL.bytes) + '. Mejor con wifi, antes de salir.';
+        btn = '<button class="btn btn-ghost dl-btn" type="button" data-dl="get">Descargar</button>';
+      }
+      box.innerHTML = '<div class="dl-row"><span><span class="sw-title">Audios sin conexión</span><span class="help">' + help + '</span></span>' +
+        (DL.busy ? '' : btn) + '</div>' + (DL.busy ? btn : '');
+    });
+  }
+  async function refreshDl() { await audioStatus(); renderDl(); }
+  async function downloadAudio() {
+    if (DL.busy || !tour || !navigator.onLine) { if (!navigator.onLine) toast('Necesitas conexión para descargar los audios.'); return; }
+    DL.busy = true; DL.done = 0; renderDl();
+    try { if (navigator.storage && navigator.storage.persist) await navigator.storage.persist(); } catch (e) {}
+    const list = tour.audioList.slice();
+    let fails = 0, k = 0;
+    try {
+      const c = await caches.open(AUDIO_CACHE);
+      const have = new Set((await c.keys()).map(r => r.url));
+      DL.total = list.length;
+      const work = async () => {
+        while (k < list.length) {
+          const x = list[k++], abs = new URL(x.u, location.href).href;
+          if (!have.has(abs)) {
+            try { const r = await fetch(x.u, { cache: 'no-store' }); if (r.ok && r.status === 200) await c.put(abs, r); else fails++; }
+            catch (e) { fails++; }
+          }
+          DL.done++; renderDl();
+        }
+      };
+      await Promise.all([work(), work(), work()]);
+      // Borra las versiones antiguas de los audios de esta ruta
+      const base = new URL(tour.audio.base || '', location.href).href, cur = new Set(list.map(x => new URL(x.u, location.href).href));
+      for (const r of await c.keys()) if (r.url.startsWith(base) && !cur.has(r.url)) await c.delete(r);
+    } catch (e) { fails++; }
+    DL.busy = false;
+    await refreshDl();
+    toast(fails ? 'No se pudieron descargar ' + fails + ' audios. Vuelve a intentarlo con buena conexión.' : 'Audios guardados: la ruta suena sin datos.');
+  }
+  async function deleteAudio() {
+    try {
+      const c = await caches.open(AUDIO_CACHE);
+      for (const x of tour.audioList) await c.delete(new URL(x.u, location.href).href);
+    } catch (e) {}
+    await refreshDl(); toast('Audios borrados del móvil.');
   }
 
   function measureCard() {
@@ -923,6 +1028,11 @@
     });
     // Visor: tocar fuera cierra; flechas o deslizar a los lados para pasar de imagen
     let lbX = null, lbSwiped = 0;
+    document.addEventListener('click', e => {
+      const b = e.target.closest('[data-dl]'); if (!b) return;
+      if (b.dataset.dl === 'get') downloadAudio();
+      else if (b.dataset.dl === 'del') { if (b.dataset.armed) deleteAudio(); else { b.dataset.armed = '1'; b.textContent = '¿Seguro? Toca otra vez'; setTimeout(() => { if (b.isConnected) { delete b.dataset.armed; b.textContent = 'Borrar'; } }, 4000); } }
+    });
     $('#lightbox').addEventListener('click', e => {
       if (e.target.closest('a')) return;
       const nav = e.target.closest('[data-lb]');
@@ -1068,6 +1178,7 @@
     vc.textContent = tour.audio && tour.audio.credit ? tour.audio.credit + '.' : '';
     $('#optRate').value = String(S.rate);
     $('#optQuiz').checked = S.askQuiz;
+    DL.busy = false; refreshDl();
     $('#offlineMsg').textContent = S.mapSaved ? 'Mapa de la zona guardado: funciona sin datos.' : 'El mapa de la zona se guarda solo al empezar, para usarlo sin datos.';
     if (synth) loadVoices();
 

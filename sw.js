@@ -1,15 +1,16 @@
 /* Service worker: la app y el recorrido funcionan sin conexión una vez abiertos.
    Al publicar cambios: sube VERSION aquí y el ?v= de css/js en index.html y en FILES. */
-const VERSION = 'v28';
+const VERSION = 'v29';
 const SHELL = 'shell-' + VERSION;
 const MAP = 'map-v1';
 const FONTS = 'fonts-v1';
 const MEDIA = 'media-v1';   // imágenes de las rutas (mismo nombre en js/app.js)
+const AUDIO = 'audio-v1';   // audios descargados desde la app para usarlos sin conexión
 const FILES = [
   './',
   'index.html',
-  'css/app.css?v=28',
-  'js/app.js?v=28',
+  'css/app.css?v=29',
+  'js/app.js?v=29',
   'data/catalogo.json',
   'data/paris/centro.json',
   'vendor/maplibre/maplibre-gl.css',
@@ -70,8 +71,27 @@ self.addEventListener('fetch', e => {
     return;
   }
 
-  // Los audios los gestiona el navegador directamente (necesitan peticiones por rangos)
-  if (url.includes('/audio/')) return;
+  // Audios: si están descargados se sirven desde el móvil (con peticiones por rangos,
+  // que los reproductores necesitan para avanzar y retroceder); si no, de internet.
+  if (url.includes('/audio/') && new URL(url).origin === self.location.origin) {
+    e.respondWith(caches.open(AUDIO).then(async c => {
+      const hit = await c.match(url);
+      if (!hit) return fetch(req);
+      const range = req.headers.get('range');
+      if (!range) return hit;
+      const buf = await hit.arrayBuffer(), size = buf.byteLength;
+      const m = /bytes=(\d*)-(\d*)/.exec(range) || [];
+      let start = m[1] ? +m[1] : 0, end = m[2] ? +m[2] : size - 1;
+      if (!m[1] && m[2]) { start = Math.max(0, size - +m[2]); end = size - 1; }
+      end = Math.min(end, size - 1);
+      if (start > end) return new Response('', { status: 416, headers: { 'Content-Range': 'bytes */' + size } });
+      return new Response(buf.slice(start, end + 1), { status: 206, headers: {
+        'Content-Type': hit.headers.get('Content-Type') || 'audio/mpeg',
+        'Content-Range': 'bytes ' + start + '-' + end + '/' + size,
+        'Content-Length': String(end - start + 1), 'Accept-Ranges': 'bytes' } });
+    }));
+    return;
+  }
 
   // Imágenes de las rutas: de la caché primero (la app las guarda al empezar la ruta)
   if (new URL(url).origin === self.location.origin && url.includes('/img/')) {

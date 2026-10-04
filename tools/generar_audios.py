@@ -169,6 +169,18 @@ def main():
         with open(ruta_json, "w", encoding="utf-8") as f:
             json.dump(tour, f, ensure_ascii=False, indent=2)
 
+    # Versión y tamaño de cada audio: la app los usa para descargarlos y saber cuáles han cambiado
+    archivos = {}
+    for entrada in audio["stops"].values():
+        for f in entrada["paras"] + [entrada[k] for k in ("quiz", "ok", "ko", "skip") if k in entrada]:
+            ruta = os.path.join(carpeta, f)
+            if f in manifiesto and os.path.exists(ruta):
+                archivos[f] = {"v": manifiesto[f][:8], "b": os.path.getsize(ruta)}
+    audio["files"] = archivos
+    tour["audio"] = audio
+    with open(ruta_json, "w", encoding="utf-8") as f:
+        json.dump(tour, f, ensure_ascii=False, indent=2)
+
     print(f"\nListo: {generados} audios nuevos, {total_chars} caracteres gastados de tu cuota de ElevenLabs.")
     print(f"Archivos en {base_rel}  ·  Haz Commit + Push en GitHub Desktop para publicarlos.")
 
