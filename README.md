@@ -14,8 +14,8 @@ por ejemplo `.../Audioguias/#paris/centro`, y guarda su propio progreso.
 - Te avisa (sonido y vibración en Android) al entrar en el radio de cada parada y empieza a leer el guion.
 - Indica la distancia a la siguiente parada y cómo llegar.
 - Voz del propio móvil, con selector de voz y velocidad.
-- **Modo prueba**: te mueves tocando el mapa, para escuchar el tour desde casa.
-- Funciona sin conexión: la app se guarda al abrirla y el mapa se descarga desde Ajustes.
+- **GPS opcional**: con el GPS apagado avanzas tú, parada a parada («Ya estoy aquí» o tocando la parada). Sirve también para escuchar el tour desde casa.
+- Funciona sin conexión: la app se guarda al abrirla y el mapa de la zona se guarda solo al empezar una ruta.
 - Recuerda qué paradas has visitado.
 
 Limitación: en iPhone, una web app solo usa el GPS y la voz con la pantalla encendida y la app abierta.

@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:wght@700&display=swap">
 <link rel="stylesheet" href="vendor/maplibre/maplibre-gl.css">
-<link rel="stylesheet" href="css/app.css?v=18">
+<link rel="stylesheet" href="css/app.css?v=20">
 </head>
 <body>
 
@@ -25,8 +25,8 @@
 <!-- Interfaz de la ruta: botones del mapa y tarjeta -->
 <div id="tourUI" hidden>
   <div class="map-top">
-    <a class="round" id="btnBack" href="#" aria-label="Volver"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></a>
-    <span class="pill" id="modeBadge" hidden>GPS apagado · toca el mapa para moverte</span>
+    <button class="round" id="btnBack" type="button" aria-label="Volver a la presentación de la ruta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+    <span class="pill" id="modeBadge" hidden>GPS apagado · al llegar, toca la parada</span>
     <div class="map-btns">
       <button class="round" id="btnLocate" type="button" aria-label="Centrar el mapa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg></button>
       <button class="round" id="btnMenu" type="button" aria-label="Paradas y ajustes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
@@ -73,7 +73,7 @@
     <p class="intro-tip">Ponte los auriculares y lleva la pantalla encendida: la app te avisa al llegar a cada parada y empieza a contarte la historia.</p>
     <button class="btn btn-primary btn-big" id="startGps" type="button">Empezar el recorrido</button>
     <label class="switch-row" for="gpsIntro">
-      <span><span class="sw-title">Usar GPS</span><span class="help">Apágalo para moverte tocando el mapa, por ejemplo para probarla desde casa.</span></span>
+      <span><span class="sw-title">Usar GPS</span><span class="help">Apágalo para avanzar tú, parada a parada. Sirve también para escucharla desde casa.</span></span>
       <input type="checkbox" id="gpsIntro" class="switch" checked>
     </label>
   </div>
@@ -101,10 +101,6 @@
         <select id="optRate"><option value="0.9">0,9×</option><option value="1">1×</option><option value="1.1">1,1×</option><option value="1.25">1,25×</option></select>
       </label>
     </div>
-    <label class="switch-row" for="gpsSheet">
-      <span><span class="sw-title">GPS</span><span class="help">Apágalo para moverte tocando el mapa.</span></span>
-      <input type="checkbox" id="gpsSheet" class="switch">
-    </label>
     <p class="help" id="offlineMsg"></p>
     <div class="sheet-links">
       <a class="link" id="exitRoute" href="#">‹ Salir de la ruta</a>
@@ -117,6 +113,6 @@
 <div id="toast" class="toast" hidden></div>
 
 <script src="vendor/maplibre/maplibre-gl.js"></script>
-<script src="js/app.js?v=18"></script>
+<script src="js/app.js?v=20"></script>
 </body>
 </html>

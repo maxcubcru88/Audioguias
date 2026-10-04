@@ -131,10 +131,6 @@
         paint: { 'line-color': routeColor(), 'line-width': ['match', ['get', 'state'], 'next', 6, 4], 'line-opacity': ['match', ['get', 'state'], 'next', 1, .55] } });
       res();
     }));
-    map.on('click', e => {
-      if (Date.now() - lastMarkerTap < 400) return;
-      if (S.mode === 'sim' && tour) setPos(e.lngLat.lat, e.lngLat.lng, 5);
-    });
     return mapReady;
   }
   function drawRoute() {
@@ -146,8 +142,9 @@
       el.innerHTML = '<span class="plaque">' + (i + 1) + '</span>';
       el.addEventListener('click', e => {
         e.stopPropagation(); lastMarkerTap = Date.now();
-        if (S.mode === 'sim') setPos(st.lat, st.lng, 5);
-        if (S.view !== i) openView(i);
+        // Sin GPS, tocar una parada que aún no has visitado cuenta como llegar a ella
+        if (S.mode === 'sim' && !S.visited.includes(i)) arrive(i);
+        else if (S.view !== i) openView(i);
       });
       markers.push({ el, m: new maplibregl.Marker({ element: el }).setLngLat([st.lng, st.lat]).addTo(map) });
     });
@@ -227,14 +224,11 @@
   function setMode(mode) {
     S.mode = mode; gpsError = ''; save();
     $('#modeBadge').hidden = mode !== 'sim';
-    $('#gpsSheet').checked = mode === 'gps';
     $('#gpsIntro').checked = mode === 'gps';
-    if (mode === 'gps') { S.pos = null; startGps(); renderCard(); }
-    else {
-      stopGps();
-      if (!S.pos) { const st = tour.stops[S.target != null ? S.target : 0]; setPos(st.lat + 0.0011, st.lng - 0.0004, 5); }
-      else renderCard();
-    }
+    S.pos = null;
+    if (userDot) { userDot.remove(); userDot = null; }
+    if (mode === 'gps') startGps(); else stopGps();
+    if (S.view == null) renderCard();
   }
 
   // ---------- Avisos ----------
@@ -620,7 +614,7 @@
         seekTo(cur + (act === 'back' ? -1 : 1));
         return;
       }
-      if (act === 'sim-go' && S.target != null) { const t = tour.stops[S.target]; setPos(t.lat, t.lng, 5); return; }
+      if (act === 'sim-go' && S.target != null) { arrive(S.target); return; }
       const p = e.target.closest('[data-p]');
       if (p && S.view != null) playStop(S.view, +p.dataset.p);
     });
@@ -641,7 +635,13 @@
       const b = e.target.closest('.si'); if (!b) return;
       closeSheet(); openView(+b.dataset.i);
     });
-    $('#gpsSheet').addEventListener('change', e => setMode(e.target.checked ? 'gps' : 'sim'));
+    // ‹ en el mapa: pausa y vuelve a la presentación de la ruta (allí se enciende o apaga el GPS)
+    $('#btnBack').addEventListener('click', () => {
+      pauseSpeech(); stopGps();
+      refreshIntro();
+      showScreen('intro');
+      $('#intro').scrollTop = 0;
+    });
     $('#optRate').addEventListener('change', e => { S.rate = parseFloat(e.target.value) || 1; save(); if (P.playing) restartSpeech(); });
     $('#optVoice').addEventListener('change', e => {
       voice = synth ? synth.getVoices().find(v => v.name === e.target.value) || null : null;
@@ -771,7 +771,6 @@
     document.title = tour.title + ' · ' + catalog.app;
     $('#introBack').href = '#' + c.id; $('#introBack').textContent = '‹ ' + c.name;
     $('#exitRoute').href = '#' + c.id;
-    $('#btnBack').href = '#' + c.id; $('#btnBack').setAttribute('aria-label', 'Volver a ' + c.name);
     $('#introSign').innerHTML = mascotHTML(c, 'mascot-md');
     $('#introLabel').textContent = r.label || '';
     $('#introTitle').textContent = tour.title;
@@ -779,8 +778,7 @@
     $('#introStats').textContent = tour.stops.length + ' paradas · ' + fmtDist(tour.totalM) + ' a pie · unas ' + hours + ' horas';
     $('#sheetTitle').textContent = tour.title;
     $('#sheetSub').textContent = tour.stops.length + ' paradas · ' + fmtDist(tour.totalM) + ' · unas ' + hours + ' h';
-    $('#gpsIntro').checked = S.mode !== 'sim';
-    $('#startGps').textContent = (S.visited.length && S.target != null) ? 'Continuar el recorrido (' + S.visited.length + '/' + tour.stops.length + ')' : 'Empezar el recorrido';
+    refreshIntro();
     $('#optRate').value = String(S.rate);
     $('#offlineMsg').textContent = S.mapSaved ? 'Mapa de la zona guardado: funciona sin datos.' : 'El mapa de la zona se guarda solo al empezar, para usarlo sin datos.';
     if (synth) loadVoices();
@@ -789,6 +787,12 @@
     ensureMap();
     drawRoute();
     renderCard();
+  }
+
+  function refreshIntro() {
+    if (!tour) return;
+    $('#gpsIntro').checked = S.mode !== 'sim';
+    $('#startGps').textContent = (S.visited.length && S.target != null) ? 'Continuar el recorrido (' + S.visited.length + '/' + tour.stops.length + ')' : 'Empezar el recorrido';
   }
 
   function router() {
