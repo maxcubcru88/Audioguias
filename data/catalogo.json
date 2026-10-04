@@ -43,7 +43,8 @@
         "plaqueFrame": "#3C7A57",
         "plaqueInk": "#FFFFFF",
         "plaqueLine": "rgba(255,255,255,.9)"
-      }
+      },
+      "figure": "icons/ciudades/paris-guia.svg"
     },
     {
       "id": "londres",
@@ -78,7 +79,8 @@
         "plaqueFrame": "#1B2430",
         "plaqueInk": "#1B2430",
         "plaqueLine": "#1B2430"
-      }
+      },
+      "figure": "icons/ciudades/londres-guia.svg"
     },
     {
       "id": "sevilla",
@@ -113,7 +115,8 @@
         "plaqueFrame": "#C9962B",
         "plaqueInk": "#1F3F8F",
         "plaqueLine": "#1F3F8F"
-      }
+      },
+      "figure": "icons/ciudades/sevilla-guia.svg"
     }
   ]
 }

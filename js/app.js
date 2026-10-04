@@ -168,8 +168,12 @@
   function drawUser() {
     if (!S.pos) return;
     if (!userDot) {
-      const el = document.createElement('div'); el.className = 'me';
-      userDot = new maplibregl.Marker({ element: el }).setLngLat(ll(S.pos)).addTo(map);
+      // Tu posición: el guía de la ciudad (los pies marcan el punto exacto); si no hay dibujo, un punto azul
+      const el = document.createElement('div');
+      const fig = city && city.figure;
+      if (fig) { el.className = 'me-fig'; el.innerHTML = '<img src="' + esc(fig) + '" alt="Tu posición" width="46" height="50">'; }
+      else el.className = 'me';
+      userDot = new maplibregl.Marker({ element: el, anchor: fig ? 'bottom' : 'center' }).setLngLat(ll(S.pos)).addTo(map);
     } else userDot.setLngLat(ll(S.pos));
   }
 
