@@ -27,7 +27,7 @@
   };
 
   // ---------- Estado ----------
-  const S = { mode: null, target: 0, open: 0, visited: [], autoplay: true, rate: 1, voiceName: '', pos: null, acc: null, arrived: null };
+  const S = { mode: null, target: 0, open: 0, visited: [], autoplay: true, showText: false, rate: 1, voiceName: '', pos: null, acc: null, arrived: null };
   const P = { playing: false, stop: -1, c: 0, session: 0 };
   let tour, map, userDot, markers = [];
   let speechReady = false, audioCtx = null, wake = null, watchId = null, voice = null;
@@ -39,8 +39,8 @@
   }
   function save() {
     try {
-      const { mode, target, open, visited, autoplay, rate, voiceName } = S;
-      localStorage.setItem(STORE, JSON.stringify({ mode, target, open, visited, autoplay, rate, voiceName }));
+      const { mode, target, open, visited, autoplay, showText, rate, voiceName } = S;
+      localStorage.setItem(STORE, JSON.stringify({ mode, target, open, visited, autoplay, showText, rate, voiceName }));
     } catch (e) {}
   }
 
@@ -339,7 +339,10 @@
       '<p class="where"><b>Dónde ponerte</b>' + esc(st.where) + '</p>' +
       '<div class="player"><button class="pbtn" id="pbtn" type="button" aria-label="Reproducir">' + ICON.play + '</button>' +
       '<div class="pbar"><div class="ptrack"><span id="pfill"></span></div><span class="pinfo" id="pinfo"></span></div></div>' +
-      '<div class="d-body">' + st.paras.map((p, pi) => '<p class="para" data-p="' + pi + '">' + esc(p) + '</p>').join('') + '</div>' +
+      '<button class="txt-toggle" id="txtToggle" type="button" aria-expanded="' + S.showText + '" aria-controls="dBody">' +
+        '<span id="txtLabel">' + (S.showText ? 'Ocultar texto' : 'Ver texto') + '</span>' +
+        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"/></svg></button>' +
+      '<div class="d-body" id="dBody"' + (S.showText ? '' : ' hidden') + '>' + st.paras.map((p, pi) => '<p class="para" data-p="' + pi + '">' + esc(p) + '</p>').join('') + '</div>' +
       (isLast || !st.toNext ? '' : '<p class="next-box" data-p="' + st.paras.length + '"><b>Camino a la siguiente · ' + fmtDist(st.legNext) + '</b>' + esc(st.toNext) + '</p>');
     renderPlayer();
   }
@@ -353,10 +356,10 @@
     const c = active ? P.c : 0;
     const fill = $('#pfill'); if (fill) fill.style.width = (100 * Math.min(c, st.chunks.length) / st.chunks.length) + '%';
     const info = $('#pinfo');
-    if (info) info.textContent = playing ? 'Escuchando…' : (active && P.c > 0 ? 'En pausa' : 'Toca ▶ o cualquier párrafo para escuchar');
+    if (info) info.textContent = playing ? 'Escuchando…' : (active && P.c > 0 ? 'En pausa' : 'Toca ▶ para escuchar');
     const pi = active && (P.playing || P.c > 0) ? st.chunks[Math.min(c, st.chunks.length - 1)].pi : -1;
     document.querySelectorAll('#detail [data-p]').forEach(p => p.classList.toggle('is-reading', +p.dataset.p === pi));
-    if (scroll && playing) {
+    if (scroll && playing && S.showText) {
       const cur = document.querySelector('#detail [data-p="' + pi + '"]');
       if (cur && cur.dataset.lastScrolled !== '1') {
         document.querySelectorAll('#detail [data-p]').forEach(p => { p.dataset.lastScrolled = ''; });
@@ -454,6 +457,14 @@
       if (e.target.closest('#pbtn')) {
         if (P.playing && P.stop === S.open) pauseSpeech(); else playStop(S.open);
         renderStatus(); return;
+      }
+      if (e.target.closest('#txtToggle')) {
+        S.showText = !S.showText; save();
+        $('#dBody').hidden = !S.showText;
+        $('#txtLabel').textContent = S.showText ? 'Ocultar texto' : 'Ver texto';
+        $('#txtToggle').setAttribute('aria-expanded', String(S.showText));
+        if (S.showText) renderPlayer(true);
+        return;
       }
       const p = e.target.closest('[data-p]');
       if (p) { playStop(S.open, +p.dataset.p); renderStatus(); }

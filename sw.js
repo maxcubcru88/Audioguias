@@ -1,6 +1,6 @@
 /* Service worker: la app y el recorrido funcionan sin conexión una vez abiertos.
    Sube el número de versión cada vez que publiques cambios. */
-const VERSION = 'v2';
+const VERSION = 'v3';
 const SHELL = 'shell-' + VERSION;
 const MAP = 'map-v1';
 const FONTS = 'fonts-v1';
