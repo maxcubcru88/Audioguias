@@ -19,86 +19,64 @@
 <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-<div id="app">
-  <div id="mapWrap">
-    <div id="map" aria-label="Mapa del recorrido"></div>
-    <div class="map-top">
-      <div class="chip"><span class="chip-title" id="tourTitle">El corazón de París</span><span class="chip-mode" id="modeBadge" hidden>Modo prueba</span></div>
-      <div class="map-btns">
-        <button class="round" id="btnLocate" type="button" aria-label="Centrar el mapa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg></button>
-        <button class="round" id="btnMenu" type="button" aria-label="Ajustes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
-      </div>
-    </div>
-    <p class="sim-hint" id="simHint" hidden>Toca el mapa o un número para moverte</p>
-  </div>
 
-  <main id="panel">
-    <section id="status" class="status" aria-live="polite"></section>
-    <section id="detail" class="detail"></section>
-    <section class="stops">
-      <h2 class="sec-title">Paradas</h2>
-      <ol id="stopList" class="stop-list"></ol>
-    </section>
-    <p class="credits">Audioguía gratuita · Mapa: OpenFreeMap · © OpenStreetMap</p>
-  </main>
+<div id="map" aria-label="Mapa del recorrido"></div>
+
+<div class="map-top">
+  <span class="pill" id="modeBadge" hidden>Modo prueba · toca el mapa para moverte</span>
+  <div class="map-btns">
+    <button class="round" id="btnLocate" type="button" aria-label="Centrar el mapa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg></button>
+    <button class="round" id="btnMenu" type="button" aria-label="Paradas y ajustes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
 </div>
+
+<section id="card" class="card" aria-live="polite"></section>
 
 <!-- Pantalla de inicio -->
 <div id="intro" class="intro">
   <div class="intro-card">
     <p class="plaque plaque-lg">Zone Centre</p>
-    <h1>El corazón de París</h1>
+    <h1 id="introTitle">El corazón de París</h1>
     <p class="intro-sub" id="introSub">Del Ayuntamiento a las Tullerías, cruzando la isla de la Cité.</p>
-    <p class="intro-stats" id="introStats">9 paradas · 2,7 km · unas 2 horas</p>
-    <ul class="intro-tips">
-      <li>Lleva auriculares y la pantalla encendida: la app te avisa al llegar a cada parada.</li>
-      <li>La voz es la de tu móvil. En iPhone suena mucho mejor si descargas una voz española «mejorada» en Ajustes › Accesibilidad › Contenido leído › Voces.</li>
-    </ul>
-    <div class="intro-actions">
-      <button class="btn btn-primary" id="startGps" type="button">Empezar el recorrido</button>
-      <button class="btn btn-ghost" id="startSim" type="button">Probar desde casa</button>
-    </div>
+    <p class="intro-stats" id="introStats">9 paradas · 2,7 km a pie · unas 1,5 horas</p>
+    <p class="intro-tip">Ponte los auriculares y lleva la pantalla encendida: la app te avisa al llegar a cada parada y empieza a contarte la historia.</p>
+    <button class="btn btn-primary btn-big" id="startGps" type="button">Empezar el recorrido</button>
+    <button class="link" id="startSim" type="button">o pruébala desde casa</button>
     <p class="intro-note" id="introNote" hidden></p>
   </div>
 </div>
 
-<!-- Ajustes -->
-<div id="menu" class="menu" hidden>
-  <div class="menu-card" role="dialog" aria-labelledby="menuTitle">
-    <div class="menu-head"><h2 id="menuTitle">Ajustes</h2><button class="round" id="menuClose" type="button" aria-label="Cerrar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+<!-- Paradas y ajustes -->
+<div id="sheet" class="sheet" hidden>
+  <div class="sheet-card" role="dialog" aria-labelledby="sheetTitle">
+    <div class="sheet-head">
+      <div>
+        <h2 id="sheetTitle">El corazón de París</h2>
+        <p class="sheet-sub" id="sheetSub"></p>
+      </div>
+      <button class="round flat" id="sheetClose" type="button" aria-label="Cerrar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
 
+    <ol id="stopList" class="stop-list"></ol>
+
+    <h3 class="sec-title">Ajustes</h3>
+    <div class="field two">
+      <label for="optVoice"><span class="lbl">Voz</span>
+        <select id="optVoice"><option value="">Voz del sistema</option></select>
+      </label>
+      <label for="optRate"><span class="lbl">Velocidad</span>
+        <select id="optRate"><option value="0.9">0,9×</option><option value="1">1×</option><option value="1.1">1,1×</option><option value="1.25">1,25×</option></select>
+      </label>
+    </div>
     <div class="field">
-      <span class="lbl">Posición</span>
       <div class="seg" role="group" aria-label="Posición">
         <button type="button" id="modeGps">GPS real</button>
         <button type="button" id="modeSim">Modo prueba</button>
       </div>
-      <p class="help">En modo prueba te mueves tocando el mapa. Sirve para escuchar el tour desde casa.</p>
     </div>
-
-    <label class="field row" for="optAuto">
-      <span><span class="lbl">Reproducir al llegar</span><span class="help">Empieza a hablar en cuanto entras en una parada.</span></span>
-      <input type="checkbox" id="optAuto">
-    </label>
-
-    <div class="field two">
-      <label for="optRate"><span class="lbl">Velocidad</span>
-        <select id="optRate"><option value="0.9">0,9×</option><option value="1">1×</option><option value="1.1">1,1×</option><option value="1.25">1,25×</option></select>
-      </label>
-      <label for="optVoice"><span class="lbl">Voz</span>
-        <select id="optVoice"><option value="">Voz del sistema</option></select>
-      </label>
-    </div>
-
-    <div class="field">
-      <span class="lbl">Sin conexión</span>
-      <button class="btn btn-ghost" id="btnOffline" type="button">Guardar el mapa de esta zona</button>
-      <p class="help" id="offlineMsg">Descarga el mapa de la zona (unos pocos MB) para no depender de los datos por la calle.</p>
-    </div>
-
-    <div class="field">
-      <button class="btn btn-danger" id="btnReset" type="button">Reiniciar el recorrido</button>
-    </div>
+    <p class="help" id="offlineMsg"></p>
+    <button class="link danger" id="btnReset" type="button">Reiniciar el recorrido</button>
+    <p class="credits">Audioguía gratuita · Mapa: OpenFreeMap · © OpenStreetMap</p>
   </div>
 </div>
 
