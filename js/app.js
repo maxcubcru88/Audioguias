@@ -556,7 +556,7 @@
         '</div>' +
         '<div class="c-body" id="cBody"' + (S.showText ? '' : ' hidden') + '>' +
           '<p class="where"><b>Dónde ponerte</b>' + esc(st.where) + '</p>' +
-          st.paras.map((p, pi) => st.images.map((im, k) => im.para === pi ? figureHTML(im, k) : '').join('') + '<p class="para" data-p="' + pi + '">' + esc(p) + '</p>').join('') +
+          st.paras.map((p, pi) => paraHTML(st, p, pi)).join('') +
           (st.toNext ? '<p class="next-box" data-p="' + st.paras.length + '"><b>Camino a la siguiente · ' + fmtDist(st.legNext) + '</b>' + esc(st.toNext) + '</p>' : '') +
         '</div>';
     } else if (S.target == null) {
@@ -589,6 +589,22 @@
     return '<figure class="fig" data-act="img" data-i="' + k + '"><img src="' + esc(im.src) + '" alt="' + esc(im.caption) + '" loading="lazy"' +
       (im.w ? ' width="' + im.w + '" height="' + im.h + '"' : '') + '>' +
       '<figcaption>' + esc(im.caption) + (im.credit ? '<span class="credit">' + esc(im.credit) + '</span>' : '') + '</figcaption></figure>';
+  }
+  // Un párrafo con sus imágenes: cada una va justo después de la frase que la menciona
+  // (campo «after»); si no tiene, antes del párrafo.
+  function paraHTML(st, text, pi) {
+    let html = '', rest = text, cont = false;
+    const para = t => '<p class="para' + (cont ? ' para-cont' : '') + '" data-p="' + pi + '">' + esc(t.trim()) + '</p>';
+    st.images.forEach((im, k) => {
+      if (im.para !== pi) return;
+      const at = im.after ? rest.indexOf(im.after) : -1;
+      if (at < 0) { html += figureHTML(im, k); return; }
+      const cut = at + im.after.length;
+      html += para(rest.slice(0, cut)) + figureHTML(im, k);
+      rest = rest.slice(cut); cont = true;
+    });
+    if (rest.trim()) html += para(rest);
+    return html;
   }
   // Imagen que toca según el párrafo que se está leyendo (la última que ya ha salido)
   function imageAt(st, pi) {
