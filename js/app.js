@@ -367,6 +367,7 @@
         '<h2 class="c-title">' + esc(t.title) + '</h2></div>' +
         (d != null ? '<span class="c-dist">' + fmtDist(d) + '</span>' : '') + '</div>' +
         '<p class="c-text">' + esc(how) + '</p>';
+      if (!S.visited.length && S.target === 0) h += '<a class="link" href="' + esc(mapsUrl(meeting())) + '" target="_blank" rel="noopener">Cómo llegar con Google Maps</a>';
       if (S.mode === 'gps' && !S.pos) h += '<p class="c-text muted">' + esc(gpsError || 'Buscando tu posición…') + '</p>';
       if (S.mode === 'sim') h += '<button class="btn btn-ghost btn-big" type="button" data-act="sim-go">Ya estoy aquí</button>';
     }
@@ -600,6 +601,10 @@
   }
   function bind() {
     bindSwipe();
+    $('#copyAddr').addEventListener('click', async () => {
+      const m = meeting();
+      toast(await copyText(m.address) ? 'Dirección copiada' : 'No se pudo copiar. Mantén pulsada la dirección para copiarla.');
+    });
     $('#startGps').addEventListener('click', () => begin($('#gpsIntro').checked ? 'gps' : 'sim'));
 
     $('#card').addEventListener('click', e => {
@@ -779,6 +784,7 @@
     $('#sheetTitle').textContent = tour.title;
     $('#sheetSub').textContent = tour.stops.length + ' paradas · ' + fmtDist(tour.totalM) + ' · unas ' + hours + ' h';
     refreshIntro();
+    renderMeeting();
     $('#optRate').value = String(S.rate);
     $('#offlineMsg').textContent = S.mapSaved ? 'Mapa de la zona guardado: funciona sin datos.' : 'El mapa de la zona se guarda solo al empezar, para usarlo sin datos.';
     if (synth) loadVoices();
@@ -787,6 +793,36 @@
     ensureMap();
     drawRoute();
     renderCard();
+  }
+
+  // Punto de encuentro: el de la ruta o, si no hay, la primera parada
+  function meeting() {
+    const m = tour.meeting || {}, st = tour.stops[0];
+    return { name: m.name || st.title, address: m.address || '', note: m.note || st.where, lat: st.lat, lng: st.lng };
+  }
+  function mapsUrl(m) {
+    return 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(m.address || (m.lat + ',' + m.lng));
+  }
+  async function copyText(text) {
+    try { await navigator.clipboard.writeText(text); return true; }
+    catch (e) {
+      try {
+        const ta = document.createElement('textarea'); ta.value = text; ta.setAttribute('readonly', '');
+        ta.style.position = 'fixed'; ta.style.opacity = '0'; document.body.appendChild(ta);
+        ta.select(); ta.setSelectionRange(0, text.length);
+        const ok = document.execCommand('copy'); ta.remove(); return ok;
+      } catch (e2) { return false; }
+    }
+  }
+  function renderMeeting() {
+    const m = meeting();
+    $('#meet').hidden = false;
+    $('#meetName').textContent = m.name;
+    $('#meetAddr').textContent = m.address;
+    $('#meetAddr').hidden = !m.address;
+    $('#meetNote').textContent = m.note || '';
+    $('#copyAddr').hidden = !m.address;
+    $('#mapsLink').href = mapsUrl(m);
   }
 
   function refreshIntro() {

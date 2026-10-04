@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:wght@700&display=swap">
 <link rel="stylesheet" href="vendor/maplibre/maplibre-gl.css">
-<link rel="stylesheet" href="css/app.css?v=21">
+<link rel="stylesheet" href="css/app.css?v=22">
 </head>
 <body>
 
@@ -70,6 +70,16 @@
     <h1 id="introTitle"></h1>
     <p class="intro-sub" id="introSub"></p>
     <p class="intro-stats" id="introStats"></p>
+    <section class="meet" id="meet" hidden>
+      <p class="eyebrow">Punto de encuentro</p>
+      <p class="meet-name" id="meetName"></p>
+      <p class="meet-addr" id="meetAddr"></p>
+      <p class="meet-note" id="meetNote"></p>
+      <div class="meet-actions">
+        <button class="btn btn-ghost" id="copyAddr" type="button">Copiar dirección</button>
+        <a class="btn btn-ghost" id="mapsLink" href="#" target="_blank" rel="noopener">Abrir en Google Maps</a>
+      </div>
+    </section>
     <p class="intro-tip">Ponte los auriculares y lleva la pantalla encendida: la app te avisa al llegar a cada parada y empieza a contarte la historia.</p>
     <button class="btn btn-primary btn-big" id="startGps" type="button">Empezar el recorrido</button>
     <label class="switch-row" for="gpsIntro">
@@ -113,6 +123,6 @@
 <div id="toast" class="toast" hidden></div>
 
 <script src="vendor/maplibre/maplibre-gl.js"></script>
-<script src="js/app.js?v=21"></script>
+<script src="js/app.js?v=22"></script>
 </body>
 </html>

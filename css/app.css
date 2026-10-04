@@ -148,6 +148,12 @@ button{cursor:pointer}
 .city-head{display:grid;gap:10px}
 .intro-sub{margin:0;font-size:18px}
 .intro-stats{margin:0;font-family:var(--f-plaque);font-weight:600;font-size:19px;color:var(--accent-2);letter-spacing:.02em}
+.meet{display:grid;gap:4px;background:var(--surface);border-radius:14px;padding:14px 16px;box-shadow:0 1px 3px rgba(20,33,45,.08)}
+.meet-name{margin:0;font-family:var(--f-plaque);font-weight:700;font-size:22px;line-height:1.1}
+.meet-addr{margin:0;font-size:15px;user-select:all;-webkit-user-select:all}
+.meet-note{margin:0;font-size:13.5px;color:var(--muted)}
+.meet-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.meet-actions .btn{flex:1 1 auto;padding:10px 12px;font-size:14px;text-decoration:none}
 .intro-tip{margin:4px 0 8px;font-size:15px;color:var(--muted)}
 .intro-note{margin:0;font-size:14px;color:var(--danger)}
 

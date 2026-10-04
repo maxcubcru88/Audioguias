@@ -5,6 +5,11 @@
   "subtitle": "Del Ayuntamiento a las Tullerías, cruzando la isla de la Cité",
   "lang": "es-ES",
   "version": 1,
+  "meeting": {
+    "name": "Plaza del Ayuntamiento (Hôtel de Ville)",
+    "address": "Place de l'Hôtel de Ville, 75004 Paris, Francia",
+    "note": "Frente a la fachada principal del ayuntamiento. Metro: Hôtel de Ville (líneas 1 y 11)."
+  },
   "stops": [
     {
       "id": "hotel-de-ville",

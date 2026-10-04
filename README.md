@@ -53,6 +53,8 @@ El aspecto de la placa de cada ciudad se elige con `"sign"` (`paris`, `london`, 
 
 Cada archivo de ruta, como `data/paris/centro.json`, contiene:
 
+- `meeting`: el punto de encuentro (`name`, `address`, `note`). La dirección se puede copiar y abrir en Google Maps
+  desde la portada de la ruta. Si falta, se usa la primera parada.
 - `stops`: cada parada tiene `title`, `subtitle`, `lat`, `lng`, `radius` (metros para el aviso),
   `where` (dónde ponerse), `paras` (párrafos del guion) y `toNext` (cómo llegar a la siguiente).
 - `legs`: la línea del recorrido entre paradas, como listas de puntos `[lat, lng]`.
