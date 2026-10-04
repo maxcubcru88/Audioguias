@@ -1,14 +1,14 @@
 /* Service worker: la app y el recorrido funcionan sin conexión una vez abiertos.
    Al publicar cambios: sube VERSION aquí y el ?v= de css/js en index.html y en FILES. */
-const VERSION = 'v25';
+const VERSION = 'v26';
 const SHELL = 'shell-' + VERSION;
 const MAP = 'map-v1';
 const FONTS = 'fonts-v1';
 const FILES = [
   './',
   'index.html',
-  'css/app.css?v=25',
-  'js/app.js?v=25',
+  'css/app.css?v=26',
+  'js/app.js?v=26',
   'data/catalogo.json',
   'data/paris/centro.json',
   'vendor/maplibre/maplibre-gl.css',
@@ -68,6 +68,9 @@ self.addEventListener('fetch', e => {
     }));
     return;
   }
+
+  // Los audios los gestiona el navegador directamente (necesitan peticiones por rangos)
+  if (url.includes('/audio/')) return;
 
   if (new URL(url).origin === self.location.origin) {
     // Red primero (para recibir los cambios del guion), caché si no hay conexión.

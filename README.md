@@ -71,6 +71,28 @@ Cada vez que publiques cambios de diseño o de código, sube la versión en dos 
 descarguen la nueva: `const VERSION` en `sw.js` y el `?v=` de `css/app.css` y `js/app.js`
 (en `index.html` y en la lista `FILES` de `sw.js`). Los cambios solo de texto en el JSON no lo necesitan.
 
+## Voz grabada con IA (ElevenLabs)
+
+Si una ruta tiene audios, la app los usa; si no, lee el texto con la voz del móvil.
+Para generarlos (solo hace falta Python 3 y una cuenta de ElevenLabs):
+
+```
+set ELEVENLABS_API_KEY=sk_...
+python tools\generar_audios.py data\paris\centro.json --voz VOICE_ID --parada hotel-de-ville   (una parada)
+python tools\generar_audios.py data\paris\centro.json --voz VOICE_ID                          (la ruta entera)
+```
+
+- **Clave**: elevenlabs.io › perfil › API Keys › Create API key (permiso «Text to Speech»).
+- **VOICE_ID**: en «Voices», menú «⋯» de la voz › «Copy voice ID» (la voz debe estar en «My Voices»).
+- Crea `audio/<ciudad>/<ruta>/` con un MP3 por párrafo, la pregunta y las respuestas, y anota los archivos
+  en el bloque `audio` del JSON de la ruta.
+- Solo regenera lo que cambia (texto, voz o ajustes): editar un párrafo solo gasta ese párrafo.
+- Opciones: `--modelo` (por defecto `eleven_v4`; también `eleven_v3` o `eleven_multilingual_v2`), `--estabilidad 0.45`,
+  `--similitud 0.75`, `--velocidad 1.0`, `--forzar`.
+- Consumo: la parada 1 son unos 2.500 caracteres y la ruta de París unos 20.000.
+  El plan gratuito (10.000/mes) sirve para probar, pero no permite uso comercial; el Starter (30.000/mes) da para la ruta entera.
+- La app indica en la portada de la ruta que la voz está generada con IA.
+
 ## Probarla en el ordenador
 
 Desde la carpeta del proyecto:

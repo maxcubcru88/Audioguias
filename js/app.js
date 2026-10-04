@@ -41,7 +41,7 @@
   let S = fresh();
   let catalog = null, city = null, routeMeta = null;
   const tourCache = {};
-  const P = { playing: false, stop: -1, c: 0, session: 0 };
+  const P = { playing: false, stop: -1, c: 0, off: 0, session: 0 };
   let tour, map, userDot, markers = [], lastMarkerTap = 0, cardH = 0;
   let speechReady = false, audioCtx = null, wake = null, watchId = null, voice = null, gpsError = '';
   const synth = window.speechSynthesis || null;
@@ -85,15 +85,33 @@
         });
       });
       st.words = parts.join(' ').split(/\s+/).length;
-      st.cum = []; let acc = 0;
-      st.chunks.forEach(c => { st.cum.push(acc); acc += c.s.split(/\s+/).length / WPM * 60; });
-      st.secs = acc;
+      const au = t.audio && t.audio.stops && t.audio.stops[st.id];
+      if (au && au.paras && au.paras.length === parts.length) {
+        // Audio grabado: un archivo por párrafo y otro para la pregunta
+        const base = t.audio.base || '';
+        st.isAudio = true;
+        st.audio = { ok: au.ok && base + au.ok, ko: au.ko && base + au.ko, skip: au.skip && base + au.skip };
+        const text = {}; st.chunks.forEach(c => { text[c.quiz ? 'q' : c.pi] = (text[c.quiz ? 'q' : c.pi] || '') + ' ' + c.s; });
+        st.chunks = [];
+        parts.forEach((p, pi) => {
+          if (st.quiz && st.quiz.before === pi && au.quiz) st.chunks.push({ pi, quiz: true, src: base + au.quiz, s: text.q || '' });
+          st.chunks.push({ pi, src: base + au.paras[pi], s: p });
+        });
+        st.chunks.forEach(c => { c.dur = c.s.split(/\s+/).length / WPM * 60; });
+      }
+      recalcTimes(st);
       st.min = Math.max(1, Math.round(st.words / WPM));
       st.legNext = t.legs[i] ? pathLen(t.legs[i]) : 0;
     });
     t.totalM = t.legs.reduce((s, l) => s + pathLen(l), 0);
     const audioMin = t.stops.reduce((s, st) => s + st.words, 0) / WPM;
     t.totalH = (audioMin + t.totalM / 75 + t.stops.length * 3) / 60; // ~4,5 km/h y 3 min de margen por parada
+  }
+
+  function recalcTimes(st) {
+    st.cum = []; let acc = 0;
+    st.chunks.forEach(c => { st.cum.push(acc); acc += c.dur != null ? c.dur : c.s.split(/\s+/).length / WPM * 60; });
+    st.secs = acc;
   }
 
   // ---------- Mapa (MapLibre + OpenFreeMap) ----------
@@ -248,8 +266,81 @@
     } catch (e) {}
     if (synth && !speechReady) {
       try { const u = new SpeechSynthesisUtterance(' '); u.volume = 0; synth.speak(u); } catch (e) {}
-      speechReady = true;
     }
+    if (!speechReady) {
+      try { player.src = silentWav(); const pr = player.play(); if (pr) pr.catch(() => {}); } catch (e) {}
+    }
+    speechReady = true;
+  }
+
+  // ---------- Audio grabado (MP3) ----------
+  const player = new Audio(); player.preload = 'auto';
+  let silentUrl = null;
+  function silentWav() {
+    if (silentUrl) return silentUrl;
+    const n = 800, b = new ArrayBuffer(44 + n * 2), v = new DataView(b);
+    const w = (o, s) => { for (let i = 0; i < s.length; i++) v.setUint8(o + i, s.charCodeAt(i)); };
+    w(0, 'RIFF'); v.setUint32(4, 36 + n * 2, true); w(8, 'WAVE'); w(12, 'fmt '); v.setUint32(16, 16, true);
+    v.setUint16(20, 1, true); v.setUint16(22, 1, true); v.setUint32(24, 8000, true); v.setUint32(28, 16000, true);
+    v.setUint16(32, 2, true); v.setUint16(34, 16, true); w(36, 'data'); v.setUint32(40, n * 2, true);
+    silentUrl = URL.createObjectURL(new Blob([b], { type: 'audio/wav' }));
+    return silentUrl;
+  }
+  const isAudioStop = i => !!(tour && tour.stops[i] && tour.stops[i].isAudio);
+  function loadDurations(st) {
+    if (!st.isAudio || st.durLoaded) return;
+    st.durLoaded = true;
+    st.chunks.forEach(ch => {
+      const a = new Audio(); a.preload = 'metadata';
+      a.addEventListener('loadedmetadata', () => {
+        if (!isFinite(a.duration)) return;
+        ch.dur = a.duration; recalcTimes(st);
+        if (S.view != null && tour.stops[S.view] === st) {
+          const sk = $('#seek'); if (sk) sk.max = Math.ceil(st.secs);
+          const tt = $('#tTot'); if (tt) tt.textContent = fmtTime(st.secs / S.rate);
+          renderPlayer();
+        }
+      }, { once: true });
+      a.src = ch.src;
+    });
+  }
+  // Posición global (segundos) dentro de la parada, en modo audio
+  function audioTime() {
+    const st = tour.stops[P.stop]; if (!st) return 0;
+    const inItem = P.playing ? (player.currentTime || 0) : (P.off || 0);
+    return (st.cum[Math.min(P.c, st.chunks.length - 1)] || 0) + inItem;
+  }
+  function finishStop() {
+    // Fin de la parada: la tarjeta vuelve a «caminando» hacia la siguiente.
+    P.playing = false; P.c = 0; P.off = 0; P.stop = -1;
+    S.view = null; renderCard(); refreshMap();
+  }
+  function playItem(offset) {
+    const st = tour.stops[P.stop];
+    const id = ++P.session;
+    if (!P.playing) return;
+    if (P.c >= st.chunks.length) { finishStop(); return; }
+    while (P.c < st.chunks.length - 1 && st.chunks[P.c].quiz && !S.askQuiz) P.c++;
+    const ch = st.chunks[P.c];
+    if (ch.quiz && S.askQuiz) showQuiz(false);
+    player.onended = () => {
+      if (id !== P.session || !P.playing) return;
+      if (ch.quiz && S.askQuiz) { waitQuiz(); return; }
+      P.c++; P.off = 0; playItem(0);
+    };
+    player.onerror = () => {
+      if (id !== P.session) return;
+      P.playing = false; renderPlayer();
+      toast('No se pudo cargar el audio. Comprueba la conexión.');
+    };
+    let last = 0;
+    player.ontimeupdate = () => { if (id === P.session && Date.now() - last > 400) { last = Date.now(); renderPlayer(); } };
+    player.src = ch.src;
+    player.playbackRate = S.rate;
+    if (offset > 0.3) player.addEventListener('loadedmetadata', () => { if (id === P.session) { try { player.currentTime = offset; } catch (e) {} } }, { once: true });
+    const pr = player.play();
+    if (pr) pr.catch(() => { if (id !== P.session) return; P.playing = false; renderPlayer(); toast('Pulsa ▶ para escuchar.'); });
+    renderPlayer(true);
   }
   function buzz() {
     try { if (navigator.vibrate) navigator.vibrate([180, 90, 180]); } catch (e) {}
@@ -288,19 +379,30 @@
     sel.value = voice ? voice.name : '';
   }
   function playStop(i, fromPart) {
-    if (!synth) { toast('Este navegador no puede leer en voz alta.'); return; }
-    unlockAudio();
     const st = tour.stops[i];
-    if (P.stop !== i) { P.stop = i; P.c = 0; }
-    if (fromPart != null) P.c = Math.max(0, st.chunks.findIndex(c => c.pi === fromPart));
-    if (P.c >= st.chunks.length) P.c = 0;
+    if (!st.isAudio && !synth) { toast('Este navegador no puede leer en voz alta.'); return; }
+    unlockAudio();
+    if (P.stop !== i) { P.stop = i; P.c = 0; P.off = 0; }
+    if (fromPart != null) { P.c = Math.max(0, st.chunks.findIndex(c => c.pi === fromPart)); P.off = 0; }
+    if (P.c >= st.chunks.length) { P.c = 0; P.off = 0; }
     P.playing = true;
     restartSpeech();
     requestWake();
     renderPlayer();
   }
-  function restartSpeech() { P.session++; synth.cancel(); setTimeout(speakNext, 60); }
-  function pauseSpeech() { P.playing = false; P.session++; if (synth) synth.cancel(); cancelQuiz(); renderPlayer(); }
+  function restartSpeech() {
+    P.session++;
+    if (isAudioStop(P.stop)) { player.pause(); const off = P.off || 0; P.off = 0; playItem(off); return; }
+    synth.cancel(); setTimeout(speakNext, 60);
+  }
+  function pauseSpeech() {
+    const wasAudio = isAudioStop(P.stop) && P.playing;
+    P.playing = false; P.session++;
+    if (synth) synth.cancel();
+    if (wasAudio) { P.off = player.currentTime || 0; }
+    try { player.pause(); } catch (e) {}
+    cancelQuiz(); renderPlayer();
+  }
 
   // ---------- Preguntas (como en un free tour: la guía pregunta y espera) ----------
   const QUIZ_WAIT = 20000;
@@ -341,8 +443,16 @@
     const id = ++P.session;
     const next = () => {
       if (id !== P.session) return;
-      setTimeout(() => { if (id !== P.session) return; cancelQuiz(); P.c++; speakNext(); }, 900);
+      setTimeout(() => { if (id !== P.session) return; cancelQuiz(); P.c++; P.off = 0; speakNext(); }, 900);
     };
+    const st = tour.stops[stopI];
+    const src = st.isAudio && st.audio && (ok ? st.audio.ok : (i == null ? st.audio.skip : st.audio.ko));
+    if (src) {
+      player.onended = next; player.onerror = next; player.ontimeupdate = null;
+      player.src = src; player.playbackRate = S.rate;
+      const pr = player.play(); if (pr) pr.catch(next);
+      return;
+    }
     if (!synth) { next(); return; }
     const u = new SpeechSynthesisUtterance(say);
     u.lang = voice ? voice.lang : tour.lang; if (voice) u.voice = voice; u.rate = S.rate;
@@ -350,15 +460,11 @@
     synth.speak(u);
   }
   function speakNext() {
+    if (isAudioStop(P.stop)) { playItem(P.off || 0); P.off = 0; return; }
     const st = tour.stops[P.stop];
     const id = ++P.session;
     if (!P.playing) return;
-    if (P.c >= st.chunks.length) {
-      // Fin de la parada: la tarjeta vuelve a «caminando» hacia la siguiente.
-      P.playing = false; P.c = 0; P.stop = -1;
-      S.view = null; renderCard(); refreshMap();
-      return;
-    }
+    if (P.c >= st.chunks.length) { finishStop(); return; }
     while (P.c < st.chunks.length - 1 && st.chunks[P.c].quiz && !S.askQuiz) P.c++;
     const ch = st.chunks[P.c];
     const u = new SpeechSynthesisUtterance(ch.s);
@@ -385,6 +491,7 @@
   // ---------- Tarjeta ----------
   function openView(i) {
     S.view = i; S.showText = false; lastFollowPi = -1;
+    loadDurations(tour.stops[i]);
     renderCard(); refreshMap();
     const st = tour.stops[i];
     flyTo(st.lat, st.lng, 16.5);
@@ -407,11 +514,11 @@
         '<button class="x" type="button" data-act="close" aria-label="Cerrar parada">' + ICON.close + '</button></div>' +
         '<div class="quiz" id="quiz" hidden></div>' +
         '<div class="ctrl">' +
-          '<button class="skip" type="button" data-act="back" aria-label="Retroceder una frase">' + ICON.back + '</button>' +
+          '<button class="skip" type="button" data-act="back" aria-label="' + (st.isAudio ? 'Retroceder 10 segundos' : 'Retroceder una frase') + '">' + ICON.back + '</button>' +
           '<button class="pbtn" id="btnPlay" type="button" data-act="play"></button>' +
-          '<button class="skip" type="button" data-act="fwd" aria-label="Avanzar una frase">' + ICON.fwd + '</button>' +
-          '<div class="seek"><input type="range" id="seek" min="0" max="' + (st.chunks.length - 1) + '" step="1" value="0" aria-label="Posición en la explicación">' +
-            '<div class="times"><span id="tNow">0:00</span><span>' + fmtTime(st.secs) + '</span></div></div>' +
+          '<button class="skip" type="button" data-act="fwd" aria-label="' + (st.isAudio ? 'Avanzar 10 segundos' : 'Avanzar una frase') + '">' + ICON.fwd + '</button>' +
+          '<div class="seek"><input type="range" id="seek" min="0" max="' + (st.isAudio ? Math.ceil(st.secs) : st.chunks.length - 1) + '" step="1" value="0" aria-label="Posición en la explicación">' +
+            '<div class="times"><span id="tNow">0:00</span><span id="tTot">' + fmtTime(st.secs / (st.isAudio ? S.rate : 1)) + '</span></div></div>' +
         '</div>' +
         '<div class="c-body" id="cBody"' + (S.showText ? '' : ' hidden') + '>' +
           '<p class="where"><b>Dónde ponerte</b>' + esc(st.where) + '</p>' +
@@ -449,18 +556,36 @@
   }
 
   let seeking = false;
-  function paintSeek(c) {
+  function paintSeek(v) {
     const st = tour.stops[S.view], el = $('#seek'); if (!el) return;
+    if (st.isAudio) {
+      el.style.setProperty('--pct', (st.secs ? 100 * Math.min(v, st.secs) / st.secs : 0) + '%');
+      $('#tNow').textContent = fmtTime(v / S.rate);
+      return;
+    }
     const max = st.chunks.length - 1;
-    el.style.setProperty('--pct', (max ? 100 * c / max : 0) + '%');
-    $('#tNow').textContent = fmtTime(st.cum[c] / S.rate);
+    el.style.setProperty('--pct', (max ? 100 * v / max : 0) + '%');
+    $('#tNow').textContent = fmtTime(st.cum[v] / S.rate);
   }
   function seekTo(c) {
     if (S.view == null) return;
     const st = tour.stops[S.view];
     if (P.stop !== S.view) { if (P.playing) pauseSpeech(); P.stop = S.view; }
     cancelQuiz();
-    P.c = Math.max(0, Math.min(c, st.chunks.length - 1));
+    P.c = Math.max(0, Math.min(c, st.chunks.length - 1)); P.off = 0;
+    if (P.playing) restartSpeech();
+    renderPlayer(true);
+  }
+  // Con audio grabado: saltar a un segundo concreto de la parada
+  function seekTime(t) {
+    if (S.view == null) return;
+    const st = tour.stops[S.view];
+    if (P.stop !== S.view) { if (P.playing) pauseSpeech(); P.stop = S.view; P.c = 0; P.off = 0; }
+    cancelQuiz();
+    t = Math.max(0, Math.min(t, st.secs - 0.5));
+    let c = 0;
+    while (c < st.chunks.length - 1 && st.cum[c + 1] <= t) c++;
+    P.c = c; P.off = t - st.cum[c];
     if (P.playing) restartSpeech();
     renderPlayer(true);
   }
@@ -469,7 +594,7 @@
     const st = tour.stops[S.view];
     const active = P.stop === S.view;
     const playing = active && P.playing;
-    const started = active && (P.playing || P.c > 0);
+    const started = active && (P.playing || P.c > 0 || P.off > 0);
     const bState = playing ? 'p' : (started ? 'c' : 'e');
     if (btn.dataset.state !== bState) {
       btn.dataset.state = bState;
@@ -477,7 +602,8 @@
       btn.setAttribute('aria-label', playing ? 'Pausar' : (started ? 'Continuar' : 'Escuchar'));
     }
     const c = active ? Math.min(P.c, st.chunks.length - 1) : 0;
-    if (!seeking) { $('#seek').value = c; paintSeek(c); }
+    const v = st.isAudio ? (active ? audioTime() : 0) : c;
+    if (!seeking) { $('#seek').value = v; paintSeek(v); }
     const pi = started ? st.chunks[Math.min(P.c, st.chunks.length - 1)].pi : -1;
     document.querySelectorAll('#cBody [data-p]').forEach(p => p.classList.toggle('is-reading', +p.dataset.p === pi));
     if (scroll && started && S.showText && pi !== lastFollowPi) { lastFollowPi = pi; followReading(); }
@@ -684,6 +810,7 @@
       if (act === 'quiz') { answerQuiz(+b.dataset.i); return; }
       if (act === 'quiz-skip') { if (Q) answerQuiz(null); else { cancelQuiz(); if (P.playing) { P.c++; restartSpeech(); } } return; }
       if (act === 'back' || act === 'fwd') {
+        if (isAudioStop(S.view)) { const now = P.stop === S.view ? audioTime() : 0; seekTime(now + (act === 'back' ? -10 : 10)); return; }
         const cur = P.stop === S.view ? P.c : 0;
         seekTo(cur + (act === 'back' ? -1 : 1));
         return;
@@ -699,7 +826,8 @@
     });
     $('#card').addEventListener('change', e => {
       if (e.target.id !== 'seek') return;
-      seeking = false; seekTo(+e.target.value);
+      seeking = false;
+      if (isAudioStop(S.view)) seekTime(+e.target.value); else seekTo(+e.target.value);
     });
     $('#btnLocate').addEventListener('click', () => { if (S.pos) flyTo(S.pos[0], S.pos[1], 17); else fitRoute(); });
     $('#btnMenu').addEventListener('click', openSheet);
@@ -717,7 +845,11 @@
       $('#intro').scrollTop = 0;
     });
     $('#optQuiz').addEventListener('change', e => { S.askQuiz = e.target.checked; save(); if (!S.askQuiz && Q) answerQuiz(null); });
-    $('#optRate').addEventListener('change', e => { S.rate = parseFloat(e.target.value) || 1; save(); if (P.playing) restartSpeech(); });
+    $('#optRate').addEventListener('change', e => {
+      S.rate = parseFloat(e.target.value) || 1; save();
+      if (isAudioStop(P.stop)) { player.playbackRate = S.rate; renderPlayer(); }
+      else if (P.playing) restartSpeech();
+    });
     $('#optVoice').addEventListener('change', e => {
       voice = synth ? synth.getVoices().find(v => v.name === e.target.value) || null : null;
       S.voiceName = voice ? voice.name : ''; save(); if (P.playing) restartSpeech();
@@ -855,6 +987,9 @@
     $('#sheetSub').textContent = tour.stops.length + ' paradas · ' + fmtDist(tour.totalM) + ' · unas ' + hours + ' h';
     refreshIntro();
     renderMeeting();
+    const vc = $('#voiceCredit');
+    vc.hidden = !(tour.audio && tour.audio.credit);
+    vc.textContent = tour.audio && tour.audio.credit ? tour.audio.credit + '.' : '';
     $('#optRate').value = String(S.rate);
     $('#optQuiz').checked = S.askQuiz;
     $('#offlineMsg').textContent = S.mapSaved ? 'Mapa de la zona guardado: funciona sin datos.' : 'El mapa de la zona se guarda solo al empezar, para usarlo sin datos.';
