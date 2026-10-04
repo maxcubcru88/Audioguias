@@ -22,12 +22,15 @@
   }
   const pathLen = pts => pts.reduce((s, p, i) => i ? s + dist(pts[i - 1][0], pts[i - 1][1], p[0], p[1]) : 0, 0);
   const ll = p => [p[1], p[0]]; // [lat,lng] -> [lng,lat]
+  const fmtTime = s => { s = Math.max(0, Math.round(s)); return Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0'); };
 
   const ICON = {
     play: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15L19.5 12z"/></svg>',
     pause: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4.5h4v15H6zM14 4.5h4v15h-4z"/></svg>',
     close: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>',
-    chevron: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"/></svg>'
+    chevron: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"/></svg>',
+    back: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 1 0 2.6-5.9"/><path d="M4 4v4.5h4.5"/></svg>',
+    fwd: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 1 1-2.6-5.9"/><path d="M20 4v4.5h-4.5"/></svg>'
   };
 
   // ---------- Estado ----------
@@ -69,6 +72,9 @@
         });
       });
       st.words = parts.join(' ').split(/\s+/).length;
+      st.cum = []; let acc = 0;
+      st.chunks.forEach(c => { st.cum.push(acc); acc += c.s.split(/\s+/).length / WPM * 60; });
+      st.secs = acc;
       st.min = Math.max(1, Math.round(st.words / WPM));
       st.legNext = t.legs[i] ? pathLen(t.legs[i]) : 0;
     });
@@ -324,8 +330,13 @@
         '<h2 class="c-title">' + esc(st.title) + '</h2></div>' +
         '<button class="x" type="button" data-act="close" aria-label="Cerrar parada">' + ICON.close + '</button></div>' +
         '<p class="c-text">' + esc(st.where) + '</p>' +
-        '<button class="btn btn-primary btn-big" id="btnPlay" type="button" data-act="play"></button>' +
-        '<div class="prog" id="prog" hidden><span id="pfill"></span></div>' +
+        '<div class="ctrl">' +
+          '<button class="skip" type="button" data-act="back" aria-label="Retroceder una frase">' + ICON.back + '</button>' +
+          '<button class="btn btn-primary btn-big" id="btnPlay" type="button" data-act="play"></button>' +
+          '<button class="skip" type="button" data-act="fwd" aria-label="Avanzar una frase">' + ICON.fwd + '</button>' +
+        '</div>' +
+        '<div class="seek"><input type="range" id="seek" min="0" max="' + (st.chunks.length - 1) + '" step="1" value="0" aria-label="Posición en la explicación">' +
+          '<div class="times"><span id="tNow">0:00</span><span>' + fmtTime(st.secs) + '</span></div></div>' +
         '<button class="txt-toggle" id="txtToggle" type="button" data-act="text" aria-expanded="' + S.showText + '" aria-controls="cBody">' +
           '<span id="txtLabel">' + (S.showText ? 'Ocultar texto' : 'Ver texto') + '</span>' + ICON.chevron + '</button>' +
         '<div class="c-body" id="cBody"' + (S.showText ? '' : ' hidden') + '>' +
@@ -347,7 +358,7 @@
         (d != null ? '<span class="c-dist">' + fmtDist(d) + '</span>' : '') + '</div>' +
         '<p class="c-text">' + esc(how) + '</p>';
       if (S.mode === 'gps' && !S.pos) h += '<p class="c-text muted">' + esc(gpsError || 'Buscando tu posición…') + '</p>';
-      if (S.mode === 'sim') h += '<button class="link" type="button" data-act="sim-go">Simular llegada</button>';
+      if (S.mode === 'sim') h += '<button class="btn btn-ghost btn-big" type="button" data-act="sim-go">Simular llegada</button>';
     }
     card.innerHTML = h;
     if (S.view != null) renderPlayer();
@@ -359,6 +370,21 @@
     if (Math.abs(h - cardH) > 2) { cardH = h; document.documentElement.style.setProperty('--card-h', h + 'px'); }
   }
 
+  let seeking = false;
+  function paintSeek(c) {
+    const st = tour.stops[S.view], el = $('#seek'); if (!el) return;
+    const max = st.chunks.length - 1;
+    el.style.setProperty('--pct', (max ? 100 * c / max : 0) + '%');
+    $('#tNow').textContent = fmtTime(st.cum[c] / S.rate);
+  }
+  function seekTo(c) {
+    if (S.view == null) return;
+    const st = tour.stops[S.view];
+    if (P.stop !== S.view) { if (P.playing) pauseSpeech(); P.stop = S.view; }
+    P.c = Math.max(0, Math.min(c, st.chunks.length - 1));
+    if (P.playing) restartSpeech();
+    renderPlayer(true);
+  }
   function renderPlayer(scroll) {
     const btn = $('#btnPlay'); if (!btn || S.view == null) return;
     const st = tour.stops[S.view];
@@ -366,11 +392,11 @@
     const playing = active && P.playing;
     const started = active && (P.playing || P.c > 0);
     btn.innerHTML = playing ? ICON.pause + ' Pausar' : ICON.play + (started ? ' Continuar' : ' Escuchar · ' + st.min + ' min');
-    $('#prog').hidden = !started;
-    $('#pfill').style.width = (100 * Math.min(active ? P.c : 0, st.chunks.length) / st.chunks.length) + '%';
+    const c = active ? Math.min(P.c, st.chunks.length - 1) : 0;
+    if (!seeking) { $('#seek').value = c; paintSeek(c); }
     const pi = started ? st.chunks[Math.min(P.c, st.chunks.length - 1)].pi : -1;
     document.querySelectorAll('#cBody [data-p]').forEach(p => p.classList.toggle('is-reading', +p.dataset.p === pi));
-    if (scroll && playing && S.showText) {
+    if (scroll && started && S.showText) {
       const cur = document.querySelector('#cBody [data-p="' + pi + '"]');
       if (cur && cur.dataset.seen !== '1') {
         document.querySelectorAll('#cBody [data-p]').forEach(p => { p.dataset.seen = ''; });
@@ -465,11 +491,24 @@
         return;
       }
       if (act === 'restart') { resetTour(); return; }
+      if (act === 'back' || act === 'fwd') {
+        const cur = P.stop === S.view ? P.c : 0;
+        seekTo(cur + (act === 'back' ? -1 : 1));
+        return;
+      }
       if (act === 'sim-go' && S.target != null) { const t = tour.stops[S.target]; setPos(t.lat, t.lng, 5); return; }
       const p = e.target.closest('[data-p]');
       if (p && S.view != null) playStop(S.view, +p.dataset.p);
     });
 
+    $('#card').addEventListener('input', e => {
+      if (e.target.id !== 'seek') return;
+      seeking = true; paintSeek(+e.target.value);
+    });
+    $('#card').addEventListener('change', e => {
+      if (e.target.id !== 'seek') return;
+      seeking = false; seekTo(+e.target.value);
+    });
     $('#btnLocate').addEventListener('click', () => { if (S.pos) flyTo(S.pos[0], S.pos[1], 17); else fitRoute(); });
     $('#btnMenu').addEventListener('click', openSheet);
     $('#sheetClose').addEventListener('click', closeSheet);
