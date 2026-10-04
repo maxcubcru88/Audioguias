@@ -37,7 +37,7 @@
 
   // ---------- Estado ----------
   // view: parada que muestra la tarjeta (null = modo caminando)
-  const fresh = () => ({ mode: null, target: 0, visited: [], showText: false, rate: 1, voiceName: '', mapSaved: false, pos: null, acc: null, arrived: null, view: null });
+  const fresh = () => ({ mode: null, target: 0, visited: [], showText: false, rate: 1, voiceName: '', mapSaved: false, pos: null, acc: null, arrived: null, view: null, score: {}, askQuiz: true });
   let S = fresh();
   let catalog = null, city = null, routeMeta = null;
   const tourCache = {};
@@ -49,16 +49,17 @@
   function readJSON(key) { try { return JSON.parse(localStorage.getItem(key) || '{}'); } catch (e) { return {}; } }
   function load() {
     const d = STORE ? readJSON(STORE) : {};
-    ['mode', 'target', 'visited', 'mapSaved'].forEach(k => { if (k in d) S[k] = d[k]; });
+    ['mode', 'target', 'visited', 'mapSaved', 'score'].forEach(k => { if (k in d) S[k] = d[k]; });
     const pr = readJSON(PREFS);
+    if ('askQuiz' in pr) S.askQuiz = pr.askQuiz;
     if ('rate' in pr) S.rate = pr.rate; else if ('rate' in d) S.rate = d.rate;
     if ('voiceName' in pr) S.voiceName = pr.voiceName; else if ('voiceName' in d) S.voiceName = d.voiceName;
   }
   function save() {
     try {
-      const { mode, target, visited, mapSaved, rate, voiceName } = S;
-      if (STORE) localStorage.setItem(STORE, JSON.stringify({ mode, target, visited, mapSaved }));
-      localStorage.setItem(PREFS, JSON.stringify({ rate, voiceName }));
+      const { mode, target, visited, mapSaved, score, rate, voiceName, askQuiz } = S;
+      if (STORE) localStorage.setItem(STORE, JSON.stringify({ mode, target, visited, mapSaved, score }));
+      localStorage.setItem(PREFS, JSON.stringify({ rate, voiceName, askQuiz }));
     } catch (e) {}
   }
 
@@ -75,6 +76,10 @@
       if (st.toNext) parts.push('Para ir a la siguiente parada: ' + st.toNext);
       st.chunks = [];
       parts.forEach((p, pi) => {
+        if (st.quiz && st.quiz.before === pi) {
+          const q = st.quiz;
+          st.chunks.push({ pi, quiz: true, s: q.q + ' ' + q.options.map((o, k) => '¿' + o + '?').join(' ') });
+        }
         p.replace(/([.!?…])\s+(?=[A-ZÁÉÍÓÚÑ¿¡«"])/g, '$1\u0001').split('\u0001').forEach(s => {
           s = s.trim(); if (s) st.chunks.push({ pi, s });
         });
@@ -295,7 +300,55 @@
     renderPlayer();
   }
   function restartSpeech() { P.session++; synth.cancel(); setTimeout(speakNext, 60); }
-  function pauseSpeech() { P.playing = false; P.session++; if (synth) synth.cancel(); renderPlayer(); }
+  function pauseSpeech() { P.playing = false; P.session++; if (synth) synth.cancel(); cancelQuiz(); renderPlayer(); }
+
+  // ---------- Preguntas (como en un free tour: la guía pregunta y espera) ----------
+  const QUIZ_WAIT = 20000;
+  let Q = null, quizTimer = null;
+  function showQuiz(waiting) {
+    const box = $('#quiz'); if (!box || S.view == null) return;
+    const q = tour.stops[S.view].quiz;
+    box.innerHTML = '<p class="quiz-q">' + esc(q.q) + '</p>' +
+      '<div class="quiz-opts">' + q.options.map((o, k) => '<button type="button" class="quiz-opt" data-act="quiz" data-i="' + k + '"><b>' + 'ABC'[k] + '</b><span>' + esc(o) + '</span></button>').join('') + '</div>' +
+      '<div class="quiz-foot"><span class="quiz-timer"><span id="quizBar"></span></span><button type="button" class="link" data-act="quiz-skip">Saltar</button></div>';
+    box.hidden = false;
+    if (waiting) { const bar = $('#quizBar'); bar.style.animationDuration = (QUIZ_WAIT / 1000) + 's'; bar.classList.add('run'); }
+    measureCard();
+  }
+  function waitQuiz() {
+    Q = { stop: P.stop, c: P.c };
+    showQuiz(true);
+    clearTimeout(quizTimer);
+    quizTimer = setTimeout(() => answerQuiz(null), QUIZ_WAIT);
+  }
+  function cancelQuiz() {
+    clearTimeout(quizTimer); Q = null;
+    const box = $('#quiz'); if (box && !box.hidden) { box.hidden = true; box.innerHTML = ''; measureCard(); }
+  }
+  function answerQuiz(i) {
+    if (!Q || Q.stop !== P.stop) return;
+    clearTimeout(quizTimer);
+    const stopI = Q.stop, q = tour.stops[stopI].quiz, ok = i === q.answer;
+    Q = null;
+    if (i != null) { S.score[stopI] = ok; save(); }
+    document.querySelectorAll('#quiz .quiz-opt').forEach((b, k) => {
+      b.disabled = true;
+      if (k === q.answer) b.classList.add('is-right');
+      else if (k === i) b.classList.add('is-wrong');
+    });
+    const bar = $('#quizBar'); if (bar) bar.classList.remove('run');
+    const say = ok ? '¡Correcto!' : (i == null ? 'Te lo digo yo: ' : '¡Casi! ') + 'La respuesta es: ' + q.options[q.answer] + '.';
+    const id = ++P.session;
+    const next = () => {
+      if (id !== P.session) return;
+      setTimeout(() => { if (id !== P.session) return; cancelQuiz(); P.c++; speakNext(); }, 900);
+    };
+    if (!synth) { next(); return; }
+    const u = new SpeechSynthesisUtterance(say);
+    u.lang = voice ? voice.lang : tour.lang; if (voice) u.voice = voice; u.rate = S.rate;
+    u.onend = next; u.onerror = next;
+    synth.speak(u);
+  }
   function speakNext() {
     const st = tour.stops[P.stop];
     const id = ++P.session;
@@ -306,11 +359,18 @@
       S.view = null; renderCard(); refreshMap();
       return;
     }
-    const u = new SpeechSynthesisUtterance(st.chunks[P.c].s);
+    while (P.c < st.chunks.length - 1 && st.chunks[P.c].quiz && !S.askQuiz) P.c++;
+    const ch = st.chunks[P.c];
+    const u = new SpeechSynthesisUtterance(ch.s);
     u.lang = voice ? voice.lang : tour.lang;
     if (voice) u.voice = voice;
     u.rate = S.rate;
-    u.onend = () => { if (id !== P.session || !P.playing) return; P.c++; speakNext(); };
+    if (ch.quiz && S.askQuiz) showQuiz(false);
+    u.onend = () => {
+      if (id !== P.session || !P.playing) return;
+      if (ch.quiz && S.askQuiz) { waitQuiz(); return; }
+      P.c++; speakNext();
+    };
     u.onerror = e => {
       if (id !== P.session) return;
       if (e.error === 'interrupted' || e.error === 'canceled') return;
@@ -345,6 +405,7 @@
         '<p class="eyebrow' + (isArrival ? ' ok' : '') + '">' + (isArrival ? 'Has llegado' : 'Parada ' + (i + 1) + ' de ' + tour.stops.length) + '</p>' +
         '<h2 class="c-title">' + esc(st.title) + '</h2></div>' +
         '<button class="x" type="button" data-act="close" aria-label="Cerrar parada">' + ICON.close + '</button></div>' +
+        '<div class="quiz" id="quiz" hidden></div>' +
         '<div class="ctrl">' +
           '<button class="skip" type="button" data-act="back" aria-label="Retroceder una frase">' + ICON.back + '</button>' +
           '<button class="pbtn" id="btnPlay" type="button" data-act="play"></button>' +
@@ -360,6 +421,7 @@
     } else if (S.target == null) {
       h += '<div class="c-head"><span class="plaque">✓</span><div class="c-main"><p class="eyebrow ok">Recorrido completado</p><h2 class="c-title">¡Bravo!</h2></div></div>' +
         '<p class="c-text">Has visitado las ' + tour.stops.length + ' paradas. Puedes volver a escuchar cualquiera tocando su número en el mapa.</p>' +
+        (Object.keys(S.score).length ? '<p class="score">Has acertado <b>' + Object.values(S.score).filter(Boolean).length + ' de ' + Object.keys(S.score).length + '</b> preguntas</p>' : '') +
         '<button class="btn btn-primary btn-big" type="button" data-act="restart">Empezar de nuevo</button>';
     } else {
       const t = tour.stops[S.target];
@@ -397,6 +459,7 @@
     if (S.view == null) return;
     const st = tour.stops[S.view];
     if (P.stop !== S.view) { if (P.playing) pauseSpeech(); P.stop = S.view; }
+    cancelQuiz();
     P.c = Math.max(0, Math.min(c, st.chunks.length - 1));
     if (P.playing) restartSpeech();
     renderPlayer(true);
@@ -592,7 +655,7 @@
 
   // ---------- Eventos ----------
   function resetTour() {
-    pauseSpeech(); S.visited = []; S.target = 0; S.arrived = null; S.view = null; P.stop = -1; P.c = 0; save();
+    pauseSpeech(); S.visited = []; S.score = {}; S.target = 0; S.arrived = null; S.view = null; P.stop = -1; P.c = 0; save();
     closeSheet(); renderCard(); refreshMap(); fitRoute(); toast('Recorrido reiniciado.');
   }
   function begin(mode) {
@@ -618,6 +681,8 @@
       if (act === 'play') { if (P.playing && P.stop === S.view) pauseSpeech(); else playStop(S.view); return; }
       if (act === 'text') { if (Date.now() - swipedAt > 400) setText(!S.showText); return; }
       if (act === 'restart') { resetTour(); return; }
+      if (act === 'quiz') { answerQuiz(+b.dataset.i); return; }
+      if (act === 'quiz-skip') { if (Q) answerQuiz(null); else { cancelQuiz(); if (P.playing) { P.c++; restartSpeech(); } } return; }
       if (act === 'back' || act === 'fwd') {
         const cur = P.stop === S.view ? P.c : 0;
         seekTo(cur + (act === 'back' ? -1 : 1));
@@ -651,6 +716,7 @@
       showScreen('intro');
       $('#intro').scrollTop = 0;
     });
+    $('#optQuiz').addEventListener('change', e => { S.askQuiz = e.target.checked; save(); if (!S.askQuiz && Q) answerQuiz(null); });
     $('#optRate').addEventListener('change', e => { S.rate = parseFloat(e.target.value) || 1; save(); if (P.playing) restartSpeech(); });
     $('#optVoice').addEventListener('change', e => {
       voice = synth ? synth.getVoices().find(v => v.name === e.target.value) || null : null;
@@ -790,6 +856,7 @@
     refreshIntro();
     renderMeeting();
     $('#optRate').value = String(S.rate);
+    $('#optQuiz').checked = S.askQuiz;
     $('#offlineMsg').textContent = S.mapSaved ? 'Mapa de la zona guardado: funciona sin datos.' : 'El mapa de la zona se guarda solo al empezar, para usarlo sin datos.';
     if (synth) loadVoices();
 

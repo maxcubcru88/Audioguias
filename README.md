@@ -16,6 +16,7 @@ por ejemplo `.../Audioguias/#paris/centro`, y guarda su propio progreso.
 - Voz del propio móvil, con selector de voz y velocidad.
 - **GPS opcional**: con el GPS apagado avanzas tú, parada a parada («Ya estoy aquí» o tocando la parada). Sirve también para escuchar el tour desde casa.
 - Funciona sin conexión: la app se guarda al abrirla y el mapa de la zona se guarda solo al empezar una ruta.
+- Preguntas para adivinar en cada parada (se pueden desactivar), con marcador al final.
 - Recuerda qué paradas has visitado.
 
 Limitación: en iPhone, una web app solo usa el GPS y la voz con la pantalla encendida y la app abierta.
@@ -57,6 +58,9 @@ Cada archivo de ruta, como `data/paris/centro.json`, contiene:
   desde la portada de la ruta. Si falta, se usa la primera parada.
 - `stops`: cada parada tiene `title`, `subtitle`, `lat`, `lng`, `radius` (metros para el aviso),
   `where` (dónde ponerse), `paras` (párrafos del guion) y `toNext` (cómo llegar a la siguiente).
+- `quiz` (opcional, uno por parada): pregunta para adivinar, como en un free tour: `before` (antes de qué párrafo,
+  empezando en 0), `q` (la pregunta), `options` (tres respuestas) y `answer` (posición de la correcta, empezando en 0).
+  El párrafo siguiente debería contar la respuesta.
 - `legs`: la línea del recorrido entre paradas, como listas de puntos `[lat, lng]`.
   El tramo 0 va de la parada 1 a la 2, y así sucesivamente.
 
