@@ -635,5 +635,26 @@
         2.3275
       ]
     ]
-  ]
+  ],
+  "audio": {
+    "base": "audio/paris/centro/",
+    "credit": "Voz generada con IA (ElevenLabs)",
+    "stops": {
+      "hotel-de-ville": {
+        "paras": [
+          "hotel-de-ville-p0.mp3",
+          "hotel-de-ville-p1.mp3",
+          "hotel-de-ville-p2.mp3",
+          "hotel-de-ville-p3.mp3",
+          "hotel-de-ville-p4.mp3",
+          "hotel-de-ville-p5.mp3",
+          "hotel-de-ville-p6.mp3"
+        ],
+        "quiz": "hotel-de-ville-q.mp3",
+        "ok": "hotel-de-ville-ok.mp3",
+        "ko": "hotel-de-ville-ko.mp3",
+        "skip": "hotel-de-ville-skip.mp3"
+      }
+    }
+  }
 }
