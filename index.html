@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:wght@700&display=swap">
 <link rel="stylesheet" href="vendor/maplibre/maplibre-gl.css">
-<link rel="stylesheet" href="css/app.css?v=24">
+<link rel="stylesheet" href="css/app.css?v=25">
 </head>
 <body>
 
@@ -65,11 +65,21 @@
 <div id="intro" class="screen intro" hidden>
   <div class="screen-inner intro-card">
     <a class="back" id="introBack" href="#">‹ Volver</a>
-    <span id="introSign"></span>
-    <p class="eyebrow" id="introLabel"></p>
+    <div class="intro-top"><span id="introSign"></span><p class="eyebrow" id="introLabel"></p></div>
     <h1 id="introTitle"></h1>
     <p class="intro-sub" id="introSub"></p>
     <p class="intro-stats" id="introStats"></p>
+    <button class="btn btn-primary btn-big" id="startGps" type="button">Empezar el recorrido</button>
+    <div class="opts-box">
+      <label class="switch-row" for="gpsIntro">
+        <span><span class="sw-title">Usar GPS</span><span class="help">Apágalo para avanzar tú, parada a parada. Sirve también para escucharla desde casa.</span></span>
+        <input type="checkbox" id="gpsIntro" class="switch" checked>
+      </label>
+      <label class="switch-row" for="optQuiz">
+        <span><span class="sw-title">Preguntas</span><span class="help">En cada parada te hago una pregunta para que intentes adivinar.</span></span>
+        <input type="checkbox" id="optQuiz" class="switch" checked>
+      </label>
+    </div>
     <section class="meet" id="meet" hidden>
       <p class="eyebrow">Punto de encuentro</p>
       <p class="meet-name" id="meetName"></p>
@@ -80,16 +90,7 @@
         <a class="btn btn-ghost" id="mapsLink" href="#" target="_blank" rel="noopener">Abrir en Google Maps</a>
       </div>
     </section>
-    <p class="intro-tip">Ponte los auriculares y lleva la pantalla encendida: la app te avisa al llegar a cada parada y empieza a contarte la historia. Y como en un free tour, de vez en cuando te hará una pregunta para que adivines.</p>
-    <button class="btn btn-primary btn-big" id="startGps" type="button">Empezar el recorrido</button>
-    <label class="switch-row" for="gpsIntro">
-      <span><span class="sw-title">Usar GPS</span><span class="help">Apágalo para avanzar tú, parada a parada. Sirve también para escucharla desde casa.</span></span>
-      <input type="checkbox" id="gpsIntro" class="switch" checked>
-    </label>
-    <label class="switch-row" for="optQuiz">
-      <span><span class="sw-title">Preguntas</span><span class="help">En cada parada te hago una pregunta para que intentes adivinar.</span></span>
-      <input type="checkbox" id="optQuiz" class="switch" checked>
-    </label>
+    <p class="intro-tip">Ponte los auriculares y lleva la pantalla encendida: la app te avisa al llegar a cada parada y empieza a contarte la historia.</p>
   </div>
 </div>
 
@@ -127,6 +128,6 @@
 <div id="toast" class="toast" hidden></div>
 
 <script src="vendor/maplibre/maplibre-gl.js"></script>
-<script src="js/app.js?v=24"></script>
+<script src="js/app.js?v=25"></script>
 </body>
 </html>
