@@ -227,8 +227,8 @@
   function setMode(mode) {
     S.mode = mode; gpsError = ''; save();
     $('#modeBadge').hidden = mode !== 'sim';
-    $('#modeGps').setAttribute('aria-pressed', String(mode === 'gps'));
-    $('#modeSim').setAttribute('aria-pressed', String(mode === 'sim'));
+    $('#gpsSheet').checked = mode === 'gps';
+    $('#gpsIntro').checked = mode === 'gps';
     if (mode === 'gps') { S.pos = null; startGps(); renderCard(); }
     else {
       stopGps();
@@ -374,7 +374,7 @@
         (d != null ? '<span class="c-dist">' + fmtDist(d) + '</span>' : '') + '</div>' +
         '<p class="c-text">' + esc(how) + '</p>';
       if (S.mode === 'gps' && !S.pos) h += '<p class="c-text muted">' + esc(gpsError || 'Buscando tu posición…') + '</p>';
-      if (S.mode === 'sim') h += '<button class="btn btn-ghost btn-big" type="button" data-act="sim-go">Simular llegada</button>';
+      if (S.mode === 'sim') h += '<button class="btn btn-ghost btn-big" type="button" data-act="sim-go">Ya estoy aquí</button>';
     }
     card.innerHTML = h;
     card.classList.toggle('is-open', S.view != null && S.showText);
@@ -606,8 +606,7 @@
   }
   function bind() {
     bindSwipe();
-    $('#startGps').addEventListener('click', () => begin('gps'));
-    $('#startSim').addEventListener('click', () => begin('sim'));
+    $('#startGps').addEventListener('click', () => begin($('#gpsIntro').checked ? 'gps' : 'sim'));
 
     $('#card').addEventListener('click', e => {
       const b = e.target.closest('[data-act]');
@@ -642,8 +641,7 @@
       const b = e.target.closest('.si'); if (!b) return;
       closeSheet(); openView(+b.dataset.i);
     });
-    $('#modeGps').addEventListener('click', () => setMode('gps'));
-    $('#modeSim').addEventListener('click', () => setMode('sim'));
+    $('#gpsSheet').addEventListener('change', e => setMode(e.target.checked ? 'gps' : 'sim'));
     $('#optRate').addEventListener('change', e => { S.rate = parseFloat(e.target.value) || 1; save(); if (P.playing) restartSpeech(); });
     $('#optVoice').addEventListener('change', e => {
       voice = synth ? synth.getVoices().find(v => v.name === e.target.value) || null : null;
@@ -781,6 +779,7 @@
     $('#introStats').textContent = tour.stops.length + ' paradas · ' + fmtDist(tour.totalM) + ' a pie · unas ' + hours + ' horas';
     $('#sheetTitle').textContent = tour.title;
     $('#sheetSub').textContent = tour.stops.length + ' paradas · ' + fmtDist(tour.totalM) + ' · unas ' + hours + ' h';
+    $('#gpsIntro').checked = S.mode !== 'sim';
     $('#startGps').textContent = (S.visited.length && S.target != null) ? 'Continuar el recorrido (' + S.visited.length + '/' + tour.stops.length + ')' : 'Empezar el recorrido';
     $('#optRate').value = String(S.rate);
     $('#offlineMsg').textContent = S.mapSaved ? 'Mapa de la zona guardado: funciona sin datos.' : 'El mapa de la zona se guarda solo al empezar, para usarlo sin datos.';
