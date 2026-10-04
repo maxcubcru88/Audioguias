@@ -309,7 +309,7 @@
 
   // ---------- Tarjeta ----------
   function openView(i) {
-    S.view = i;
+    S.view = i; S.showText = false;
     renderCard(); refreshMap();
     const st = tour.stops[i];
     flyTo(st.lat, st.lng, 16.5);
@@ -325,7 +325,8 @@
     if (S.view != null) {
       const i = S.view, st = tour.stops[i];
       const isArrival = i === S.arrived;
-      h += '<div class="c-head"><span class="plaque">' + pad(i + 1) + '</span><div class="c-main">' +
+      h += '<button class="grab" id="grab" type="button" data-act="text" aria-label="' + (S.showText ? 'Ocultar texto' : 'Ver texto') + '"><span></span></button>' +
+        '<div class="c-head"><span class="plaque">' + pad(i + 1) + '</span><div class="c-main">' +
         '<p class="eyebrow' + (isArrival ? ' ok' : '') + '">' + (isArrival ? 'Has llegado' : 'Parada ' + (i + 1) + ' de ' + tour.stops.length) + '</p>' +
         '<h2 class="c-title">' + esc(st.title) + '</h2></div>' +
         '<button class="x" type="button" data-act="close" aria-label="Cerrar parada">' + ICON.close + '</button></div>' +
@@ -337,8 +338,7 @@
         '</div>' +
         '<div class="seek"><input type="range" id="seek" min="0" max="' + (st.chunks.length - 1) + '" step="1" value="0" aria-label="Posición en la explicación">' +
           '<div class="times"><span id="tNow">0:00</span><span>' + fmtTime(st.secs) + '</span></div></div>' +
-        '<button class="txt-toggle" id="txtToggle" type="button" data-act="text" aria-expanded="' + S.showText + '" aria-controls="cBody">' +
-          '<span id="txtLabel">' + (S.showText ? 'Ocultar texto' : 'Ver texto') + '</span>' + ICON.chevron + '</button>' +
+        '<p class="hint" id="hint"' + (S.showText ? ' hidden' : '') + '>Desliza hacia arriba para leer el texto</p>' +
         '<div class="c-body" id="cBody"' + (S.showText ? '' : ' hidden') + '>' +
           st.paras.map((p, pi) => '<p class="para" data-p="' + pi + '">' + esc(p) + '</p>').join('') +
           (st.toNext ? '<p class="next-box" data-p="' + st.paras.length + '"><b>Camino a la siguiente · ' + fmtDist(st.legNext) + '</b>' + esc(st.toNext) + '</p>' : '') +
@@ -361,6 +361,7 @@
       if (S.mode === 'sim') h += '<button class="btn btn-ghost btn-big" type="button" data-act="sim-go">Simular llegada</button>';
     }
     card.innerHTML = h;
+    card.classList.toggle('is-open', S.view != null && S.showText);
     if (S.view != null) renderPlayer();
     measureCard();
   }
@@ -404,6 +405,39 @@
         cur.scrollIntoView({ block: 'nearest', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
       }
     }
+  }
+
+  // Texto: se despliega deslizando la tarjeta hacia arriba y se recoge deslizando hacia abajo.
+  function setText(on) {
+    if (S.view == null || on === S.showText) return;
+    S.showText = on;
+    const card = $('#card');
+    $('#cBody').hidden = !on;
+    $('#hint').hidden = on;
+    $('#grab').setAttribute('aria-label', on ? 'Ocultar texto' : 'Ver texto');
+    card.classList.toggle('is-open', on);
+    if (!on) card.scrollTop = 0;
+    measureCard();
+    if (on) renderPlayer(true);
+  }
+  let swipedAt = 0;
+  function bindSwipe() {
+    const card = $('#card');
+    let y0 = null, top0 = 0;
+    const start = (y, target) => {
+      if (S.view == null || (target && target.closest('input'))) { y0 = null; return; }
+      y0 = y; top0 = card.scrollTop;
+    };
+    const end = y => {
+      if (y0 == null) return;
+      const dy = y - y0; y0 = null;
+      if (dy < -40 && !S.showText) { setText(true); swipedAt = Date.now(); }
+      else if (dy > 50 && S.showText && top0 <= 0) { setText(false); swipedAt = Date.now(); }
+    };
+    card.addEventListener('touchstart', e => start(e.touches[0].clientY, e.target), { passive: true });
+    card.addEventListener('touchend', e => end(e.changedTouches[0].clientY), { passive: true });
+    card.addEventListener('mousedown', e => start(e.clientY, e.target));
+    window.addEventListener('mouseup', e => end(e.clientY));
   }
 
   // ---------- Paradas y ajustes ----------
@@ -473,6 +507,7 @@
     if (!S.mapSaved) setTimeout(saveOffline, 4000);
   }
   function bind() {
+    bindSwipe();
     $('#startGps').addEventListener('click', () => begin('gps'));
     $('#startSim').addEventListener('click', () => begin('sim'));
 
@@ -481,15 +516,7 @@
       const act = b && b.dataset.act;
       if (act === 'close') { closeView(); return; }
       if (act === 'play') { if (P.playing && P.stop === S.view) pauseSpeech(); else playStop(S.view); return; }
-      if (act === 'text') {
-        S.showText = !S.showText; save();
-        $('#cBody').hidden = !S.showText;
-        $('#txtLabel').textContent = S.showText ? 'Ocultar texto' : 'Ver texto';
-        $('#txtToggle').setAttribute('aria-expanded', String(S.showText));
-        measureCard();
-        if (S.showText) renderPlayer(true);
-        return;
-      }
+      if (act === 'text') { if (Date.now() - swipedAt > 400) setText(!S.showText); return; }
       if (act === 'restart') { resetTour(); return; }
       if (act === 'back' || act === 'fwd') {
         const cur = P.stop === S.view ? P.c : 0;
