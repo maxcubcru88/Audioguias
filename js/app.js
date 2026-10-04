@@ -128,7 +128,7 @@
         paint: { 'line-color': '#8A97A1', 'line-width': 4, 'line-dasharray': [0.5, 2] } });
       map.addLayer({ id: 'legs-main', type: 'line', source: 'legs', filter: ['!=', ['get', 'state'], 'done'],
         layout: { 'line-cap': 'round', 'line-join': 'round' },
-        paint: { 'line-color': '#1E3E66', 'line-width': ['match', ['get', 'state'], 'next', 6, 4], 'line-opacity': ['match', ['get', 'state'], 'next', 1, .55] } });
+        paint: { 'line-color': routeColor(), 'line-width': ['match', ['get', 'state'], 'next', 6, 4], 'line-opacity': ['match', ['get', 'state'], 'next', 1, .55] } });
       res();
     }));
     map.on('click', e => {
@@ -153,7 +153,7 @@
     });
     map.resize();
     map.fitBounds(routeBounds(), { padding: { top: 64, bottom: 220, left: 36, right: 64 }, duration: 0 });
-    mapReady.then(refreshMap);
+    mapReady.then(() => { map.setPaintProperty('legs-main', 'line-color', routeColor()); refreshMap(); });
   }
   function fitRoute() { map.fitBounds(routeBounds(), { padding: fitPad(), duration: 600 }); }
   function flyTo(lat, lng, zoom) {
@@ -649,6 +649,15 @@
     $('#tourUI').hidden = name !== 'tour';
     closeSheet();
   }
+  const THEME_VARS = { accent: '--accent', accent2: '--accent-2', plaque: '--plaque', plaqueFrame: '--plaque-frame', plaqueInk: '--plaque-ink', plaqueLine: '--plaque-line' };
+  function applyTheme(c) {
+    const st = document.documentElement.style;
+    Object.values(THEME_VARS).forEach(v => st.removeProperty(v));
+    if (c && c.theme) Object.entries(THEME_VARS).forEach(([k, v]) => { if (c.theme[k]) st.setProperty(v, c.theme[k]); });
+    const mc = document.querySelector('meta[name="theme-color"]');
+    if (mc) mc.setAttribute('content', (c && c.theme && c.theme.accent) || '#1E3E66');
+  }
+  const routeColor = () => (city && city.theme && city.theme.accent) || '#1E3E66';
   function signHTML(c, small) {
     return '<span class="sign sign-' + c.sign + (small ? ' sm' : '') + '">' + esc(c.signText) + (c.signSmall ? ' <small>' + esc(c.signSmall) + '</small>' : '') + '</span>';
   }
@@ -676,12 +685,14 @@
 
   function renderHome() {
     leaveRoute();
+    applyTheme(null);
     document.title = catalog.app;
     $('#cityList').innerHTML = catalog.cities.map(c => {
       const n = readyRoutes(c).length;
       const wip = c.status !== 'ready' || !n;
       const meta = wip ? 'En preparación · ' + (c.routes || []).length + ' rutas previstas' : n + (n > 1 ? ' rutas disponibles' : ' ruta disponible') + ' · ' + esc(c.country);
-      return '<li><a class="city-card' + (wip ? ' is-wip' : '') + '" href="#' + c.id + '">' + signHTML(c, true) +
+      const pic = c.icon ? '<img class="cc-icon" src="' + esc(c.icon) + '" alt="" width="64" height="64">' : signHTML(c, true);
+      return '<li><a class="city-card' + (wip ? ' is-wip' : '') + '" href="#' + c.id + '">' + pic +
         '<span><span class="cc-name">' + esc(c.name) + '</span><span class="cc-meta">' + meta + '</span></span>' +
         (wip ? '<span class="badge">WIP</span>' : '<span class="chev" aria-hidden="true">›</span>') + '</a></li>';
     }).join('');
@@ -692,6 +703,7 @@
     leaveRoute();
     city = catalog.cities.find(c => c.id === cid);
     if (!city) { location.hash = ''; return; }
+    applyTheme(city);
     document.title = city.name + ' · ' + catalog.app;
     $('#citySign').innerHTML = signHTML(city);
     $('#cityName').textContent = city.name;
@@ -723,6 +735,7 @@
     if (tour && routeMeta === r) { showScreen('intro'); return; }
     leaveRoute();
     city = c; routeMeta = r;
+    applyTheme(c);
     try { tour = await getTour(c, r); }
     catch (e) { toast('No se pudo cargar la ruta. Comprueba la conexión.'); location.hash = c.id; return; }
     STORE = 'audioguia-' + c.id + '-' + r.id + '-v1';

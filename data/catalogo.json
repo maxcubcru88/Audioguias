@@ -34,7 +34,16 @@
           "subtitle": "Pintores, molinos y el barrio más vivo de París",
           "status": "wip"
         }
-      ]
+      ],
+      "icon": "icons/ciudades/paris.svg",
+      "theme": {
+        "accent": "#1E3E66",
+        "accent2": "#3C7A57",
+        "plaque": "#1E3E66",
+        "plaqueFrame": "#3C7A57",
+        "plaqueInk": "#FFFFFF",
+        "plaqueLine": "rgba(255,255,255,.9)"
+      }
     },
     {
       "id": "londres",
@@ -60,7 +69,16 @@
           "subtitle": "San Pablo, el Puente del Milenio y la Torre de Londres",
           "status": "wip"
         }
-      ]
+      ],
+      "icon": "icons/ciudades/londres.svg",
+      "theme": {
+        "accent": "#C8102E",
+        "accent2": "#C8102E",
+        "plaque": "#FFFFFF",
+        "plaqueFrame": "#1B2430",
+        "plaqueInk": "#1B2430",
+        "plaqueLine": "#1B2430"
+      }
     },
     {
       "id": "sevilla",
@@ -86,7 +104,16 @@
           "subtitle": "Plaza de España, la Torre del Oro y el barrio de Triana",
           "status": "wip"
         }
-      ]
+      ],
+      "icon": "icons/ciudades/sevilla.svg",
+      "theme": {
+        "accent": "#A63D25",
+        "accent2": "#A63D25",
+        "plaque": "#FBF7EC",
+        "plaqueFrame": "#C9962B",
+        "plaqueInk": "#1F3F8F",
+        "plaqueLine": "#1F3F8F"
+      }
     }
   ]
 }
