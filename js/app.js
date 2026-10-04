@@ -86,6 +86,7 @@
         });
       });
       st.words = parts.join(' ').split(/\s+/).length;
+      st.images = (st.images || (st.image ? [st.image] : [])).slice().sort((a, b) => a.para - b.para);
       const au = t.audio && t.audio.stops && t.audio.stops[st.id];
       if (au && au.paras && au.paras.length === parts.length) {
         // Audio grabado: un archivo por párrafo y otro para la pregunta
@@ -512,7 +513,8 @@
         '<div class="c-head"><span class="plaque">' + pad(i + 1) + '</span><div class="c-main">' +
         '<p class="eyebrow' + (isArrival ? ' ok' : '') + '">' + (isArrival ? 'Has llegado' : 'Parada ' + (i + 1) + ' de ' + tour.stops.length) + '</p>' +
         '<h2 class="c-title">' + esc(st.title) + '</h2></div>' +
-        (st.image ? '<button class="c-thumb" type="button" data-act="img" aria-label="Ver imagen: ' + esc(st.image.caption) + '"><img src="' + esc(st.image.src) + '" alt=""></button>' : '') +
+        (st.images.length ? '<button class="c-thumb" type="button" data-act="img" data-i="0" aria-label="Ver imágenes de la parada"><img src="' + esc(st.images[0].src) + '" alt="">' +
+          (st.images.length > 1 ? '<span class="c-count">' + st.images.length + '</span>' : '') + '</button>' : '') +
         '<button class="x" type="button" data-act="close" aria-label="Cerrar parada">' + ICON.close + '</button></div>' +
         '<div class="quiz" id="quiz" hidden></div>' +
         '<div class="ctrl">' +
@@ -524,7 +526,7 @@
         '</div>' +
         '<div class="c-body" id="cBody"' + (S.showText ? '' : ' hidden') + '>' +
           '<p class="where"><b>Dónde ponerte</b>' + esc(st.where) + '</p>' +
-          st.paras.map((p, pi) => (st.image && st.image.para === pi ? figureHTML(st.image) : '') + '<p class="para" data-p="' + pi + '">' + esc(p) + '</p>').join('') +
+          st.paras.map((p, pi) => st.images.map((im, k) => im.para === pi ? figureHTML(im, k) : '').join('') + '<p class="para" data-p="' + pi + '">' + esc(p) + '</p>').join('') +
           (st.toNext ? '<p class="next-box" data-p="' + st.paras.length + '"><b>Camino a la siguiente · ' + fmtDist(st.legNext) + '</b>' + esc(st.toNext) + '</p>' : '') +
         '</div>';
     } else if (S.target == null) {
@@ -552,21 +554,36 @@
     measureCard();
   }
 
-  // ---------- Imágenes: una por parada, en el texto, en miniatura y a pantalla completa ----------
-  function figureHTML(im) {
-    return '<figure class="fig" data-act="img"><img src="' + esc(im.src) + '" alt="' + esc(im.caption) + '" loading="lazy"' +
+  // ---------- Imágenes: en el texto, en miniatura junto al título y a pantalla completa ----------
+  function figureHTML(im, k) {
+    return '<figure class="fig" data-act="img" data-i="' + k + '"><img src="' + esc(im.src) + '" alt="' + esc(im.caption) + '" loading="lazy"' +
       (im.w ? ' width="' + im.w + '" height="' + im.h + '"' : '') + '>' +
       '<figcaption>' + esc(im.caption) + (im.credit ? '<span class="credit">' + esc(im.credit) + '</span>' : '') + '</figcaption></figure>';
   }
-  function openImage(i) {
-    const im = tour.stops[i] && tour.stops[i].image; if (!im) return;
+  // Imagen que toca según el párrafo que se está leyendo (la última que ya ha salido)
+  function imageAt(st, pi) {
+    let k = 0;
+    st.images.forEach((im, j) => { if (pi >= 0 && im.para <= pi) k = j; });
+    return k;
+  }
+  const LB = { stop: -1, k: 0 };
+  function openImage(i, k) {
+    const st = tour.stops[i]; if (!st || !st.images.length) return;
+    LB.stop = i; showImage(k || 0);
+    $('#lightbox').hidden = false;
+  }
+  function showImage(k) {
+    const list = tour.stops[LB.stop].images, n = list.length;
+    LB.k = (k + n) % n;
+    const im = list[LB.k];
     $('#lbImg').src = im.src; $('#lbImg').alt = im.caption;
     $('#lbCaption').textContent = im.caption;
     $('#lbCredit').textContent = im.credit || '';
     const a = $('#lbLink');
     a.hidden = !im.source; a.href = im.source || '#';
     a.textContent = /wikimedia\.org/.test(im.source || '') ? 'Ver en Wikimedia Commons' : 'Ver la fuente';
-    $('#lightbox').hidden = false;
+    $('#lbNav').hidden = n < 2;
+    $('#lbCount').textContent = (LB.k + 1) + ' / ' + n;
   }
   function closeImage() { $('#lightbox').hidden = true; }
   // Guarda las imágenes de la ruta para verlas sin conexión
@@ -575,7 +592,7 @@
     try {
       const c = await caches.open(MEDIA_CACHE);
       for (const st of tour.stops) {
-        if (st.image && !(await c.match(st.image.src))) { try { await c.add(st.image.src); } catch (e) {} }
+        for (const im of st.images) { if (!(await c.match(im.src))) { try { await c.add(im.src); } catch (e) {} } }
       }
     } catch (e) {}
   }
@@ -637,7 +654,12 @@
     const pi = started ? st.chunks[Math.min(P.c, st.chunks.length - 1)].pi : -1;
     document.querySelectorAll('#cBody [data-p]').forEach(p => p.classList.toggle('is-reading', +p.dataset.p === pi));
     // La miniatura se ilumina mientras la guía habla de lo que muestra
-    const th = $('#card .c-thumb'); if (th) th.classList.toggle('is-now', !!(playing && st.image && st.image.para === pi));
+    const th = $('#card .c-thumb');
+    if (th) {
+      const k = imageAt(st, pi);
+      if (+th.dataset.i !== k) { th.dataset.i = k; th.querySelector('img').src = st.images[k].src; }
+      th.classList.toggle('is-now', !!(playing && st.images[k].para === pi));
+    }
     if (scroll && started && S.showText && pi !== lastFollowPi) { lastFollowPi = pi; followReading(); }
   }
 
@@ -837,7 +859,7 @@
       const b = e.target.closest('[data-act]');
       const act = b && b.dataset.act;
       if (act === 'close') { closeView(); return; }
-      if (act === 'img') { if (Date.now() - swipedAt > 400) openImage(S.view); return; }
+      if (act === 'img') { if (Date.now() - swipedAt > 400) openImage(S.view, +b.dataset.i || 0); return; }
       if (act === 'play') { if (P.playing && P.stop === S.view) pauseSpeech(); else playStop(S.view); return; }
       if (act === 'text') { if (Date.now() - swipedAt > 400) setText(!S.showText); return; }
       if (act === 'restart') { resetTour(); return; }
@@ -899,8 +921,26 @@
       b.textContent = 'Reiniciar el recorrido'; resetArmed = 0;
       resetTour();
     });
-    $('#lightbox').addEventListener('click', e => { if (!e.target.closest('a')) closeImage(); });
-    document.addEventListener('keydown', e => { if (e.key === 'Escape' && !$('#lightbox').hidden) closeImage(); });
+    // Visor: tocar fuera cierra; flechas o deslizar a los lados para pasar de imagen
+    let lbX = null, lbSwiped = 0;
+    $('#lightbox').addEventListener('click', e => {
+      if (e.target.closest('a')) return;
+      const nav = e.target.closest('[data-lb]');
+      if (nav) { showImage(LB.k + (nav.dataset.lb === 'next' ? 1 : -1)); return; }
+      if (Date.now() - lbSwiped > 400) closeImage();
+    });
+    $('#lightbox').addEventListener('touchstart', e => { lbX = e.touches[0].clientX; }, { passive: true });
+    $('#lightbox').addEventListener('touchend', e => {
+      if (lbX == null) return;
+      const dx = e.changedTouches[0].clientX - lbX; lbX = null;
+      if (Math.abs(dx) > 50 && tour.stops[LB.stop].images.length > 1) { lbSwiped = Date.now(); showImage(LB.k + (dx < 0 ? 1 : -1)); }
+    }, { passive: true });
+    document.addEventListener('keydown', e => {
+      if ($('#lightbox').hidden) return;
+      if (e.key === 'Escape') closeImage();
+      else if (e.key === 'ArrowRight') showImage(LB.k + 1);
+      else if (e.key === 'ArrowLeft') showImage(LB.k - 1);
+    });
     window.addEventListener('resize', () => measureCard());
   }
 
