@@ -11,6 +11,7 @@
   // Mapa gratuito, sin clave y sin límites: https://openfreemap.org
   const STYLE_URL = 'https://tiles.openfreemap.org/styles/positron';
   const MAP_CACHE = 'map-v1';
+  const MEDIA_CACHE = 'media-v1';          // imágenes de las rutas (sw.js usa el mismo nombre)
   const WPM = 150;
 
   const $ = s => document.querySelector(s);
@@ -511,6 +512,7 @@
         '<div class="c-head"><span class="plaque">' + pad(i + 1) + '</span><div class="c-main">' +
         '<p class="eyebrow' + (isArrival ? ' ok' : '') + '">' + (isArrival ? 'Has llegado' : 'Parada ' + (i + 1) + ' de ' + tour.stops.length) + '</p>' +
         '<h2 class="c-title">' + esc(st.title) + '</h2></div>' +
+        (st.image ? '<button class="c-thumb" type="button" data-act="img" aria-label="Ver imagen: ' + esc(st.image.caption) + '"><img src="' + esc(st.image.src) + '" alt=""></button>' : '') +
         '<button class="x" type="button" data-act="close" aria-label="Cerrar parada">' + ICON.close + '</button></div>' +
         '<div class="quiz" id="quiz" hidden></div>' +
         '<div class="ctrl">' +
@@ -522,7 +524,7 @@
         '</div>' +
         '<div class="c-body" id="cBody"' + (S.showText ? '' : ' hidden') + '>' +
           '<p class="where"><b>Dónde ponerte</b>' + esc(st.where) + '</p>' +
-          st.paras.map((p, pi) => '<p class="para" data-p="' + pi + '">' + esc(p) + '</p>').join('') +
+          st.paras.map((p, pi) => (st.image && st.image.para === pi ? figureHTML(st.image) : '') + '<p class="para" data-p="' + pi + '">' + esc(p) + '</p>').join('') +
           (st.toNext ? '<p class="next-box" data-p="' + st.paras.length + '"><b>Camino a la siguiente · ' + fmtDist(st.legNext) + '</b>' + esc(st.toNext) + '</p>' : '') +
         '</div>';
     } else if (S.target == null) {
@@ -548,6 +550,34 @@
     card.classList.toggle('is-open', S.view != null && S.showText);
     if (S.view != null) renderPlayer();
     measureCard();
+  }
+
+  // ---------- Imágenes: una por parada, en el texto, en miniatura y a pantalla completa ----------
+  function figureHTML(im) {
+    return '<figure class="fig" data-act="img"><img src="' + esc(im.src) + '" alt="' + esc(im.caption) + '" loading="lazy"' +
+      (im.w ? ' width="' + im.w + '" height="' + im.h + '"' : '') + '>' +
+      '<figcaption>' + esc(im.caption) + (im.credit ? '<span class="credit">' + esc(im.credit) + '</span>' : '') + '</figcaption></figure>';
+  }
+  function openImage(i) {
+    const im = tour.stops[i] && tour.stops[i].image; if (!im) return;
+    $('#lbImg').src = im.src; $('#lbImg').alt = im.caption;
+    $('#lbCaption').textContent = im.caption;
+    $('#lbCredit').textContent = im.credit || '';
+    const a = $('#lbLink');
+    a.hidden = !im.source; a.href = im.source || '#';
+    a.textContent = /wikimedia\.org/.test(im.source || '') ? 'Ver en Wikimedia Commons' : 'Ver la fuente';
+    $('#lightbox').hidden = false;
+  }
+  function closeImage() { $('#lightbox').hidden = true; }
+  // Guarda las imágenes de la ruta para verlas sin conexión
+  async function cacheImages() {
+    if (!('caches' in window) || !navigator.onLine) return;
+    try {
+      const c = await caches.open(MEDIA_CACHE);
+      for (const st of tour.stops) {
+        if (st.image && !(await c.match(st.image.src))) { try { await c.add(st.image.src); } catch (e) {} }
+      }
+    } catch (e) {}
   }
 
   function measureCard() {
@@ -606,6 +636,8 @@
     if (!seeking) { $('#seek').value = v; paintSeek(v); }
     const pi = started ? st.chunks[Math.min(P.c, st.chunks.length - 1)].pi : -1;
     document.querySelectorAll('#cBody [data-p]').forEach(p => p.classList.toggle('is-reading', +p.dataset.p === pi));
+    // La miniatura se ilumina mientras la guía habla de lo que muestra
+    const th = $('#card .c-thumb'); if (th) th.classList.toggle('is-now', !!(playing && st.image && st.image.para === pi));
     if (scroll && started && S.showText && pi !== lastFollowPi) { lastFollowPi = pi; followReading(); }
   }
 
@@ -791,6 +823,7 @@
     measureCard();
     setMode(mode);
     if (!S.mapSaved) setTimeout(saveOffline, 4000);
+    setTimeout(cacheImages, 2500);
   }
   function bind() {
     bindSwipe();
@@ -804,6 +837,7 @@
       const b = e.target.closest('[data-act]');
       const act = b && b.dataset.act;
       if (act === 'close') { closeView(); return; }
+      if (act === 'img') { if (Date.now() - swipedAt > 400) openImage(S.view); return; }
       if (act === 'play') { if (P.playing && P.stop === S.view) pauseSpeech(); else playStop(S.view); return; }
       if (act === 'text') { if (Date.now() - swipedAt > 400) setText(!S.showText); return; }
       if (act === 'restart') { resetTour(); return; }
@@ -865,6 +899,8 @@
       b.textContent = 'Reiniciar el recorrido'; resetArmed = 0;
       resetTour();
     });
+    $('#lightbox').addEventListener('click', e => { if (!e.target.closest('a')) closeImage(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape' && !$('#lightbox').hidden) closeImage(); });
     window.addEventListener('resize', () => measureCard());
   }
 

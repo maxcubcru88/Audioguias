@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:wght@700&display=swap">
 <link rel="stylesheet" href="vendor/maplibre/maplibre-gl.css">
-<link rel="stylesheet" href="css/app.css?v=26">
+<link rel="stylesheet" href="css/app.css?v=27">
 </head>
 <body>
 
@@ -126,9 +126,19 @@
   </div>
 </div>
 
+<!-- Imagen a pantalla completa -->
+<div id="lightbox" class="lightbox" hidden role="dialog" aria-modal="true" aria-label="Imagen de la parada">
+  <button class="round lb-close" type="button" aria-label="Cerrar imagen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <img id="lbImg" alt="">
+  <div class="lb-cap">
+    <p id="lbCaption"></p>
+    <p class="lb-credit"><span id="lbCredit"></span> <a id="lbLink" href="#" target="_blank" rel="noopener">Ver en Wikimedia Commons</a></p>
+  </div>
+</div>
+
 <div id="toast" class="toast" hidden></div>
 
 <script src="vendor/maplibre/maplibre-gl.js"></script>
-<script src="js/app.js?v=26"></script>
+<script src="js/app.js?v=27"></script>
 </body>
 </html>

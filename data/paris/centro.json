@@ -27,6 +27,15 @@
         "Una curiosidad política. Después de la Comuna, el Estado le tenía tanto miedo a París que la dejó sin alcalde elegido durante más de cien años. Como lo oyes. Hasta 1977 la ciudad no volvió a tener uno, y fue nada menos que Jacques Chirac.",
         "Y la última, para los románticos. Aquí delante se hizo en 1950 una de las fotos más famosas del mundo: El beso del Hôtel de Ville, de Robert Doisneau. Una pareja besándose entre la multitud, pura espontaneidad parisina… o eso parecía. Años después se supo que eran dos estudiantes de teatro y que el beso se repitió para la cámara. Total, que el beso más romántico de París fue un beso de encargo. Bienvenido a París."
       ],
+      "image": {
+        "src": "img/paris/centro/hotel-de-ville.webp",
+        "w": 1100,
+        "h": 598,
+        "para": 2,
+        "caption": "La plaza de Grève y su puerto, en 1752",
+        "credit": "Nicolas-Jean-Baptiste Raguenet · Museo Carnavalet · Dominio público",
+        "source": "https://commons.wikimedia.org/wiki/File:Nicolas-Jean-Baptiste_Raguenet_-_L%27H%C3%B4tel_de_Ville_et_la_place_de_Gr%C3%A8ve_(actuelle_place_de_l%27H%C3%B4tel_de_Ville)_-_P284_-_Mus%C3%A9e_Carnavalet.jpg"
+      },
       "toNext": "Cruza el río por el puente de Arcole, que queda a tu derecha si miras al ayuntamiento, y sigue recto por la calle de Arcole hasta la gran explanada frente a Notre-Dame.",
       "quiz": {
         "before": 2,
@@ -55,6 +64,15 @@
         "Fue Nuestra Señora de París, de Victor Hugo, la del jorobado Quasimodo. El libro fue un exitazo, los parisinos se avergonzaron del estado de su catedral y, ni cortos ni perezosos, se pusieron manos a la obra. Una novela salvó un edificio. Que tomen nota los que dicen que leer no sirve para nada.",
         "El 15 de abril de 2019 medio mundo vio arder su tejado en directo y caer la aguja. Se reconstruyó en poco más de cinco años, con robles franceses y técnicas medievales, y reabrió en diciembre de 2024. En lo alto de la nueva aguja hay un gallo dorado que guarda reliquias y un pergamino con los nombres de quienes la reconstruyeron. Esta vez, los nombres de los que trabajaron también llegaron a lo más alto. Y bien merecido que lo tienen."
       ],
+      "image": {
+        "src": "img/paris/centro/notre-dame.webp",
+        "w": 784,
+        "h": 1100,
+        "para": 5,
+        "caption": "La aguja en llamas, el 15 de abril de 2019",
+        "credit": "Foto: Guillaume Levrier · CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Fl%C3%A8che_en_feu_-_Spire_on_Fire.jpeg"
+      },
       "toNext": "Con la catedral a tu espalda, camina hasta el final de la explanada y gira a la derecha por la calle de la Cité. En el primer cruce, gira a la izquierda por la calle de Lutèce, junto al mercado de las flores. Al final, en el bulevar del Palacio, gira a la derecha y sigue hasta el río, bajo una torre con un gran reloj.",
       "quiz": {
         "before": 4,
@@ -81,6 +99,15 @@
         "¿Y lo de Conciergerie? El conserje era el funcionario que llevaba el palacio cuando el rey no estaba, y mandaba tanto que su parte del edificio acabó llevando su nombre. Con el tiempo se convirtió en prisión, y durante el Terror de la Revolución fue la sala de espera de la guillotina. Aquí pasó sus últimas semanas la reina María Antonieta, en 1793. Por cierto, lo de «si el pueblo no tiene pan, que coma pasteles»… no hay ninguna prueba de que lo dijera. Pobre mujer: le cortaron la cabeza y, encima, le inventaron las frases.",
         "Si miras por encima de las verjas del palacio, hacia el bulevar, verás asomar una aguja fina y dorada. Es la Sainte-Chapelle, que mandó construir el rey Luis IX para guardar la corona de espinas de Cristo. La compró por una fortuna: según las cuentas de la época, la reliquia costó bastante más que la propia capilla. Vamos, que el estuche salió más barato que la joya."
       ],
+      "image": {
+        "src": "img/paris/centro/conciergerie.webp",
+        "w": 681,
+        "h": 1100,
+        "para": 1,
+        "caption": "El palacio de la Cité y la Sainte-Chapelle hacia 1416",
+        "credit": "Hermanos Limbourg, «Très Riches Heures» del duque de Berry · Museo Condé, Chantilly · Dominio público",
+        "source": "https://commons.wikimedia.org/wiki/File:Les_Tr%C3%A8s_Riches_Heures_du_duc_de_Berry_juin.jpg"
+      },
       "toNext": "Sigue por el muelle del Reloj, con el río a tu derecha, hasta casi el final de la isla. Allí sube al Pont Neuf y busca la estatua de un rey a caballo.",
       "quiz": {
         "before": 2,
@@ -109,6 +136,15 @@
         "Pero lo que de verdad le hizo famoso fue su apodo, el Vert Galant, algo así como «el galán incansable». Tuvo decenas de amantes y siguió persiguiendo damas hasta bien mayor. Vamos, el primer viejo verde oficial de la historia de Francia. Ese jardincito que ves abajo, en la punta de la isla, se llama precisamente square du Vert-Galant. Le dedicaron un parque a su afición, ahí es nada.",
         "Su final fue menos alegre: en 1610 lo apuñaló Ravaillac, sí, el de la plaza de Grève. Y la estatua tiene su propia novela. La original la fundieron en la Revolución para hacer cañones. Esta es de 1818 y, para hacerla, se usó, entre otras cosas, el bronce de estatuas de Napoleón. Dicen que el fundidor, fan del emperador, escondió una figurita de Napoleón dentro del caballo. Cuando la restauraron en 2004 encontraron cajas con documentos en su interior. De la figurita, ni rastro. O eso dicen."
       ],
+      "image": {
+        "src": "img/paris/centro/pont-neuf.webp",
+        "w": 1100,
+        "h": 466,
+        "para": 1,
+        "caption": "El Pont Neuf hacia 1665, con la estatua de Enrique IV",
+        "credit": "Anónimo · Museo Carnavalet · Dominio público",
+        "source": "https://commons.wikimedia.org/wiki/File:Le_Pont-Neuf,_vu_de_l%27entr%C3%A9e_de_la_place_Dauphine,_le_Quai_Malaquais_avec_le_coll%C3%A8ge_des_Quatre-Nations_en_construction,_la_Grande_Galerie_et_le_Louvre,_vers_1665.jpg"
+      },
       "toNext": "Cruza la otra mitad del puente hacia la orilla izquierda y, al llegar, gira a la derecha por el muelle de Conti, entre el río y las cajas verdes de los libreros. Camina hasta el gran edificio con cúpula.",
       "quiz": {
         "before": 4,
@@ -136,6 +172,15 @@
         "Su gran tarea es el diccionario. La primera edición salió en 1694. La novena se empezó en 1986 y se terminó en 2024. Treinta y ocho años para un diccionario. Para que te hagas una idea: cuando llegaron a la zeta, algunas palabras de la a ya estaban pasadas de moda.",
         "Y ser inmortal no es nada fácil. Molière nunca entró, porque era actor, y eso estaba mal visto. Émile Zola se presentó más de veinte veces y lo rechazaron todas. La primera mujer, la escritora Marguerite Yourcenar, no llegó hasta 1980. Casi tres siglos y medio de inmortales… y casi todos con bigote."
       ],
+      "image": {
+        "src": "img/paris/centro/academie-francaise.webp",
+        "w": 807,
+        "h": 1100,
+        "para": 2,
+        "caption": "Un inmortal de uniforme: Edmond Rostand en 1903",
+        "credit": "Foto: Léopold-Émile Reutlinger · Dominio público",
+        "source": "https://commons.wikimedia.org/wiki/File:Edmond_Rostand_en_habit_vert_01.jpg"
+      },
       "toNext": "Sube al Pont des Arts, el puente de hierro que sale justo enfrente de la cúpula, y camina hasta la mitad.",
       "quiz": {
         "before": 3,
@@ -163,6 +208,15 @@
         "Muchos de aquellos candados se subastaron en 2017 y el dinero se donó a asociaciones de ayuda a refugiados. Total, que el amor eterno acabó, al menos, en una buena causa.",
         "Ahora gírate y mira río arriba. Verás la punta de la isla de la Cité, con el jardín del Vert Galant asomando como la proa de un barco, y el Pont Neuf detrás. Es una de las vistas más bonitas de París, y ahora ya sabes qué es cada cosa. Estás hecho todo un parisino."
       ],
+      "image": {
+        "src": "img/paris/centro/pont-des-arts.webp",
+        "w": 1100,
+        "h": 731,
+        "para": 2,
+        "caption": "La barandilla llena de candados, en 2013",
+        "credit": "Foto: Berlinuno · CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Pont_des_Arts_Love_locks.jpg"
+      },
       "toNext": "Termina de cruzar hasta la orilla derecha, atraviesa el muelle por el paso de peatones y entra en el Louvre por el pasaje que tienes enfrente. Cruza el gran patio cuadrado y sal por el arco del lado opuesto, el del pabellón del reloj. Ahí aparecerá la pirámide.",
       "quiz": {
         "before": 2,
@@ -191,6 +245,15 @@
         "Dentro está el cuadro más famoso del mundo, la Gioconda. Pero no siempre fue tan famosa. En 1911 un antiguo trabajador del museo, el italiano Vincenzo Peruggia, la robó: salió con ella escondida bajo su bata de trabajo y se la guardó en casa, tan pancho. Estuvo dos años desaparecida y los periódicos de medio mundo no paraban de hablar de ella. Cuando apareció en Florencia, en 1913, ya era una estrella. Vamos, que el robo la hizo famosa.",
         "Y ojo, que los robos no son cosa del pasado. En octubre de 2025, unos ladrones subieron a plena luz del día con un montacargas de mudanzas hasta una ventana de la Galería de Apolo y se llevaron varias joyas de la Corona en apenas unos minutos. Así que, si ves a alguien con un montacargas por aquí, no le quites ojo."
       ],
+      "image": {
+        "src": "img/paris/centro/louvre.webp",
+        "w": 660,
+        "h": 1100,
+        "para": 0,
+        "caption": "La fortaleza del Louvre hacia 1416, al otro lado del río",
+        "credit": "Hermanos Limbourg, «Très Riches Heures» del duque de Berry · Museo Condé, Chantilly · Dominio público",
+        "source": "https://commons.wikimedia.org/wiki/File:Les_Tr%C3%A8s_Riches_Heures_du_duc_de_Berry_octobre.jpg"
+      },
       "toNext": "Camina hacia el oeste, alejándote del museo, hasta el arco rosa y blanco que tienes delante.",
       "quiz": {
         "before": 3,
@@ -218,6 +281,15 @@
         "El nombre de Carrusel viene de una gran fiesta ecuestre que organizó aquí Luis XIV en 1662, con jinetes disfrazados y desfiles. Y cuentan que a Napoleón este arco le supo a poco. Así que encargó otro mucho más grande: el Arco del Triunfo. Que no se diga.",
         "Ahora ponte bajo el arco y mira hacia el jardín. En línea recta verás el obelisco de la plaza de la Concordia, detrás los Campos Elíseos subiendo hasta el Arco del Triunfo y, si el día está claro, al fondo, el Gran Arco de La Défense. Es el eje histórico de París: unos ocho kilómetros de monumentos alineados como fichas de dominó. Pocas ciudades tienen una vista tan bien pensada."
       ],
+      "image": {
+        "src": "img/paris/centro/arc-du-carrousel.webp",
+        "w": 1100,
+        "h": 828,
+        "para": 2,
+        "caption": "El palacio de las Tullerías en 1856, con el arco delante",
+        "credit": "Foto: Gustave Le Gray · Dominio público",
+        "source": "https://commons.wikimedia.org/wiki/File:Palais_des_Tuileries_(1856)_par_Gustave_Le_Gray_(A).jpg"
+      },
       "toNext": "Entra en el jardín de las Tullerías y sigue recto por el paseo central hasta el gran estanque redondo.",
       "quiz": {
         "before": 1,
@@ -246,6 +318,15 @@
         "Una historia más, para mirar al cielo. El 1 de diciembre de 1783 despegó desde este jardín uno de los primeros globos tripulados de la historia, inflado con hidrógeno y con el físico Jacques Charles a bordo. Medio París vino a verlo. Por eso, en los Juegos Olímpicos de 2024, el pebetero fue un globo con un anillo de fuego que se elevaba aquí cada noche. Bonito homenaje, ¿no?",
         "Y aquí me despido. Has recorrido el corazón de París: de la plaza donde nació la huelga a la isla donde nació la ciudad, del puente más viejo con nombre de nuevo al palacio que se convirtió en museo. Ahora te toca a ti: quédate un rato en la silla, mira hacia el obelisco y deja que París haga el resto. ¡Merci, y hasta la próxima!"
       ],
+      "image": {
+        "src": "img/paris/centro/tuileries.webp",
+        "w": 1100,
+        "h": 707,
+        "para": 4,
+        "caption": "Despega el globo de Charles y Robert, el 1 de diciembre de 1783",
+        "credit": "Grabado de la época · Biblioteca Nacional de Francia · Dominio público",
+        "source": "https://commons.wikimedia.org/wiki/File:Exp%C3%A9rience_de_Charles_et_Robert,_1er_d%C3%A9cembre_1783._D%C3%A9part_du_ballon_du_Jardin_des_Tuileries_-_estampe_-_btv1b55001455v.jpg"
+      },
       "toNext": "",
       "quiz": {
         "before": 2,

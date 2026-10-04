@@ -61,6 +61,12 @@ Cada archivo de ruta, como `data/paris/centro.json`, contiene:
 - `quiz` (opcional, uno por parada): pregunta para adivinar, como en un free tour: `before` (antes de qué párrafo,
   empezando en 0), `q` (la pregunta), `options` (tres respuestas) y `answer` (posición de la correcta, empezando en 0).
   El párrafo siguiente debería contar la respuesta.
+- `image` (opcional, una por parada): `src` (por ejemplo `img/paris/centro/louvre.webp`), `w` y `h` (tamaño en píxeles),
+  `para` (antes de qué párrafo aparece, empezando en 0), `caption` (pie de foto), `credit` (autor · museo · licencia)
+  y `source` (enlace a la ficha original). Sale en el texto, en miniatura junto al título (se ilumina mientras la guía
+  habla de ella) y a pantalla completa al tocarla. Usa solo imágenes de dominio público o con licencia libre
+  (Wikimedia Commons) y pon siempre el crédito. Formato WebP, unos 1.100 px por el lado largo y menos de 150 KB.
+  Se guardan solas para usarlas sin conexión; si cambias una imagen, cámbiale también el nombre de archivo.
 - `legs`: la línea del recorrido entre paradas, como listas de puntos `[lat, lng]`.
   El tramo 0 va de la parada 1 a la 2, y así sucesivamente.
 

@@ -1,14 +1,15 @@
 /* Service worker: la app y el recorrido funcionan sin conexión una vez abiertos.
    Al publicar cambios: sube VERSION aquí y el ?v= de css/js en index.html y en FILES. */
-const VERSION = 'v26';
+const VERSION = 'v27';
 const SHELL = 'shell-' + VERSION;
 const MAP = 'map-v1';
 const FONTS = 'fonts-v1';
+const MEDIA = 'media-v1';   // imágenes de las rutas (mismo nombre en js/app.js)
 const FILES = [
   './',
   'index.html',
-  'css/app.css?v=26',
-  'js/app.js?v=26',
+  'css/app.css?v=27',
+  'js/app.js?v=27',
   'data/catalogo.json',
   'data/paris/centro.json',
   'vendor/maplibre/maplibre-gl.css',
@@ -71,6 +72,17 @@ self.addEventListener('fetch', e => {
 
   // Los audios los gestiona el navegador directamente (necesitan peticiones por rangos)
   if (url.includes('/audio/')) return;
+
+  // Imágenes de las rutas: de la caché primero (la app las guarda al empezar la ruta)
+  if (new URL(url).origin === self.location.origin && url.includes('/img/')) {
+    e.respondWith(caches.open(MEDIA).then(async c => {
+      const hit = await c.match(req, { ignoreSearch: true });
+      if (hit) return hit;
+      try { const res = await fetch(req); if (res.ok) c.put(req, res.clone()); return res; }
+      catch (err) { return new Response('', { status: 504 }); }
+    }));
+    return;
+  }
 
   if (new URL(url).origin === self.location.origin) {
     // Red primero (para recibir los cambios del guion), caché si no hay conexión.
