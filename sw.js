@@ -1,14 +1,14 @@
 /* Service worker: la app y el recorrido funcionan sin conexión una vez abiertos.
    Al publicar cambios: sube VERSION aquí y el ?v= de css/js en index.html y en FILES. */
-const VERSION = 'v20';
+const VERSION = 'v21';
 const SHELL = 'shell-' + VERSION;
 const MAP = 'map-v1';
 const FONTS = 'fonts-v1';
 const FILES = [
   './',
   'index.html',
-  'css/app.css?v=20',
-  'js/app.js?v=20',
+  'css/app.css?v=21',
+  'js/app.js?v=21',
   'data/catalogo.json',
   'data/paris/centro.json',
   'vendor/maplibre/maplibre-gl.css',

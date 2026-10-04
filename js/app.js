@@ -1,4 +1,4 @@
-/* Audioguías · free tours de bolsillo
+/* Paseíto · free tours de bolsillo
    Pantallas: Inicio (ciudades) → Ciudad (rutas) → Ruta (mapa + tarjeta).
    Enlaces: #paris  ·  #paris/centro
    Todo el contenido sale de data/catalogo.json y de un archivo JSON por ruta. */

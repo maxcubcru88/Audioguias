@@ -1,6 +1,6 @@
-# Audioguías · free tours de bolsillo
+# Paseíto · free tours de bolsillo
 
-Web app gratuita (PWA) con audioguías a pie estilo free tour, organizada por ciudades y rutas.
+Paseíto es una web app gratuita (PWA) con audioguías a pie estilo free tour, organizada por ciudades y rutas.
 
 - **París**: «El corazón de París» (9 paradas, del Hôtel de Ville a las Tullerías, unos 2,7 km). Otras rutas en preparación.
 - **Londres** y **Sevilla**: en preparación (WIP).

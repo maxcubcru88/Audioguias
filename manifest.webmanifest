@@ -1,7 +1,7 @@
 {
-  "name": "Audioguías · free tours de bolsillo",
-  "short_name": "Audioguías",
-  "description": "Audioguías gratuitas a pie: free tours de bolsillo por varias ciudades.",
+  "name": "Paseíto · free tours de bolsillo",
+  "short_name": "Paseíto",
+  "description": "Paseíto: free tours de bolsillo gratuitos para recorrer ciudades a pie.",
   "lang": "es",
   "start_url": "./",
   "scope": "./",
