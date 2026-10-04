@@ -330,16 +330,15 @@
         '<p class="eyebrow' + (isArrival ? ' ok' : '') + '">' + (isArrival ? 'Has llegado' : 'Parada ' + (i + 1) + ' de ' + tour.stops.length) + '</p>' +
         '<h2 class="c-title">' + esc(st.title) + '</h2></div>' +
         '<button class="x" type="button" data-act="close" aria-label="Cerrar parada">' + ICON.close + '</button></div>' +
-        '<p class="c-text">' + esc(st.where) + '</p>' +
         '<div class="ctrl">' +
           '<button class="skip" type="button" data-act="back" aria-label="Retroceder una frase">' + ICON.back + '</button>' +
-          '<button class="btn btn-primary btn-big" id="btnPlay" type="button" data-act="play"></button>' +
+          '<button class="pbtn" id="btnPlay" type="button" data-act="play"></button>' +
           '<button class="skip" type="button" data-act="fwd" aria-label="Avanzar una frase">' + ICON.fwd + '</button>' +
+          '<div class="seek"><input type="range" id="seek" min="0" max="' + (st.chunks.length - 1) + '" step="1" value="0" aria-label="Posición en la explicación">' +
+            '<div class="times"><span id="tNow">0:00</span><span>' + fmtTime(st.secs) + '</span></div></div>' +
         '</div>' +
-        '<div class="seek"><input type="range" id="seek" min="0" max="' + (st.chunks.length - 1) + '" step="1" value="0" aria-label="Posición en la explicación">' +
-          '<div class="times"><span id="tNow">0:00</span><span>' + fmtTime(st.secs) + '</span></div></div>' +
-        '<p class="hint" id="hint"' + (S.showText ? ' hidden' : '') + '>Desliza hacia arriba para leer el texto</p>' +
         '<div class="c-body" id="cBody"' + (S.showText ? '' : ' hidden') + '>' +
+          '<p class="where"><b>Dónde ponerte</b>' + esc(st.where) + '</p>' +
           st.paras.map((p, pi) => '<p class="para" data-p="' + pi + '">' + esc(p) + '</p>').join('') +
           (st.toNext ? '<p class="next-box" data-p="' + st.paras.length + '"><b>Camino a la siguiente · ' + fmtDist(st.legNext) + '</b>' + esc(st.toNext) + '</p>' : '') +
         '</div>';
@@ -392,7 +391,8 @@
     const active = P.stop === S.view;
     const playing = active && P.playing;
     const started = active && (P.playing || P.c > 0);
-    btn.innerHTML = playing ? ICON.pause + ' Pausar' : ICON.play + (started ? ' Continuar' : ' Escuchar · ' + st.min + ' min');
+    btn.innerHTML = playing ? ICON.pause : ICON.play;
+    btn.setAttribute('aria-label', playing ? 'Pausar' : (started ? 'Continuar' : 'Escuchar'));
     const c = active ? Math.min(P.c, st.chunks.length - 1) : 0;
     if (!seeking) { $('#seek').value = c; paintSeek(c); }
     const pi = started ? st.chunks[Math.min(P.c, st.chunks.length - 1)].pi : -1;
@@ -413,7 +413,6 @@
     S.showText = on;
     const card = $('#card');
     $('#cBody').hidden = !on;
-    $('#hint').hidden = on;
     $('#grab').setAttribute('aria-label', on ? 'Ocultar texto' : 'Ver texto');
     card.classList.toggle('is-open', on);
     if (!on) card.scrollTop = 0;
