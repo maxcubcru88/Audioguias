@@ -408,8 +408,10 @@
   }
 
   // Texto: se despliega deslizando la tarjeta hacia arriba y se recoge deslizando hacia abajo.
-  function setText(on) {
-    if (S.view == null || on === S.showText) return;
+  // La tarjeta sigue al dedo y, al soltar, termina el movimiento con una animación suave.
+  let collapsedH = 0, animating = false, swipedAt = 0;
+  const maxOpenH = () => Math.round(window.innerHeight * 0.82);
+  function applyText(on) {
     S.showText = on;
     const card = $('#card');
     $('#cBody').hidden = !on;
@@ -419,23 +421,80 @@
     measureCard();
     if (on) renderPlayer(true);
   }
-  let swipedAt = 0;
+  function animateText(on, fromH) {
+    if (S.view == null) return;
+    if (fromH == null && on === S.showText) return;
+    const card = $('#card');
+    if (fromH == null && !S.showText) collapsedH = card.offsetHeight;
+    const start = fromH != null ? fromH : card.offsetHeight;
+    let target;
+    if (on) {
+      $('#cBody').hidden = false; card.classList.add('is-open');
+      card.style.height = 'auto';
+      target = Math.min(card.scrollHeight, maxOpenH());
+    } else target = collapsedH || 160;
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) { card.style.height = ''; applyText(on); return; }
+    card.style.transition = 'none';
+    card.style.overflowY = 'hidden';
+    card.style.height = start + 'px';
+    void card.offsetHeight;
+    card.style.transition = 'height .34s cubic-bezier(.22,.9,.25,1)';
+    card.style.height = target + 'px';
+    animating = true;
+    let t;
+    const done = () => {
+      card.removeEventListener('transitionend', done); clearTimeout(t);
+      animating = false;
+      card.style.transition = ''; card.style.height = ''; card.style.overflowY = '';
+      applyText(on);
+    };
+    card.addEventListener('transitionend', done);
+    t = setTimeout(done, 500);
+  }
+  function setText(on) { animateText(on); }
+
   function bindSwipe() {
     const card = $('#card');
-    let y0 = null, top0 = 0;
+    let y0 = null, h0 = 0, top0 = 0, dragging = false, lastY = 0, lastT = 0, vel = 0;
     const start = (y, target) => {
-      if (S.view == null || (target && target.closest('input'))) { y0 = null; return; }
-      y0 = y; top0 = card.scrollTop;
+      if (S.view == null || animating || (target && target.closest('input'))) { y0 = null; return; }
+      y0 = y; h0 = card.offsetHeight; top0 = card.scrollTop; dragging = false;
+      lastY = y; lastT = performance.now(); vel = 0;
+    };
+    const move = (y, e) => {
+      if (y0 == null) return;
+      const dy = y - y0;
+      if (!dragging) {
+        if (Math.abs(dy) < 8) return;
+        if (dy < 0 && !S.showText) {
+          dragging = true; collapsedH = h0;
+          $('#cBody').hidden = false; card.classList.add('is-open');
+        } else if (dy > 0 && S.showText && top0 <= 0) {
+          dragging = true;
+        } else { y0 = null; return; }
+        card.style.transition = 'none'; card.style.overflowY = 'hidden';
+      }
+      if (e && e.cancelable) e.preventDefault();
+      const minH = collapsedH || 120;
+      card.style.height = Math.max(minH, Math.min(maxOpenH(), h0 - dy)) + 'px';
+      const now = performance.now();
+      vel = (y - lastY) / Math.max(1, now - lastT); lastY = y; lastT = now;
     };
     const end = y => {
       if (y0 == null) return;
       const dy = y - y0; y0 = null;
-      if (dy < -40 && !S.showText) { setText(true); swipedAt = Date.now(); }
-      else if (dy > 50 && S.showText && top0 <= 0) { setText(false); swipedAt = Date.now(); }
+      if (!dragging) return;
+      dragging = false; swipedAt = Date.now();
+      const wasOpen = S.showText;
+      const open = wasOpen ? !(dy > 80 || vel > 0.4) : (dy < -50 || vel < -0.4);
+      animateText(open, card.offsetHeight);
     };
     card.addEventListener('touchstart', e => start(e.touches[0].clientY, e.target), { passive: true });
+    card.addEventListener('touchmove', e => move(e.touches[0].clientY, e), { passive: false });
     card.addEventListener('touchend', e => end(e.changedTouches[0].clientY), { passive: true });
+    card.addEventListener('touchcancel', e => end(e.changedTouches[0].clientY), { passive: true });
     card.addEventListener('mousedown', e => start(e.clientY, e.target));
+    window.addEventListener('mousemove', e => { if (y0 != null) move(e.clientY, e); });
     window.addEventListener('mouseup', e => end(e.clientY));
   }
 
