@@ -334,7 +334,8 @@
         '</div>';
     } else if (S.target == null) {
       h += '<div class="c-head"><span class="plaque">✓</span><div class="c-main"><p class="eyebrow ok">Recorrido completado</p><h2 class="c-title">¡Bravo!</h2></div></div>' +
-        '<p class="c-text">Has visitado las ' + tour.stops.length + ' paradas. Puedes volver a escuchar cualquiera desde el mapa o el menú ☰.</p>';
+        '<p class="c-text">Has visitado las ' + tour.stops.length + ' paradas. Puedes volver a escuchar cualquiera tocando su número en el mapa.</p>' +
+        '<button class="btn btn-primary btn-big" type="button" data-act="restart">Empezar de nuevo</button>';
     } else {
       const t = tour.stops[S.target];
       const d = S.pos ? dist(S.pos[0], S.pos[1], t.lat, t.lng) : null;
@@ -434,6 +435,10 @@
   }
 
   // ---------- Eventos ----------
+  function resetTour() {
+    pauseSpeech(); S.visited = []; S.target = 0; S.arrived = null; S.view = null; P.stop = -1; P.c = 0; save();
+    closeSheet(); renderCard(); refreshMap(); fitRoute(); toast('Recorrido reiniciado.');
+  }
   function begin(mode) {
     unlockAudio(); requestWake();
     $('#intro').hidden = true;
@@ -459,6 +464,7 @@
         if (S.showText) renderPlayer(true);
         return;
       }
+      if (act === 'restart') { resetTour(); return; }
       if (act === 'sim-go' && S.target != null) { const t = tour.stops[S.target]; setPos(t.lat, t.lng, 5); return; }
       const p = e.target.closest('[data-p]');
       if (p && S.view != null) playStop(S.view, +p.dataset.p);
@@ -487,9 +493,8 @@
         resetArmed = Date.now(); b.textContent = 'Toca otra vez para borrar el progreso';
         setTimeout(() => { b.textContent = 'Reiniciar el recorrido'; }, 4000); return;
       }
-      pauseSpeech(); S.visited = []; S.target = 0; S.arrived = null; S.view = null; P.stop = -1; P.c = 0; save();
       b.textContent = 'Reiniciar el recorrido'; resetArmed = 0;
-      closeSheet(); renderCard(); refreshMap(); fitRoute(); toast('Recorrido reiniciado.');
+      resetTour();
     });
     window.addEventListener('resize', () => measureCard());
   }
