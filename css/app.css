@@ -124,7 +124,10 @@ button{cursor:pointer}
 
 .where{margin:0 0 6px;font-size:14.5px;background:var(--bg);border-radius:10px;padding:10px 12px}
 .where b{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-2);margin-bottom:2px}
-.card{gap:10px}.card.is-open{max-height:82%;gap:12px}
+.card{gap:10px}.card.is-open{max-height:82%;display:flex;flex-direction:column;gap:12px;overflow:hidden}
+.card.is-open > *{flex:none}
+/* Solo el texto se desplaza; cabecera y controles quedan fijos arriba */
+.card.is-open .c-body{flex:1 1 auto;min-height:0;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;position:relative;margin:0 -18px;padding:0 18px 8px;border-top:1px solid var(--line);padding-top:10px}
 .c-body{display:grid;gap:2px}
 .para{margin:0 -10px;padding:8px 10px;border-radius:8px;cursor:pointer;transition:background .2s}
 .para.is-reading{background:var(--wash)}

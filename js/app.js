@@ -408,8 +408,12 @@
     const active = P.stop === S.view;
     const playing = active && P.playing;
     const started = active && (P.playing || P.c > 0);
-    btn.innerHTML = playing ? ICON.pause : ICON.play;
-    btn.setAttribute('aria-label', playing ? 'Pausar' : (started ? 'Continuar' : 'Escuchar'));
+    const bState = playing ? 'p' : (started ? 'c' : 'e');
+    if (btn.dataset.state !== bState) {
+      btn.dataset.state = bState;
+      btn.innerHTML = playing ? ICON.pause : ICON.play;
+      btn.setAttribute('aria-label', playing ? 'Pausar' : (started ? 'Continuar' : 'Escuchar'));
+    }
     const c = active ? Math.min(P.c, st.chunks.length - 1) : 0;
     if (!seeking) { $('#seek').value = c; paintSeek(c); }
     const pi = started ? st.chunks[Math.min(P.c, st.chunks.length - 1)].pi : -1;
@@ -425,11 +429,11 @@
     if (!force && Date.now() < userScrollUntil) return;
     const st = tour.stops[S.view];
     const pi = st.chunks[Math.min(P.c, st.chunks.length - 1)].pi;
-    const el = document.querySelector('#cBody [data-p="' + pi + '"]'), card = $('#card');
-    if (!el) return;
-    const top = card.scrollTop, bottom = top + card.clientHeight;
-    if (el.offsetTop >= top + 40 && el.offsetTop + Math.min(el.offsetHeight, card.clientHeight * .5) <= bottom - 20) return;
-    card.scrollTo({ top: Math.max(0, el.offsetTop - card.clientHeight * 0.3), behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+    const el = document.querySelector('#cBody [data-p="' + pi + '"]'), body = $('#cBody');
+    if (!el || !body) return;
+    const top = body.scrollTop, bottom = top + body.clientHeight;
+    if (el.offsetTop >= top + 8 && el.offsetTop + Math.min(el.offsetHeight, body.clientHeight * .5) <= bottom - 8) return;
+    body.scrollTo({ top: Math.max(0, el.offsetTop - 12), behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
   }
   function userScrolled() {
     if (!S.showText) return;
@@ -448,7 +452,7 @@
     $('#cBody').hidden = !on;
     $('#grab').setAttribute('aria-label', on ? 'Ocultar texto' : 'Ver texto');
     card.classList.toggle('is-open', on);
-    if (!on) card.scrollTop = 0;
+    if (!on) { card.scrollTop = 0; $('#cBody').scrollTop = 0; }
     measureCard();
     if (on) { renderPlayer(); userScrollUntil = 0; followReading(true); }
   }
@@ -489,7 +493,9 @@
     let y0 = null, h0 = 0, top0 = 0, dragging = false, lastY = 0, lastT = 0, vel = 0;
     const start = (y, target) => {
       if (S.view == null || animating || (target && target.closest('input'))) { y0 = null; return; }
-      y0 = y; h0 = card.offsetHeight; top0 = card.scrollTop; dragging = false;
+      const body = $('#cBody');
+      y0 = y; h0 = card.offsetHeight; dragging = false;
+      top0 = (body && target && target.closest('#cBody')) ? body.scrollTop : 0;
       lastY = y; lastT = performance.now(); vel = 0;
     };
     const move = (y, e) => {
