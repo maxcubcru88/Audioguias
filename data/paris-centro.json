@@ -1,0 +1,177 @@
+{
+  "id": "paris-centro",
+  "city": "París",
+  "title": "El corazón de París",
+  "subtitle": "Del Ayuntamiento a las Tullerías, cruzando la isla de la Cité",
+  "lang": "es-ES",
+  "version": 1,
+  "stops": [
+    {
+      "id": "hotel-de-ville",
+      "title": "Hôtel de Ville",
+      "subtitle": "El ayuntamiento y la plaza de las huelgas",
+      "lat": 48.8563,
+      "lng": 2.3512,
+      "radius": 45,
+      "where": "En la plaza, frente a la fachada principal del ayuntamiento.",
+      "paras": [
+        "¡Bonjour! Bienvenido a tu free tour de bolsillo por el corazón de París. Durante la próxima hora y media, más o menos, vamos a caminar desde aquí hasta el jardín de las Tullerías, cruzando la isla donde nació la ciudad. Yo me encargo de las historias. Tú, de mirar hacia arriba y de no caerte al Sena.",
+        "Empezamos fuerte. Este palacio que parece una tarta de boda gigante es el Hôtel de Ville, el ayuntamiento de París. Parece del Renacimiento, pero es casi nuevo: el original lo quemaron los revolucionarios de la Comuna en 1871, y este se reconstruyó copiándolo, eso sí, más grande y más recargado. Fíjate en la fachada: hay más de cien estatuas de parisinos ilustres. Es como un Instagram del siglo diecinueve. Solo salen los famosos.",
+        "Esta plaza antes se llamaba plaza de Grève, que en francés quiere decir playa de arena. Aquí había un pequeño puerto en la orilla del río, y los hombres sin trabajo venían cada mañana a esperar que alguien los contratara para descargar barcos. Estar en la Grève era estar parado. Y de ahí viene la palabra francesa para huelga: grève. Así que, técnicamente, estás en el lugar donde nació la huelga francesa. Un respeto.",
+        "La plaza también tuvo su lado oscuro: durante siglos fue el escenario de las ejecuciones públicas. Quédate con un nombre, Ravaillac, porque dentro de un rato, en el Pont Neuf, conocerás al rey que asesinó.",
+        "Una curiosidad política. Después de la Comuna, el Estado desconfiaba tanto de París que la dejó sin alcalde elegido durante más de cien años. Hasta 1977 la ciudad no volvió a tener uno, y fue Jacques Chirac.",
+        "Y la última, para los románticos. Aquí delante se tomó en 1950 una de las fotos más famosas del mundo, El beso del Hôtel de Ville, de Robert Doisneau. Una pareja besándose entre la multitud, pura espontaneidad parisina. Años después se supo que eran dos estudiantes de teatro y que el beso se repitió para la cámara. El beso más romántico de París fue un beso de encargo. Bienvenido a París."
+      ],
+      "toNext": "Cruza el río por el puente de Arcole, que queda a tu derecha si miras al ayuntamiento, y sigue recto por la calle de Arcole hasta la gran explanada frente a Notre-Dame."
+    },
+    {
+      "id": "notre-dame",
+      "title": "Notre-Dame",
+      "subtitle": "La catedral, sus monstruos y su resurrección",
+      "lat": 48.8535,
+      "lng": 2.3484,
+      "radius": 50,
+      "where": "En la explanada, frente a la fachada. Busca en el suelo, cerca de la entrada, una placa redonda de bronce con una estrella.",
+      "paras": [
+        "Aquí la tienes: Notre-Dame de París. Se empezó a construir en 1163 y se tardó casi doscientos años en terminarla. Doscientos años. Los que pusieron la primera piedra no vieron ni el tejado. Ni sus nietos, ni los nietos de sus nietos. Eso sí que es pensar a largo plazo.",
+        "Antes de mirar arriba, mira abajo. Esa placa de bronce en el suelo es el punto cero de las carreteras de Francia: desde aquí se miden las distancias de todo el país. Dice la tradición que si lo pisas, volverás a París. No cuesta nada y no hay cola, así que yo lo pisaría.",
+        "Ahora mira la puerta de la izquierda. Entre las estatuas hay un señor que lleva su propia cabeza en las manos. Es san Dionisio, el primer obispo de París. Cuenta la leyenda que lo decapitaron en Montmartre, recogió su cabeza y se fue caminando varios kilómetros mientras seguía predicando. Hay gente que no sabe cuándo dejar de hablar.",
+        "Sube la vista hasta las torres. Esos monstruos con cara de mal humor no son todos gárgolas. Las gárgolas son las que hacen de desagüe y escupen el agua de lluvia; su nombre viene del ruido de hacer gárgaras. Las que solo miran, apoyadas en la barandilla, son quimeras, y no son medievales: las añadió en el siglo diecinueve el arquitecto Viollet-le-Duc, que restauró la catedral bastante a su gusto.",
+        "¿Y por qué hubo que restaurarla? Porque a principios del siglo diecinueve estaba medio en ruinas y casi la derriban. La salvó una novela: Nuestra Señora de París, de Victor Hugo, la del jorobado Quasimodo. El libro fue un éxito, los parisinos se avergonzaron del estado de su catedral y se pusieron manos a la obra. Una novela salvó un edificio. Que tomen nota los que dicen que leer no sirve para nada.",
+        "El 15 de abril de 2019 el mundo entero vio arder su tejado en directo y caer la aguja. Se reconstruyó en poco más de cinco años, con robles franceses y técnicas medievales, y reabrió en diciembre de 2024. En lo alto de la nueva aguja hay un gallo dorado que guarda reliquias y un pergamino con los nombres de quienes la reconstruyeron. Esta vez, los nombres de los que trabajaron también llegaron a lo más alto."
+      ],
+      "toNext": "Con la catedral a tu espalda, camina hasta el final de la explanada y gira a la derecha por la calle de la Cité. En el primer cruce, gira a la izquierda por la calle de Lutèce, junto al mercado de las flores. Al final, en el bulevar del Palacio, gira a la derecha y sigue hasta el río, bajo una torre con un gran reloj."
+    },
+    {
+      "id": "conciergerie",
+      "title": "La Conciergerie",
+      "subtitle": "El reloj, el palacio y la última reina",
+      "lat": 48.8561,
+      "lng": 2.3464,
+      "radius": 40,
+      "where": "En la esquina del bulevar del Palacio con el muelle, bajo el gran reloj azul y dorado.",
+      "paras": [
+        "Levanta la vista. Este es el primer reloj público de París: se instaló en esta torre hacia 1370, por orden del rey Carlos V. La esfera que ves, con sus azules y sus dorados, es de finales del siglo dieciséis y se restauró en 2012. Así que los parisinos llevan más de seis siglos sin excusa para llegar tarde. Y aun así.",
+        "Todo este conjunto era el palacio de la Cité, la residencia de los reyes de Francia en la Edad Media. Pero en 1358 una revuelta de parisinos entró en el palacio y mató a dos consejeros delante del futuro Carlos V. A él le quedó bastante claro que necesitaba otra casa. Se mudó, y el palacio se quedó con la justicia. Hoy sigue siendo el Palacio de Justicia de París.",
+        "¿Y la Conciergerie? El conserje era el funcionario que administraba el palacio cuando el rey no estaba, y tenía tanto poder que su parte del edificio acabó llevando su nombre. Con el tiempo se convirtió en prisión, y durante el Terror de la Revolución fue la antesala de la guillotina. Aquí pasó sus últimas semanas la reina María Antonieta, en 1793. Por cierto, la famosa frase de que si el pueblo no tiene pan, que coma pasteles, no hay ninguna prueba de que la dijera. Pobre mujer: le cortaron la cabeza y encima le inventaron las frases.",
+        "Si miras por encima de las verjas del palacio, hacia el bulevar, verás asomar una aguja fina y dorada. Es la Sainte-Chapelle, que mandó construir el rey Luis IX para guardar la corona de espinas de Cristo. La compró por una fortuna: según las cuentas de la época, la reliquia costó bastante más que la propia capilla. El estuche salió más barato que la joya."
+      ],
+      "toNext": "Sigue por el muelle del Reloj, con el río a tu derecha, hasta casi el final de la isla. Allí sube al Pont Neuf y busca la estatua de un rey a caballo."
+    },
+    {
+      "id": "pont-neuf",
+      "title": "Pont Neuf",
+      "subtitle": "El puente nuevo más viejo y el primer viejo verde",
+      "lat": 48.8571,
+      "lng": 2.3413,
+      "radius": 40,
+      "where": "Junto a la estatua ecuestre de Enrique IV, en mitad del Pont Neuf.",
+      "paras": [
+        "Bienvenido al Pont Neuf, que significa puente nuevo, y que es el puente más antiguo de París. Se terminó en 1607. Los parisinos son así: lo llamaron nuevo y ya no se molestaron en cambiarle el nombre en más de cuatrocientos años.",
+        "En su día fue una revolución. Hasta entonces, los puentes de París estaban llenos de casas y tiendas, y desde ellos ni siquiera se veía el río. Este fue el primero sin casas, con aceras para los peatones y con esos balconcitos semicirculares para pararse a mirar. Se convirtió en el sitio de moda: había vendedores, charlatanes, sacamuelas y carteristas. O sea, lo mismo que hoy, pero sin selfis.",
+        "Asómate a la barandilla y mira la cornisa: verás cientos de caras de piedra haciendo muecas. Son los mascarones. Se cuenta que son caricaturas de los ministros y cortesanos del rey. No está demostrado, pero si trabajas en una oficina, seguro que reconoces a alguien.",
+        "Y ahora, el protagonista: el rey Enrique IV, a caballo. Fue un rey muy popular. Prometió que todos los campesinos podrían comer gallina en la olla cada domingo. Y para reinar en una Francia católica dejó de ser protestante, con una frase que se le atribuye: París bien vale una misa.",
+        "Pero lo que de verdad le hizo famoso fue su apodo, el Vert Galant, algo así como el galán verde. Tuvo decenas de amantes y siguió persiguiendo damas hasta bien mayor. Vamos, el primer viejo verde oficial de la historia de Francia. Ese jardincito que ves abajo, en la punta de la isla, se llama precisamente square du Vert-Galant. Le dedicaron un parque a su afición.",
+        "Su final fue menos alegre: en 1610 lo apuñaló Ravaillac, sí, el de la plaza de Grève. Y la estatua tiene su propia novela. La original la fundieron en la Revolución para hacer cañones. Esta es de 1818, y para hacerla se usó, entre otras cosas, el bronce de estatuas de Napoleón. Dicen que el fundidor, admirador del emperador, escondió una figurita de Napoleón dentro del caballo. Cuando la restauraron en 2004 encontraron cajas con documentos en su interior. De la figurita, ni rastro. O eso dicen."
+      ],
+      "toNext": "Cruza la otra mitad del puente hacia la orilla izquierda y, al llegar, gira a la derecha por el muelle de Conti, entre el río y las cajas verdes de los libreros. Camina hasta el gran edificio con cúpula."
+    },
+    {
+      "id": "academie-francaise",
+      "title": "Académie française",
+      "subtitle": "Los inmortales y el diccionario más lento del mundo",
+      "lat": 48.8574,
+      "lng": 2.337,
+      "radius": 40,
+      "where": "En la acera del muelle, frente a la cúpula. Desde el arranque del Pont des Arts se ve el edificio entero.",
+      "paras": [
+        "Por el camino has pasado junto a los buquinistas, los libreros de las cajas verdes. Venden libros viejos a orillas del Sena desde hace siglos y son tan parisinos que forman parte del paisaje. Si alguna vez quieres comprar un libro que no vas a leer, este es el sitio.",
+        "Delante tienes el Instituto de Francia, con su cúpula dorada. Lo pagó el cardenal Mazarino, que dejó en su testamento el dinero para construir un colegio. Y lo colocaron justo enfrente del Louvre, el palacio del rey, como diciendo: aquí también contamos. Mazarino está enterrado dentro, bajo la cúpula.",
+        "Aquí tiene su sede la Academia Francesa, que vela por la lengua francesa desde 1635. La fundó el cardenal Richelieu, el malo de Los tres mosqueteros, pero esa es otra historia. Tiene cuarenta miembros, elegidos de por vida, a los que llaman los inmortales. No porque no mueran, que mueren, sino por el lema de la casa: a la inmortalidad. En las ceremonias llevan un traje verde bordado y una espada. Una espada. Para defender la gramática.",
+        "Su gran tarea es el diccionario. La primera edición salió en 1694. La novena se empezó en 1986 y se terminó en 2024. Treinta y ocho años para un diccionario. Cuando llegaron a la zeta, algunas palabras de la a ya estaban pasadas de moda.",
+        "Y ser inmortal no es fácil. Molière nunca entró, porque era actor, y eso no estaba bien visto. Émile Zola se presentó más de veinte veces y lo rechazaron todas. La primera mujer, la escritora Marguerite Yourcenar, no llegó hasta 1980. Casi tres siglos y medio de inmortales, y casi todos con bigote."
+      ],
+      "toNext": "Sube al Pont des Arts, el puente de hierro que sale justo enfrente de la cúpula, y camina hasta la mitad."
+    },
+    {
+      "id": "pont-des-arts",
+      "title": "Pont des Arts",
+      "subtitle": "El puente donde el amor pesó 45 toneladas",
+      "lat": 48.8583,
+      "lng": 2.3375,
+      "radius": 35,
+      "where": "En el centro del puente, primero mirando río abajo, con el Louvre a tu derecha.",
+      "paras": [
+        "Estás en el Pont des Arts, el primer puente de hierro de París. Lo mandó construir Napoleón a principios del siglo diecinueve y al principio era de pago: había que dejar una moneda para cruzar. Hoy es gratis, que en esta ciudad no es poco.",
+        "Se llama así porque une el Instituto de Francia con el Louvre, que en aquella época se conocía como Palacio de las Artes. El puente original sufrió choques de barcazas y bombardeos, y se reconstruyó en los años ochenta con siete arcos en lugar de nueve, para que quedara alineado con el Pont Neuf.",
+        "Pero si este puente es famoso en todo el mundo, es por los candados. Hacia 2008 las parejas empezaron a colgar candados en la barandilla con sus nombres y a tirar la llave al río como prueba de amor eterno. Pronto no quedó ni un hueco libre. En 2014 un trozo de barandilla se vino abajo por el peso, y en 2015 el ayuntamiento retiró los candados: unas cuarenta y cinco toneladas. Ya lo ves, el amor pesa. Desde entonces la barandilla es de cristal y colgar candados está prohibido. Si llevas uno en la mochila, guárdalo para la bici.",
+        "Muchos de aquellos candados se subastaron en 2017 y el dinero se donó a asociaciones de ayuda a refugiados. El amor eterno acabó, al menos, en una buena causa.",
+        "Ahora gírate y mira río arriba. Verás la punta de la isla de la Cité, con el jardín del Vert Galant asomando como la proa de un barco, y el Pont Neuf detrás. Es una de las vistas más bonitas de París, y ahora ya sabes qué es cada cosa. Estás hecho todo un parisino."
+      ],
+      "toNext": "Termina de cruzar hasta la orilla derecha, atraviesa el muelle por el paso de peatones y entra en el Louvre por el pasaje que tienes enfrente. Cruza el gran patio cuadrado y sal por el arco del lado opuesto, el del pabellón del reloj. Ahí aparecerá la pirámide."
+    },
+    {
+      "id": "louvre",
+      "title": "Museo del Louvre",
+      "subtitle": "De fortaleza a museo, y una pirámide polémica",
+      "lat": 48.861,
+      "lng": 2.3359,
+      "radius": 50,
+      "where": "En el patio de la pirámide, con la pirámide delante y el pabellón del reloj a tu espalda.",
+      "paras": [
+        "Al cruzar el patio cuadrado has caminado sobre ocho siglos de historia. El Louvre empezó siendo una fortaleza, construida hacia 1190 por el rey Felipe Augusto para defender París de los ingleses, y sus restos todavía se ven en los sótanos del museo. Luego fue palacio, hasta que Luis XIV se aburrió de París y se llevó la corte a Versalles en 1682. El palacio, medio vacío, acabó convertido en museo en 1793, en plena Revolución.",
+        "Hoy es el museo más visitado del mundo, con cerca de nueve millones de personas al año. Si quisieras ver cada obra expuesta durante treinta segundos, a jornada completa, necesitarías más de un mes. Así que no te agobies: nadie ve el Louvre entero.",
+        "Y luego está ella, la pirámide de cristal. La diseñó el arquitecto Ieoh Ming Pei y se inauguró en 1989. Al principio muchos parisinos la odiaron: decían que era un insulto moderno a un palacio clásico. Lo mismo que dijeron de la Torre Eiffel cien años antes. En París, el patrimonio de mañana siempre empieza siendo el escándalo de hoy.",
+        "Hay una leyenda que dice que la pirámide tiene 666 cristales, el número de la bestia. Contados de verdad, son 673. Lo siento por los amantes del misterio.",
+        "Dentro está el cuadro más famoso del mundo, la Gioconda. Pero no siempre fue tan famosa. En 1911 un antiguo trabajador del museo, el italiano Vincenzo Peruggia, la robó: salió con ella escondida bajo su bata de trabajo y la guardó en su casa. Estuvo dos años desaparecida y los periódicos de medio mundo no paraban de hablar de ella. Cuando apareció en Florencia, en 1913, ya era una estrella. El robo la hizo famosa.",
+        "Y los robos no son cosa del pasado. En octubre de 2025, unos ladrones subieron a plena luz del día con un montacargas de mudanzas hasta una ventana de la Galería de Apolo y se llevaron varias joyas de la Corona en apenas unos minutos. Así que, si ves a alguien con un montacargas por aquí, no le quites el ojo de encima."
+      ],
+      "toNext": "Camina hacia el oeste, alejándote del museo, hasta el arco rosa y blanco que tienes delante."
+    },
+    {
+      "id": "arc-du-carrousel",
+      "title": "Arco del Carrusel",
+      "subtitle": "Los caballos que Napoleón tuvo que devolver",
+      "lat": 48.86175,
+      "lng": 2.333,
+      "radius": 45,
+      "where": "Junto al arco, del lado del Louvre. Al final te pediré que te pongas debajo, mirando hacia el jardín.",
+      "paras": [
+        "Este es el Arco del Carrusel. Lo mandó construir Napoleón entre 1806 y 1808 para celebrar las victorias de 1805, con Austerlitz como gran estrella. Se inspiró en los arcos de triunfo de la antigua Roma. Napoleón no tenía complejos: si los emperadores romanos tenían arcos, él también.",
+        "Arriba ves una cuadriga, un carro tirado por cuatro caballos. Los originales eran los caballos de bronce de la basílica de San Marcos de Venecia, que Napoleón se llevó como botín en 1797. Tras su derrota en Waterloo, en 1815, hubo que devolverlos. Así que estos son copias, y el carro lo conduce ahora una figura de la Paz. Napoleón ganó los caballos, pero no se los pudo quedar.",
+        "Te preguntarás qué hace un arco tan solemne aquí en medio, sin una puerta a la que dar paso. Es que en realidad era la entrada de honor de un palacio que ya no existe: el palacio de las Tullerías, que cerraba este espacio y unía las dos alas del Louvre. Lo incendiaron durante la Comuna, en 1871, y sus ruinas se demolieron unos años después. El arco se quedó solo, como el portero de una discoteca que ya cerró.",
+        "El nombre de Carrusel viene de una gran fiesta ecuestre que organizó aquí Luis XIV en 1662, con jinetes disfrazados y desfiles. Y cuentan que a Napoleón este arco le supo a poco. Por eso encargó otro mucho más grande: el Arco del Triunfo.",
+        "Ahora ponte bajo el arco y mira hacia el jardín. En línea recta verás el obelisco de la plaza de la Concordia, detrás los Campos Elíseos subiendo hasta el Arco del Triunfo y, si el día está claro, al fondo, el Gran Arco de La Défense. Es el eje histórico de París: unos ocho kilómetros de monumentos alineados como fichas de dominó. Pocas ciudades tienen una vista tan bien planificada."
+      ],
+      "toNext": "Entra en el jardín de las Tullerías y sigue recto por el paseo central hasta el gran estanque redondo."
+    },
+    {
+      "id": "tuileries",
+      "title": "Jardín de las Tullerías",
+      "subtitle": "Sillas verdes, globos y despedida",
+      "lat": 48.8635,
+      "lng": 2.3275,
+      "radius": 50,
+      "where": "Junto al gran estanque redondo. Busca una de las sillas verdes de metal y siéntate: te lo has ganado.",
+      "paras": [
+        "Llegamos al final, y qué mejor sitio que este: el jardín de las Tullerías. El nombre viene de las tejerías, las fábricas de tejas que había aquí en el siglo dieciséis. La reina Catalina de Médici compró los terrenos, construyó el palacio del que te hablé en el arco y mandó plantar un jardín a la italiana.",
+        "Un siglo después llegó André Le Nôtre, el jardinero de Luis XIV, y lo convirtió en el jardín francés que ves: líneas rectas, perspectivas largas y árboles podados con escuadra y cartabón. Después el rey le encargó un trabajito en Versalles. No le salió mal.",
+        "Durante mucho tiempo fue un jardín real, pero se abrió al público en parte gracias a Charles Perrault, el autor de Cenicienta y El gato con botas, que convenció al ministro Colbert de que los parisinos también tenían derecho a pasear por aquí. Así que, cuando te sientes en una de estas sillas, dale las gracias al señor de Caperucita.",
+        "Y estas sillas verdes son toda una institución. Son gratis, y los parisinos las arrastran de un lado a otro siguiendo al sol, como girasoles. Es el deporte nacional del jardín.",
+        "Una historia más, para mirar al cielo. El 1 de diciembre de 1783 despegó desde este jardín uno de los primeros globos tripulados de la historia, inflado con hidrógeno y con el físico Jacques Charles a bordo. Medio París vino a verlo. Por eso, en los Juegos Olímpicos de 2024, el pebetero olímpico fue un globo con un anillo de fuego que se elevaba aquí cada noche.",
+        "Y aquí me despido. Has recorrido el corazón de París: de la plaza donde nació la huelga a la isla donde nació la ciudad, del puente más viejo con nombre de nuevo al palacio que se convirtió en museo. Ahora te toca a ti: quédate un rato en la silla, mira hacia el obelisco y deja que París haga el resto. ¡Merci, y hasta la próxima!"
+      ],
+      "toNext": ""
+    }
+  ],
+  "legs": [
+    [[48.8563,2.3512],[48.8557,2.3505],[48.855,2.35],[48.8546,2.3497],[48.8539,2.3492],[48.8535,2.3484]],
+    [[48.8535,2.3484],[48.8539,2.3479],[48.8546,2.3479],[48.8553,2.3478],[48.8554,2.3471],[48.8554,2.3465],[48.8558,2.3464],[48.8561,2.3464]],
+    [[48.8561,2.3464],[48.8564,2.3452],[48.8567,2.344],[48.857,2.3428],[48.8572,2.342],[48.8571,2.3413]],
+    [[48.8571,2.3413],[48.8567,2.3411],[48.8563,2.3408],[48.8565,2.3398],[48.8568,2.3388],[48.8572,2.3377],[48.8574,2.337]],
+    [[48.8574,2.337],[48.8577,2.3373],[48.8583,2.3375]],
+    [[48.8583,2.3375],[48.859,2.3377],[48.8594,2.3378],[48.8598,2.3378],[48.8604,2.3377],[48.8606,2.3368],[48.8608,2.3364],[48.861,2.3359]],
+    [[48.861,2.3359],[48.8613,2.3348],[48.8615,2.3339],[48.86175,2.333]],
+    [[48.86175,2.333],[48.8621,2.3316],[48.8625,2.3304],[48.863,2.329],[48.8635,2.3275]]
+  ]
+}

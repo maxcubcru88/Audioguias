@@ -1,0 +1,17 @@
+{
+  "name": "Audioguía París · El corazón de París",
+  "short_name": "París",
+  "description": "Audioguía gratuita a pie por el centro de París, del Ayuntamiento a las Tullerías.",
+  "lang": "es",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F1F3F2",
+  "theme_color": "#1E3E66",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
