@@ -41,8 +41,9 @@ Todo está en `data/paris-centro.json`:
 Las coordenadas son aproximadas: conviene revisarlas sobre el terreno o en Google Maps
 (clic derecho sobre el punto → copiar coordenadas).
 
-Cada vez que publiques cambios, sube la versión en `sw.js` (`const VERSION = 'v2'`) para que los móviles
-descarguen la nueva versión.
+Cada vez que publiques cambios de diseño o de código, sube la versión en dos sitios para que los móviles
+descarguen la nueva: `const VERSION` en `sw.js` y el `?v=` de `css/app.css` y `js/app.js`
+(en `index.html` y en la lista `FILES` de `sw.js`). Los cambios solo de texto en el JSON no lo necesitan.
 
 ## Probarla en el ordenador
 

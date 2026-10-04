@@ -1,14 +1,14 @@
 /* Service worker: la app y el recorrido funcionan sin conexión una vez abiertos.
-   Sube el número de versión cada vez que publiques cambios. */
-const VERSION = 'v5';
+   Al publicar cambios: sube VERSION aquí y el ?v= de css/js en index.html y en FILES. */
+const VERSION = 'v6';
 const SHELL = 'shell-' + VERSION;
 const MAP = 'map-v1';
 const FONTS = 'fonts-v1';
 const FILES = [
   './',
   'index.html',
-  'css/app.css',
-  'js/app.js',
+  'css/app.css?v=6',
+  'js/app.js?v=6',
   'data/paris-centro.json',
   'vendor/maplibre/maplibre-gl.css',
   'vendor/maplibre/maplibre-gl.js',
@@ -19,7 +19,7 @@ const FILES = [
 ];
 
 self.addEventListener('install', e => {
-  e.waitUntil(caches.open(SHELL).then(c => c.addAll(FILES)).then(() => self.skipWaiting()));
+  e.waitUntil(caches.open(SHELL).then(c => c.addAll(FILES.map(f => new Request(f, { cache: 'reload' })))).then(() => self.skipWaiting()));
 });
 
 self.addEventListener('activate', e => {
@@ -65,7 +65,7 @@ self.addEventListener('fetch', e => {
   if (new URL(url).origin === self.location.origin) {
     // Red primero (para recibir los cambios del guion), caché si no hay conexión.
     e.respondWith(
-      fetch(req).then(res => {
+      fetch(req.url, { cache: 'no-cache' }).then(res => {
         if (res.ok) { const copy = res.clone(); caches.open(SHELL).then(c => c.put(req, copy)); }
         return res;
       }).catch(() => caches.match(req, { ignoreSearch: true }).then(r => r || caches.match('index.html')))
