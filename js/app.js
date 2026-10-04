@@ -326,7 +326,7 @@
 
   // ---------- Tarjeta ----------
   function openView(i) {
-    S.view = i; S.showText = false;
+    S.view = i; S.showText = false; lastFollowPi = -1;
     renderCard(); refreshMap();
     const st = tour.stops[i];
     flyTo(st.lat, st.lng, 16.5);
@@ -414,14 +414,28 @@
     if (!seeking) { $('#seek').value = c; paintSeek(c); }
     const pi = started ? st.chunks[Math.min(P.c, st.chunks.length - 1)].pi : -1;
     document.querySelectorAll('#cBody [data-p]').forEach(p => p.classList.toggle('is-reading', +p.dataset.p === pi));
-    if (scroll && started && S.showText) {
-      const cur = document.querySelector('#cBody [data-p="' + pi + '"]');
-      if (cur && cur.dataset.seen !== '1') {
-        document.querySelectorAll('#cBody [data-p]').forEach(p => { p.dataset.seen = ''; });
-        cur.dataset.seen = '1';
-        cur.scrollIntoView({ block: 'nearest', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
-      }
-    }
+    if (scroll && started && S.showText && pi !== lastFollowPi) { lastFollowPi = pi; followReading(); }
+  }
+
+  // Seguir la lectura con el texto abierto, salvo si la persona se está moviendo por el texto:
+  // entonces se deja quieto y se retoma a los 8 s sin tocar la pantalla.
+  let userScrollUntil = 0, followTimer = null, lastFollowPi = -1;
+  function followReading(force) {
+    if (S.view == null || !S.showText || P.stop !== S.view || animating) return;
+    if (!force && Date.now() < userScrollUntil) return;
+    const st = tour.stops[S.view];
+    const pi = st.chunks[Math.min(P.c, st.chunks.length - 1)].pi;
+    const el = document.querySelector('#cBody [data-p="' + pi + '"]'), card = $('#card');
+    if (!el) return;
+    const top = card.scrollTop, bottom = top + card.clientHeight;
+    if (el.offsetTop >= top + 40 && el.offsetTop + Math.min(el.offsetHeight, card.clientHeight * .5) <= bottom - 20) return;
+    card.scrollTo({ top: Math.max(0, el.offsetTop - card.clientHeight * 0.3), behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+  }
+  function userScrolled() {
+    if (!S.showText) return;
+    userScrollUntil = Date.now() + 8000;
+    clearTimeout(followTimer);
+    followTimer = setTimeout(() => { if (P.playing) followReading(true); }, 8100);
   }
 
   // Texto: se despliega deslizando la tarjeta hacia arriba y se recoge deslizando hacia abajo.
@@ -436,7 +450,7 @@
     card.classList.toggle('is-open', on);
     if (!on) card.scrollTop = 0;
     measureCard();
-    if (on) renderPlayer(true);
+    if (on) { renderPlayer(); userScrollUntil = 0; followReading(true); }
   }
   function animateText(on, fromH) {
     if (S.view == null) return;
@@ -510,6 +524,8 @@
     card.addEventListener('touchmove', e => move(e.touches[0].clientY, e), { passive: false });
     card.addEventListener('touchend', e => end(e.changedTouches[0].clientY), { passive: true });
     card.addEventListener('touchcancel', e => end(e.changedTouches[0].clientY), { passive: true });
+    card.addEventListener('touchmove', () => { if (!dragging) userScrolled(); }, { passive: true });
+    card.addEventListener('wheel', userScrolled, { passive: true });
     card.addEventListener('mousedown', e => start(e.clientY, e.target));
     window.addEventListener('mousemove', e => { if (y0 != null) move(e.clientY, e); });
     window.addEventListener('mouseup', e => end(e.clientY));
@@ -658,6 +674,10 @@
     if (mc) mc.setAttribute('content', (c && c.theme && c.theme.accent) || '#1E3E66');
   }
   const routeColor = () => (city && city.theme && city.theme.accent) || '#1E3E66';
+  // Mascota de la ciudad (si no hay dibujo, su placa de calle)
+  function mascotHTML(c, cls) {
+    return c.icon ? '<img class="' + cls + '" src="' + esc(c.icon) + '" alt="" width="96" height="96">' : signHTML(c);
+  }
   function signHTML(c, small) {
     return '<span class="sign sign-' + c.sign + (small ? ' sm' : '') + '">' + esc(c.signText) + (c.signSmall ? ' <small>' + esc(c.signSmall) + '</small>' : '') + '</span>';
   }
@@ -705,7 +725,7 @@
     if (!city) { location.hash = ''; return; }
     applyTheme(city);
     document.title = city.name + ' · ' + catalog.app;
-    $('#citySign').innerHTML = signHTML(city);
+    $('#citySign').innerHTML = mascotHTML(city, 'mascot-lg');
     $('#cityName').textContent = city.name;
     $('#cityBlurb').textContent = city.blurb || '';
     const list = $('#routeList');
@@ -747,7 +767,7 @@
     document.title = tour.title + ' · ' + catalog.app;
     $('#introBack').href = '#' + c.id; $('#introBack').textContent = '‹ ' + c.name;
     $('#exitRoute').href = '#' + c.id;
-    $('#introSign').innerHTML = signHTML(c);
+    $('#introSign').innerHTML = mascotHTML(c, 'mascot-md');
     $('#introLabel').textContent = r.label || '';
     $('#introTitle').textContent = tour.title;
     $('#introSub').textContent = tour.subtitle + '.';

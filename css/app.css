@@ -163,6 +163,8 @@ button{cursor:pointer}
 .chev{font-size:26px;color:var(--muted);line-height:1}
 .badge{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#7A5A12;background:#F6E7B8;border-radius:999px;padding:4px 9px}
 .cc-icon{width:64px;height:64px;border-radius:16px;display:block;flex:none}
+.mascot-lg{width:112px;height:112px;border-radius:28px;display:block}
+.mascot-md{width:72px;height:72px;border-radius:18px;display:block}
 .city-card.is-wip .cc-icon{filter:saturate(.75)}
 
 .route-list{list-style:none;margin:0;padding:0;display:grid;gap:12px}
