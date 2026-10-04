@@ -773,6 +773,7 @@
     document.title = tour.title + ' · ' + catalog.app;
     $('#introBack').href = '#' + c.id; $('#introBack').textContent = '‹ ' + c.name;
     $('#exitRoute').href = '#' + c.id;
+    $('#btnBack').href = '#' + c.id; $('#btnBack').setAttribute('aria-label', 'Volver a ' + c.name);
     $('#introSign').innerHTML = mascotHTML(c, 'mascot-md');
     $('#introLabel').textContent = r.label || '';
     $('#introTitle').textContent = tour.title;

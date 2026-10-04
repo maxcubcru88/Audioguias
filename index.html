@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:wght@700&display=swap">
 <link rel="stylesheet" href="vendor/maplibre/maplibre-gl.css">
-<link rel="stylesheet" href="css/app.css?v=16">
+<link rel="stylesheet" href="css/app.css?v=17">
 </head>
 <body>
 
@@ -25,6 +25,7 @@
 <!-- Interfaz de la ruta: botones del mapa y tarjeta -->
 <div id="tourUI" hidden>
   <div class="map-top">
+    <a class="round" id="btnBack" href="#" aria-label="Volver"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></a>
     <span class="pill" id="modeBadge" hidden>Modo prueba · toca el mapa para moverte</span>
     <div class="map-btns">
       <button class="round" id="btnLocate" type="button" aria-label="Centrar el mapa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg></button>
@@ -115,6 +116,6 @@
 <div id="toast" class="toast" hidden></div>
 
 <script src="vendor/maplibre/maplibre-gl.js"></script>
-<script src="js/app.js?v=16"></script>
+<script src="js/app.js?v=17"></script>
 </body>
 </html>
