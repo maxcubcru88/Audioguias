@@ -70,10 +70,10 @@
       "where": "Dentro del square René-Viviani, junto al árbol apuntalado con muletas de hormigón. La pequeña iglesia de piedra queda a un lado, y Notre-Dame, al otro lado del río.",
       "paras": [
         "Te presento al abuelo de París. Este árbol, una falsa acacia, es el más viejo de la ciudad: lo plantaron hacia 1601, en tiempos de Enrique IV. Tiene marcas de rayo, la copa tocada y unas muletas de hormigón para que no se venga abajo por su propio peso. Vamos, como yo después de tres días de free tours.",
-        "Lo plantó Jean Robin, el botánico del rey, con semillas traídas de América. Y debió de hacerlo muy bien, porque desde entonces la especie entera lleva su apellido: Robinia. Hay quien se pasa la vida buscando la inmortalidad, y este la consiguió con un arbolito.",
+        "Lo plantó Jean Robin, el botánico del rey, con semillas traídas de América. Y debió de hacerlo muy bien, porque desde entonces estos árboles llevan su apellido en latín: Robinia. Hay quien se pasa la vida buscando la inmortalidad, y este la consiguió con un arbolito.",
         "Ahora mira la iglesia: Saint-Julien-le-Pauvre, una de las más antiguas de París. Se construyó entre 1170 y 1220, más o menos a la vez que Notre-Dame, pero en tamaño de bolsillo, y sobre un lugar que ya era sagrado en el siglo sexto. Eso sí, le falta un trozo: en el siglo diecisiete le cortaron dos tramos de la nave, y por eso parece una iglesia a la que le han dado un bocado. Hoy es de los católicos griegos melquitas, con un iconostasio de madera tallado en Damasco. Por si la encuentras cerrada, en la app tienes una foto de cómo es por dentro.",
         "Y aquí viene lo bueno. En la Edad Media, esta iglesia era la sala de reuniones de la Universidad de París: aquí se elegía al rector. Hasta que, a principios del siglo dieciséis, unos estudiantes descontentos con la votación echaron abajo las puertas y reventaron las ventanas. Total, que las elecciones se mudaron a otra parte. La rebeldía estudiantil del Barrio Latino, como ves, viene de lejos.",
-        "Y a la vuelta de la esquina está la rue du Fouarre, la calle de la paja. Se llama así porque los estudiantes daban clase sentados en el suelo, sobre balas de paja. Hasta Dante la menciona en la Divina Comedia. Nada de pupitres: el que llegaba tarde, a pie."
+        "Y a la vuelta de la esquina está la rue du Fouarre, la calle de la paja. Se llama así porque los estudiantes daban clase sentados en el suelo, sobre balas de paja. Hasta Dante la menciona en la Divina Comedia. Nada de pupitres: el que llegaba tarde, de pie."
       ],
       "images": [
         {
@@ -158,7 +158,7 @@
       "where": "En la acera de enfrente del número 13 de la rue de l'Ancienne-Comédie, mirando la fachada del café.",
       "paras": [
         "Bienvenido al Procope, que presume de ser el café más antiguo de París. Lo abrió en 1686 un siciliano, Francesco Procopio, cuando el café todavía era una bebida exótica, casi de lujo. Ha tenido sus cierres y sus reaperturas, pero sigue con el mismo nombre en el mismo sitio. Y mira cómo ha acabado la moda: hoy no se puede dar un paso en París sin tropezar con una terraza.",
-        "¿Y por qué la calle se llama de la Antigua Comedia? Porque justo aquí enfrente, en el número 14, estuvo durante casi un siglo el teatro de la Comédie-Française. Fíjate en la fachada: todavía conserva una figura de Minerva. Actores y público cruzaban la calle para comentar la función con un café, o con algo más fuerte. El negocio, redondo.",
+        "¿Y por qué la calle se llama de la Antigua Comedia? Porque justo aquí enfrente, en el número 14, estuvo durante más de ochenta años el teatro de la Comédie-Française. Fíjate en la fachada: todavía conserva una figura de Minerva. Actores y público cruzaban la calle para comentar la función con un café, o con algo más fuerte. El negocio, redondo.",
         "Luego llegaron los ilustrados: Voltaire, Rousseau, Diderot... En la app tienes un grabado que imagina aquellas tertulias. Dicen que Voltaire se tomaba aquí unas cuarenta tazas al día de café con chocolate, lo que explicaría muchas cosas de su carácter. Y Benjamin Franklin, que con más de setenta años seguía tirándoles los tejos a las damas de París, era tan buen cliente que, cuando murió, cubrieron la sala de negro en su honor.",
         "Con la Revolución, el café se llenó de revolucionarios: Danton, Marat, Desmoulins. Y cuenta la leyenda que un joven oficial sin un duro, un tal Napoleón Bonaparte, dejó aquí su sombrero como garantía porque no podía pagar la cuenta. Si entras, lo verás en una vitrina. Que sea el auténtico ya es otro cantar.",
         "Pobres animales. Antes ya la habían probado con balas de paja, y después vinieron los cadáveres. Si sacas el móvil, verás el pasaje en una foto de hacia 1870. Por cierto, el doctor Guillotin no la inventó: él solo defendió en la Asamblea que todos los condenados, nobles o plebeyos, murieran de la misma manera y sin sufrir. Le pusieron su apellido a la máquina, y él se pasó el resto de su vida intentando quitárselo de encima. Hay favores que no se agradecen."
@@ -187,7 +187,7 @@
       ],
       "quiz": {
         "before": 4,
-        "q": "Justo detrás del café hay un pasaje, la Cour du Commerce Saint-André. Se cuenta que allí, en el taller de un carpintero, probaron la guillotina antes de usarla con personas. ¿Con qué crees que la probaron?",
+        "q": "Justo detrás del café hay un pasaje, la Cour du Commerce Saint-André. Se cuenta que allí, en el taller de un carpintero, probaron la guillotina antes de usarla con los condenados. ¿Con qué crees que la probaron?",
         "options": [
           "Con calabazas",
           "Con maniquíes del teatro de enfrente",
@@ -195,7 +195,7 @@
         ],
         "answer": 2
       },
-      "toNext": "Vuelve a la estatua de Danton, cruza el bulevar Saint-Germain y sube de frente por la rue de l'Odéon, una de las primeras calles de París con aceras. A mitad de camino, en el número 12, a tu derecha, estuvo la Shakespeare and Company original de Sylvia Beach. Al final te espera una plaza en semicírculo con un gran teatro de columnas.",
+      "toNext": "Vuelve a la estatua de Danton, cruza el bulevar Saint-Germain y sube de frente por la rue de l'Odéon, una de las primeras calles de París con aceras. A mitad de camino, en el número 12, a tu derecha, estuvo la Shakespeare and Company de Sylvia Beach, la de Ulises. Al final te espera una plaza en semicírculo con un gran teatro de columnas.",
       "more": {
         "title": "Un turco, un rey y el primer café de París",
         "ask": "¿Tienes un par de minutos más? Te cuento cómo llegó el café a París, con un rey cubierto de diamantes y un enviado turco que ni se inmutó. Si te apetece, toca «Cuéntame más» en el móvil. Si no, seguimos camino.",
@@ -229,7 +229,7 @@
       "where": "En el centro de la plaza del Odéon, frente a las columnas del teatro.",
       "paras": [
         "Este templo griego es el Teatro del Odéon. Lo inauguraron en 1782 para la Comédie-Française, la misma compañía que estaba enfrente del Procope, ¿te acuerdas? Se les había quedado pequeño y se mudaron a lo grande. Fíjate también en la plaza: el semicírculo y las calles en abanico se diseñaron a la vez que el teatro, como un decorado más.",
-        "Un lujo, porque hasta entonces el patio se veía de pie, a empujones y comentando a gritos. Aunque, conociendo al público de la época, seguro que siguieron comentando a gritos.",
+        "Un lujo, porque hasta entonces, en el patio, la función se veía de pie, a empujones y comentando a gritos. Aunque, conociendo al público de la época, seguro que siguieron comentando a gritos.",
         "En 1784 se estrenó aquí Las bodas de Fígaro, de Beaumarchais, una comedia que el rey Luis XVI había tenido años prohibida. ¿Por qué? Porque el malo es un conde que quiere llevarse a la cama a la novia de su criado... y al final el pillado es él, que acaba cortejando a oscuras a su propia mujer disfrazada. Un noble haciendo el ridículo delante de todo París: la Revolución estaba a la vuelta de la esquina.",
         "Y Beaumarchais era un personaje de novela: relojero, inventor, espía del rey en Inglaterra y proveedor de armas para los rebeldes americanos. Su retrato lo tienes en la pantalla: cara de no haber roto un plato. Cuando presumió en un periódico de haber vencido a leones y tigres para estrenar su obra, al rey no le hizo ninguna gracia y lo mandó unos días a la cárcel. Tanto talento, y no supo callarse.",
         "Y saltamos a mayo de 1968. Los estudiantes ocuparon el teatro durante un mes, colgaron banderas en la fachada y lo convirtieron en una asamblea abierta día y noche. Su director, Jean-Louis Barrault, se plantó ante ellos y les dijo que Barrault había muerto, pero que quedaba un hombre vivo. Rebeldía del Barrio Latino, edición moderna."
@@ -268,8 +268,8 @@
       "where": "Junto al gran estanque redondo, en el lado del palacio. Busca una silla verde: aquí también las hay.",
       "paras": [
         "Bienvenido al Jardín de Luxemburgo, el jardín favorito de los parisinos. Antes de los reyes ya hubo aquí villas romanas y, más tarde, un convento de monjes cartujos. Pero lo que ves se lo debemos a una reina: María de Médicis, la viuda de Enrique IV, que en 1612 compró estos terrenos para construirse un palacio que le recordara a su Florencia natal.",
-        "Y ojo, que su boda no había sido un cuento de hadas. Mientras negociaba casarse con ella, Enrique IV le había firmado a su amante una promesa de matrimonio por escrito. Luego se casó con María, por la dote, y siguió con la amante como si nada. En el móvil tienes cómo lo pintó Rubens para ella: un rey que se enamora de un retrato. Cosas del marketing. Ya viuda, María se hizo este palacio a su gusto, pero le duró poco: perdió el pulso de poder con el cardenal Richelieu y en 1631 la desterraron. Hoy el palacio es el Senado de Francia.",
-        "Al duque Decazes, que mandaba en el Senado, le parecían demasiados desnudos para un jardín respetable, y encargó una tanda de reinas bien vestidas para poner orden. La decencia por decreto. Aunque, entre tú y yo, los desnudos siguen ahí.",
+        "Y ojo, que su boda no había sido un cuento de hadas. Mientras negociaba casarse con ella, Enrique IV le había firmado a su amante una promesa de matrimonio por escrito. Luego se casó con María, por la dote, y siguió con la amante como si nada. En el móvil tienes cómo lo pintó Rubens para ella: un rey que se enamora de un retrato. Cosas del marketing. Ya viuda, María se hizo este palacio a su gusto, pero le duró poco: perdió el pulso de poder con el cardenal Richelieu y en 1631 acabó en el exilio. Hoy el palacio es el Senado de Francia.",
+        "Al duque Decazes, que mandaba en el palacio, le parecían demasiados desnudos para un jardín respetable, y encargó una tanda de reinas bien vestidas para poner orden. La decencia por decreto. Aunque, entre tú y yo, los desnudos siguen ahí.",
         "Y ahora, las famosas sillas verdes. Hay unas cuatro mil quinientas, son gratis desde 1974 y pesan más de siete kilos cada una, para que no se las lleve el viento... ni nadie con demasiado cariño por el mobiliario. En el estanque, los niños empujan barquitos de vela con un palo, como hace más de cien años. Y en el lado oeste del jardín hay una pequeña Estatua de la Libertad, de Bartholdi, el mismo escultor de la de Nueva York. La hermana pequeña, vamos.",
         "Por aquí paseaba también un joven Hemingway, pobre como una rata. Él mismo contaba que cruzaba el jardín sin comer, porque el hambre era buena disciplina. Y la leyenda dice que, cuando el guarda se iba a tomar un vino, cazaba alguna paloma para la cena. Si es verdad, las palomas de hoy todavía no se han enterado."
       ],
@@ -300,7 +300,7 @@
         "title": "El Día de los Engañados",
         "ask": "¿Te quedas un par de minutos más? En ese palacio que tienes delante, el de María de Médicis, se vivió uno de los mayores chascos de la historia de Francia: el Día de los Engañados. Si quieres que te lo cuente, toca «Cuéntame más». Si no, seguimos.",
         "paras": [
-          "Hay que volver un poco atrás. El 13 de mayo de 1610 coronaron por fin a María como reina de Francia, en Saint-Denis. En la app tienes la escena tal como la pintó Rubens para este palacio. Y al día siguiente, Ravaillac mató a Enrique IV en una calle de París. Si has hecho nuestra ruta por el centro, ya conoces a ese señor. Total, que María se quedó de regente de su hijo, Luis XIII, que tenía ocho años. Y a su sombra empezó a subir un obispo joven y listísimo: Richelieu.",
+          "Hay que volver un poco atrás. El 13 de mayo de 1610 coronaron por fin a María como reina de Francia, en Saint-Denis. En la app tienes la escena tal como la pintó Rubens para este palacio. Y al día siguiente, Ravaillac mató a Enrique IV en una calle de París. Si has hecho nuestra ruta por el centro, ya conoces a Ravaillac. Total, que María se quedó de regente de su hijo, Luis XIII, que tenía ocho años. Y a su sombra empezó a subir un obispo joven y listísimo: Richelieu.",
           "Pero el protegido le salió respondón. Años después, ya cardenal y primer ministro, Richelieu mandaba más que ella, y María decidió deshacerse de él. El 10 de noviembre de 1630, aquí, en su palacio, se reunió a solas con su hijo el rey para exigirle que lo echara. Habían atrancado las puertas, pero se olvidaron de una puertecita de la capilla. Por ahí se coló Richelieu y los pilló en plena conversación. Él mismo escribió después que Dios se había servido de una puerta sin cerrar.",
           "La escena fue de culebrón. Cuentan que María, fuera de sí, le preguntó al rey si prefería a un lacayo antes que a su propia madre. El rey se marchó sin decir gran cosa, y todo el mundo dio a Richelieu por acabado. Los cortesanos corrieron al palacio a felicitar a la reina y, de paso, a pedirle cargos. Pero el rey se fue a su pabellón de caza de Versalles, llamó a Richelieu y le dio todo su apoyo.",
           "Los que habían corrido a felicitar a la reina quedaron como unos pardillos, y de ahí el nombre: el Día de los Engañados. Algunos lo pagaron caro, con la cárcel o con la cabeza. ¿Y María? En 1631 huyó de Francia y ya no volvió. Murió en Colonia, en 1642, arruinada, en una casa donde había pasado su infancia Rubens, el mismo pintor que la había retratado como una diosa en veinticuatro cuadros para este palacio. Y Richelieu solo la sobrevivió cinco meses. Ganar, ganó. Disfrutarlo, poco."
@@ -328,11 +328,11 @@
       "radius": 45,
       "where": "En la rue Soufflot, a la altura del cruce con la rue Saint-Jacques, mirando hacia las columnas y la cúpula.",
       "paras": [
-        "Para un momento y mira al suelo. Justo debajo de esta calle estaba el foro de Lutecia, la plaza principal de la ciudad romana: templos, tiendas, tribunales. Y aquí viene lo bueno: la Lutecia de los galos estaba en la isla de la Cité, pero en el año 52 antes de Cristo, en plena guerra contra Julio César, los propios galos la quemaron antes de que la tomaran los romanos. Después, los romanos levantaron su ciudad nueva aquí, en esta colina. Así que la París romana empezó aquí arriba.",
+        "Para un momento y mira al suelo. Justo debajo de esta calle estaba el foro de Lutecia, la plaza principal de la ciudad romana: templos, tiendas, tribunales. Y aquí viene lo bueno: la Lutecia de los galos estaba en la isla de la Cité, pero en el año 52 antes de Cristo, en plena guerra contra Julio César, los propios galos la quemaron antes de que la tomaran los romanos. Después, los romanos levantaron su ciudad nueva aquí, en esta colina. Así que el París romano empezó aquí arriba.",
         "El edificio también tiene su historia. En 1744 el rey Luis XV cayó gravemente enfermo y prometió que, si se curaba, construiría una gran iglesia para santa Genoveva, la patrona de París, enterrada en esta colina. Eso sí, para recibir la absolución tuvo que despedir a su amante. Se curó y cumplió su promesa. Lo de la amante, mejor no preguntes.",
         "La diseñó el arquitecto Soufflot, el de la calle, y se terminó en 1790. Pero llegó la Revolución y decidió que aquí no iba a haber santos, sino grandes hombres: en 1791 la convirtieron en panteón, y hasta tapiaron las ventanas para darle un aire más solemne. Mira la inscripción del frontón: a los grandes hombres, la patria agradecida.",
         "Lo echaron. Se descubrió que había tenido tratos secretos con el rey Luis XVI, y la patria, ya no tan agradecida, lo sacó de aquí. El primero en entrar fue el primero en salir. Y a Marat le pasó lo mismo poco después. Ser un gran hombre, en Francia, es un puesto con bastante rotación.",
-        "Hoy descansan aquí más de ochenta personas, como Voltaire, Rousseau o Victor Hugo, al que acompañó más de un millón de personas en su entierro. En la app tienes una foto de aquel día, con la multitud a los pies de estas columnas. Y entre tantos grandes hombres, muy pocas mujeres: la primera por méritos propios fue Marie Curie, en 1995. Más tarde llegaron Joséphine Baker y, en 2025 y 2026, el ministro Robert Badinter, que abolió la pena de muerte, y el historiador Marc Bloch. Y dentro, colgado de la cúpula, está el péndulo de Foucault, que en 1851 demostró ante todo París que la Tierra gira."
+        "Hoy descansan aquí más de ochenta personalidades, como Voltaire, Rousseau o Victor Hugo, al que acompañó más de un millón de personas en su entierro. En la app tienes una foto de aquel día, con la multitud a los pies de estas columnas. Y entre tantos grandes hombres, muy pocas mujeres: la primera por méritos propios fue Marie Curie, en 1995, y después han llegado otras, como Simone Veil o Joséphine Baker. Los últimos, en 2025 y 2026, han sido el ministro Robert Badinter, que abolió la pena de muerte, y el historiador Marc Bloch. Y dentro, colgado de la cúpula, está el péndulo de Foucault, que en 1851 demostró ante todo París que la Tierra gira."
       ],
       "images": [
         {
@@ -392,8 +392,8 @@
         "Esta es la Sorbona, el corazón de la vieja Universidad de París. Su nombre viene de Robert de Sorbon, un teólogo de familia campesina, capellán del rey san Luis, que hacia 1257 fundó aquí un colegio para estudiantes de teología sin dinero. Empezó con una veintena de alumnos, y hoy su nombre suena a universidad en medio mundo. No está mal para un chico de pueblo.",
         "Y aquí está la clave del nombre del barrio. Los estudiantes venían de toda Europa, y para entenderse entre ellos y con sus profesores hablaban en latín, dentro y fuera de clase. Por eso esto se llamó el Barrio Latino. Imagínate pedir la cuenta en la taberna en latín.",
         "Uno de los profesores más famosos de esta colina fue Pedro Abelardo, hacia 1110. Se enamoró de su alumna Eloísa, y de aquellas clases particulares salió la historia de amor más famosa de la Edad Media, con cartas incluidas. En el móvil los tienes a los dos, en una miniatura medieval. Digamos que el temario se les fue un poco de las manos.",
-        "La capilla de la cúpula la mandó construir el cardenal Richelieu, sí, el de Los tres mosqueteros, que está enterrado dentro. La capilla no suele estar abierta, pero en la pantalla tienes su tumba. Sobre su tumba cuelga su sombrero de cardenal, y dice la tradición que caerá el día que su alma salga del purgatorio. De momento, ahí sigue. Y su cabeza tuvo su propia odisea: en la Revolución la sacaron de la tumba, anduvo de mano en mano más de setenta años y no volvió aquí hasta 1866.",
-        "La primera de Francia: unos profesores trajeron a tres impresores alemanes y el primer libro francés impreso salió de aquí mismo. Y para cerrar con rebeldía: en mayo de 1968, la policía desalojó el patio de la Sorbona y el barrio se llenó de barricadas. El Barrio Latino nunca ha sabido estarse quieto."
+        "La capilla de la cúpula la mandó construir el cardenal Richelieu, sí, el de Los tres mosqueteros, que está enterrado dentro. La capilla no suele estar abierta, pero en la pantalla tienes su tumba. Sobre ella cuelga su sombrero de cardenal, y dice la tradición que caerá el día que su alma salga del purgatorio. De momento, ahí sigue. Y su cabeza tuvo su propia odisea: en la Revolución la sacaron de la tumba, anduvo de mano en mano más de setenta años y no volvió aquí hasta 1866.",
+        "La primera de Francia: unos profesores trajeron a tres impresores alemanes y el primer libro impreso en Francia salió de aquí mismo. Y para cerrar con rebeldía: en mayo de 1968, la policía desalojó el patio de la Sorbona y el barrio se llenó de barricadas. El Barrio Latino nunca ha sabido estarse quieto."
       ],
       "images": [
         {
@@ -484,7 +484,7 @@
           "Son seis tapices, dibujados en París y tejidos en Flandes hacia 1500 para una familia de Lyon, los Le Viste. Lo sabemos por su escudo, con tres medias lunas, que ondea en las banderas. Cinco representan los sentidos: el tacto, el gusto, el olfato, el oído y la vista. Y en el sexto, el de «a mi único deseo», la dama no se está poniendo el collar, sino guardándolo en un cofre. ¿Renuncia a los placeres? ¿Es el amor? Cada experto te dirá una cosa.",
           "En todos aparecen un león y un unicornio. En la Edad Media se creía que el unicornio era salvaje e imposible de cazar, y que solo se dejaba domar por una doncella: se le acercaba, apoyaba la cabeza en su regazo y se quedaba dormido. En el tapiz de la vista, el unicornio pone las patas delanteras en las rodillas de la dama y se mira en el espejo que ella le sostiene. Te lo he dejado en la app. Coqueto, el animal.",
           "Durante siglos estuvieron olvidados en un castillo del centro de Francia, en Boussac, cogiendo humedad. En 1841 llegó Prosper Mérimée, el autor de Carmen, que era inspector de monumentos, y los hizo proteger. Y ojo al dato: quien le dio el chivatazo fue, seguramente, la novelista George Sand, que vivía cerca. Años antes habían sido amantes, muy poco tiempo. Muy poco. Por lo visto, aquello no salió bien. Lo de los tapices, en cambio, salió de maravilla.",
-          "Cuentan que el alcalde le dijo a Mérimée que había habido otros tapices todavía más bonitos, pero que un antiguo dueño los había cortado para tapar carros. En 1882, el museo compró los seis por veinticinco mil francos oro. Y hoy son tan famosos que hasta salen en las películas de Harry Potter: unas copias cuelgan en la sala común de Gryffindor. Si los ves en la pantalla, ya sabes de dónde vienen."
+          "Cuentan que el alcalde le dijo a Mérimée que había habido otros tapices todavía más bonitos, pero que un antiguo dueño los había cortado para tapar carros. En 1882, el museo compró los seis por veinticinco mil francos oro. Y hoy son tan famosos que hasta salen en las películas de Harry Potter: unas copias cuelgan en la sala común de Gryffindor. Si los ves en la película, ya sabes de dónde vienen."
         ],
         "images": [
           {
@@ -930,5 +930,67 @@
         2.34349
       ]
     ]
-  ]
+  ],
+  "audio": {
+    "base": "audio/paris/latino/",
+    "credit": "Voz generada con IA (ElevenLabs)",
+    "stops": {
+      "shakespeare-and-company": {
+        "paras": [
+          "shakespeare-and-company-p0.mp3",
+          "shakespeare-and-company-p1.mp3",
+          "shakespeare-and-company-p2.mp3",
+          "shakespeare-and-company-p3.mp3",
+          "shakespeare-and-company-p4.mp3",
+          "shakespeare-and-company-p5.mp3"
+        ],
+        "quiz": "shakespeare-and-company-q.mp3",
+        "ok": "shakespeare-and-company-ok.mp3",
+        "ko": "shakespeare-and-company-ko.mp3",
+        "skip": "shakespeare-and-company-skip.mp3"
+      }
+    },
+    "files": {
+      "shakespeare-and-company-p0.mp3": {
+        "v": "13c1c722",
+        "b": 519567
+      },
+      "shakespeare-and-company-p1.mp3": {
+        "v": "44fc7234",
+        "b": 659165
+      },
+      "shakespeare-and-company-p2.mp3": {
+        "v": "376441c5",
+        "b": 456873
+      },
+      "shakespeare-and-company-p3.mp3": {
+        "v": "0eca1a41",
+        "b": 350711
+      },
+      "shakespeare-and-company-p4.mp3": {
+        "v": "cc958b95",
+        "b": 419675
+      },
+      "shakespeare-and-company-p5.mp3": {
+        "v": "d9e5c3ec",
+        "b": 223652
+      },
+      "shakespeare-and-company-q.mp3": {
+        "v": "b0d5fdd1",
+        "b": 316021
+      },
+      "shakespeare-and-company-ok.mp3": {
+        "v": "b752486e",
+        "b": 17598
+      },
+      "shakespeare-and-company-ko.mp3": {
+        "v": "9b2169de",
+        "b": 69007
+      },
+      "shakespeare-and-company-skip.mp3": {
+        "v": "4cd9b5df",
+        "b": 74022
+      }
+    }
+  }
 }
