@@ -55,22 +55,16 @@
       "sign": "london",
       "signText": "London",
       "signSmall": "SW1",
-      "blurb": "Reyes, espías y un reloj muy puntual: Londres a pie, de Westminster a la Torre.",
-      "status": "wip",
+      "blurb": "Reyes, espías y un reloj muy puntual: Londres a pie, de Trafalgar al Big Ben.",
+      "status": "ready",
       "routes": [
         {
           "id": "westminster",
           "label": "Westminster",
-          "title": "Westminster y el Támesis",
-          "subtitle": "Big Ben, la Abadía, Downing Street y Trafalgar",
-          "status": "wip"
-        },
-        {
-          "id": "city",
-          "label": "La City",
-          "title": "La City y Tower Bridge",
-          "subtitle": "San Pablo, el Puente del Milenio y la Torre de Londres",
-          "status": "wip"
+          "title": "El Londres de reyes y ministros",
+          "subtitle": "De Trafalgar al Big Ben, entre palacios, guardias y Downing Street",
+          "file": "data/londres/westminster.json",
+          "status": "ready"
         }
       ],
       "icon": "icons/ciudades/londres.svg",

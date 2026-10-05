@@ -1,0 +1,1069 @@
+{
+  "id": "westminster",
+  "city": "londres",
+  "title": "El Londres de reyes y ministros",
+  "subtitle": "De Trafalgar al Big Ben, entre palacios, guardias y Downing Street",
+  "lang": "es-ES",
+  "version": 1,
+  "meeting": {
+    "name": "Trafalgar Square",
+    "address": "Trafalgar Square, London WC2N 5DN, Reino Unido",
+    "note": "Al pie de la columna de Nelson, junto a los leones, con la National Gallery detrás. Metro: Charing Cross (líneas Northern y Bakerloo) o Embankment."
+  },
+  "stops": [
+    {
+      "id": "trafalgar",
+      "title": "Trafalgar Square",
+      "subtitle": "Un almirante, cuatro leones y una batalla que perdimos",
+      "lat": 51.50803,
+      "lng": -0.12807,
+      "radius": 50,
+      "where": "Al pie de la columna de Nelson, entre los leones de bronce, con la National Gallery a tu espalda y la gran avenida de Whitehall al fondo.",
+      "paras": [
+        "¡Hola, te doy la bienvenida a Londres! Este es tu free tour de bolsillo por Westminster, el barrio del poder: aquí viven el rey, el primer ministro y el Parlamento, y todos a un paseo unos de otros. Yo pongo las historias; tú, los pies y la curiosidad. Como en todo buen free tour, de vez en cuando te haré una pregunta. Tú intenta adivinar, que aquí no se suspende a nadie. Y en algunas paradas, si te quedas con ganas, te ofreceré una historia extra para curiosos.",
+        "Empezamos en Trafalgar Square. Sí, Trafalgar, como el cabo de Cádiz. Aquí los ingleses celebran la batalla de 1805, en la que su flota hundió los planes de Napoleón… y, de paso, a la armada española, que iba con los franceses. Vamos, que nos han dedicado una plaza entera, y no precisamente para hacernos un homenaje. Si sacas el móvil, verás la batalla pintada por Turner, con el barco de Nelson en mitad del humo.",
+        "Ahí arriba, a unos cincuenta metros, está él: el almirante Horatio Nelson. Ojo al dato, que le faltaba el brazo derecho, y ese se lo dejamos nosotros: lo perdió en 1797 atacando Santa Cruz de Tenerife, de donde salió escaldado. Y aun así, en casa no le faltaba de nada: vivía con su amante, Emma Hamilton, y con el marido de ella, que miraba hacia otro lado con mucha educación. Un trío muy británico. En la app tienes el retrato de Emma, y entenderás al almirante.",
+        "Como lo oyes, en un barril bien cerrado y vigilado día y noche. Cuentan que algunos marineros, por el camino, le daban sorbitos a escondidas, y que el barril llegó medio vacío. Es una leyenda, pero desde entonces en la marina británica al ron lo llaman la sangre de Nelson. Abajo, en el pedestal, los cuatro relieves de bronce con sus batallas se fundieron con cañones franceses capturados.",
+        "Antes de irnos, mira hacia la gran avenida, al sur. En una isleta hay un rey a caballo: Carlos primero. Ese punto es el centro oficial de Londres: desde ahí se miden las distancias en las carreteras. Y el rey no mira hacia allí por casualidad: mira al sitio donde le cortaron la cabeza. Pero esa historia te la cuento más adelante."
+      ],
+      "images": [
+        {
+          "src": "img/londres/westminster/trafalgar.webp",
+          "w": 1100,
+          "h": 775,
+          "para": 1,
+          "after": "Si sacas el móvil, verás la batalla pintada por Turner, con el barco de Nelson en mitad del humo.",
+          "caption": "La batalla de Trafalgar, pintada por Turner entre 1822 y 1824",
+          "credit": "J. M. W. Turner · National Maritime Museum · Dominio público",
+          "source": "https://commons.wikimedia.org/wiki/File:Turner,_The_Battle_of_Trafalgar_(1822).jpg"
+        },
+        {
+          "src": "img/londres/westminster/trafalgar-2.webp",
+          "w": 909,
+          "h": 1100,
+          "para": 2,
+          "after": "En la app tienes el retrato de Emma, y entenderás al almirante.",
+          "caption": "Emma Hamilton, retratada por George Romney",
+          "credit": "George Romney · Dominio público",
+          "source": "https://commons.wikimedia.org/wiki/File:Emma,_Lady_Hamilton_by_George_Romney.jpg"
+        }
+      ],
+      "quiz": {
+        "before": 3,
+        "q": "Nelson ganó la batalla, pero murió en ella de un disparo. Y había que llevar el cuerpo a Inglaterra sin que se estropeara por el camino. ¿En qué crees que lo metieron?",
+        "options": [
+          "En un barril de brandy",
+          "En un ataúd lleno de sal",
+          "En un barril de miel"
+        ],
+        "answer": 0
+      },
+      "toNext": "Mirando a la National Gallery, sal por la esquina de la izquierda, junto al edificio de Canadá, el de la bandera de la hoja de arce, y sigue recto por Pall Mall unos diez minutos. Es la calle de los clubes de caballeros, palacetes sin cartel donde durante mucho tiempo no entraban mujeres. Al final verás una puerta de ladrillo rojo con un gran reloj. Ahí paramos."
+    },
+    {
+      "id": "st-james-palace",
+      "title": "Palacio de St James",
+      "subtitle": "El palacio de Enrique VIII donde se proclama a los reyes",
+      "lat": 51.50503,
+      "lng": -0.13865,
+      "radius": 40,
+      "where": "Al final de Pall Mall, frente a la puerta de ladrillo rojo con dos torres y un gran reloj, en la esquina con St James's Street.",
+      "paras": [
+        "Esta puerta de ladrillo rojo, con sus torres de ocho lados y su reloj, es la entrada al palacio de St James. Lo mandó construir hacia 1531 Enrique octavo, sí, el de las seis esposas. Y fíjate qué sitio eligió: aquí había un hospital de leprosos dedicado a Santiago, St James en inglés. De ahí el nombre. El rey compró el terreno, cerró el hospital y se hizo un palacio. Muy suyo.",
+        "Dicen que en algunos rincones del palacio todavía se ven las iniciales H y A entrelazadas: Henry y Anne, por Ana Bolena, su segunda mujer. El amor le duró poco: tres años después de la boda, la mandó ejecutar. Las iniciales, en cambio, siguen ahí.",
+        "Tras el incendio del palacio de Whitehall, en 1698, este fue durante casi siglo y medio la residencia principal de los reyes en Londres. Aquí nacieron Carlos segundo y su hermano Jacobo, y aquí pasó su última noche otro Carlos, el primero, el del caballo de Trafalgar. Durmió poco, y a la mañana siguiente cruzó el parque andando hacia el cadalso. Retén el detalle, que volveremos a él. En el móvil tienes su retrato triple, pintado por Van Dyck para que un escultor en Roma pudiera hacerle un busto sin verlo.",
+        "Ante la de este mismo palacio, como lo oyes, aunque ningún monarca vive aquí desde hace casi dos siglos. Así que el embajador de España en Londres es, oficialmente, embajador ante la corte de St James. Los británicos cambian de palacio, pero de costumbres, nunca.",
+        "Y aquí sigue pasando algo importante. Cuando muere un monarca, se reúne en este palacio el Consejo de Ascensión al trono, y desde un balcón del patio de al lado un heraldo proclama al nuevo rey. La última vez fue en septiembre de 2022, con Carlos tercero."
+      ],
+      "images": [
+        {
+          "src": "img/londres/westminster/st-james-palace.webp",
+          "w": 1100,
+          "h": 920,
+          "para": 2,
+          "after": "En el móvil tienes su retrato triple, pintado por Van Dyck para que un escultor en Roma pudiera hacerle un busto sin verlo.",
+          "caption": "Carlos primero en tres posiciones, de Van Dyck, hacia 1635",
+          "credit": "Anthony van Dyck · Royal Collection · Dominio público",
+          "source": "https://commons.wikimedia.org/wiki/File:Triple_portrait_of_Charles_I.jpg"
+        }
+      ],
+      "quiz": {
+        "before": 3,
+        "q": "Hoy el rey vive aquí al lado. Pero ¿ante qué corte crees que se acredita oficialmente cualquier embajador que llega al Reino Unido?",
+        "options": [
+          "La corte de Buckingham",
+          "La corte de Windsor",
+          "La corte de St James"
+        ],
+        "answer": 2
+      },
+      "toNext": "Con la puerta del reloj delante, vuelve unos pasos a la izquierda por Pall Mall, por donde has venido, y gira a la derecha por Marlborough Road, la calle que baja pegada al palacio. A tu derecha verás Friary Court, el patio del balcón de las proclamaciones, a menudo con un guardia de gorro de piel. Al llegar abajo, a la gran avenida rojiza, The Mall, gira a la derecha y para frente a la tapia de una casa blanca: Clarence House."
+    },
+    {
+      "id": "clarence-house",
+      "title": "Clarence House",
+      "subtitle": "La casa del rey Carlos y de un rey con diez hijos sin boda",
+      "lat": 51.50312,
+      "lng": -0.1378,
+      "radius": 40,
+      "where": "En la acera de The Mall, junto a la tapia del jardín, donde asoma entre los árboles una casa blanca de estuco.",
+      "paras": [
+        "Detrás de esta tapia asoma Clarence House, una mansión blanca de estuco. La terminó en 1827 el arquitecto John Nash para el príncipe Guillermo, duque de Clarence. El palacio de St James, el que acabas de ver, le parecía viejo y estrecho, así que se hizo una casa al lado, a su gusto. Hoy viven aquí el rey Carlos tercero y la reina Camila: prefieren esta casa y usan Buckingham para trabajar. Vamos, que el rey tiene la oficina a cinco minutos andando.",
+        "Pero volvamos a Guillermo, que tiene miga. Antes de ser rey vivió unos veinte años con una actriz muy famosa, Dorothea Jordan. Sin casarse, eso sí. Y tuvieron diez hijos, ni más ni menos, todos con el apellido FitzClarence, que viene a ser hijos de Clarence. Lo de la familia numerosa se le daba de maravilla; lo de pasar por el altar, ya no tanto. Si sacas el móvil, verás a Dorothea vestida de chico, en uno de los papeles que la hicieron famosa.",
+        "El duque quería a la actriz bien lejos de las tablas. Y cuando ella volvió a actuar para pagar las deudas de un yerno, le quitó la pensión y la custodia de sus hijas. Dorothea murió en Francia, lejos de todos y llena de deudas. Él, poco después, se casó con una princesa alemana para dar un heredero a la corona. Pero ningún hijo legítimo le sobrevivió, y por eso el trono pasó a su sobrina, una tal Victoria.",
+        "¿Te acuerdas de Trafalgar Square? En una de sus esquinas hay un pedestal vacío. Era para una estatua de Guillermo a caballo, pero el dinero no llegó nunca. Hoy ponen allí obras de arte moderno que van cambiando. Pobre Guillermo: ni caballo tuvo.",
+        "Más tarde vivieron aquí la princesa Isabel, la futura Isabel segunda, y su marido Felipe; aquí nació en 1950 su hija Ana. Y después, durante casi cincuenta años, la Reina Madre, que murió con ciento un años. Cuentan que su secreto era una ginebra con Dubonnet antes de comer. Cada uno se cuida a su manera."
+      ],
+      "images": [
+        {
+          "src": "img/londres/westminster/clarence-house.webp",
+          "w": 903,
+          "h": 1100,
+          "para": 1,
+          "after": "Si sacas el móvil, verás a Dorothea vestida de chico, en uno de los papeles que la hicieron famosa.",
+          "caption": "Dorothea Jordan como Rosalind, en Como gustéis, de Shakespeare",
+          "credit": "William Beechey · Dominio público",
+          "source": "https://commons.wikimedia.org/wiki/File:Portrait_of_Mrs_Dorothy_Jordan_(1761%E2%80%931816)_as_Rosalind_in_Shakespeare%27s_%E2%80%98As_You_Like_It%E2%80%99.jpg"
+        }
+      ],
+      "quiz": {
+        "before": 2,
+        "q": "Cuando Guillermo dejó a Dorothea, le pasó una buena pensión, pero con una condición. ¿Cuál crees que era?",
+        "options": [
+          "Que no volviera a subirse a un escenario",
+          "Que se fuera a vivir a Irlanda",
+          "Que no volviera a pisar Londres"
+        ],
+        "answer": 0
+      },
+      "toNext": "Sigue por The Mall hacia la izquierda, con la tapia a tu derecha, en dirección al gran edificio que cierra la avenida, con un monumento dorado delante. Fíjate en el asfalto: es rojizo, como una alfombra que lleva hasta el palacio. En unos cinco minutos llegas a la reina Victoria, sentada en mármol frente a Buckingham."
+    },
+    {
+      "id": "buckingham",
+      "title": "Palacio de Buckingham",
+      "subtitle": "La casa del rey, su bandera y sus guardias",
+      "lat": 51.50186,
+      "lng": -0.14055,
+      "radius": 60,
+      "where": "En el monumento a la reina Victoria, en la escalinata o junto a la verja, frente a la fachada principal del palacio.",
+      "paras": [
+        "Y aquí lo tienes: el palacio de Buckingham. Pero ojo, que no nació como palacio. La construyó en 1703 el duque de Buckingham, y en 1761 el rey Jorge tercero se la compró para su mujer, la reina Carlota, como refugio. Luego la fueron ampliando hasta convertirla en esto. Si sacas el móvil, verás cómo era al principio: una casa grande, sí, pero de duque, no de rey.",
+        "La primera en reinar desde aquí fue Victoria, en 1837, la sobrina de Guillermo, ¿te acuerdas? Y esta fachada de piedra clara es más moderna de lo que parece: es de 1913. A su famoso balcón sale la familia real a saludar en bodas, coronaciones y jubileos.",
+        "Ni más ni menos, y con setenta y ocho cuartos de baño. Y un truco: mira la bandera de arriba. Si ondea el estandarte real, de colores, con leones y un arpa, el rey está en palacio. Si ondea la bandera británica, no está. Vamos, como el calcetín en el pomo de la puerta, pero en versión real.",
+        "Y ahora, el Cambio de Guardia. La Guardia del Rey vigila Buckingham y el palacio de St James, y aquí delante la guardia saliente entrega el puesto a la entrante, con desfile y banda de música. Y no son actores, ¿eh?: son soldados de verdad, de regimientos en activo, que entre turno y turno de garita pueden haber estado de misión en el extranjero. Se hace en días distintos según la época del año y a veces se cancela, así que si te coincide, aprovecha.",
+        "Los soldados son de la Guardia a pie, con casaca roja y gorro de piel de oso de casi medio metro. Hay cinco regimientos, y se distinguen por un detalle muy británico: cómo van agrupados los botones, de uno en uno, de dos en dos, y así hasta cinco.",
+        "La banda, por cierto, no solo toca marchas militares: también canciones de musicales y hasta éxitos pop. En 2014, el día que la reina visitó el rodaje de Juego de Tronos, la banda de la Guardia Escocesa tocó aquí la música de la serie. Se acercaba el invierno, sí, pero con gorro de piel de oso."
+      ],
+      "images": [
+        {
+          "src": "img/londres/westminster/buckingham.webp",
+          "w": 1100,
+          "h": 791,
+          "para": 0,
+          "after": "Si sacas el móvil, verás cómo era al principio: una casa grande, sí, pero de duque, no de rey.",
+          "caption": "Buckingham House hacia 1710, cuando aún era la casa de un duque",
+          "credit": "Sutton Nicholls · Yale Center for British Art · CC0",
+          "source": "https://commons.wikimedia.org/wiki/File:Sutton_Nicholls_-_Buckingham_House_-_B1977.14.9661_-_Yale_Center_for_British_Art.jpg"
+        }
+      ],
+      "quiz": {
+        "before": 2,
+        "q": "Este palacio no es precisamente un piso de estudiantes. ¿Cuántas habitaciones crees que tiene?",
+        "options": [
+          "Unas ciento setenta y cinco",
+          "Setecientas setenta y cinco",
+          "Más de dos mil"
+        ],
+        "answer": 1
+      },
+      "more": {
+        "title": "El hombre que se coló en el dormitorio de la reina",
+        "ask": "¿Te cuento cómo un londinense se coló en este palacio, no una vez, sino dos, y acabó en el dormitorio de la reina? Si te apetece, toca «Cuéntame más». Si no, seguimos.",
+        "paras": [
+          "Fue en 1982. Michael Fagan, un londinense de treinta y tantos años, saltó de madrugada la tapia del palacio, de más de cuatro metros, con pinchos y alambre de espino, y trepó por una tubería. Una alarma saltó, pero la policía pensó que estaba estropeada. Y lo mejor: no era la primera vez. Un mes antes ya se había colado por una ventana, se había paseado por el palacio, se había tomado un vino y se había ido tan tranquilo. En la app tienes el palacio visto desde el aire, con su jardín y su tapia.",
+          "La segunda vez, el 9 de julio, fue a parar al dormitorio de Isabel segunda. Eran poco más de las siete de la mañana. La reina se despertó con un desconocido en la habitación, llamó a la centralita del palacio, y nadie vino. Volvió a llamar, y nadie. Imagínate: la mujer más protegida del país, sola en camisón con un intruso.",
+          "Las versiones no coinciden. Al principio se contó que charlaron un buen rato; años después, él aseguró que la reina salió del cuarto a toda prisa, descalza. Al final apareció un lacayo que volvía de pasear a los perros, y luego la policía. Y atención: entrar sin permiso en el palacio ni siquiera era delito entonces. Solo lo acusaron de robar el vino de la primera visita, y al final ni por eso lo juzgaron.",
+          "Después de aquello la seguridad cambió de arriba abajo, y hoy colarse aquí sí es delito. Así que, aunque te entren ganas de ver las setecientas setenta y cinco habitaciones, mejor por la puerta y con entrada, que algunas se abren al público en verano."
+        ],
+        "images": [
+          {
+            "src": "img/londres/westminster/buckingham-mas.webp",
+            "w": 640,
+            "h": 398,
+            "para": 0,
+            "after": "En la app tienes el palacio visto desde el aire, con su jardín y su tapia.",
+            "caption": "El palacio desde el aire, con su jardín",
+            "credit": "Foto: Brendan y Ruth McCartney · CC BY-SA 2.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Buckingham_Palace_AerialView.jpg"
+          }
+        ]
+      },
+      "toNext": "Con el palacio a tu espalda, el parque de St James queda delante, a la derecha. Cruza con cuidado, entra y sigue el camino que bordea el lago. En unos cinco minutos llegarás a un puente azul que cruza el agua: párate en el medio."
+    },
+    {
+      "id": "st-james-park",
+      "title": "Parque de St James",
+      "subtitle": "Cocodrilos, un elefante y un rey muy enamoradizo",
+      "lat": 51.50231,
+      "lng": -0.13521,
+      "radius": 40,
+      "where": "En el centro del puente azul que cruza el lago, el Blue Bridge.",
+      "paras": [
+        "Párate en mitad del puente y gira despacio. A un lado, al fondo, el palacio de Buckingham. Al otro, entre los árboles, las torres y cúpulas de Whitehall, que parecen sacadas de un cuento. Es una de las mejores vistas de Londres, y gratis. Estás en el parque real más antiguo de la ciudad: Enrique octavo, otra vez él, compró estos terrenos pantanosos en 1532 para cazar ciervos.",
+        "Pero el que le dio vidilla fue Jacobo primero, que llegó al trono en 1603. Montó aquí un pequeño zoo: camellos, cocodrilos, un elefante y pajareras con aves exóticas. Las pajareras estaban en la calle de al lado, que por eso todavía se llama Birdcage Walk, el paseo de las jaulas de pájaros.",
+        "Y todavía hay pelícanos, herederos de aquel regalo. Suelen tomar el sol en las rocas del lago, y no les impresiona nadie: alguno se ha tragado una paloma entera delante de los turistas. Si ves uno, guarda las distancias con el bocadillo.",
+        "Carlos segundo, por cierto, convirtió el parque en un jardín a la francesa, con un gran canal donde hoy está el lago, y lo abrió al público. Paseaba por aquí casi a diario con sus perros, esos spaniels que hoy llevan su nombre.",
+        "Y el rey tenía una amante muy famosa, Nell Gwyn, una actriz que vivía al lado, en Pall Mall. Un cronista de la época cuenta que la vio asomada a la tapia de su jardín, charlando con el rey, que estaba abajo en el paseo, de manera, cito, muy familiar. En el móvil tienes a Nell, en un retrato de la época. Y luego dicen que los ingleses son fríos."
+      ],
+      "images": [
+        {
+          "src": "img/londres/westminster/st-james-park.webp",
+          "w": 934,
+          "h": 1100,
+          "para": 4,
+          "after": "En el móvil tienes a Nell, en un retrato de la época.",
+          "caption": "Nell Gwyn, retratada por Simon Verelst hacia 1680",
+          "credit": "Simon Verelst · Dominio público",
+          "source": "https://commons.wikimedia.org/wiki/File:Nell_Gwyn_by_Simon_Verelst.jpg"
+        }
+      ],
+      "quiz": {
+        "before": 2,
+        "q": "En el lago viven unos vecinos que llegaron en 1664, cuando un embajador de Rusia se los regaló al rey Carlos segundo. ¿Qué animales crees que eran?",
+        "options": [
+          "Flamencos",
+          "Cisnes negros",
+          "Pelícanos"
+        ],
+        "answer": 2
+      },
+      "toNext": "Sal del puente hacia la orilla de The Mall, la de los árboles grandes, y gira a la derecha por el camino de la orilla, con el lago a tu derecha, hacia las torres que asoman al fondo. Al acabar el parque, cruza la calle y entra en la gran explanada de grava: Horse Guards Parade."
+    },
+    {
+      "id": "horse-guards",
+      "title": "Horse Guards Parade",
+      "subtitle": "Desfiles, caballos y la cabeza de un rey",
+      "lat": 51.50449,
+      "lng": -0.12846,
+      "radius": 60,
+      "where": "En la explanada de grava, frente al edificio de Horse Guards, el de la torre del reloj y los arcos.",
+      "paras": [
+        "Esta explanada inmensa es Horse Guards Parade. En tiempos de Enrique octavo aquí se celebraban torneos, caballeros con armadura dándose lanzazos para impresionar a las damas. Hoy es el escenario del gran desfile del cumpleaños del rey, en junio. Porque el rey tiene dos cumpleaños: el de verdad y el oficial, que se celebra cuando hace mejor tiempo para desfilar. Y en los Juegos Olímpicos de 2012 aquí se jugó al vóley playa, en bikini y delante de los ministerios. Nunca el Gobierno había tenido unas vistas tan entretenidas.",
+        "El edificio de la torre del reloj es el cuartel de la Caballería de la Casa Real, y su arco central era la entrada oficial a los palacios reales. Al otro lado, cruzando la avenida, queda el último resto del gran palacio de Whitehall: la Casa de Banquetes. Ahí se cierra la historia que empezamos en Trafalgar y en St James.",
+        "Quería ir bien abrigado, porque no soportaba la idea de que la gente le viera temblar de frío y pensara que temblaba de miedo. Salió por una ventana de la Casa de Banquetes a un cadalso montado en plena calle, y hacia las dos de la tarde, de un solo golpe, se acabó. El verdugo iba enmascarado y nunca se supo quién era. Durante once años, Inglaterra no tuvo rey.",
+        "Lo más amargo es lo que vio el rey justo antes. Para llegar a la ventana atravesó el gran salón, bajo un techo pintado por Rubens que él mismo había encargado, y que celebraba el poder de los reyes, otorgado por Dios. Menuda ironía. En la app tienes ese techo, que se conserva entero."
+      ],
+      "images": [
+        {
+          "src": "img/londres/westminster/horse-guards.webp",
+          "w": 1100,
+          "h": 733,
+          "para": 3,
+          "after": "En la app tienes ese techo, que se conserva entero.",
+          "caption": "El gran salón de la Casa de Banquetes, con el techo de Rubens",
+          "credit": "Foto: traveljunction · CC BY-SA 2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Banqueting_House_in_the_Palace_of_Whitehall_with_ceiling_paintings_by_Rubens,_London._(16402125117).jpg"
+        }
+      ],
+      "quiz": {
+        "before": 2,
+        "q": "Tras una guerra civil, el Parlamento juzgó y condenó a muerte a Carlos primero. El 30 de enero de 1649 hacía un frío tremendo, y antes de salir el rey pidió algo. ¿Qué crees que pidió?",
+        "options": [
+          "Una segunda camisa",
+          "Una copa de vino",
+          "Su sombrero favorito"
+        ],
+        "answer": 0
+      },
+      "more": {
+        "title": "Rubens, el pintor que vino de espía",
+        "ask": "El pintor de ese techo no vino a Londres solo por el arte: lo mandó el rey de España en una misión diplomática. ¿Te lo cuento? Si te apetece, toca «Cuéntame más». Si no, seguimos.",
+        "paras": [
+          "En 1629, España e Inglaterra estaban en guerra, y Felipe cuarto necesitaba en Londres a alguien de confianza. ¿Y a quién mandó? A Pedro Pablo Rubens, el pintor más famoso de Europa, que hablaba varios idiomas, se movía como pez en el agua entre poderosos y tenía la excusa perfecta: un pintor puede entrar en cualquier palacio sin levantar sospechas. Si sacas el móvil, lo verás en un autorretrato de aquellos años.",
+          "Carlos primero, que era un loco del arte, lo recibió encantado. Entre cuadro y cuadro, Rubens negoció, informó a Madrid de todo lo que oía y preparó el terreno para la paz, que se firmó a finales de 1630. El rey quedó tan contento que lo nombró caballero. Vamos, que España mandó a un pintor y volvió con un sir.",
+          "De aquel viaje salió el encargo del techo de la Casa de Banquetes. Rubens lo pintó en Amberes, en nueve lienzos enormes, y los mandó por barco. Se colocaron en 1636, y él no llegó a verlos en su sitio: la gota no le dejaba viajar. Le pagaron tres mil libras y una cadena de oro, una fortuna para la época.",
+          "Y un detalle precioso: al rey le gustaba tanto el techo que sacó de allí sus fiestas de teatro, porque el humo de las velas lo estropeaba, y se hizo construir otra sala al lado. Lo cuidó como a un hijo. Trece años después, ese techo fue lo último que vio antes de salir al cadalso."
+        ],
+        "images": [
+          {
+            "src": "img/londres/westminster/horse-guards-mas.webp",
+            "w": 795,
+            "h": 1100,
+            "para": 0,
+            "after": "Si sacas el móvil, lo verás en un autorretrato de aquellos años.",
+            "caption": "Autorretrato de Rubens, de 1623",
+            "credit": "Peter Paul Rubens · Royal Collection · Dominio público",
+            "source": "https://commons.wikimedia.org/wiki/File:Sir_Peter_Paul_Rubens_(Siegen_1577_-_Antwerp_1640)_-_A_Self-Portrait_-_RCIN_400156_-_Royal_Collection.jpg"
+          }
+        ]
+      },
+      "toNext": "Cruza bajo el arco central del edificio, saludando de reojo a los guardias, y sal a la avenida de Whitehall. Enfrente, al otro lado, tienes la Casa de Banquetes, de piedra clara. Ahora date la vuelta y mira el reloj de la torre: dicen que la marca negra junto al número dos recuerda la hora de la ejecución de Carlos primero. Después, con el reloj a tu espalda, baja por Whitehall hacia la derecha. A unos doscientos metros, en tu misma acera, verás unas verjas negras con policías: Downing Street."
+    },
+    {
+      "id": "downing-street",
+      "title": "Downing Street",
+      "subtitle": "La puerta más famosa del país",
+      "lat": 51.5033,
+      "lng": -0.1263,
+      "radius": 35,
+      "where": "En la acera de Whitehall, frente a las verjas negras de la entrada de Downing Street.",
+      "paras": [
+        "Detrás de estas verjas está la calle más vigilada del país: Downing Street. En el número 10 vive y trabaja el primer ministro desde 1735, y en el 11, el ministro de Hacienda. Hasta 1989 cualquiera podía entrar en la calle y hacerse una foto en la puerta. Luego, por la amenaza terrorista, pusieron estas verjas, y ahora las fotos se hacen desde aquí, de puntillas.",
+        "La calle lleva el nombre de George Downing, un personaje de cuidado. Fue espía de Cromwell, el que gobernó tras la ejecución del rey, y cuando volvió la monarquía, ni corto ni perezoso, se cambió de bando y entregó a sus antiguos compañeros. Aquí levantó unas casas baratas y mal hechas. Churchill decía que el número 10 era endeble, obra de un contratista aprovechado. Ya ves: la casa del poder británico, obra de un chaquetero.",
+        "No tiene cerradura por fuera, así que siempre hay alguien dentro para abrirla. Por eso los ministros nunca llaman: llegan y la puerta se abre sola, como por arte de magia. Y no es de madera, sino de acero blindado. Fíjate en el número, si llegas a verlo: el cero está algo torcido, en recuerdo del de la puerta original, que se descolgó. En la app tienes la puerta de cerca.",
+        "Por aquí han pasado primeros ministros de todos los colores. Uno de los más famosos, Lloyd George, el de la Primera Guerra Mundial, tenía tal fama de mujeriego que lo apodaban la Cabra. Y no precisamente porque le gustara el monte. Ah, y la casa tiene hasta un cargo oficial para gatos: cazador jefe de ratones. El más famoso, Larry, llegó de una protectora en 2011 y ha visto pasar a unos cuantos primeros ministros. Ellos van y vienen; el gato se queda."
+      ],
+      "images": [
+        {
+          "src": "img/londres/westminster/downing-street.webp",
+          "w": 960,
+          "h": 640,
+          "para": 2,
+          "after": "En la app tienes la puerta de cerca.",
+          "caption": "La puerta del número 10 de Downing Street",
+          "credit": "Foto: Gobierno del Reino Unido · OGL 3",
+          "source": "https://commons.wikimedia.org/wiki/File:10_Downing_Street_Door_2020.jpg"
+        }
+      ],
+      "quiz": {
+        "before": 2,
+        "q": "Esa puerta negra tiene truco. ¿Cómo crees que se abre desde fuera?",
+        "options": [
+          "Con una llave enorme que solo tiene el primer ministro",
+          "Con un código secreto",
+          "No se puede"
+        ],
+        "answer": 2
+      },
+      "toNext": "Sigue bajando por Whitehall en la misma dirección. Pasarás junto al Cenotafio, el monumento blanco a los caídos en mitad de la calzada. Justo después, a la derecha, entra en King Charles Street, la calle que pasa bajo un arco entre dos ministerios. Al final, unas escaleras bajan hacia el parque, junto a la estatua de Robert Clive. Junto a ellas, abajo, verás una entrada con sacos terreros: el búnker de Churchill."
+    },
+    {
+      "id": "churchill-war-rooms",
+      "title": "Salas de Guerra de Churchill",
+      "subtitle": "El búnker desde donde se dirigió la guerra",
+      "lat": 51.50223,
+      "lng": -0.12908,
+      "radius": 40,
+      "where": "Al pie de las escaleras de Clive, al final de King Charles Street, frente a la entrada del museo, la de los sacos terreros.",
+      "paras": [
+        "Aquí mismo, bajo este edificio de ministerios, está uno de los secretos mejor guardados de la Segunda Guerra Mundial: las Salas de Guerra del Gabinete. Un búnker desde el que Churchill, sus ministros y sus generales dirigieron la guerra mientras las bombas alemanas caían sobre Londres. Empezó a funcionar el 27 de agosto de 1939, una semana antes de que Gran Bretaña entrara en guerra. Previsores hasta para eso.",
+        "Y aquí viene lo bueno: el búnker no era a prueba de bombas. Un impacto directo se lo habría llevado por delante. Así que, en pleno bombardeo, le pusieron encima una losa de hormigón de hasta metro y medio de grosor, que llamaban simplemente la Losa. Debajo trabajaban cientos de personas, a veces días enteros sin ver la luz del sol.",
+        "Con su pestillo de libre y ocupado y todo. Cuentan que el personal creía que era el váter particular de Churchill, todo un lujo en un búnker donde casi todos se apañaban con orinales. Así que a nadie le extrañaba que el primer ministro pasara tanto rato ahí dentro. Vamos, que las llamadas más secretas de la guerra se hacían desde un falso baño.",
+        "La sala más impresionante es la de los Mapas, donde las luces estuvieron encendidas día y noche durante seis años. El 16 de agosto de 1945, con la guerra terminada, simplemente las apagaron, cerraron la puerta y se fueron. Y así se quedó todo: los mapas con sus alfileres, los teléfonos de colores y hasta unos terrones de azúcar que alguien escondió en un cajón. En el móvil tienes una foto de esa sala, tal como la dejaron."
+      ],
+      "images": [
+        {
+          "src": "img/londres/westminster/churchill-war-rooms.webp",
+          "w": 1100,
+          "h": 730,
+          "para": 3,
+          "after": "En el móvil tienes una foto de esa sala, tal como la dejaron.",
+          "caption": "La Sala de los Mapas, tal como quedó en 1945",
+          "credit": "Foto: Kaihsu Tai · CC BY-SA 3.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Map_Room_Cabinet_War_Rooms_20060617.jpg"
+        }
+      ],
+      "quiz": {
+        "before": 2,
+        "q": "Churchill hablaba en secreto con el presidente Roosevelt por una línea transatlántica con codificador. Para que nadie sospechara, el cuartito del teléfono estaba disimulado. ¿Como qué crees que lo disfrazaron?",
+        "options": [
+          "Un armario de escobas",
+          "Un cuarto de baño privado",
+          "La despensa de puros de Churchill"
+        ],
+        "answer": 1
+      },
+      "more": {
+        "title": "Las costumbres de Churchill",
+        "ask": "Churchill tenía unas costumbres, digamos, muy suyas: baños, siestas, puros y un mono de terciopelo. ¿Te las cuento? Si te apetece, toca «Cuéntame más». Si no, seguimos.",
+        "paras": [
+          "Churchill trabajaba a deshoras y a su manera. Se despertaba tarde, despachaba papeles desde la cama y dictaba cartas a sus secretarias hasta desde la bañera, que se daba dos veces al día. Después de comer, siesta, en pijama y con la luz apagada: decía que así le cundía el día como si fueran dos. Y luego, a trabajar hasta las tantas, para desesperación de sus generales.",
+          "Para los bombardeos se hizo una especie de mono de una pieza, con cremallera, al que llamaba su traje de sirena, porque se lo enfundaba en un santiamén en cuanto sonaban las sirenas. Lo tenía hasta de terciopelo, en varios colores. En la app tienes una foto suya con él puesto. Elegante no era, pero cómodo, un rato.",
+          "Y la mejor anécdota: cuentan que, de visita en la Casa Blanca, Roosevelt entró en su habitación justo cuando Churchill salía del baño, como su madre lo trajo al mundo. El presidente quiso retirarse, y Churchill, sin inmutarse, le soltó: el primer ministro de Gran Bretaña no tiene nada que ocultar al presidente de los Estados Unidos. Él lo negó años después, pero la frase se quedó.",
+          "Con la bebida y el tabaco, igual de a su aire: whisky muy rebajado con agua durante todo el día, champán en las comidas y un puro casi siempre en la mano. Él lo resumía así: le he sacado más al alcohol de lo que el alcohol me ha sacado a mí. Ejemplo de vida sana no era, pero llegó a los noventa años."
+        ],
+        "images": [
+          {
+            "src": "img/londres/westminster/churchill-war-rooms-mas.webp",
+            "w": 1093,
+            "h": 1100,
+            "para": 1,
+            "after": "En la app tienes una foto suya con él puesto.",
+            "caption": "Churchill enseña su traje de sirena a Eisenhower, en 1944",
+            "credit": "Foto: capitán Horton, War Office · IWM · Dominio público",
+            "source": "https://commons.wikimedia.org/wiki/File:Winston_Churchill_shows_off_his_famous_%27siren_suit%27_to_General_Dwight_D_Eisenhower,_during_a_tour_of_Allied_invasion_forces_in_Kent,_12_May_1944._H38458.jpg"
+          }
+        ]
+      },
+      "toNext": "Con el parque a tu derecha, sigue por esta calle, Horse Guards Road, hasta el final. Cruza la avenida, Great George Street, y sigue recto por la calle de enfrente, que pasa junto a un gran edificio con cúpula. Al final tendrás delante las dos torres de la abadía: párate frente a la gran puerta principal."
+    },
+    {
+      "id": "westminster-abbey",
+      "title": "Abadía de Westminster",
+      "subtitle": "Coronaciones, bodas reales y una piedra robada",
+      "lat": 51.49941,
+      "lng": -0.12898,
+      "radius": 50,
+      "where": "En la explanada frente a la fachada principal de la abadía, la de las dos torres.",
+      "paras": [
+        "Esta es la abadía de Westminster, la iglesia donde se corona a los reyes de Inglaterra desde hace casi mil años. Ojo, que no es una catedral: depende directamente del rey, no de ningún obispo. La primera gran iglesia la mandó levantar aquí Eduardo el Confesor. Se consagró en 1065, cuando él ya estaba muy enfermo, y murió unos días después. Lo llamaban el Confesor por lo piadoso. Tan piadoso que, según sus cronistas, su matrimonio nunca se consumó. Lo que opinaba su mujer de tanta piedad no quedó por escrito.",
+        "La iglesia gótica que ves la empezó en 1245 Enrique tercero, y las dos torres de la fachada se terminaron mucho después, en el siglo dieciocho. Desde Guillermo el Conquistador, coronado aquí el día de Navidad de 1066, casi todos los reyes de Inglaterra han pasado por este altar. Aquí se casaron también Isabel segunda, en 1947, y su nieto Guillermo, en 2011. Y aquí están enterrados reyes y reinas, pero también Isaac Newton, Charles Darwin o Stephen Hawking.",
+        "Como lo oyes, a punta de navaja. Todavía se lee uno que dice que un tal Abbott durmió en esta silla la noche del 5 al 6 de julio de 1800. Imagínate: el trono donde se corona a los reyes, usado de cama por un colegial. En la app tienes la silla tal como está hoy.",
+        "Debajo del asiento hay un hueco para una piedra: la Piedra del Destino, sobre la que se coronaban los reyes de Escocia. Eduardo primero se la llevó de Escocia en 1296 como trofeo de guerra, y los escoceses no se lo perdonaron nunca. Hoy está de vuelta en Escocia."
+      ],
+      "images": [
+        {
+          "src": "img/londres/westminster/westminster-abbey.webp",
+          "w": 1100,
+          "h": 736,
+          "para": 2,
+          "after": "En la app tienes la silla tal como está hoy.",
+          "caption": "La silla de la coronación, en la abadía",
+          "credit": "Foto: Robert Lamb · CC BY-SA 2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:View_of_the_Coronation_Chair_in_Westminster_Abbey_-_geograph.org.uk_-_6305103.jpg"
+        }
+      ],
+      "quiz": {
+        "before": 2,
+        "q": "Dentro se guarda la silla de la coronación, de madera, de hacia el año 1300. Durante siglos estuvo al alcance de cualquiera. ¿Qué crees que le hicieron los alumnos de la escuela de la abadía?",
+        "options": [
+          "Grabarle sus nombres",
+          "Pintarla de colores",
+          "Llevarse una pata de recuerdo"
+        ],
+        "answer": 0
+      },
+      "more": {
+        "title": "El robo de la Piedra del Destino",
+        "ask": "¿Te cuento cómo cuatro estudiantes escoceses se llevaron esa piedra de la abadía la mañana de Navidad, y por el camino la partieron en dos? Si te apetece, toca «Cuéntame más». Si no, nos vamos hacia el Big Ben.",
+        "paras": [
+          "Navidad de 1950. Cuatro estudiantes de la Universidad de Glasgow, tres chicos y una chica, se plantaron en Londres con un plan: devolver la piedra a Escocia. La primera noche, uno de ellos se escondió dentro de la abadía al cierre, pero un vigilante lo encontró y lo echó, pensando que era un pobre que buscaba dónde dormir. Ni así se rindieron.",
+          "De madrugada forzaron una puerta y sacaron la piedra de debajo de la silla. Pesa unos ciento cincuenta kilos y, al tirar de ella, cayó al suelo y se partió en dos. Cuando un policía se acercó a curiosear su coche, aparcado cerca, Ian Hamilton y Kay Matheson se pusieron a besarse como dos novios en Navidad. El agente, muy discreto, los dejó en paz. Y un trozo de la piedra, en el maletero.",
+          "Se armó un escándalo enorme: se cerró la frontera con Escocia por primera vez en siglos. En Glasgow, un cantero pegó los dos trozos, y en abril de 1951 la piedra apareció, envuelta en una bandera escocesa, en el altar de la abadía de Arbroath. En la app tienes sus ruinas. A los estudiantes nunca los juzgaron.",
+          "La piedra volvió a Westminster, pero en 1996 el Gobierno la devolvió por fin a Escocia, con una condición: viajar a Londres para cada coronación, como hizo en 2023 para la de Carlos tercero. Eso sí, corre una teoría que a los escoceses les encanta: que la piedra que apareció en Arbroath era una copia, y que la buena sigue escondida. No está demostrado, pero da para muchas cervezas."
+        ],
+        "images": [
+          {
+            "src": "img/londres/westminster/westminster-abbey-mas.webp",
+            "w": 1100,
+            "h": 785,
+            "para": 2,
+            "after": "En la app tienes sus ruinas.",
+            "caption": "Las ruinas de la abadía de Arbroath en un grabado del siglo dieciocho",
+            "credit": "John Cleveley · Dominio público",
+            "source": "https://commons.wikimedia.org/wiki/File:Ruins_of_Arbroath_Abbey_(18thC).JPG"
+          }
+        ]
+      },
+      "toNext": "Con la abadía a tu derecha, cruza a la plaza del Parlamento, el jardín de las estatuas, y atraviésala hasta la esquina del fondo, donde Churchill, en bronce y con su abrigo, mira hacia la torre del reloj."
+    },
+    {
+      "id": "big-ben",
+      "title": "Big Ben y el Parlamento",
+      "subtitle": "Una campana famosa y un Parlamento que ardió",
+      "lat": 51.50083,
+      "lng": -0.12665,
+      "radius": 50,
+      "where": "En la esquina de la plaza del Parlamento, junto a la estatua de Churchill, con la torre del reloj delante.",
+      "paras": [
+        "Y llegamos al final, al monumento que todo el mundo asocia con Londres. Pero ojo al dato: la torre no se llama Big Ben. Desde 2012 es la torre Isabel, y Big Ben es el nombre de la campana gorda que tiene dentro, de casi catorce toneladas. Dicen que la bautizaron así por Benjamin Hall, el ministro que supervisó las obras, un señor muy grande. Lo de grande iba por la estatura. Eso dicen.",
+        "El edificio entero es el palacio de Westminster, la sede del Parlamento. El antiguo ardió en 1834, en un incendio que empezó de la forma más tonta: estaban quemando en las calderas del sótano montones de palitos de madera que se usaban para llevar las cuentas de Hacienda, y se les fue de las manos. Media ciudad salió a mirar, y el pintor Turner lo pintó. En el móvil tienes su cuadro.",
+        "Lo reconstruyeron en estilo gótico, y de lo antiguo se salvó lo más valioso: Westminster Hall, un gran salón de hace más de novecientos años, el del tejado a dos aguas, a la derecha de la torre. Allí juzgaron, por cierto, a nuestro viejo conocido Carlos primero. Y hay otro susto que el Parlamento no le ha olvidado: en 1642 entró con soldados a detener a unos diputados, y desde entonces ningún monarca puede pisar la Cámara de los Comunes.",
+        "Tal cual. Son peniques de los antiguos, y cada moneda que ponen o quitan cambia la marcha del reloj casi medio segundo al día. Tecnología punta del siglo diecinueve que sigue funcionando. Y otra curiosidad: la campana está rajada desde 1859. La giraron un poco para que el martillo golpeara en otro sitio, y por eso su sonido no es del todo perfecto.",
+        "Y aquí me despido. Has recorrido el corazón del poder británico: de la plaza de una batalla que perdimos a un rey sin cabeza, de un palacio con setecientas setenta y cinco habitaciones a un primer ministro que llamaba a Roosevelt desde un falso baño. Ahora, un consejo: acércate al puente de Westminster, aquí al lado, y espera a que el Big Ben dé la hora. Y luego, como buen londinense, a por una pinta. ¡Cheers, y hasta la próxima!"
+      ],
+      "images": [
+        {
+          "src": "img/londres/westminster/big-ben.webp",
+          "w": 1100,
+          "h": 817,
+          "para": 1,
+          "after": "En el móvil tienes su cuadro.",
+          "caption": "El incendio del Parlamento el 16 de octubre de 1834, pintado por Turner",
+          "credit": "J. M. W. Turner · Museo de Arte de Cleveland · Dominio público",
+          "source": "https://commons.wikimedia.org/wiki/File:Joseph_Mallord_William_Turner_-_The_Burning_of_the_Houses_of_Lords_and_Commons,_16_October_1834_-_1942.647_-_Cleveland_Museum_of_Art.jpg"
+        }
+      ],
+      "quiz": {
+        "before": 3,
+        "q": "El reloj es famoso por su puntualidad. Para ajustarlo, los relojeros usan un método de lo más casero. ¿Cuál crees que es?",
+        "options": [
+          "Una señal por satélite",
+          "Un relojero que sube cada mañana con su reloj de bolsillo",
+          "Monedas antiguas sobre el péndulo"
+        ],
+        "answer": 2
+      }
+    }
+  ],
+  "legs": [
+    [
+      [
+        51.50803,
+        -0.12806
+      ],
+      [
+        51.50783,
+        -0.12832
+      ],
+      [
+        51.50778,
+        -0.12863
+      ],
+      [
+        51.50767,
+        -0.12858
+      ],
+      [
+        51.50761,
+        -0.12883
+      ],
+      [
+        51.50741,
+        -0.12886
+      ],
+      [
+        51.50754,
+        -0.12999
+      ],
+      [
+        51.50759,
+        -0.13013
+      ],
+      [
+        51.50764,
+        -0.13085
+      ],
+      [
+        51.50762,
+        -0.13106
+      ],
+      [
+        51.50543,
+        -0.13719
+      ],
+      [
+        51.50521,
+        -0.13727
+      ],
+      [
+        51.50516,
+        -0.13742
+      ],
+      [
+        51.50517,
+        -0.1375
+      ],
+      [
+        51.50505,
+        -0.13782
+      ],
+      [
+        51.50506,
+        -0.13806
+      ],
+      [
+        51.50489,
+        -0.13842
+      ],
+      [
+        51.50503,
+        -0.13856
+      ],
+      [
+        51.50501,
+        -0.13865
+      ]
+    ],
+    [
+      [
+        51.50501,
+        -0.13865
+      ],
+      [
+        51.50503,
+        -0.13856
+      ],
+      [
+        51.50489,
+        -0.13842
+      ],
+      [
+        51.50506,
+        -0.13806
+      ],
+      [
+        51.50505,
+        -0.13782
+      ],
+      [
+        51.50516,
+        -0.13745
+      ],
+      [
+        51.504,
+        -0.13639
+      ],
+      [
+        51.50376,
+        -0.13645
+      ],
+      [
+        51.50371,
+        -0.13634
+      ],
+      [
+        51.50312,
+        -0.1378
+      ]
+    ],
+    [
+      [
+        51.50312,
+        -0.1378
+      ],
+      [
+        51.50237,
+        -0.13963
+      ],
+      [
+        51.50252,
+        -0.13987
+      ],
+      [
+        51.50261,
+        -0.14016
+      ],
+      [
+        51.50266,
+        -0.14065
+      ],
+      [
+        51.50262,
+        -0.14101
+      ],
+      [
+        51.50229,
+        -0.14184
+      ],
+      [
+        51.5023,
+        -0.14192
+      ],
+      [
+        51.50211,
+        -0.14195
+      ],
+      [
+        51.5021,
+        -0.14183
+      ],
+      [
+        51.50157,
+        -0.14126
+      ],
+      [
+        51.50176,
+        -0.14078
+      ],
+      [
+        51.50188,
+        -0.14076
+      ],
+      [
+        51.50193,
+        -0.14069
+      ],
+      [
+        51.50195,
+        -0.14059
+      ],
+      [
+        51.50191,
+        -0.14047
+      ]
+    ],
+    [
+      [
+        51.50191,
+        -0.14047
+      ],
+      [
+        51.50195,
+        -0.14059
+      ],
+      [
+        51.50193,
+        -0.14069
+      ],
+      [
+        51.50188,
+        -0.14076
+      ],
+      [
+        51.50176,
+        -0.14078
+      ],
+      [
+        51.50157,
+        -0.14126
+      ],
+      [
+        51.50102,
+        -0.1407
+      ],
+      [
+        51.50095,
+        -0.1404
+      ],
+      [
+        51.50099,
+        -0.14038
+      ],
+      [
+        51.50112,
+        -0.14003
+      ],
+      [
+        51.50082,
+        -0.13975
+      ],
+      [
+        51.50094,
+        -0.13946
+      ],
+      [
+        51.50055,
+        -0.13902
+      ],
+      [
+        51.50052,
+        -0.13895
+      ],
+      [
+        51.50053,
+        -0.13878
+      ],
+      [
+        51.50071,
+        -0.13859
+      ],
+      [
+        51.50117,
+        -0.13781
+      ],
+      [
+        51.5017,
+        -0.13652
+      ],
+      [
+        51.50191,
+        -0.13583
+      ],
+      [
+        51.50208,
+        -0.13509
+      ],
+      [
+        51.50231,
+        -0.13521
+      ]
+    ],
+    [
+      [
+        51.50231,
+        -0.13521
+      ],
+      [
+        51.5026,
+        -0.13536
+      ],
+      [
+        51.50278,
+        -0.13486
+      ],
+      [
+        51.50312,
+        -0.13429
+      ],
+      [
+        51.50316,
+        -0.13303
+      ],
+      [
+        51.50321,
+        -0.13271
+      ],
+      [
+        51.50343,
+        -0.13206
+      ],
+      [
+        51.50375,
+        -0.13163
+      ],
+      [
+        51.50408,
+        -0.13128
+      ],
+      [
+        51.50418,
+        -0.13103
+      ],
+      [
+        51.50425,
+        -0.12993
+      ],
+      [
+        51.50439,
+        -0.12911
+      ],
+      [
+        51.50453,
+        -0.12913
+      ],
+      [
+        51.50461,
+        -0.1285
+      ]
+    ],
+    [
+      [
+        51.50461,
+        -0.1285
+      ],
+      [
+        51.50485,
+        -0.12663
+      ],
+      [
+        51.50403,
+        -0.12636
+      ],
+      [
+        51.5033,
+        -0.1263
+      ]
+    ],
+    [
+      [
+        51.5033,
+        -0.1263
+      ],
+      [
+        51.50318,
+        -0.12629
+      ],
+      [
+        51.50318,
+        -0.12635
+      ],
+      [
+        51.50219,
+        -0.12634
+      ],
+      [
+        51.50237,
+        -0.12913
+      ],
+      [
+        51.50223,
+        -0.12916
+      ],
+      [
+        51.50223,
+        -0.12908
+      ]
+    ],
+    [
+      [
+        51.50223,
+        -0.12908
+      ],
+      [
+        51.50223,
+        -0.12916
+      ],
+      [
+        51.50227,
+        -0.12915
+      ],
+      [
+        51.50232,
+        -0.12958
+      ],
+      [
+        51.50142,
+        -0.12971
+      ],
+      [
+        51.50143,
+        -0.12979
+      ],
+      [
+        51.5013,
+        -0.1298
+      ],
+      [
+        51.50126,
+        -0.12954
+      ],
+      [
+        51.50122,
+        -0.12954
+      ],
+      [
+        51.5012,
+        -0.12945
+      ],
+      [
+        51.5003,
+        -0.12951
+      ],
+      [
+        51.50013,
+        -0.12944
+      ],
+      [
+        51.49979,
+        -0.12945
+      ],
+      [
+        51.49967,
+        -0.12933
+      ],
+      [
+        51.49961,
+        -0.12946
+      ],
+      [
+        51.49951,
+        -0.12937
+      ],
+      [
+        51.49945,
+        -0.1295
+      ],
+      [
+        51.49942,
+        -0.12945
+      ],
+      [
+        51.49941,
+        -0.12898
+      ]
+    ],
+    [
+      [
+        51.49941,
+        -0.12898
+      ],
+      [
+        51.49942,
+        -0.12888
+      ],
+      [
+        51.4995,
+        -0.12887
+      ],
+      [
+        51.49949,
+        -0.12877
+      ],
+      [
+        51.49974,
+        -0.12873
+      ],
+      [
+        51.50004,
+        -0.1279
+      ],
+      [
+        51.50014,
+        -0.12741
+      ],
+      [
+        51.50021,
+        -0.12746
+      ],
+      [
+        51.50035,
+        -0.1273
+      ],
+      [
+        51.50035,
+        -0.1272
+      ],
+      [
+        51.50085,
+        -0.12712
+      ],
+      [
+        51.50083,
+        -0.12665
+      ]
+    ]
+  ],
+  "audio": {
+    "base": "audio/londres/westminster/",
+    "credit": "Voz generada con IA (ElevenLabs)",
+    "stops": {
+      "trafalgar": {
+        "paras": [
+          "trafalgar-p0.mp3",
+          "trafalgar-p1.mp3",
+          "trafalgar-p2.mp3",
+          "trafalgar-p3.mp3",
+          "trafalgar-p4.mp3",
+          "trafalgar-p5.mp3"
+        ],
+        "quiz": "trafalgar-q.mp3",
+        "ok": "trafalgar-ok.mp3",
+        "ko": "trafalgar-ko.mp3",
+        "skip": "trafalgar-skip.mp3"
+      }
+    },
+    "files": {
+      "trafalgar-p0.mp3": {
+        "v": "4e37683d",
+        "b": 488638
+      },
+      "trafalgar-p1.mp3": {
+        "v": "92fc5690",
+        "b": 450186
+      },
+      "trafalgar-p2.mp3": {
+        "v": "ebe51556",
+        "b": 543808
+      },
+      "trafalgar-p3.mp3": {
+        "v": "2a77262d",
+        "b": 428452
+      },
+      "trafalgar-p4.mp3": {
+        "v": "06eb8480",
+        "b": 359488
+      },
+      "trafalgar-p5.mp3": {
+        "v": "30a6a7c6",
+        "b": 392925
+      },
+      "trafalgar-q.mp3": {
+        "v": "e8b57b40",
+        "b": 242878
+      },
+      "trafalgar-ok.mp3": {
+        "v": "b752486e",
+        "b": 16344
+      },
+      "trafalgar-ko.mp3": {
+        "v": "35aad56c",
+        "b": 63991
+      },
+      "trafalgar-skip.mp3": {
+        "v": "23a789aa",
+        "b": 67753
+      }
+    }
+  }
+}
