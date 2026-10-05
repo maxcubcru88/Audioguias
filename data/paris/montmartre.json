@@ -1268,6 +1268,138 @@
             "deux-moulins-m3.mp3"
           ]
         }
+      },
+      "van-gogh": {
+        "paras": [
+          "van-gogh-p0.mp3",
+          "van-gogh-p1.mp3",
+          "van-gogh-p2.mp3",
+          "van-gogh-p3.mp3",
+          "van-gogh-p4.mp3"
+        ],
+        "quiz": "van-gogh-q.mp3",
+        "ok": "van-gogh-ok.mp3",
+        "ko": "van-gogh-ko.mp3",
+        "skip": "van-gogh-skip.mp3"
+      },
+      "moulin-de-la-galette": {
+        "paras": [
+          "moulin-de-la-galette-p0.mp3",
+          "moulin-de-la-galette-p1.mp3",
+          "moulin-de-la-galette-p2.mp3",
+          "moulin-de-la-galette-p3.mp3",
+          "moulin-de-la-galette-p4.mp3"
+        ],
+        "quiz": "moulin-de-la-galette-q.mp3",
+        "ok": "moulin-de-la-galette-ok.mp3",
+        "ko": "moulin-de-la-galette-ko.mp3",
+        "skip": "moulin-de-la-galette-skip.mp3"
+      },
+      "passe-muraille": {
+        "paras": [
+          "passe-muraille-p0.mp3",
+          "passe-muraille-p1.mp3",
+          "passe-muraille-p2.mp3",
+          "passe-muraille-p3.mp3",
+          "passe-muraille-p4.mp3"
+        ],
+        "quiz": "passe-muraille-q.mp3",
+        "ok": "passe-muraille-ok.mp3",
+        "ko": "passe-muraille-ko.mp3",
+        "skip": "passe-muraille-skip.mp3"
+      },
+      "dalida": {
+        "paras": [
+          "dalida-p0.mp3",
+          "dalida-p1.mp3",
+          "dalida-p2.mp3",
+          "dalida-p3.mp3",
+          "dalida-p4.mp3",
+          "dalida-p5.mp3"
+        ],
+        "quiz": "dalida-q.mp3",
+        "ok": "dalida-ok.mp3",
+        "ko": "dalida-ko.mp3",
+        "skip": "dalida-skip.mp3"
+      },
+      "maison-rose": {
+        "paras": [
+          "maison-rose-p0.mp3",
+          "maison-rose-p1.mp3",
+          "maison-rose-p2.mp3",
+          "maison-rose-p3.mp3",
+          "maison-rose-p4.mp3"
+        ],
+        "quiz": "maison-rose-q.mp3",
+        "ok": "maison-rose-ok.mp3",
+        "ko": "maison-rose-ko.mp3",
+        "skip": "maison-rose-skip.mp3",
+        "more": {
+          "ask": "maison-rose-mas.mp3",
+          "paras": [
+            "maison-rose-m0.mp3",
+            "maison-rose-m1.mp3",
+            "maison-rose-m2.mp3",
+            "maison-rose-m3.mp3"
+          ]
+        }
+      },
+      "vigne": {
+        "paras": [
+          "vigne-p0.mp3",
+          "vigne-p1.mp3",
+          "vigne-p2.mp3",
+          "vigne-p3.mp3",
+          "vigne-p4.mp3"
+        ],
+        "quiz": "vigne-q.mp3",
+        "ok": "vigne-ok.mp3",
+        "ko": "vigne-ko.mp3",
+        "skip": "vigne-skip.mp3"
+      },
+      "lapin-agile": {
+        "paras": [
+          "lapin-agile-p0.mp3",
+          "lapin-agile-p1.mp3",
+          "lapin-agile-p2.mp3",
+          "lapin-agile-p3.mp3",
+          "lapin-agile-p4.mp3"
+        ],
+        "quiz": "lapin-agile-q.mp3",
+        "ok": "lapin-agile-ok.mp3",
+        "ko": "lapin-agile-ko.mp3",
+        "skip": "lapin-agile-skip.mp3",
+        "more": {
+          "ask": "lapin-agile-mas.mp3",
+          "paras": [
+            "lapin-agile-m0.mp3",
+            "lapin-agile-m1.mp3",
+            "lapin-agile-m2.mp3",
+            "lapin-agile-m3.mp3"
+          ]
+        }
+      },
+      "sacre-coeur": {
+        "paras": [
+          "sacre-coeur-p0.mp3",
+          "sacre-coeur-p1.mp3",
+          "sacre-coeur-p2.mp3",
+          "sacre-coeur-p3.mp3",
+          "sacre-coeur-p4.mp3"
+        ],
+        "quiz": "sacre-coeur-q.mp3",
+        "ok": "sacre-coeur-ok.mp3",
+        "ko": "sacre-coeur-ko.mp3",
+        "skip": "sacre-coeur-skip.mp3",
+        "more": {
+          "ask": "sacre-coeur-mas.mp3",
+          "paras": [
+            "sacre-coeur-m0.mp3",
+            "sacre-coeur-m1.mp3",
+            "sacre-coeur-m2.mp3",
+            "sacre-coeur-m3.mp3"
+          ]
+        }
       }
     },
     "files": {
@@ -1330,6 +1462,358 @@
       "deux-moulins-m3.mp3": {
         "v": "d5fc5b1f",
         "b": 271299
+      },
+      "van-gogh-p0.mp3": {
+        "v": "d73b752c",
+        "b": 478607
+      },
+      "van-gogh-p1.mp3": {
+        "v": "c708b67f",
+        "b": 501595
+      },
+      "van-gogh-p2.mp3": {
+        "v": "c339f141",
+        "b": 433885
+      },
+      "van-gogh-p3.mp3": {
+        "v": "890b5927",
+        "b": 504102
+      },
+      "van-gogh-p4.mp3": {
+        "v": "3c114fb3",
+        "b": 208605
+      },
+      "van-gogh-q.mp3": {
+        "v": "8aee9834",
+        "b": 159704
+      },
+      "van-gogh-ok.mp3": {
+        "v": "b752486e",
+        "b": 17598
+      },
+      "van-gogh-ko.mp3": {
+        "v": "756b33d8",
+        "b": 61066
+      },
+      "van-gogh-skip.mp3": {
+        "v": "7cd3f900",
+        "b": 65245
+      },
+      "moulin-de-la-galette-p0.mp3": {
+        "v": "0b7263fb",
+        "b": 442662
+      },
+      "moulin-de-la-galette-p1.mp3": {
+        "v": "da2130cd",
+        "b": 364504
+      },
+      "moulin-de-la-galette-p2.mp3": {
+        "v": "53043264",
+        "b": 528344
+      },
+      "moulin-de-la-galette-p3.mp3": {
+        "v": "77359422",
+        "b": 446424
+      },
+      "moulin-de-la-galette-p4.mp3": {
+        "v": "ccd8ab39",
+        "b": 198156
+      },
+      "moulin-de-la-galette-q.mp3": {
+        "v": "22db0042",
+        "b": 159704
+      },
+      "moulin-de-la-galette-ok.mp3": {
+        "v": "b752486e",
+        "b": 18852
+      },
+      "moulin-de-la-galette-ko.mp3": {
+        "v": "f3ae3b51",
+        "b": 65245
+      },
+      "moulin-de-la-galette-skip.mp3": {
+        "v": "a10615e0",
+        "b": 69007
+      },
+      "passe-muraille-p0.mp3": {
+        "v": "cd7518d0",
+        "b": 441408
+      },
+      "passe-muraille-p1.mp3": {
+        "v": "79985835",
+        "b": 364504
+      },
+      "passe-muraille-p2.mp3": {
+        "v": "cf96ca9f",
+        "b": 552586
+      },
+      "passe-muraille-p3.mp3": {
+        "v": "3e09e9e1",
+        "b": 465650
+      },
+      "passe-muraille-p4.mp3": {
+        "v": "5c0daa95",
+        "b": 177676
+      },
+      "passe-muraille-q.mp3": {
+        "v": "f7f42189",
+        "b": 139224
+      },
+      "passe-muraille-ok.mp3": {
+        "v": "b752486e",
+        "b": 16344
+      },
+      "passe-muraille-ko.mp3": {
+        "v": "1d2ae929",
+        "b": 57304
+      },
+      "passe-muraille-skip.mp3": {
+        "v": "278b86f3",
+        "b": 66499
+      },
+      "dalida-p0.mp3": {
+        "v": "7c91e376",
+        "b": 142986
+      },
+      "dalida-p1.mp3": {
+        "v": "3c317b02",
+        "b": 454365
+      },
+      "dalida-p2.mp3": {
+        "v": "cf50994d",
+        "b": 193141
+      },
+      "dalida-p3.mp3": {
+        "v": "1f493f0b",
+        "b": 331485
+      },
+      "dalida-p4.mp3": {
+        "v": "622e505a",
+        "b": 491146
+      },
+      "dalida-p5.mp3": {
+        "v": "0e40893d",
+        "b": 176422
+      },
+      "dalida-q.mp3": {
+        "v": "a39d77aa",
+        "b": 84471
+      },
+      "dalida-ok.mp3": {
+        "v": "b752486e",
+        "b": 18852
+      },
+      "dalida-ko.mp3": {
+        "v": "d201532b",
+        "b": 54796
+      },
+      "dalida-skip.mp3": {
+        "v": "2bccbbd8",
+        "b": 58558
+      },
+      "maison-rose-p0.mp3": {
+        "v": "61e877d0",
+        "b": 388746
+      },
+      "maison-rose-p1.mp3": {
+        "v": "f67bd7ea",
+        "b": 318528
+      },
+      "maison-rose-p2.mp3": {
+        "v": "756feb71",
+        "b": 607756
+      },
+      "maison-rose-p3.mp3": {
+        "v": "82247e0c",
+        "b": 250819
+      },
+      "maison-rose-p4.mp3": {
+        "v": "1502ebd4",
+        "b": 160958
+      },
+      "maison-rose-q.mp3": {
+        "v": "4a17e241",
+        "b": 194395
+      },
+      "maison-rose-ok.mp3": {
+        "v": "b752486e",
+        "b": 16344
+      },
+      "maison-rose-ko.mp3": {
+        "v": "40efaaa7",
+        "b": 52288
+      },
+      "maison-rose-skip.mp3": {
+        "v": "fcb2796f",
+        "b": 56050
+      },
+      "maison-rose-mas.mp3": {
+        "v": "5d0dd97d",
+        "b": 208605
+      },
+      "maison-rose-m0.mp3": {
+        "v": "4189f885",
+        "b": 395433
+      },
+      "maison-rose-m1.mp3": {
+        "v": "1c789067",
+        "b": 438901
+      },
+      "maison-rose-m2.mp3": {
+        "v": "76beab58",
+        "b": 474845
+      },
+      "maison-rose-m3.mp3": {
+        "v": "0f55e0ba",
+        "b": 344024
+      },
+      "vigne-p0.mp3": {
+        "v": "8b90d585",
+        "b": 395433
+      },
+      "vigne-p1.mp3": {
+        "v": "3218d68e",
+        "b": 483622
+      },
+      "vigne-p2.mp3": {
+        "v": "e3d7f090",
+        "b": 364504
+      },
+      "vigne-p3.mp3": {
+        "v": "1decdbac",
+        "b": 265866
+      },
+      "vigne-p4.mp3": {
+        "v": "aaa6d276",
+        "b": 170153
+      },
+      "vigne-q.mp3": {
+        "v": "cb8e2321",
+        "b": 264612
+      },
+      "vigne-ok.mp3": {
+        "v": "b752486e",
+        "b": 18852
+      },
+      "vigne-ko.mp3": {
+        "v": "37acd8df",
+        "b": 93248
+      },
+      "vigne-skip.mp3": {
+        "v": "f270586c",
+        "b": 100772
+      },
+      "lapin-agile-p0.mp3": {
+        "v": "a60e5c29",
+        "b": 410479
+      },
+      "lapin-agile-p1.mp3": {
+        "v": "a9233927",
+        "b": 304318
+      },
+      "lapin-agile-p2.mp3": {
+        "v": "fbdb10fb",
+        "b": 561781
+      },
+      "lapin-agile-p3.mp3": {
+        "v": "44e57b39",
+        "b": 294287
+      },
+      "lapin-agile-p4.mp3": {
+        "v": "2be33f03",
+        "b": 384984
+      },
+      "lapin-agile-q.mp3": {
+        "v": "12b11a65",
+        "b": 207351
+      },
+      "lapin-agile-ok.mp3": {
+        "v": "b752486e",
+        "b": 17598
+      },
+      "lapin-agile-ko.mp3": {
+        "v": "1d0bb6f7",
+        "b": 88233
+      },
+      "lapin-agile-skip.mp3": {
+        "v": "0fb5e007",
+        "b": 94502
+      },
+      "lapin-agile-mas.mp3": {
+        "v": "6c94ec77",
+        "b": 226159
+      },
+      "lapin-agile-m0.mp3": {
+        "v": "4a50bbbf",
+        "b": 484876
+      },
+      "lapin-agile-m1.mp3": {
+        "v": "9cbeacdc",
+        "b": 425944
+      },
+      "lapin-agile-m2.mp3": {
+        "v": "71733a08",
+        "b": 384984
+      },
+      "lapin-agile-m3.mp3": {
+        "v": "6525e768",
+        "b": 282584
+      },
+      "sacre-coeur-p0.mp3": {
+        "v": "fdebcd8b",
+        "b": 221144
+      },
+      "sacre-coeur-p1.mp3": {
+        "v": "a5e29d9b",
+        "b": 413405
+      },
+      "sacre-coeur-p2.mp3": {
+        "v": "30da5949",
+        "b": 731890
+      },
+      "sacre-coeur-p3.mp3": {
+        "v": "cd5eab69",
+        "b": 415913
+      },
+      "sacre-coeur-p4.mp3": {
+        "v": "e2310677",
+        "b": 400448
+      },
+      "sacre-coeur-q.mp3": {
+        "v": "c987b69e",
+        "b": 181438
+      },
+      "sacre-coeur-ok.mp3": {
+        "v": "b752486e",
+        "b": 18852
+      },
+      "sacre-coeur-ko.mp3": {
+        "v": "cf127861",
+        "b": 84471
+      },
+      "sacre-coeur-skip.mp3": {
+        "v": "1458a414",
+        "b": 86979
+      },
+      "sacre-coeur-mas.mp3": {
+        "v": "84769908",
+        "b": 278822
+      },
+      "sacre-coeur-m0.mp3": {
+        "v": "1da4d0db",
+        "b": 487384
+      },
+      "sacre-coeur-m1.mp3": {
+        "v": "bcad2127",
+        "b": 420928
+      },
+      "sacre-coeur-m2.mp3": {
+        "v": "f650e499",
+        "b": 311005
+      },
+      "sacre-coeur-m3.mp3": {
+        "v": "e045d9c4",
+        "b": 415913
       }
     }
   }
