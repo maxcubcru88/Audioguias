@@ -200,10 +200,22 @@
         "title": "Un turco, un rey y el primer café de París",
         "ask": "¿Tienes un par de minutos más? Te cuento cómo llegó el café a París, con un rey cubierto de diamantes y un enviado turco que ni se inmutó. Si te apetece, toca «Cuéntame más» en el móvil. Si no, seguimos camino.",
         "paras": [
-          "Pues verás. En 1669 llegó a la corte de Luis XIV un enviado del sultán otomano, Solimán Agá. El rey quería impresionarlo y lo recibió tan cubierto de diamantes que, según la gaceta de la época, parecía rodeado de luz. ¿Y el turco? Ni pestañeó. Cuentan que dijo que el caballo de su sultán llevaba más joyas. Eso no está demostrado, pero el desplante sí, y dicen que de ahí salió la ceremonia turca de pega de El burgués gentilhombre, la comedia de Molière.",
+          "Pues verás. En 1669 llegó a la corte de Luis XIV un enviado del sultán otomano, Solimán Agá. El rey quería impresionarlo y lo recibió tan cubierto de diamantes que, según la gaceta de la época, parecía rodeado de luz. En el móvil tienes un grabado de aquella audiencia. ¿Y el turco? Ni pestañeó. Cuentan que dijo que el caballo de su sultán llevaba más joyas. Eso no está demostrado, pero el desplante sí, y dicen que de ahí salió la ceremonia turca de pega de El burgués gentilhombre, la comedia de Molière.",
           "Mientras estuvo en París, Solimán daba recepciones a la turca, y en ellas servía una bebida negra y amarga, con azúcar y en tacitas de porcelana. Total, que el café se puso de moda. Eso sí, los médicos no se ponían de acuerdo. Uno de Marsella aseguró que provocaba parálisis e impotencia, y otro de París lo recomendaba para calmar los ardores de quienes habían hecho voto de castidad. Vamos, que unos lo prohibían por si te dejaba sin fuerzas y otros lo recetaban justo por eso.",
           "Y aquí entra nuestro siciliano. En 1672, un armenio llamado Pascal montó un puesto de café en la feria de Saint-Germain, a unas calles de aquí, con muchachos que lo vendían entre la gente. Luego abrió una tienda junto al Pont Neuf, pero el negocio no cuajó y acabó marchándose a Londres. Tenía un ayudante muy espabilado, un tal Procopio, que tomó nota de todo. Y de los errores, más.",
           "Procopio entendió lo que faltaba: un café elegante, nada de tabernas oscuras. Espejos, lámparas de cristal y mesas de mármol, aprovechadas de unos antiguos baños. Y, además, helados y sorbetes, que le dieron mucha fama. En 1689 se le instaló el teatro enfrente y ya no hubo quien lo parara. Se afrancesó el nombre, François Procope, se casó tres veces, la última a los sesenta y seis, y tuvo más de una docena de hijos. Lo que te decía: este hombre no tomaba descafeinado."
+        ],
+        "images": [
+          {
+            "src": "img/paris/latino/le-procope-mas.webp",
+            "w": 883,
+            "h": 782,
+            "caption": "Luis XIV recibe a Solimán Agá en Saint-Germain-en-Laye, el 5 de diciembre de 1669",
+            "credit": "Grabado de la época, publicado por Albert Vandal en 1900 · Dominio público",
+            "source": "https://commons.wikimedia.org/wiki/File:Vandal.plate.II.b.png",
+            "para": 0,
+            "after": "En el móvil tienes un grabado de aquella audiencia."
+          }
         ]
       }
     },
@@ -288,10 +300,22 @@
         "title": "El Día de los Engañados",
         "ask": "¿Te quedas un par de minutos más? En ese palacio que tienes delante, el de María de Médicis, se vivió uno de los mayores chascos de la historia de Francia: el Día de los Engañados. Si quieres que te lo cuente, toca «Cuéntame más». Si no, seguimos.",
         "paras": [
-          "Hay que volver un poco atrás. El 13 de mayo de 1610 coronaron por fin a María como reina de Francia, en Saint-Denis. Y al día siguiente, Ravaillac mató a Enrique IV en una calle de París. Si has hecho nuestra ruta por el centro, ya conoces a ese señor. Total, que María se quedó de regente de su hijo, Luis XIII, que tenía ocho años. Y a su sombra empezó a subir un obispo joven y listísimo: Richelieu.",
+          "Hay que volver un poco atrás. El 13 de mayo de 1610 coronaron por fin a María como reina de Francia, en Saint-Denis. En la app tienes la escena tal como la pintó Rubens para este palacio. Y al día siguiente, Ravaillac mató a Enrique IV en una calle de París. Si has hecho nuestra ruta por el centro, ya conoces a ese señor. Total, que María se quedó de regente de su hijo, Luis XIII, que tenía ocho años. Y a su sombra empezó a subir un obispo joven y listísimo: Richelieu.",
           "Pero el protegido le salió respondón. Años después, ya cardenal y primer ministro, Richelieu mandaba más que ella, y María decidió deshacerse de él. El 10 de noviembre de 1630, aquí, en su palacio, se reunió a solas con su hijo el rey para exigirle que lo echara. Habían atrancado las puertas, pero se olvidaron de una puertecita de la capilla. Por ahí se coló Richelieu y los pilló en plena conversación. Él mismo escribió después que Dios se había servido de una puerta sin cerrar.",
           "La escena fue de culebrón. Cuentan que María, fuera de sí, le preguntó al rey si prefería a un lacayo antes que a su propia madre. El rey se marchó sin decir gran cosa, y todo el mundo dio a Richelieu por acabado. Los cortesanos corrieron al palacio a felicitar a la reina y, de paso, a pedirle cargos. Pero el rey se fue a su pabellón de caza de Versalles, llamó a Richelieu y le dio todo su apoyo.",
           "Los que habían corrido a felicitar a la reina quedaron como unos pardillos, y de ahí el nombre: el Día de los Engañados. Algunos lo pagaron caro, con la cárcel o con la cabeza. ¿Y María? En 1631 huyó de Francia y ya no volvió. Murió en Colonia, en 1642, arruinada, en una casa donde había pasado su infancia Rubens, el mismo pintor que la había retratado como una diosa en veinticuatro cuadros para este palacio. Y Richelieu solo la sobrevivió cinco meses. Ganar, ganó. Disfrutarlo, poco."
+        ],
+        "images": [
+          {
+            "src": "img/paris/latino/luxembourg-mas.webp",
+            "w": 1100,
+            "h": 599,
+            "caption": "La coronación de María de Médicis en Saint-Denis, de Rubens",
+            "credit": "Pedro Pablo Rubens · Museo del Louvre · Dominio público",
+            "source": "https://commons.wikimedia.org/wiki/File:Rubens_Pieter_Paul_Coronation_Of_Marie_De_Medici_To_Strengthen_Authority_Regent_louvre.jpg",
+            "para": 0,
+            "after": "En la app tienes la escena tal como la pintó Rubens para este palacio."
+          }
         ]
       }
     },
@@ -340,7 +364,19 @@
           "Léon Foucault empezó a estudiar medicina, pero se desmayaba al ver sangre, así que lo dejó. De cirujano no tenía mucho futuro, la verdad. Se hizo físico por su cuenta, sin cátedra ni título. Y una noche de enero de 1851, a las dos de la madrugada, en el sótano de la casa de su madre, colgó un peso de un alambre de dos metros, lo puso a oscilar y apuntó en su cuaderno: el péndulo ha girado.",
           "¿Y qué tiene eso de especial? Un péndulo, si nadie lo toca, oscila siempre en la misma dirección. Pero el suelo de debajo gira con la Tierra. Así que, visto desde el suelo, parece que el péndulo va cambiando de dirección poco a poco. Lo que se mueve no es el péndulo: somos nosotros.",
           "Después lo repitió en el Observatorio, con unas invitaciones que decían, ni más ni menos: «Está usted invitado a venir a ver girar la Tierra». Y a finales de marzo, Luis Napoleón, el futuro emperador, le dejó usar esta cúpula. Colgó de lo alto un cable de sesenta y siete metros con una bola de veintiocho kilos, que tardaba unos dieciséis segundos en ir y volver. Debajo, una capa de arena, y en la bola, una punta que iba marcando el camino.",
-          "Fue un exitazo: venía gente de todo tipo a ver cómo, minuto a minuto, la marca en la arena se desplazaba. En París, el péndulo tarda unas treinta y dos horas en dar la vuelta completa. Pero en diciembre de ese mismo año, Luis Napoleón dio un golpe de Estado, devolvió el edificio a la Iglesia y el péndulo tuvo que irse. El mismo que lo trajo, lo descolgó. El que hoy cuelga de la cúpula es una copia: la bola original se estrelló en 2010, en un museo, cuando se partió el cable. Ya ves: hasta el péndulo más famoso del mundo tuvo su mal día."
+          "Fue un exitazo: venía gente de todo tipo a ver cómo, minuto a minuto, la marca en la arena se desplazaba. En el móvil tienes cómo lo dibujaron en 1902, cuando repitieron el experimento aquí mismo. En París, el péndulo tarda unas treinta y dos horas en dar la vuelta completa. Pero en diciembre de 1851, Luis Napoleón dio un golpe de Estado, devolvió el edificio a la Iglesia y el péndulo tuvo que irse. El mismo que lo trajo, lo descolgó. El que hoy cuelga de la cúpula es una copia: la bola original se estrelló en 2010, en un museo, cuando se partió el cable. Ya ves: hasta el péndulo más famoso del mundo tuvo su mal día."
+        ],
+        "images": [
+          {
+            "src": "img/paris/latino/pantheon-mas.webp",
+            "w": 512,
+            "h": 744,
+            "caption": "El experimento repetido en el Panteón en 1902",
+            "credit": "Le Petit Parisien, 2 de noviembre de 1902 · Dominio público",
+            "source": "https://commons.wikimedia.org/wiki/File:Le_petit_Parisien_illustre_2nov1902.jpg",
+            "para": 3,
+            "after": "En el móvil tienes cómo lo dibujaron en 1902, cuando repitieron el experimento aquí mismo."
+          }
         ]
       }
     },
@@ -446,9 +482,21 @@
         "ask": "Antes de despedirme, ¿te cuento un poco más de esos tapices? Hay unicornios, una novelista, un escritor famoso y algún que otro cotilleo. Si te apetece, toca «Cuéntame más». Si no, vamos con la despedida.",
         "paras": [
           "Son seis tapices, dibujados en París y tejidos en Flandes hacia 1500 para una familia de Lyon, los Le Viste. Lo sabemos por su escudo, con tres medias lunas, que ondea en las banderas. Cinco representan los sentidos: el tacto, el gusto, el olfato, el oído y la vista. Y en el sexto, el de «a mi único deseo», la dama no se está poniendo el collar, sino guardándolo en un cofre. ¿Renuncia a los placeres? ¿Es el amor? Cada experto te dirá una cosa.",
-          "En todos aparecen un león y un unicornio. En la Edad Media se creía que el unicornio era salvaje e imposible de cazar, y que solo se dejaba domar por una doncella: se le acercaba, apoyaba la cabeza en su regazo y se quedaba dormido. En el tapiz de la vista, el unicornio pone las patas delanteras en las rodillas de la dama y se mira en el espejo que ella le sostiene. Coqueto, el animal.",
+          "En todos aparecen un león y un unicornio. En la Edad Media se creía que el unicornio era salvaje e imposible de cazar, y que solo se dejaba domar por una doncella: se le acercaba, apoyaba la cabeza en su regazo y se quedaba dormido. En el tapiz de la vista, el unicornio pone las patas delanteras en las rodillas de la dama y se mira en el espejo que ella le sostiene. Te lo he dejado en la app. Coqueto, el animal.",
           "Durante siglos estuvieron olvidados en un castillo del centro de Francia, en Boussac, cogiendo humedad. En 1841 llegó Prosper Mérimée, el autor de Carmen, que era inspector de monumentos, y los hizo proteger. Y ojo al dato: quien le dio el chivatazo fue, seguramente, la novelista George Sand, que vivía cerca. Años antes habían sido amantes, muy poco tiempo. Muy poco. Por lo visto, aquello no salió bien. Lo de los tapices, en cambio, salió de maravilla.",
           "Cuentan que el alcalde le dijo a Mérimée que había habido otros tapices todavía más bonitos, pero que un antiguo dueño los había cortado para tapar carros. En 1882, el museo compró los seis por veinticinco mil francos oro. Y hoy son tan famosos que hasta salen en las películas de Harry Potter: unas copias cuelgan en la sala común de Gryffindor. Si los ves en la pantalla, ya sabes de dónde vienen."
+        ],
+        "images": [
+          {
+            "src": "img/paris/latino/cluny-mas.webp",
+            "w": 1100,
+            "h": 1057,
+            "caption": "La vista, uno de los seis tapices de La dama y el unicornio, hacia 1500",
+            "credit": "Museo de Cluny · Dominio público",
+            "source": "https://commons.wikimedia.org/wiki/File:Französischer_Tapisseur_(15._Jahrhundert)_001.jpg",
+            "para": 1,
+            "after": "Te lo he dejado en la app."
+          }
         ]
       }
     }
