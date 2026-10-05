@@ -4,6 +4,7 @@ Paseíto · generador de audios con ElevenLabs
 
 Lee el guion de una ruta (por ejemplo data/paris/centro.json) y crea un MP3 por párrafo,
 uno por pregunta y tres respuestas por parada («¡Correcto!», «¡Casi!…», «Te lo digo yo…»).
+Si la parada tiene historia para curiosos («more»), también la oferta y sus párrafos.
 Después anota los archivos en el propio JSON (bloque "audio") para que la app los use.
 
 Solo regenera lo que ha cambiado: si editas un párrafo, al volver a ejecutarlo
@@ -143,6 +144,13 @@ def main():
                 (f"{sid}-skip.mp3", "Te lo digo yo: la respuesta es: " + correcta + ".", None, None),
             ]
 
+        m = st.get("more")
+        if m and m.get("paras"):
+            textos.append((f"{sid}-mas.mp3", m["ask"], None, None))
+            for k, p in enumerate(m["paras"]):
+                textos.append((f"{sid}-m{k}.mp3", p, m["paras"][k - 1] if k else None,
+                               m["paras"][k + 1] if k + 1 < len(m["paras"]) else None))
+
         print(f"\n· {st['title']}")
         for nombre, texto, ant, sig in textos:
             h = huella(texto, a)
@@ -164,6 +172,8 @@ def main():
         entrada = {"paras": [f"{sid}-p{i}.mp3" for i in range(len(partes))]}
         if q:
             entrada.update({"quiz": f"{sid}-q.mp3", "ok": f"{sid}-ok.mp3", "ko": f"{sid}-ko.mp3", "skip": f"{sid}-skip.mp3"})
+        if m and m.get("paras"):
+            entrada["more"] = {"ask": f"{sid}-mas.mp3", "paras": [f"{sid}-m{k}.mp3" for k in range(len(m["paras"]))]}
         audio["stops"][sid] = entrada
         tour["audio"] = audio
         with open(ruta_json, "w", encoding="utf-8") as f:
@@ -172,7 +182,8 @@ def main():
     # Versión y tamaño de cada audio: la app los usa para descargarlos y saber cuáles han cambiado
     archivos = {}
     for entrada in audio["stops"].values():
-        for f in entrada["paras"] + [entrada[k] for k in ("quiz", "ok", "ko", "skip") if k in entrada]:
+        extra = [entrada["more"]["ask"]] + entrada["more"]["paras"] if "more" in entrada else []
+        for f in entrada["paras"] + [entrada[k] for k in ("quiz", "ok", "ko", "skip") if k in entrada] + extra:
             ruta = os.path.join(carpeta, f)
             if f in manifiesto and os.path.exists(ruta):
                 archivos[f] = {"v": manifiesto[f][:8], "b": os.path.getsize(ruta)}

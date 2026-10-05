@@ -39,7 +39,7 @@
 
   // ---------- Estado ----------
   // view: parada que muestra la tarjeta (null = modo caminando)
-  const fresh = () => ({ mode: null, target: 0, visited: [], showText: false, rate: 1, voiceName: '', mapSaved: false, pos: null, acc: null, arrived: null, view: null, score: {}, askQuiz: true });
+  const fresh = () => ({ mode: null, target: 0, visited: [], showText: false, rate: 1, voiceName: '', mapSaved: false, pos: null, acc: null, arrived: null, view: null, score: {}, askQuiz: true, askMore: true });
   let S = fresh();
   let catalog = null, city = null, routeMeta = null;
   const tourCache = {};
@@ -54,14 +54,15 @@
     ['mode', 'target', 'visited', 'mapSaved', 'score'].forEach(k => { if (k in d) S[k] = d[k]; });
     const pr = readJSON(PREFS);
     if ('askQuiz' in pr) S.askQuiz = pr.askQuiz;
+    if ('askMore' in pr) S.askMore = pr.askMore;
     if ('rate' in pr) S.rate = pr.rate; else if ('rate' in d) S.rate = d.rate;
     if ('voiceName' in pr) S.voiceName = pr.voiceName; else if ('voiceName' in d) S.voiceName = d.voiceName;
   }
   function save() {
     try {
-      const { mode, target, visited, mapSaved, score, rate, voiceName, askQuiz } = S;
+      const { mode, target, visited, mapSaved, score, rate, voiceName, askQuiz, askMore } = S;
       if (STORE) localStorage.setItem(STORE, JSON.stringify({ mode, target, visited, mapSaved, score }));
-      localStorage.setItem(PREFS, JSON.stringify({ rate, voiceName, askQuiz }));
+      localStorage.setItem(PREFS, JSON.stringify({ rate, voiceName, askQuiz, askMore }));
     } catch (e) {}
   }
 
@@ -73,34 +74,52 @@
 
   // ---------- Datos ----------
   function prepare(t) {
+    const sentences = s => s.replace(/([.!?…])\s+(?=[A-ZÁÉÍÓÚÑ¿¡«"])/g, '$1\u0001').split('\u0001').map(x => x.trim()).filter(Boolean);
     t.stops.forEach((st, i) => {
       const parts = st.paras.slice();
       if (st.toNext) parts.push('Para ir a la siguiente parada: ' + st.toNext);
-      st.chunks = [];
-      parts.forEach((p, pi) => {
-        if (st.quiz && st.quiz.before === pi) {
-          const q = st.quiz;
-          st.chunks.push({ pi, quiz: true, s: q.q + ' ' + q.options.map((o, k) => '¿' + o + '?').join(' ') });
-        }
-        p.replace(/([.!?…])\s+(?=[A-ZÁÉÍÓÚÑ¿¡«"])/g, '$1\u0001').split('\u0001').forEach(s => {
-          s = s.trim(); if (s) st.chunks.push({ pi, s });
-        });
-      });
-      st.words = parts.join(' ').split(/\s+/).length;
-      st.images = (st.images || (st.image ? [st.image] : [])).slice().sort((a, b) => a.para - b.para);
+      const n = st.paras.length;
+      // Historia para curiosos (opcional): la guía la ofrece y, si se acepta, la cuenta.
+      // Sus párrafos se numeran después del «camino a la siguiente» (n + 1 + k) y la oferta, detrás (n + 1 + m).
+      const more = st.more && st.more.paras && st.more.paras.length ? st.more : null;
+      const mb = more ? (more.before != null ? more.before : n) : -1;
+      if (more) { more.at = n + 1 + more.paras.length; more.first = n + 1; }
+      const qText = st.quiz ? st.quiz.q + ' ' + st.quiz.options.map(o => '¿' + o + '?').join(' ') : '';
       const au = t.audio && t.audio.stops && t.audio.stops[st.id];
-      if (au && au.paras && au.paras.length === parts.length) {
-        // Audio grabado: un archivo por párrafo y otro para la pregunta
-        st.isAudio = true;
+      st.isAudio = !!(au && au.paras && au.paras.length === parts.length);
+      const am = st.isAudio && more && au.more && au.more.paras && au.more.paras.length === more.paras.length ? au.more : null;
+      const all = [];
+      // Con audio grabado: un archivo por párrafo; si no, la voz del móvil frase a frase
+      const add = (text, props, src) => {
+        if (st.isAudio) all.push(Object.assign({ s: text, src: src ? audioUrl(t, src) : '' }, props));
+        else sentences(text).forEach(s => all.push(Object.assign({ s }, props)));
+      };
+      const addMore = () => {
+        // La oferta va entera, en un solo trozo, como las preguntas
+        all.push({ pi: more.at, ask: true, s: more.ask, src: st.isAudio && am && am.ask ? audioUrl(t, am.ask) : '' });
+        more.paras.forEach((p, k) => add(p, { pi: more.first + k, ex: true }, am && am.paras[k]));
+      };
+      parts.forEach((p, pi) => {
+        if (more && mb === pi) addMore();
+        if (st.quiz && st.quiz.before === pi) {
+          if (st.isAudio) all.push({ pi, quiz: true, src: au.quiz ? audioUrl(t, au.quiz) : '', s: qText });
+          else all.push({ pi, quiz: true, s: qText });
+        }
+        add(p, { pi }, st.isAudio && au.paras[pi]);
+      });
+      if (more && mb >= parts.length) addMore();
+      if (st.isAudio) {
         st.audio = { ok: audioUrl(t, au.ok), ko: audioUrl(t, au.ko), skip: audioUrl(t, au.skip) };
-        const text = {}; st.chunks.forEach(c => { text[c.quiz ? 'q' : c.pi] = (text[c.quiz ? 'q' : c.pi] || '') + ' ' + c.s; });
-        st.chunks = [];
-        parts.forEach((p, pi) => {
-          if (st.quiz && st.quiz.before === pi && au.quiz) st.chunks.push({ pi, quiz: true, src: audioUrl(t, au.quiz), s: text.q || '' });
-          st.chunks.push({ pi, src: audioUrl(t, au.paras[pi]), s: p });
-        });
-        st.chunks.forEach(c => { c.dur = c.s.split(/\s+/).length / WPM * 60; });
+        all.forEach(c => { c.dur = c.s.split(/\s+/).length / WPM * 60; });
       }
+      st.chunksAll = all;
+      st.chunksBase = all.filter(c => !c.ex);
+      st.chunks = st.chunksBase; st.moreOn = false;
+      st.words = parts.join(' ').split(/\s+/).length;
+      st.moreMin = more ? Math.max(1, Math.round(more.paras.join(' ').split(/\s+/).length / WPM)) : 0;
+      st.images = (st.images || (st.image ? [st.image] : [])).slice()
+        .concat(more && more.images ? more.images.map(im => Object.assign({}, im, { para: more.first + im.para })) : [])
+        .sort((a, b) => a.para - b.para);
       recalcTimes(st);
       st.min = Math.max(1, Math.round(st.words / WPM));
       st.legNext = t.legs[i] ? pathLen(t.legs[i]) : 0;
@@ -109,7 +128,8 @@
     t.audioList = [];
     if (t.audio && t.audio.stops) {
       const seen = new Set();
-      Object.values(t.audio.stops).forEach(e => [].concat(e.paras || [], e.quiz || [], e.ok || [], e.ko || [], e.skip || []).forEach(f => {
+      Object.values(t.audio.stops).forEach(e => [].concat(e.paras || [], e.quiz || [], e.ok || [], e.ko || [], e.skip || [],
+        (e.more && e.more.ask) || [], (e.more && e.more.paras) || []).forEach(f => {
         const u = audioUrl(t, f); if (seen.has(u)) return; seen.add(u);
         t.audioList.push({ u, b: (t.audio.files && t.audio.files[f] && t.audio.files[f].b) || 0 });
       }));
@@ -308,7 +328,8 @@
   function loadDurations(st) {
     if (!st.isAudio || st.durLoaded) return;
     st.durLoaded = true;
-    st.chunks.forEach(ch => {
+    st.chunksAll.forEach(ch => {
+      if (!ch.src) return;
       const a = new Audio(); a.preload = 'metadata';
       a.addEventListener('loadedmetadata', () => {
         if (!isFinite(a.duration)) return;
@@ -337,22 +358,24 @@
     const st = tour.stops[P.stop];
     const id = ++P.session;
     if (!P.playing) return;
+    while (P.c < st.chunks.length && skipChunk(st.chunks[P.c])) P.c++;
     if (P.c >= st.chunks.length) { finishStop(); return; }
-    while (P.c < st.chunks.length - 1 && st.chunks[P.c].quiz && !S.askQuiz) P.c++;
     const ch = st.chunks[P.c];
     if (ch.quiz && S.askQuiz) showQuiz(false);
+    if (ch.ask) showMore(false);
     player.onended = () => {
       if (id !== P.session || !P.playing) return;
       if (ch.quiz && S.askQuiz) { waitQuiz(); return; }
+      if (ch.ask) { waitMore(); return; }
       P.c++; P.off = 0; playItem(0);
     };
     let failed = false;
     player.onerror = () => {
       if (id !== P.session || failed) return;
       failed = true;
-      // Sin conexión y sin descargar: esa parte la lee la voz del móvil y se sigue con el audio
+      // Sin conexión y sin descargar (o aún sin grabar): esa parte la lee la voz del móvil y se sigue con el audio
       if (synth && ch.s) {
-        if (!offlineWarned) { offlineWarned = true; toast('Sin conexión: leo con la voz del móvil. Descarga los audios para usarla sin datos.', 5000); }
+        if (!offlineWarned && ch.src) { offlineWarned = true; toast('Sin conexión: leo con la voz del móvil. Descarga los audios para usarla sin datos.', 5000); }
         const u = new SpeechSynthesisUtterance(ch.s);
         u.lang = voice ? voice.lang : tour.lang; if (voice) u.voice = voice; u.rate = S.rate;
         u.onend = () => { if (id !== P.session || !P.playing) return; player.onended(); };
@@ -363,6 +386,7 @@
       P.playing = false; renderPlayer();
       toast('No se pudo cargar el audio. Comprueba la conexión.');
     };
+    if (!ch.src) { try { player.pause(); } catch (e) {} player.onerror(); renderPlayer(true); return; }
     let last = 0;
     player.ontimeupdate = () => { if (id === P.session && Date.now() - last > 400) { last = Date.now(); renderPlayer(); } };
     player.src = ch.src;
@@ -414,9 +438,14 @@
     const st = tour.stops[i];
     if (!st.isAudio && !synth) { toast('Este navegador no puede leer en voz alta.'); return; }
     unlockAudio();
-    if (P.stop !== i) { P.stop = i; P.c = 0; P.off = 0; }
-    if (fromPart != null) { P.c = Math.max(0, st.chunks.findIndex(c => c.pi === fromPart)); P.off = 0; }
-    if (P.c >= st.chunks.length) { P.c = 0; P.off = 0; }
+    if (P.stop !== i) { P.stop = i; P.c = 0; P.off = 0; setMore(st, false); }
+    if (fromPart != null) {
+      // Tocar un párrafo de la historia para curiosos la incluye en la parada
+      if (st.more) setMore(st, st.moreOn || (fromPart >= st.more.first && fromPart < st.more.at));
+      P.c = Math.max(0, st.chunks.findIndex(c => c.pi === fromPart)); P.off = 0;
+      cancelMore();
+    }
+    if (P.c >= st.chunks.length) { P.c = 0; P.off = 0; setMore(st, false); }
     P.playing = true;
     restartSpeech();
     requestWake();
@@ -433,7 +462,7 @@
     if (synth) synth.cancel();
     if (wasAudio) { P.off = player.currentTime || 0; }
     try { player.pause(); } catch (e) {}
-    cancelQuiz(); renderPlayer();
+    cancelQuiz(); cancelMore(); renderPlayer();
   }
 
   // ---------- Preguntas (como en un free tour: la guía pregunta y espera) ----------
@@ -491,22 +520,78 @@
     u.onend = next; u.onerror = next;
     synth.speak(u);
   }
+  // ---------- Historias para curiosos: la guía la ofrece y tú decides ----------
+  const MORE_WAIT = 15000;
+  let M = null, moreTimer = null;
+  const skipChunk = c => (c.quiz && !S.askQuiz) || (c.ask && !S.askMore);
+  // Con la historia aceptada, sus párrafos entran en la parada (antes del «camino a la siguiente»)
+  function setMore(st, on) {
+    if (!st.more || st.moreOn === on) return;
+    st.moreOn = on; st.chunks = on ? st.chunksAll : st.chunksBase;
+    recalcTimes(st);
+    if (S.view != null && tour.stops[S.view] === st) {
+      const sk = $('#seek'); if (sk) sk.max = st.isAudio ? Math.ceil(st.secs) : st.chunks.length - 1;
+      const tt = $('#tTot'); if (tt) tt.textContent = fmtTime(st.secs / (st.isAudio ? S.rate : 1));
+    }
+  }
+  function showMore(waiting) {
+    const box = $('#moreBox'); if (!box || S.view == null) return;
+    const st = tour.stops[S.view], m = st.more;
+    box.innerHTML = '<p class="eyebrow">Para curiosos · ' + st.moreMin + ' min</p>' +
+      '<p class="quiz-q">' + esc(m.title) + '</p>' +
+      '<div class="more-btns"><button type="button" class="btn btn-primary" data-act="more-yes">Cuéntame más</button>' +
+      '<button type="button" class="btn btn-ghost" data-act="more-no">Seguimos</button></div>' +
+      '<span class="quiz-timer"><span id="moreBar"></span></span>';
+    box.hidden = false;
+    if (waiting) { const bar = $('#moreBar'); bar.style.animationDuration = (MORE_WAIT / 1000) + 's'; bar.classList.add('run'); }
+    measureCard();
+  }
+  function waitMore() {
+    M = { stop: P.stop };
+    showMore(true);
+    clearTimeout(moreTimer);
+    // Si no se toca nada, seguimos: la historia queda en el texto para escucharla cuando quieras
+    moreTimer = setTimeout(() => answerMore(false), MORE_WAIT);
+  }
+  function cancelMore() {
+    clearTimeout(moreTimer); M = null;
+    const box = $('#moreBox'); if (box && !box.hidden) { box.hidden = true; box.innerHTML = ''; measureCard(); }
+  }
+  function answerMore(yes) {
+    if (S.view == null) return;
+    const st = tour.stops[S.view];
+    const atAsk = P.stop === S.view && st.chunks[P.c] && st.chunks[P.c].ask;
+    cancelMore();
+    if (!atAsk) { if (yes) playStop(S.view, st.more.first); return; }
+    if (yes) setMore(st, true);
+    P.session++;
+    if (synth) synth.cancel();
+    try { player.pause(); } catch (e) {}
+    P.c++; P.off = 0;
+    if (!P.playing) { renderPlayer(true); if (yes) { P.playing = true; restartSpeech(); renderPlayer(); } return; }
+    if (!yes && !moreToastShown) { moreToastShown = true; toast('Te la dejo en el texto, en «Para curiosos».'); }
+    setTimeout(() => { if (P.playing) restartSpeech(); }, 250);
+  }
+  let moreToastShown = false;
+
   function speakNext() {
     if (isAudioStop(P.stop)) { playItem(P.off || 0); P.off = 0; return; }
     const st = tour.stops[P.stop];
     const id = ++P.session;
     if (!P.playing) return;
+    while (P.c < st.chunks.length && skipChunk(st.chunks[P.c])) P.c++;
     if (P.c >= st.chunks.length) { finishStop(); return; }
-    while (P.c < st.chunks.length - 1 && st.chunks[P.c].quiz && !S.askQuiz) P.c++;
     const ch = st.chunks[P.c];
     const u = new SpeechSynthesisUtterance(ch.s);
     u.lang = voice ? voice.lang : tour.lang;
     if (voice) u.voice = voice;
     u.rate = S.rate;
     if (ch.quiz && S.askQuiz) showQuiz(false);
+    if (ch.ask) showMore(false);
     u.onend = () => {
       if (id !== P.session || !P.playing) return;
       if (ch.quiz && S.askQuiz) { waitQuiz(); return; }
+      if (ch.ask) { waitMore(); return; }
       P.c++; speakNext();
     };
     u.onerror = e => {
@@ -523,6 +608,7 @@
   // ---------- Tarjeta ----------
   function openView(i) {
     S.view = i; S.showText = false; lastFollowPi = -1;
+    if (P.stop !== i) setMore(tour.stops[i], false);
     loadDurations(tour.stops[i]);
     renderCard(); refreshMap();
     const st = tour.stops[i];
@@ -547,6 +633,7 @@
           (st.images.length > 1 ? '<span class="c-count">' + st.images.length + '</span>' : '') + '</button>' : '') +
         '<button class="x" type="button" data-act="close" aria-label="Cerrar parada">' + ICON.close + '</button></div>' +
         '<div class="quiz" id="quiz" hidden></div>' +
+        '<div class="quiz more-offer" id="moreBox" hidden></div>' +
         '<div class="ctrl">' +
           '<button class="skip" type="button" data-act="back" aria-label="' + (st.isAudio ? 'Retroceder 10 segundos' : 'Retroceder una frase') + '">' + ICON.back + '</button>' +
           '<button class="pbtn" id="btnPlay" type="button" data-act="play"></button>' +
@@ -556,7 +643,8 @@
         '</div>' +
         '<div class="c-body" id="cBody"' + (S.showText ? '' : ' hidden') + '>' +
           '<p class="where"><b>Dónde ponerte</b>' + esc(st.where) + '</p>' +
-          st.paras.map((p, pi) => paraHTML(st, p, pi)).join('') +
+          st.paras.map((p, pi) => paraHTML(st, p, pi) + (st.more && moreBefore(st) === pi + 1 && pi + 1 < st.paras.length ? moreHTML(st) : '')).join('') +
+          (st.more && moreBefore(st) >= st.paras.length ? moreHTML(st) : '') +
           (st.toNext ? '<p class="next-box" data-p="' + st.paras.length + '"><b>Camino a la siguiente · ' + fmtDist(st.legNext) + '</b>' + esc(st.toNext) + '</p>' : '') +
         '</div>';
     } else if (S.target == null) {
@@ -582,6 +670,16 @@
     card.classList.toggle('is-open', S.view != null && S.showText);
     if (S.view != null) renderPlayer();
     measureCard();
+  }
+
+  // Historia para curiosos en el texto: la oferta, el título y sus párrafos
+  const moreBefore = st => st.more.before != null ? st.more.before : st.paras.length;
+  function moreHTML(st) {
+    const m = st.more;
+    return '<section class="more-box"><p class="more-kicker">Para curiosos · ' + st.moreMin + ' min</p>' +
+      '<h3 class="more-title">' + esc(m.title) + '</h3>' +
+      '<p class="para more-ask" data-p="' + m.at + '">' + esc(m.ask) + '</p>' +
+      m.paras.map((p, k) => paraHTML(st, p, m.first + k)).join('') + '</section>';
   }
 
   // ---------- Imágenes: en el texto, en miniatura junto al título y a pantalla completa ----------
@@ -739,7 +837,7 @@
     if (S.view == null) return;
     const st = tour.stops[S.view];
     if (P.stop !== S.view) { if (P.playing) pauseSpeech(); P.stop = S.view; }
-    cancelQuiz();
+    cancelQuiz(); cancelMore();
     P.c = Math.max(0, Math.min(c, st.chunks.length - 1)); P.off = 0;
     if (P.playing) restartSpeech();
     renderPlayer(true);
@@ -749,7 +847,7 @@
     if (S.view == null) return;
     const st = tour.stops[S.view];
     if (P.stop !== S.view) { if (P.playing) pauseSpeech(); P.stop = S.view; P.c = 0; P.off = 0; }
-    cancelQuiz();
+    cancelQuiz(); cancelMore();
     t = Math.max(0, Math.min(t, st.secs - 0.5));
     let c = 0;
     while (c < st.chunks.length - 1 && st.cum[c + 1] <= t) c++;
@@ -907,7 +1005,8 @@
       const meta = nx ? 'Siguiente' : v ? 'Visitada' : (S.pos ? fmtDist(dist(S.pos[0], S.pos[1], st.lat, st.lng)) : st.min + ' min');
       return '<li><button type="button" class="si' + (v ? ' is-done' : '') + (nx ? ' is-next' : '') + '" data-i="' + i + '">' +
         '<span class="plaque">' + pad(i + 1) + '</span>' +
-        '<span><span class="si-title">' + esc(st.title) + '</span><span class="si-sub">' + esc(st.subtitle) + '</span></span>' +
+        '<span><span class="si-title">' + esc(st.title) + '</span><span class="si-sub">' + esc(st.subtitle) + '</span>' +
+        (st.more ? '<span class="si-more">＋ Para curiosos: ' + esc(st.more.title) + '</span>' : '') + '</span>' +
         '<span class="si-meta">' + meta + '</span></button></li>';
     }).join('');
   }
@@ -985,6 +1084,7 @@
       if (act === 'text') { if (Date.now() - swipedAt > 400) setText(!S.showText); return; }
       if (act === 'restart') { resetTour(); return; }
       if (act === 'quiz') { answerQuiz(+b.dataset.i); return; }
+      if (act === 'more-yes' || act === 'more-no') { answerMore(act === 'more-yes'); return; }
       if (act === 'quiz-skip') { if (Q) answerQuiz(null); else { cancelQuiz(); if (P.playing) { P.c++; restartSpeech(); } } return; }
       if (act === 'back' || act === 'fwd') {
         if (isAudioStop(S.view)) { const now = P.stop === S.view ? audioTime() : 0; seekTime(now + (act === 'back' ? -10 : 10)); return; }
@@ -1022,6 +1122,7 @@
       $('#intro').scrollTop = 0;
     });
     $('#optQuiz').addEventListener('change', e => { S.askQuiz = e.target.checked; save(); if (!S.askQuiz && Q) answerQuiz(null); });
+    $('#optMore').addEventListener('change', e => { S.askMore = e.target.checked; save(); if (!S.askMore && M) answerMore(false); });
     $('#optRate').addEventListener('change', e => {
       S.rate = parseFloat(e.target.value) || 1; save();
       if (isAudioStop(P.stop)) { player.playbackRate = S.rate; renderPlayer(); }
@@ -1194,6 +1295,9 @@
     vc.textContent = tour.audio && tour.audio.credit ? tour.audio.credit + '.' : '';
     $('#optRate').value = String(S.rate);
     $('#optQuiz').checked = S.askQuiz;
+    $('#optMore').checked = S.askMore;
+    const nMore = tour.stops.filter(st => st.more).length;
+    $('#optMoreRow').hidden = !nMore;
     DL.busy = false; refreshDl();
     $('#offlineMsg').textContent = S.mapSaved ? 'Mapa de la zona guardado: funciona sin datos.' : 'El mapa de la zona se guarda solo al empezar, para usarlo sin datos.';
     if (synth) loadVoices();

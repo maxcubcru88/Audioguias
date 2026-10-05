@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:wght@700&display=swap">
 <link rel="stylesheet" href="vendor/maplibre/maplibre-gl.css">
-<link rel="stylesheet" href="css/app.css?v=30">
+<link rel="stylesheet" href="css/app.css?v=31">
 </head>
 <body>
 
@@ -78,6 +78,10 @@
       <label class="switch-row" for="optQuiz">
         <span><span class="sw-title">Preguntas</span><span class="help">En cada parada te hago una pregunta para que intentes adivinar.</span></span>
         <input type="checkbox" id="optQuiz" class="switch" checked>
+      </label>
+      <label class="switch-row" for="optMore" id="optMoreRow" hidden>
+        <span><span class="sw-title">Historias para curiosos</span><span class="help">En algunas paradas te ofrezco una historia extra de un par de minutos. Tú decides si la escuchas.</span></span>
+        <input type="checkbox" id="optMore" class="switch" checked>
       </label>
       <div class="dl-box" hidden></div>
     </div>
@@ -146,6 +150,6 @@
 <div id="toast" class="toast" hidden></div>
 
 <script src="vendor/maplibre/maplibre-gl.js"></script>
-<script src="js/app.js?v=30"></script>
+<script src="js/app.js?v=31"></script>
 </body>
 </html>

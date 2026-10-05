@@ -17,6 +17,7 @@ por ejemplo `.../Audioguias/#paris/centro`, y guarda su propio progreso.
 - **GPS opcional**: con el GPS apagado avanzas tú, parada a parada («Ya estoy aquí» o tocando la parada). Sirve también para escuchar el tour desde casa.
 - Funciona sin conexión: la app se guarda al abrirla y el mapa de la zona se guarda solo al empezar una ruta.
 - Preguntas para adivinar en cada parada (se pueden desactivar), con marcador al final.
+- Historias para curiosos: en algunas paradas la guía ofrece un par de minutos más y tú decides si escucharlos.
 - Recuerda qué paradas has visitado.
 
 Limitación: en iPhone, una web app solo usa el GPS y la voz con la pantalla encendida y la app abierta.
@@ -69,6 +70,12 @@ Cada archivo de ruta, como `data/paris/centro.json`, contiene:
   Usa solo imágenes de dominio público o con licencia libre (Wikimedia Commons) y pon siempre el crédito.
   Formato WebP, unos 1.100 px por el lado largo y menos de 150 KB. Se guardan solas para usarlas sin conexión;
   si cambias una imagen, cámbiale también el nombre de archivo.
+- `more` (opcional): historia para curiosos, de unos 2 minutos. Al final de la parada (antes del «camino a la
+  siguiente») la guía la ofrece y salen los botones «Cuéntame más» / «Seguimos»; si nadie toca nada, a los 15 s sigue
+  la ruta. Campos: `title`, `ask` (la frase con la que la guía la ofrece), `paras` (sus párrafos), `before`
+  (opcional: antes de qué párrafo se ofrece; por defecto, al final) e `images` (opcional, como las de la parada, con
+  `para` contando desde el primer párrafo de la historia). En el texto sale en un recuadro «Para curiosos» y en la
+  portada hay un interruptor para no ofrecerlas.
 - `legs`: la línea del recorrido entre paradas, como listas de puntos `[lat, lng]`.
   El tramo 0 va de la parada 1 a la 2, y así sucesivamente.
 
@@ -92,7 +99,7 @@ python tools\generar_audios.py data\paris\centro.json --voz VOICE_ID            
 
 - **Clave**: elevenlabs.io › perfil › API Keys › Create API key (permiso «Text to Speech»).
 - **VOICE_ID**: en «Voices», menú «⋯» de la voz › «Copy voice ID» (la voz debe estar en «My Voices»).
-- Crea `audio/<ciudad>/<ruta>/` con un MP3 por párrafo, la pregunta y las respuestas, y anota los archivos
+- Crea `audio/<ciudad>/<ruta>/` con un MP3 por párrafo, la pregunta, las respuestas y las historias para curiosos, y anota los archivos
   en el bloque `audio` del JSON de la ruta.
 - Solo regenera lo que cambia (texto, voz o ajustes): editar un párrafo solo gasta ese párrafo.
 - Opciones: `--modelo` (por defecto `eleven_v4`; también `eleven_v3` o `eleven_multilingual_v2`), `--estabilidad 0.45`,
