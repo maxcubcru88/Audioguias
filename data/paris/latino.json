@@ -948,6 +948,153 @@
         "ok": "shakespeare-and-company-ok.mp3",
         "ko": "shakespeare-and-company-ko.mp3",
         "skip": "shakespeare-and-company-skip.mp3"
+      },
+      "saint-julien-le-pauvre": {
+        "paras": [
+          "saint-julien-le-pauvre-p0.mp3",
+          "saint-julien-le-pauvre-p1.mp3",
+          "saint-julien-le-pauvre-p2.mp3",
+          "saint-julien-le-pauvre-p3.mp3",
+          "saint-julien-le-pauvre-p4.mp3",
+          "saint-julien-le-pauvre-p5.mp3"
+        ],
+        "quiz": "saint-julien-le-pauvre-q.mp3",
+        "ok": "saint-julien-le-pauvre-ok.mp3",
+        "ko": "saint-julien-le-pauvre-ko.mp3",
+        "skip": "saint-julien-le-pauvre-skip.mp3"
+      },
+      "saint-severin": {
+        "paras": [
+          "saint-severin-p0.mp3",
+          "saint-severin-p1.mp3",
+          "saint-severin-p2.mp3",
+          "saint-severin-p3.mp3",
+          "saint-severin-p4.mp3",
+          "saint-severin-p5.mp3"
+        ],
+        "quiz": "saint-severin-q.mp3",
+        "ok": "saint-severin-ok.mp3",
+        "ko": "saint-severin-ko.mp3",
+        "skip": "saint-severin-skip.mp3"
+      },
+      "le-procope": {
+        "paras": [
+          "le-procope-p0.mp3",
+          "le-procope-p1.mp3",
+          "le-procope-p2.mp3",
+          "le-procope-p3.mp3",
+          "le-procope-p4.mp3",
+          "le-procope-p5.mp3"
+        ],
+        "quiz": "le-procope-q.mp3",
+        "ok": "le-procope-ok.mp3",
+        "ko": "le-procope-ko.mp3",
+        "skip": "le-procope-skip.mp3",
+        "more": {
+          "ask": "le-procope-mas.mp3",
+          "paras": [
+            "le-procope-m0.mp3",
+            "le-procope-m1.mp3",
+            "le-procope-m2.mp3",
+            "le-procope-m3.mp3"
+          ]
+        }
+      },
+      "odeon": {
+        "paras": [
+          "odeon-p0.mp3",
+          "odeon-p1.mp3",
+          "odeon-p2.mp3",
+          "odeon-p3.mp3",
+          "odeon-p4.mp3",
+          "odeon-p5.mp3"
+        ],
+        "quiz": "odeon-q.mp3",
+        "ok": "odeon-ok.mp3",
+        "ko": "odeon-ko.mp3",
+        "skip": "odeon-skip.mp3"
+      },
+      "luxembourg": {
+        "paras": [
+          "luxembourg-p0.mp3",
+          "luxembourg-p1.mp3",
+          "luxembourg-p2.mp3",
+          "luxembourg-p3.mp3",
+          "luxembourg-p4.mp3",
+          "luxembourg-p5.mp3"
+        ],
+        "quiz": "luxembourg-q.mp3",
+        "ok": "luxembourg-ok.mp3",
+        "ko": "luxembourg-ko.mp3",
+        "skip": "luxembourg-skip.mp3",
+        "more": {
+          "ask": "luxembourg-mas.mp3",
+          "paras": [
+            "luxembourg-m0.mp3",
+            "luxembourg-m1.mp3",
+            "luxembourg-m2.mp3",
+            "luxembourg-m3.mp3"
+          ]
+        }
+      },
+      "pantheon": {
+        "paras": [
+          "pantheon-p0.mp3",
+          "pantheon-p1.mp3",
+          "pantheon-p2.mp3",
+          "pantheon-p3.mp3",
+          "pantheon-p4.mp3",
+          "pantheon-p5.mp3"
+        ],
+        "quiz": "pantheon-q.mp3",
+        "ok": "pantheon-ok.mp3",
+        "ko": "pantheon-ko.mp3",
+        "skip": "pantheon-skip.mp3",
+        "more": {
+          "ask": "pantheon-mas.mp3",
+          "paras": [
+            "pantheon-m0.mp3",
+            "pantheon-m1.mp3",
+            "pantheon-m2.mp3",
+            "pantheon-m3.mp3"
+          ]
+        }
+      },
+      "sorbonne": {
+        "paras": [
+          "sorbonne-p0.mp3",
+          "sorbonne-p1.mp3",
+          "sorbonne-p2.mp3",
+          "sorbonne-p3.mp3",
+          "sorbonne-p4.mp3",
+          "sorbonne-p5.mp3"
+        ],
+        "quiz": "sorbonne-q.mp3",
+        "ok": "sorbonne-ok.mp3",
+        "ko": "sorbonne-ko.mp3",
+        "skip": "sorbonne-skip.mp3"
+      },
+      "cluny": {
+        "paras": [
+          "cluny-p0.mp3",
+          "cluny-p1.mp3",
+          "cluny-p2.mp3",
+          "cluny-p3.mp3",
+          "cluny-p4.mp3"
+        ],
+        "quiz": "cluny-q.mp3",
+        "ok": "cluny-ok.mp3",
+        "ko": "cluny-ko.mp3",
+        "skip": "cluny-skip.mp3",
+        "more": {
+          "ask": "cluny-mas.mp3",
+          "paras": [
+            "cluny-m0.mp3",
+            "cluny-m1.mp3",
+            "cluny-m2.mp3",
+            "cluny-m3.mp3"
+          ]
+        }
       }
     },
     "files": {
@@ -990,6 +1137,402 @@
       "shakespeare-and-company-skip.mp3": {
         "v": "4cd9b5df",
         "b": 74022
+      },
+      "saint-julien-le-pauvre-p0.mp3": {
+        "v": "a0594346",
+        "b": 351965
+      },
+      "saint-julien-le-pauvre-p1.mp3": {
+        "v": "1f285335",
+        "b": 291779
+      },
+      "saint-julien-le-pauvre-p2.mp3": {
+        "v": "e4223d97",
+        "b": 597725
+      },
+      "saint-julien-le-pauvre-p3.mp3": {
+        "v": "af9cabbf",
+        "b": 420928
+      },
+      "saint-julien-le-pauvre-p4.mp3": {
+        "v": "52b626eb",
+        "b": 264612
+      },
+      "saint-julien-le-pauvre-p5.mp3": {
+        "v": "2d290e82",
+        "b": 321036
+      },
+      "saint-julien-le-pauvre-q.mp3": {
+        "v": "fff7f8e5",
+        "b": 276315
+      },
+      "saint-julien-le-pauvre-ok.mp3": {
+        "v": "b752486e",
+        "b": 16344
+      },
+      "saint-julien-le-pauvre-ko.mp3": {
+        "v": "a94e0b5e",
+        "b": 88233
+      },
+      "saint-julien-le-pauvre-skip.mp3": {
+        "v": "28bf98f8",
+        "b": 94502
+      },
+      "saint-severin-p0.mp3": {
+        "v": "7da53c63",
+        "b": 364504
+      },
+      "saint-severin-p1.mp3": {
+        "v": "8226f59b",
+        "b": 381222
+      },
+      "saint-severin-p2.mp3": {
+        "v": "3a7f7202",
+        "b": 300556
+      },
+      "saint-severin-p3.mp3": {
+        "v": "49b6cda5",
+        "b": 537539
+      },
+      "saint-severin-p4.mp3": {
+        "v": "6e7284ef",
+        "b": 379968
+      },
+      "saint-severin-p5.mp3": {
+        "v": "d7df48ab",
+        "b": 353219
+      },
+      "saint-severin-q.mp3": {
+        "v": "eedd21cf",
+        "b": 287599
+      },
+      "saint-severin-ok.mp3": {
+        "v": "b752486e",
+        "b": 16344
+      },
+      "saint-severin-ko.mp3": {
+        "v": "2367229e",
+        "b": 88233
+      },
+      "saint-severin-skip.mp3": {
+        "v": "b6833f12",
+        "b": 91995
+      },
+      "le-procope-p0.mp3": {
+        "v": "a7403795",
+        "b": 420928
+      },
+      "le-procope-p1.mp3": {
+        "v": "a9062a0e",
+        "b": 373699
+      },
+      "le-procope-p2.mp3": {
+        "v": "0fbb0310",
+        "b": 454365
+      },
+      "le-procope-p3.mp3": {
+        "v": "eb099751",
+        "b": 346532
+      },
+      "le-procope-p4.mp3": {
+        "v": "85d869b1",
+        "b": 510372
+      },
+      "le-procope-p5.mp3": {
+        "v": "988c76cc",
+        "b": 372445
+      },
+      "le-procope-q.mp3": {
+        "v": "286572a5",
+        "b": 304318
+      },
+      "le-procope-ok.mp3": {
+        "v": "b752486e",
+        "b": 16344
+      },
+      "le-procope-ko.mp3": {
+        "v": "2539ef27",
+        "b": 61066
+      },
+      "le-procope-skip.mp3": {
+        "v": "93d78410",
+        "b": 67753
+      },
+      "le-procope-mas.mp3": {
+        "v": "6384fb2d",
+        "b": 227831
+      },
+      "le-procope-m0.mp3": {
+        "v": "b6de4086",
+        "b": 601487
+      },
+      "le-procope-m1.mp3": {
+        "v": "d06f4b52",
+        "b": 524582
+      },
+      "le-procope-m2.mp3": {
+        "v": "63f19661",
+        "b": 428452
+      },
+      "le-procope-m3.mp3": {
+        "v": "f0cba927",
+        "b": 577245
+      },
+      "odeon-p0.mp3": {
+        "v": "7a25a04d",
+        "b": 360742
+      },
+      "odeon-p1.mp3": {
+        "v": "a5a2da20",
+        "b": 207351
+      },
+      "odeon-p2.mp3": {
+        "v": "3cc7f03f",
+        "b": 464396
+      },
+      "odeon-p3.mp3": {
+        "v": "3f4fef20",
+        "b": 429706
+      },
+      "odeon-p4.mp3": {
+        "v": "c62a9303",
+        "b": 384984
+      },
+      "odeon-p5.mp3": {
+        "v": "556e1936",
+        "b": 277568
+      },
+      "odeon-q.mp3": {
+        "v": "62f92c97",
+        "b": 237862
+      },
+      "odeon-ok.mp3": {
+        "v": "b752486e",
+        "b": 18852
+      },
+      "odeon-ko.mp3": {
+        "v": "4c58bcb0",
+        "b": 85725
+      },
+      "odeon-skip.mp3": {
+        "v": "b72e07b6",
+        "b": 89487
+      },
+      "luxembourg-p0.mp3": {
+        "v": "8600327a",
+        "b": 409226
+      },
+      "luxembourg-p1.mp3": {
+        "v": "ea7d5d8d",
+        "b": 607756
+      },
+      "luxembourg-p2.mp3": {
+        "v": "e485678c",
+        "b": 263358
+      },
+      "luxembourg-p3.mp3": {
+        "v": "7d29df24",
+        "b": 511626
+      },
+      "luxembourg-p4.mp3": {
+        "v": "00da21a9",
+        "b": 332739
+      },
+      "luxembourg-p5.mp3": {
+        "v": "8fb6b4c5",
+        "b": 272553
+      },
+      "luxembourg-q.mp3": {
+        "v": "0348c28a",
+        "b": 324798
+      },
+      "luxembourg-ok.mp3": {
+        "v": "b752486e",
+        "b": 16344
+      },
+      "luxembourg-ko.mp3": {
+        "v": "f548903a",
+        "b": 106205
+      },
+      "luxembourg-skip.mp3": {
+        "v": "110d0e74",
+        "b": 112475
+      },
+      "luxembourg-mas.mp3": {
+        "v": "9ad34162",
+        "b": 267119
+      },
+      "luxembourg-m0.mp3": {
+        "v": "5b0a4962",
+        "b": 533359
+      },
+      "luxembourg-m1.mp3": {
+        "v": "22111dc1",
+        "b": 558019
+      },
+      "luxembourg-m2.mp3": {
+        "v": "2052ef3d",
+        "b": 435139
+      },
+      "luxembourg-m3.mp3": {
+        "v": "3c88acbe",
+        "b": 605248
+      },
+      "pantheon-p0.mp3": {
+        "v": "77e94e6b",
+        "b": 548824
+      },
+      "pantheon-p1.mp3": {
+        "v": "1b96e984",
+        "b": 424690
+      },
+      "pantheon-p2.mp3": {
+        "v": "65b70ef5",
+        "b": 391671
+      },
+      "pantheon-p3.mp3": {
+        "v": "5cbfce5b",
+        "b": 324798
+      },
+      "pantheon-p4.mp3": {
+        "v": "2f2c332c",
+        "b": 775358
+      },
+      "pantheon-p5.mp3": {
+        "v": "f172abe5",
+        "b": 230339
+      },
+      "pantheon-q.mp3": {
+        "v": "b62e6eea",
+        "b": 249565
+      },
+      "pantheon-ok.mp3": {
+        "v": "b752486e",
+        "b": 18852
+      },
+      "pantheon-ko.mp3": {
+        "v": "6fdb0152",
+        "b": 76530
+      },
+      "pantheon-skip.mp3": {
+        "v": "525859f9",
+        "b": 77784
+      },
+      "pantheon-mas.mp3": {
+        "v": "d08372bc",
+        "b": 223652
+      },
+      "pantheon-m0.mp3": {
+        "v": "efdde3f0",
+        "b": 450186
+      },
+      "pantheon-m1.mp3": {
+        "v": "985ab474",
+        "b": 319782
+      },
+      "pantheon-m2.mp3": {
+        "v": "e53c0c79",
+        "b": 489892
+      },
+      "pantheon-m3.mp3": {
+        "v": "47c5ecb3",
+        "b": 712664
+      },
+      "sorbonne-p0.mp3": {
+        "v": "912d8d12",
+        "b": 407972
+      },
+      "sorbonne-p1.mp3": {
+        "v": "217cae4e",
+        "b": 298048
+      },
+      "sorbonne-p2.mp3": {
+        "v": "558a90e0",
+        "b": 376207
+      },
+      "sorbonne-p3.mp3": {
+        "v": "aa17525e",
+        "b": 552586
+      },
+      "sorbonne-p4.mp3": {
+        "v": "7c1701c6",
+        "b": 355727
+      },
+      "sorbonne-p5.mp3": {
+        "v": "a6e97b74",
+        "b": 278822
+      },
+      "sorbonne-q.mp3": {
+        "v": "9186dbb2",
+        "b": 199410
+      },
+      "sorbonne-ok.mp3": {
+        "v": "b752486e",
+        "b": 16344
+      },
+      "sorbonne-ko.mp3": {
+        "v": "661a3e4d",
+        "b": 56050
+      },
+      "sorbonne-skip.mp3": {
+        "v": "a2a9c69a",
+        "b": 61066
+      },
+      "cluny-p0.mp3": {
+        "v": "30b837c9",
+        "b": 278822
+      },
+      "cluny-p1.mp3": {
+        "v": "01bb8052",
+        "b": 419675
+      },
+      "cluny-p2.mp3": {
+        "v": "33b5c1d4",
+        "b": 555511
+      },
+      "cluny-p3.mp3": {
+        "v": "4c3644d6",
+        "b": 482368
+      },
+      "cluny-p4.mp3": {
+        "v": "be9346df",
+        "b": 392925
+      },
+      "cluny-q.mp3": {
+        "v": "050df1ac",
+        "b": 339008
+      },
+      "cluny-ok.mp3": {
+        "v": "b752486e",
+        "b": 16344
+      },
+      "cluny-ko.mp3": {
+        "v": "28357ea5",
+        "b": 90741
+      },
+      "cluny-skip.mp3": {
+        "v": "c07554a4",
+        "b": 95756
+      },
+      "cluny-mas.mp3": {
+        "v": "407d0d22",
+        "b": 237862
+      },
+      "cluny-m0.mp3": {
+        "v": "f9b16d3e",
+        "b": 530852
+      },
+      "cluny-m1.mp3": {
+        "v": "3d4d362f",
+        "b": 443916
+      },
+      "cluny-m2.mp3": {
+        "v": "f218361f",
+        "b": 542555
+      },
+      "cluny-m3.mp3": {
+        "v": "d1a8cb37",
+        "b": 432631
       }
     }
   }
