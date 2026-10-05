@@ -1,5 +1,5 @@
 {
-  "hotel-de-ville-p0.mp3": "bc0672ad275bfaa8",
+  "hotel-de-ville-p0.mp3": "bcec6dddf930b836",
   "hotel-de-ville-p1.mp3": "c7ce7018be05c571",
   "hotel-de-ville-q.mp3": "4340cf6ebe4558cd",
   "hotel-de-ville-p2.mp3": "95f5ee0d456dbd35",
@@ -91,5 +91,25 @@
   "tuileries-p5.mp3": "2766463520797362",
   "tuileries-ok.mp3": "b752486e965545e4",
   "tuileries-ko.mp3": "589687873da91b9e",
-  "tuileries-skip.mp3": "18fa9ae16e071361"
+  "tuileries-skip.mp3": "18fa9ae16e071361",
+  "notre-dame-mas.mp3": "5cdddfbeb0a9901b",
+  "notre-dame-m0.mp3": "42780a1cccfcac72",
+  "notre-dame-m1.mp3": "213e38f9202689de",
+  "notre-dame-m2.mp3": "36bd48919b45be3a",
+  "notre-dame-m3.mp3": "68b686db2fe4a60f",
+  "conciergerie-mas.mp3": "0647e8bbfcb6b23a",
+  "conciergerie-m0.mp3": "a74cbb6b608a01e5",
+  "conciergerie-m1.mp3": "c41eca6b54ca521c",
+  "conciergerie-m2.mp3": "a472af983582c580",
+  "conciergerie-m3.mp3": "da4f623ed73ae65c",
+  "louvre-mas.mp3": "313464ba440e2f58",
+  "louvre-m0.mp3": "485fd13df076e788",
+  "louvre-m1.mp3": "f5be1c449e298378",
+  "louvre-m2.mp3": "f131cbc562fe5f64",
+  "louvre-m3.mp3": "8f4cede5e7882079",
+  "tuileries-mas.mp3": "310db2d0b69f1d09",
+  "tuileries-m0.mp3": "fa48433df0225b1b",
+  "tuileries-m1.mp3": "cc130e1c45af4a60",
+  "tuileries-m2.mp3": "22afda251b67285c",
+  "tuileries-m3.mp3": "def3c248953c38b8"
 }

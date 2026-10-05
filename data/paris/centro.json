@@ -20,7 +20,7 @@
       "radius": 45,
       "where": "En la plaza, frente a la fachada principal del ayuntamiento.",
       "paras": [
-        "¡Bonjour! Bienvenido a tu free tour de bolsillo por el corazón de París. Durante la próxima hora y media, más o menos, vamos a ir paseando desde aquí hasta el jardín de las Tullerías, cruzando la isla donde nació la ciudad. El reparto es sencillo: yo pongo las historias y tú pones los ojos. Eso sí, mira hacia arriba, pero sin caerte al Sena. Y como en todo buen free tour, de vez en cuando te haré una pregunta. Tú intenta adivinar, que aquí no se suspende a nadie.",
+        "¡Bonjour! Bienvenido a tu free tour de bolsillo por el corazón de París. Durante la próxima hora y media, más o menos, vamos a ir paseando desde aquí hasta el jardín de las Tullerías, cruzando la isla donde nació la ciudad. El reparto es sencillo: yo pongo las historias y tú pones los ojos. Eso sí, mira hacia arriba, pero sin caerte al Sena. Y como en todo buen free tour, de vez en cuando te haré una pregunta. Tú intenta adivinar, que aquí no se suspende a nadie. Y en algunas paradas, si te quedas con ganas, te ofreceré una historia extra para curiosos.",
         "Empezamos fuerte. Este palacio que parece una tarta de boda gigante es el Hôtel de Ville, el ayuntamiento de París. Parece del Renacimiento, ¿verdad? Pues no: es casi nuevo. El original lo quemaron los revolucionarios de la Comuna en 1871, y este se reconstruyó copiándolo, eso sí, más grande y más recargado. Ya puestos… Fíjate en la fachada: hay más de cien estatuas de parisinos ilustres. Vamos, que es el Instagram del siglo diecinueve: solo salen los famosos. Por cierto, en el móvil tienes una foto de cómo quedó el original tras el incendio. Daba pena verlo.",
         "Esta plaza antes se llamaba plaza de Grève, que en francés viene a ser «playa de arena». Aquí había un pequeño puerto en la orilla del río, y los hombres sin trabajo venían cada mañana a esperar a que alguien los contratara para descargar barcos. Si echas un ojo al móvil, verás cómo era esta plaza en 1752, con su puerto y sus barcazas. Estar en la Grève era, ni más ni menos, estar en paro. Y de ahí viene la palabra francesa para huelga: grève. Así que, técnicamente, estás pisando el lugar donde nació la huelga francesa. Un respeto.",
         "Ojo, que la plaza también tuvo su lado oscuro. Durante siglos fue el escenario de las ejecuciones públicas. Quédate con un nombre, Ravaillac, porque dentro de un rato, en el Pont Neuf, conocerás al rey al que asesinó.",
@@ -109,6 +109,28 @@
           "Una visita del Papa"
         ],
         "answer": 0
+      },
+      "more": {
+        "title": "De templo de la Razón a la coronación de Napoleón",
+        "ask": "¿Te quedas un par de minutos más? Esta catedral fue templo de la Razón, almacén de vino y escenario de la coronación más teatral de la historia. Si te apetece, toca «Cuéntame más». Si no, seguimos.",
+        "paras": [
+          "Con la Revolución, Notre-Dame lo pasó fatal. En 1793 arrancaron las cabezas de los veintiocho reyes de la fachada, porque creyeron que eran reyes de Francia. Y no: eran reyes de Judá, los de la Biblia. Menudo error. Las cabezas aparecieron en 1977, y hoy están en el museo de Cluny, la última parada de nuestra ruta por el Barrio Latino. En 1793 también celebraron aquí la fiesta de la Razón, con una montaña de cartón piedra en plena nave y una cantante de la Ópera haciendo de Libertad. Y la catedral acabó de almacén de comida y de vino.",
+          "Napoleón la devolvió al culto en 1802 y, dos años después, la eligió para coronarse emperador. El 2 de diciembre de 1804, con el papa Pío Séptimo delante, se puso la corona él solito y luego coronó a Josefina. La catedral estaba tan destartalada que la disfrazaron: le plantaron delante un pórtico gótico de madera, estuco y cartón, y forraron las paredes de seda y terciopelo. Se dijo entonces que a Dios le habría costado reconocer su propia casa.",
+          "Y la víspera, otro sarao. El papa no quería coronar a una pareja casada solo por lo civil. Total, que esa misma noche Napoleón y Josefina se casaron por la Iglesia a toda prisa, en una capilla del palacio de las Tullerías. Napoleón la quería sin testigos, tan secreta como una confesión. Ocho años viviendo en pecado, según el papa, y de repente todo eran prisas. Es lo que tienen las coronas: aceleran mucho las bodas.",
+          "Todo aquello lo pintó Jacques-Louis David en un cuadro enorme, de más de seis metros de alto por casi diez de ancho, que hoy está en el Louvre. Si sacas el móvil, lo verás entero. Y un detalle: en la tribuna aparece la madre de Napoleón, muy digna, en un sitio de honor. Pues no fue: estaba enfadada con Napoleón por cómo trataba a sus otros hijos. Pero en el cuadro, ahí está. Retoque a la francesa, dos siglos antes de los filtros del móvil."
+        ],
+        "images": [
+          {
+            "src": "img/paris/centro/notre-dame-mas.webp",
+            "w": 1100,
+            "h": 692,
+            "caption": "La coronación de Napoleón, de Jacques-Louis David, pintada entre 1805 y 1807",
+            "credit": "Jacques-Louis David · Museo del Louvre · Dominio público",
+            "source": "https://commons.wikimedia.org/wiki/File:Jacques-Louis_David_-_The_Coronation_of_Napoleon_(1805-1807).jpg",
+            "para": 3,
+            "after": "Si sacas el móvil, lo verás entero."
+          }
+        ]
       }
     },
     {
@@ -157,6 +179,28 @@
           "Isabel la Católica"
         ],
         "answer": 1
+      },
+      "more": {
+        "title": "Las últimas semanas de María Antonieta",
+        "ask": "¿Tienes un par de minutos más? Te cuento las últimas semanas de María Antonieta aquí dentro, con un clavel, un plan de fuga y una carta que nunca llegó. Si te apetece, toca «Cuéntame más». Si no, seguimos.",
+        "paras": [
+          "La trajeron aquí la noche del 1 al 2 de agosto de 1793, y pasó setenta y seis días en una celda diminuta, partida en dos por un biombo. Al otro lado, dos gendarmes la vigilaban día y noche. Ni un momento de intimidad. Llegó casi sin ropa. Tenía treinta y siete años, pero con el pelo ya blanco aparentaba muchos más. Dicen que el pelo se le volvió blanco de golpe, en una sola noche, pero eso es más leyenda que historia. En el móvil tienes un retrato suyo que quedó sin terminar, de poco antes de la cárcel.",
+          "Y aquí viene el episodio de película. A finales de agosto, un monárquico, el caballero de Rougeville, entró en la celda con la ayuda de un funcionario y dejó caer unos claveles. En uno iba escondida una nota con un plan de fuga. Ella no tenía con qué escribir, así que contestó pinchando un papel con un alfiler, letra a letra. La noche de la fuga, un gendarme se olió algo y todo se vino abajo. A ella la cambiaron a otra celda, todavía más vigilada.",
+          "En octubre la juzgaron, en dos días de juicio con acusaciones disparatadas, alguna tan infame que ni la repito. Ella respondió apelando a todas las madres que hubiera en la sala, y dicen que el público se removió en sus asientos. No sirvió de nada. El 16 de octubre le cortaron el pelo y la llevaron en una carreta abierta, con las manos atadas. Se cuenta que, al subir al cadalso, pisó sin querer al verdugo y le pidió perdón. Educada hasta el final.",
+          "Esa misma madrugada, a las cuatro y media, había escrito una carta de despedida a su cuñada Isabel, la hermana de Luis XVI. Nunca le llegó: apareció años después entre los papeles de Robespierre, e Isabel también acabó en la guillotina sin leerla. En 1816, su celda se convirtió en una capilla en su memoria, con las paredes pintadas imitando mármol negro, con lágrimas plateadas. Si entras en la Conciergerie, todavía puedes verla."
+        ],
+        "images": [
+          {
+            "src": "img/paris/centro/conciergerie-mas.webp",
+            "w": 824,
+            "h": 1100,
+            "caption": "María Antonieta, retrato inacabado de Kucharski, hacia 1791",
+            "credit": "Alexander Kucharski · Dominio público",
+            "source": "https://commons.wikimedia.org/wiki/File:Kucharski's_Marie_Antoinette.jpg",
+            "para": 0,
+            "after": "En el móvil tienes un retrato suyo que quedó sin terminar, de poco antes de la cárcel."
+          }
+        ]
       }
     },
     {
@@ -345,6 +389,28 @@
           "Mil justos"
         ],
         "answer": 1
+      },
+      "more": {
+        "title": "El robo de la Gioconda, con Picasso ante el juez",
+        "ask": "¿Te quedas un par de minutos más? Te cuento cómo fue de verdad el robo de la Gioconda, con un fontanero muy servicial, un poeta en la cárcel y Picasso delante del juez. Si te apetece, toca «Cuéntame más». Si no, seguimos.",
+        "paras": [
+          "Era lunes, 21 de agosto de 1911, el día que el museo cerraba. Peruggia había trabajado en el museo, pero no era de la casa: era cristalero de una empresa que le hacía las vitrinas, incluida la de la Gioconda. Descolgó el cuadro, le quitó el marco y, al toparse con una puerta cerrada, ¿sabes quién se la abrió? El fontanero del museo, muy amable, con su llave y unos alicates. Nadie echó nada de menos hasta el día siguiente, cuando un pintor vino a copiarla y solo encontró cuatro ganchos. El vigilante pensó que estaría en el fotógrafo.",
+          "El museo cerró una semana y, al reabrir, miles de personas hicieron cola para ver el hueco. Hasta Kafka pasó a verlo. Y la policía, desesperada, acabó deteniendo al poeta Guillaume Apollinaire. ¿Por qué? Porque su secretario había robado antes unas estatuillas del Louvre, y un par se las había vendido a un pintor joven y sin un duro: Pablo Picasso. A Picasso lo llevaron ante el juez y negó cualquier relación con el asunto. Apollinaire pasó cinco noches en la cárcel. Y que conste: ninguno de los dos había tocado la Gioconda.",
+          "Mientras, el ladrón seguía en su cuarto de París. Había dejado una huella en el cristal, y la policía tenía su ficha de un arresto anterior. Pero solo archivaban las huellas de la mano derecha, y la del cristal era de la izquierda. Mira la pantalla: ahí tienes su ficha policial, de 1909. Dicen que un inspector llegó a pasar por su cuarto y no vio nada raro.",
+          "En diciembre de 1913, Peruggia se la ofreció a un anticuario de Florencia, firmando como Leonardo, nada menos, y pidiendo medio millón de liras. El anticuario se presentó en su hotel con el director de los Uffizi, comprobaron que era la buena y avisaron a la policía. Peruggia dijo que quería devolverla a Italia porque se la había llevado Napoleón. Error: estaba en Francia desde los tiempos del propio Leonardo. Le cayeron siete meses de cárcel, y el hotel pasó a llamarse Hotel La Gioconda. Eso sí que es saber aprovechar la ocasión."
+        ],
+        "images": [
+          {
+            "src": "img/paris/centro/louvre-mas.webp",
+            "w": 1069,
+            "h": 1100,
+            "caption": "La ficha policial de Peruggia de 1909, solo con las huellas de la mano derecha",
+            "credit": "Policía de París · Dominio público",
+            "source": "https://commons.wikimedia.org/wiki/File:Vincenzo_Perugia.jpg",
+            "para": 2,
+            "after": "Mira la pantalla: ahí tienes su ficha policial, de 1909."
+          }
+        ]
       }
     },
     {
@@ -444,6 +510,29 @@
           "Molière"
         ],
         "answer": 1
+      },
+      "more": {
+        "title": "Globos, horcas y una oveja voladora",
+        "before": 5,
+        "ask": "Antes de despedirme, ¿te cuento cómo fue aquella locura de los globos? Hay unos campesinos armados con horcas, una oveja voladora y un sabio que subió una vez y no quiso repetir. Si te apetece, toca «Cuéntame más». Si no, vamos con la despedida.",
+        "paras": [
+          "Antes de que nadie se atreviera a subir, hubo ensayos. En agosto de 1783, Charles soltó desde el Campo de Marte un globo de hidrógeno sin nadie dentro. Voló tres cuartos de hora y cayó junto a un pueblo, Gonesse, a unos veinte kilómetros. Los vecinos creyeron que era un monstruo y lo atacaron con piedras, cuchillos y horcas hasta dejarlo hecho jirones. Si sacas el móvil, verás la batalla en un grabado de la época. Total, que el gobierno tuvo que publicar un aviso explicando que un globo no le hace daño a nadie.",
+          "En septiembre, en Versalles, los hermanos Montgolfier subieron delante de Luis XVI a los primeros pasajeros de la historia: una oveja, un pato y un gallo. Aterrizaron vivos, aunque uno salió algo magullado, y dicen que por culpa de la oveja. En noviembre volaron por fin dos hombres, en un globo de aire caliente. El rey había propuesto mandar a dos condenados a muerte, por si acaso, pero los voluntarios insistieron en ir ellos. La gloria no se le regala a cualquiera.",
+          "Y el 1 de diciembre llegó el gran día aquí, en las Tullerías. Se habla de cientos de miles de personas mirando al cielo, y los que querían verlo de cerca pagaban entrada. Charles y su compañero volaron dos horas, hasta un pueblo a treinta y seis kilómetros. Allí se bajó el compañero, y Charles, solo y más ligero, salió disparado hasta unos tres mil metros. Vio ponerse el sol por segunda vez ese día, pasó un frío tremendo y le dolieron los oídos. Bajó encantado, y no volvió a subirse a un globo en su vida.",
+          "Entre los curiosos de aquellos vuelos estaba Benjamin Franklin, que si has hecho nuestra ruta por el Barrio Latino ya conoces del Procope. Cuentan que, en el ensayo del Campo de Marte, alguien le preguntó para qué servía un globo, y él contestó: «¿Y para qué sirve un recién nacido?». Muy suyo, Franklin. Y tenía razón: aquel recién nacido llegó lejos. Cada vez que te subes a un avión, se lo debes un poquito a aquella oveja."
+        ],
+        "images": [
+          {
+            "src": "img/paris/centro/tuileries-mas.webp",
+            "w": 1100,
+            "h": 867,
+            "caption": "Los vecinos de Gonesse atacan el globo de Charles, en agosto de 1783",
+            "credit": "Grabado de 1783 · Biblioteca Nacional de Francia · Dominio público",
+            "source": "https://commons.wikimedia.org/wiki/File:Allarme_générale_des_habitants_de_Gonesse,_occasionnée_par_la_chute_du_ballon_aréostatique_de_M.r_de_Montgolfier_-_estampe_-_btv1b8410331x.jpg",
+            "para": 0,
+            "after": "Si sacas el móvil, verás la batalla en un grabado de la época."
+          }
+        ]
       }
     }
   ],
@@ -685,7 +774,16 @@
         "quiz": "notre-dame-q.mp3",
         "ok": "notre-dame-ok.mp3",
         "ko": "notre-dame-ko.mp3",
-        "skip": "notre-dame-skip.mp3"
+        "skip": "notre-dame-skip.mp3",
+        "more": {
+          "ask": "notre-dame-mas.mp3",
+          "paras": [
+            "notre-dame-m0.mp3",
+            "notre-dame-m1.mp3",
+            "notre-dame-m2.mp3",
+            "notre-dame-m3.mp3"
+          ]
+        }
       },
       "conciergerie": {
         "paras": [
@@ -698,7 +796,16 @@
         "quiz": "conciergerie-q.mp3",
         "ok": "conciergerie-ok.mp3",
         "ko": "conciergerie-ko.mp3",
-        "skip": "conciergerie-skip.mp3"
+        "skip": "conciergerie-skip.mp3",
+        "more": {
+          "ask": "conciergerie-mas.mp3",
+          "paras": [
+            "conciergerie-m0.mp3",
+            "conciergerie-m1.mp3",
+            "conciergerie-m2.mp3",
+            "conciergerie-m3.mp3"
+          ]
+        }
       },
       "pont-neuf": {
         "paras": [
@@ -756,7 +863,16 @@
         "quiz": "louvre-q.mp3",
         "ok": "louvre-ok.mp3",
         "ko": "louvre-ko.mp3",
-        "skip": "louvre-skip.mp3"
+        "skip": "louvre-skip.mp3",
+        "more": {
+          "ask": "louvre-mas.mp3",
+          "paras": [
+            "louvre-m0.mp3",
+            "louvre-m1.mp3",
+            "louvre-m2.mp3",
+            "louvre-m3.mp3"
+          ]
+        }
       },
       "arc-du-carrousel": {
         "paras": [
@@ -784,13 +900,22 @@
         "quiz": "tuileries-q.mp3",
         "ok": "tuileries-ok.mp3",
         "ko": "tuileries-ko.mp3",
-        "skip": "tuileries-skip.mp3"
+        "skip": "tuileries-skip.mp3",
+        "more": {
+          "ask": "tuileries-mas.mp3",
+          "paras": [
+            "tuileries-m0.mp3",
+            "tuileries-m1.mp3",
+            "tuileries-m2.mp3",
+            "tuileries-m3.mp3"
+          ]
+        }
       }
     },
     "files": {
       "hotel-de-ville-p0.mp3": {
-        "v": "bc0672ad",
-        "b": 486130
+        "v": "bcec6ddd",
+        "b": 575991
       },
       "hotel-de-ville-p1.mp3": {
         "v": "c7ce7018",
@@ -876,6 +1001,26 @@
         "v": "ccd893c8",
         "b": 56050
       },
+      "notre-dame-mas.mp3": {
+        "v": "5cdddfbe",
+        "b": 224906
+      },
+      "notre-dame-m0.mp3": {
+        "v": "42780a1c",
+        "b": 637431
+      },
+      "notre-dame-m1.mp3": {
+        "v": "213e38f9",
+        "b": 530852
+      },
+      "notre-dame-m2.mp3": {
+        "v": "36bd4891",
+        "b": 478607
+      },
+      "notre-dame-m3.mp3": {
+        "v": "68b686db",
+        "b": 500341
+      },
       "conciergerie-p0.mp3": {
         "v": "eb03c8f0",
         "b": 383730
@@ -911,6 +1056,26 @@
       "conciergerie-skip.mp3": {
         "v": "9b242b02",
         "b": 61066
+      },
+      "conciergerie-mas.mp3": {
+        "v": "0647e8bb",
+        "b": 223652
+      },
+      "conciergerie-m0.mp3": {
+        "v": "a74cbb6b",
+        "b": 586022
+      },
+      "conciergerie-m1.mp3": {
+        "v": "c41eca6b",
+        "b": 501595
+      },
+      "conciergerie-m2.mp3": {
+        "v": "a472af98",
+        "b": 497833
+      },
+      "conciergerie-m3.mp3": {
+        "v": "da4f623e",
+        "b": 484876
       },
       "pont-neuf-p0.mp3": {
         "v": "d4c3461f",
@@ -1080,6 +1245,26 @@
         "v": "9138c6e0",
         "b": 71515
       },
+      "louvre-mas.mp3": {
+        "v": "313464ba",
+        "b": 245386
+      },
+      "louvre-m0.mp3": {
+        "v": "485fd13d",
+        "b": 612772
+      },
+      "louvre-m1.mp3": {
+        "v": "f5be1c44",
+        "b": 582261
+      },
+      "louvre-m2.mp3": {
+        "v": "f131cbc5",
+        "b": 387492
+      },
+      "louvre-m3.mp3": {
+        "v": "8f4cede5",
+        "b": 569304
+      },
       "arc-du-carrousel-p0.mp3": {
         "v": "6ec0f1d6",
         "b": 537539
@@ -1159,6 +1344,26 @@
       "tuileries-skip.mp3": {
         "v": "18fa9ae1",
         "b": 84471
+      },
+      "tuileries-mas.mp3": {
+        "v": "310db2d0",
+        "b": 275061
+      },
+      "tuileries-m0.mp3": {
+        "v": "fa48433d",
+        "b": 589784
+      },
+      "tuileries-m1.mp3": {
+        "v": "cc130e1c",
+        "b": 529598
+      },
+      "tuileries-m2.mp3": {
+        "v": "22afda25",
+        "b": 591038
+      },
+      "tuileries-m3.mp3": {
+        "v": "def3c248",
+        "b": 459381
       }
     }
   }
