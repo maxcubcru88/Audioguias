@@ -1021,6 +1021,164 @@
         "ok": "trafalgar-ok.mp3",
         "ko": "trafalgar-ko.mp3",
         "skip": "trafalgar-skip.mp3"
+      },
+      "st-james-palace": {
+        "paras": [
+          "st-james-palace-p0.mp3",
+          "st-james-palace-p1.mp3",
+          "st-james-palace-p2.mp3",
+          "st-james-palace-p3.mp3",
+          "st-james-palace-p4.mp3",
+          "st-james-palace-p5.mp3"
+        ],
+        "quiz": "st-james-palace-q.mp3",
+        "ok": "st-james-palace-ok.mp3",
+        "ko": "st-james-palace-ko.mp3",
+        "skip": "st-james-palace-skip.mp3"
+      },
+      "clarence-house": {
+        "paras": [
+          "clarence-house-p0.mp3",
+          "clarence-house-p1.mp3",
+          "clarence-house-p2.mp3",
+          "clarence-house-p3.mp3",
+          "clarence-house-p4.mp3",
+          "clarence-house-p5.mp3"
+        ],
+        "quiz": "clarence-house-q.mp3",
+        "ok": "clarence-house-ok.mp3",
+        "ko": "clarence-house-ko.mp3",
+        "skip": "clarence-house-skip.mp3"
+      },
+      "buckingham": {
+        "paras": [
+          "buckingham-p0.mp3",
+          "buckingham-p1.mp3",
+          "buckingham-p2.mp3",
+          "buckingham-p3.mp3",
+          "buckingham-p4.mp3",
+          "buckingham-p5.mp3",
+          "buckingham-p6.mp3"
+        ],
+        "quiz": "buckingham-q.mp3",
+        "ok": "buckingham-ok.mp3",
+        "ko": "buckingham-ko.mp3",
+        "skip": "buckingham-skip.mp3",
+        "more": {
+          "ask": "buckingham-mas.mp3",
+          "paras": [
+            "buckingham-m0.mp3",
+            "buckingham-m1.mp3",
+            "buckingham-m2.mp3",
+            "buckingham-m3.mp3"
+          ]
+        }
+      },
+      "st-james-park": {
+        "paras": [
+          "st-james-park-p0.mp3",
+          "st-james-park-p1.mp3",
+          "st-james-park-p2.mp3",
+          "st-james-park-p3.mp3",
+          "st-james-park-p4.mp3",
+          "st-james-park-p5.mp3"
+        ],
+        "quiz": "st-james-park-q.mp3",
+        "ok": "st-james-park-ok.mp3",
+        "ko": "st-james-park-ko.mp3",
+        "skip": "st-james-park-skip.mp3"
+      },
+      "horse-guards": {
+        "paras": [
+          "horse-guards-p0.mp3",
+          "horse-guards-p1.mp3",
+          "horse-guards-p2.mp3",
+          "horse-guards-p3.mp3",
+          "horse-guards-p4.mp3"
+        ],
+        "quiz": "horse-guards-q.mp3",
+        "ok": "horse-guards-ok.mp3",
+        "ko": "horse-guards-ko.mp3",
+        "skip": "horse-guards-skip.mp3",
+        "more": {
+          "ask": "horse-guards-mas.mp3",
+          "paras": [
+            "horse-guards-m0.mp3",
+            "horse-guards-m1.mp3",
+            "horse-guards-m2.mp3",
+            "horse-guards-m3.mp3"
+          ]
+        }
+      },
+      "downing-street": {
+        "paras": [
+          "downing-street-p0.mp3",
+          "downing-street-p1.mp3",
+          "downing-street-p2.mp3",
+          "downing-street-p3.mp3",
+          "downing-street-p4.mp3"
+        ],
+        "quiz": "downing-street-q.mp3",
+        "ok": "downing-street-ok.mp3",
+        "ko": "downing-street-ko.mp3",
+        "skip": "downing-street-skip.mp3"
+      },
+      "churchill-war-rooms": {
+        "paras": [
+          "churchill-war-rooms-p0.mp3",
+          "churchill-war-rooms-p1.mp3",
+          "churchill-war-rooms-p2.mp3",
+          "churchill-war-rooms-p3.mp3",
+          "churchill-war-rooms-p4.mp3"
+        ],
+        "quiz": "churchill-war-rooms-q.mp3",
+        "ok": "churchill-war-rooms-ok.mp3",
+        "ko": "churchill-war-rooms-ko.mp3",
+        "skip": "churchill-war-rooms-skip.mp3",
+        "more": {
+          "ask": "churchill-war-rooms-mas.mp3",
+          "paras": [
+            "churchill-war-rooms-m0.mp3",
+            "churchill-war-rooms-m1.mp3",
+            "churchill-war-rooms-m2.mp3",
+            "churchill-war-rooms-m3.mp3"
+          ]
+        }
+      },
+      "westminster-abbey": {
+        "paras": [
+          "westminster-abbey-p0.mp3",
+          "westminster-abbey-p1.mp3",
+          "westminster-abbey-p2.mp3",
+          "westminster-abbey-p3.mp3",
+          "westminster-abbey-p4.mp3"
+        ],
+        "quiz": "westminster-abbey-q.mp3",
+        "ok": "westminster-abbey-ok.mp3",
+        "ko": "westminster-abbey-ko.mp3",
+        "skip": "westminster-abbey-skip.mp3",
+        "more": {
+          "ask": "westminster-abbey-mas.mp3",
+          "paras": [
+            "westminster-abbey-m0.mp3",
+            "westminster-abbey-m1.mp3",
+            "westminster-abbey-m2.mp3",
+            "westminster-abbey-m3.mp3"
+          ]
+        }
+      },
+      "big-ben": {
+        "paras": [
+          "big-ben-p0.mp3",
+          "big-ben-p1.mp3",
+          "big-ben-p2.mp3",
+          "big-ben-p3.mp3",
+          "big-ben-p4.mp3"
+        ],
+        "quiz": "big-ben-q.mp3",
+        "ok": "big-ben-ok.mp3",
+        "ko": "big-ben-ko.mp3",
+        "skip": "big-ben-skip.mp3"
       }
     },
     "files": {
@@ -1063,6 +1221,430 @@
       "trafalgar-skip.mp3": {
         "v": "23a789aa",
         "b": 67753
+      },
+      "st-james-palace-p0.mp3": {
+        "v": "d717eada",
+        "b": 458127
+      },
+      "st-james-palace-p1.mp3": {
+        "v": "7827eb04",
+        "b": 298048
+      },
+      "st-james-palace-p2.mp3": {
+        "v": "11bb44c1",
+        "b": 540047
+      },
+      "st-james-palace-p3.mp3": {
+        "v": "c53a753c",
+        "b": 294287
+      },
+      "st-james-palace-p4.mp3": {
+        "v": "27203a07",
+        "b": 278822
+      },
+      "st-james-palace-p5.mp3": {
+        "v": "611e739e",
+        "b": 461888
+      },
+      "st-james-palace-q.mp3": {
+        "v": "a06766e9",
+        "b": 219890
+      },
+      "st-james-palace-ok.mp3": {
+        "v": "b752486e",
+        "b": 16344
+      },
+      "st-james-palace-ko.mp3": {
+        "v": "e58be744",
+        "b": 69007
+      },
+      "st-james-palace-skip.mp3": {
+        "v": "c450d42b",
+        "b": 69007
+      },
+      "clarence-house-p0.mp3": {
+        "v": "906469a9",
+        "b": 501595
+      },
+      "clarence-house-p1.mp3": {
+        "v": "4134be49",
+        "b": 500341
+      },
+      "clarence-house-p2.mp3": {
+        "v": "0e2a0d4c",
+        "b": 445170
+      },
+      "clarence-house-p3.mp3": {
+        "v": "ed9c55f6",
+        "b": 267119
+      },
+      "clarence-house-p4.mp3": {
+        "v": "58cd2c6e",
+        "b": 369519
+      },
+      "clarence-house-p5.mp3": {
+        "v": "7fb6b0c4",
+        "b": 358235
+      },
+      "clarence-house-q.mp3": {
+        "v": "c82f5f72",
+        "b": 236608
+      },
+      "clarence-house-ok.mp3": {
+        "v": "b752486e",
+        "b": 16344
+      },
+      "clarence-house-ko.mp3": {
+        "v": "72815725",
+        "b": 79038
+      },
+      "clarence-house-skip.mp3": {
+        "v": "d481ac49",
+        "b": 81546
+      },
+      "buckingham-p0.mp3": {
+        "v": "118b8f14",
+        "b": 443916
+      },
+      "buckingham-p1.mp3": {
+        "v": "3c39d71f",
+        "b": 308079
+      },
+      "buckingham-p2.mp3": {
+        "v": "98225704",
+        "b": 318528
+      },
+      "buckingham-p3.mp3": {
+        "v": "0c798de1",
+        "b": 466904
+      },
+      "buckingham-p4.mp3": {
+        "v": "d28c2c14",
+        "b": 272553
+      },
+      "buckingham-p5.mp3": {
+        "v": "c744964c",
+        "b": 319782
+      },
+      "buckingham-p6.mp3": {
+        "v": "1b22beb1",
+        "b": 273807
+      },
+      "buckingham-q.mp3": {
+        "v": "5c1dff8b",
+        "b": 188125
+      },
+      "buckingham-ok.mp3": {
+        "v": "b752486e",
+        "b": 16344
+      },
+      "buckingham-ko.mp3": {
+        "v": "faa1504d",
+        "b": 67753
+      },
+      "buckingham-skip.mp3": {
+        "v": "9310fa51",
+        "b": 72768
+      },
+      "buckingham-mas.mp3": {
+        "v": "86daaf59",
+        "b": 193141
+      },
+      "buckingham-m0.mp3": {
+        "v": "08851aea",
+        "b": 561781
+      },
+      "buckingham-m1.mp3": {
+        "v": "332266a4",
+        "b": 383730
+      },
+      "buckingham-m2.mp3": {
+        "v": "502085a2",
+        "b": 454365
+      },
+      "buckingham-m3.mp3": {
+        "v": "72f72870",
+        "b": 252073
+      },
+      "st-james-park-p0.mp3": {
+        "v": "19b59f3b",
+        "b": 440155
+      },
+      "st-james-park-p1.mp3": {
+        "v": "fd0ae3f0",
+        "b": 335247
+      },
+      "st-james-park-p2.mp3": {
+        "v": "af043c99",
+        "b": 246639
+      },
+      "st-james-park-p3.mp3": {
+        "v": "2f120462",
+        "b": 229085
+      },
+      "st-james-park-p4.mp3": {
+        "v": "64fee66e",
+        "b": 379968
+      },
+      "st-james-park-p5.mp3": {
+        "v": "484dd162",
+        "b": 299302
+      },
+      "st-james-park-q.mp3": {
+        "v": "57c09139",
+        "b": 239116
+      },
+      "st-james-park-ok.mp3": {
+        "v": "b752486e",
+        "b": 16344
+      },
+      "st-james-park-ko.mp3": {
+        "v": "34c3b85f",
+        "b": 54796
+      },
+      "st-james-park-skip.mp3": {
+        "v": "1b7bceb7",
+        "b": 59812
+      },
+      "horse-guards-p0.mp3": {
+        "v": "e5d37f82",
+        "b": 556765
+      },
+      "horse-guards-p1.mp3": {
+        "v": "4a565ed6",
+        "b": 337755
+      },
+      "horse-guards-p2.mp3": {
+        "v": "5f4d1fbd",
+        "b": 392925
+      },
+      "horse-guards-p3.mp3": {
+        "v": "604e11be",
+        "b": 312259
+      },
+      "horse-guards-p4.mp3": {
+        "v": "516589e6",
+        "b": 564288
+      },
+      "horse-guards-q.mp3": {
+        "v": "c8c035cb",
+        "b": 323544
+      },
+      "horse-guards-ok.mp3": {
+        "v": "b752486e",
+        "b": 18852
+      },
+      "horse-guards-ko.mp3": {
+        "v": "37761ad7",
+        "b": 63991
+      },
+      "horse-guards-skip.mp3": {
+        "v": "73eaf387",
+        "b": 67753
+      },
+      "horse-guards-mas.mp3": {
+        "v": "cbd07e83",
+        "b": 201918
+      },
+      "horse-guards-m0.mp3": {
+        "v": "5dada252",
+        "b": 465650
+      },
+      "horse-guards-m1.mp3": {
+        "v": "d933c89e",
+        "b": 368266
+      },
+      "horse-guards-m2.mp3": {
+        "v": "0f0a4a36",
+        "b": 369519
+      },
+      "horse-guards-m3.mp3": {
+        "v": "d22938c8",
+        "b": 313513
+      },
+      "downing-street-p0.mp3": {
+        "v": "570dcecc",
+        "b": 436393
+      },
+      "downing-street-p1.mp3": {
+        "v": "bcd60f3f",
+        "b": 450186
+      },
+      "downing-street-p2.mp3": {
+        "v": "a5bedfe2",
+        "b": 406718
+      },
+      "downing-street-p3.mp3": {
+        "v": "2918767a",
+        "b": 518313
+      },
+      "downing-street-p4.mp3": {
+        "v": "3543a1d7",
+        "b": 476099
+      },
+      "downing-street-q.mp3": {
+        "v": "9523a32a",
+        "b": 176422
+      },
+      "downing-street-ok.mp3": {
+        "v": "b752486e",
+        "b": 16344
+      },
+      "downing-street-ko.mp3": {
+        "v": "4365f486",
+        "b": 54796
+      },
+      "downing-street-skip.mp3": {
+        "v": "c2a040e8",
+        "b": 59812
+      },
+      "churchill-war-rooms-p0.mp3": {
+        "v": "b2fa8eec",
+        "b": 453111
+      },
+      "churchill-war-rooms-p1.mp3": {
+        "v": "bffd60ef",
+        "b": 360742
+      },
+      "churchill-war-rooms-p2.mp3": {
+        "v": "37862a5a",
+        "b": 355727
+      },
+      "churchill-war-rooms-p3.mp3": {
+        "v": "30cf8f9c",
+        "b": 486130
+      },
+      "churchill-war-rooms-p4.mp3": {
+        "v": "e624130a",
+        "b": 345278
+      },
+      "churchill-war-rooms-q.mp3": {
+        "v": "f178782c",
+        "b": 294287
+      },
+      "churchill-war-rooms-ok.mp3": {
+        "v": "b752486e",
+        "b": 16344
+      },
+      "churchill-war-rooms-ko.mp3": {
+        "v": "66eb136b",
+        "b": 66499
+      },
+      "churchill-war-rooms-skip.mp3": {
+        "v": "593380a2",
+        "b": 71515
+      },
+      "churchill-war-rooms-mas.mp3": {
+        "v": "3d408826",
+        "b": 224906
+      },
+      "churchill-war-rooms-m0.mp3": {
+        "v": "abdc8e4e",
+        "b": 394179
+      },
+      "churchill-war-rooms-m1.mp3": {
+        "v": "ae0c749e",
+        "b": 341516
+      },
+      "churchill-war-rooms-m2.mp3": {
+        "v": "3c162e71",
+        "b": 406718
+      },
+      "churchill-war-rooms-m3.mp3": {
+        "v": "59320045",
+        "b": 337755
+      },
+      "westminster-abbey-p0.mp3": {
+        "v": "3554c8a5",
+        "b": 594799
+      },
+      "westminster-abbey-p1.mp3": {
+        "v": "eb094161",
+        "b": 550078
+      },
+      "westminster-abbey-p2.mp3": {
+        "v": "cc8ed036",
+        "b": 318528
+      },
+      "westminster-abbey-p3.mp3": {
+        "v": "cb3be5a5",
+        "b": 311005
+      },
+      "westminster-abbey-p4.mp3": {
+        "v": "05f1db2d",
+        "b": 234101
+      },
+      "westminster-abbey-q.mp3": {
+        "v": "dde55f61",
+        "b": 283838
+      },
+      "westminster-abbey-ok.mp3": {
+        "v": "b752486e",
+        "b": 16344
+      },
+      "westminster-abbey-ko.mp3": {
+        "v": "cc71aad4",
+        "b": 62319
+      },
+      "westminster-abbey-skip.mp3": {
+        "v": "63ebcbe5",
+        "b": 66499
+      },
+      "westminster-abbey-mas.mp3": {
+        "v": "8a70c12b",
+        "b": 214875
+      },
+      "westminster-abbey-m0.mp3": {
+        "v": "03a31fc1",
+        "b": 402956
+      },
+      "westminster-abbey-m1.mp3": {
+        "v": "413e9594",
+        "b": 447678
+      },
+      "westminster-abbey-m2.mp3": {
+        "v": "b5a17c82",
+        "b": 376207
+      },
+      "westminster-abbey-m3.mp3": {
+        "v": "859430d3",
+        "b": 453111
+      },
+      "big-ben-p0.mp3": {
+        "v": "2a15157d",
+        "b": 469412
+      },
+      "big-ben-p1.mp3": {
+        "v": "8c8082af",
+        "b": 417167
+      },
+      "big-ben-p2.mp3": {
+        "v": "687b0f09",
+        "b": 495325
+      },
+      "big-ben-p3.mp3": {
+        "v": "787a6908",
+        "b": 404210
+      },
+      "big-ben-p4.mp3": {
+        "v": "5bd52264",
+        "b": 461888
+      },
+      "big-ben-q.mp3": {
+        "v": "57a2dab4",
+        "b": 272553
+      },
+      "big-ben-ok.mp3": {
+        "v": "b752486e",
+        "b": 16344
+      },
+      "big-ben-ko.mp3": {
+        "v": "4fc7391a",
+        "b": 75276
+      },
+      "big-ben-skip.mp3": {
+        "v": "5955694a",
+        "b": 79038
       }
     }
   }
