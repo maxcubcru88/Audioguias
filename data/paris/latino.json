@@ -1,0 +1,845 @@
+{
+  "id": "latino",
+  "city": "paris",
+  "title": "Los orígenes de París",
+  "subtitle": "Un paseo por el Barrio Latino, de la Lutecia romana a la Sorbona",
+  "lang": "es-ES",
+  "version": 1,
+  "meeting": {
+    "name": "Shakespeare and Company",
+    "address": "37 Rue de la Bûcherie, 75005 Paris, Francia",
+    "note": "Delante de la librería, en la placita junto al Sena, con Notre-Dame enfrente. Metro: Saint-Michel (línea 4) o Maubert-Mutualité (línea 10); RER B y C: Saint-Michel Notre-Dame."
+  },
+  "stops": [
+    {
+      "id": "shakespeare-and-company",
+      "title": "Shakespeare and Company",
+      "subtitle": "La librería donde se duerme entre libros",
+      "lat": 48.85262,
+      "lng": 2.34706,
+      "radius": 35,
+      "where": "En la placita de delante de la librería, junto al muelle: la fachada verde con el retrato de Shakespeare delante y Notre-Dame a tu espalda, al otro lado del río.",
+      "paras": [
+        "¡Bonjour! Bienvenido a tu free tour de bolsillo por el Barrio Latino, el rincón más antiguo de París. Aquí empezó casi todo: la ciudad romana, la universidad, los cafés de los filósofos y alguna que otra revolución. Yo pongo las historias; tú, los pies y la curiosidad. Y como en todo buen free tour, de vez en cuando te haré una pregunta. Tú intenta adivinar, que aquí no se suspende a nadie.",
+        "Empezamos con una librería que parece sacada de un cuento: Shakespeare and Company. Pero ojo al dato, que esta no es la original. La primera la abrió en 1919 una americana, Sylvia Beach, a unas calles de aquí. En el móvil tienes una foto suya de 1920, en aquella primera librería. Por allí pasaban Hemingway, Scott Fitzgerald o James Joyce, que no encontraba a nadie que le publicara su novela, Ulises. Y en 1922, ni corta ni perezosa, se la publicó ella. Si sacas el móvil, verás la portada: azul como la bandera griega, tal y como la quería Joyce.",
+        "¿Y por qué nadie quería publicarla? Porque en Estados Unidos y en Inglaterra la consideraban obscena. Ya ves: para vender un libro, no hay mejor publicidad que un buen censor. La librería de Beach cerró en 1941, con París ocupada por los alemanes. Cuentan que un oficial nazi quiso llevarse su último ejemplar de un libro de Joyce, ella se negó, y esa misma tarde vació la tienda entera antes de que volviera.",
+        "La que tienes delante la abrió en 1951 otro americano, George Whitman, un personaje de cuidado. Se cortaba el pelo con la llama de una vela, y no siempre le salía bien. En 1964 le cambió el nombre en homenaje a la librería de Beach, y hoy la lleva su hija, que se llama, cómo no, Sylvia.",
+        "Treinta mil, como lo oyes. Los llaman tumbleweeds, como esas bolas de matojos que arrastra el viento en las películas del Oeste. A cambio de la cama tenían que leer un libro al día, echar una mano en la tienda y escribir una autobiografía de una página. Sobre la puerta de la sala de lectura todavía se lee su lema, en inglés: no seas inhospitalario con los extraños, que podrían ser ángeles disfrazados."
+      ],
+      "images": [
+        {
+          "src": "img/paris/latino/shakespeare-and-company.webp",
+          "w": 549,
+          "h": 662,
+          "para": 1,
+          "after": "En el móvil tienes una foto suya de 1920, en aquella primera librería.",
+          "caption": "Sylvia Beach en su primera librería, en 1920",
+          "credit": "Foto anónima · Dominio público",
+          "source": "https://commons.wikimedia.org/wiki/File:Sylvia_Beach_at_Shakespeare_%26_Co_Paris_1920.jpg"
+        },
+        {
+          "src": "img/paris/latino/shakespeare-and-company-2.webp",
+          "w": 444,
+          "h": 562,
+          "para": 1,
+          "after": "Si sacas el móvil, verás la portada: azul como la bandera griega, tal y como la quería Joyce.",
+          "caption": "La primera edición de Ulises, de 1922",
+          "credit": "Dominio público",
+          "source": "https://commons.wikimedia.org/wiki/File:JoyceUlysses2.jpg"
+        }
+      ],
+      "quiz": {
+        "before": 4,
+        "q": "George tenía una regla muy suya: dejaba dormir gratis entre las estanterías a escritores y viajeros sin blanca. ¿Cuánta gente crees que ha dormido ahí dentro desde 1951?",
+        "options": [
+          "Unas trescientas personas",
+          "Unas tres mil personas",
+          "Unas treinta mil personas"
+        ],
+        "answer": 2
+      },
+      "toNext": "Aquí al lado, a tu izquierda según miras la librería, está la verja de un pequeño jardín, el square René-Viviani. Entra y busca un árbol viejísimo, sujeto con muletas de hormigón."
+    },
+    {
+      "id": "saint-julien-le-pauvre",
+      "title": "Saint-Julien-le-Pauvre",
+      "subtitle": "El abuelo de los árboles y la iglesia de los estudiantes",
+      "lat": 48.85215,
+      "lng": 2.34745,
+      "radius": 30,
+      "where": "Dentro del square René-Viviani, junto al árbol apuntalado con muletas de hormigón. La pequeña iglesia de piedra queda a un lado, y Notre-Dame, al otro lado del río.",
+      "paras": [
+        "Te presento al abuelo de París. Este árbol, una falsa acacia, es el más viejo de la ciudad: lo plantaron hacia 1601, en tiempos de Enrique IV. Tiene marcas de rayo, la copa tocada y unas muletas de hormigón para que no se venga abajo por su propio peso. Vamos, como yo después de tres días de free tours.",
+        "Lo plantó Jean Robin, el botánico del rey, con semillas traídas de América. Y debió de hacerlo muy bien, porque desde entonces la especie entera lleva su apellido: Robinia. Hay quien se pasa la vida buscando la inmortalidad, y este la consiguió con un arbolito.",
+        "Ahora mira la iglesia: Saint-Julien-le-Pauvre, una de las más antiguas de París. Se construyó entre 1170 y 1220, más o menos a la vez que Notre-Dame, pero en tamaño de bolsillo, y sobre un lugar que ya era sagrado en el siglo sexto. Eso sí, le falta un trozo: en el siglo diecisiete le cortaron dos tramos de la nave, y por eso parece una iglesia a la que le han dado un bocado. Hoy es de los católicos griegos melquitas, con un iconostasio de madera tallado en Damasco. Por si la encuentras cerrada, en la app tienes una foto de cómo es por dentro.",
+        "Y aquí viene lo bueno. En la Edad Media, esta iglesia era la sala de reuniones de la Universidad de París: aquí se elegía al rector. Hasta que, a principios del siglo dieciséis, unos estudiantes descontentos con la votación echaron abajo las puertas y reventaron las ventanas. Total, que las elecciones se mudaron a otra parte. La rebeldía estudiantil del Barrio Latino, como ves, viene de lejos.",
+        "Y a la vuelta de la esquina está la rue du Fouarre, la calle de la paja. Se llama así porque los estudiantes daban clase sentados en el suelo, sobre balas de paja. Hasta Dante la menciona en la Divina Comedia. Nada de pupitres: el que llegaba tarde, a pie."
+      ],
+      "images": [
+        {
+          "src": "img/paris/latino/saint-julien-le-pauvre.webp",
+          "w": 825,
+          "h": 1100,
+          "para": 2,
+          "after": "Por si la encuentras cerrada, en la app tienes una foto de cómo es por dentro.",
+          "caption": "El iconostasio de Saint-Julien-le-Pauvre",
+          "credit": "Foto: Thomon · CC BY-SA 4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Iconostase_Saint-Julien.jpg"
+        }
+      ],
+      "quiz": {
+        "before": 1,
+        "q": "Por cierto, en francés a este tipo de árbol lo llaman robinier. ¿De dónde crees que viene el nombre?",
+        "options": [
+          "De los petirrojos, los robins, que anidan en él",
+          "De Jean Robin, el botánico del rey que lo plantó",
+          "De Robin Hood, que tenía uno igual en el bosque de Sherwood"
+        ],
+        "answer": 1
+      },
+      "toNext": "Sal del jardín a la calle de la iglesia, la rue Saint-Julien-le-Pauvre, y pasa por delante de su fachada. Al final, gira a la derecha por la rue Galande, cruza la rue Saint-Jacques y sigue de frente por la rue Saint-Séverin. La iglesia gótica que aparece a tu izquierda es la siguiente parada."
+    },
+    {
+      "id": "saint-severin",
+      "title": "Saint-Séverin",
+      "subtitle": "Gótico en llamas, palmeras de piedra y bodas a escondidas",
+      "lat": 48.85228,
+      "lng": 2.34525,
+      "radius": 35,
+      "where": "En la esquina de la rue Saint-Séverin con la rue des Prêtres-Saint-Séverin, frente a la fachada principal de la iglesia.",
+      "paras": [
+        "Antes de nada: acabas de cruzar la rue Saint-Jacques, y no es una calle cualquiera. Era la calle principal de la ciudad romana, la que iba de norte a sur. Y en la Edad Media, por aquí salían los peregrinos camino de Santiago de Compostela: Saint-Jacques es Santiago. Así que, si algún día te animas a hacer el Camino, ya sabes por dónde se empezaba.",
+        "Y esta es Saint-Séverin, la parroquia de los estudiantes de la universidad medieval. Lleva el nombre de un ermitaño que vivió por aquí en el siglo sexto. Lo que ves es casi todo de finales del siglo quince, en gótico flamígero: fíjate en las tracerías de las ventanas, que parecen llamas. Y sube la vista, que tiene una buena colección de gárgolas, cada una con su mueca.",
+        "Por dentro esconde una joya: un pilar retorcido en espiral, del que salen los nervios de la bóveda como las hojas de una palmera. Por eso lo llaman el palmeral de piedra. Si no está abierta, echa un ojo al móvil y lo verás. Si está abierta, asómate un momento: merece la pena.",
+        "Y ahora, un secreto. La puerta principal no es de aquí: la trajeron en 1839 de otra iglesia derribada en la isla de la Cité, Saint-Pierre-aux-Bœufs. En la pantalla tienes un dibujo de aquella iglesia, con esta misma puerta. Aquella iglesia era famosa porque en ella se casaban las parejas a escondidas, sin permiso de sus padres. Hasta Diderot, el de la Enciclopedia, se casó allí en secreto en 1743. O sea, que estás delante de la puerta de las fugas románticas.",
+        "Ni más ni menos. Los cirujanos querían probar una operación nueva, y él era el voluntario perfecto: total, ya estaba condenado. Según las crónicas, sobrevivió, se curó y salió libre. Dicen que fue en el cementerio de esta parroquia, aunque eso no está tan claro. Lo que sí está claro es que hay maneras más cómodas de librarse de una condena."
+      ],
+      "images": [
+        {
+          "src": "img/paris/latino/saint-severin.webp",
+          "w": 734,
+          "h": 1100,
+          "para": 2,
+          "after": "Si no está abierta, echa un ojo al móvil y lo verás.",
+          "caption": "El pilar en espiral del deambulatorio",
+          "credit": "Foto: Myrabella · CC BY-SA 4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Colonne_torsade_eglise_Saint-Severin_Paris.jpg"
+        },
+        {
+          "src": "img/paris/latino/saint-severin-2.webp",
+          "w": 288,
+          "h": 500,
+          "para": 3,
+          "after": "En la pantalla tienes un dibujo de aquella iglesia, con esta misma puerta.",
+          "caption": "Saint-Pierre-aux-Bœufs, en la isla de la Cité, antes de su derribo",
+          "credit": "Dibujo de Chapelle · Paris Musées · CC BY-SA 4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:%C3%89glise_St-Pierre_aux_Boeufs_dessin_de_Chapelle_1850-1925.jpg"
+        }
+      ],
+      "quiz": {
+        "before": 4,
+        "q": "En el siglo quince, a un arquero condenado a muerte le ofrecieron el perdón del rey a cambio de una cosa. ¿Qué crees que fue?",
+        "options": [
+          "Dejarse operar de piedras en el riñón, en vivo",
+          "Luchar contra un oso delante de la corte",
+          "Tocar la campana de la iglesia un año entero"
+        ],
+        "answer": 0
+      },
+      "toNext": "Sigue por la rue Saint-Séverin hasta el bulevar Saint-Michel. Crúzalo hasta la placita de Saint-André-des-Arts, baja a la izquierda por la rue Danton hasta el bulevar Saint-Germain y síguelo a la derecha hasta la estatua de Danton. Allí, sube a la derecha por la rue de l'Ancienne-Comédie: el Procope está a unos sesenta metros."
+    },
+    {
+      "id": "le-procope",
+      "title": "Le Procope",
+      "subtitle": "El café de los filósofos y el pasaje de la guillotina",
+      "lat": 48.85308,
+      "lng": 2.33869,
+      "radius": 35,
+      "where": "En la acera de enfrente del número 13 de la rue de l'Ancienne-Comédie, mirando la fachada del café.",
+      "paras": [
+        "Bienvenido al Procope, que presume de ser el café más antiguo de París. Lo abrió en 1686 un siciliano, Francesco Procopio, cuando el café todavía era una bebida exótica, casi de lujo. Ha tenido sus cierres y sus reaperturas, pero sigue con el mismo nombre en el mismo sitio. Y mira cómo ha acabado la moda: hoy no se puede dar un paso en París sin tropezar con una terraza.",
+        "¿Y por qué la calle se llama de la Antigua Comedia? Porque justo aquí enfrente, en el número 14, estuvo durante casi un siglo el teatro de la Comédie-Française. Fíjate en la fachada: todavía conserva una figura de Minerva. Actores y público cruzaban la calle para comentar la función con un café, o con algo más fuerte. El negocio, redondo.",
+        "Luego llegaron los ilustrados: Voltaire, Rousseau, Diderot... En la app tienes un grabado que imagina aquellas tertulias. Dicen que Voltaire se tomaba aquí unas cuarenta tazas al día de café con chocolate, lo que explicaría muchas cosas de su carácter. Y Benjamin Franklin, que con más de setenta años seguía tirándoles los tejos a las damas de París, era tan buen cliente que, cuando murió, cubrieron la sala de negro en su honor.",
+        "Con la Revolución, el café se llenó de revolucionarios: Danton, Marat, Desmoulins. Y cuenta la leyenda que un joven oficial sin un duro, un tal Napoleón Bonaparte, dejó aquí su sombrero como garantía porque no podía pagar la cuenta. Si entras, lo verás en una vitrina. Que sea el auténtico ya es otro cantar.",
+        "Pobres animales. Antes ya la habían probado con balas de paja, y después vinieron los cadáveres. Si sacas el móvil, verás el pasaje en una foto de hacia 1870. Por cierto, el doctor Guillotin no la inventó: él solo defendió en la Asamblea que todos los condenados, nobles o plebeyos, murieran de la misma manera y sin sufrir. Le pusieron su apellido a la máquina, y él se pasó el resto de su vida intentando quitárselo de encima. Hay favores que no se agradecen."
+      ],
+      "images": [
+        {
+          "src": "img/paris/latino/le-procope.webp",
+          "w": 1100,
+          "h": 819,
+          "para": 2,
+          "after": "En la app tienes un grabado que imagina aquellas tertulias.",
+          "caption": "El Procope en el siglo dieciocho, según un grabado del diecinueve",
+          "credit": "Badoureau y Kretz · Museo Carnavalet · CC0",
+          "source": "https://commons.wikimedia.org/wiki/File:Le_caf%C3%A9_Procope_au_XVIII%C3%A8me_si%C3%A8cle,_G.33128.jpg"
+        },
+        {
+          "src": "img/paris/latino/le-procope-2.webp",
+          "w": 540,
+          "h": 720,
+          "para": 4,
+          "after": "Si sacas el móvil, verás el pasaje en una foto de hacia 1870.",
+          "caption": "La Cour du Commerce Saint-André hacia 1870",
+          "credit": "Foto: Charles Marville · Dominio público",
+          "source": "https://commons.wikimedia.org/wiki/File:Cour_du_Commerce-Saint-Andr%C3%A9.jpg"
+        }
+      ],
+      "quiz": {
+        "before": 4,
+        "q": "Justo detrás del café hay un pasaje, la Cour du Commerce Saint-André. Se cuenta que allí, en el taller de un carpintero, probaron la guillotina antes de usarla con personas. ¿Con qué crees que la probaron?",
+        "options": [
+          "Con calabazas",
+          "Con maniquíes del teatro de enfrente",
+          "Con ovejas vivas"
+        ],
+        "answer": 2
+      },
+      "toNext": "Vuelve a la estatua de Danton, cruza el bulevar Saint-Germain y sube de frente por la rue de l'Odéon, una de las primeras calles de París con aceras. A mitad de camino, en el número 12, a tu derecha, estuvo la Shakespeare and Company original de Sylvia Beach. Al final te espera una plaza en semicírculo con un gran teatro de columnas."
+    },
+    {
+      "id": "odeon",
+      "title": "Teatro del Odéon",
+      "subtitle": "El teatro de Fígaro y de mayo del 68",
+      "lat": 48.84975,
+      "lng": 2.33875,
+      "radius": 40,
+      "where": "En el centro de la plaza del Odéon, frente a las columnas del teatro.",
+      "paras": [
+        "Este templo griego es el Teatro del Odéon. Lo inauguraron en 1782 para la Comédie-Française, la misma compañía que estaba enfrente del Procope, ¿te acuerdas? Se les había quedado pequeño y se mudaron a lo grande. Fíjate también en la plaza: el semicírculo y las calles en abanico se diseñaron a la vez que el teatro, como un decorado más.",
+        "Un lujo, porque hasta entonces el patio se veía de pie, a empujones y comentando a gritos. Aunque, conociendo al público de la época, seguro que siguieron comentando a gritos.",
+        "En 1784 se estrenó aquí Las bodas de Fígaro, de Beaumarchais, una comedia que el rey Luis XVI había tenido años prohibida. ¿Por qué? Porque el malo es un conde que quiere llevarse a la cama a la novia de su criado... y al final el pillado es él, que acaba cortejando a oscuras a su propia mujer disfrazada. Un noble haciendo el ridículo delante de todo París: la Revolución estaba a la vuelta de la esquina.",
+        "Y Beaumarchais era un personaje de novela: relojero, inventor, espía del rey en Inglaterra y proveedor de armas para los rebeldes americanos. Su retrato lo tienes en la pantalla: cara de no haber roto un plato. Cuando presumió en un periódico de haber vencido a leones y tigres para estrenar su obra, al rey no le hizo ninguna gracia y lo mandó unos días a la cárcel. Tanto talento, y no supo callarse.",
+        "Y saltamos a mayo de 1968. Los estudiantes ocuparon el teatro durante un mes, colgaron banderas en la fachada y lo convirtieron en una asamblea abierta día y noche. Su director, Jean-Louis Barrault, se plantó ante ellos y les dijo que Barrault había muerto, pero que quedaba un hombre vivo. Rebeldía del Barrio Latino, edición moderna."
+      ],
+      "images": [
+        {
+          "src": "img/paris/latino/odeon.webp",
+          "w": 484,
+          "h": 624,
+          "para": 3,
+          "after": "Su retrato lo tienes en la pantalla: cara de no haber roto un plato.",
+          "caption": "Beaumarchais, retratado por Nattier en 1755",
+          "credit": "Jean-Marc Nattier · Dominio público",
+          "source": "https://commons.wikimedia.org/wiki/File:Jean-Marc_Nattier,_Portrait_de_Pierre-Augustin_Caron_de_Beaumarchais_(1755).jpg"
+        }
+      ],
+      "quiz": {
+        "before": 1,
+        "q": "En 1782 este teatro trajo una novedad que sorprendió muchísimo al público de París. ¿Cuál crees que fue?",
+        "options": [
+          "Que todo el público pudiera ver la función sentado",
+          "La calefacción",
+          "La luz de gas"
+        ],
+        "answer": 0
+      },
+      "toNext": "Rodea el teatro por la derecha hasta la calle de atrás, la rue de Vaugirard. Enfrente está la verja del Jardín de Luxemburgo. Entra, deja a tu izquierda la Fuente Médicis y sigue recto, con el palacio a tu derecha, hasta el gran estanque."
+    },
+    {
+      "id": "luxembourg",
+      "title": "Jardín de Luxemburgo",
+      "subtitle": "El jardín de una reina, el Senado y una Libertad en miniatura",
+      "lat": 48.84661,
+      "lng": 2.337,
+      "radius": 60,
+      "where": "Junto al gran estanque redondo, en el lado del palacio. Busca una silla verde: aquí también las hay.",
+      "paras": [
+        "Bienvenido al Jardín de Luxemburgo, el jardín favorito de los parisinos. Antes de los reyes ya hubo aquí villas romanas y, más tarde, un convento de monjes cartujos. Pero lo que ves se lo debemos a una reina: María de Médicis, la viuda de Enrique IV, que en 1612 compró estos terrenos para construirse un palacio que le recordara a su Florencia natal.",
+        "Y ojo, que su boda no había sido un cuento de hadas. Mientras negociaba casarse con ella, Enrique IV le había firmado a su amante una promesa de matrimonio por escrito. Luego se casó con María, por la dote, y siguió con la amante como si nada. En el móvil tienes cómo lo pintó Rubens para ella: un rey que se enamora de un retrato. Cosas del marketing. Ya viuda, María se hizo este palacio a su gusto, pero le duró poco: perdió el pulso de poder con el cardenal Richelieu y en 1631 la desterraron. Hoy el palacio es el Senado de Francia.",
+        "Al duque Decazes, que mandaba en el Senado, le parecían demasiados desnudos para un jardín respetable, y encargó una tanda de reinas bien vestidas para poner orden. La decencia por decreto. Aunque, entre tú y yo, los desnudos siguen ahí.",
+        "Y ahora, las famosas sillas verdes. Hay unas cuatro mil quinientas, son gratis desde 1974 y pesan más de siete kilos cada una, para que no se las lleve el viento... ni nadie con demasiado cariño por el mobiliario. En el estanque, los niños empujan barquitos de vela con un palo, como hace más de cien años. Y en el lado oeste del jardín hay una pequeña Estatua de la Libertad, de Bartholdi, el mismo escultor de la de Nueva York. La hermana pequeña, vamos.",
+        "Por aquí paseaba también un joven Hemingway, pobre como una rata. Él mismo contaba que cruzaba el jardín sin comer, porque el hambre era buena disciplina. Y la leyenda dice que, cuando el guarda se iba a tomar un vino, cazaba alguna paloma para la cena. Si es verdad, las palomas de hoy todavía no se han enterado."
+      ],
+      "images": [
+        {
+          "src": "img/paris/latino/luxembourg.webp",
+          "w": 870,
+          "h": 1100,
+          "para": 1,
+          "after": "En el móvil tienes cómo lo pintó Rubens para ella: un rey que se enamora de un retrato. Cosas del marketing.",
+          "caption": "Enrique IV recibe el retrato de María de Médicis, de Rubens",
+          "credit": "Pedro Pablo Rubens · Museo del Louvre · Dominio público",
+          "source": "https://commons.wikimedia.org/wiki/File:Henri_IV_re%C3%A7oit_le_portrait_de_Marie_de_M%C3%A9dicis_et_se_laisse_d%C3%A9sarmer_par_l%E2%80%99Amour_-_Pierre_Paul_Rubens_-_Mus%C3%A9e_du_Louvre_Peintures_INV_1772_;_MR_963.jpg"
+        }
+      ],
+      "quiz": {
+        "before": 2,
+        "q": "Alrededor del estanque hay veinte estatuas de reinas y mujeres ilustres de Francia. Se encargaron en el siglo diecinueve por un motivo muy curioso. ¿Cuál crees que fue?",
+        "options": [
+          "Para celebrar una boda real",
+          "Para asustar a las palomas",
+          "Porque a un alto cargo le escandalizaban las estatuas desnudas del jardín"
+        ],
+        "answer": 2
+      },
+      "toNext": "Sal del jardín por el lado este, hacia la cúpula que asoma a lo lejos. Cruza la plaza Edmond-Rostand y el bulevar Saint-Michel, y sube por la rue Soufflot hasta el cruce con la rue Saint-Jacques. El Panteón te espera al final de la calle."
+    },
+    {
+      "id": "pantheon",
+      "title": "Panteón",
+      "subtitle": "La ciudad romana bajo tus pies y un templo para los grandes",
+      "lat": 48.8465,
+      "lng": 2.3443,
+      "radius": 45,
+      "where": "En la rue Soufflot, a la altura del cruce con la rue Saint-Jacques, mirando hacia las columnas y la cúpula.",
+      "paras": [
+        "Para un momento y mira al suelo. Justo debajo de esta calle estaba el foro de Lutecia, la plaza principal de la ciudad romana: templos, tiendas, tribunales. Y aquí viene lo bueno: la Lutecia de los galos estaba en la isla de la Cité, pero en el año 52 antes de Cristo, en plena guerra contra Julio César, los propios galos la quemaron antes de que la tomaran los romanos. Después, los romanos levantaron su ciudad nueva aquí, en esta colina. Así que la París romana empezó aquí arriba.",
+        "El edificio también tiene su historia. En 1744 el rey Luis XV cayó gravemente enfermo y prometió que, si se curaba, construiría una gran iglesia para santa Genoveva, la patrona de París, enterrada en esta colina. Eso sí, para recibir la absolución tuvo que despedir a su amante. Se curó y cumplió su promesa. Lo de la amante, mejor no preguntes.",
+        "La diseñó el arquitecto Soufflot, el de la calle, y se terminó en 1790. Pero llegó la Revolución y decidió que aquí no iba a haber santos, sino grandes hombres: en 1791 la convirtieron en panteón, y hasta tapiaron las ventanas para darle un aire más solemne. Mira la inscripción del frontón: a los grandes hombres, la patria agradecida.",
+        "Lo echaron. Se descubrió que había tenido tratos secretos con el rey Luis XVI, y la patria, ya no tan agradecida, lo sacó de aquí. El primero en entrar fue el primero en salir. Y a Marat le pasó lo mismo poco después. Ser un gran hombre, en Francia, es un puesto con bastante rotación.",
+        "Hoy descansan aquí más de ochenta personas, como Voltaire, Rousseau o Victor Hugo, al que acompañó más de un millón de personas en su entierro. En la app tienes una foto de aquel día, con la multitud a los pies de estas columnas. Y entre tantos grandes hombres, muy pocas mujeres: la primera por méritos propios fue Marie Curie, en 1995. Más tarde llegaron Joséphine Baker y, en 2025 y 2026, el ministro Robert Badinter, que abolió la pena de muerte, y el historiador Marc Bloch. Y dentro, colgado de la cúpula, está el péndulo de Foucault, que en 1851 demostró ante todo París que la Tierra gira."
+      ],
+      "images": [
+        {
+          "src": "img/paris/latino/pantheon.webp",
+          "w": 1100,
+          "h": 785,
+          "para": 4,
+          "after": "En la app tienes una foto de aquel día, con la multitud a los pies de estas columnas.",
+          "caption": "El funeral de Victor Hugo, el 1 de junio de 1885",
+          "credit": "Foto: Pierre Lampué · Maison de Victor Hugo · Dominio público",
+          "source": "https://commons.wikimedia.org/wiki/File:Fun%C3%A9railles_nationales_de_Victor_Hugo_-_Translation_du_corps_au_Panth%C3%A9on.jpg"
+        }
+      ],
+      "quiz": {
+        "before": 3,
+        "q": "El primer gran hombre enterrado aquí, en 1791, fue el revolucionario Mirabeau. ¿Qué crees que pasó con él tres años después?",
+        "options": [
+          "Lo trasladaron a Versalles",
+          "Lo echaron del Panteón por traidor",
+          "Lo declararon santo"
+        ],
+        "answer": 1
+      },
+      "toNext": "Baja por la rue Soufflot hasta el bulevar Saint-Michel y gira a la derecha. A unos cien metros, a tu derecha, se abre una plaza con fuentes y una cúpula al fondo: la plaza de la Sorbona."
+    },
+    {
+      "id": "sorbonne",
+      "title": "La Sorbona",
+      "subtitle": "La universidad que dio nombre al barrio",
+      "lat": 48.84868,
+      "lng": 2.34221,
+      "radius": 40,
+      "where": "En la plaza de la Sorbona, junto a las fuentes, mirando a la capilla de la cúpula.",
+      "paras": [
+        "Esta es la Sorbona, el corazón de la vieja Universidad de París. Su nombre viene de Robert de Sorbon, un teólogo de familia campesina, capellán del rey san Luis, que hacia 1257 fundó aquí un colegio para estudiantes de teología sin dinero. Empezó con una veintena de alumnos, y hoy su nombre suena a universidad en medio mundo. No está mal para un chico de pueblo.",
+        "Y aquí está la clave del nombre del barrio. Los estudiantes venían de toda Europa, y para entenderse entre ellos y con sus profesores hablaban en latín, dentro y fuera de clase. Por eso esto se llamó el Barrio Latino. Imagínate pedir la cuenta en la taberna en latín.",
+        "Uno de los profesores más famosos de esta colina fue Pedro Abelardo, hacia 1110. Se enamoró de su alumna Eloísa, y de aquellas clases particulares salió la historia de amor más famosa de la Edad Media, con cartas incluidas. En el móvil los tienes a los dos, en una miniatura medieval. Digamos que el temario se les fue un poco de las manos.",
+        "La capilla de la cúpula la mandó construir el cardenal Richelieu, sí, el de Los tres mosqueteros, que está enterrado dentro. La capilla no suele estar abierta, pero en la pantalla tienes su tumba. Sobre su tumba cuelga su sombrero de cardenal, y dice la tradición que caerá el día que su alma salga del purgatorio. De momento, ahí sigue. Y su cabeza tuvo su propia odisea: en la Revolución la sacaron de la tumba, anduvo de mano en mano más de setenta años y no volvió aquí hasta 1866.",
+        "La primera de Francia: unos profesores trajeron a tres impresores alemanes y el primer libro francés impreso salió de aquí mismo. Y para cerrar con rebeldía: en mayo de 1968, la policía desalojó el patio de la Sorbona y el barrio se llenó de barricadas. El Barrio Latino nunca ha sabido estarse quieto."
+      ],
+      "images": [
+        {
+          "src": "img/paris/latino/sorbonne.webp",
+          "w": 324,
+          "h": 428,
+          "para": 2,
+          "after": "En el móvil los tienes a los dos, en una miniatura medieval.",
+          "caption": "Abelardo y Eloísa en una miniatura del siglo quince",
+          "credit": "Roman de la Rose · Museo Condé · Dominio público",
+          "source": "https://commons.wikimedia.org/wiki/File:Abelardo_ed_Eloisa.jpg"
+        },
+        {
+          "src": "img/paris/latino/sorbonne-2.webp",
+          "w": 1100,
+          "h": 825,
+          "para": 3,
+          "after": "La capilla no suele estar abierta, pero en la pantalla tienes su tumba.",
+          "caption": "La tumba de Richelieu en la capilla de la Sorbona",
+          "credit": "Foto: GO69 · CC BY-SA 4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Paris_(75005)_La_Sorbonne_Chapelle_Sainte-Ursule_Tombeau_du_Cardinal_de_Richelieu_08.JPG"
+        }
+      ],
+      "quiz": {
+        "before": 4,
+        "q": "En 1470 se instaló aquí, en la Sorbona, algo que nunca antes había existido en Francia. ¿Qué crees que fue?",
+        "options": [
+          "Una imprenta",
+          "Un reloj público",
+          "Un telescopio"
+        ],
+        "answer": 0
+      },
+      "toNext": "Sal de la plaza hacia el bulevar Saint-Michel y síguelo a la derecha, cuesta abajo. Antes de llegar al bulevar Saint-Germain verás a tu derecha, tras una verja, unos muros muy antiguos de piedra y ladrillo. Ponte en la esquina de los dos bulevares."
+    },
+    {
+      "id": "cluny",
+      "title": "Termas de Cluny",
+      "subtitle": "Unas termas romanas en pleno bulevar",
+      "lat": 48.85105,
+      "lng": 2.34345,
+      "radius": 40,
+      "where": "En la esquina del bulevar Saint-Michel con el bulevar Saint-Germain, mirando los muros romanos tras la verja.",
+      "paras": [
+        "Y terminamos donde empezó todo. Estos muros de piedra y ladrillo son las termas de Lutecia, unos baños públicos romanos de entre los siglos primero y tercero. Casi dos mil años en pie, entre dos bulevares llenos de tráfico. Eso sí que es construir para durar.",
+        "Dentro se conserva entera la sala del agua fría, el frigidarium, con su bóveda original de unos catorce metros de alto. Echa un ojo al móvil y la verás por dentro. Los arranques de la bóveda tienen forma de proa de barco: seguramente los pagó la poderosa cofradía de los barqueros del Sena. Y es que París, desde el principio, vivió del río. Por eso, todavía hoy, en el escudo de la ciudad hay un barco.",
+        "Pegada a las termas está la mansión de los abades de Cluny, de finales del siglo quince, hoy el Museo de la Edad Media. Y aquí viene un culebrón real: en 1515 se instaló en ella María Tudor, la hermana de Enrique VIII de Inglaterra, recién viuda del rey Luis XII. Ella tenía dieciocho años; él, cincuenta y dos, y murió a los tres meses de la boda. Las malas lenguas dijeron que la novia lo había dejado agotado. Y ella, ni corta ni perezosa, se casó aquí en secreto con su verdadero amor.",
+        "Como lo oyes: alguien las había enterrado allí en plena Revolución, quizá para salvarlas, y allí se quedaron hasta 1977, cuando unos obreros dieron con ellas. En el mismo museo está La dama y el unicornio, seis tapices de hacia 1500 con un misterio sin resolver: en uno se lee «a mi único deseo», y todavía nadie sabe qué deseo era. En la app tienes el tapiz: fíjate en las letras de la tienda.",
+        "Y aquí me despido. Has recorrido dos mil años de París en un par de horas: de la Lutecia romana a la universidad que hablaba latín, de los cafés de los filósofos a las barricadas de los estudiantes. Ahora te toca a ti: siéntate en una terraza, pide un café como Voltaire, aunque mejor que no sean cuarenta, y deja que el barrio haga el resto. ¡Merci, y hasta la próxima!"
+      ],
+      "images": [
+        {
+          "src": "img/paris/latino/cluny.webp",
+          "w": 750,
+          "h": 1000,
+          "para": 1,
+          "after": "Echa un ojo al móvil y la verás por dentro.",
+          "caption": "El frigidarium de las termas, por dentro",
+          "credit": "Foto: Victorio98 · CC BY-SA 4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Frigidarium_des_Thermes_de_Cluny.jpg"
+        },
+        {
+          "src": "img/paris/latino/cluny-2.webp",
+          "w": 880,
+          "h": 710,
+          "para": 3,
+          "after": "En la app tienes el tapiz: fíjate en las letras de la tienda.",
+          "caption": "«A mi único deseo», de La dama y el unicornio",
+          "credit": "Museo de Cluny · Dominio público",
+          "source": "https://commons.wikimedia.org/wiki/File:(Toulouse)_Mon_seul_d%C3%A9sir_(La_Dame_%C3%A0_la_licorne)_-_Mus%C3%A9e_de_Cluny_Paris.jpg"
+        }
+      ],
+      "quiz": {
+        "before": 3,
+        "q": "Dentro del museo se guardan unas cabezas de piedra de los reyes de Judá, arrancadas de la fachada de Notre-Dame en la Revolución porque las confundieron con reyes de Francia. Estuvieron casi dos siglos perdidas. ¿Dónde crees que aparecieron?",
+        "options": [
+          "En el fondo del Sena",
+          "En las catacumbas",
+          "En los cimientos de un palacete, durante unas obras"
+        ],
+        "answer": 2
+      }
+    }
+  ],
+  "legs": [
+    [
+      [
+        48.85262,
+        2.34706
+      ],
+      [
+        48.85257,
+        2.34745
+      ],
+      [
+        48.8524,
+        2.34748
+      ],
+      [
+        48.85227,
+        2.34731
+      ],
+      [
+        48.85215,
+        2.34745
+      ]
+    ],
+    [
+      [
+        48.85215,
+        2.34745
+      ],
+      [
+        48.85227,
+        2.34731
+      ],
+      [
+        48.85242,
+        2.34751
+      ],
+      [
+        48.85254,
+        2.34746
+      ],
+      [
+        48.85207,
+        2.34661
+      ],
+      [
+        48.85214,
+        2.34638
+      ],
+      [
+        48.85221,
+        2.34614
+      ],
+      [
+        48.85229,
+        2.34561
+      ],
+      [
+        48.85235,
+        2.34535
+      ],
+      [
+        48.85226,
+        2.34528
+      ]
+    ],
+    [
+      [
+        48.85226,
+        2.34528
+      ],
+      [
+        48.85235,
+        2.34535
+      ],
+      [
+        48.85243,
+        2.34505
+      ],
+      [
+        48.85244,
+        2.34479
+      ],
+      [
+        48.85253,
+        2.34453
+      ],
+      [
+        48.85268,
+        2.34399
+      ],
+      [
+        48.85273,
+        2.34365
+      ],
+      [
+        48.85281,
+        2.3436
+      ],
+      [
+        48.85289,
+        2.3433
+      ],
+      [
+        48.85293,
+        2.34296
+      ],
+      [
+        48.85296,
+        2.34291
+      ],
+      [
+        48.85292,
+        2.34287
+      ],
+      [
+        48.8526,
+        2.34226
+      ],
+      [
+        48.85248,
+        2.34208
+      ],
+      [
+        48.85234,
+        2.34166
+      ],
+      [
+        48.85216,
+        2.34082
+      ],
+      [
+        48.85211,
+        2.34068
+      ],
+      [
+        48.85218,
+        2.3404
+      ],
+      [
+        48.85236,
+        2.33965
+      ],
+      [
+        48.85253,
+        2.339
+      ],
+      [
+        48.85256,
+        2.33891
+      ],
+      [
+        48.85269,
+        2.33886
+      ],
+      [
+        48.85308,
+        2.33869
+      ]
+    ],
+    [
+      [
+        48.85308,
+        2.33869
+      ],
+      [
+        48.85269,
+        2.33886
+      ],
+      [
+        48.85256,
+        2.33891
+      ],
+      [
+        48.85253,
+        2.339
+      ],
+      [
+        48.85223,
+        2.33883
+      ],
+      [
+        48.85211,
+        2.33875
+      ],
+      [
+        48.85174,
+        2.33876
+      ],
+      [
+        48.85008,
+        2.33878
+      ],
+      [
+        48.85002,
+        2.339
+      ],
+      [
+        48.84976,
+        2.33903
+      ],
+      [
+        48.84978,
+        2.33875
+      ]
+    ],
+    [
+      [
+        48.84978,
+        2.33875
+      ],
+      [
+        48.84977,
+        2.33853
+      ],
+      [
+        48.84973,
+        2.33846
+      ],
+      [
+        48.84925,
+        2.33848
+      ],
+      [
+        48.84925,
+        2.33837
+      ],
+      [
+        48.8491,
+        2.33831
+      ],
+      [
+        48.84904,
+        2.33851
+      ],
+      [
+        48.84898,
+        2.33842
+      ],
+      [
+        48.84819,
+        2.33838
+      ],
+      [
+        48.84797,
+        2.33833
+      ],
+      [
+        48.84782,
+        2.33818
+      ],
+      [
+        48.84774,
+        2.33791
+      ],
+      [
+        48.84774,
+        2.33769
+      ],
+      [
+        48.84722,
+        2.33766
+      ],
+      [
+        48.84659,
+        2.33762
+      ],
+      [
+        48.84661,
+        2.337
+      ]
+    ],
+    [
+      [
+        48.84661,
+        2.337
+      ],
+      [
+        48.84659,
+        2.33762
+      ],
+      [
+        48.84662,
+        2.338
+      ],
+      [
+        48.84673,
+        2.33821
+      ],
+      [
+        48.84689,
+        2.33829
+      ],
+      [
+        48.84689,
+        2.33868
+      ],
+      [
+        48.84678,
+        2.33868
+      ],
+      [
+        48.84676,
+        2.33994
+      ],
+      [
+        48.84686,
+        2.34022
+      ],
+      [
+        48.84674,
+        2.34036
+      ],
+      [
+        48.84669,
+        2.3406
+      ],
+      [
+        48.84672,
+        2.3407
+      ],
+      [
+        48.84693,
+        2.34082
+      ],
+      [
+        48.84721,
+        2.34094
+      ],
+      [
+        48.84722,
+        2.34102
+      ],
+      [
+        48.84712,
+        2.34137
+      ],
+      [
+        48.84703,
+        2.3418
+      ],
+      [
+        48.84691,
+        2.34228
+      ],
+      [
+        48.84682,
+        2.34269
+      ],
+      [
+        48.84668,
+        2.34341
+      ],
+      [
+        48.84649,
+        2.34429
+      ]
+    ],
+    [
+      [
+        48.84649,
+        2.34429
+      ],
+      [
+        48.84668,
+        2.34341
+      ],
+      [
+        48.84682,
+        2.3427
+      ],
+      [
+        48.84703,
+        2.3418
+      ],
+      [
+        48.84722,
+        2.34102
+      ],
+      [
+        48.84761,
+        2.3412
+      ],
+      [
+        48.84876,
+        2.34188
+      ],
+      [
+        48.84868,
+        2.34221
+      ]
+    ],
+    [
+      [
+        48.84868,
+        2.34221
+      ],
+      [
+        48.84882,
+        2.34232
+      ],
+      [
+        48.84977,
+        2.34287
+      ],
+      [
+        48.85008,
+        2.34303
+      ],
+      [
+        48.85018,
+        2.34277
+      ],
+      [
+        48.85038,
+        2.34283
+      ],
+      [
+        48.85062,
+        2.34301
+      ],
+      [
+        48.8512,
+        2.34329
+      ],
+      [
+        48.85112,
+        2.34349
+      ]
+    ]
+  ]
+}

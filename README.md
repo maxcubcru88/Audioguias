@@ -2,7 +2,7 @@
 
 Paseíto es una web app gratuita (PWA) con audioguías a pie estilo free tour, organizada por ciudades y rutas.
 
-- **París**: «El corazón de París» (9 paradas, del Hôtel de Ville a las Tullerías, unos 2,7 km). Otras rutas en preparación.
+- **París**: «El corazón de París» (9 paradas, del Hôtel de Ville a las Tullerías, unos 2,7 km) y «Los orígenes de París» (9 paradas por el Barrio Latino, de Shakespeare and Company a las Termas de Cluny, unos 3,2 km).
 - **Londres** y **Sevilla**: en preparación (WIP).
 
 Pantallas: Inicio (ciudades) → Ciudad (rutas) → Ruta (mapa + tarjeta). Cada ruta tiene su enlace directo,

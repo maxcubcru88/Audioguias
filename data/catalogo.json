@@ -14,25 +14,19 @@
       "routes": [
         {
           "id": "centro",
-          "label": "Día 1 · Mañana",
+          "label": "Centro",
           "title": "El corazón de París",
           "subtitle": "Del Ayuntamiento a las Tullerías, cruzando la isla de la Cité",
           "file": "data/paris/centro.json",
           "status": "ready"
         },
         {
-          "id": "oeste",
-          "label": "Día 1 · Tarde",
-          "title": "Torre Eiffel e Inválidos",
-          "subtitle": "Trocadéro, Torre Eiffel, Campo de Marte, Inválidos y Orsay",
-          "status": "wip"
-        },
-        {
-          "id": "norte",
-          "label": "Día 2",
-          "title": "Montmartre y Le Marais",
-          "subtitle": "Pintores, molinos y el barrio más vivo de París",
-          "status": "wip"
+          "id": "latino",
+          "label": "Barrio Latino",
+          "title": "Los orígenes de París",
+          "subtitle": "Un paseo por el Barrio Latino, de la Lutecia romana a la Sorbona",
+          "file": "data/paris/latino.json",
+          "status": "ready"
         }
       ],
       "icon": "icons/ciudades/paris.svg",
@@ -58,14 +52,14 @@
       "routes": [
         {
           "id": "westminster",
-          "label": "Día 1",
+          "label": "Westminster",
           "title": "Westminster y el Támesis",
           "subtitle": "Big Ben, la Abadía, Downing Street y Trafalgar",
           "status": "wip"
         },
         {
           "id": "city",
-          "label": "Día 2",
+          "label": "La City",
           "title": "La City y Tower Bridge",
           "subtitle": "San Pablo, el Puente del Milenio y la Torre de Londres",
           "status": "wip"
@@ -94,14 +88,14 @@
       "routes": [
         {
           "id": "centro",
-          "label": "Día 1",
+          "label": "Centro",
           "title": "Catedral, Alcázar y Santa Cruz",
           "subtitle": "La Giralda, el Alcázar y los callejones de la judería",
           "status": "wip"
         },
         {
           "id": "triana",
-          "label": "Día 2",
+          "label": "Triana",
           "title": "Triana y el río",
           "subtitle": "Plaza de España, la Torre del Oro y el barrio de Triana",
           "status": "wip"
