@@ -27,6 +27,14 @@
           "subtitle": "Un paseo por el Barrio Latino, de la Lutecia romana a la Sorbona",
           "file": "data/paris/latino.json",
           "status": "ready"
+        },
+        {
+          "id": "montmartre",
+          "label": "Montmartre",
+          "title": "El corazón bohemio de París",
+          "subtitle": "Un paseo por Montmartre, de los cabarets al Sacré-Cœur",
+          "file": "data/paris/montmartre.json",
+          "status": "ready"
         }
       ],
       "icon": "icons/ciudades/paris.svg",

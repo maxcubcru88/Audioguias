@@ -1205,6 +1205,8 @@
     return tourCache[key];
   }
   const hoursText = t => (Math.round(t.totalH * 2) / 2).toString().replace('.', ',');
+  // «una hora» / «unas 1,5 horas» (y en corto, «1 h» / «unas 1,5 h»)
+  const durText = (t, short) => { const h = hoursText(t); return h === '1' ? (short ? '1 h' : 'una hora') : 'unas ' + h + (short ? ' h' : ' horas'); };
   const readyRoutes = c => (c.routes || []).filter(r => r.status === 'ready' && r.file);
 
   function leaveRoute() {
@@ -1257,7 +1259,7 @@
       try {
         const t = await getTour(city, r);
         const el = list.querySelector('[data-meta="' + r.id + '"]');
-        if (el) el.textContent = t.stops.length + ' paradas · ' + fmtDist(t.totalM) + ' · unas ' + hoursText(t) + ' h';
+        if (el) el.textContent = t.stops.length + ' paradas · ' + fmtDist(t.totalM) + ' · ' + durText(t, true);
       } catch (e) {}
     }
   }
@@ -1285,9 +1287,9 @@
     $('#introLabel').textContent = r.label || '';
     $('#introTitle').textContent = tour.title;
     $('#introSub').textContent = tour.subtitle + '.';
-    $('#introStats').textContent = tour.stops.length + ' paradas · ' + fmtDist(tour.totalM) + ' a pie · unas ' + hours + ' horas';
+    $('#introStats').textContent = tour.stops.length + ' paradas · ' + fmtDist(tour.totalM) + ' a pie · ' + durText(tour);
     $('#sheetTitle').textContent = tour.title;
-    $('#sheetSub').textContent = tour.stops.length + ' paradas · ' + fmtDist(tour.totalM) + ' · unas ' + hours + ' h';
+    $('#sheetSub').textContent = tour.stops.length + ' paradas · ' + fmtDist(tour.totalM) + ' · ' + durText(tour, true);
     refreshIntro();
     renderMeeting();
     const vc = $('#voiceCredit');

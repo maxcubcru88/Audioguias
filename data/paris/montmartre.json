@@ -1,0 +1,1336 @@
+{
+  "id": "montmartre",
+  "city": "paris",
+  "title": "El corazón bohemio de París",
+  "subtitle": "Un paseo por Montmartre, de los cabarets al Sacré-Cœur",
+  "lang": "es-ES",
+  "meeting": {
+    "name": "Café des Deux Moulins",
+    "address": "15 Rue Lepic, 75018 Paris, Francia",
+    "note": "Delante del café, en la rue Lepic, a dos minutos del Moulin Rouge. Metro: Blanche (línea 2)."
+  },
+  "stops": [
+    {
+      "id": "deux-moulins",
+      "title": "Café des Deux Moulins",
+      "subtitle": "El café de Amélie y el molino más famoso del mundo",
+      "lat": 48.8849,
+      "lng": 2.3337,
+      "radius": 35,
+      "where": "En la acera de enfrente del número 15 de la rue Lepic, mirando el café. Si bajas unos pasos hasta el final de la calle, verás las aspas del Moulin Rouge.",
+      "paras": [
+        "¡Bonjour! Bienvenido a tu free tour de bolsillo por Montmartre, el barrio de los pintores, los cabarets y los molinos. Vamos a subir poco a poco la colina, desde aquí hasta la basílica del Sacré-Cœur, en lo más alto de París. Yo pongo las historias; tú, las piernas, que aquí todo es cuesta arriba. Como en todo buen free tour, de vez en cuando te haré una pregunta para adivinar. Y en algunas paradas, si te quedas con ganas, te ofreceré una historia extra para curiosos.",
+        "Empezamos en un café de barrio que se hizo famoso en el mundo entero: el Café des Deux Moulins. Aquí trabajaba de camarera Amélie, la de la película de 2001, la chica que se dedicaba a hacer felices a los demás a escondidas. Desde entonces, fans de medio mundo vienen a tomarse un café donde ella servía. Eso sí, el estanco que salía en la película ya no está. ¿Y los dos molinos del nombre? Pues no hay acuerdo: unos dicen que son el Moulin Rouge y el Moulin de la Galette; otros, los dos molinos de la Galette, que veremos luego. Elige tu versión.",
+        "Y ahora, el molino que asoma al final de la calle: el Moulin Rouge, el cabaret más famoso del mundo. Abrió en 1889, el mismo año que la Torre Eiffel, y lo fundaron dos empresarios: Charles Zidler y un catalán de Terrassa, Joseph Oller. Ojo al dato: ese molino nunca molió nada. Era puro decorado, un reclamo para atraer a la gente. Y vaya si funcionó.",
+        "Un elefante gigante, ni más ni menos, que había sobrado de la Exposición Universal. Y en su barriga, una bailarina de danza del vientre entretenía a los clientes. Pero la estrella era el cancán, y la reina del cancán, La Goulue, la glotona, que se ganó el apodo bebiéndose las copas de los clientes mientras bailaba. Levantaba la pierna hasta quitarles el sombrero a los caballeros con la punta del pie, y al girar dejaba ver un corazón bordado en la ropa interior. Vamos, que los caballeros no venían precisamente por la música.",
+        "Y en primera fila, siempre con su cuaderno de dibujo, un aristócrata con bombín y quevedos: Henri de Toulouse-Lautrec. En 1891 el Moulin Rouge le encargó un cartel con La Goulue, y aquel cartel lo hizo famoso de la noche a la mañana. En el móvil lo tienes. Por cierto, en abril de 2024 las aspas del molino se vinieron abajo de madrugada, sin heridos, y en julio ya volvían a girar. Como se dice en el mundo del espectáculo: el espectáculo debe continuar."
+      ],
+      "images": [
+        {
+          "src": "img/paris/montmartre/deux-moulins.webp",
+          "w": 684,
+          "h": 1100,
+          "para": 4,
+          "after": "En el móvil lo tienes.",
+          "caption": "Moulin Rouge: La Goulue, el cartel de Toulouse-Lautrec de 1891",
+          "credit": "Henri de Toulouse-Lautrec · Museo Metropolitano de Nueva York · Dominio público",
+          "source": "https://commons.wikimedia.org/wiki/File:Moulin_Rouge-_La_Goulue_MET_DT11780.jpg"
+        }
+      ],
+      "quiz": {
+        "before": 3,
+        "q": "En el jardín del Moulin Rouge había una atracción de lo más extraña. ¿Qué crees que era?",
+        "options": [
+          "Un elefante gigante",
+          "Una noria",
+          "Un estanque con cocodrilos"
+        ],
+        "answer": 0
+      },
+      "more": {
+        "title": "El Pétomane, la estrella que no cantaba",
+        "ask": "¿Te quedas un par de minutos más? Te cuento la historia del artista más insólito que ha pisado el Moulin Rouge: un señor que llenaba el local sin abrir la boca. Si te apetece, toca «Cuéntame más». Si no, seguimos.",
+        "paras": [
+          "Se llamaba Joseph Pujol, era panadero en Marsella y tenía un talento muy, muy particular: controlaba a voluntad el aire de su cuerpo. O sea, que se tiraba pedos a la carta. Con su nombre artístico, el Pétomane, algo así como el pedómano, debutó en el Moulin Rouge en 1892, vestido de etiqueta y muy serio, como todo un caballero. Si sacas el móvil, verás cómo lo dibujó una revista de humor aquel mismo año.",
+          "Su número era todo un espectáculo. Imitaba el trueno, el ruido de una tela al rasgarse o un cañonazo. Con un tubo, tocaba La Marsellesa y apagaba una vela a distancia. El público lloraba de risa, y dicen que más de una señora se desmayaba con el corsé apretado. Leyenda o propaganda, el caso es que llenaba el local noche tras noche.",
+          "Cuentan que llegó a ganar más que Sarah Bernhardt, la gran actriz de la época. Y cuando en 1894 actuó fuera para echarle una mano a un amigo, el Moulin Rouge lo llevó a juicio por romper el contrato y tuvo que pagar tres mil francos. Él, ni corto ni perezoso, se marchó y montó su propio teatro.",
+          "Con la Primera Guerra Mundial se retiró y volvió a hacer pan. Y se cuenta que, cuando murió, una facultad de medicina ofreció dinero a la familia por estudiar su cuerpo, y que la familia se negó en redondo. Hay talentos que es mejor dejar descansar en paz."
+        ],
+        "images": [
+          {
+            "src": "img/paris/montmartre/deux-moulins-mas.webp",
+            "w": 978,
+            "h": 1100,
+            "para": 0,
+            "after": "Si sacas el móvil, verás cómo lo dibujó una revista de humor aquel mismo año.",
+            "caption": "El Pétomane en la revista Paris qui rit, en 1892",
+            "credit": "Paris qui rit · Dominio público",
+            "source": "https://commons.wikimedia.org/wiki/File:Pétomane_NB.jpg"
+          }
+        ]
+      },
+      "toNext": "Sube por la rue Lepic, que enseguida hace una curva. Unos doscientos metros más arriba, a tu derecha, en el número 54, busca una placa blanca junto a un portal."
+    },
+    {
+      "id": "van-gogh",
+      "title": "La casa de Van Gogh",
+      "subtitle": "Dos hermanos, un piso y más de doscientos cuadros",
+      "lat": 48.88651,
+      "lng": 2.33394,
+      "radius": 30,
+      "where": "Frente al número 54 de la rue Lepic, donde una placa blanca recuerda a Vincent van Gogh.",
+      "paras": [
+        "Mira la placa del número 54: en esta casa vivió Vincent van Gogh con su hermano Theo, de 1886 a 1888. Theo era marchante de arte, vendía cuadros en una galería, y era quien mantenía a Vincent: le pagaba el alquiler, la comida, los pinceles y las telas. Vincent, en cambio, vendió muy poco en toda su vida. Tenían un piso en la tercera planta, con un cuarto que hacía de estudio.",
+        "Vincent se presentó en París sin avisar, en febrero de 1886, con una nota para su hermano: que se vieran en el Louvre. Así, por sorpresa. Imagínate la cara de Theo. Y la convivencia fue de todo menos fácil. Theo le escribió a su hermana que la vida en casa era casi insoportable, que ya nadie quería ir a verlos porque todo acababa en discusiones, y que Vincent era desordenado y poco limpio. Si alguna vez has compartido piso, sabes de lo que hablo.",
+        "Más de doscientos. Y aquí su pintura cambió para siempre. Llegó pintando en tonos oscuros, marrones y grises, y en París descubrió a los impresionistas, los grabados japoneses y los colores claros. Desde la ventana de casa pintó los tejados de la ciudad: si sacas el móvil, verás uno de esos cuadros. Ese Van Gogh luminoso que todos conocemos nació, en buena parte, en este piso.",
+        "En París conoció también a Toulouse-Lautrec, el del cartel del Moulin Rouge, que le hizo un retrato al pastel. Y en febrero de 1888, harto del gris de París, se marchó al sur, a Arles, a buscar el sol. Antes de irse, colocó el estudio para que su hermano tuviera la sensación de que seguía allí. Theo fue su gran apoyo hasta el final, y fue la viuda de Theo, Jo, la que después dio a conocer su obra al mundo. Sin esta familia, hoy no sabríamos ni quién fue Van Gogh."
+      ],
+      "images": [
+        {
+          "src": "img/paris/montmartre/van-gogh.webp",
+          "w": 741,
+          "h": 900,
+          "para": 2,
+          "after": "si sacas el móvil, verás uno de esos cuadros.",
+          "caption": "Vista de París desde el piso de Theo, en la rue Lepic, pintada por Vincent en 1887",
+          "credit": "Vincent van Gogh · Museo Van Gogh, Ámsterdam · Dominio público",
+          "source": "https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_View_from_Theo’s_apartment_-_Google_Art_Project.jpg"
+        }
+      ],
+      "quiz": {
+        "before": 2,
+        "q": "Vincent pasó dos años en París. ¿Cuántos cuadros crees que pintó en ese tiempo?",
+        "options": [
+          "Unos veinte",
+          "Unos ochenta",
+          "Más de doscientos"
+        ],
+        "answer": 2
+      },
+      "toNext": "Sigue subiendo por la rue Lepic, que aquí hace una gran curva. Al llegar arriba, en la esquina con la rue Girardon, verás un molino de madera encima de un restaurante."
+    },
+    {
+      "id": "moulin-de-la-galette",
+      "title": "Moulin de la Galette",
+      "subtitle": "Los últimos molinos y el baile que pintó Renoir",
+      "lat": 48.88735,
+      "lng": 2.3373,
+      "radius": 35,
+      "where": "En la esquina de la rue Lepic con la rue Girardon, mirando el molino que corona el restaurante.",
+      "paras": [
+        "¿Molinos en París? Pues sí: en esta colina llegó a haber unos treinta, que molían el trigo para los panaderos de la ciudad. Hoy quedan dos. El que tienes delante es el Radet, de 1717, que se trasladó a esta esquina en 1924. Y un poco más abajo, en un jardín privado, está el Blute-Fin, de 1622, el más antiguo. Juntos forman el famoso Moulin de la Galette.",
+        "Un panecillo de centeno, como lo oyes. En el siglo diecinueve, la familia de molineros, los Debray, montó aquí un merendero con baile, y servía esa galette con un vaso de leche y, más tarde, con el vino del barrio. Los domingos subía media ciudad a bailar al aire libre, y el molino se convirtió en la pista de baile más famosa de Montmartre.",
+        "En 1876 un pintor joven, Auguste Renoir, se plantó aquí con su caballete para pintar el baile, con sus amigos y las chicas del barrio como modelos. Dicen que más de una vez el viento estuvo a punto de llevarse el lienzo. En la app tienes el resultado, que hoy cuelga en el museo de Orsay. Y una versión más pequeña se vendió en 1990 por setenta y ocho millones de dólares a un millonario japonés, que bromeó con que lo incineraran con el cuadro. Menos mal que luego se lo pensó mejor.",
+        "Y una curiosidad para los aficionados al motor. En la Nochebuena de 1898, un joven de veintiún años, Louis Renault, subió esta misma cuesta de la rue Lepic con el primer coche que había construido, para ganar una apuesta. Lo consiguió, y esa misma noche se llevó doce encargos. Poco después fundó con sus hermanos la marca Renault. No está mal para una cuesta que hoy hay quien no sube ni andando."
+      ],
+      "images": [
+        {
+          "src": "img/paris/montmartre/moulin-de-la-galette.webp",
+          "w": 1100,
+          "h": 817,
+          "para": 2,
+          "after": "En la app tienes el resultado, que hoy cuelga en el museo de Orsay.",
+          "caption": "Baile en el Moulin de la Galette, de Renoir, 1876",
+          "credit": "Pierre-Auguste Renoir · Museo de Orsay · Dominio público",
+          "source": "https://commons.wikimedia.org/wiki/File:Auguste_Renoir_-_Dance_at_Le_Moulin_de_la_Galette_-_Google_Art_Project.jpg"
+        }
+      ],
+      "quiz": {
+        "before": 1,
+        "q": "El molino le dio nombre a la galette que se servía aquí. ¿Qué crees que era?",
+        "options": [
+          "Una crepe dulce",
+          "Una galleta de mantequilla",
+          "Un panecillo de centeno"
+        ],
+        "answer": 2
+      },
+      "toNext": "Sube por la rue Girardon, la calle que sale junto al molino. Enseguida llegarás a una placita, la place Marcel-Aymé, donde un hombre de bronce sale de una pared."
+    },
+    {
+      "id": "passe-muraille",
+      "title": "Le Passe-Muraille",
+      "subtitle": "El hombre que atravesaba las paredes",
+      "lat": 48.88754,
+      "lng": 2.33807,
+      "radius": 25,
+      "where": "En la place Marcel-Aymé, frente al muro del que asoma un hombre de bronce.",
+      "paras": [
+        "Mira la pared: un hombre de bronce sale de ella, con la cabeza, una mano y una pierna fuera. Es Dutilleul, el protagonista de un cuento de 1941 de Marcel Aymé, El hombre que atravesaba las paredes. Y el escritor no vivía lejos: vivía aquí mismo, en esta plaza, que hoy lleva su nombre. En la pantalla tienes al escritor en 1929, el año de su primer gran premio.",
+        "El cuento es una joya. Dutilleul es un funcionario gris de un ministerio, que vive en una calle de aquí al lado, y un buen día descubre que puede atravesar las paredes. ¿Y qué hace con un don así? Primero, volver loco a su jefe, que acaba en un manicomio. Después, robar bancos y joyerías, y firmar los robos con un apodo.",
+        "Garou-Garou, que en francés suena a hombre lobo. Lo detienen, se escapa de la cárcel cuando le da la gana y, al final, se enamora de una rubia a la que su marido, celoso, deja encerrada con llave cada noche. ¿Y qué hace él? Lo que haría cualquiera con su talento: entrar por la pared. Pero una noche, con dolor de cabeza, se toma unas pastillas equivocadas, pierde el poder a medio cruzar el muro y se queda atrapado para siempre. Hay amores que te dejan clavado, pero lo de este hombre fue literal.",
+        "La escultura la hizo en 1989 Jean Marais, el gran galán del cine francés, que además de actor era pintor y escultor. Dicen que le puso al personaje la cara de su amigo Marcel Aymé. Y el cuento termina con un detalle precioso: un pintor del barrio sale por las noches a tocar la guitarra en esta calle, para consolar al pobre Dutilleul, que sigue ahí dentro. Si ves que le brilla la mano, es de tanta gente que se la estrecha."
+      ],
+      "images": [
+        {
+          "src": "img/paris/montmartre/passe-muraille.webp",
+          "w": 1100,
+          "h": 779,
+          "para": 0,
+          "after": "En la pantalla tienes al escritor en 1929, el año de su primer gran premio.",
+          "caption": "Marcel Aymé en 1929",
+          "credit": "Foto: Agence Meurisse · Biblioteca Nacional de Francia · Dominio público",
+          "source": "https://commons.wikimedia.org/wiki/File:Marcel_Aymé_1929.jpg"
+        }
+      ],
+      "quiz": {
+        "before": 2,
+        "q": "¿Con qué nombre crees que firmaba sus robos el hombre que atravesaba las paredes?",
+        "options": [
+          "El Lobo Solitario",
+          "Garou-Garou",
+          "Fantômas"
+        ],
+        "answer": 1
+      },
+      "toNext": "Sigue por la rue Girardon. Al llegar al cruce con la rue de l'Abreuvoir verás un busto de bronce sobre unos bloques de piedra: es Dalida."
+    },
+    {
+      "id": "dalida",
+      "title": "Place Dalida",
+      "subtitle": "La diva del barrio y la calle del abrevadero",
+      "lat": 48.88851,
+      "lng": 2.33814,
+      "radius": 25,
+      "where": "En el cruce de la rue Girardon con la rue de l'Abreuvoir, junto al busto de Dalida.",
+      "paras": [
+        "Esta placita está dedicada a Dalida, una de las grandes divas de la canción francesa. Pero ojo, que no era francesa de nacimiento.",
+        "Nació en El Cairo en 1933, hija de padres italianos, y se llamaba Yolanda Gigliotti. En 1954 fue elegida Miss Egipto, se vino a París a probar suerte y dos años después ya era una estrella con Bambino. Cantó en varios idiomas, también en español, y vendió más de cien millones de discos. Vivió veinticinco años aquí al lado, en la rue d'Orchampt, y Montmartre la adora.",
+        "Su vida tuvo grandes éxitos y también grandes tragedias, y murió en 1987 en esa misma casa. Diez años después, el barrio le dedicó esta plaza.",
+        "El busto es de Aslan, un escultor que durante años dibujó cada mes las chicas pin-up de una revista para caballeros. Y fíjate qué parte brilla más: dicen que tocarle el pecho trae suerte en el amor, y el bronce se ha desgastado justo ahí. Hay quien piensa que sobra tanto manoseo, y no le falta razón.",
+        "¿Y el nombre de la calle? Rue de l'Abreuvoir, la calle del abrevadero: aquí bebían los caballos y las vacas cuando Montmartre era un pueblo. En la pantalla tienes un cuadro de hacia 1895, pintado desde el abrevadero, con el Sacré-Cœur todavía en obras al fondo. Y aquí mismo, a un lado de la plaza, en el Château des Brouillards, vivió Renoir, el pintor del baile del molino. Allí nació su hijo Jean, que acabaría siendo uno de los grandes directores de cine francés."
+      ],
+      "images": [
+        {
+          "src": "img/paris/montmartre/dalida.webp",
+          "w": 917,
+          "h": 1100,
+          "para": 4,
+          "after": "En la pantalla tienes un cuadro de hacia 1895, pintado desde el abrevadero, con el Sacré-Cœur todavía en obras al fondo.",
+          "caption": "El Sacré-Cœur en obras, visto desde el abrevadero de Montmartre, hacia 1895",
+          "credit": "Édouard Zawiski · Museo Carnavalet · Dominio público",
+          "source": "https://commons.wikimedia.org/wiki/File:Zawiski_-_Le_Sacré-Cœur_en_construction,_vu_de_l'abreuvoir_de_Montmartre,_vers_1895_-_P348_-_Musée_Carnavalet.jpg"
+        }
+      ],
+      "quiz": {
+        "before": 1,
+        "q": "¿Dónde crees que nació Dalida?",
+        "options": [
+          "En El Cairo",
+          "En Roma",
+          "En Marsella"
+        ],
+        "answer": 0
+      },
+      "toNext": "Sigue por la rue de l'Abreuvoir. Al final de la calle, en la esquina con la rue des Saules, verás una casita rosa con las contraventanas verdes."
+    },
+    {
+      "id": "maison-rose",
+      "title": "La Maison Rose",
+      "subtitle": "La casita rosa, una musa y el drama que cambió a Picasso",
+      "lat": 48.888,
+      "lng": 2.3398,
+      "radius": 20,
+      "where": "En la esquina de la rue de l'Abreuvoir con la rue des Saules, frente a la casa rosa de contraventanas verdes.",
+      "paras": [
+        "Esta es la Maison Rose, seguramente la casa más fotografiada de Montmartre, y no me extraña. A principios del siglo veinte la usaba como estudio un pintor catalán, Ramon Pichot. Su mujer, Germaine, abrió aquí un café restaurante y, según cuentan, fue ella quien pintó la casa de rosa. En el móvil tienes una foto suya de hacia 1905.",
+        "Lo de Ramon Pichot tiene su gracia para nosotros: era amigo de Picasso y fue uno de los primeros en descubrir el talento de un niño de Figueres que pintaba en Cadaqués, un tal Salvador Dalí. Y la casa la hizo famosa otro pintor del barrio, Maurice Utrillo, que la pintó varias veces hacia 1912.",
+        "Picasso, ni más ni menos. Pero la historia empieza con un drama. Un gran amigo de Picasso, el pintor barcelonés Carles Casagemas, se enamoró perdidamente de Germaine. Ella no le correspondía y, en 1901, después de una última negativa, Casagemas se quitó la vida en un café de París. Tenía veinte años. Picasso quedó destrozado y empezó a pintar con tonos azules y tristes: fue el comienzo de su famosa época azul. Y, poco después, el que acabó en brazos de Germaine fue el propio Picasso.",
+        "Así que esta casita tan alegre, con sus flores y su color de tarta de cumpleaños, guarda una historia de amor, de celos y de pintura. Como Montmartre entero. Hoy sigue siendo un restaurante, por si te apetece sentarte un rato."
+      ],
+      "images": [
+        {
+          "src": "img/paris/montmartre/maison-rose.webp",
+          "w": 608,
+          "h": 830,
+          "para": 0,
+          "after": "En el móvil tienes una foto suya de hacia 1905.",
+          "caption": "Germaine Pichot hacia 1905",
+          "credit": "Foto anónima · Dominio público",
+          "source": "https://commons.wikimedia.org/wiki/File:Germaine_Pichot,_c._1905.jpg"
+        }
+      ],
+      "quiz": {
+        "before": 2,
+        "q": "Antes de casarse con Pichot, Germaine fue amante de un joven pintor que acabaría siendo el más famoso del siglo veinte. ¿Quién crees que fue?",
+        "options": [
+          "Matisse",
+          "Modigliani",
+          "Picasso"
+        ],
+        "answer": 2
+      },
+      "more": {
+        "title": "Picasso en el Bateau-Lavoir",
+        "ask": "¿Tienes un par de minutos más? Te cuento dónde vivía Picasso cuando no tenía ni para luz, y dónde pintó el cuadro que cambió el arte moderno. Si te apetece, toca «Cuéntame más». Si no, seguimos.",
+        "paras": [
+          "A unos diez minutos a pie de aquí, bajando por la rue Ravignan, en una plaza tranquila, la place Émile-Goudeau, está el Bateau-Lavoir, el barco lavadero. Era un caserón de madera, una antigua fábrica de pianos dividida en talleres para artistas pobres. El nombre se lo puso el poeta Max Jacob, porque crujía y se movía como los barcos donde las lavanderas lavaban la ropa en el Sena.",
+          "Picasso vivió allí de 1904 a 1909. No había ni gas ni electricidad, y había un solo grifo para todo el edificio. En invierno hacía un frío que pelaba y en verano un calor de horno. Su novia de entonces, Fernande Olivier, contaba que en el estudio había un somier en un rincón y tubos de pintura por el suelo. Romántico, lo que se dice romántico, no era.",
+          "Y allí, en 1907, pintó Las señoritas de Aviñón, cinco mujeres desnudas con caras como máscaras. Y ojo con el título: no son de Aviñón, la de Francia, sino de la calle Avinyó de Barcelona, una calle de burdeles. Vamos, que las señoritas no eran precisamente de convento. A sus amigos el cuadro les pareció un horror. Hoy está en el MoMA de Nueva York y se considera el punto de partida del cubismo.",
+          "Por el Bateau-Lavoir pasaron también Juan Gris, Max Jacob o Modigliani. En 1970 el edificio se quemó y solo quedó la fachada. Se reconstruyó después y todavía hoy alberga talleres de artistas. Si te sobra un rato al final del paseo, acércate: en el escaparate hay fotos de cómo era."
+        ]
+      },
+      "toNext": "Baja por la rue des Saules, cuesta abajo. A pocos pasos, a tu derecha, verás tras una verja una viña en pendiente."
+    },
+    {
+      "id": "vigne",
+      "title": "La viña de Montmartre",
+      "subtitle": "Un viñedo contra el ladrillo",
+      "lat": 48.88825,
+      "lng": 2.33985,
+      "radius": 20,
+      "where": "En la rue des Saules, junto a la verja, mirando la viña que baja en cuesta.",
+      "paras": [
+        "¿Una viña en pleno París? Pues sí. Durante siglos, Montmartre fue un pueblo de molinos y viñedos. En el móvil tienes esta misma calle en 1899, cuando todavía era medio campo. Y su vino tenía fama... de malo. Había un dicho: vino de Montmartre, el que bebe una pinta, mea el doble. Vamos, que más que un vino era un diurético.",
+        "A principios del siglo veinte ya no quedaban cepas, y este terreno, que había sido el jardín del cantante Aristide Bruant, se quedó vacío. En 1930 quisieron construir aquí unos pisos, pero los vecinos y los artistas del barrio, con la República de Montmartre a la cabeza, una asociación que tenía hasta su propio presidente, se plantaron. Y nunca mejor dicho: en 1933 el ayuntamiento plantó una viña, para que nadie pudiera edificar.",
+        "Compraron uvas en el mercado central de Les Halles y las sujetaron a las cepas con alambre, para hacer como que vendimiaban. Y a la fiesta vino hasta el presidente de la República. Todo muy serio, ya ves. Desde entonces, cada octubre se celebra la fiesta de la vendimia de Montmartre, con desfile, música y mucho vino, aunque no precisamente de aquí.",
+        "Hoy hay unas mil setecientas cepas de una treintena de variedades. Con sus uvas se hace un vino en el ayuntamiento del distrito, y las botellas se subastan para obras sociales del barrio. Sobre su sabor no me pronuncio. Digamos que se bebe por la causa."
+      ],
+      "images": [
+        {
+          "src": "img/paris/montmartre/vigne.webp",
+          "w": 876,
+          "h": 1100,
+          "para": 0,
+          "after": "En el móvil tienes esta misma calle en 1899, cuando todavía era medio campo.",
+          "caption": "La rue des Saules en agosto de 1899",
+          "credit": "Foto: Eugène Atget · Biblioteca Nacional de Francia · Dominio público",
+          "source": "https://commons.wikimedia.org/wiki/File:Atget_-_Rue_des_Saules_-_Montmartre_-_Août_1899,_btv1b10519823n.jpeg"
+        }
+      ],
+      "quiz": {
+        "before": 2,
+        "q": "En la primera fiesta de la vendimia, en 1934, las cepas eran tan jóvenes que no tenían uvas. ¿Qué crees que hicieron?",
+        "options": [
+          "La suspendieron",
+          "Compraron uvas en el mercado y las ataron a las cepas",
+          "Vendimiaron otra viña de las afueras"
+        ],
+        "answer": 1
+      },
+      "toNext": "Unos pasos más abajo, en la esquina con la rue Saint-Vincent, verás un caserón con un conejo pintado en el cartel: el Lapin Agile."
+    },
+    {
+      "id": "lapin-agile",
+      "title": "Au Lapin Agile",
+      "subtitle": "El cabaret de los artistas sin un duro",
+      "lat": 48.88865,
+      "lng": 2.33985,
+      "radius": 20,
+      "where": "En la rue des Saules, frente al cabaret, en la esquina con la rue Saint-Vincent.",
+      "paras": [
+        "Este caserón con aire de casa de campo es el Lapin Agile, uno de los cabarets más antiguos de París. Todavía hoy, por las noches, se cantan aquí canciones francesas de las de siempre, sin micrófono. Y ha tenido nombres de lo más inquietantes: primero fue la Cita de los Ladrones y después el Cabaret de los Asesinos, por unos retratos de criminales famosos que colgaban en las paredes.",
+        "Un caricaturista, André Gill, pintó un cartel con un conejo que salta de una cazuela, y la gente empezó a llamar al local el conejo de Gill, en francés, Lapin à Gill. Dilo deprisa: Lapin Agile. En la app tienes aquel cartel. Juego de palabras y nombre nuevo, todo en uno.",
+        "A principios del siglo veinte lo llevaba Frédé, un tipo con barba y guitarra que tenía en el local un burro, un mono y un cuervo, y que a veces aceptaba poemas y canciones como pago. Por aquí pasaban Picasso, Apollinaire, Utrillo y muchos poetas sin blanca. En 1905 Picasso pintó un cuadro del cabaret, en el que él mismo aparece vestido de arlequín, y estuvo años colgado aquí dentro. En 1989 se vendió por más de cuarenta millones de dólares. Si Frédé levantara la cabeza...",
+        "Y mira la tapia de enfrente: es el pequeño cementerio de Saint-Vincent. Ahí descansan el pintor Utrillo, el de la casa rosa, y Marcel Aymé, el del hombre que atravesaba las paredes. Vecinos para siempre del cabaret donde tantas noches pasaron. Hay sitios peores para descansar, ¿no?"
+      ],
+      "images": [
+        {
+          "src": "img/paris/montmartre/lapin-agile.webp",
+          "w": 808,
+          "h": 1100,
+          "para": 1,
+          "after": "En la app tienes aquel cartel.",
+          "caption": "El conejo de André Gill, el cartel que dio nombre al cabaret",
+          "credit": "André Gill · Dominio público",
+          "source": "https://commons.wikimedia.org/wiki/File:André_Gill_-_Au_Lapin_Agile.jpg"
+        }
+      ],
+      "quiz": {
+        "before": 1,
+        "q": "¿De dónde crees que viene el nombre de Lapin Agile, el conejo ágil?",
+        "options": [
+          "Del cartel que pintó un caricaturista llamado Gill",
+          "De un conejo que siempre se escapaba de la cazuela",
+          "De la especialidad de la casa"
+        ],
+        "answer": 0
+      },
+      "more": {
+        "title": "El burro que engañó a la crítica",
+        "ask": "¿Te quedas un par de minutos más? Te cuento cómo el burro de este cabaret llegó a exponer en un gran salón de arte de París, y cómo picaron los críticos. Si te apetece, toca «Cuéntame más». Si no, seguimos.",
+        "paras": [
+          "En 1910, al escritor Roland Dorgelès, cliente fijo del Lapin Agile, le sacaba de quicio la pintura de vanguardia. Decía que aquello lo podía hacer cualquiera, y decidió demostrarlo con el burro de Frédé, que se llamaba Lolo. Delante de un oficial de justicia que levantó acta, le ataron un pincel a la cola, le pusieron un lienzo detrás y le dieron zanahorias. Cada vez que Lolo comía contento, meneaba la cola, y venga pinceladas.",
+          "Firmaron el cuadro con un nombre inventado, Joachim-Raphaël Boronali, supuesto pintor genovés y líder de un movimiento nuevo, el excesivismo, con manifiesto y todo: el exceso en todo es una fuerza. Lo de Boronali, por cierto, era un anagrama de Aliboron, el burro de las fábulas de La Fontaine. Lo titularon Y el sol se durmió sobre el Adriático y lo mandaron al Salón de los Independientes.",
+          "Algunos críticos lo comentaron como una obra más. Y entonces Dorgelès enseñó a la prensa el acta del oficial de justicia y las fotos de Lolo trabajando. Carcajada general en todo París. El cuadro se vendió por unos cuatrocientos francos, que se donaron a un orfanato para hijos de artistas. O sea, que el burro, encima, hizo una obra de caridad.",
+          "Hoy el cuadro se conserva en un centro cultural de Milly-la-Forêt, cerca de Fontainebleau. Y la pregunta sigue en el aire: ¿es arte o no es arte? Yo solo digo que, de todos los pintores de Montmartre, Lolo fue el único que cobró en zanahorias y no se quejó."
+        ]
+      },
+      "toNext": "Ahora toca subir. Vuelve por la rue des Saules, cuesta arriba, y gira a la izquierda por la rue Cortot, la del museo de Montmartre, donde Renoir tenía el estudio cuando pintó el baile del molino. Al final, sigue a la derecha por la rue du Mont-Cenis y luego a la izquierda, siempre hacia la cúpula blanca, hasta la gran explanada de delante de la basílica."
+    },
+    {
+      "id": "sacre-coeur",
+      "title": "Basílica del Sacré-Cœur",
+      "subtitle": "Lo más alto de París y una iglesia polémica",
+      "lat": 48.8862,
+      "lng": 2.3431,
+      "radius": 50,
+      "where": "En la explanada de delante de la basílica, en lo alto de las escaleras. Primero, de espaldas a la fachada, mirando a París.",
+      "paras": [
+        "Ahora sí: mira. Estás en la cima de Montmartre, a unos ciento treinta metros de altura, el punto natural más alto de París. A tus pies, la ciudad entera. ¿A que ha merecido la pena la cuesta?",
+        "El nombre de Montmartre tiene su historia. Puede venir de monte de los mártires, porque la leyenda dice que aquí decapitaron a san Dionisio, el primer obispo de París, que recogió su cabeza y se marchó andando con ella en las manos. Si hiciste nuestra ruta por el centro, ya lo viste en la fachada de Notre-Dame. Aunque hay quien dice que el nombre viene de un templo romano dedicado a Marte o a Mercurio. Tú eliges.",
+        "Ahora date la vuelta: la basílica del Sagrado Corazón. Parece antiquísima, pero es casi nueva: se empezó en 1875 y se consagró en 1919. En el móvil tienes una foto de las obras, hacia 1884. ¿Y por qué aquí? Tras la derrota de Francia contra Prusia en 1870 y la revuelta de la Comuna en 1871, que estalló precisamente en esta colina, se levantó como una iglesia de penitencia, para expiar, decían, los pecados de la nación. Por eso durante mucho tiempo fue un edificio polémico: para unos, un símbolo de fe; para otros, un castigo a los vecinos de la Comuna.",
+        "Su piedra, un travertino de Château-Landon, al sureste de París, suelta un mineral blanco con la lluvia, la calcita, y se va limpiando sola. Cuanto más llueve, más blanca. Vamos, que es el único edificio de París al que le sienta bien el mal tiempo. Y en su campanario cuelga la Savoyarde, una campana de casi diecinueve toneladas, la más grande de Francia, que solo suena en las grandes fiestas.",
+        "Y aquí me despido. Has subido Montmartre de abajo arriba: del Moulin Rouge y su cancán a los molinos de Renoir, de la casa de Van Gogh al hombre que atravesaba las paredes, de la viña de los vecinos al cabaret de los artistas sin un duro. Ahora te toca a ti: siéntate en las escaleras, escucha a algún músico callejero y deja que París haga el resto. ¡Merci, y hasta la próxima!"
+      ],
+      "images": [
+        {
+          "src": "img/paris/montmartre/sacre-coeur.webp",
+          "w": 1100,
+          "h": 549,
+          "para": 2,
+          "after": "En el móvil tienes una foto de las obras, hacia 1884.",
+          "caption": "Las obras del Sacré-Cœur hacia 1884",
+          "credit": "Foto anónima · Museo Carnavalet · Dominio público",
+          "source": "https://commons.wikimedia.org/wiki/File:Construction_du_Sacré-Coeur,_vers_1884._18ème_arrondissement,_Paris,_PH23.jpg"
+        }
+      ],
+      "quiz": {
+        "before": 3,
+        "q": "Fíjate en lo blanquísima que está la basílica. ¿Por qué crees que está siempre tan blanca?",
+        "options": [
+          "La limpian cada año",
+          "La piedra se blanquea sola con la lluvia",
+          "Está pintada"
+        ],
+        "answer": 1
+      },
+      "more": {
+        "title": "Los cañones del 18 de marzo",
+        "before": 4,
+        "ask": "Antes de despedirme, ¿te cuento cómo empezó en esta colina una de las revueltas más famosas de la historia de Francia? Hay cañones, caballos que no llegaron y soldados que no dispararon. Si te apetece, toca «Cuéntame más». Si no, vamos con la despedida.",
+        "paras": [
+          "Estamos en 1871. Francia acaba de perder la guerra contra Prusia, y París ha aguantado un asedio de meses pasando tanta hambre que hasta se comieron a Cástor y Pólux, los dos elefantes del parque de animales del Bosque de Bolonia. Los parisinos han pagado de su bolsillo unos ciento setenta cañones para defenderse y los han subido aquí arriba. Si sacas el móvil, los verás aparcados en la colina. El gobierno no se fía del pueblo armado y decide llevárselos.",
+          "En la madrugada del 18 de marzo, los soldados suben a por ellos. Pero hay un problema: los caballos para arrastrarlos no llegan a tiempo. Mientras esperan, el barrio se despierta. Las mujeres de Montmartre, las primeras, rodean a los soldados, les hablan, les dan de comer. Y cuando llega la orden de disparar contra la gente, los soldados se niegan y ponen los fusiles con la culata hacia arriba.",
+          "Esa misma tarde, en una calle cercana, dos generales fueron fusilados por la multitud, y el gobierno huyó a Versalles. Había nacido la Comuna de París, un gobierno revolucionario que duró setenta y dos días y acabó en mayo con la llamada Semana Sangrienta, con miles de muertos.",
+          "Y poco después, en la misma colina donde todo empezó, se decidió levantar esta basílica para expiar los pecados de Francia. Imagínate cómo les sentó a los vecinos. Hoy, el jardín que baja por las escaleras se llama Louise Michel, como una de las mujeres de la Comuna. Así que aquí arriba conviven la basílica y la memoria de la Comuna. Muy de París, eso de no ponerse nunca de acuerdo."
+        ],
+        "images": [
+          {
+            "src": "img/paris/montmartre/sacre-coeur-mas.webp",
+            "w": 1100,
+            "h": 767,
+            "para": 0,
+            "after": "Si sacas el móvil, los verás aparcados en la colina.",
+            "caption": "Los cañones de la Guardia Nacional en Montmartre, en 1871",
+            "credit": "Foto anónima · Dominio público",
+            "source": "https://commons.wikimedia.org/wiki/File:Commune_de_Paris_Canons_à_Montmartre_le_18_mars.jpg"
+          }
+        ]
+      }
+    }
+  ],
+  "legs": [
+    [
+      [
+        48.884887,
+        2.333728
+      ],
+      [
+        48.885059,
+        2.333912
+      ],
+      [
+        48.885086,
+        2.33393
+      ],
+      [
+        48.885116,
+        2.333959
+      ],
+      [
+        48.885144,
+        2.333984
+      ],
+      [
+        48.88538,
+        2.334229
+      ],
+      [
+        48.885818,
+        2.334673
+      ],
+      [
+        48.885964,
+        2.33428
+      ],
+      [
+        48.886002,
+        2.334301
+      ],
+      [
+        48.886065,
+        2.334335
+      ],
+      [
+        48.886081,
+        2.334291
+      ],
+      [
+        48.886102,
+        2.334253
+      ],
+      [
+        48.886156,
+        2.334288
+      ],
+      [
+        48.886184,
+        2.334243
+      ],
+      [
+        48.886205,
+        2.334277
+      ],
+      [
+        48.886216,
+        2.334295
+      ],
+      [
+        48.886264,
+        2.334244
+      ],
+      [
+        48.886404,
+        2.334033
+      ],
+      [
+        48.886491,
+        2.333934
+      ],
+      [
+        48.886507,
+        2.333926
+      ]
+    ],
+    [
+      [
+        48.886507,
+        2.333926
+      ],
+      [
+        48.886615,
+        2.333874
+      ],
+      [
+        48.886949,
+        2.33393
+      ],
+      [
+        48.887052,
+        2.333964
+      ],
+      [
+        48.887068,
+        2.333973
+      ],
+      [
+        48.887075,
+        2.333992
+      ],
+      [
+        48.887082,
+        2.333994
+      ],
+      [
+        48.887096,
+        2.334004
+      ],
+      [
+        48.887113,
+        2.334015
+      ],
+      [
+        48.887118,
+        2.334019
+      ],
+      [
+        48.887356,
+        2.334175
+      ],
+      [
+        48.887367,
+        2.334208
+      ],
+      [
+        48.887376,
+        2.334214
+      ],
+      [
+        48.887399,
+        2.334231
+      ],
+      [
+        48.887428,
+        2.334255
+      ],
+      [
+        48.887437,
+        2.334261
+      ],
+      [
+        48.887464,
+        2.334256
+      ],
+      [
+        48.887559,
+        2.334328
+      ],
+      [
+        48.887585,
+        2.334369
+      ],
+      [
+        48.887619,
+        2.334424
+      ],
+      [
+        48.887658,
+        2.334549
+      ],
+      [
+        48.887658,
+        2.334662
+      ],
+      [
+        48.887645,
+        2.334734
+      ],
+      [
+        48.887513,
+        2.335177
+      ],
+      [
+        48.887506,
+        2.335198
+      ],
+      [
+        48.887493,
+        2.335235
+      ],
+      [
+        48.88748,
+        2.33527
+      ],
+      [
+        48.887472,
+        2.335281
+      ],
+      [
+        48.887477,
+        2.335308
+      ],
+      [
+        48.887495,
+        2.335317
+      ],
+      [
+        48.887512,
+        2.335329
+      ],
+      [
+        48.887544,
+        2.335352
+      ],
+      [
+        48.887559,
+        2.335363
+      ],
+      [
+        48.887468,
+        2.335686
+      ],
+      [
+        48.887424,
+        2.335884
+      ],
+      [
+        48.887403,
+        2.336063
+      ],
+      [
+        48.887396,
+        2.336155
+      ],
+      [
+        48.887314,
+        2.337138
+      ],
+      [
+        48.887317,
+        2.337167
+      ],
+      [
+        48.887327,
+        2.337189
+      ],
+      [
+        48.887324,
+        2.337203
+      ],
+      [
+        48.88731,
+        2.337255
+      ],
+      [
+        48.887354,
+        2.337286
+      ]
+    ],
+    [
+      [
+        48.887354,
+        2.337286
+      ],
+      [
+        48.887407,
+        2.337323
+      ],
+      [
+        48.887591,
+        2.337452
+      ],
+      [
+        48.887572,
+        2.337494
+      ],
+      [
+        48.887566,
+        2.337508
+      ],
+      [
+        48.88757,
+        2.337532
+      ],
+      [
+        48.887588,
+        2.337547
+      ],
+      [
+        48.887602,
+        2.337557
+      ],
+      [
+        48.88762,
+        2.33757
+      ],
+      [
+        48.887615,
+        2.337579
+      ],
+      [
+        48.887609,
+        2.337596
+      ],
+      [
+        48.887476,
+        2.338034
+      ],
+      [
+        48.887483,
+        2.338038
+      ],
+      [
+        48.887488,
+        2.338041
+      ],
+      [
+        48.88754,
+        2.33807
+      ],
+      [
+        48.88754,
+        2.33807
+      ]
+    ],
+    [
+      [
+        48.88754,
+        2.33807
+      ],
+      [
+        48.88759,
+        2.338098
+      ],
+      [
+        48.887714,
+        2.337681
+      ],
+      [
+        48.887756,
+        2.337658
+      ],
+      [
+        48.88776,
+        2.337646
+      ],
+      [
+        48.887828,
+        2.337694
+      ],
+      [
+        48.887885,
+        2.337746
+      ],
+      [
+        48.887964,
+        2.337795
+      ],
+      [
+        48.888011,
+        2.33784
+      ],
+      [
+        48.888058,
+        2.337863
+      ],
+      [
+        48.888149,
+        2.337929
+      ],
+      [
+        48.88823,
+        2.337988
+      ],
+      [
+        48.888402,
+        2.338057
+      ],
+      [
+        48.888417,
+        2.338006
+      ],
+      [
+        48.888452,
+        2.338024
+      ],
+      [
+        48.888474,
+        2.33804
+      ],
+      [
+        48.888496,
+        2.338065
+      ],
+      [
+        48.888509,
+        2.338086
+      ],
+      [
+        48.888514,
+        2.338103
+      ],
+      [
+        48.888519,
+        2.33814
+      ],
+      [
+        48.888519,
+        2.33814
+      ]
+    ],
+    [
+      [
+        48.888519,
+        2.33814
+      ],
+      [
+        48.88852,
+        2.338182
+      ],
+      [
+        48.888512,
+        2.338213
+      ],
+      [
+        48.888496,
+        2.338246
+      ],
+      [
+        48.888467,
+        2.338284
+      ],
+      [
+        48.88849,
+        2.338317
+      ],
+      [
+        48.888406,
+        2.338488
+      ],
+      [
+        48.888284,
+        2.338864
+      ],
+      [
+        48.888206,
+        2.339132
+      ],
+      [
+        48.888162,
+        2.339229
+      ],
+      [
+        48.8881,
+        2.33936
+      ],
+      [
+        48.887928,
+        2.339681
+      ],
+      [
+        48.887933,
+        2.339698
+      ],
+      [
+        48.887928,
+        2.339709
+      ],
+      [
+        48.887924,
+        2.339753
+      ],
+      [
+        48.887922,
+        2.33978
+      ],
+      [
+        48.887919,
+        2.339802
+      ],
+      [
+        48.888,
+        2.339804
+      ]
+    ],
+    [
+      [
+        48.888,
+        2.339804
+      ],
+      [
+        48.888194,
+        2.33981
+      ],
+      [
+        48.888252,
+        2.339817
+      ]
+    ],
+    [
+      [
+        48.888252,
+        2.339817
+      ],
+      [
+        48.888327,
+        2.339826
+      ],
+      [
+        48.888428,
+        2.339836
+      ],
+      [
+        48.888468,
+        2.339841
+      ],
+      [
+        48.888474,
+        2.339891
+      ],
+      [
+        48.888496,
+        2.339887
+      ],
+      [
+        48.888519,
+        2.339888
+      ],
+      [
+        48.888547,
+        2.339889
+      ],
+      [
+        48.888561,
+        2.339896
+      ],
+      [
+        48.888575,
+        2.339891
+      ],
+      [
+        48.888578,
+        2.339869
+      ],
+      [
+        48.888584,
+        2.339839
+      ],
+      [
+        48.888639,
+        2.339857
+      ],
+      [
+        48.888649,
+        2.33986
+      ]
+    ],
+    [
+      [
+        48.888649,
+        2.33986
+      ],
+      [
+        48.888639,
+        2.339857
+      ],
+      [
+        48.888584,
+        2.339839
+      ],
+      [
+        48.888578,
+        2.339869
+      ],
+      [
+        48.888575,
+        2.339891
+      ],
+      [
+        48.888561,
+        2.339896
+      ],
+      [
+        48.888547,
+        2.339889
+      ],
+      [
+        48.888519,
+        2.339888
+      ],
+      [
+        48.888496,
+        2.339887
+      ],
+      [
+        48.888474,
+        2.339891
+      ],
+      [
+        48.888468,
+        2.339841
+      ],
+      [
+        48.888428,
+        2.339836
+      ],
+      [
+        48.888327,
+        2.339826
+      ],
+      [
+        48.888194,
+        2.33981
+      ],
+      [
+        48.887919,
+        2.339802
+      ],
+      [
+        48.88782,
+        2.339796
+      ],
+      [
+        48.887805,
+        2.33982
+      ],
+      [
+        48.88779,
+        2.339817
+      ],
+      [
+        48.887769,
+        2.339816
+      ],
+      [
+        48.887756,
+        2.339816
+      ],
+      [
+        48.88775,
+        2.339818
+      ],
+      [
+        48.887693,
+        2.340294
+      ],
+      [
+        48.887653,
+        2.340567
+      ],
+      [
+        48.887631,
+        2.340608
+      ],
+      [
+        48.887611,
+        2.340747
+      ],
+      [
+        48.887599,
+        2.340864
+      ],
+      [
+        48.887593,
+        2.341004
+      ],
+      [
+        48.887585,
+        2.341286
+      ],
+      [
+        48.887578,
+        2.341464
+      ],
+      [
+        48.887562,
+        2.341491
+      ],
+      [
+        48.887542,
+        2.341505
+      ],
+      [
+        48.887526,
+        2.341497
+      ],
+      [
+        48.887499,
+        2.341483
+      ],
+      [
+        48.887158,
+        2.341352
+      ],
+      [
+        48.88715,
+        2.341401
+      ],
+      [
+        48.887141,
+        2.341459
+      ],
+      [
+        48.88701,
+        2.342317
+      ],
+      [
+        48.88701,
+        2.342403
+      ],
+      [
+        48.886983,
+        2.342414
+      ],
+      [
+        48.88697,
+        2.342467
+      ],
+      [
+        48.8869,
+        2.342478
+      ],
+      [
+        48.886778,
+        2.342491
+      ],
+      [
+        48.88665,
+        2.342511
+      ],
+      [
+        48.886429,
+        2.342537
+      ],
+      [
+        48.886302,
+        2.342552
+      ],
+      [
+        48.886305,
+        2.342609
+      ],
+      [
+        48.886308,
+        2.342694
+      ],
+      [
+        48.886311,
+        2.342753
+      ],
+      [
+        48.886304,
+        2.342754
+      ],
+      [
+        48.886292,
+        2.342759
+      ],
+      [
+        48.886283,
+        2.342766
+      ],
+      [
+        48.886274,
+        2.342776
+      ],
+      [
+        48.886268,
+        2.342784
+      ],
+      [
+        48.886264,
+        2.342794
+      ],
+      [
+        48.886259,
+        2.342809
+      ],
+      [
+        48.886256,
+        2.342826
+      ],
+      [
+        48.886255,
+        2.342842
+      ],
+      [
+        48.886259,
+        2.342913
+      ],
+      [
+        48.886251,
+        2.342914
+      ],
+      [
+        48.886244,
+        2.342919
+      ],
+      [
+        48.886239,
+        2.342925
+      ],
+      [
+        48.886235,
+        2.342931
+      ],
+      [
+        48.886232,
+        2.34294
+      ],
+      [
+        48.886229,
+        2.342952
+      ],
+      [
+        48.886237,
+        2.343095
+      ],
+      [
+        48.8862,
+        2.343104
+      ]
+    ]
+  ],
+  "audio": {
+    "base": "audio/paris/montmartre/",
+    "credit": "Voz generada con IA (ElevenLabs)",
+    "stops": {
+      "deux-moulins": {
+        "paras": [
+          "deux-moulins-p0.mp3",
+          "deux-moulins-p1.mp3",
+          "deux-moulins-p2.mp3",
+          "deux-moulins-p3.mp3",
+          "deux-moulins-p4.mp3",
+          "deux-moulins-p5.mp3"
+        ],
+        "quiz": "deux-moulins-q.mp3",
+        "ok": "deux-moulins-ok.mp3",
+        "ko": "deux-moulins-ko.mp3",
+        "skip": "deux-moulins-skip.mp3",
+        "more": {
+          "ask": "deux-moulins-mas.mp3",
+          "paras": [
+            "deux-moulins-m0.mp3",
+            "deux-moulins-m1.mp3",
+            "deux-moulins-m2.mp3",
+            "deux-moulins-m3.mp3"
+          ]
+        }
+      }
+    },
+    "files": {
+      "deux-moulins-p0.mp3": {
+        "v": "df47b130",
+        "b": 487384
+      },
+      "deux-moulins-p1.mp3": {
+        "v": "40a7b91c",
+        "b": 578499
+      },
+      "deux-moulins-p2.mp3": {
+        "v": "0793be33",
+        "b": 425944
+      },
+      "deux-moulins-p3.mp3": {
+        "v": "e13fb31e",
+        "b": 559273
+      },
+      "deux-moulins-p4.mp3": {
+        "v": "53760957",
+        "b": 522075
+      },
+      "deux-moulins-p5.mp3": {
+        "v": "f9f23727",
+        "b": 213621
+      },
+      "deux-moulins-q.mp3": {
+        "v": "085b6f73",
+        "b": 171407
+      },
+      "deux-moulins-ok.mp3": {
+        "v": "b752486e",
+        "b": 17598
+      },
+      "deux-moulins-ko.mp3": {
+        "v": "d456dda1",
+        "b": 69007
+      },
+      "deux-moulins-skip.mp3": {
+        "v": "293f7952",
+        "b": 71515
+      },
+      "deux-moulins-mas.mp3": {
+        "v": "12703f6a",
+        "b": 232847
+      },
+      "deux-moulins-m0.mp3": {
+        "v": "2834a3e7",
+        "b": 494071
+      },
+      "deux-moulins-m1.mp3": {
+        "v": "834ab800",
+        "b": 386238
+      },
+      "deux-moulins-m2.mp3": {
+        "v": "eaf9fb30",
+        "b": 333993
+      },
+      "deux-moulins-m3.mp3": {
+        "v": "d5fc5b1f",
+        "b": 271299
+      }
+    }
+  }
+}
