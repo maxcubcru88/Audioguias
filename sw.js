@@ -1,6 +1,6 @@
 /* Service worker: la app y el recorrido funcionan sin conexión una vez abiertos.
    Al publicar cambios: sube VERSION aquí y el ?v= de css/js en index.html y en FILES. */
-const VERSION = 'v33';
+const VERSION = 'v34';
 const SHELL = 'shell-' + VERSION;
 const MAP = 'map-v1';
 const FONTS = 'fonts-v1';
@@ -18,9 +18,9 @@ const FILES = [
   'vendor/maplibre/maplibre-gl.css',
   'vendor/maplibre/maplibre-gl.js',
   'manifest.webmanifest',
-  'icons/icon-192.png',
-  'icons/icon-512.png',
-  'icons/apple-touch-icon.png',
+  'icons/icon-192.png?v=2',
+  'icons/icon-512.png?v=2',
+  'icons/apple-touch-icon.png?v=2',
   'icons/ciudades/paris.svg',
   'icons/ciudades/londres.svg',
   'icons/ciudades/sevilla.svg',
