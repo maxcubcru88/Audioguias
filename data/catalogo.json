@@ -17,6 +17,7 @@
           "label": "Centro",
           "title": "El corazón de París",
           "subtitle": "Del Ayuntamiento a las Tullerías, cruzando la isla de la Cité",
+          "color": "#2D5DA8",
           "file": "data/paris/centro.json",
           "status": "ready"
         },
@@ -25,6 +26,7 @@
           "label": "Barrio Latino",
           "title": "Los orígenes de París",
           "subtitle": "Un paseo por el Barrio Latino, de la Lutecia romana a la Sorbona",
+          "color": "#2E8B57",
           "file": "data/paris/latino.json",
           "status": "ready"
         },
@@ -33,7 +35,17 @@
           "label": "Montmartre",
           "title": "El corazón bohemio de París",
           "subtitle": "Un paseo por Montmartre, de los cabarets al Sacré-Cœur",
+          "color": "#C4532D",
           "file": "data/paris/montmartre.json",
+          "status": "ready"
+        },
+        {
+          "id": "torre-eiffel",
+          "label": "Torre Eiffel",
+          "title": "El París de Napoleón y la Torre Eiffel",
+          "subtitle": "De los Inválidos al Trocadero, pasando a los pies de la torre",
+          "color": "#7A4E9C",
+          "file": "data/paris/torre-eiffel.json",
           "status": "ready"
         }
       ],
@@ -63,6 +75,7 @@
           "label": "Westminster",
           "title": "El Londres de reyes y ministros",
           "subtitle": "De Trafalgar al Big Ben, entre palacios, guardias y Downing Street",
+          "color": "#C8102E",
           "file": "data/londres/westminster.json",
           "status": "ready"
         },
@@ -71,6 +84,7 @@
           "label": "La City",
           "title": "Dos mil años de Londres",
           "subtitle": "De los tribunales a la Torre, entre templarios, incendios y bombas",
+          "color": "#2D5DA8",
           "file": "data/londres/city.json",
           "status": "ready"
         }
@@ -101,6 +115,7 @@
           "label": "Centro",
           "title": "Catedral, Alcázar y Santa Cruz",
           "subtitle": "La Giralda, el Alcázar y los callejones de la judería",
+          "color": "#B07A12",
           "status": "wip"
         },
         {
@@ -108,6 +123,7 @@
           "label": "Triana",
           "title": "Triana y el río",
           "subtitle": "Plaza de España, la Torre del Oro y el barrio de Triana",
+          "color": "#1F7A8C",
           "status": "wip"
         }
       ],

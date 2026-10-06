@@ -225,6 +225,37 @@ button{cursor:pointer}
 .route-card.is-wip .rc-title{color:var(--muted)}
 .empty{margin:0;color:var(--muted)}
 
+/* ---------- Ciudad: lista o mapa con todas las rutas ---------- */
+.city-seg{background:var(--surface);box-shadow:0 1px 3px rgba(20,33,45,.08)}
+.city-seg button{display:inline-flex;align-items:center;justify-content:center;gap:7px}
+.city-seg svg{width:17px;height:17px}
+#cityView button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);box-shadow:none}
+.rc-dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:7px;vertical-align:1px}
+#city.is-map .lede{display:none}
+#city.is-map .city-head{grid-template-columns:auto minmax(0,1fr);align-items:center;gap:14px}
+#city.is-map .mascot-lg{width:56px;height:56px;border-radius:14px}
+#city.is-map .city-head h1{font-size:46px}
+#city.is-map .screen-inner{padding-bottom:calc(16px + env(safe-area-inset-bottom,0px))}
+.cm-box{position:relative;height:calc(100vh - 236px);height:calc(100dvh - 236px - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px));min-height:380px;border-radius:16px;overflow:hidden;background:var(--line);box-shadow:0 1px 3px rgba(20,33,45,.12)}
+#cityMap{position:absolute;inset:0}
+#cityMap .maplibregl-ctrl-bottom-right,#cityMap .maplibregl-ctrl-bottom-left{bottom:var(--cm-card,0px)}
+.cm-chips{position:absolute;top:10px;left:10px;right:10px;z-index:2;display:flex;flex-wrap:wrap;gap:6px;pointer-events:none}
+.cm-chip{pointer-events:auto;flex:none;display:inline-flex;align-items:center;gap:7px;border:0;border-radius:999px;padding:7px 11px;background:var(--surface);color:var(--ink);font-size:13px;font-weight:600;line-height:1.2;box-shadow:0 1px 4px rgba(20,33,45,.2)}
+.cm-chip i{width:10px;height:10px;border-radius:50%;background:var(--c);flex:none}
+.cm-chip[aria-pressed="true"]{background:var(--c);color:#fff}
+.cm-chip[aria-pressed="true"] i{background:#fff}
+.cm-loc{position:absolute;top:var(--cm-top,52px);right:10px;z-index:2;width:40px;height:40px}
+.cm-card{position:absolute;left:10px;right:10px;bottom:10px;z-index:2;background:var(--surface);border-radius:14px;padding:14px 16px 16px;box-shadow:var(--shadow);display:grid;gap:3px}
+.cm-card .x{position:absolute;top:10px;right:10px}
+.cm-card .eyebrow{padding-right:40px}
+.cm-card .rc-title{margin:0;padding-right:36px}
+.cm-card .rc-meta{margin:2px 0 0}
+.cm-note{margin:0 0 10px;font-size:14px;color:var(--muted)}
+.cm-card .btn{text-decoration:none}
+.cm-hint{position:absolute;left:50%;bottom:14px;transform:translateX(-50%);z-index:2;white-space:nowrap;background:var(--surface);color:var(--muted);font-size:13.5px;font-weight:600;padding:8px 14px;border-radius:999px;box-shadow:0 1px 4px rgba(20,33,45,.2);pointer-events:none}
+.cm-stop{display:grid;place-items:center;width:24px;height:24px;border-radius:50%;border:2px solid #fff;color:#fff;font-family:var(--f-plaque);font-weight:700;font-size:14px;line-height:1;font-variant-numeric:tabular-nums;box-shadow:0 1px 3px rgba(0,0,0,.35);pointer-events:none}
+.cm-stop.is-first{width:30px;height:30px;font-size:17px;z-index:1}
+
 /* ---------- Paradas y ajustes ---------- */
 .sheet{position:fixed;inset:0;z-index:15;background:rgba(10,18,25,.45);display:flex;align-items:flex-end;justify-content:center}
 @media (min-width:700px){ .sheet{align-items:center} }

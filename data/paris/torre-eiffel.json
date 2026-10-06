@@ -1,0 +1,1963 @@
+{
+  "id": "torre-eiffel",
+  "city": "paris",
+  "title": "El París de Napoleón y la Torre Eiffel",
+  "subtitle": "De los Inválidos al Trocadero, pasando a los pies de la torre",
+  "lang": "es-ES",
+  "meeting": {
+    "name": "Puente Alejandro III",
+    "address": "Pont Alexandre III, 75007 París, Francia",
+    "note": "En la entrada del puente del lado de los Inválidos. Metro y RER: Invalides."
+  },
+  "stops": [
+    {
+      "id": "pont-alexandre-iii",
+      "title": "Puente Alejandro III",
+      "subtitle": "El puente más dorado de París, regalo de una alianza",
+      "lat": 48.86305,
+      "lng": 2.31347,
+      "radius": 50,
+      "where": "En la entrada del puente del lado de los Inválidos, junto a las altas columnas con figuras doradas, mirando hacia el río y las cúpulas de cristal del Grand Palais.",
+      "paras": [
+        "¡Bonjour! Bienvenido a tu free tour de bolsillo por el París de Napoleón y de la Torre Eiffel. Vamos a ir de aquí, de los Inválidos, hasta el Trocadero, pasando a los pies de la torre. Son unos cuatro kilómetros y medio, todo llano, así que hoy las piernas no tienen excusa. Yo pongo las historias; tú, la curiosidad. Como en todo buen free tour, de vez en cuando te haré una pregunta para adivinar. Y en algunas paradas, si te quedas con ganas, te ofreceré una historia extra para curiosos.",
+        "Empezamos por todo lo alto: el puente Alejandro III, para muchos el más bonito de París. Fíjate en las cuatro columnas de las esquinas, coronadas por figuras doradas con caballos alados: son las Famas, que pregonan la gloria de Francia. Farolas, guirnaldas, ninfas, conchas… aquí nadie ahorró en pan de oro. Vamos, que si los puentes de París fueran a una boda, este sería el que va de etiqueta.",
+        "Ojo, que papa y rey de Escocia con ese nombre también hubo. Pero este era el de Rusia. A finales del siglo diecinueve, Francia y Rusia firmaron una alianza, y este puente se hizo para celebrarla. Alejandro murió antes de verlo, así que la primera piedra la puso en 1896 su hijo, Nicolás segundo, el último de los zares. Por eso, en el centro del arco, por fuera, hay una ninfa del Sena a un lado y una del Neva, el río de San Petersburgo, al otro. Amistad internacional, versión bañada en oro. Aquel día de 1896 lo tienes en el móvil.",
+        "Al otro lado del río, esas dos joyas de cristal y piedra son el Grand Palais y el Petit Palais, construidos para la Exposición Universal de 1900, igual que este puente. El grande, con su techo de cristal, parece una estación de tren vestida de gala: ahí se celebran desfiles, ferias y exposiciones, y en los Juegos Olímpicos de 2024 hasta combates de esgrima. El pequeño es un museo gratuito, por si un día te pilla la lluvia.",
+        "Y el puente tiene truco. Es un solo arco de acero, muy plano, sin ningún pilar en el agua. ¿Por qué tan bajito? Porque no podía tapar la vista: desde los Campos Elíseos, al otro lado del río, había que seguir viendo la cúpula de los Inválidos. Date la vuelta y la verás, dorada, al fondo de la explanada. Hacia allí vamos."
+      ],
+      "images": [
+        {
+          "src": "img/paris/torre-eiffel/pont-alexandre-iii.webp",
+          "w": 900,
+          "h": 618,
+          "para": 2,
+          "after": "Aquel día de 1896 lo tienes en el móvil.",
+          "caption": "La primera piedra del puente, el 7 de octubre de 1896, con el zar Nicolás segundo",
+          "credit": "Paul Merwart · CC0",
+          "source": "https://commons.wikimedia.org/wiki/File:Paris_-_Pose_de_la_premi%C3%A8re_pierre_du_pont_Alexandre_III._QB.399.jpg"
+        }
+      ],
+      "quiz": {
+        "before": 2,
+        "q": "El puente lleva el nombre de Alejandro tercero. ¿Quién crees que era?",
+        "options": [
+          "Un papa",
+          "Un zar de Rusia",
+          "Un rey de Escocia"
+        ],
+        "answer": 1
+      },
+      "toNext": "Baja del puente hacia la gran explanada de césped que tienes delante y camina por ella hasta el fondo, hacia el edificio largo con la cúpula dorada detrás. Párate antes del foso, frente a la entrada principal."
+    },
+    {
+      "id": "invalides",
+      "title": "Los Inválidos",
+      "subtitle": "El hogar de los soldados y el lobo de Louvois",
+      "lat": 48.85807,
+      "lng": 2.31353,
+      "radius": 60,
+      "where": "Al final de la explanada, frente a la entrada principal del edificio, con el foso y los cañones delante.",
+      "paras": [
+        "Este edificio enorme es el Hôtel des Invalides. En 1670, el rey Luis catorce, el Rey Sol, decidió construir un hogar para los soldados que volvían de sus guerras heridos, mutilados o, simplemente, viejos y sin un duro. Hasta entonces acababan pidiendo limosna por las calles. Aquí llegaron a vivir unos cuatro mil, con cama, comida, hospital e iglesia. Eso sí, con disciplina militar: aquí no se venía de vacaciones.",
+        "Lo diseñó el arquitecto Libéral Bruant. Y no, no tiene nada que ver con el cantante de los insultos de Montmartre, si hiciste esa ruta. Fíjate en los cañones del foso: son trofeos de guerra de varios siglos. Y mira encima de la puerta: ahí está Luis catorce a caballo, flanqueado por la Justicia y la Prudencia, que modestia no le sobraba.",
+        "A Napoleón este sitio le encantaba. Aquí, en la iglesia de los soldados, entregó en 1804 las primeras medallas de la Legión de Honor, la condecoración que él mismo había creado y que todavía hoy es la más importante de Francia. Ahora el edificio alberga el museo del Ejército, con armaduras, cañones y hasta el caballo de Napoleón, el Vizir, disecado. Sí, has oído bien: disecado.",
+        "Y ahora, un chiste de piedra. El ministro de la Guerra, Louvois, fue el gran impulsor de la obra, y quería dejar su huella en ella. Cuentan que el rey no se lo permitió. Así que en el patio, en una de las buhardillas, se esculpió un lobo con los ojos bien abiertos. Un lobo que ve: en francés, le loup voit. Louvois. Un jeroglífico en toda regla. En la app tienes la foto, porque desde aquí no se ve.",
+        "Esa mañana, una multitud entró en los sótanos y se llevó unos treinta mil fusiles y varios cañones. Pero les faltaba la pólvora, y la pólvora estaba en la Bastilla. Lo que pasó después ya lo conoces. Total, que la Revolución empezó con una visita a la armería."
+      ],
+      "images": [
+        {
+          "src": "img/paris/torre-eiffel/invalides.webp",
+          "w": 825,
+          "h": 1100,
+          "para": 3,
+          "after": "En la app tienes la foto, porque desde aquí no se ve.",
+          "caption": "La buhardilla del lobo de Louvois, en el patio de los Inválidos",
+          "credit": "Foto: Tangopaso · Dominio público",
+          "source": "https://commons.wikimedia.org/wiki/File:Fenestron_'Le_loup_voit'_(Invalides).jpg"
+        }
+      ],
+      "quiz": {
+        "before": 4,
+        "q": "El 14 de julio de 1789, el día de la toma de la Bastilla, los parisinos pasaron antes por aquí. ¿A qué crees que vinieron?",
+        "options": [
+          "A llevarse armas",
+          "A liberar a los soldados",
+          "A pedir comida"
+        ],
+        "answer": 0
+      },
+      "toNext": "De cara al edificio, rodéalo por la izquierda: sigue el bulevar de los Inválidos, la calle ancha de ese lado, hasta la parte de atrás, donde se levanta la cúpula dorada sobre una fachada con columnas. Ponte enfrente, en la plaza Vauban."
+    },
+    {
+      "id": "dome-des-invalides",
+      "title": "La cúpula de los Inválidos",
+      "subtitle": "Doce kilos de oro y la tumba de Napoleón",
+      "lat": 48.85396,
+      "lng": 2.31245,
+      "radius": 60,
+      "where": "En la plaza Vauban, frente a la fachada de la iglesia de la cúpula.",
+      "paras": [
+        "Mira hacia arriba. Esta cúpula de ciento siete metros es una de las joyas de París. La levantó Jules Hardouin-Mansart, el arquitecto de Versalles, como capilla real para Luis catorce. Y brilla así porque está cubierta de pan de oro: en la restauración de 1989, se usaron unas quinientas cincuenta mil hojas, unos doce kilos de oro. Que se dice pronto.",
+        "Pero hoy casi todo el mundo viene por su inquilino más famoso: Napoleón Bonaparte. Murió en 1821, desterrado en Santa Elena, una islita perdida en mitad del Atlántico, y allí lo enterraron. Diecinueve años después, el rey Luis Felipe, que no era precisamente bonapartista, pidió permiso a los ingleses para traerlo de vuelta. Una jugada política: Napoleón seguía siendo muy popular, y al rey no le venía mal un poco de su gloria.",
+        "Según las crónicas, las calles se llenaron de punta a punta, y con un frío que pelaba. El carro fúnebre medía diez metros de alto y tiraban de él dieciséis caballos: si sacas el móvil, verás el cortejo camino de los Inválidos. Pero la tumba que hay dentro no se terminó hasta 1861: un sarcófago de cuarcita roja traída de Rusia, sobre una base de granito verde. Sí, de Rusia: justo el país donde perdió su ejército. Y dentro, el cuerpo va en varios ataúdes metidos uno dentro de otro, como una muñeca rusa. Por si acaso, digo yo.",
+        "Para ver la tumba hay que entrar al museo, y merece la pena: el sarcófago está en una cripta abierta, y para verlo tienes que asomarte desde arriba, inclinando la cabeza. Dicen que se hizo así a propósito, para que todo el que lo visite haga una reverencia ante el emperador. Ni muerto renunciaba al protocolo."
+      ],
+      "images": [
+        {
+          "src": "img/paris/torre-eiffel/dome-des-invalides.webp",
+          "w": 758,
+          "h": 533,
+          "para": 2,
+          "after": "El carro fúnebre medía diez metros de alto y tiraban de él dieciséis caballos: si sacas el móvil, verás el cortejo camino de los Inválidos.",
+          "caption": "El carro fúnebre de Napoleón en la explanada de los Inválidos, 15 de diciembre de 1840",
+          "credit": "Adolphe Bayot y Eugène Guérard · Dominio público",
+          "source": "https://commons.wikimedia.org/wiki/File:Retour_des_Cendres_-_6.jpg"
+        }
+      ],
+      "quiz": {
+        "before": 2,
+        "q": "El 15 de diciembre de 1840 llegaron los restos de Napoleón a París. ¿Cuánta gente crees que salió a la calle a recibirlo?",
+        "options": [
+          "Unos pocos miles",
+          "Unas cincuenta mil personas",
+          "Cientos de miles"
+        ],
+        "answer": 2
+      },
+      "more": {
+        "title": "El día que abrieron el ataúd de Napoleón",
+        "ask": "¿Quieres saber qué encontraron cuando abrieron el ataúd de Napoleón en Santa Elena? Si te apetece, toca «Cuéntame más». Si no, seguimos.",
+        "paras": [
+          "Octubre de 1840, isla de Santa Elena. Soldados ingleses cavan en un valle, bajo unos sauces, mientras los franceses miran con el corazón en un puño. La tumba estaba hecha a prueba de todo: piedra, cemento y hierro, y tardaron horas en llegar al ataúd. Entre los testigos estaban algunos de los que lo habían enterrado en 1821, como su fiel general Bertrand. Esa escena la tienes en el móvil, en una litografía de la época.",
+          "Abrieron un ataúd, y otro, y otro más: hasta cuatro. Y al levantar la última tapa, sorpresa general. Napoleón estaba casi intacto, perfectamente reconocible, con su uniforme verde de la guardia, el sombrero sobre las piernas y las manos tal como las había dejado Bertrand. Hasta el rojo de las solapas conservaba el color. Lo miraron apenas dos o tres minutos y volvieron a cerrar, para que el aire no lo estropeara.",
+          "¿Cómo era posible? Seguramente, por los ataúdes, cerrados a cal y canto. Pero en el siglo veinte nació otra teoría: que lo habían envenenado con arsénico, que también conserva los cuerpos. Se analizaron pelos suyos y, efectivamente, tenían mucho arsénico. Eso sí, también los de cuando era niño, y los de su primera mujer. En aquella época el arsénico estaba hasta en el papel pintado de las paredes. La mayoría de los expertos apuesta por un cáncer de estómago, como el de su padre. Pero la teoría del veneno sigue teniendo muchos fans.",
+          "Y una última curiosidad, de las que se cuentan en voz baja. Dicen que en la autopsia, en 1821, alguien se guardó un recuerdo muy personal del emperador. Ese trocito pasó de mano en mano durante siglo y medio, y en 1977 lo compró en una subasta un urólogo americano. Nadie ha demostrado que sea suyo. Pero, si lo es, Napoleón no está entero en los Inválidos: le falta, digamos, la parte más imperial."
+        ],
+        "images": [
+          {
+            "src": "img/paris/torre-eiffel/dome-des-invalides-mas.webp",
+            "w": 900,
+            "h": 578,
+            "para": 0,
+            "after": "Esa escena la tienes en el móvil, en una litografía de la época.",
+            "caption": "La exhumación de Napoleón en Santa Elena, en 1840, en una estampa de la época",
+            "credit": "Biblioteca Nacional de Francia · Dominio público",
+            "source": "https://commons.wikimedia.org/wiki/File:Exhumation_des_cendres_de_l'Empereur_Napol%C3%A9on_-_estampe_-_btv1b530122486.jpg"
+          }
+        ]
+      },
+      "toNext": "Ponte de espaldas a la cúpula y toma la avenida que sale a tu derecha, la de Tourville. Síguela recta hasta el gran edificio clásico del final: la Escuela Militar. Bordéalo por la avenida de La Motte-Picquet, dejándolo a tu izquierda, hasta su fachada principal, la que da a los jardines del Campo de Marte, en la plaza Joffre, la de la estatua de un militar a caballo."
+    },
+    {
+      "id": "ecole-militaire",
+      "title": "La Escuela Militar",
+      "subtitle": "El colegio de Napoleón y la lotería de Casanova",
+      "lat": 48.85298,
+      "lng": 2.30304,
+      "radius": 50,
+      "where": "En la plaza Joffre, frente a la fachada de la Escuela Militar, con el Campo de Marte a tu espalda.",
+      "paras": [
+        "Este palacio de columnas y cúpula cuadrada es la Escuela Militar. La fundó en 1751 el rey Luis quince para formar a quinientos jóvenes nobles sin fortuna. La idea la empujaron dos personajes: un banquero muy listo, Pâris-Duverney, y la amante oficial del rey, Madame de Pompadour, que tenía mano en casi todo lo que pasaba en Versalles. Para entonces ya no compartía cama con el rey, pero seguía compartiendo todo lo demás.",
+        "Lo malo era el dinero: la obra costaba una fortuna y las arcas estaban vacías. ¿La solución? Un impuesto sobre las barajas de cartas y, más tarde, una lotería. Y aquí entra en escena alguien inesperado: Giacomo Casanova, sí, el famoso seductor veneciano. Ayudó a poner en marcha la lotería de la escuela, en 1757, y se hizo rico con ella. Para que luego digan que solo sabía de amores.",
+        "Un puesto del montón, según la cifra que más se repite. Nada brillante, ¿eh? Eso sí, terminó en un año lo que a otros les costaba dos. Sus compañeros se burlaban de su acento corso, y él se pasaba el día leyendo. Pocos años después era general, y luego emperador. Así que, si alguna vez sacaste malas notas, no pierdas la esperanza.",
+        "Pero esta escuela también guarda un recuerdo amargo. El 5 de enero de 1895, en uno de sus patios, el capitán Alfred Dreyfus, un oficial judío acusado falsamente de espiar para Alemania, fue degradado en público: le arrancaron los galones y le partieron el sable delante de la tropa, mientras la multitud gritaba desde fuera. Era inocente. Hicieron falta años, y un artículo famosísimo de Émile Zola, Yo acuso, para limpiar su nombre.",
+        "Hoy sigue siendo escuela, ahora de los oficiales del ejército francés. Y ahora date la vuelta, que la vista merece la pena."
+      ],
+      "images": [],
+      "quiz": {
+        "before": 2,
+        "q": "En 1784 entró aquí un cadete corso de quince años: Napoleón Bonaparte. Al acabar, ¿qué puesto crees que sacó en su promoción?",
+        "options": [
+          "El primero, cómo no",
+          "El cuarenta y dos de cincuenta y ocho",
+          "El último"
+        ],
+        "answer": 1
+      },
+      "more": {
+        "title": "Casanova, de fugitivo a millonario",
+        "ask": "Casanova llegó a París recién fugado de la cárcel más segura de Venecia. ¿Te cuento cómo pasó de fugitivo a millonario? Si te apetece, toca «Cuéntame más». Si no, seguimos.",
+        "paras": [
+          "Venecia, 1756. Casanova está encerrado en los Plomos, la cárcel bajo el tejado del Palacio Ducal, acusado de un poco de todo: libertinaje, magia y malas compañías. Su cara de aquella época la tienes en el móvil, pintada por su hermano. De allí no se había escapado nadie. Él, con un pincho de hierro escondido, abre un agujero en el techo, sale a los tejados con un monje cómplice y acaba bajando por la escalera principal del palacio, tan tranquilo, como si fuera de visita.",
+          "En enero de 1757 llega a París, sin un céntimo pero con mucha labia. Justo entonces, el gobierno busca dinero para esta escuela. Casanova y unos socios italianos convencen a los ministros de algo nuevo: una lotería a la genovesa. Noventa números, se sacan cinco, y tú apuestas por un número, por dos o por tres. Si aciertas, cobras muchas veces lo apostado. Y si no, que es lo normal, la escuela se lo queda.",
+          "El primer sorteo, en abril de 1758, fue un éxito tremendo. A Casanova le dieron seis oficinas de venta de billetes; vendió cinco y se quedó una. Solo con ese primer sorteo se embolsó veinte mil libras, una fortuna. Carruajes, ropa de seda, casa elegante… y, según él, media ciudad rendida a sus pies. Ojo, que esto lo sabemos por sus memorias, y Casanova no era precisamente modesto.",
+          "¿Y el final? El de siempre: lo gastó todo, se metió en negocios ruinosos y acabó en la cárcel por deudas. Murió muy lejos de aquí, de bibliotecario en un castillo de Bohemia, escribiendo sus memorias. La lotería, en cambio, le sobrevivió: se convirtió en la lotería real y duró casi ochenta años. Y la escuela se terminó, que era lo importante."
+        ],
+        "images": [
+          {
+            "src": "img/paris/torre-eiffel/ecole-militaire-mas.webp",
+            "w": 855,
+            "h": 1100,
+            "para": 0,
+            "after": "Su cara de aquella época la tienes en el móvil, pintada por su hermano.",
+            "caption": "Giacomo Casanova hacia 1750, pintado por su hermano Francesco",
+            "credit": "Francesco Casanova · Dominio público",
+            "source": "https://commons.wikimedia.org/wiki/File:Casanova_ritratto.jpg"
+          }
+        ]
+      },
+      "toNext": "Cruza hacia los jardines y camina por el paseo de la derecha del Campo de Marte, hacia la torre. A mitad de camino, donde lo cruza una calle, la avenida Joseph Bouvard, párate."
+    },
+    {
+      "id": "champ-de-mars",
+      "title": "El Campo de Marte",
+      "subtitle": "La gran fiesta de la Revolución y las Exposiciones Universales",
+      "lat": 48.8557,
+      "lng": 2.29894,
+      "radius": 60,
+      "where": "En uno de los paseos laterales del Campo de Marte, a medio camino entre la Escuela Militar y la torre.",
+      "paras": [
+        "Esto era el campo de maniobras de la escuela: un descampado de tierra donde los cadetes desfilaban y hacían ejercicios. Por eso se llama Campo de Marte, por Marte, el dios romano de la guerra. Y como era el espacio libre más grande de París, acabó siendo el escenario de las grandes fiestas de la ciudad.",
+        "La más emocionante fue el 14 de julio de 1790, el primer aniversario de la toma de la Bastilla: la fiesta de la Federación. Para prepararla había que mover toneladas de tierra y levantar gradas, y no daba tiempo. ¿Y qué pasó? Que miles de parisinos se presentaron a ayudar con picos y carretillas: obreros, monjes, estudiantes, damas elegantes… En la app tienes un grabado de aquella obra. Y mientras trabajaban, cantaban una canción que se hizo famosa: Ça ira, saldrá bien.",
+        "Era el obispo de Autun, y un obispo muy particular: jugador, mujeriego y con muy poca fe. Cuentan que Talleyrand, al subir al altar, le susurró a Lafayette: no me hagas reír. Ese día llovió a cántaros, pero cientos de miles de personas juraron aquí fidelidad a la nación, a la ley y al rey. Talleyrand, por cierto, acabaría siendo ministro de Napoleón, y luego de los reyes que vinieron detrás. Cambiaba de chaqueta con una elegancia que ya quisieran muchos.",
+        "Este campo ha visto de todo. Si escuchaste la historia de los globos en nuestra ruta del centro, el globo de hidrógeno sin tripulantes que los campesinos de Gonesse atacaron con horcas despegó de aquí, en 1783. Y en los Juegos Olímpicos de 2024, este jardín acogió el vóley playa, con la torre de fondo. Nunca unos partidos tuvieron un decorado tan caro.",
+        "Y, sobre todo, aquí se celebraron las Exposiciones Universales: cinco, entre 1867 y 1937, con pabellones de medio mundo y millones de visitantes. Casi todo se desmontó al terminar. Casi todo. Mira al frente: ahí tienes lo que se quedó."
+      ],
+      "images": [
+        {
+          "src": "img/paris/torre-eiffel/champ-de-mars.webp",
+          "w": 1100,
+          "h": 699,
+          "para": 1,
+          "after": "En la app tienes un grabado de aquella obra.",
+          "caption": "Los parisinos preparan el Campo de Marte para la fiesta de la Federación, 1790",
+          "credit": "Grabado · Museo Carnavalet · CC0",
+          "source": "https://commons.wikimedia.org/wiki/File:Travaux_de_la_f%C3%A9d%C3%A9ration_au_Champ-de-Mars_(1790)._G.28134.jpg"
+        }
+      ],
+      "quiz": {
+        "before": 2,
+        "q": "La misa de aquella fiesta la celebró un obispo que acabaría siendo uno de los políticos más famosos de Francia. ¿Quién crees que fue?",
+        "options": [
+          "Talleyrand",
+          "Sieyès",
+          "Fouché"
+        ],
+        "answer": 0
+      },
+      "toNext": "Sigue por el paseo hacia la torre. Cuando llegues a los paneles de cristal que la rodean, bordéalos por la derecha hasta el muelle, la calle ancha que pasa entre la torre y el río, junto al pilar más cercano al Sena."
+    },
+    {
+      "id": "tour-eiffel",
+      "title": "La Torre Eiffel",
+      "subtitle": "El mecano que nadie quería",
+      "lat": 48.85938,
+      "lng": 2.29373,
+      "radius": 50,
+      "where": "En el muelle, entre la torre y el río, junto al pilar norte, por fuera de los cristales.",
+      "paras": [
+        "Aquí la tienes, en todo su esplendor. Echa la cabeza atrás: trescientos treinta metros de hierro, contando la antena. Cuando se terminó, en 1889, era la estructura más alta construida por el ser humano, y lo siguió siendo durante cuarenta años. Se levantó en solo dos años, dos meses y cinco días, con dieciocho mil piezas y dos millones y medio de remaches. Cada pieza llegaba del taller con los agujeros ya hechos, como un mecano gigante. Si sacas el móvil, verás la torre a medio hacer, en 1888.",
+        "Y es más viva de lo que parece. Con el calor del verano, el hierro se dilata y la torre crece unos quince centímetros. Para que no se oxide, se pinta a mano cada siete años más o menos, con unas sesenta toneladas de pintura, en un color con nombre propio: marrón Torre Eiffel. Y en el friso del primer piso hay setenta y dos nombres de sabios franceses grabados en oro. Todos hombres; París ya ha elegido setenta y dos científicas para hacerles compañía.",
+        "Se hizo para la Exposición Universal de 1889, la del centenario de la Revolución. Y aquí viene lo bueno: el primer dibujo no fue de Gustave Eiffel. Lo hicieron dos ingenieros de su empresa, Maurice Koechlin y Émile Nouguier. En el móvil tienes aquel primer boceto. Un arquitecto lo embelleció con los grandes arcos de abajo, que no sostienen nada: son de adorno. Eiffel les compró los derechos, y la torre se quedó con su nombre. El que paga, firma.",
+        "No todo el mundo la quiso. En 1887, con la obra recién empezada, un grupo de artistas firmó una carta contra esta torre inútil y monstruosa: entre ellos, el escritor Guy de Maupassant y Charles Garnier, el arquitecto de la Ópera. Se cuenta que Maupassant comía luego a menudo en el restaurante de la torre, porque era el único sitio de París desde donde no la veía. Seguramente es leyenda, pero es demasiado buena para no contarla.",
+        "En 1909 tenía que desmontarse. Eiffel, que no tenía un pelo de tonto, la convirtió en laboratorio: meteorología, experimentos con el viento… Pero lo que de verdad la salvó fue la radio. En 1898 se hizo desde la torre una de las primeras transmisiones sin hilos de Francia, y el ejército vio que era una antena perfecta. En la Primera Guerra Mundial interceptó mensajes del enemigo, y se le atribuye un papel en la captura de la espía Mata Hari. Y así, la torre provisional se quedó para siempre."
+      ],
+      "images": [
+        {
+          "src": "img/paris/torre-eiffel/tour-eiffel-2.webp",
+          "w": 832,
+          "h": 1005,
+          "para": 0,
+          "after": "Si sacas el móvil, verás la torre a medio hacer, en 1888.",
+          "caption": "La torre en obras, el 14 de septiembre de 1888",
+          "credit": "Foto: Théophile Féau · Museo Carnavalet · CC0",
+          "source": "https://commons.wikimedia.org/wiki/File:Construction_de_la_tour_Eiffel,_7%C3%A8me_arrondissement,_Paris._14_septembre_1888,_PH9114-12.jpg"
+        },
+        {
+          "src": "img/paris/torre-eiffel/tour-eiffel.webp",
+          "w": 750,
+          "h": 1086,
+          "para": 2,
+          "after": "En el móvil tienes aquel primer boceto.",
+          "caption": "El primer boceto de la torre, de Koechlin y Nouguier, 1884",
+          "credit": "Maurice Koechlin y Émile Nouguier · Dominio público",
+          "source": "https://commons.wikimedia.org/wiki/File:Maurice_koechlin_pylone.jpg"
+        }
+      ],
+      "quiz": {
+        "before": 4,
+        "q": "El permiso para levantar la torre era temporal. ¿Cuántos años crees que tenía que durar?",
+        "options": [
+          "Cinco",
+          "Diez",
+          "Veinte"
+        ],
+        "answer": 2
+      },
+      "more": {
+        "title": "El hombre que vendió la Torre Eiffel",
+        "ask": "¿Sabías que la Torre Eiffel se vendió una vez como chatarra? Bueno, más o menos. ¿Te cuento la estafa del siglo? Si te apetece, toca «Cuéntame más». Si no, seguimos.",
+        "paras": [
+          "París, 1925. La torre necesita pintura y reparaciones, y un periódico publica que mantenerla le cuesta una fortuna a la ciudad. Alguien lee la noticia con mucho interés: Victor Lustig, un estafador elegantísimo, nacido en el antiguo Imperio austrohúngaro, que hablaba varios idiomas y se movía como un aristócrata. Y se le ocurre una idea genial: vender la torre.",
+          "Se hace pasar por alto funcionario del gobierno, cita a varios chatarreros en un hotel de lujo y les cuenta, en el más absoluto secreto, que el gobierno ha decidido desmontar la torre y vender su hierro. El que pague mejor, se lo queda. Eso sí, ni una palabra a nadie, que se armaría un escándalo.",
+          "Uno de ellos, André Poisson, que en francés quiere decir pez, picó el anzuelo. Y cuando empezó a dudar, Lustig le confesó, bajando la voz, que él era un funcionario mal pagado y que le vendría bien una ayudita. Poisson pensó: si me pide un soborno, tiene que ser un funcionario de verdad. Pagó el soborno y la torre, unos setenta mil francos según se cuenta, y Lustig desapareció con el dinero.",
+          "Poisson, muerto de vergüenza, no denunció nada. Así que Lustig, tan tranquilo, volvió a París unos meses después e intentó vender la torre otra vez. En el móvil tienes su cara, en un periódico de la época: elegante hasta para eso. Esta vez la policía se enteró, y tuvo que huir a Estados Unidos, donde acabó falsificando dólares y, al final, en la cárcel de Alcatraz. La torre, mientras tanto, sigue sin vender. Por si te lo estabas planteando."
+        ],
+        "images": [
+          {
+            "src": "img/paris/torre-eiffel/tour-eiffel-mas.webp",
+            "w": 432,
+            "h": 338,
+            "para": 3,
+            "after": "En el móvil tienes su cara, en un periódico de la época: elegante hasta para eso.",
+            "caption": "Victor Lustig, en el centro, en un periódico de Filadelfia de 1935",
+            "credit": "Evening Public Ledger · Dominio público",
+            "source": "https://commons.wikimedia.org/wiki/File:Victor_Lustig.jpg"
+          }
+        ]
+      },
+      "toNext": "Sigue hacia el río y cruza al puente de piedra que tienes delante, el puente de Jena. Párate en el centro."
+    },
+    {
+      "id": "pont-d-iena",
+      "title": "El puente de Jena",
+      "subtitle": "El puente de las águilas y los cuatro jinetes",
+      "lat": 48.85978,
+      "lng": 2.29198,
+      "radius": 50,
+      "where": "En el centro del puente, con la torre a un lado y el Trocadero al otro.",
+      "paras": [
+        "Este puente se llama de Jena, como la ciudad alemana donde Napoleón aplastó al ejército de Prusia en 1806. Él mismo mandó construirlo para celebrar la victoria, y se terminó en 1814. Si te asomas al pretil, verás las águilas imperiales, el símbolo de Napoleón.",
+        "El mariscal prusiano Blücher no soportaba un puente que celebraba la derrota de su país, y sus soldados llegaron a intentar volarlo con pólvora, aunque la explosión apenas lo arañó. Se cuenta que el rey Luis dieciocho dijo que, si querían volarlo, él se sentaría encima. Al final lo arregló Talleyrand, sí, el obispo de la fiesta del Campo de Marte, con mano izquierda: le cambiaron el nombre por el de puente de la Escuela Militar, y asunto resuelto.",
+        "Años después volvió a llamarse de Jena. Y en 1853, con Napoleón tercero, el sobrino, le pusieron las cuatro estatuas de las esquinas: guerreros a caballo, un galo y un romano en la orilla del Trocadero, y un griego y un árabe en la de la torre. Desde 2024 es peatonal, así que puedes pararte en medio a hacer la foto sin coches; eso sí, ojo con las bicis.",
+        "Con la torre de frente, mira ahora a tu izquierda, río arriba. Un par de puentes más allá está el del Alma, con la estatua de un soldado, el Zuavo, plantado junto al agua. Desde aquí no lo verás, pero los parisinos lo usan como medidor de crecidas: cuando el Zuavo moja los pies, se cierran las carreteras de la orilla. En la gran inundación de 1910, el agua le llegó a los hombros. Así que, si algún día lo ves con el agua por las rodillas, mejor no te acerques al río.",
+        "Y ahora, a tu derecha. El siguiente puente, el de Bir-Hakeim, tiene dos pisos: abajo los coches y arriba el metro. Si has visto la película Origen, de Christopher Nolan, te sonará: ahí rodaron una de sus escenas más famosas. París es así: cada puente tiene su película."
+      ],
+      "images": [],
+      "quiz": {
+        "before": 1,
+        "q": "Napoleón cayó, y en 1815 los prusianos entraron en París. ¿Qué crees que quisieron hacer con este puente?",
+        "options": [
+          "Llevárselo piedra a piedra",
+          "Volarlo",
+          "Ponerle el nombre de su rey"
+        ],
+        "answer": 1
+      },
+      "toNext": "Cruza el puente hasta la otra orilla, atraviesa la avenida por el paso de peatones y entra en los jardines del Trocadero. El gran estanque de las fuentes está ahí mismo, subiendo un poco."
+    },
+    {
+      "id": "jardins-du-trocadero",
+      "title": "Los jardines del Trocadero",
+      "subtitle": "Las fuentes más potentes de París y un nombre muy español",
+      "lat": 48.86067,
+      "lng": 2.28999,
+      "radius": 50,
+      "where": "Junto al gran estanque de las fuentes, con la torre a tu espalda y el palacio de alas curvas delante.",
+      "paras": [
+        "Este estanque es la fuente de Varsovia, la más potente de París. Tiene veinte cañones de agua que disparan chorros de hasta cincuenta metros, hacia la torre. Si funcionan cuando pases, ya verás qué espectáculo. Y si no, imagínatelo, que para eso estoy yo. Se construyó para la Exposición de 1937, junto con el palacio que tienes delante, arriba.",
+        "Como lo oyes. En 1823, un ejército francés, los llamados Cien Mil Hijos de San Luis, entró en España para devolverle todo el poder al rey Fernando séptimo, que estaba obligado a respetar una constitución. Los liberales se hicieron fuertes en Cádiz, y la batalla clave fue la toma del fuerte del Trocadero. Los franceses ganaron y, años después, le pusieron su nombre a esta colina.",
+        "Y ojo al dato. El rey Fernando, agradecido, quiso nombrar al general francés, el duque de Angulema, príncipe del Trocadero. Y el duque dijo que no: un hijo de Francia, contestó, estaba por encima de eso. Tampoco le gustaba lo que veía: Fernando, en cuanto recuperó el poder, se olvidó de sus promesas de perdón y persiguió a sus enemigos sin piedad. Ya ves: ni el vencedor quiso presumir de aquella victoria.",
+        "Pero mucho antes, Napoleón ya tenía planes para esta colina. En 1811 nació su único hijo legítimo, al que nombró rey de Roma desde la cuna, y quiso regalarle aquí un palacio tan espléndido como Versalles, con un parque inmenso. Se llegaron a poner los cimientos. Pero llegó la desastrosa campaña de Rusia, se acabó el dinero, y los arquitectos tuvieron que encogerlo hasta dejarlo en una casita de campo. Al final, ni eso: tras Waterloo, el rey Luis dieciocho mandó tapar los cimientos y plantar árboles encima.",
+        "Antes de este palacio había otro, el palacio del Trocadero de 1878, con dos torres y un aire morisco que a muchos parisinos les parecía feísimo. En la app tienes una foto: juzga tú. Lo derribaron para la Exposición de 1937 y, aprovechando parte de su estructura, levantaron el actual."
+      ],
+      "images": [
+        {
+          "src": "img/paris/torre-eiffel/jardins-du-trocadero.webp",
+          "w": 826,
+          "h": 773,
+          "para": 4,
+          "after": "En la app tienes una foto: juzga tú.",
+          "caption": "El antiguo palacio del Trocadero, en 1878",
+          "credit": "Foto anónima · Museo Carnavalet · CC0",
+          "source": "https://commons.wikimedia.org/wiki/File:Exposition_universelle_de_1878,_Palais_du_Trocad%C3%A9ro,_16%C3%A8me_arrondissement,_Paris._PH19770.jpg"
+        }
+      ],
+      "quiz": {
+        "before": 1,
+        "q": "Esta colina, y la plaza de arriba, se llaman Trocadero. ¿De dónde crees que viene el nombre?",
+        "options": [
+          "De una batalla en Cádiz",
+          "De un mercado de trueque",
+          "De un general de Napoleón"
+        ],
+        "answer": 0
+      },
+      "toNext": "Sube por los jardines, por las escaleras de cualquiera de los dos lados, hasta la gran explanada que queda entre las dos alas del palacio, arriba del todo."
+    },
+    {
+      "id": "trocadero",
+      "title": "La explanada del Trocadero",
+      "subtitle": "La mejor vista de la torre y los derechos humanos",
+      "lat": 48.86218,
+      "lng": 2.28838,
+      "radius": 50,
+      "where": "En la explanada entre las dos alas del palacio de Chaillot, junto a la barandilla.",
+      "paras": [
+        "Ahora sí: date la vuelta. Esta es la vista más famosa de París: la torre entera, de los pies a la punta, al otro lado del río. Por algo es el sitio favorito de los fotógrafos, de los novios y de cualquiera con un móvil. Y ahora que la has visto de cerca, fíjate en la curva de las patas: no es un capricho, es la forma que mejor aguanta el viento con el menor hierro posible.",
+        "Y esta explanada se llama de los Derechos Humanos, por un buen motivo. En el palacio que tienes detrás, el 10 de diciembre de 1948, la Asamblea General de las Naciones Unidas aprobó la Declaración Universal de los Derechos Humanos. La sede de Nueva York todavía no estaba lista, y París le prestó este palacio. Vuélvete un momento y mira las letras doradas de las fachadas: son frases del poeta Paul Valéry.",
+        "Durante cinco minutos, a cada hora en punto, en cuanto oscurece: unas veinte mil bombillas parpadean a la vez. Se instalaron para celebrar el año 2000 y gustaron tanto que se quedaron. Así que, si puedes, quédate hasta que caiga la noche.",
+        "Y la torre tiene más trucos de noche. Desde 1985 la iluminan por dentro unos focos dorados, como si el hierro brillara solo, y en la cima gira un faro que barre el cielo de París. Ojo, que esas luces tienen derechos de autor: para usar una foto nocturna de la torre en un anuncio hay que pedir permiso. Para tu álbum de vacaciones, tranquilo, que no hace falta.",
+        "Y aquí me despido. Has recorrido el París más grandioso: del puente de los zares a la tumba de Napoleón, de la escuela de las malas notas al campo donde París juró fidelidad a la nación, y de la torre que iba a durar veinte años a la mejor vista de todas. Ahora te toca a ti: busca un hueco en la barandilla, saca la foto de rigor y deja que París haga el resto. ¡Merci, y hasta la próxima!"
+      ],
+      "images": [],
+      "quiz": {
+        "before": 2,
+        "q": "Al caer la noche, la torre centellea. ¿Cada cuánto crees que lo hace?",
+        "options": [
+          "Solo los sábados",
+          "Cada media hora",
+          "Cada hora en punto"
+        ],
+        "answer": 2
+      },
+      "more": {
+        "title": "1937, el año de los pabellones enfrentados",
+        "ask": "En 1937, a los pies de esta colina, dos pabellones gigantes se miraban como si fueran a embestirse. Y muy cerca se estrenó un cuadro español famosísimo. ¿Te lo cuento? Si te apetece, toca «Cuéntame más». Si no, nos despedimos.",
+        "paras": [
+          "En 1937 París organizó otra gran exposición, y este palacio se estrenó con ella. Abajo, entre el río y estos jardines, se colocaron frente a frente dos pabellones enormes: el de la Alemania de Hitler, una torre de piedra con un águila encima, y el de la Unión Soviética de Stalin, coronado por dos gigantescas estatuas de acero, un obrero y una campesina con la hoz y el martillo en alto. Parecían dos boxeadores antes de la pelea. Si sacas el móvil, los verás desde la torre aquel mismo año.",
+          "Muy cerca de los dos estaba el pabellón de España. Y España estaba en plena guerra civil. El gobierno de la República encargó obras a sus mejores artistas para contar al mundo lo que estaba pasando: Miró pintó un gran mural, el escultor americano Calder hizo una fuente de mercurio, y Picasso pintó un cuadro enorme en blanco y negro, tras el bombardeo de un pueblo vasco. Ese cuadro era el Guernica.",
+          "Al principio no gustó a todo el mundo: a algunos les pareció demasiado moderno, demasiado difícil. Hoy es uno de los cuadros más famosos de la historia, y está en el museo Reina Sofía de Madrid. Pero se estrenó aquí, a unos pasos de donde estás, mientras Hitler y Stalin se miraban de reojo.",
+          "Dos años después estallaba la Segunda Guerra Mundial. Y en junio de 1940, tras la caída de Francia, Hitler se hizo una foto en esta misma explanada, con la torre al fondo. Fue su única visita a París. Por eso este sitio tiene tanto significado: aquí se vio venir lo peor del siglo veinte, y aquí, solo ocho años después, se aprobó la declaración que quería evitar que se repitiera."
+        ],
+        "before": 4,
+        "images": [
+          {
+            "src": "img/paris/torre-eiffel/trocadero-mas.webp",
+            "w": 1000,
+            "h": 755,
+            "para": 0,
+            "after": "Si sacas el móvil, los verás desde la torre aquel mismo año.",
+            "caption": "Los pabellones de la URSS y de Alemania, frente a frente junto al puente de Jena, en 1937",
+            "credit": "Foto: Georges Chevalier · CC BY-SA 4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:L'Exposition_internationale,_les_pavillons_de_l'URSS,_de_l'Allemagne_et_le_Trocad%C3%A9ro_vu_du_premier_%C3%A9tage_de_la_tour_Eiffel_-_DS66705.jpg"
+          }
+        ]
+      }
+    }
+  ],
+  "legs": [
+    [
+      [
+        48.86305,
+        2.31347
+      ],
+      [
+        48.86301,
+        2.31347
+      ],
+      [
+        48.86297,
+        2.31346
+      ],
+      [
+        48.86291,
+        2.31346
+      ],
+      [
+        48.86291,
+        2.31326
+      ],
+      [
+        48.8629,
+        2.31318
+      ],
+      [
+        48.86283,
+        2.31318
+      ],
+      [
+        48.86283,
+        2.31318
+      ],
+      [
+        48.86281,
+        2.31318
+      ],
+      [
+        48.86274,
+        2.31318
+      ],
+      [
+        48.86272,
+        2.31318
+      ],
+      [
+        48.86232,
+        2.31321
+      ],
+      [
+        48.86121,
+        2.31308
+      ],
+      [
+        48.8612,
+        2.31308
+      ],
+      [
+        48.8612,
+        2.31305
+      ],
+      [
+        48.86119,
+        2.31302
+      ],
+      [
+        48.86117,
+        2.31298
+      ],
+      [
+        48.86116,
+        2.31296
+      ],
+      [
+        48.86114,
+        2.31295
+      ],
+      [
+        48.86114,
+        2.31293
+      ],
+      [
+        48.86112,
+        2.31293
+      ],
+      [
+        48.86106,
+        2.31293
+      ],
+      [
+        48.86101,
+        2.31293
+      ],
+      [
+        48.86098,
+        2.31292
+      ],
+      [
+        48.86098,
+        2.31293
+      ],
+      [
+        48.86097,
+        2.31294
+      ],
+      [
+        48.86094,
+        2.31296
+      ],
+      [
+        48.86092,
+        2.31298
+      ],
+      [
+        48.86091,
+        2.31302
+      ],
+      [
+        48.8609,
+        2.31304
+      ],
+      [
+        48.86089,
+        2.31304
+      ],
+      [
+        48.86085,
+        2.31304
+      ],
+      [
+        48.86012,
+        2.31295
+      ],
+      [
+        48.86011,
+        2.31295
+      ],
+      [
+        48.8601,
+        2.31293
+      ],
+      [
+        48.86007,
+        2.31288
+      ],
+      [
+        48.86005,
+        2.31286
+      ],
+      [
+        48.86002,
+        2.31284
+      ],
+      [
+        48.86001,
+        2.31283
+      ],
+      [
+        48.86,
+        2.31283
+      ],
+      [
+        48.85995,
+        2.31283
+      ],
+      [
+        48.85991,
+        2.31283
+      ],
+      [
+        48.85988,
+        2.31283
+      ],
+      [
+        48.85988,
+        2.31284
+      ],
+      [
+        48.85987,
+        2.31285
+      ],
+      [
+        48.85985,
+        2.31287
+      ],
+      [
+        48.85983,
+        2.31289
+      ],
+      [
+        48.85982,
+        2.31291
+      ],
+      [
+        48.85982,
+        2.31292
+      ],
+      [
+        48.85895,
+        2.31282
+      ],
+      [
+        48.85891,
+        2.31281
+      ],
+      [
+        48.85889,
+        2.3128
+      ],
+      [
+        48.85888,
+        2.31277
+      ],
+      [
+        48.85887,
+        2.31269
+      ],
+      [
+        48.85885,
+        2.31263
+      ],
+      [
+        48.85882,
+        2.31257
+      ],
+      [
+        48.85879,
+        2.31251
+      ],
+      [
+        48.85875,
+        2.31245
+      ],
+      [
+        48.85871,
+        2.31239
+      ],
+      [
+        48.85867,
+        2.31236
+      ],
+      [
+        48.8586,
+        2.31232
+      ],
+      [
+        48.85855,
+        2.3123
+      ],
+      [
+        48.85854,
+        2.31229
+      ],
+      [
+        48.85853,
+        2.31228
+      ],
+      [
+        48.85853,
+        2.31225
+      ],
+      [
+        48.85853,
+        2.31218
+      ],
+      [
+        48.85851,
+        2.31218
+      ],
+      [
+        48.85845,
+        2.31217
+      ],
+      [
+        48.85839,
+        2.31216
+      ],
+      [
+        48.85837,
+        2.31216
+      ],
+      [
+        48.85833,
+        2.31283
+      ],
+      [
+        48.85833,
+        2.31286
+      ],
+      [
+        48.85833,
+        2.31292
+      ],
+      [
+        48.85823,
+        2.31291
+      ],
+      [
+        48.85823,
+        2.31294
+      ],
+      [
+        48.85822,
+        2.31296
+      ],
+      [
+        48.85822,
+        2.313
+      ],
+      [
+        48.85819,
+        2.313
+      ],
+      [
+        48.85819,
+        2.313
+      ],
+      [
+        48.85819,
+        2.313
+      ],
+      [
+        48.85819,
+        2.31301
+      ],
+      [
+        48.85819,
+        2.31301
+      ],
+      [
+        48.85819,
+        2.31305
+      ],
+      [
+        48.85818,
+        2.31305
+      ],
+      [
+        48.85818,
+        2.31306
+      ],
+      [
+        48.85812,
+        2.31303
+      ],
+      [
+        48.8581,
+        2.31332
+      ],
+      [
+        48.85807,
+        2.31353
+      ]
+    ],
+    [
+      [
+        48.85807,
+        2.31353
+      ],
+      [
+        48.8581,
+        2.31332
+      ],
+      [
+        48.85812,
+        2.31303
+      ],
+      [
+        48.85818,
+        2.31306
+      ],
+      [
+        48.85818,
+        2.31305
+      ],
+      [
+        48.85819,
+        2.31305
+      ],
+      [
+        48.85819,
+        2.31301
+      ],
+      [
+        48.85819,
+        2.31301
+      ],
+      [
+        48.85819,
+        2.313
+      ],
+      [
+        48.85819,
+        2.313
+      ],
+      [
+        48.85819,
+        2.313
+      ],
+      [
+        48.85822,
+        2.313
+      ],
+      [
+        48.85822,
+        2.31296
+      ],
+      [
+        48.85823,
+        2.31294
+      ],
+      [
+        48.85823,
+        2.31291
+      ],
+      [
+        48.85833,
+        2.31292
+      ],
+      [
+        48.85833,
+        2.31301
+      ],
+      [
+        48.85831,
+        2.31344
+      ],
+      [
+        48.8583,
+        2.31366
+      ],
+      [
+        48.85829,
+        2.31371
+      ],
+      [
+        48.8581,
+        2.31438
+      ],
+      [
+        48.85798,
+        2.31458
+      ],
+      [
+        48.85796,
+        2.31466
+      ],
+      [
+        48.85794,
+        2.31479
+      ],
+      [
+        48.85786,
+        2.31495
+      ],
+      [
+        48.85774,
+        2.31494
+      ],
+      [
+        48.85745,
+        2.3149
+      ],
+      [
+        48.85745,
+        2.31488
+      ],
+      [
+        48.85707,
+        2.31483
+      ],
+      [
+        48.85696,
+        2.31482
+      ],
+      [
+        48.85684,
+        2.3148
+      ],
+      [
+        48.8568,
+        2.3148
+      ],
+      [
+        48.85635,
+        2.31475
+      ],
+      [
+        48.85632,
+        2.31474
+      ],
+      [
+        48.85625,
+        2.31473
+      ],
+      [
+        48.85496,
+        2.31459
+      ],
+      [
+        48.85477,
+        2.31456
+      ],
+      [
+        48.85472,
+        2.31456
+      ],
+      [
+        48.85468,
+        2.31455
+      ],
+      [
+        48.85463,
+        2.31455
+      ],
+      [
+        48.85455,
+        2.31454
+      ],
+      [
+        48.85399,
+        2.31447
+      ],
+      [
+        48.85399,
+        2.3144
+      ],
+      [
+        48.85396,
+        2.31438
+      ],
+      [
+        48.85394,
+        2.31434
+      ],
+      [
+        48.85392,
+        2.31427
+      ],
+      [
+        48.85388,
+        2.31427
+      ],
+      [
+        48.85395,
+        2.3129
+      ],
+      [
+        48.85394,
+        2.3129
+      ],
+      [
+        48.85394,
+        2.3129
+      ],
+      [
+        48.85394,
+        2.31281
+      ],
+      [
+        48.85396,
+        2.31245
+      ]
+    ],
+    [
+      [
+        48.85396,
+        2.31245
+      ],
+      [
+        48.85398,
+        2.31202
+      ],
+      [
+        48.85399,
+        2.31193
+      ],
+      [
+        48.854,
+        2.31194
+      ],
+      [
+        48.8541,
+        2.30995
+      ],
+      [
+        48.85414,
+        2.30995
+      ],
+      [
+        48.85416,
+        2.3099
+      ],
+      [
+        48.85418,
+        2.30986
+      ],
+      [
+        48.85421,
+        2.30984
+      ],
+      [
+        48.85423,
+        2.30984
+      ],
+      [
+        48.85424,
+        2.30977
+      ],
+      [
+        48.85422,
+        2.30973
+      ],
+      [
+        48.8542,
+        2.30967
+      ],
+      [
+        48.85418,
+        2.30964
+      ],
+      [
+        48.85417,
+        2.30964
+      ],
+      [
+        48.85417,
+        2.30957
+      ],
+      [
+        48.85417,
+        2.30949
+      ],
+      [
+        48.85418,
+        2.30946
+      ],
+      [
+        48.85411,
+        2.30941
+      ],
+      [
+        48.85412,
+        2.30924
+      ],
+      [
+        48.85415,
+        2.30867
+      ],
+      [
+        48.85417,
+        2.30863
+      ],
+      [
+        48.85417,
+        2.30861
+      ],
+      [
+        48.85417,
+        2.30856
+      ],
+      [
+        48.85417,
+        2.30851
+      ],
+      [
+        48.85417,
+        2.3085
+      ],
+      [
+        48.85416,
+        2.30846
+      ],
+      [
+        48.85421,
+        2.30746
+      ],
+      [
+        48.85422,
+        2.30742
+      ],
+      [
+        48.85422,
+        2.3074
+      ],
+      [
+        48.85423,
+        2.30735
+      ],
+      [
+        48.85424,
+        2.3073
+      ],
+      [
+        48.85424,
+        2.30729
+      ],
+      [
+        48.85423,
+        2.30723
+      ],
+      [
+        48.85426,
+        2.30656
+      ],
+      [
+        48.85423,
+        2.30649
+      ],
+      [
+        48.85422,
+        2.30642
+      ],
+      [
+        48.8544,
+        2.30613
+      ],
+      [
+        48.85447,
+        2.30605
+      ],
+      [
+        48.85443,
+        2.30601
+      ],
+      [
+        48.85438,
+        2.30593
+      ],
+      [
+        48.85435,
+        2.30587
+      ],
+      [
+        48.85426,
+        2.30573
+      ],
+      [
+        48.85422,
+        2.30569
+      ],
+      [
+        48.85419,
+        2.30565
+      ],
+      [
+        48.85415,
+        2.30559
+      ],
+      [
+        48.85412,
+        2.30553
+      ],
+      [
+        48.85408,
+        2.30548
+      ],
+      [
+        48.85405,
+        2.30544
+      ],
+      [
+        48.85407,
+        2.30532
+      ],
+      [
+        48.85409,
+        2.3053
+      ],
+      [
+        48.85413,
+        2.30524
+      ],
+      [
+        48.85417,
+        2.30516
+      ],
+      [
+        48.8542,
+        2.30513
+      ],
+      [
+        48.85408,
+        2.3049
+      ],
+      [
+        48.85396,
+        2.3047
+      ],
+      [
+        48.85393,
+        2.30467
+      ],
+      [
+        48.8539,
+        2.30463
+      ],
+      [
+        48.85388,
+        2.30459
+      ],
+      [
+        48.85383,
+        2.3045
+      ],
+      [
+        48.85363,
+        2.30421
+      ],
+      [
+        48.85352,
+        2.30399
+      ],
+      [
+        48.85335,
+        2.30374
+      ],
+      [
+        48.85336,
+        2.30373
+      ],
+      [
+        48.85342,
+        2.30364
+      ],
+      [
+        48.85304,
+        2.30305
+      ],
+      [
+        48.85301,
+        2.30309
+      ],
+      [
+        48.85298,
+        2.30304
+      ]
+    ],
+    [
+      [
+        48.85298,
+        2.30304
+      ],
+      [
+        48.85301,
+        2.30309
+      ],
+      [
+        48.85304,
+        2.30305
+      ],
+      [
+        48.85342,
+        2.30364
+      ],
+      [
+        48.85336,
+        2.30373
+      ],
+      [
+        48.85335,
+        2.30374
+      ],
+      [
+        48.85352,
+        2.30399
+      ],
+      [
+        48.85363,
+        2.30421
+      ],
+      [
+        48.85383,
+        2.3045
+      ],
+      [
+        48.85388,
+        2.30459
+      ],
+      [
+        48.85399,
+        2.30443
+      ],
+      [
+        48.85406,
+        2.30432
+      ],
+      [
+        48.85417,
+        2.30414
+      ],
+      [
+        48.85418,
+        2.3041
+      ],
+      [
+        48.85477,
+        2.30316
+      ],
+      [
+        48.85483,
+        2.30313
+      ],
+      [
+        48.85483,
+        2.30308
+      ],
+      [
+        48.85485,
+        2.30307
+      ],
+      [
+        48.85488,
+        2.30303
+      ],
+      [
+        48.85491,
+        2.30298
+      ],
+      [
+        48.8549,
+        2.30295
+      ],
+      [
+        48.85493,
+        2.30294
+      ],
+      [
+        48.8556,
+        2.30188
+      ],
+      [
+        48.8556,
+        2.30183
+      ],
+      [
+        48.85558,
+        2.30178
+      ],
+      [
+        48.8554,
+        2.30152
+      ],
+      [
+        48.85534,
+        2.30143
+      ],
+      [
+        48.8554,
+        2.30134
+      ],
+      [
+        48.85529,
+        2.30117
+      ],
+      [
+        48.85532,
+        2.30112
+      ],
+      [
+        48.85522,
+        2.30098
+      ],
+      [
+        48.85518,
+        2.30104
+      ],
+      [
+        48.85517,
+        2.30101
+      ],
+      [
+        48.85511,
+        2.30092
+      ],
+      [
+        48.85478,
+        2.30043
+      ],
+      [
+        48.85475,
+        2.3004
+      ],
+      [
+        48.85521,
+        2.29969
+      ],
+      [
+        48.85537,
+        2.29945
+      ],
+      [
+        48.85556,
+        2.29914
+      ],
+      [
+        48.85557,
+        2.29913
+      ],
+      [
+        48.85569,
+        2.29894
+      ]
+    ],
+    [
+      [
+        48.8557,
+        2.29894
+      ],
+      [
+        48.85584,
+        2.29907
+      ],
+      [
+        48.85595,
+        2.29913
+      ],
+      [
+        48.85605,
+        2.29916
+      ],
+      [
+        48.85615,
+        2.29918
+      ],
+      [
+        48.85624,
+        2.29918
+      ],
+      [
+        48.85633,
+        2.29916
+      ],
+      [
+        48.85642,
+        2.29913
+      ],
+      [
+        48.85649,
+        2.29908
+      ],
+      [
+        48.85655,
+        2.29902
+      ],
+      [
+        48.8567,
+        2.29924
+      ],
+      [
+        48.85671,
+        2.29926
+      ],
+      [
+        48.85673,
+        2.29922
+      ],
+      [
+        48.85677,
+        2.29916
+      ],
+      [
+        48.85681,
+        2.29921
+      ],
+      [
+        48.85684,
+        2.29915
+      ],
+      [
+        48.85687,
+        2.29919
+      ],
+      [
+        48.85707,
+        2.29949
+      ],
+      [
+        48.85711,
+        2.29954
+      ],
+      [
+        48.85714,
+        2.2995
+      ],
+      [
+        48.85715,
+        2.29948
+      ],
+      [
+        48.85719,
+        2.29942
+      ],
+      [
+        48.85723,
+        2.29935
+      ],
+      [
+        48.85726,
+        2.2993
+      ],
+      [
+        48.85729,
+        2.29927
+      ],
+      [
+        48.85744,
+        2.29903
+      ],
+      [
+        48.85746,
+        2.29899
+      ],
+      [
+        48.8575,
+        2.29894
+      ],
+      [
+        48.85755,
+        2.29885
+      ],
+      [
+        48.85755,
+        2.29884
+      ],
+      [
+        48.85812,
+        2.29795
+      ],
+      [
+        48.85813,
+        2.29792
+      ],
+      [
+        48.85814,
+        2.29792
+      ],
+      [
+        48.85817,
+        2.29787
+      ],
+      [
+        48.85819,
+        2.29783
+      ],
+      [
+        48.8582,
+        2.29782
+      ],
+      [
+        48.85822,
+        2.29779
+      ],
+      [
+        48.85881,
+        2.29687
+      ],
+      [
+        48.85881,
+        2.29687
+      ],
+      [
+        48.85883,
+        2.29683
+      ],
+      [
+        48.85887,
+        2.29677
+      ],
+      [
+        48.85859,
+        2.29635
+      ],
+      [
+        48.85863,
+        2.29629
+      ],
+      [
+        48.85865,
+        2.29626
+      ],
+      [
+        48.85867,
+        2.29623
+      ],
+      [
+        48.85873,
+        2.29615
+      ],
+      [
+        48.85878,
+        2.29614
+      ],
+      [
+        48.85894,
+        2.29607
+      ],
+      [
+        48.859,
+        2.29604
+      ],
+      [
+        48.85904,
+        2.29601
+      ],
+      [
+        48.85904,
+        2.29601
+      ],
+      [
+        48.85906,
+        2.29599
+      ],
+      [
+        48.85914,
+        2.29591
+      ],
+      [
+        48.85925,
+        2.29576
+      ],
+      [
+        48.85933,
+        2.29563
+      ],
+      [
+        48.85939,
+        2.29548
+      ],
+      [
+        48.85944,
+        2.29533
+      ],
+      [
+        48.85947,
+        2.29519
+      ],
+      [
+        48.8595,
+        2.29498
+      ],
+      [
+        48.85951,
+        2.29495
+      ],
+      [
+        48.85954,
+        2.29489
+      ],
+      [
+        48.85958,
+        2.29483
+      ],
+      [
+        48.85968,
+        2.29471
+      ],
+      [
+        48.8597,
+        2.29468
+      ],
+      [
+        48.85905,
+        2.29373
+      ],
+      [
+        48.85908,
+        2.29369
+      ],
+      [
+        48.85913,
+        2.29361
+      ],
+      [
+        48.85916,
+        2.29356
+      ],
+      [
+        48.85919,
+        2.29352
+      ],
+      [
+        48.85921,
+        2.29348
+      ],
+      [
+        48.85922,
+        2.29351
+      ],
+      [
+        48.85938,
+        2.29373
+      ]
+    ],
+    [
+      [
+        48.85938,
+        2.29373
+      ],
+      [
+        48.85922,
+        2.29351
+      ],
+      [
+        48.85921,
+        2.29348
+      ],
+      [
+        48.85926,
+        2.29339
+      ],
+      [
+        48.85929,
+        2.29336
+      ],
+      [
+        48.85926,
+        2.29332
+      ],
+      [
+        48.85923,
+        2.29327
+      ],
+      [
+        48.85915,
+        2.29317
+      ],
+      [
+        48.85914,
+        2.29314
+      ],
+      [
+        48.85912,
+        2.29311
+      ],
+      [
+        48.85904,
+        2.293
+      ],
+      [
+        48.85913,
+        2.29293
+      ],
+      [
+        48.85921,
+        2.29286
+      ],
+      [
+        48.85927,
+        2.29278
+      ],
+      [
+        48.85978,
+        2.29198
+      ]
+    ],
+    [
+      [
+        48.85978,
+        2.29198
+      ],
+      [
+        48.86023,
+        2.29128
+      ],
+      [
+        48.86025,
+        2.29124
+      ],
+      [
+        48.86026,
+        2.29122
+      ],
+      [
+        48.8603,
+        2.29115
+      ],
+      [
+        48.86029,
+        2.29104
+      ],
+      [
+        48.86026,
+        2.29085
+      ],
+      [
+        48.86022,
+        2.29054
+      ],
+      [
+        48.86027,
+        2.29056
+      ],
+      [
+        48.86031,
+        2.29056
+      ],
+      [
+        48.86053,
+        2.29023
+      ],
+      [
+        48.86067,
+        2.28999
+      ]
+    ],
+    [
+      [
+        48.86067,
+        2.28999
+      ],
+      [
+        48.86074,
+        2.28989
+      ],
+      [
+        48.8607,
+        2.28983
+      ],
+      [
+        48.86068,
+        2.2898
+      ],
+      [
+        48.86066,
+        2.28979
+      ],
+      [
+        48.86089,
+        2.28944
+      ],
+      [
+        48.86095,
+        2.28935
+      ],
+      [
+        48.86091,
+        2.28929
+      ],
+      [
+        48.86082,
+        2.28943
+      ],
+      [
+        48.86079,
+        2.28942
+      ],
+      [
+        48.86078,
+        2.2894
+      ],
+      [
+        48.86089,
+        2.28923
+      ],
+      [
+        48.86092,
+        2.28924
+      ],
+      [
+        48.86098,
+        2.28913
+      ],
+      [
+        48.86117,
+        2.28884
+      ],
+      [
+        48.86146,
+        2.28841
+      ],
+      [
+        48.86145,
+        2.28837
+      ],
+      [
+        48.86146,
+        2.28832
+      ],
+      [
+        48.86148,
+        2.28824
+      ],
+      [
+        48.86149,
+        2.28827
+      ],
+      [
+        48.86153,
+        2.28832
+      ],
+      [
+        48.86157,
+        2.28838
+      ],
+      [
+        48.86161,
+        2.28832
+      ],
+      [
+        48.8617,
+        2.28817
+      ],
+      [
+        48.86176,
+        2.28808
+      ],
+      [
+        48.86187,
+        2.28823
+      ],
+      [
+        48.86199,
+        2.28841
+      ],
+      [
+        48.86208,
+        2.28854
+      ],
+      [
+        48.86213,
+        2.28846
+      ],
+      [
+        48.86214,
+        2.28844
+      ],
+      [
+        48.86218,
+        2.28838
+      ]
+    ]
+  ]
+}

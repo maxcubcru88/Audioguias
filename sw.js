@@ -1,6 +1,6 @@
 /* Service worker: la app y el recorrido funcionan sin conexión una vez abiertos.
    Al publicar cambios: sube VERSION aquí y el ?v= de css/js en index.html y en FILES. */
-const VERSION = 'v37';
+const VERSION = 'v39';
 const SHELL = 'shell-' + VERSION;
 const MAP = 'map-v1';
 const FONTS = 'fonts-v1';
@@ -9,12 +9,13 @@ const AUDIO = 'audio-v1';   // audios descargados desde la app para usarlos sin 
 const FILES = [
   './',
   'index.html',
-  'css/app.css?v=31',
-  'js/app.js?v=33',
+  'css/app.css?v=32',
+  'js/app.js?v=34',
   'data/catalogo.json',
   'data/paris/centro.json',
   'data/paris/latino.json',
   'data/paris/montmartre.json',
+  'data/paris/torre-eiffel.json',
   'data/londres/westminster.json',
   'data/londres/city.json',
   'vendor/maplibre/maplibre-gl.css',

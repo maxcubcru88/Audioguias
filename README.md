@@ -11,6 +11,7 @@ por ejemplo `.../Audioguias/#paris/centro`, y guarda su propio progreso.
 ## Qué hace
 
 - Mapa con la ruta, las paradas numeradas como placas de calle y tu posición GPS.
+- En cada ciudad, vista **Lista / Mapa**: el mapa enseña todas las rutas a la vez, cada una con su color. Al tocar una (en el mapa o en su nombre) se resaltan sus paradas numeradas y sale una tarjeta para empezarla. La app recuerda la última vista elegida.
 - Te avisa (sonido y vibración en Android) al entrar en el radio de cada parada y empieza a leer el guion.
 - Indica la distancia a la siguiente parada y cómo llegar.
 - Voz del propio móvil, con selector de voz y velocidad.
@@ -50,6 +51,9 @@ icons/                     iconos
 
 El aspecto de la placa de cada ciudad se elige con `"sign"` (`paris`, `london`, `sevilla`) y el texto con
 `"signText"` / `"signSmall"`.
+
+Cada ruta del catálogo lleva su `"color"` (por ejemplo `"#2E8B57"`): es el de su línea en el mapa de la ciudad
+y el del punto junto a su nombre. Si falta, se elige uno de una paleta por defecto.
 
 ### Editar una ruta
 

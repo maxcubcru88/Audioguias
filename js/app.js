@@ -1170,6 +1170,197 @@
       else if (e.key === 'ArrowLeft') showImage(LB.k - 1);
     });
     window.addEventListener('resize', () => measureCard());
+    // Pantalla de ciudad: lista o mapa
+    $('#cityView').addEventListener('click', e => {
+      const b = e.target.closest('[data-view]'); if (!b) return;
+      try { localStorage.setItem(VIEW_KEY, b.dataset.view); } catch (err) {}
+      setCityView(b.dataset.view);
+    });
+    $('#cmChips').addEventListener('click', e => {
+      const b = e.target.closest('[data-rid]'); if (!b) return;
+      selectCityRoute(b.dataset.rid === CM.sel ? null : b.dataset.rid);
+    });
+    $('#cmCard').addEventListener('click', e => { if (e.target.closest('[data-cm="close"]')) selectCityRoute(null); });
+    $('#cmLocate').addEventListener('click', () => cityLocate(true));
+  }
+
+  // ---------- Mapa de la ciudad: todas las rutas a la vez, cada una con su color ----------
+  // El color sale de "color" en data/catalogo.json; si falta, de esta paleta.
+  const ROUTE_COLORS = ['#2D5DA8', '#2E8B57', '#C4532D', '#7B4BA8', '#B07A12', '#1F7A8C'];
+  const routeColorOf = (c, r) => r.color || ROUTE_COLORS[Math.max(0, (c.routes || []).indexOf(r)) % ROUTE_COLORS.length];
+  const VIEW_KEY = 'paseito-vista-ciudad';
+  const OFF = '#AEB7BD';                    // rutas apagadas cuando hay una elegida
+  const fc = features => ({ type: 'FeatureCollection', features });
+  const CM = { map: null, ready: null, city: null, sel: null, routes: [], marks: [], me: null, pos: null, token: 0 };
+
+  function cityViewPref() { try { return localStorage.getItem(VIEW_KEY) === 'map' ? 'map' : 'list'; } catch (e) { return 'list'; } }
+  function setCityView(v, token) {
+    const isMap = v === 'map';
+    $('#city').classList.toggle('is-map', isMap);
+    $('#routeList').hidden = isMap;
+    $('#cityMapBox').hidden = !isMap;
+    document.querySelectorAll('#cityView [data-view]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.view === v)));
+    if (isMap) drawCityMap(token != null ? token : CM.token);
+  }
+
+  function ensureCityMap() {
+    if (CM.map) { CM.map.resize(); return CM.ready; }
+    const m = CM.map = new maplibregl.Map({
+      container: 'cityMap', style: STYLE_URL, center: [2.345, 48.86], zoom: 12,
+      attributionControl: { compact: true },
+      dragRotate: false, pitchWithRotate: false, touchPitch: false, maxZoom: 18
+    });
+    m.touchZoomRotate.disableRotation();
+    CM.ready = new Promise(res => m.on('load', () => {
+      m.addSource('cr', { type: 'geojson', data: fc([]) });
+      m.addSource('cs', { type: 'geojson', data: fc([]) });
+      const round = { 'line-cap': 'round', 'line-join': 'round' };
+      m.addLayer({ id: 'cr-casing', type: 'line', source: 'cr', layout: round, paint: { 'line-color': '#FFFFFF', 'line-width': 8, 'line-opacity': .9 } });
+      m.addLayer({ id: 'cr-line', type: 'line', source: 'cr', layout: round, paint: { 'line-color': ['get', 'color'], 'line-width': 4.5 } });
+      m.addLayer({ id: 'cr-stops', type: 'circle', source: 'cs', paint: {
+        'circle-radius': 4.5, 'circle-color': ['get', 'color'], 'circle-stroke-color': '#FFFFFF', 'circle-stroke-width': 2 } });
+      // Franja invisible y ancha para que sea fácil tocar una ruta con el dedo
+      m.addLayer({ id: 'cr-hit', type: 'line', source: 'cr', layout: round, paint: { 'line-color': '#000000', 'line-width': 26, 'line-opacity': 0 } });
+      m.on('mouseenter', 'cr-hit', () => { m.getCanvas().style.cursor = 'pointer'; });
+      m.on('mouseleave', 'cr-hit', () => { m.getCanvas().style.cursor = ''; });
+      res();
+    }));
+    m.on('click', e => {
+      const p = e.point;
+      const hits = m.queryRenderedFeatures([[p.x - 14, p.y - 14], [p.x + 14, p.y + 14]], { layers: ['cr-hit', 'cr-stops'] });
+      const rid = hits.some(f => f.properties.rid === CM.sel) ? CM.sel : (hits[0] && hits[0].properties.rid) || null;
+      if (rid !== CM.sel) selectCityRoute(rid);
+    });
+    return CM.ready;
+  }
+
+  async function drawCityMap(token) {
+    const c = city;
+    await ensureCityMap();
+    const routes = readyRoutes(c);
+    const tours = await Promise.all(routes.map(r => getTour(c, r).catch(() => null)));
+    if (token !== CM.token || city !== c || $('#cityMapBox').hidden) return;
+    CM.city = c;
+    CM.routes = routes.map((r, k) => ({ r, t: tours[k], color: routeColorOf(c, r) })).filter(x => x.t);
+    if (CM.sel && !CM.routes.some(x => x.r.id === CM.sel)) CM.sel = null;
+    const lines = [], stops = [];
+    CM.routes.forEach(({ r, t, color }) => {
+      lines.push({ type: 'Feature', properties: { rid: r.id, color }, geometry: { type: 'MultiLineString', coordinates: t.legs.map(l => l.map(ll)) } });
+      t.stops.forEach((st, i) => stops.push({ type: 'Feature', properties: { rid: r.id, color, i }, geometry: { type: 'Point', coordinates: [st.lng, st.lat] } }));
+    });
+    CM.map.getSource('cr').setData(fc(lines));
+    CM.map.getSource('cs').setData(fc(stops));
+    CM.map.resize();
+    selectCityRoute(CM.sel, true);
+    drawCityMe();
+    // Si ya diste permiso de ubicación, te sitúa sin preguntar
+    try {
+      if (navigator.permissions && 'geolocation' in navigator) {
+        const st = await navigator.permissions.query({ name: 'geolocation' });
+        if (st.state === 'granted' && token === CM.token) cityLocate(false);
+      }
+    } catch (e) {}
+  }
+
+  function cityBounds(list) {
+    const b = new maplibregl.LngLatBounds();
+    list.forEach(({ t }) => t.legs.flat().forEach(p => b.extend(ll(p))));
+    return b;
+  }
+  function fitCity(instant) {
+    const list = CM.sel ? CM.routes.filter(x => x.r.id === CM.sel) : CM.routes;
+    if (!list.length) return;
+    const card = $('#cmCard'), bottom = (card.hidden ? 0 : card.offsetHeight) + 34;
+    CM.map.fitBounds(cityBounds(list), { padding: { top: $('#cmChips').offsetHeight + 30, bottom, left: 34, right: 58 }, maxZoom: 16, duration: instant ? 0 : 650 });
+  }
+
+  function selectCityRoute(rid, instant) {
+    CM.sel = rid || null;
+    const m = CM.map, sel = CM.sel;
+    if (m && m.getLayer('cr-line')) {
+      const on = ['==', ['get', 'rid'], sel || ''];
+      const pick = (a, b) => sel ? ['case', on, a, b] : a;
+      m.setPaintProperty('cr-line', 'line-color', pick(['get', 'color'], OFF));
+      m.setPaintProperty('cr-line', 'line-width', pick(5.5, 3));
+      m.setPaintProperty('cr-casing', 'line-width', pick(10, 6));
+      m.setLayoutProperty('cr-line', 'line-sort-key', pick(1, 0));
+      m.setLayoutProperty('cr-casing', 'line-sort-key', pick(1, 0));
+      // La ruta elegida lleva sus paradas numeradas; las demás, puntos grises
+      m.setPaintProperty('cr-stops', 'circle-color', pick(['get', 'color'], OFF));
+      m.setPaintProperty('cr-stops', 'circle-opacity', pick(0, 1));
+      m.setPaintProperty('cr-stops', 'circle-stroke-opacity', pick(0, 1));
+    }
+    clearCityMarkers();
+    const cur = CM.routes.find(x => x.r.id === sel);
+    if (cur) cur.t.stops.forEach((st, i) => {
+      const el = document.createElement('div');
+      el.className = 'cm-stop' + (i === 0 ? ' is-first' : '');
+      el.style.background = cur.color; el.textContent = i + 1;
+      CM.marks.push(new maplibregl.Marker({ element: el }).setLngLat([st.lng, st.lat]).addTo(m));
+    });
+    renderCityChips();
+    renderCityCard();
+    if (m) fitCity(instant);
+  }
+  function clearCityMarkers() { CM.marks.forEach(mk => mk.remove()); CM.marks = []; }
+
+  function renderCityChips() {
+    $('#cmChips').innerHTML = CM.routes.map(({ r, color }) =>
+      '<button type="button" class="cm-chip" data-rid="' + esc(r.id) + '" aria-pressed="' + (r.id === CM.sel) + '" style="--c:' + esc(color) + '"><i></i>' + esc(r.label || r.title) + '</button>').join('');
+    // El botón de ubicación va justo debajo de los nombres (pueden ocupar dos filas)
+    $('#cityMapBox').style.setProperty('--cm-top', ($('#cmChips').offsetHeight + 18) + 'px');
+  }
+
+  function cityNear() {
+    if (!CM.pos || !CM.routes.length) return false;
+    const c = cityBounds(CM.routes).getCenter();
+    return dist(CM.pos[0], CM.pos[1], c.lat, c.lng) < 15000;
+  }
+  function renderCityCard() {
+    const card = $('#cmCard'), cur = CM.routes.find(x => x.r.id === CM.sel);
+    if (!cur) {
+      card.className = 'cm-hint';
+      card.innerHTML = CM.routes.length ? 'Toca una ruta para ver sus paradas' : '';
+      card.hidden = !CM.routes.length;
+    } else {
+      const { r, t, color } = cur, c = CM.city;
+      const done = (readJSON('audioguia-' + c.id + '-' + r.id + '-v1').visited || []).filter(i => t.stops[i]).length;
+      const s0 = t.stops[0];
+      let note = 'Empieza en ' + esc(s0.title);
+      if (cityNear()) note += ' · a ' + fmtDist(dist(CM.pos[0], CM.pos[1], s0.lat, s0.lng)) + ' de ti';
+      card.className = 'cm-card';
+      card.innerHTML = '<button class="x" type="button" data-cm="close" aria-label="Ver todas las rutas">' + ICON.close + '</button>' +
+        '<p class="eyebrow"><i class="rc-dot" style="background:' + esc(color) + '"></i>' + esc(r.label || '') + '</p>' +
+        '<h2 class="rc-title">' + esc(t.title) + '</h2>' +
+        '<p class="rc-meta">' + t.stops.length + ' paradas · ' + fmtDist(t.totalM) + ' · ' + durText(t, true) + '</p>' +
+        '<p class="cm-note">' + note + (done ? ' · llevas ' + done + ' de ' + t.stops.length : '') + '</p>' +
+        '<a class="btn btn-primary" href="#' + c.id + '/' + r.id + '">' + (done && done < t.stops.length ? 'Continuar ruta' : 'Empezar ruta') + '</a>';
+      card.hidden = false;
+    }
+    $('#cityMapBox').style.setProperty('--cm-card', (card.hidden ? 0 : card.offsetHeight + 10) + 'px');
+  }
+
+  function drawCityMe() {
+    if (CM.me) { CM.me.remove(); CM.me = null; }
+    if (!CM.map || !cityNear()) return;
+    const el = document.createElement('div'), fig = CM.city && CM.city.figure;
+    if (fig) { el.className = 'me-fig'; el.innerHTML = '<img src="' + esc(fig) + '" alt="Tu posición" width="46" height="50">'; }
+    else el.className = 'me';
+    CM.me = new maplibregl.Marker({ element: el, anchor: fig ? 'bottom' : 'center' }).setLngLat(ll(CM.pos)).addTo(CM.map);
+  }
+  function cityLocate(asked) {
+    if (!('geolocation' in navigator)) { if (asked) toast('Este navegador no da acceso a tu ubicación.'); return; }
+    const token = CM.token;
+    navigator.geolocation.getCurrentPosition(p => {
+      if (token !== CM.token) return;
+      CM.pos = [p.coords.latitude, p.coords.longitude];
+      drawCityMe(); renderCityCard();
+      if (!asked) return;
+      if (cityNear()) CM.map.easeTo({ center: ll(CM.pos), zoom: Math.max(CM.map.getZoom(), 14.5), duration: 600 });
+      else toast('Estás lejos de ' + CM.city.name + '. Cuando llegues, te verás en el mapa.');
+    }, err => {
+      if (asked) toast(err.code === 1 ? 'Sin permiso de ubicación. Puedes darlo en los ajustes del navegador.' : 'No consigo tu posición.');
+    }, { enableHighAccuracy: true, timeout: 15000, maximumAge: 60000 });
   }
 
   // ---------- Pantallas y navegación ----------
@@ -1196,12 +1387,14 @@
   function signHTML(c, small) {
     return '<span class="sign sign-' + c.sign + (small ? ' sm' : '') + '">' + esc(c.signText) + (c.signSmall ? ' <small>' + esc(c.signSmall) + '</small>' : '') + '</span>';
   }
-  async function getTour(c, r) {
+  // Se guarda la promesa: la lista y el mapa de la ciudad piden las mismas rutas a la vez
+  function getTour(c, r) {
     const key = c.id + '/' + r.id;
     if (!tourCache[key]) {
-      const res = await fetch(r.file, { cache: 'no-cache' });
-      if (!res.ok) throw new Error('HTTP ' + res.status);
-      const t = await res.json(); prepare(t); tourCache[key] = t;
+      tourCache[key] = fetch(r.file, { cache: 'no-cache' })
+        .then(res => { if (!res.ok) throw new Error('HTTP ' + res.status); return res.json(); })
+        .then(t => { prepare(t); return t; })
+        .catch(e => { delete tourCache[key]; throw e; });
     }
     return tourCache[key];
   }
@@ -1249,13 +1442,20 @@
     if (!(city.routes || []).length) list.innerHTML = '<li><p class="empty">Estamos preparando las rutas de ' + esc(city.name) + '.</p></li>';
     else list.innerHTML = city.routes.map(r => {
       const ready = r.status === 'ready' && r.file;
-      const inner = '<span class="eyebrow"><span>' + esc(r.label || '') + '</span>' + (ready ? '' : '<span class="badge">WIP</span>') + '</span>' +
+      const dot = ready ? '<i class="rc-dot" style="background:' + esc(routeColorOf(city, r)) + '"></i>' : '';
+      const inner = '<span class="eyebrow"><span>' + dot + esc(r.label || '') + '</span>' + (ready ? '' : '<span class="badge">WIP</span>') + '</span>' +
         '<span class="rc-title">' + esc(r.title) + '</span><span class="rc-sub">' + esc(r.subtitle || '') + '</span>' +
         (ready ? '<span class="rc-meta" data-meta="' + r.id + '"></span>' : '<span class="rc-sub">Próximamente</span>');
       return '<li>' + (ready ? '<a class="route-card" href="#' + city.id + '/' + r.id + '">' + inner + '</a>' : '<div class="route-card is-wip">' + inner + '</div>') + '</li>';
     }).join('');
+    // Lista o mapa: se recuerda la última vista elegida
+    const token = ++CM.token;
+    if (CM.city !== city) { CM.sel = null; clearCityMarkers(); }
+    const hasMap = readyRoutes(city).length > 0;
+    $('#cityView').hidden = !hasMap;
     showScreen('city');
     $('#city').scrollTop = 0;
+    setCityView(hasMap ? cityViewPref() : 'list', token);
     for (const r of readyRoutes(city)) {
       try {
         const t = await getTour(city, r);
