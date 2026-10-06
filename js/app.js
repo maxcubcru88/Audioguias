@@ -130,6 +130,7 @@
       const seen = new Set();
       Object.values(t.audio.stops).forEach(e => [].concat(e.paras || [], e.quiz || [], e.ok || [], e.ko || [], e.skip || [],
         (e.more && e.more.ask) || [], (e.more && e.more.paras) || []).forEach(f => {
+        if (!f) return; // párrafo aún sin grabar
         const u = audioUrl(t, f); if (seen.has(u)) return; seen.add(u);
         t.audioList.push({ u, b: (t.audio.files && t.audio.files[f] && t.audio.files[f].b) || 0 });
       }));

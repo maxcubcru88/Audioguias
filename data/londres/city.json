@@ -1,0 +1,846 @@
+{
+  "id": "city",
+  "city": "londres",
+  "title": "Dos mil años de Londres",
+  "subtitle": "De los tribunales a la Torre, entre templarios, incendios y bombas",
+  "lang": "es-ES",
+  "version": 1,
+  "meeting": {
+    "name": "St Clement Danes",
+    "address": "St Clement Danes, Strand, London WC2R 1DH, Reino Unido",
+    "note": "La iglesia blanca en mitad del Strand, frente a los Reales Tribunales de Justicia. Metro: Temple (líneas District y Circle) o Holborn."
+  },
+  "stops": [
+    {
+      "id": "st-clement-danes",
+      "title": "St Clement Danes",
+      "subtitle": "La iglesia de la RAF y una canción infantil",
+      "lat": 51.51318,
+      "lng": -0.11347,
+      "radius": 40,
+      "where": "En la parte de atrás de la iglesia blanca que hay en mitad del Strand, junto a la estatua de un señor de pie con un libro en la mano, con los tribunales enfrente.",
+      "paras": [
+        "¡Hola, te doy la bienvenida a la City de Londres! Hoy vamos a recorrer dos mil años de historia: de los romanos que fundaron la ciudad al Gran Incendio, de las bombas de la Segunda Guerra Mundial a los rascacielos de los banqueros. Yo pongo las historias; tú, los pies y la curiosidad. De vez en cuando te haré una pregunta para que adivines. Y en algunas paradas, si te quedas con ganas, te ofreceré una historia extra para curiosos.",
+        "Empezamos en esta iglesia blanca, plantada en mitad de la calle como una isla. Es St Clement Danes, y la reconstruyó en 1682 Christopher Wren, un nombre que vas a oír mucho hoy, porque media City la levantó él. Pero fíjate en las paredes: verás piedras picadas y ennegrecidas. Son las heridas de la noche del 10 de mayo de 1941, cuando las bombas alemanas la dejaron reducida a sus muros, con el interior calcinado.",
+        "Se cuenta que, hacia el siglo nueve, unos vikingos daneses se instalaron por esta zona, y que, como eran gente de mar, dedicaron su iglesia a San Clemente, el patrón de los marineros. Vamos, que mucho antes que los turistas, por aquí ya se paseaban los vikingos.",
+        "Después de la guerra, la reconstruyó la RAF, la fuerza aérea británica, con una colecta entre los suyos, y desde 1958 es su iglesia. Dentro, el suelo está lleno de escudos de más de ochocientas unidades de aviación, y hay un recuerdo especial para los pilotos polacos que lucharon en la guerra. En el móvil la tienes por dentro.",
+        "Y escucha, porque esta iglesia canta: sus campanas tocan varias veces al día una canción infantil muy antigua, Naranjas y limones, que dice que eso es lo que cantan las campanas de San Clemente. Los niños ingleses la juegan como nuestro pasemisí: dos hacen un arco con los brazos y van atrapando a los demás. Y el final no es tan inocente: aquí viene una vela para llevarte a la cama, y aquí viene un hacha para cortarte la cabeza. Infancia británica, ya ves.",
+        "Por cierto, el señor de la estatua es Samuel Johnson, el del primer gran diccionario de inglés, que venía a misa aquí. Suya es la frase: quien está cansado de Londres, está cansado de la vida. Así que, ánimo, que nos queda mucho."
+      ],
+      "quiz": {
+        "before": 2,
+        "q": "Antes de seguir, una pregunta. ¿Por qué crees que esta iglesia se llama de los daneses?",
+        "options": [
+          "Porque aquí vivían vikingos daneses",
+          "Porque la pagó un rey de Dinamarca",
+          "Porque la diseñó un arquitecto danés"
+        ],
+        "answer": 0
+      },
+      "toNext": "Cruza con cuidado a la acera de enfrente, la del gran edificio gótico de piedra clara, y ponte frente a su puerta principal, la del gran arco."
+    },
+    {
+      "id": "tribunales",
+      "title": "Reales Tribunales de Justicia",
+      "subtitle": "Un castillo para los jueces y un dragón en la frontera",
+      "lat": 51.51355,
+      "lng": -0.113,
+      "radius": 40,
+      "where": "En la acera del Strand, frente a la gran puerta en arco de los tribunales.",
+      "paras": [
+        "Este edificio que parece una catedral, o el castillo de un cuento, es en realidad un tribunal: los Reales Tribunales de Justicia, donde se juzgan los grandes pleitos civiles y los recursos de Inglaterra y Gales. Lo inauguró la reina Victoria en 1882, y para levantarlo derribaron unas cuatrocientas cincuenta casas de un barrio pobre.",
+        "El arquitecto, George Edmund Street, no llegó a verlo terminado: murió un año antes, y dicen que agotado por la obra. Y no fue fácil. En plena construcción, los canteros se pusieron en huelga, trajeron obreros de Alemania para sustituirlos, y estos tuvieron que vivir dentro del propio edificio para que nadie los molestara. Imagínate, dormir en un tribunal a medio hacer.",
+        "Y no son baratas: una peluca de juez cuesta un dineral. Se pusieron de moda en el siglo diecisiete, con Carlos segundo, y aquí se quedaron: el resto del mundo cambió de peinado y los tribunales ingleses, no. Por cierto, en septiembre de 2025 apareció en una pared de este edificio un grafiti de Banksy: un juez con peluca golpeando con su mazo a un manifestante. Duró poco: lo taparon y lo borraron en unos días.",
+        "Ahora mira a tu derecha, en mitad de la calle: ese pilar con un dragón encima es Temple Bar, la frontera de la City. Aquí termina Westminster, la ciudad del rey, y empieza la City, la de los comerciantes, que siempre ha ido por libre. Tanto, que en las grandes ceremonias el monarca se detiene aquí y el alcalde de la City le ofrece su espada como señal de lealtad. Vamos, que el rey entra, pero con permiso.",
+        "Antes del dragón hubo aquí un arco de piedra, y en su tejado se clavaban en picas las cabezas de los traidores, para que todo el que entrara en la City tomara nota. En la app tienes aquel arco, que todavía existe: lo verás más adelante. El dragón, desde luego, asusta bastante menos."
+      ],
+      "quiz": {
+        "before": 2,
+        "q": "En los juicios penales, jueces y abogados todavía se ponen esas pelucas blancas tan británicas. ¿De qué crees que están hechas?",
+        "options": [
+          "De pelo humano",
+          "De crin de caballo",
+          "De lana de oveja"
+        ],
+        "answer": 1
+      },
+      "toNext": "Camina hacia el dragón y pasa a su lado: ya estás en la City, en Fleet Street. Cruza a la acera de enfrente, la de tu derecha, y unos setenta metros más allá busca una casita de madera con el yeso blanco encima de un arco, en el número 17. Pasa bajo el arco y baja por el callejón hasta una iglesia redonda."
+    },
+    {
+      "id": "temple",
+      "title": "Iglesia del Temple",
+      "subtitle": "La iglesia redonda de los templarios",
+      "lat": 51.51302,
+      "lng": -0.11017,
+      "radius": 40,
+      "where": "En el patio, frente a la parte redonda de la iglesia, junto a la columna con dos caballeros montados en un mismo caballo.",
+      "paras": [
+        "Esta iglesia tan rara, con su parte redonda, la construyeron los caballeros templarios, los monjes guerreros de las cruzadas. Era su cuartel general en Inglaterra y se consagró en 1185, nada menos que de la mano del patriarca de Jerusalén. Mira la columna de aquí al lado: dos caballeros en un solo caballo, el emblema de la orden. Querían presumir de pobres. Lo de pobres les duró poco.",
+        "Su modelo es la iglesia que guarda la tumba de Cristo, en Jerusalén: los templarios nacieron para proteger a los peregrinos que iban hasta allí. Dentro, en el suelo, hay estatuas de caballeros tumbados con su armadura, de hace ochocientos años. Uno de ellos es William Marshal, al que llamaban el mejor caballero que jamás existió. En el móvil tienes a los caballeros de piedra tal como están dentro.",
+        "Y es que los templarios, además de guerreros, eran banqueros. Guardaban el dinero de reyes y nobles, y aquí, en tiempos del rey Juan, estuvo el tesoro real. Por aquí pasaron también las negociaciones de la Carta Magna, en 1215, el documento que por primera vez puso límites al poder del rey. Tanto dinero y tanto poder acabaron siendo su perdición.",
+        "Cuando la orden desapareció, la iglesia acabó en manos de los abogados, que todavía hoy tienen sus colegios en estos patios tan tranquilos. Sobrevivió al Gran Incendio, pero en 1941 las bombas incendiarias quemaron el tejado de la parte redonda. Y si te suena de algo, es porque sale en El código Da Vinci, la novela de Dan Brown."
+      ],
+      "quiz": {
+        "before": 1,
+        "q": "¿Por qué crees que la iglesia es redonda?",
+        "options": [
+          "Para imitar el Santo Sepulcro de Jerusalén",
+          "Para defenderse mejor de los ataques",
+          "Para que el sermón se oyera igual desde todas partes"
+        ],
+        "answer": 0
+      },
+      "more": {
+        "title": "La caída de los templarios",
+        "ask": "¿Quieres saber cómo acabaron los templarios, y qué tiene que ver todo esto con los viernes trece? Si te apetece, toca «Cuéntame más». Si no, seguimos.",
+        "paras": [
+          "Al rey de Francia, Felipe cuarto, lo llamaban el Hermoso, pero sus cuentas no lo eran tanto: estaba arruinado y les debía una fortuna a los templarios. Así que, ni corto ni perezoso, decidió que la manera más rápida de saldar una deuda era quitarse de en medio al acreedor. Al amanecer del viernes 13 de octubre de 1307, sus hombres detuvieron a la vez a todos los templarios de Francia.",
+          "Los acusaron de todo lo imaginable: de escupir sobre la cruz, de adorar a un ídolo misterioso y de mil cosas más, casi todas inventadas. Y bajo tortura, muchos confesaron lo que les pidieron. El papa, presionado por el rey, disolvió la orden en 1312, y sus bienes pasaron a otra orden, la de los hospitalarios. Por eso esta iglesia cambió de dueños.",
+          "El último gran maestre, Jacques de Molay, se retractó de su confesión, y en 1314 lo quemaron vivo en París, en una isleta del Sena. Si has hecho nuestra ruta por el centro de París, la conoces: hoy es el jardincito del Vert-Galant, en la punta de la isla de la Cité. En la app tienes la hoguera, en una miniatura medieval. Dicen que, entre las llamas, emplazó al rey y al papa a reunirse con él ante Dios. El papa murió al mes siguiente, y el rey, antes de que acabara el año.",
+          "¿Y la mala fama de los viernes trece viene de aquí? Es una teoría muy bonita, pero no está demostrada: lo más probable es que la superstición sea mucho más moderna. Eso sí, para los templarios aquel viernes trece fue, sin duda, el día más negro de su historia."
+        ]
+      },
+      "toNext": "Vuelve por el callejón hasta Fleet Street y sigue a la derecha. Es la calle de los periódicos: durante siglos estuvieron aquí las grandes redacciones de Londres, y todavía se dice Fleet Street para hablar de la prensa. Más adelante, a tu derecha, asoma una aguja blanca escalonada, la de la iglesia de St Bride: dicen que inspiró las tartas de boda de varios pisos. Sigue recto, pasa el gran cruce de Ludgate Circus y sube la cuesta hasta la catedral. Son unos quince minutos."
+    },
+    {
+      "id": "san-pablo",
+      "title": "Catedral de San Pablo",
+      "subtitle": "La obra maestra de Wren y la cúpula que sobrevivió",
+      "lat": 51.51378,
+      "lng": -0.10008,
+      "radius": 60,
+      "where": "Al pie de la gran escalinata de la fachada principal, junto a la estatua de la reina Ana.",
+      "paras": [
+        "Y aquí la tienes: la catedral de San Pablo, con una de las cúpulas más grandes del mundo. Mide ciento once metros hasta la cruz, y durante más de dos siglos y medio fue el edificio más alto de Londres. Pero no es la primera catedral que hubo aquí. La anterior, gótica y enorme, ardió en el Gran Incendio de 1666: un testigo contó que el plomo del tejado bajaba fundido por las calles como un río. En la app tienes la catedral vieja en llamas.",
+        "La nueva la diseñó Christopher Wren, sí, el de St Clement Danes. Cuentan que, al marcar en el suelo el centro de la futura cúpula, pidió una piedra cualquiera de los escombros, y le trajeron un trozo de lápida con una sola palabra en latín: resurgam, resurgiré. Wren lo tomó como una señal y mandó grabarla en la fachada sur, bajo un ave fénix. Mira el móvil: ahí la tienes.",
+        "Se empezó en 1675 y se dio por terminada en 1710, cuando Wren ya tenía setenta y ocho años. Tanto se alargó que el Parlamento, impaciente, le retuvo la mitad del sueldo hasta que la acabara. Pero él la vio terminada, cosa rara en una catedral. Y está enterrado dentro, en la cripta, con un epitafio en latín que dice: lector, si buscas su monumento, mira a tu alrededor.",
+        "Dentro hay una galería de los susurros: lo que dices en voz baja pegado a la pared se oye perfectamente al otro lado de la cúpula. Así que cuidado con lo que comentas allí arriba. Aquí se casaron en 1981 el entonces príncipe Carlos y Diana. Y en la Segunda Guerra Mundial, estuvo a punto de no contarlo."
+      ],
+      "quiz": {
+        "before": 2,
+        "q": "Wren tuvo que tener mucha paciencia. ¿Cuánto crees que se tardó en construir la catedral?",
+        "options": [
+          "Quince años",
+          "Treinta y cinco años",
+          "Ochenta años"
+        ],
+        "answer": 1
+      },
+      "more": {
+        "title": "La noche que San Pablo sobrevivió",
+        "ask": "¿Te cuento cómo se salvó esta catedral en los peores bombardeos, con una bomba enterrada a sus pies y una foto que dio la vuelta al mundo? Si te apetece, toca «Cuéntame más». Si no, seguimos.",
+        "paras": [
+          "En septiembre de 1940, en plenos bombardeos, una bomba alemana cayó aquí al lado y no explotó. Se hundió más de ocho metros en el suelo. Durante tres días, un equipo de artificieros cavó para sacarla. Cuando por fin la tuvieron, la subieron a un camión y la llevaron por las calles vacías hasta unos descampados de las afueras, donde la hicieron estallar. Al oficial al mando y a uno de sus soldados les dieron la Cruz de Jorge.",
+          "Pero la noche más dura fue la del 29 de diciembre de 1940. Los alemanes lanzaron miles de bombas incendiarias sobre la City, y se habla de aquella noche como del segundo Gran Incendio de Londres. Churchill dio una orden clara: había que salvar San Pablo a toda costa. Y un grupo de voluntarios, los vigilantes de la catedral, se pasó la noche en los tejados apagando bombas una a una.",
+          "Una de ellas, según se cuenta, se clavó en la cúpula y se quedó encajada, ardiendo. Parecía el final. Y entonces la bomba se soltó y cayó hacia fuera, a una galería de piedra, donde pudieron apagarla. Suerte o milagro, eso ya lo decides tú.",
+          "Esa misma noche, un fotógrafo, Herbert Mason, subido a una azotea, sacó la foto de la cúpula intacta entre el humo y las llamas. Se publicó con el título San Pablo sobrevive y se convirtió en el símbolo de un país que no se rendía. Esa foto no te la puedo enseñar, pero en la app tienes otra de aquellos días: las torres de la catedral, en pie entre las ruinas."
+        ]
+      },
+      "toNext": "Rodea la catedral por la izquierda, por su lado norte. Enseguida verás a tu izquierda un arco de piedra blanca: es el antiguo Temple Bar, el de las cabezas, que estuvo donde hoy está el dragón y acabó aquí en 2004. Sigue hacia el este por Cheapside, la antigua calle del mercado, unos diez minutos, hasta un gran cruce rodeado de edificios con columnas."
+    },
+    {
+      "id": "banco",
+      "title": "Banco de Inglaterra",
+      "subtitle": "La vieja dama, su oro y un escritor con suerte",
+      "lat": 51.51355,
+      "lng": -0.08815,
+      "radius": 50,
+      "where": "En el cruce de Bank, junto a la escalinata del edificio de las columnas, el Royal Exchange, mirando el largo muro sin ventanas del banco.",
+      "paras": [
+        "Estás en el corazón de la City, el barrio financiero. Ese muro largo, sin una sola ventana abajo, es el Banco de Inglaterra, el banco de los bancos. Nació en 1694 para prestarle dinero al rey Guillermo tercero, que estaba en guerra con Francia. Vamos, que el banco más serio del mundo empezó como un préstamo para pagar una guerra.",
+        "Lo llaman la vieja dama de Threadneedle Street, la calle que pasa por aquí al lado. El apodo viene de una caricatura de 1797: el primer ministro, William Pitt, intentando seducir a una anciana sentada sobre un cofre… para quitarle el oro, claro. Hay pretendientes que solo van a por la herencia. En el móvil tienes la caricatura.",
+        "Y cada uno pesa unos doce kilos y medio. Pero casi nada es del banco: es de gobiernos y bancos de todo el mundo, que lo guardan aquí porque se fían de la vieja dama. Según el propio banco, suyos, suyos, solo son dos lingotes, y están en su museo. Y no, ni se te ocurra intentar llevarte uno: pesan como un niño de dos años.",
+        "Y una historia curiosa. En 1903, un hombre entró en el banco y le disparó tres veces con un revólver al secretario, uno de sus altos cargos. Falló las tres. Aquel secretario se llamaba Kenneth Grahame, y cinco años después dejó el banco y publicó un libro para niños que sigue siendo un clásico: El viento en los sauces. Menos mal que aquel hombre tenía tan mala puntería.",
+        "Pero la City es mucho más vieja que sus bancos. A doscientos metros de aquí, bajo un edificio de oficinas, se conservan las ruinas de un templo romano. De los romanos te hablo en el río, que es donde empezó todo."
+      ],
+      "quiz": {
+        "before": 2,
+        "q": "Ahí debajo, en sus cámaras acorazadas, el banco guarda oro de medio mundo. ¿Cuántos lingotes crees que guarda?",
+        "options": [
+          "Unos cuatro mil",
+          "Unos cuarenta mil",
+          "Unos cuatrocientos mil"
+        ],
+        "answer": 2
+      },
+      "toNext": "Baja por King William Street, la calle que sale del cruce en diagonal hacia el río, entre edificios de oficinas. En unos cinco minutos verás, a tu izquierda, una columna altísima con una llama dorada en lo alto: el Monumento."
+    },
+    {
+      "id": "monumento",
+      "title": "El Monumento",
+      "subtitle": "El Gran Incendio de 1666",
+      "lat": 51.51008,
+      "lng": -0.08597,
+      "radius": 40,
+      "where": "Al pie de la columna, junto a su base de piedra con relieves e inscripciones.",
+      "paras": [
+        "Esta columna, con su llama dorada en lo alto, se llama simplemente el Monumento, y recuerda una de las mayores catástrofes de la historia de Londres: el Gran Incendio de 1666. La diseñaron Christopher Wren, otra vez él, y su amigo el científico Robert Hooke. Y tiene truco: es hueca, porque también la pensaron para usarla como un telescopio gigante. Dentro sube una escalera de caracol de trescientos once escalones.",
+        "Si la tumbaras hacia el este, la punta caería justo donde estaba la panadería de Thomas Farriner, el panadero del rey, en Pudding Lane, la calle de aquí al lado. Allí, de madrugada, el 2 de septiembre de 1666, empezó el fuego; dicen que por un horno mal apagado. Y la ciudad, toda de madera, después de un verano muy seco y con viento del este, ardió como una caja de cerillas durante cuatro días. En el móvil tienes el incendio pintado por un artista de la época.",
+        "Y aquí viene lo bueno. Despertaron al alcalde, sir Thomas Bloodworth, que vino, miró las llamas y dijo, con perdón, que aquello lo apagaba una mujer haciendo pis. Y se volvió a la cama. Digamos que no fue su mejor predicción. Al final ardieron unas trece mil doscientas casas, ochenta y siete iglesias y la vieja catedral de San Pablo.",
+        "Mientras tanto, hubo quien se preocupó por lo importante: el famoso cronista Samuel Pepys enterró en su jardín su vino y su queso parmesano, para salvarlos de las llamas. Prioridades. En la app tienes su retrato. Oficialmente murieron muy pocas personas, apenas un puñado, aunque muchos historiadores creen que fueron bastantes más. Después, Wren levantó cincuenta y una iglesias nuevas y la nueva San Pablo, y Londres se reconstruyó en ladrillo y piedra.",
+        "Y fíjate en la base: durante siglo y medio hubo aquí una inscripción que culpaba del incendio a un complot de los católicos, sin ninguna prueba. La borraron a cincel en 1830."
+      ],
+      "quiz": {
+        "before": 1,
+        "q": "La columna mide sesenta y un metros. ¿Por qué crees que mide exactamente eso?",
+        "options": [
+          "Por los sesenta y un días que duró el fuego",
+          "Porque es la distancia hasta el sitio donde empezó",
+          "Para superar en un metro a la vieja catedral"
+        ],
+        "answer": 1
+      },
+      "toNext": "Vuelve a King William Street y síguela a la izquierda, cuesta abajo, hasta el Puente de Londres. Camina por la acera de la izquierda hasta la mitad del puente y mira río abajo, hacia las dos torres del Tower Bridge."
+    },
+    {
+      "id": "london-bridge",
+      "title": "Puente de Londres",
+      "subtitle": "Donde empezó Londres hace dos mil años",
+      "lat": 51.50772,
+      "lng": -0.0876,
+      "radius": 60,
+      "where": "En la mitad del puente, en la acera del lado del Tower Bridge, mirando río abajo.",
+      "paras": [
+        "Mira el puente donde estás: de hormigón, sencillo, de 1973. No es nada del otro mundo. Y sin embargo, aquí empezó todo. Hacia el año 50, los romanos construyeron muy cerca de este punto el primer puente sobre el Támesis, y junto a él fundaron una ciudad: Londinium. Desde entonces, casi siempre ha habido un puente aquí.",
+        "Londinium creció deprisa, pero no le fue fácil. Hacia el año 60, la reina Boudica, una guerrera celta que se rebeló contra los romanos, la arrasó y le prendió fuego. Así que el Gran Incendio de 1666 no fue el primero, ni mucho menos. Los romanos la reconstruyeron, la rodearon de una muralla, y Londinium acabó siendo la capital de la provincia romana de Britania.",
+        "En la Edad Media, el puente de piedra que hubo aquí era una calle entera sobre el río, con casas de varios pisos, tiendas y hasta una capilla. Y aquí también, como en Temple Bar, se exhibían en picas las cabezas de los traidores, hervidas y untadas de brea para que duraran. Allí estuvieron la de William Wallace, el héroe escocés de Braveheart, y la de Tomás Moro. En la app tienes cómo era aquel puente.",
+        "Ese año abrió el puente de Westminster, el que está junto al Big Ben. Siglos y siglos con un solo puente, ya ves. Y ahora mira río abajo: esas dos torres unidas por pasarelas no son el Puente de Londres, sino el Tower Bridge, el puente de la Torre. Mucha gente los confunde. Y a alguno, según la leyenda, la confusión le salió cara."
+      ],
+      "quiz": {
+        "before": 3,
+        "q": "Durante siglos, este fue el único puente para cruzar el Támesis en el centro de Londres. ¿Hasta cuándo crees que fue así?",
+        "options": [
+          "Hasta 1550",
+          "Hasta 1750",
+          "Hasta 1850"
+        ],
+        "answer": 1
+      },
+      "more": {
+        "title": "El puente que se fue a Arizona",
+        "ask": "¿Quieres saber dónde está hoy el puente que había aquí antes de este? Te aviso: muy lejos. Si te apetece, toca «Cuéntame más». Si no, seguimos.",
+        "paras": [
+          "El viejo puente medieval de las casas lo derribaron en 1831, y en su lugar pusieron uno de granito, más ancho y elegante. Pero el siglo veinte trajo coches, autobuses y camiones, y aquel puente empezó a hundirse poco a poco en el lecho del río. En los años sesenta, la City decidió cambiarlo. ¿Y qué hacer con el viejo? Pues ponerlo a la venta.",
+          "Lo compró en 1968 un empresario americano, Robert McCulloch, por casi dos millones y medio de dólares. Había fundado una ciudad en mitad del desierto de Arizona, Lake Havasu City, y necesitaba algo para atraer a turistas y compradores. Así que desmontaron sus piedras una a una, numeraron cada bloque y lo mandaron en barco por el canal de Panamá hasta California, y de allí en camiones hasta Arizona.",
+          "En 1971 se inauguró allí, sobre un canal en pleno desierto. En la app tienes una foto. Y desde entonces corre una leyenda: que McCulloch creía que estaba comprando el Tower Bridge, el de las torres, y que se llevó un buen chasco al ver lo que le llegaba. Él lo negó siempre, y quien le vendió el puente, también. Pero la historia es tan buena que nadie quiere dejar de contarla.",
+          "Hoy aquel puente londinense es una de las grandes atracciones de Arizona. Así que, si algún día vas al desierto y te encuentras un puente de Londres, ya sabes: no es un espejismo."
+        ]
+      },
+      "toNext": "Sigue por el puente hasta la otra orilla. Al llegar, baja por las escaleras de la izquierda hasta el paseo del río y síguelo río abajo, con el agua a tu izquierda. Pasarás junto a un barco de guerra gris, el Belfast, que hoy es un museo. Al llegar al Tower Bridge, sube por las escaleras y entra en el puente hasta quedarte entre las dos torres."
+    },
+    {
+      "id": "tower-bridge",
+      "title": "Tower Bridge",
+      "subtitle": "El puente que se abre y un autobús en apuros",
+      "lat": 51.50548,
+      "lng": -0.07528,
+      "radius": 60,
+      "where": "En el puente, entre las dos torres, junto a la línea de la calzada donde se juntan las dos mitades.",
+      "paras": [
+        "Ahora sí: estás en el Tower Bridge, el puente de la Torre, el puente más fotografiado de Londres. Se inauguró en 1894, y aunque parece medieval, es puro disfraz: por dentro es una estructura de acero, y la piedra es solo el vestido, para que pegara con la Torre de Londres, que tienes al lado. En el móvil tienes el puente en obras, con el esqueleto de acero al aire.",
+        "Mira el suelo: esa línea marca dónde se juntan las dos mitades del puente. Cuando tiene que pasar un barco alto, las dos mitades se levantan hacia el cielo, como el puente levadizo de un castillo. Al principio lo movían unas máquinas de vapor; hoy, la electricidad. En su primer año se abrió más de seis mil veces; hoy, cientos de veces al año.",
+        "Pisó a fondo, y el autobús salvó un vacío de casi dos metros hasta caer en la otra mitad, que todavía no había empezado a subir. Se llamaba Albert Gunter. El cobrador se rompió una pierna y algunos pasajeros se llevaron un buen golpe, pero no murió nadie. ¿Y su recompensa? Diez libras y un día libre. Cuando le preguntaron qué haría con el dinero, contestó: cinco para mí y cinco para la parienta.",
+        "El color también tiene su historia. Durante años fue marrón chocolate. En 1977, para el jubileo de la reina Isabel, lo pintaron de rojo, blanco y azul, y hoy es azul y blanco. Y arriba, en las pasarelas que unen las torres, desde 2014 hay suelo de cristal. Si tienes vértigo, mejor admíralas desde aquí abajo."
+      ],
+      "quiz": {
+        "before": 2,
+        "q": "En 1952, el puente empezó a abrirse con un autobús de dos pisos encima, porque nadie avisó al conductor. ¿Qué crees que hizo?",
+        "options": [
+          "Frenó en seco y se quedó colgando",
+          "Dio marcha atrás a toda prisa",
+          "Aceleró y saltó el hueco"
+        ],
+        "answer": 2
+      },
+      "toNext": "Sigue hasta el final del puente. Antes de llegar a la calle, baja por las escaleras de la izquierda hasta el río y camina junto a la muralla de la Torre, con el agua a tu izquierda, hasta quedarte frente a la muralla, cerca de la entrada."
+    },
+    {
+      "id": "torre",
+      "title": "Torre de Londres",
+      "subtitle": "Mil años de reyes, presos y leyendas",
+      "lat": 51.50758,
+      "lng": -0.07862,
+      "radius": 60,
+      "where": "En el paseo del río, frente a la muralla de la Torre y cerca de la entrada, desde donde se ve asomar la gran torre blanca del centro, con sus cuatro torrecillas.",
+      "paras": [
+        "Y terminamos en la Torre de Londres, donde los reyes se protegían de sus enemigos y, a veces, de sus propios súbditos. La gran torre blanca del centro la mandó construir Guillermo el Conquistador hacia 1078, pocos años después de conquistar Inglaterra. Si hiciste nuestra ruta por Westminster, te sonará: es el que se coronó en la abadía el día de Navidad de 1066. Era su manera de dejarles claro a los londinenses quién mandaba.",
+        "Ha sido palacio, fortaleza, cárcel, casa de la moneda y hasta zoo. Y desde hace siglos guarda las joyas de la corona: coronas, cetros y más de veintitrés mil piedras preciosas. Pero su fama le viene de sus presos. Aquí estuvo encerrada Ana Bolena, la segunda mujer de Enrique octavo, la de las iniciales del palacio de St James, y ahí dentro, en un patio, la decapitaron en 1536. Para hacerlo trajeron de Calais a un verdugo francés, experto con la espada. En la app tienes su retrato.",
+        "Aquí desaparecieron también dos niños, los príncipes de la Torre, en 1483, cuando su tío Ricardo tercero se quedó con el trono. Nunca más se supo de ellos. En 1674 aparecieron bajo una escalera los huesos de dos niños, que muchos creen que son los suyos, y hoy descansan en la abadía de Westminster. Y el último fusilado aquí fue un espía alemán, en 1941.",
+        "Negros, enormes y con bastante mala uva, y aquí se los toman muy en serio. Cuentan que el rey Carlos segundo quiso echarlos porque molestaban a su astrónomo, y que le recordaron la profecía. Así que se quedaron. Hoy los cuida un guardián, el maestro de los cuervos, y por si acaso siempre hay alguno de reserva. Los británicos no se fían ni de las leyendas.",
+        "Y los guardianes vestidos de azul y rojo son los beefeaters, antiguos militares que viven ahí dentro con sus familias. Cada noche, desde hace siglos, cierran las puertas en la ceremonia de las llaves, a la misma hora. Dicen que solo una vez, en 1941, se retrasó: cayó una bomba en plena ceremonia, y aun así la terminaron.",
+        "Y aquí me despido. Has recorrido dos mil años de Londres: de los romanos del puente a los templarios, del Gran Incendio a las bombas de la guerra, de la vieja dama del oro a los cuervos de la Torre. Una ciudad que ardió, que sufrió las bombas y que siempre volvió a levantarse. Como dejó escrito Wren en su catedral: resurgam. ¡Cheers, y hasta la próxima!"
+      ],
+      "quiz": {
+        "before": 3,
+        "q": "En la Torre viven siempre, como mínimo, seis animales muy especiales. Según la leyenda, si algún día se marchan, caerán la Torre y el reino. ¿Qué animales crees que son?",
+        "options": [
+          "Seis leones",
+          "Seis cuervos",
+          "Seis gatos"
+        ],
+        "answer": 1
+      },
+      "more": {
+        "title": "El zoo de la Torre",
+        "before": 5,
+        "ask": "Antes de despedirme, ¿te cuento la época en que en la Torre había leones, un elefante y un oso polar que pescaba en el Támesis? Si te apetece, toca «Cuéntame más». Si no, vamos con la despedida.",
+        "paras": [
+          "Durante seiscientos años, la Torre fue también el zoo del rey. Empezó Enrique tercero, hacia 1235, con tres grandes felinos que le regaló el emperador del Sacro Imperio. Y en 1252 llegó el animal más famoso: un oso blanco, seguramente un oso polar, regalo del rey de Noruega.",
+          "Mantenerlo salía caro, así que el rey mandó que le hicieran un bozal y una cadena larga, y que lo dejaran bajar al Támesis a bañarse y a pescar. Imagínate a los londinenses del siglo trece, en la orilla, viendo a un oso polar pescar salmones delante de la Torre. No había mejor espectáculo en toda la ciudad.",
+          "Tres años después llegó un elefante, regalo del rey de Francia, el primero que se veía en Inglaterra. En la app lo tienes, dibujado del natural por un monje de la época. Le construyeron una casa de madera, y dicen que le daban vino. Duró poco, el pobre: murió dos años después. Y siglos más tarde, para ver a los leones había que pagar tres medios peniques, o traer un perro o un gato para echárselo de comer. Mejor no preguntar.",
+          "Hasta hubo una inocentada famosa: cada primero de abril se invitaba a los incautos a ver el lavado de los leones en el foso, que por supuesto no existía. El zoo cerró en 1835, y sus animales se fueron al nuevo zoo de Londres, en Regent's Park. Seguro que lo agradecieron."
+        ]
+      }
+    }
+  ],
+  "legs": [
+    [
+      [
+        51.51316,
+        -0.11343
+      ],
+      [
+        51.51336,
+        -0.11325
+      ],
+      [
+        51.51342,
+        -0.11304
+      ],
+      [
+        51.51351,
+        -0.11311
+      ],
+      [
+        51.51354,
+        -0.11299
+      ]
+    ],
+    [
+      [
+        51.51354,
+        -0.11299
+      ],
+      [
+        51.51363,
+        -0.11255
+      ],
+      [
+        51.51346,
+        -0.11243
+      ],
+      [
+        51.5137,
+        -0.11152
+      ],
+      [
+        51.51377,
+        -0.11096
+      ],
+      [
+        51.51316,
+        -0.11064
+      ],
+      [
+        51.51302,
+        -0.11032
+      ],
+      [
+        51.513,
+        -0.11016
+      ]
+    ],
+    [
+      [
+        51.513,
+        -0.11016
+      ],
+      [
+        51.51302,
+        -0.11032
+      ],
+      [
+        51.51316,
+        -0.11064
+      ],
+      [
+        51.51377,
+        -0.11096
+      ],
+      [
+        51.51409,
+        -0.10921
+      ],
+      [
+        51.51415,
+        -0.108
+      ],
+      [
+        51.51412,
+        -0.10461
+      ],
+      [
+        51.51405,
+        -0.10449
+      ],
+      [
+        51.51408,
+        -0.10411
+      ],
+      [
+        51.51406,
+        -0.10329
+      ],
+      [
+        51.51385,
+        -0.10197
+      ],
+      [
+        51.51371,
+        -0.10056
+      ],
+      [
+        51.51368,
+        -0.1005
+      ],
+      [
+        51.51382,
+        -0.10039
+      ],
+      [
+        51.51372,
+        -0.10015
+      ],
+      [
+        51.5138,
+        -0.10008
+      ]
+    ],
+    [
+      [
+        51.5138,
+        -0.10008
+      ],
+      [
+        51.51398,
+        -0.09982
+      ],
+      [
+        51.51407,
+        -0.09948
+      ],
+      [
+        51.51445,
+        -0.09951
+      ],
+      [
+        51.51465,
+        -0.09879
+      ],
+      [
+        51.51471,
+        -0.09774
+      ],
+      [
+        51.51472,
+        -0.09765
+      ],
+      [
+        51.51479,
+        -0.09764
+      ],
+      [
+        51.51481,
+        -0.09727
+      ],
+      [
+        51.51466,
+        -0.09706
+      ],
+      [
+        51.51477,
+        -0.09674
+      ],
+      [
+        51.51466,
+        -0.09654
+      ],
+      [
+        51.51446,
+        -0.09583
+      ],
+      [
+        51.51421,
+        -0.09412
+      ],
+      [
+        51.51384,
+        -0.0921
+      ],
+      [
+        51.51347,
+        -0.08979
+      ],
+      [
+        51.51342,
+        -0.08923
+      ],
+      [
+        51.51346,
+        -0.08915
+      ],
+      [
+        51.51343,
+        -0.08909
+      ],
+      [
+        51.51349,
+        -0.08888
+      ],
+      [
+        51.51359,
+        -0.08814
+      ],
+      [
+        51.51355,
+        -0.08812
+      ]
+    ],
+    [
+      [
+        51.51355,
+        -0.08812
+      ],
+      [
+        51.51351,
+        -0.08811
+      ],
+      [
+        51.5135,
+        -0.08823
+      ],
+      [
+        51.51344,
+        -0.0883
+      ],
+      [
+        51.51344,
+        -0.08852
+      ],
+      [
+        51.51331,
+        -0.08855
+      ],
+      [
+        51.51326,
+        -0.08864
+      ],
+      [
+        51.51316,
+        -0.08862
+      ],
+      [
+        51.51295,
+        -0.08831
+      ],
+      [
+        51.51274,
+        -0.08823
+      ],
+      [
+        51.51108,
+        -0.08685
+      ],
+      [
+        51.51096,
+        -0.08655
+      ],
+      [
+        51.5108,
+        -0.08666
+      ],
+      [
+        51.51066,
+        -0.08628
+      ],
+      [
+        51.51049,
+        -0.08615
+      ],
+      [
+        51.51044,
+        -0.0859
+      ],
+      [
+        51.51007,
+        -0.08614
+      ],
+      [
+        51.51006,
+        -0.08597
+      ]
+    ],
+    [
+      [
+        51.51006,
+        -0.08597
+      ],
+      [
+        51.51001,
+        -0.08602
+      ],
+      [
+        51.51002,
+        -0.08606
+      ],
+      [
+        51.50969,
+        -0.08627
+      ],
+      [
+        51.50966,
+        -0.08617
+      ],
+      [
+        51.50947,
+        -0.08624
+      ],
+      [
+        51.50956,
+        -0.08691
+      ],
+      [
+        51.50941,
+        -0.08696
+      ],
+      [
+        51.50934,
+        -0.087
+      ],
+      [
+        51.50772,
+        -0.0876
+      ]
+    ],
+    [
+      [
+        51.50772,
+        -0.0876
+      ],
+      [
+        51.50674,
+        -0.08794
+      ],
+      [
+        51.50673,
+        -0.08778
+      ],
+      [
+        51.50677,
+        -0.0877
+      ],
+      [
+        51.50672,
+        -0.08721
+      ],
+      [
+        51.50658,
+        -0.08658
+      ],
+      [
+        51.50625,
+        -0.08681
+      ],
+      [
+        51.50608,
+        -0.08642
+      ],
+      [
+        51.50613,
+        -0.08636
+      ],
+      [
+        51.50616,
+        -0.08617
+      ],
+      [
+        51.50613,
+        -0.08589
+      ],
+      [
+        51.50601,
+        -0.08582
+      ],
+      [
+        51.50585,
+        -0.08597
+      ],
+      [
+        51.50536,
+        -0.08477
+      ],
+      [
+        51.50538,
+        -0.08472
+      ],
+      [
+        51.50522,
+        -0.08432
+      ],
+      [
+        51.5059,
+        -0.08346
+      ],
+      [
+        51.50624,
+        -0.08324
+      ],
+      [
+        51.50592,
+        -0.08136
+      ],
+      [
+        51.5055,
+        -0.07971
+      ],
+      [
+        51.505,
+        -0.07819
+      ],
+      [
+        51.50497,
+        -0.07822
+      ],
+      [
+        51.50468,
+        -0.07754
+      ],
+      [
+        51.5044,
+        -0.07642
+      ],
+      [
+        51.50435,
+        -0.07644
+      ],
+      [
+        51.50424,
+        -0.07599
+      ],
+      [
+        51.50427,
+        -0.07597
+      ],
+      [
+        51.5043,
+        -0.07607
+      ],
+      [
+        51.50509,
+        -0.07555
+      ],
+      [
+        51.50506,
+        -0.07547
+      ],
+      [
+        51.50511,
+        -0.07539
+      ],
+      [
+        51.50519,
+        -0.07537
+      ],
+      [
+        51.50522,
+        -0.07546
+      ],
+      [
+        51.50548,
+        -0.07528
+      ]
+    ],
+    [
+      [
+        51.50548,
+        -0.07528
+      ],
+      [
+        51.50576,
+        -0.07508
+      ],
+      [
+        51.50574,
+        -0.07499
+      ],
+      [
+        51.50581,
+        -0.07492
+      ],
+      [
+        51.50587,
+        -0.07491
+      ],
+      [
+        51.5059,
+        -0.07499
+      ],
+      [
+        51.507,
+        -0.07426
+      ],
+      [
+        51.50699,
+        -0.07422
+      ],
+      [
+        51.50678,
+        -0.07435
+      ],
+      [
+        51.50685,
+        -0.07465
+      ],
+      [
+        51.50672,
+        -0.07476
+      ],
+      [
+        51.5069,
+        -0.07573
+      ],
+      [
+        51.50707,
+        -0.07618
+      ],
+      [
+        51.50726,
+        -0.07706
+      ],
+      [
+        51.50741,
+        -0.078
+      ],
+      [
+        51.50749,
+        -0.07796
+      ],
+      [
+        51.50751,
+        -0.078
+      ],
+      [
+        51.50744,
+        -0.07805
+      ],
+      [
+        51.50744,
+        -0.07811
+      ],
+      [
+        51.50758,
+        -0.07862
+      ]
+    ]
+  ]
+}

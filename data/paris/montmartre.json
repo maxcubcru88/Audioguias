@@ -107,7 +107,29 @@
         ],
         "answer": 2
       },
-      "toNext": "Sigue subiendo por la rue Lepic, que aquí hace una gran curva. Al llegar arriba, en la esquina con la rue Girardon, verás un molino de madera encima de un restaurante."
+      "toNext": "Sigue subiendo por la rue Lepic, que aquí hace una gran curva. Al llegar arriba, en la esquina con la rue Girardon, verás un molino de madera encima de un restaurante.",
+      "more": {
+        "title": "El amor de Vincent en el café del Tambourin",
+        "ask": "¿Te cuento cómo Vincent se enamoró de la dueña de un café, le pagaba la comida con cuadros… y acabó perdiéndolos todos? Si te apetece, toca «Cuéntame más». Si no, seguimos subiendo.",
+        "paras": [
+          "A unos minutos de aquí, en el bulevar de Clichy, había un café italiano, Le Tambourin, con las mesas y los taburetes en forma de pandereta. Lo llevaba Agostina Segatori, una italiana que de joven había posado para pintores como Corot o Manet, y que con lo ahorrado se montó su negocio. Vincent empezó a comer allí varias veces por semana. ¿Y cómo pagaba? Con cuadros, que ella colgaba en las paredes.",
+          "Y, como era de esperar, se enamoró de la dueña, aunque ella le sacaba doce años. Hay quien dice que fueron amantes; lo que sí sabemos es que la pintó sentada a una de esas mesas de pandereta, con un cigarrillo en la mano y una cerveza delante, pensando en sus cosas. En el móvil tienes el cuadro, que hoy está en el museo Van Gogh de Ámsterdam.",
+          "En 1887 Vincent colgó allí una exposición de los grabados japoneses que coleccionaba, esos que tanto le cambiaron la forma de pintar. Pero el idilio duró poco. Agostina enfermó, el café se llenó de deudas y la relación se enfrió. Vincent dejó de ir, y sus cuadros se quedaron allí colgados, con la promesa de que podría recogerlos.",
+          "Pues no. Cuando el negocio quebró, los acreedores vendieron sus cuadros como telas usadas, en paquetes de diez, por entre cincuenta céntimos y un franco el lote. Hoy un solo Van Gogh puede superar los cien millones de dólares. Si alguno de aquellos compradores llega a guardar el paquete en el desván, sus bisnietos estarían ahora tomando el sol en un yate."
+        ],
+        "images": [
+          {
+            "src": "img/paris/montmartre/van-gogh-mas.webp",
+            "w": 913,
+            "h": 1100,
+            "para": 1,
+            "after": "En el móvil tienes el cuadro, que hoy está en el museo Van Gogh de Ámsterdam.",
+            "caption": "Agostina Segatori en el café del Tambourin, pintada por Van Gogh en 1887",
+            "credit": "Vincent van Gogh · Museo Van Gogh, Ámsterdam · Dominio público",
+            "source": "https://commons.wikimedia.org/wiki/File:In_het_caf%C3%A9_Agostina_Segatori_in_Le_Tambourin_-_s0017V1962_-_Van_Gogh_Museum.jpg"
+          }
+        ]
+      }
     },
     {
       "id": "moulin-de-la-galette",
@@ -121,6 +143,7 @@
         "¿Molinos en París? Pues sí: en esta colina llegó a haber unos treinta, que molían el trigo para los panaderos de la ciudad. Hoy quedan dos. El que tienes delante es el Radet, de 1717, que se trasladó a esta esquina en 1924. Y un poco más abajo, en un jardín privado, está el Blute-Fin, de 1622, el más antiguo. Juntos forman el famoso Moulin de la Galette.",
         "Un panecillo de centeno, como lo oyes. En el siglo diecinueve, la familia de molineros, los Debray, montó aquí un merendero con baile, y servía esa galette con un vaso de leche y, más tarde, con el vino del barrio. Los domingos subía media ciudad a bailar al aire libre, y el molino se convirtió en la pista de baile más famosa de Montmartre.",
         "En 1876 un pintor joven, Auguste Renoir, se plantó aquí con su caballete para pintar el baile, con sus amigos y las chicas del barrio como modelos. Dicen que más de una vez el viento estuvo a punto de llevarse el lienzo. En la app tienes el resultado, que hoy cuelga en el museo de Orsay. Y una versión más pequeña se vendió en 1990 por setenta y ocho millones de dólares a un millonario japonés, que bromeó con que lo incineraran con el cuadro. Menos mal que luego se lo pensó mejor.",
+        "¿Y te acuerdas de Vincent, el de la parada anterior? Vivía a cinco minutos de aquí, así que estos molinos los tenía a la vuelta de la esquina. Solo en 1886 los pintó por lo menos media docena de veces: las aspas, las vallas de madera y el mirador de arriba, adonde la gente subía a ver París entero. Hoy esos cuadros están repartidos por museos de medio mundo, de Berlín a Buenos Aires. Vamos, que este molino ha posado más que muchas modelos.",
         "Y una curiosidad para los aficionados al motor. En la Nochebuena de 1898, un joven de veintiún años, Louis Renault, subió esta misma cuesta de la rue Lepic con el primer coche que había construido, para ganar una apuesta. Lo consiguió, y esa misma noche se llevó doce encargos. Poco después fundó con sus hermanos la marca Renault. No está mal para una cuesta que hoy hay quien no sube ni andando."
       ],
       "images": [
@@ -196,7 +219,8 @@
       "paras": [
         "Esta placita está dedicada a Dalida, una de las grandes divas de la canción francesa. Pero ojo, que no era francesa de nacimiento.",
         "Nació en El Cairo en 1933, hija de padres italianos, y se llamaba Yolanda Gigliotti. En 1954 fue elegida Miss Egipto, se vino a París a probar suerte y dos años después ya era una estrella con Bambino. Cantó en varios idiomas, también en español, y vendió más de cien millones de discos. Vivió veinticinco años aquí al lado, en la rue d'Orchampt, y Montmartre la adora.",
-        "Su vida tuvo grandes éxitos y también grandes tragedias, y murió en 1987 en esa misma casa. Diez años después, el barrio le dedicó esta plaza.",
+        "Y seguro que alguna canción suya te suena. Una de las más famosas, Paroles, paroles, de 1973, a dúo con Alain Delon, el actor más guapo de Francia. Él le susurra piropos con voz de terciopelo, y ella le contesta, sin inmutarse: palabras, palabras, palabras. Fue número uno en Francia, y desde entonces es el himno de cualquiera que no se cree un piropo. Si te pasas el resto del paseo tarareándola, lo siento: es culpa mía.",
+        "Su vida tuvo grandes éxitos y también grandes tragedias, y murió en 1987 en su casa de la rue d'Orchampt. Diez años después, el barrio le dedicó esta plaza.",
         "El busto es de Aslan, un escultor que durante años dibujó cada mes las chicas pin-up de una revista para caballeros. Y fíjate qué parte brilla más: dicen que tocarle el pecho trae suerte en el amor, y el bronce se ha desgastado justo ahí. Hay quien piensa que sobra tanto manoseo, y no le falta razón.",
         "¿Y el nombre de la calle? Rue de l'Abreuvoir, la calle del abrevadero: aquí bebían los caballos y las vacas cuando Montmartre era un pueblo. En la pantalla tienes un cuadro de hacia 1895, pintado desde el abrevadero, con el Sacré-Cœur todavía en obras al fondo. Y aquí mismo, a un lado de la plaza, en el Château des Brouillards, vivió Renoir, el pintor del baile del molino. Allí nació su hijo Jean, que acabaría siendo uno de los grandes directores de cine francés."
       ],
@@ -205,7 +229,7 @@
           "src": "img/paris/montmartre/dalida.webp",
           "w": 917,
           "h": 1100,
-          "para": 4,
+          "para": 5,
           "after": "En la pantalla tienes un cuadro de hacia 1895, pintado desde el abrevadero, con el Sacré-Cœur todavía en obras al fondo.",
           "caption": "El Sacré-Cœur en obras, visto desde el abrevadero de Montmartre, hacia 1895",
           "credit": "Édouard Zawiski · Museo Carnavalet · Dominio público",
@@ -235,6 +259,7 @@
       "paras": [
         "Esta es la Maison Rose, seguramente la casa más fotografiada de Montmartre, y no me extraña. A principios del siglo veinte la usaba como estudio un pintor catalán, Ramon Pichot. Su mujer, Germaine, abrió aquí un café restaurante y, según cuentan, fue ella quien pintó la casa de rosa. En el móvil tienes una foto suya de hacia 1905.",
         "Lo de Ramon Pichot tiene su gracia para nosotros: era amigo de Picasso y fue uno de los primeros en descubrir el talento de un niño de Figueres que pintaba en Cadaqués, un tal Salvador Dalí. Y la casa la hizo famosa otro pintor del barrio, Maurice Utrillo, que la pintó varias veces hacia 1912.",
+        "Y la historia de Utrillo es puro Montmartre. Su madre, Suzanne Valadon, empezó de modelo: posó para Renoir y para Toulouse-Lautrec, y acabó siendo una gran pintora. En el móvil la tienes bailando en un cuadro de Renoir de 1883. ¿Y el padre del niño? Nunca se supo. Cuando Maurice tenía siete años, un crítico catalán amigo de la madre, Miguel Utrillo, le dio su apellido. Otra vez Cataluña, ya ves. El chico se aficionó muy pronto a la bebida, y su madre lo puso a pintar para apartarlo del alcohol. De la botella no lo apartó del todo, pero pintor, desde luego, salió.",
         "Picasso, ni más ni menos. Pero la historia empieza con un drama. Un gran amigo de Picasso, el pintor barcelonés Carles Casagemas, se enamoró perdidamente de Germaine. Ella no le correspondía y, en 1901, después de una última negativa, Casagemas se quitó la vida en un café de París. Tenía veinte años. Picasso quedó destrozado y empezó a pintar con tonos azules y tristes: fue el comienzo de su famosa época azul. Y, poco después, el que acabó en brazos de Germaine fue el propio Picasso.",
         "Así que esta casita tan alegre, con sus flores y su color de tarta de cumpleaños, guarda una historia de amor, de celos y de pintura. Como Montmartre entero. Hoy sigue siendo un restaurante, por si te apetece sentarte un rato."
       ],
@@ -248,10 +273,20 @@
           "caption": "Germaine Pichot hacia 1905",
           "credit": "Foto anónima · Dominio público",
           "source": "https://commons.wikimedia.org/wiki/File:Germaine_Pichot,_c._1905.jpg"
+        },
+        {
+          "src": "img/paris/montmartre/maison-rose-2.webp",
+          "w": 584,
+          "h": 1100,
+          "para": 2,
+          "after": "En el móvil la tienes bailando en un cuadro de Renoir de 1883.",
+          "caption": "Suzanne Valadon, la madre de Utrillo, en Baile en Bougival, de Renoir, 1883",
+          "credit": "Pierre-Auguste Renoir · Museo de Bellas Artes de Boston · Dominio público",
+          "source": "https://commons.wikimedia.org/wiki/File:Pierre-Auguste_Renoir_-_Suzanne_Valadon_-_Dance_at_Bougival.jpg"
         }
       ],
       "quiz": {
-        "before": 2,
+        "before": 3,
         "q": "Antes de casarse con Pichot, Germaine fue amante de un joven pintor que acabaría siendo el más famoso del siglo veinte. ¿Quién crees que fue?",
         "options": [
           "Matisse",
@@ -282,7 +317,8 @@
       "where": "En la rue des Saules, junto a la verja, mirando la viña que baja en cuesta.",
       "paras": [
         "¿Una viña en pleno París? Pues sí. Durante siglos, Montmartre fue un pueblo de molinos y viñedos. En el móvil tienes esta misma calle en 1899, cuando todavía era medio campo. Y su vino tenía fama... de malo. Había un dicho: vino de Montmartre, el que bebe una pinta, mea el doble. Vamos, que más que un vino era un diurético.",
-        "A principios del siglo veinte ya no quedaban cepas, y este terreno, que había sido el jardín del cantante Aristide Bruant, se quedó vacío. En 1930 quisieron construir aquí unos pisos, pero los vecinos y los artistas del barrio, con la República de Montmartre a la cabeza, una asociación que tenía hasta su propio presidente, se plantaron. Y nunca mejor dicho: en 1933 el ayuntamiento plantó una viña, para que nadie pudiera edificar.",
+        "Y hablando de malos tragos: este terreno era el jardín de Aristide Bruant, el cantante más bronco de París. En su cabaret, el Mirliton, recibía a los clientes a gritos y con insultos, y el público entero se burlaba a coro del que acababa de entrar. Y la gente pagaba encantada por que la pusieran verde. Toulouse-Lautrec le hizo unos carteles famosísimos, con su sombrero negro de ala ancha y su bufanda roja: en el móvil tienes uno.",
+        "A principios del siglo veinte ya no quedaban cepas, y este terreno se quedó vacío. En 1930 quisieron construir aquí unos pisos, pero los vecinos y los artistas del barrio, con la República de Montmartre a la cabeza, una asociación que tenía hasta su propio presidente, se plantaron. Y nunca mejor dicho: en 1933 el ayuntamiento plantó una viña, para que nadie pudiera edificar.",
         "Compraron uvas en el mercado central de Les Halles y las sujetaron a las cepas con alambre, para hacer como que vendimiaban. Y a la fiesta vino hasta el presidente de la República. Todo muy serio, ya ves. Desde entonces, cada octubre se celebra la fiesta de la vendimia de Montmartre, con desfile, música y mucho vino, aunque no precisamente de aquí.",
         "Hoy hay unas mil setecientas cepas de una treintena de variedades. Con sus uvas se hace un vino en el ayuntamiento del distrito, y las botellas se subastan para obras sociales del barrio. Sobre su sabor no me pronuncio. Digamos que se bebe por la causa."
       ],
@@ -296,10 +332,20 @@
           "caption": "La rue des Saules en agosto de 1899",
           "credit": "Foto: Eugène Atget · Biblioteca Nacional de Francia · Dominio público",
           "source": "https://commons.wikimedia.org/wiki/File:Atget_-_Rue_des_Saules_-_Montmartre_-_Août_1899,_btv1b10519823n.jpeg"
+        },
+        {
+          "src": "img/paris/montmartre/vigne-2.webp",
+          "w": 753,
+          "h": 1100,
+          "para": 1,
+          "after": "Toulouse-Lautrec le hizo unos carteles famosísimos, con su sombrero negro de ala ancha y su bufanda roja: en el móvil tienes uno.",
+          "caption": "Aristide Bruant en el cartel de Toulouse-Lautrec para Les Ambassadeurs, 1892",
+          "credit": "Henri de Toulouse-Lautrec · Dominio público",
+          "source": "https://commons.wikimedia.org/wiki/File:Toulouse-Lautrec_-_Ambassadeurs_Aristide_Bruant,_1948.450.jpg"
         }
       ],
       "quiz": {
-        "before": 2,
+        "before": 3,
         "q": "En la primera fiesta de la vendimia, en 1934, las cepas eran tan jóvenes que no tenían uvas. ¿Qué crees que hicieron?",
         "options": [
           "La suspendieron",
@@ -322,6 +368,7 @@
         "Este caserón con aire de casa de campo es el Lapin Agile, uno de los cabarets más antiguos de París. Todavía hoy, por las noches, se cantan aquí canciones francesas de las de siempre, sin micrófono. Y ha tenido nombres de lo más inquietantes: primero fue la Cita de los Ladrones y después el Cabaret de los Asesinos, por unos retratos de criminales famosos que colgaban en las paredes.",
         "Un caricaturista, André Gill, pintó un cartel con un conejo que salta de una cazuela, y la gente empezó a llamar al local el conejo de Gill, en francés, Lapin à Gill. Dilo deprisa: Lapin Agile. En la app tienes aquel cartel. Juego de palabras y nombre nuevo, todo en uno.",
         "A principios del siglo veinte lo llevaba Frédé, un tipo con barba y guitarra que tenía en el local un burro, un mono y un cuervo, y que a veces aceptaba poemas y canciones como pago. Por aquí pasaban Picasso, Apollinaire, Utrillo y muchos poetas sin blanca. En 1905 Picasso pintó un cuadro del cabaret, en el que él mismo aparece vestido de arlequín, y estuvo años colgado aquí dentro. En 1989 se vendió por más de cuarenta millones de dólares. Si Frédé levantara la cabeza...",
+        "¿Y sabes quién salvó este cabaret? Nuestro amigo Bruant, el de los insultos y la bufanda roja. En 1913, cuando las obras amenazaban con llevarse por delante medio Montmartre, lo compró para que no lo derribaran, y dejó que Frédé siguiera al frente. Años después se lo vendió a Paulo, el hijo de Frédé. Así que el cantante más maleducado de París acabó siendo el ángel de la guarda de los bohemios del barrio. La vida tiene estas cosas.",
         "Y mira la tapia de enfrente: es el pequeño cementerio de Saint-Vincent. Ahí descansan el pintor Utrillo, el de la casa rosa, y Marcel Aymé, el del hombre que atravesaba las paredes. Vecinos para siempre del cabaret donde tantas noches pasaron. Hay sitios peores para descansar, ¿no?"
       ],
       "images": [
@@ -356,7 +403,44 @@
           "Hoy el cuadro se conserva en un centro cultural de Milly-la-Forêt, cerca de Fontainebleau. Y la pregunta sigue en el aire: ¿es arte o no es arte? Yo solo digo que, de todos los pintores de Montmartre, Lolo fue el único que cobró en zanahorias y no se quejó."
         ]
       },
-      "toNext": "Ahora toca subir. Vuelve por la rue des Saules, cuesta arriba, y gira a la izquierda por la rue Cortot, la del museo de Montmartre, donde Renoir tenía el estudio cuando pintó el baile del molino. Al final, sigue a la derecha por la rue du Mont-Cenis y luego a la izquierda, siempre hacia la cúpula blanca, hasta la gran explanada de delante de la basílica."
+      "toNext": "Ahora toca subir. Vuelve por la rue des Saules, cuesta arriba, y gira a la izquierda por la rue Cortot. En esa calle, en el museo de Montmartre, tenía Renoir el estudio cuando pintó el baile del molino, y después vivieron allí Suzanne Valadon y su hijo Utrillo. Al final de la calle, sube a la derecha por la rue du Mont-Cenis y enseguida, a tu derecha, se abre una plaza llena de caballetes."
+    },
+    {
+      "id": "place-du-tertre",
+      "title": "Place du Tertre",
+      "subtitle": "La plaza de los pintores y la palabra bistró",
+      "lat": 48.88653,
+      "lng": 2.3408,
+      "radius": 40,
+      "where": "En el centro de la plaza, entre los caballetes de los pintores.",
+      "paras": [
+        "Esta es la Place du Tertre, la plaza de los pintores. Fíjate en los caballetes, los retratistas y las terrazas. Esta era la plaza mayor de Montmartre, que hasta 1860 fue un municipio aparte. En el número 3 estuvo su primer ayuntamiento. En el móvil la tienes hacia 1900, cuando todavía tenía aire de aldea. Hoy es la plaza más turística del barrio, pero a principios del siglo veinte por aquí pasaban Picasso, Utrillo y compañía, con los bolsillos vacíos y buscando dónde cenar barato.",
+        "Para pintar aquí no basta con traer el caballete: hace falta un permiso del ayuntamiento, y los artistas se turnan los huecos, que son diminutos. Si un retratista te ofrece hacerte un dibujo en diez minutos, pregúntale el precio antes de sentarte. Lo digo por experiencia ajena.",
+        "Bistró. La leyenda dice que en 1814, cuando los soldados rusos ocuparon París, los cosacos entraban aquí gritando bystro, que en ruso significa rápido, porque tenían prisa por comer y beber. Y de ahí, el bistró. Eso sí, los lingüistas no se lo creen: la palabra no aparece escrita hasta muchas décadas después. Pero en Montmartre la cuentan con tanto cariño que da pena llevarles la contraria."
+      ],
+      "images": [
+        {
+          "src": "img/paris/montmartre/place-du-tertre.webp",
+          "w": 1100,
+          "h": 709,
+          "para": 0,
+          "after": "En el móvil la tienes hacia 1900, cuando todavía tenía aire de aldea.",
+          "caption": "La Place du Tertre hacia 1900",
+          "credit": "Foto anónima · Museo Carnavalet · CC0",
+          "source": "https://commons.wikimedia.org/wiki/File:Place_du_Tertre,_18%C3%A8me_arrondissement,_Paris._PH58768.jpg"
+        }
+      ],
+      "quiz": {
+        "before": 2,
+        "q": "En una esquina de esta plaza está La Mère Catherine, un restaurante que presume de haber abierto en 1793. Y cuentan que aquí nació una palabra que hoy se usa en el mundo entero. ¿Cuál crees que es?",
+        "options": [
+          "Cabaret",
+          "Menú",
+          "Bistró"
+        ],
+        "answer": 2
+      },
+      "toNext": "Sal de la plaza por la esquina de la iglesia de Saint-Pierre, una de las más antiguas de París, y sigue la callecita que la bordea, con la iglesia a tu izquierda, hacia la cúpula blanca. En un par de minutos saldrás a la explanada, delante de la basílica."
     },
     {
       "id": "sacre-coeur",
@@ -371,7 +455,7 @@
         "El nombre de Montmartre tiene su historia. Puede venir de monte de los mártires, porque la leyenda dice que aquí decapitaron a san Dionisio, el primer obispo de París, que recogió su cabeza y se marchó andando con ella en las manos. Si hiciste nuestra ruta por el centro, ya lo viste en la fachada de Notre-Dame. Aunque hay quien dice que el nombre viene de un templo romano dedicado a Marte o a Mercurio. Tú eliges.",
         "Ahora date la vuelta: la basílica del Sagrado Corazón. Parece antiquísima, pero es casi nueva: se empezó en 1875 y se consagró en 1919. En el móvil tienes una foto de las obras, hacia 1884. ¿Y por qué aquí? Tras la derrota de Francia contra Prusia en 1870 y la revuelta de la Comuna en 1871, que estalló precisamente en esta colina, se levantó como una iglesia de penitencia, para expiar, decían, los pecados de la nación. Por eso durante mucho tiempo fue un edificio polémico: para unos, un símbolo de fe; para otros, un castigo a los vecinos de la Comuna.",
         "Su piedra, un travertino de Château-Landon, al sureste de París, suelta un mineral blanco con la lluvia, la calcita, y se va limpiando sola. Cuanto más llueve, más blanca. Vamos, que es el único edificio de París al que le sienta bien el mal tiempo. Y en su campanario cuelga la Savoyarde, una campana de casi diecinueve toneladas, la más grande de Francia, que solo suena en las grandes fiestas.",
-        "Y aquí me despido. Has subido Montmartre de abajo arriba: del Moulin Rouge y su cancán a los molinos de Renoir, de la casa de Van Gogh al hombre que atravesaba las paredes, de la viña de los vecinos al cabaret de los artistas sin un duro. Ahora te toca a ti: siéntate en las escaleras, escucha a algún músico callejero y deja que París haga el resto. ¡Merci, y hasta la próxima!"
+        "Y aquí me despido. Has subido Montmartre de abajo arriba: del Moulin Rouge y su cancán a los molinos de Renoir, de la casa de Van Gogh al cabaret de los artistas, y de la plaza de los pintores a lo más alto de París. Ahora te toca a ti: siéntate en las escaleras, escucha a algún músico callejero y deja que París haga el resto. ¡Merci, y hasta la próxima!"
       ],
       "images": [
         {
@@ -977,268 +1061,326 @@
     ],
     [
       [
-        48.888649,
+        48.88865,
         2.33986
       ],
       [
-        48.888639,
-        2.339857
+        48.88864,
+        2.33986
       ],
       [
-        48.888584,
-        2.339839
+        48.88858,
+        2.33984
       ],
       [
-        48.888578,
-        2.339869
+        48.88858,
+        2.33987
       ],
       [
-        48.888575,
-        2.339891
+        48.88858,
+        2.33989
       ],
       [
-        48.888561,
-        2.339896
+        48.88856,
+        2.3399
       ],
       [
-        48.888547,
-        2.339889
+        48.88855,
+        2.33989
       ],
       [
-        48.888519,
-        2.339888
+        48.88852,
+        2.33989
       ],
       [
-        48.888496,
-        2.339887
+        48.8885,
+        2.33989
       ],
       [
-        48.888474,
-        2.339891
+        48.88847,
+        2.33989
       ],
       [
-        48.888468,
-        2.339841
+        48.88847,
+        2.33984
       ],
       [
-        48.888428,
-        2.339836
+        48.88843,
+        2.33984
       ],
       [
-        48.888327,
-        2.339826
+        48.88833,
+        2.33983
       ],
       [
-        48.888194,
+        48.88819,
         2.33981
       ],
       [
-        48.887919,
-        2.339802
+        48.88792,
+        2.3398
       ],
       [
         48.88782,
-        2.339796
+        2.3398
       ],
       [
-        48.887805,
+        48.88781,
         2.33982
       ],
       [
         48.88779,
-        2.339817
+        2.33982
       ],
       [
-        48.887769,
-        2.339816
+        48.88777,
+        2.33982
       ],
       [
-        48.887756,
-        2.339816
+        48.88776,
+        2.33982
       ],
       [
         48.88775,
-        2.339818
+        2.33982
       ],
       [
-        48.887693,
-        2.340294
+        48.88769,
+        2.34029
       ],
       [
-        48.887653,
-        2.340567
+        48.88765,
+        2.34057
       ],
       [
-        48.887631,
-        2.340608
+        48.88764,
+        2.34058
       ],
       [
-        48.887611,
-        2.340747
+        48.88763,
+        2.34061
       ],
       [
-        48.887599,
-        2.340864
+        48.88761,
+        2.34075
       ],
       [
-        48.887593,
-        2.341004
+        48.8876,
+        2.34086
       ],
       [
-        48.887585,
-        2.341286
+        48.88759,
+        2.341
       ],
       [
-        48.887578,
-        2.341464
+        48.88759,
+        2.34129
       ],
       [
-        48.887562,
-        2.341491
+        48.88758,
+        2.34146
       ],
       [
-        48.887542,
-        2.341505
+        48.88756,
+        2.34149
       ],
       [
-        48.887526,
-        2.341497
+        48.88754,
+        2.34151
       ],
       [
-        48.887499,
-        2.341483
+        48.88753,
+        2.3415
       ],
       [
-        48.887158,
-        2.341352
+        48.88752,
+        2.34156
       ],
       [
-        48.88715,
-        2.341401
+        48.88752,
+        2.34161
       ],
       [
-        48.887141,
-        2.341459
+        48.8872,
+        2.34147
       ],
       [
-        48.88701,
-        2.342317
+        48.88717,
+        2.34149
       ],
       [
-        48.88701,
-        2.342403
+        48.88714,
+        2.34146
       ],
       [
-        48.886983,
-        2.342414
+        48.88712,
+        2.34144
       ],
       [
-        48.88697,
-        2.342467
+        48.8871,
+        2.3414
       ],
       [
-        48.8869,
-        2.342478
+        48.88707,
+        2.34139
       ],
       [
-        48.886778,
-        2.342491
+        48.88692,
+        2.34135
+      ],
+      [
+        48.88684,
+        2.34133
+      ],
+      [
+        48.88685,
+        2.3413
+      ],
+      [
+        48.88685,
+        2.34126
+      ],
+      [
+        48.88685,
+        2.34124
+      ],
+      [
+        48.88684,
+        2.34123
+      ],
+      [
+        48.88675,
+        2.34118
+      ],
+      [
+        48.88672,
+        2.34117
+      ],
+      [
+        48.88669,
+        2.34115
+      ],
+      [
+        48.88668,
+        2.34111
+      ],
+      [
+        48.88663,
+        2.3411
       ],
       [
         48.88665,
-        2.342511
+        2.34102
       ],
       [
-        48.886429,
-        2.342537
+        48.8865,
+        2.34096
+      ]
+    ],
+    [
+      [
+        48.8865,
+        2.34096
       ],
       [
-        48.886302,
-        2.342552
+        48.88665,
+        2.34102
       ],
       [
-        48.886305,
-        2.342609
+        48.88663,
+        2.3411
       ],
       [
-        48.886308,
-        2.342694
+        48.88663,
+        2.34114
       ],
       [
-        48.886311,
-        2.342753
+        48.88666,
+        2.34137
       ],
       [
-        48.886304,
-        2.342754
+        48.88659,
+        2.34141
       ],
       [
-        48.886292,
-        2.342759
+        48.88654,
+        2.34141
       ],
       [
-        48.886283,
-        2.342766
+        48.88629,
+        2.34139
       ],
       [
-        48.886274,
-        2.342776
+        48.88629,
+        2.34142
       ],
       [
-        48.886268,
-        2.342784
+        48.88628,
+        2.34144
       ],
       [
-        48.886264,
-        2.342794
+        48.88625,
+        2.34144
       ],
       [
-        48.886259,
-        2.342809
+        48.88623,
+        2.34145
       ],
       [
-        48.886256,
-        2.342826
+        48.88612,
+        2.34194
       ],
       [
-        48.886255,
-        2.342842
+        48.88608,
+        2.34217
       ],
       [
-        48.886259,
-        2.342913
+        48.88606,
+        2.34224
       ],
       [
-        48.886251,
-        2.342914
+        48.88605,
+        2.34228
       ],
       [
-        48.886244,
-        2.342919
+        48.88605,
+        2.34232
       ],
       [
-        48.886239,
-        2.342925
+        48.88606,
+        2.34238
       ],
       [
-        48.886235,
-        2.342931
+        48.88608,
+        2.34244
       ],
       [
-        48.886232,
-        2.34294
+        48.88611,
+        2.34251
       ],
       [
-        48.886229,
-        2.342952
+        48.88613,
+        2.34257
       ],
       [
-        48.886237,
-        2.343095
+        48.88611,
+        2.34263
+      ],
+      [
+        48.88617,
+        2.3427
+      ],
+      [
+        48.88617,
+        2.34273
+      ],
+      [
+        48.88619,
+        2.34311
       ],
       [
         48.8862,
-        2.343104
+        2.3431
       ]
     ]
   ],
@@ -1280,7 +1422,16 @@
         "quiz": "van-gogh-q.mp3",
         "ok": "van-gogh-ok.mp3",
         "ko": "van-gogh-ko.mp3",
-        "skip": "van-gogh-skip.mp3"
+        "skip": "van-gogh-skip.mp3",
+        "more": {
+          "ask": "van-gogh-mas.mp3",
+          "paras": [
+            "van-gogh-m0.mp3",
+            "van-gogh-m1.mp3",
+            "van-gogh-m2.mp3",
+            "van-gogh-m3.mp3"
+          ]
+        }
       },
       "moulin-de-la-galette": {
         "paras": [
@@ -1288,7 +1439,8 @@
           "moulin-de-la-galette-p1.mp3",
           "moulin-de-la-galette-p2.mp3",
           "moulin-de-la-galette-p3.mp3",
-          "moulin-de-la-galette-p4.mp3"
+          "moulin-de-la-galette-p4.mp3",
+          "moulin-de-la-galette-p5.mp3"
         ],
         "quiz": "moulin-de-la-galette-q.mp3",
         "ok": "moulin-de-la-galette-ok.mp3",
@@ -1315,7 +1467,8 @@
           "dalida-p2.mp3",
           "dalida-p3.mp3",
           "dalida-p4.mp3",
-          "dalida-p5.mp3"
+          "dalida-p5.mp3",
+          "dalida-p6.mp3"
         ],
         "quiz": "dalida-q.mp3",
         "ok": "dalida-ok.mp3",
@@ -1328,7 +1481,8 @@
           "maison-rose-p1.mp3",
           "maison-rose-p2.mp3",
           "maison-rose-p3.mp3",
-          "maison-rose-p4.mp3"
+          "maison-rose-p4.mp3",
+          "maison-rose-p5.mp3"
         ],
         "quiz": "maison-rose-q.mp3",
         "ok": "maison-rose-ok.mp3",
@@ -1350,7 +1504,8 @@
           "vigne-p1.mp3",
           "vigne-p2.mp3",
           "vigne-p3.mp3",
-          "vigne-p4.mp3"
+          "vigne-p4.mp3",
+          "vigne-p5.mp3"
         ],
         "quiz": "vigne-q.mp3",
         "ok": "vigne-ok.mp3",
@@ -1363,7 +1518,8 @@
           "lapin-agile-p1.mp3",
           "lapin-agile-p2.mp3",
           "lapin-agile-p3.mp3",
-          "lapin-agile-p4.mp3"
+          "lapin-agile-p4.mp3",
+          "lapin-agile-p5.mp3"
         ],
         "quiz": "lapin-agile-q.mp3",
         "ok": "lapin-agile-ok.mp3",
@@ -1400,6 +1556,18 @@
             "sacre-coeur-m3.mp3"
           ]
         }
+      },
+      "place-du-tertre": {
+        "paras": [
+          "place-du-tertre-p0.mp3",
+          "place-du-tertre-p1.mp3",
+          "place-du-tertre-p2.mp3",
+          "place-du-tertre-p3.mp3"
+        ],
+        "quiz": "place-du-tertre-q.mp3",
+        "ok": "place-du-tertre-ok.mp3",
+        "ko": "place-du-tertre-ko.mp3",
+        "skip": "place-du-tertre-skip.mp3"
       }
     },
     "files": {
@@ -1499,6 +1667,26 @@
         "v": "7cd3f900",
         "b": 65245
       },
+      "van-gogh-mas.mp3": {
+        "v": "1ea3efcd",
+        "b": 199410
+      },
+      "van-gogh-m0.mp3": {
+        "v": "960c4f30",
+        "b": 429706
+      },
+      "van-gogh-m1.mp3": {
+        "v": "3f2b4ef7",
+        "b": 356981
+      },
+      "van-gogh-m2.mp3": {
+        "v": "c43bbc06",
+        "b": 386238
+      },
+      "van-gogh-m3.mp3": {
+        "v": "b66c828d",
+        "b": 353219
+      },
       "moulin-de-la-galette-p0.mp3": {
         "v": "0b7263fb",
         "b": 442662
@@ -1512,10 +1700,14 @@
         "b": 528344
       },
       "moulin-de-la-galette-p3.mp3": {
+        "v": "fcd716a1",
+        "b": 486130
+      },
+      "moulin-de-la-galette-p4.mp3": {
         "v": "77359422",
         "b": 446424
       },
-      "moulin-de-la-galette-p4.mp3": {
+      "moulin-de-la-galette-p5.mp3": {
         "v": "ccd8ab39",
         "b": 198156
       },
@@ -1580,18 +1772,22 @@
         "b": 454365
       },
       "dalida-p2.mp3": {
-        "v": "cf50994d",
-        "b": 193141
+        "v": "39b3d023",
+        "b": 520821
       },
       "dalida-p3.mp3": {
+        "v": "1a0b37bc",
+        "b": 199410
+      },
+      "dalida-p4.mp3": {
         "v": "1f493f0b",
         "b": 331485
       },
-      "dalida-p4.mp3": {
+      "dalida-p5.mp3": {
         "v": "622e505a",
         "b": 491146
       },
-      "dalida-p5.mp3": {
+      "dalida-p6.mp3": {
         "v": "0e40893d",
         "b": 176422
       },
@@ -1620,14 +1816,18 @@
         "b": 318528
       },
       "maison-rose-p2.mp3": {
+        "v": "0e74b310",
+        "b": 646208
+      },
+      "maison-rose-p3.mp3": {
         "v": "756feb71",
         "b": 607756
       },
-      "maison-rose-p3.mp3": {
+      "maison-rose-p4.mp3": {
         "v": "82247e0c",
         "b": 250819
       },
-      "maison-rose-p4.mp3": {
+      "maison-rose-p5.mp3": {
         "v": "1502ebd4",
         "b": 160958
       },
@@ -1672,18 +1872,22 @@
         "b": 395433
       },
       "vigne-p1.mp3": {
-        "v": "3218d68e",
-        "b": 483622
+        "v": "6578a91b",
+        "b": 465650
       },
       "vigne-p2.mp3": {
+        "v": "6ed6bb86",
+        "b": 440155
+      },
+      "vigne-p3.mp3": {
         "v": "e3d7f090",
         "b": 364504
       },
-      "vigne-p3.mp3": {
+      "vigne-p4.mp3": {
         "v": "1decdbac",
         "b": 265866
       },
-      "vigne-p4.mp3": {
+      "vigne-p5.mp3": {
         "v": "aaa6d276",
         "b": 170153
       },
@@ -1716,12 +1920,16 @@
         "b": 561781
       },
       "lapin-agile-p3.mp3": {
+        "v": "6e7a8917",
+        "b": 458127
+      },
+      "lapin-agile-p4.mp3": {
         "v": "44e57b39",
         "b": 294287
       },
-      "lapin-agile-p4.mp3": {
-        "v": "2be33f03",
-        "b": 384984
+      "lapin-agile-p5.mp3": {
+        "v": "534cecdd",
+        "b": 446424
       },
       "lapin-agile-q.mp3": {
         "v": "12b11a65",
@@ -1776,8 +1984,8 @@
         "b": 415913
       },
       "sacre-coeur-p4.mp3": {
-        "v": "e2310677",
-        "b": 400448
+        "v": "f27a5415",
+        "b": 391671
       },
       "sacre-coeur-q.mp3": {
         "v": "c987b69e",
@@ -1814,6 +2022,38 @@
       "sacre-coeur-m3.mp3": {
         "v": "e045d9c4",
         "b": 415913
+      },
+      "place-du-tertre-p0.mp3": {
+        "v": "7809b838",
+        "b": 541301
+      },
+      "place-du-tertre-p1.mp3": {
+        "v": "79e29a98",
+        "b": 294287
+      },
+      "place-du-tertre-p2.mp3": {
+        "v": "0343208a",
+        "b": 454365
+      },
+      "place-du-tertre-p3.mp3": {
+        "v": "6d059f8a",
+        "b": 273807
+      },
+      "place-du-tertre-q.mp3": {
+        "v": "8ef486d7",
+        "b": 271299
+      },
+      "place-du-tertre-ok.mp3": {
+        "v": "b752486e",
+        "b": 16344
+      },
+      "place-du-tertre-ko.mp3": {
+        "v": "c0ee99d3",
+        "b": 49781
+      },
+      "place-du-tertre-skip.mp3": {
+        "v": "23bd02d7",
+        "b": 56050
       }
     }
   }

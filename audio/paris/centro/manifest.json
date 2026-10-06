@@ -88,7 +88,6 @@
   "tuileries-p2.mp3": "f36dafb6ef0cc22e",
   "tuileries-p3.mp3": "afc5b2c3909b9a7c",
   "tuileries-p4.mp3": "b799176a81894545",
-  "tuileries-p5.mp3": "2766463520797362",
   "tuileries-ok.mp3": "b752486e965545e4",
   "tuileries-ko.mp3": "589687873da91b9e",
   "tuileries-skip.mp3": "18fa9ae16e071361",
@@ -111,5 +110,7 @@
   "tuileries-m0.mp3": "fa48433df0225b1b",
   "tuileries-m1.mp3": "cc130e1c45af4a60",
   "tuileries-m2.mp3": "22afda251b67285c",
-  "tuileries-m3.mp3": "def3c248953c38b8"
+  "tuileries-m3.mp3": "def3c248953c38b8",
+  "tuileries-p6.mp3": "2766463520797362",
+  "tuileries-p5.mp3": "e6dc2795c752aab3"
 }

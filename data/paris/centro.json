@@ -476,6 +476,7 @@
         "Durante mucho tiempo fue un jardín real, pero se abrió al público en parte gracias a Charles Perrault, el autor de Cenicienta y El gato con botas, que convenció al ministro Colbert de que los parisinos también tenían derecho a pasear por aquí. Así que, cuando te sientes en una de estas sillas, dale las gracias al señor de Caperucita.",
         "Y estas sillas verdes son toda una institución. Son gratis, y los parisinos las arrastran de un lado a otro siguiendo al sol, como girasoles. Es el deporte nacional del jardín. Tú, haz como ellos.",
         "Una historia más, para mirar al cielo. El 1 de diciembre de 1783 despegó desde este jardín uno de los primeros globos tripulados de la historia, inflado con hidrógeno y con el físico Jacques Charles a bordo. Medio París vino a verlo. En la app tienes un grabado de aquel día: fíjate en el gentío. Por eso, en los Juegos Olímpicos de 2024, el pebetero fue un globo con un anillo de fuego que se elevaba aquí cada noche. Bonito homenaje, ¿no?",
+        "Y ahora mira al fondo, hacia el obelisco. Esa es la plaza de la Concordia, que en la Revolución se llamaba plaza de la Revolución. Y ahí, casi siempre cerca de la verja de este jardín que da a la plaza, estaba la guillotina. En ella acabaron Luis XVI y, el 16 de octubre de 1793, María Antonieta, la reina de la Conciergerie. Si sacas el móvil, verás la escena pintada por un artista de la época. Al acabar el Terror la rebautizaron plaza de la Concordia. Visto lo visto, el nombre era más un deseo que una descripción. El obelisco, regalo de Egipto y con más de tres mil años encima, llegó mucho después.",
         "Y aquí me despido. Has recorrido el corazón de París: de la plaza donde nació la huelga a la isla donde nació la ciudad, del puente más viejo con nombre de nuevo al palacio que se convirtió en museo. Ahora te toca a ti: quédate un rato en la silla, mira hacia el obelisco y deja que París haga el resto. ¡Merci, y hasta la próxima!"
       ],
       "images": [
@@ -498,6 +499,16 @@
           "credit": "Grabado de la época · Biblioteca Nacional de Francia · Dominio público",
           "source": "https://commons.wikimedia.org/wiki/File:Exp%C3%A9rience_de_Charles_et_Robert,_1er_d%C3%A9cembre_1783._D%C3%A9part_du_ballon_du_Jardin_des_Tuileries_-_estampe_-_btv1b55001455v.jpg",
           "after": "En la app tienes un grabado de aquel día: fíjate en el gentío."
+        },
+        {
+          "src": "img/paris/centro/tuileries-3.webp",
+          "w": 1100,
+          "h": 789,
+          "para": 5,
+          "after": "Si sacas el móvil, verás la escena pintada por un artista de la época.",
+          "caption": "La ejecución de María Antonieta en la plaza de la Revolución, el 16 de octubre de 1793",
+          "credit": "Autor anónimo · Dominio público",
+          "source": "https://commons.wikimedia.org/wiki/File:Ex%C3%A9cution_de_Marie_Antoinette_le_16_octobre_1793.jpg"
         }
       ],
       "toNext": "",
@@ -513,7 +524,7 @@
       },
       "more": {
         "title": "Globos, horcas y una oveja voladora",
-        "before": 5,
+        "before": 6,
         "ask": "Antes de despedirme, ¿te cuento cómo fue aquella locura de los globos? Hay unos campesinos armados con horcas, una oveja voladora y un sabio que subió una vez y no quiso repetir. Si te apetece, toca «Cuéntame más». Si no, vamos con la despedida.",
         "paras": [
           "Antes de que nadie se atreviera a subir, hubo ensayos. En agosto de 1783, Charles soltó desde el Campo de Marte un globo de hidrógeno sin nadie dentro. Voló tres cuartos de hora y cayó junto a un pueblo, Gonesse, a unos veinte kilómetros. Los vecinos creyeron que era un monstruo y lo atacaron con piedras, cuchillos y horcas hasta dejarlo hecho jirones. Si sacas el móvil, verás la batalla en un grabado de la época. Total, que el gobierno tuvo que publicar un aviso explicando que un globo no le hace daño a nadie.",
@@ -895,7 +906,8 @@
           "tuileries-p2.mp3",
           "tuileries-p3.mp3",
           "tuileries-p4.mp3",
-          "tuileries-p5.mp3"
+          "tuileries-p5.mp3",
+          "tuileries-p6.mp3"
         ],
         "quiz": "tuileries-q.mp3",
         "ok": "tuileries-ok.mp3",
@@ -1326,6 +1338,10 @@
         "b": 520821
       },
       "tuileries-p5.mp3": {
+        "v": "e6dc2795",
+        "b": 705141
+      },
+      "tuileries-p6.mp3": {
         "v": "27664635",
         "b": 361996
       },
