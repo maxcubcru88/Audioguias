@@ -55,7 +55,7 @@
       "sign": "london",
       "signText": "London",
       "signSmall": "SW1",
-      "blurb": "Reyes, espías y un reloj muy puntual: Londres a pie, de Trafalgar al Big Ben.",
+      "blurb": "Reyes, espías y un reloj muy puntual: Londres a pie, de Westminster a la Torre.",
       "status": "ready",
       "routes": [
         {
@@ -64,6 +64,14 @@
           "title": "El Londres de reyes y ministros",
           "subtitle": "De Trafalgar al Big Ben, entre palacios, guardias y Downing Street",
           "file": "data/londres/westminster.json",
+          "status": "ready"
+        },
+        {
+          "id": "city",
+          "label": "La City",
+          "title": "Dos mil años de Londres",
+          "subtitle": "De los tribunales a la Torre, entre templarios, incendios y bombas",
+          "file": "data/londres/city.json",
           "status": "ready"
         }
       ],

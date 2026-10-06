@@ -27,6 +27,18 @@
         "Y escucha, porque esta iglesia canta: sus campanas tocan varias veces al día una canción infantil muy antigua, Naranjas y limones, que dice que eso es lo que cantan las campanas de San Clemente. Los niños ingleses la juegan como nuestro pasemisí: dos hacen un arco con los brazos y van atrapando a los demás. Y el final no es tan inocente: aquí viene una vela para llevarte a la cama, y aquí viene un hacha para cortarte la cabeza. Infancia británica, ya ves.",
         "Por cierto, el señor de la estatua es Samuel Johnson, el del primer gran diccionario de inglés, que venía a misa aquí. Suya es la frase: quien está cansado de Londres, está cansado de la vida. Así que, ánimo, que nos queda mucho."
       ],
+      "images": [
+        {
+          "src": "img/londres/city/st-clement-danes.webp",
+          "w": 712,
+          "h": 950,
+          "para": 3,
+          "after": "En el móvil la tienes por dentro.",
+          "caption": "St Clement Danes por dentro, con los escudos de la RAF",
+          "credit": "Foto: Jim Linwood · CC BY 2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Inside_St_Clement_Danes_Church_-_London._(12975019175).jpg"
+        }
+      ],
       "quiz": {
         "before": 2,
         "q": "Antes de seguir, una pregunta. ¿Por qué crees que esta iglesia se llama de los daneses?",
@@ -54,6 +66,18 @@
         "Ahora mira a tu derecha, en mitad de la calle: ese pilar con un dragón encima es Temple Bar, la frontera de la City. Aquí termina Westminster, la ciudad del rey, y empieza la City, la de los comerciantes, que siempre ha ido por libre. Tanto, que en las grandes ceremonias el monarca se detiene aquí y el alcalde de la City le ofrece su espada como señal de lealtad. Vamos, que el rey entra, pero con permiso.",
         "Antes del dragón hubo aquí un arco de piedra, y en su tejado se clavaban en picas las cabezas de los traidores, para que todo el que entrara en la City tomara nota. En la app tienes aquel arco, que todavía existe: lo verás más adelante. El dragón, desde luego, asusta bastante menos."
       ],
+      "images": [
+        {
+          "src": "img/londres/city/tribunales.webp",
+          "w": 1100,
+          "h": 736,
+          "para": 4,
+          "after": "En la app tienes aquel arco, que todavía existe: lo verás más adelante.",
+          "caption": "El arco de Temple Bar, hoy junto a San Pablo",
+          "credit": "Foto: Robert Lamb · CC BY-SA 2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:View_of_the_Temple_Bar_from_Paternoster_Square_-_geograph.org.uk_-_4017994.jpg"
+        }
+      ],
       "quiz": {
         "before": 2,
         "q": "En los juicios penales, jueces y abogados todavía se ponen esas pelucas blancas tan británicas. ¿De qué crees que están hechas?",
@@ -80,6 +104,18 @@
         "Y es que los templarios, además de guerreros, eran banqueros. Guardaban el dinero de reyes y nobles, y aquí, en tiempos del rey Juan, estuvo el tesoro real. Por aquí pasaron también las negociaciones de la Carta Magna, en 1215, el documento que por primera vez puso límites al poder del rey. Tanto dinero y tanto poder acabaron siendo su perdición.",
         "Cuando la orden desapareció, la iglesia acabó en manos de los abogados, que todavía hoy tienen sus colegios en estos patios tan tranquilos. Sobrevivió al Gran Incendio, pero en 1941 las bombas incendiarias quemaron el tejado de la parte redonda. Y si te suena de algo, es porque sale en El código Da Vinci, la novela de Dan Brown."
       ],
+      "images": [
+        {
+          "src": "img/londres/city/temple.webp",
+          "w": 1024,
+          "h": 683,
+          "para": 1,
+          "after": "En el móvil tienes a los caballeros de piedra tal como están dentro.",
+          "caption": "Las estatuas yacentes de los caballeros, dentro de la iglesia",
+          "credit": "Foto: Christine Matthews · CC BY-SA 2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Graves_of_Knights_Templar,_Temple_Church,_London_EC4_-_geograph.org.uk_-_3168614.jpg"
+        }
+      ],
       "quiz": {
         "before": 1,
         "q": "¿Por qué crees que la iglesia es redonda?",
@@ -98,6 +134,18 @@
           "Los acusaron de todo lo imaginable: de escupir sobre la cruz, de adorar a un ídolo misterioso y de mil cosas más, casi todas inventadas. Y bajo tortura, muchos confesaron lo que les pidieron. El papa, presionado por el rey, disolvió la orden en 1312, y sus bienes pasaron a otra orden, la de los hospitalarios. Por eso esta iglesia cambió de dueños.",
           "El último gran maestre, Jacques de Molay, se retractó de su confesión, y en 1314 lo quemaron vivo en París, en una isleta del Sena. Si has hecho nuestra ruta por el centro de París, la conoces: hoy es el jardincito del Vert-Galant, en la punta de la isla de la Cité. En la app tienes la hoguera, en una miniatura medieval. Dicen que, entre las llamas, emplazó al rey y al papa a reunirse con él ante Dios. El papa murió al mes siguiente, y el rey, antes de que acabara el año.",
           "¿Y la mala fama de los viernes trece viene de aquí? Es una teoría muy bonita, pero no está demostrada: lo más probable es que la superstición sea mucho más moderna. Eso sí, para los templarios aquel viernes trece fue, sin duda, el día más negro de su historia."
+        ],
+        "images": [
+          {
+            "src": "img/londres/city/temple-mas.webp",
+            "w": 952,
+            "h": 956,
+            "para": 2,
+            "after": "En la app tienes la hoguera, en una miniatura medieval.",
+            "caption": "Templarios en la hoguera, en una miniatura de finales del siglo catorce",
+            "credit": "Taller del Maestro de Virgilio · Dominio público",
+            "source": "https://commons.wikimedia.org/wiki/File:Templars_Burning.jpg"
+          }
         ]
       },
       "toNext": "Vuelve por el callejón hasta Fleet Street y sigue a la derecha. Es la calle de los periódicos: durante siglos estuvieron aquí las grandes redacciones de Londres, y todavía se dice Fleet Street para hablar de la prensa. Más adelante, a tu derecha, asoma una aguja blanca escalonada, la de la iglesia de St Bride: dicen que inspiró las tartas de boda de varios pisos. Sigue recto, pasa el gran cruce de Ludgate Circus y sube la cuesta hasta la catedral. Son unos quince minutos."
@@ -114,7 +162,29 @@
         "Y aquí la tienes: la catedral de San Pablo, con una de las cúpulas más grandes del mundo. Mide ciento once metros hasta la cruz, y durante más de dos siglos y medio fue el edificio más alto de Londres. Pero no es la primera catedral que hubo aquí. La anterior, gótica y enorme, ardió en el Gran Incendio de 1666: un testigo contó que el plomo del tejado bajaba fundido por las calles como un río. En la app tienes la catedral vieja en llamas.",
         "La nueva la diseñó Christopher Wren, sí, el de St Clement Danes. Cuentan que, al marcar en el suelo el centro de la futura cúpula, pidió una piedra cualquiera de los escombros, y le trajeron un trozo de lápida con una sola palabra en latín: resurgam, resurgiré. Wren lo tomó como una señal y mandó grabarla en la fachada sur, bajo un ave fénix. Mira el móvil: ahí la tienes.",
         "Se empezó en 1675 y se dio por terminada en 1710, cuando Wren ya tenía setenta y ocho años. Tanto se alargó que el Parlamento, impaciente, le retuvo la mitad del sueldo hasta que la acabara. Pero él la vio terminada, cosa rara en una catedral. Y está enterrado dentro, en la cripta, con un epitafio en latín que dice: lector, si buscas su monumento, mira a tu alrededor.",
-        "Dentro hay una galería de los susurros: lo que dices en voz baja pegado a la pared se oye perfectamente al otro lado de la cúpula. Así que cuidado con lo que comentas allí arriba. Aquí se casaron en 1981 el entonces príncipe Carlos y Diana. Y en la Segunda Guerra Mundial, estuvo a punto de no contarlo."
+        "Dentro hay una galería de los susurros: lo que dices en voz baja pegado a la pared se oye perfectamente al otro lado de la cúpula. Así que cuidado con lo que comentas allí arriba. Aquí se casaron en 1981 el entonces príncipe Carlos y Diana. Y en la Segunda Guerra Mundial, la catedral estuvo a punto de no contarlo."
+      ],
+      "images": [
+        {
+          "src": "img/londres/city/san-pablo.webp",
+          "w": 1100,
+          "h": 640,
+          "para": 0,
+          "after": "En la app tienes la catedral vieja en llamas.",
+          "caption": "El Gran Incendio de 1666, con la vieja San Pablo entre las llamas",
+          "credit": "Anónimo, hacia 1675 · Museo de Londres · Dominio público",
+          "source": "https://commons.wikimedia.org/wiki/File:Great_Fire_London.jpg"
+        },
+        {
+          "src": "img/londres/city/san-pablo-2.webp",
+          "w": 823,
+          "h": 789,
+          "para": 1,
+          "after": "Mira el móvil: ahí la tienes.",
+          "caption": "El ave fénix con la palabra resurgam, en la fachada sur",
+          "credit": "Dominio público",
+          "source": "https://commons.wikimedia.org/wiki/File:Phoenix_resurgam_St_Paul's_London.jpg"
+        }
       ],
       "quiz": {
         "before": 2,
@@ -134,6 +204,18 @@
           "Pero la noche más dura fue la del 29 de diciembre de 1940. Los alemanes lanzaron miles de bombas incendiarias sobre la City, y se habla de aquella noche como del segundo Gran Incendio de Londres. Churchill dio una orden clara: había que salvar San Pablo a toda costa. Y un grupo de voluntarios, los vigilantes de la catedral, se pasó la noche en los tejados apagando bombas una a una.",
           "Una de ellas, según se cuenta, se clavó en la cúpula y se quedó encajada, ardiendo. Parecía el final. Y entonces la bomba se soltó y cayó hacia fuera, a una galería de piedra, donde pudieron apagarla. Suerte o milagro, eso ya lo decides tú.",
           "Esa misma noche, un fotógrafo, Herbert Mason, subido a una azotea, sacó la foto de la cúpula intacta entre el humo y las llamas. Se publicó con el título San Pablo sobrevive y se convirtió en el símbolo de un país que no se rendía. Esa foto no te la puedo enseñar, pero en la app tienes otra de aquellos días: las torres de la catedral, en pie entre las ruinas."
+        ],
+        "images": [
+          {
+            "src": "img/londres/city/san-pablo-mas.webp",
+            "w": 730,
+            "h": 800,
+            "para": 3,
+            "after": "Esa foto no te la puedo enseñar, pero en la app tienes otra de aquellos días: las torres de la catedral, en pie entre las ruinas.",
+            "caption": "Las torres de San Pablo tras el bombardeo del 29 de diciembre de 1940",
+            "credit": "Foto: Cecil Beaton · Imperial War Museum · Dominio público",
+            "source": "https://commons.wikimedia.org/wiki/File:Cecil_Beaton_Photographs-_General_MH2718.jpg"
+          }
         ]
       },
       "toNext": "Rodea la catedral por la izquierda, por su lado norte. Enseguida verás a tu izquierda un arco de piedra blanca: es el antiguo Temple Bar, el de las cabezas, que estuvo donde hoy está el dragón y acabó aquí en 2004. Sigue hacia el este por Cheapside, la antigua calle del mercado, unos diez minutos, hasta un gran cruce rodeado de edificios con columnas."
@@ -152,6 +234,18 @@
         "Y cada uno pesa unos doce kilos y medio. Pero casi nada es del banco: es de gobiernos y bancos de todo el mundo, que lo guardan aquí porque se fían de la vieja dama. Según el propio banco, suyos, suyos, solo son dos lingotes, y están en su museo. Y no, ni se te ocurra intentar llevarte uno: pesan como un niño de dos años.",
         "Y una historia curiosa. En 1903, un hombre entró en el banco y le disparó tres veces con un revólver al secretario, uno de sus altos cargos. Falló las tres. Aquel secretario se llamaba Kenneth Grahame, y cinco años después dejó el banco y publicó un libro para niños que sigue siendo un clásico: El viento en los sauces. Menos mal que aquel hombre tenía tan mala puntería.",
         "Pero la City es mucho más vieja que sus bancos. A doscientos metros de aquí, bajo un edificio de oficinas, se conservan las ruinas de un templo romano. De los romanos te hablo en el río, que es donde empezó todo."
+      ],
+      "images": [
+        {
+          "src": "img/londres/city/banco.webp",
+          "w": 1000,
+          "h": 703,
+          "para": 1,
+          "after": "En el móvil tienes la caricatura.",
+          "caption": "La vieja dama de Threadneedle Street en peligro, de James Gillray, 1797",
+          "credit": "James Gillray · British Museum · Dominio público",
+          "source": "https://commons.wikimedia.org/wiki/File:Political-ravishment,_or_the_old_lady_of_Threadneedle-Street_in_danger!_(BM_1851,0901.869).jpg"
+        }
       ],
       "quiz": {
         "before": 2,
@@ -180,6 +274,28 @@
         "Mientras tanto, hubo quien se preocupó por lo importante: el famoso cronista Samuel Pepys enterró en su jardín su vino y su queso parmesano, para salvarlos de las llamas. Prioridades. En la app tienes su retrato. Oficialmente murieron muy pocas personas, apenas un puñado, aunque muchos historiadores creen que fueron bastantes más. Después, Wren levantó cincuenta y una iglesias nuevas y la nueva San Pablo, y Londres se reconstruyó en ladrillo y piedra.",
         "Y fíjate en la base: durante siglo y medio hubo aquí una inscripción que culpaba del incendio a un complot de los católicos, sin ninguna prueba. La borraron a cincel en 1830."
       ],
+      "images": [
+        {
+          "src": "img/londres/city/monumento.webp",
+          "w": 1100,
+          "h": 669,
+          "para": 1,
+          "after": "En el móvil tienes el incendio pintado por un artista de la época.",
+          "caption": "El Gran Incendio de Londres, pintado por Lieve Verschuier",
+          "credit": "Lieve Verschuier · Dominio público",
+          "source": "https://commons.wikimedia.org/wiki/File:Verschuier-fire.jpg"
+        },
+        {
+          "src": "img/londres/city/monumento-2.webp",
+          "w": 935,
+          "h": 1100,
+          "para": 3,
+          "after": "En la app tienes su retrato.",
+          "caption": "Samuel Pepys en 1666, retratado por John Hayls",
+          "credit": "John Hayls · National Portrait Gallery · Dominio público",
+          "source": "https://commons.wikimedia.org/wiki/File:Samuel_Pepys.jpg"
+        }
+      ],
       "quiz": {
         "before": 1,
         "q": "La columna mide sesenta y un metros. ¿Por qué crees que mide exactamente eso?",
@@ -190,7 +306,7 @@
         ],
         "answer": 1
       },
-      "toNext": "Vuelve a King William Street y síguela a la izquierda, cuesta abajo, hasta el Puente de Londres. Camina por la acera de la izquierda hasta la mitad del puente y mira río abajo, hacia las dos torres del Tower Bridge."
+      "toNext": "Vuelve a King William Street, la calle por la que has llegado, y síguela cuesta abajo, hacia el río, hasta el Puente de Londres. Camina por la acera de la izquierda hasta la mitad del puente y mira río abajo, hacia las dos torres del Tower Bridge."
     },
     {
       "id": "london-bridge",
@@ -205,6 +321,18 @@
         "Londinium creció deprisa, pero no le fue fácil. Hacia el año 60, la reina Boudica, una guerrera celta que se rebeló contra los romanos, la arrasó y le prendió fuego. Así que el Gran Incendio de 1666 no fue el primero, ni mucho menos. Los romanos la reconstruyeron, la rodearon de una muralla, y Londinium acabó siendo la capital de la provincia romana de Britania.",
         "En la Edad Media, el puente de piedra que hubo aquí era una calle entera sobre el río, con casas de varios pisos, tiendas y hasta una capilla. Y aquí también, como en Temple Bar, se exhibían en picas las cabezas de los traidores, hervidas y untadas de brea para que duraran. Allí estuvieron la de William Wallace, el héroe escocés de Braveheart, y la de Tomás Moro. En la app tienes cómo era aquel puente.",
         "Ese año abrió el puente de Westminster, el que está junto al Big Ben. Siglos y siglos con un solo puente, ya ves. Y ahora mira río abajo: esas dos torres unidas por pasarelas no son el Puente de Londres, sino el Tower Bridge, el puente de la Torre. Mucha gente los confunde. Y a alguno, según la leyenda, la confusión le salió cara."
+      ],
+      "images": [
+        {
+          "src": "img/londres/city/london-bridge.webp",
+          "w": 1000,
+          "h": 654,
+          "para": 2,
+          "after": "En la app tienes cómo era aquel puente.",
+          "caption": "El viejo Puente de Londres en 1616, con las cabezas sobre la puerta",
+          "credit": "Claes Visscher · Dominio público",
+          "source": "https://commons.wikimedia.org/wiki/File:London_Bridge_(1616)_by_Claes_Van_Visscher.jpg"
+        }
       ],
       "quiz": {
         "before": 3,
@@ -224,6 +352,18 @@
           "Lo compró en 1968 un empresario americano, Robert McCulloch, por casi dos millones y medio de dólares. Había fundado una ciudad en mitad del desierto de Arizona, Lake Havasu City, y necesitaba algo para atraer a turistas y compradores. Así que desmontaron sus piedras una a una, numeraron cada bloque y lo mandaron en barco por el canal de Panamá hasta California, y de allí en camiones hasta Arizona.",
           "En 1971 se inauguró allí, sobre un canal en pleno desierto. En la app tienes una foto. Y desde entonces corre una leyenda: que McCulloch creía que estaba comprando el Tower Bridge, el de las torres, y que se llevó un buen chasco al ver lo que le llegaba. Él lo negó siempre, y quien le vendió el puente, también. Pero la historia es tan buena que nadie quiere dejar de contarla.",
           "Hoy aquel puente londinense es una de las grandes atracciones de Arizona. Así que, si algún día vas al desierto y te encuentras un puente de Londres, ya sabes: no es un espejismo."
+        ],
+        "images": [
+          {
+            "src": "img/londres/city/london-bridge-mas.webp",
+            "w": 1100,
+            "h": 825,
+            "para": 2,
+            "after": "En la app tienes una foto.",
+            "caption": "El antiguo Puente de Londres, hoy en Lake Havasu City, Arizona",
+            "credit": "Foto: Ken Lund · CC BY-SA 2.0",
+            "source": "https://commons.wikimedia.org/wiki/File:London_Bridge,_Lake_Havasu_City,_Arizona_(3227888290).jpg"
+          }
         ]
       },
       "toNext": "Sigue por el puente hasta la otra orilla. Al llegar, baja por las escaleras de la izquierda hasta el paseo del río y síguelo río abajo, con el agua a tu izquierda. Pasarás junto a un barco de guerra gris, el Belfast, que hoy es un museo. Al llegar al Tower Bridge, sube por las escaleras y entra en el puente hasta quedarte entre las dos torres."
@@ -241,6 +381,18 @@
         "Mira el suelo: esa línea marca dónde se juntan las dos mitades del puente. Cuando tiene que pasar un barco alto, las dos mitades se levantan hacia el cielo, como el puente levadizo de un castillo. Al principio lo movían unas máquinas de vapor; hoy, la electricidad. En su primer año se abrió más de seis mil veces; hoy, cientos de veces al año.",
         "Pisó a fondo, y el autobús salvó un vacío de casi dos metros hasta caer en la otra mitad, que todavía no había empezado a subir. Se llamaba Albert Gunter. El cobrador se rompió una pierna y algunos pasajeros se llevaron un buen golpe, pero no murió nadie. ¿Y su recompensa? Diez libras y un día libre. Cuando le preguntaron qué haría con el dinero, contestó: cinco para mí y cinco para la parienta.",
         "El color también tiene su historia. Durante años fue marrón chocolate. En 1977, para el jubileo de la reina Isabel, lo pintaron de rojo, blanco y azul, y hoy es azul y blanco. Y arriba, en las pasarelas que unen las torres, desde 2014 hay suelo de cristal. Si tienes vértigo, mejor admíralas desde aquí abajo."
+      ],
+      "images": [
+        {
+          "src": "img/londres/city/tower-bridge.webp",
+          "w": 1024,
+          "h": 766,
+          "para": 0,
+          "after": "En el móvil tienes el puente en obras, con el esqueleto de acero al aire.",
+          "caption": "El Tower Bridge en obras, en 1892",
+          "credit": "Foto anónima · Dominio público",
+          "source": "https://commons.wikimedia.org/wiki/File:Tower_bridge_works_1892.jpg"
+        }
       ],
       "quiz": {
         "before": 2,
@@ -270,6 +422,18 @@
         "Y los guardianes vestidos de azul y rojo son los beefeaters, antiguos militares que viven ahí dentro con sus familias. Cada noche, desde hace siglos, cierran las puertas en la ceremonia de las llaves, a la misma hora. Dicen que solo una vez, en 1941, se retrasó: cayó una bomba en plena ceremonia, y aun así la terminaron.",
         "Y aquí me despido. Has recorrido dos mil años de Londres: de los romanos del puente a los templarios, del Gran Incendio a las bombas de la guerra, de la vieja dama del oro a los cuervos de la Torre. Una ciudad que ardió, que sufrió las bombas y que siempre volvió a levantarse. Como dejó escrito Wren en su catedral: resurgam. ¡Cheers, y hasta la próxima!"
       ],
+      "images": [
+        {
+          "src": "img/londres/city/torre.webp",
+          "w": 841,
+          "h": 1100,
+          "para": 1,
+          "after": "En la app tienes su retrato.",
+          "caption": "Ana Bolena",
+          "credit": "Anónimo · National Portrait Gallery · Dominio público",
+          "source": "https://commons.wikimedia.org/wiki/File:Anne_Boleyn_from_NPG.jpg"
+        }
+      ],
       "quiz": {
         "before": 3,
         "q": "En la Torre viven siempre, como mínimo, seis animales muy especiales. Según la leyenda, si algún día se marchan, caerán la Torre y el reino. ¿Qué animales crees que son?",
@@ -289,6 +453,18 @@
           "Mantenerlo salía caro, así que el rey mandó que le hicieran un bozal y una cadena larga, y que lo dejaran bajar al Támesis a bañarse y a pescar. Imagínate a los londinenses del siglo trece, en la orilla, viendo a un oso polar pescar salmones delante de la Torre. No había mejor espectáculo en toda la ciudad.",
           "Tres años después llegó un elefante, regalo del rey de Francia, el primero que se veía en Inglaterra. En la app lo tienes, dibujado del natural por un monje de la época. Le construyeron una casa de madera, y dicen que le daban vino. Duró poco, el pobre: murió dos años después. Y siglos más tarde, para ver a los leones había que pagar tres medios peniques, o traer un perro o un gato para echárselo de comer. Mejor no preguntar.",
           "Hasta hubo una inocentada famosa: cada primero de abril se invitaba a los incautos a ver el lavado de los leones en el foso, que por supuesto no existía. El zoo cerró en 1835, y sus animales se fueron al nuevo zoo de Londres, en Regent's Park. Seguro que lo agradecieron."
+        ],
+        "images": [
+          {
+            "src": "img/londres/city/torre-mas.webp",
+            "w": 927,
+            "h": 534,
+            "para": 2,
+            "after": "En la app lo tienes, dibujado del natural por un monje de la época.",
+            "caption": "El elefante de la Torre, dibujado por Mateo de París hacia 1255",
+            "credit": "Mateo de París · Biblioteca Parker · Dominio público",
+            "source": "https://commons.wikimedia.org/wiki/File:Matthew_Paris_Elephant_from_Parker_MS_16_fol_151v.jpg"
+          }
         ]
       }
     }
@@ -842,5 +1018,600 @@
         -0.07862
       ]
     ]
-  ]
+  ],
+  "audio": {
+    "base": "audio/londres/city/",
+    "credit": "Voz generada con IA (ElevenLabs)",
+    "stops": {
+      "st-clement-danes": {
+        "paras": [
+          "st-clement-danes-p0.mp3",
+          "st-clement-danes-p1.mp3",
+          "st-clement-danes-p2.mp3",
+          "st-clement-danes-p3.mp3",
+          "st-clement-danes-p4.mp3",
+          "st-clement-danes-p5.mp3",
+          "st-clement-danes-p6.mp3"
+        ],
+        "quiz": "st-clement-danes-q.mp3",
+        "ok": "st-clement-danes-ok.mp3",
+        "ko": "st-clement-danes-ko.mp3",
+        "skip": "st-clement-danes-skip.mp3"
+      },
+      "tribunales": {
+        "paras": [
+          "tribunales-p0.mp3",
+          "tribunales-p1.mp3",
+          "tribunales-p2.mp3",
+          "tribunales-p3.mp3",
+          "tribunales-p4.mp3",
+          "tribunales-p5.mp3"
+        ],
+        "quiz": "tribunales-q.mp3",
+        "ok": "tribunales-ok.mp3",
+        "ko": "tribunales-ko.mp3",
+        "skip": "tribunales-skip.mp3"
+      },
+      "temple": {
+        "paras": [
+          "temple-p0.mp3",
+          "temple-p1.mp3",
+          "temple-p2.mp3",
+          "temple-p3.mp3",
+          "temple-p4.mp3"
+        ],
+        "quiz": "temple-q.mp3",
+        "ok": "temple-ok.mp3",
+        "ko": "temple-ko.mp3",
+        "skip": "temple-skip.mp3",
+        "more": {
+          "ask": "temple-mas.mp3",
+          "paras": [
+            "temple-m0.mp3",
+            "temple-m1.mp3",
+            "temple-m2.mp3",
+            "temple-m3.mp3"
+          ]
+        }
+      },
+      "san-pablo": {
+        "paras": [
+          "san-pablo-p0.mp3",
+          "san-pablo-p1.mp3",
+          "san-pablo-p2.mp3",
+          "san-pablo-p3.mp3",
+          "san-pablo-p4.mp3"
+        ],
+        "quiz": "san-pablo-q.mp3",
+        "ok": "san-pablo-ok.mp3",
+        "ko": "san-pablo-ko.mp3",
+        "skip": "san-pablo-skip.mp3",
+        "more": {
+          "ask": "san-pablo-mas.mp3",
+          "paras": [
+            "san-pablo-m0.mp3",
+            "san-pablo-m1.mp3",
+            "san-pablo-m2.mp3",
+            "san-pablo-m3.mp3"
+          ]
+        }
+      },
+      "banco": {
+        "paras": [
+          "banco-p0.mp3",
+          "banco-p1.mp3",
+          "banco-p2.mp3",
+          "banco-p3.mp3",
+          "banco-p4.mp3",
+          "banco-p5.mp3"
+        ],
+        "quiz": "banco-q.mp3",
+        "ok": "banco-ok.mp3",
+        "ko": "banco-ko.mp3",
+        "skip": "banco-skip.mp3"
+      },
+      "monumento": {
+        "paras": [
+          "monumento-p0.mp3",
+          "monumento-p1.mp3",
+          "monumento-p2.mp3",
+          "monumento-p3.mp3",
+          "monumento-p4.mp3",
+          "monumento-p5.mp3"
+        ],
+        "quiz": "monumento-q.mp3",
+        "ok": "monumento-ok.mp3",
+        "ko": "monumento-ko.mp3",
+        "skip": "monumento-skip.mp3"
+      },
+      "london-bridge": {
+        "paras": [
+          "london-bridge-p0.mp3",
+          "london-bridge-p1.mp3",
+          "london-bridge-p2.mp3",
+          "london-bridge-p3.mp3",
+          "london-bridge-p4.mp3"
+        ],
+        "quiz": "london-bridge-q.mp3",
+        "ok": "london-bridge-ok.mp3",
+        "ko": "london-bridge-ko.mp3",
+        "skip": "london-bridge-skip.mp3",
+        "more": {
+          "ask": "london-bridge-mas.mp3",
+          "paras": [
+            "london-bridge-m0.mp3",
+            "london-bridge-m1.mp3",
+            "london-bridge-m2.mp3",
+            "london-bridge-m3.mp3"
+          ]
+        }
+      },
+      "tower-bridge": {
+        "paras": [
+          "tower-bridge-p0.mp3",
+          "tower-bridge-p1.mp3",
+          "tower-bridge-p2.mp3",
+          "tower-bridge-p3.mp3",
+          "tower-bridge-p4.mp3"
+        ],
+        "quiz": "tower-bridge-q.mp3",
+        "ok": "tower-bridge-ok.mp3",
+        "ko": "tower-bridge-ko.mp3",
+        "skip": "tower-bridge-skip.mp3"
+      },
+      "torre": {
+        "paras": [
+          "torre-p0.mp3",
+          "torre-p1.mp3",
+          "torre-p2.mp3",
+          "torre-p3.mp3",
+          "torre-p4.mp3",
+          "torre-p5.mp3"
+        ],
+        "quiz": "torre-q.mp3",
+        "ok": "torre-ok.mp3",
+        "ko": "torre-ko.mp3",
+        "skip": "torre-skip.mp3",
+        "more": {
+          "ask": "torre-mas.mp3",
+          "paras": [
+            "torre-m0.mp3",
+            "torre-m1.mp3",
+            "torre-m2.mp3",
+            "torre-m3.mp3"
+          ]
+        }
+      }
+    },
+    "files": {
+      "st-clement-danes-p0.mp3": {
+        "v": "e659be78",
+        "b": 435139
+      },
+      "st-clement-danes-p1.mp3": {
+        "v": "15010ecf",
+        "b": 477353
+      },
+      "st-clement-danes-p2.mp3": {
+        "v": "dcd34b13",
+        "b": 278822
+      },
+      "st-clement-danes-p3.mp3": {
+        "v": "1eefa292",
+        "b": 365758
+      },
+      "st-clement-danes-p4.mp3": {
+        "v": "2da187bf",
+        "b": 507864
+      },
+      "st-clement-danes-p5.mp3": {
+        "v": "81528e06",
+        "b": 250819
+      },
+      "st-clement-danes-p6.mp3": {
+        "v": "143be4bf",
+        "b": 173915
+      },
+      "st-clement-danes-q.mp3": {
+        "v": "1900bb99",
+        "b": 223652
+      },
+      "st-clement-danes-ok.mp3": {
+        "v": "b752486e",
+        "b": 16344
+      },
+      "st-clement-danes-ko.mp3": {
+        "v": "58dac460",
+        "b": 80292
+      },
+      "st-clement-danes-skip.mp3": {
+        "v": "17bb330c",
+        "b": 85725
+      },
+      "tribunales-p0.mp3": {
+        "v": "3b090b25",
+        "b": 372445
+      },
+      "tribunales-p1.mp3": {
+        "v": "9b0ce763",
+        "b": 396687
+      },
+      "tribunales-p2.mp3": {
+        "v": "42db4181",
+        "b": 469412
+      },
+      "tribunales-p3.mp3": {
+        "v": "3dcd3153",
+        "b": 440155
+      },
+      "tribunales-p4.mp3": {
+        "v": "80c8e99e",
+        "b": 311005
+      },
+      "tribunales-p5.mp3": {
+        "v": "eeb2c5c0",
+        "b": 355727
+      },
+      "tribunales-q.mp3": {
+        "v": "ebd41033",
+        "b": 198156
+      },
+      "tribunales-ok.mp3": {
+        "v": "b752486e",
+        "b": 17598
+      },
+      "tribunales-ko.mp3": {
+        "v": "47e3e827",
+        "b": 59812
+      },
+      "tribunales-skip.mp3": {
+        "v": "48875270",
+        "b": 65245
+      },
+      "temple-p0.mp3": {
+        "v": "a588448a",
+        "b": 447678
+      },
+      "temple-p1.mp3": {
+        "v": "5a3a1535",
+        "b": 415913
+      },
+      "temple-p2.mp3": {
+        "v": "d6a757b1",
+        "b": 395433
+      },
+      "temple-p3.mp3": {
+        "v": "ca7260c1",
+        "b": 360742
+      },
+      "temple-p4.mp3": {
+        "v": "0b88484b",
+        "b": 528344
+      },
+      "temple-q.mp3": {
+        "v": "71b19a81",
+        "b": 178930
+      },
+      "temple-ok.mp3": {
+        "v": "b752486e",
+        "b": 16344
+      },
+      "temple-ko.mp3": {
+        "v": "b08e9691",
+        "b": 85725
+      },
+      "temple-skip.mp3": {
+        "v": "20f4babc",
+        "b": 86979
+      },
+      "temple-mas.mp3": {
+        "v": "597a65ad",
+        "b": 164719
+      },
+      "temple-m0.mp3": {
+        "v": "f7c2359b",
+        "b": 440155
+      },
+      "temple-m1.mp3": {
+        "v": "c1a836c5",
+        "b": 418421
+      },
+      "temple-m2.mp3": {
+        "v": "bcc08d77",
+        "b": 528344
+      },
+      "temple-m3.mp3": {
+        "v": "0c5fee3b",
+        "b": 300556
+      },
+      "san-pablo-p0.mp3": {
+        "v": "fe0f4a4b",
+        "b": 507864
+      },
+      "san-pablo-p1.mp3": {
+        "v": "e264098c",
+        "b": 418421
+      },
+      "san-pablo-p2.mp3": {
+        "v": "b86b620a",
+        "b": 461888
+      },
+      "san-pablo-p3.mp3": {
+        "v": "15de4fe9",
+        "b": 360742
+      },
+      "san-pablo-p4.mp3": {
+        "v": "d72c4497",
+        "b": 409226
+      },
+      "san-pablo-q.mp3": {
+        "v": "3d99781a",
+        "b": 168899
+      },
+      "san-pablo-ok.mp3": {
+        "v": "b752486e",
+        "b": 16344
+      },
+      "san-pablo-ko.mp3": {
+        "v": "d8837bf0",
+        "b": 66499
+      },
+      "san-pablo-skip.mp3": {
+        "v": "66f14f37",
+        "b": 69007
+      },
+      "san-pablo-mas.mp3": {
+        "v": "16f7f8b4",
+        "b": 205679
+      },
+      "san-pablo-m0.mp3": {
+        "v": "390d4934",
+        "b": 471919
+      },
+      "san-pablo-m1.mp3": {
+        "v": "8cb2b813",
+        "b": 446424
+      },
+      "san-pablo-m2.mp3": {
+        "v": "496ebc35",
+        "b": 285092
+      },
+      "san-pablo-m3.mp3": {
+        "v": "ebc9ad56",
+        "b": 406718
+      },
+      "banco-p0.mp3": {
+        "v": "7b830d3f",
+        "b": 377461
+      },
+      "banco-p1.mp3": {
+        "v": "3bee4e5e",
+        "b": 347786
+      },
+      "banco-p2.mp3": {
+        "v": "774a2d4d",
+        "b": 372445
+      },
+      "banco-p3.mp3": {
+        "v": "f14d52d5",
+        "b": 417167
+      },
+      "banco-p4.mp3": {
+        "v": "c350787c",
+        "b": 214875
+      },
+      "banco-p5.mp3": {
+        "v": "ca0e9be0",
+        "b": 267119
+      },
+      "banco-q.mp3": {
+        "v": "736f2f26",
+        "b": 214875
+      },
+      "banco-ok.mp3": {
+        "v": "b752486e",
+        "b": 16344
+      },
+      "banco-ko.mp3": {
+        "v": "daa00c03",
+        "b": 65245
+      },
+      "banco-skip.mp3": {
+        "v": "4b3d5a47",
+        "b": 69007
+      },
+      "monumento-p0.mp3": {
+        "v": "9a9c953a",
+        "b": 501595
+      },
+      "monumento-p1.mp3": {
+        "v": "a0b527fc",
+        "b": 512879
+      },
+      "monumento-p2.mp3": {
+        "v": "657a4311",
+        "b": 381222
+      },
+      "monumento-p3.mp3": {
+        "v": "3246ec85",
+        "b": 499087
+      },
+      "monumento-p4.mp3": {
+        "v": "eb5c5ea5",
+        "b": 204426
+      },
+      "monumento-p5.mp3": {
+        "v": "7b416d99",
+        "b": 280076
+      },
+      "monumento-q.mp3": {
+        "v": "c842e669",
+        "b": 229085
+      },
+      "monumento-ok.mp3": {
+        "v": "b752486e",
+        "b": 16344
+      },
+      "monumento-ko.mp3": {
+        "v": "04caad61",
+        "b": 84471
+      },
+      "monumento-skip.mp3": {
+        "v": "148de363",
+        "b": 85725
+      },
+      "london-bridge-p0.mp3": {
+        "v": "cbb21247",
+        "b": 392925
+      },
+      "london-bridge-p1.mp3": {
+        "v": "9a824013",
+        "b": 422182
+      },
+      "london-bridge-p2.mp3": {
+        "v": "21cb85a3",
+        "b": 429706
+      },
+      "london-bridge-p3.mp3": {
+        "v": "12eee177",
+        "b": 372445
+      },
+      "london-bridge-p4.mp3": {
+        "v": "480c6c32",
+        "b": 388746
+      },
+      "london-bridge-q.mp3": {
+        "v": "7bc34223",
+        "b": 241624
+      },
+      "london-bridge-ok.mp3": {
+        "v": "b752486e",
+        "b": 16344
+      },
+      "london-bridge-ko.mp3": {
+        "v": "30dc7580",
+        "b": 72768
+      },
+      "london-bridge-skip.mp3": {
+        "v": "2a151714",
+        "b": 74022
+      },
+      "london-bridge-mas.mp3": {
+        "v": "d569c7ea",
+        "b": 173915
+      },
+      "london-bridge-m0.mp3": {
+        "v": "c1a206e6",
+        "b": 404210
+      },
+      "london-bridge-m1.mp3": {
+        "v": "2d0ce35e",
+        "b": 450186
+      },
+      "london-bridge-m2.mp3": {
+        "v": "9a5d9fcd",
+        "b": 414659
+      },
+      "london-bridge-m3.mp3": {
+        "v": "6e666886",
+        "b": 193141
+      },
+      "tower-bridge-p0.mp3": {
+        "v": "4a7bb4d3",
+        "b": 406718
+      },
+      "tower-bridge-p1.mp3": {
+        "v": "ada3110f",
+        "b": 381222
+      },
+      "tower-bridge-p2.mp3": {
+        "v": "c0168c2c",
+        "b": 443916
+      },
+      "tower-bridge-p3.mp3": {
+        "v": "9fecd0a0",
+        "b": 376207
+      },
+      "tower-bridge-p4.mp3": {
+        "v": "248d39c9",
+        "b": 255835
+      },
+      "tower-bridge-q.mp3": {
+        "v": "cbdc8775",
+        "b": 265866
+      },
+      "tower-bridge-ok.mp3": {
+        "v": "b752486e",
+        "b": 16344
+      },
+      "tower-bridge-ko.mp3": {
+        "v": "4e6d3fa6",
+        "b": 75276
+      },
+      "tower-bridge-skip.mp3": {
+        "v": "017780e6",
+        "b": 77784
+      },
+      "torre-p0.mp3": {
+        "v": "33d13cf3",
+        "b": 466904
+      },
+      "torre-p1.mp3": {
+        "v": "bb23e463",
+        "b": 565542
+      },
+      "torre-p2.mp3": {
+        "v": "208aa90f",
+        "b": 468158
+      },
+      "torre-p3.mp3": {
+        "v": "78741587",
+        "b": 397941
+      },
+      "torre-p4.mp3": {
+        "v": "4f066ab0",
+        "b": 381222
+      },
+      "torre-p5.mp3": {
+        "v": "5cc01f79",
+        "b": 387492
+      },
+      "torre-q.mp3": {
+        "v": "5d406a96",
+        "b": 265866
+      },
+      "torre-ok.mp3": {
+        "v": "b752486e",
+        "b": 16344
+      },
+      "torre-ko.mp3": {
+        "v": "4b8150e4",
+        "b": 56050
+      },
+      "torre-skip.mp3": {
+        "v": "f538f862",
+        "b": 61066
+      },
+      "torre-mas.mp3": {
+        "v": "314acd99",
+        "b": 217382
+      },
+      "torre-m0.mp3": {
+        "v": "78f5f55b",
+        "b": 355727
+      },
+      "torre-m1.mp3": {
+        "v": "c9423e5e",
+        "b": 328559
+      },
+      "torre-m2.mp3": {
+        "v": "96d75276",
+        "b": 470666
+      },
+      "torre-m3.mp3": {
+        "v": "148b4b89",
+        "b": 306826
+      }
+    }
+  }
 }
