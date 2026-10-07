@@ -1193,7 +1193,7 @@
   const VIEW_KEY = 'paseito-vista-ciudad';
   const OFF = '#AEB7BD';                    // rutas apagadas cuando hay una elegida
   const fc = features => ({ type: 'FeatureCollection', features });
-  const CM = { map: null, ready: null, city: null, sel: null, routes: [], marks: [], labels: [], me: null, pos: null, token: 0 };
+  const CM = { map: null, ready: null, city: null, sel: null, routes: [], marks: [], me: null, pos: null, token: 0 };
 
   function cityViewPref() { try { return localStorage.getItem(VIEW_KEY) === 'map' ? 'map' : 'list'; } catch (e) { return 'list'; } }
   function setCityView(v, token) {
@@ -1232,7 +1232,6 @@
       m.on('mouseleave', 'cr-hit', () => { m.getCanvas().style.cursor = ''; });
       res();
     }));
-    m.on('moveend', placeEndLabels);
     m.on('click', e => {
       const p = e.point;
       const hits = m.queryRenderedFeatures([[p.x - 14, p.y - 14], [p.x + 14, p.y + 14]], { layers: ['cr-hit', 'cr-stops'] });
@@ -1279,8 +1278,7 @@
     const list = CM.sel ? CM.routes.filter(x => x.r.id === CM.sel) : CM.routes;
     if (!list.length) return;
     const card = $('#cmCard'), bottom = (card.hidden ? 0 : card.offsetHeight) + 34;
-    // Con una ruta elegida, más margen a los lados para que quepan las etiquetas de salida y llegada
-    const side = CM.sel ? 70 : 34;
+    const side = 34;
     CM.map.fitBounds(cityBounds(list), { padding: { top: $('#cmChips').offsetHeight + 30, bottom, left: side, right: Math.max(side, 58) }, maxZoom: 16, duration: instant ? 0 : 650 });
   }
 
@@ -1297,43 +1295,6 @@
     el.className = 'cm-' + kind; el.style.setProperty('--c', color);
     return new maplibregl.Marker({ element: el }).setLngLat(at).addTo(CM.map);
   }
-  // Etiquetas «Salida · …» y «Llegada · …» de la ruta elegida. Se colocan tras cada movimiento del mapa:
-  // primero del lado contrario a la parada vecina (para no tapar la línea) y, si no caben, en otro lado.
-  function placeEndLabels() {
-    CM.labels.forEach(mk => mk.remove()); CM.labels = [];
-    const cur = CM.routes.find(x => x.r.id === CM.sel);
-    if (!cur || !CM.map || $('#cityMapBox').hidden) return;
-    const sts = cur.t.stops, last = sts.length - 1;
-    if (last < 1) return;
-    const box = CM.map.getContainer(), W = box.clientWidth, card = $('#cmCard');
-    const top = $('#cmChips').offsetHeight + 14, bottom = box.clientHeight - (card.hidden ? 0 : card.offsetHeight + 14);
-    // Huecos ocupados: el botón de ubicación y los números de las paradas
-    const g = 20, taken = [[W - 56, top - 2, 56, 50]];
-    sts.forEach(st => { const c = CM.map.project([st.lng, st.lat]); taken.push([c.x - 14, c.y - 14, 28, 28]); });
-    [[0, 1, 'Salida · ', true], [last, last - 1, 'Llegada · ', false]].forEach(([i, j, pre, filled]) => {
-      const st = sts[i], p = CM.map.project([st.lng, st.lat]), q = CM.map.project([sts[j].lng, sts[j].lat]);
-      const el = document.createElement('div');
-      el.className = 'cm-label' + (filled ? ' is-filled' : ''); el.style.setProperty('--c', cur.color);
-      el.textContent = pre + st.title;
-      el.style.position = 'absolute'; el.style.visibility = 'hidden'; box.appendChild(el);
-      const w = el.offsetWidth, h = el.offsetHeight;
-      el.remove(); el.style.position = ''; el.style.visibility = '';
-      // Encima o debajo, la etiqueta se desplaza a los lados lo justo para no salirse del mapa
-      const cx = Math.max(6, Math.min(W - 6 - w, p.x - w / 2));
-      const at = { right: [p.x + g, p.y - h / 2], left: [p.x - g - w, p.y - h / 2], top: [cx, p.y - g - h], bottom: [cx, p.y + g] };
-      const h1 = q.x > p.x ? 'left' : 'right', v1 = q.y > p.y ? 'top' : 'bottom';
-      const order = [h1, v1, v1 === 'top' ? 'bottom' : 'top', h1 === 'left' ? 'right' : 'left'];
-      const fits = ([x, y]) => x >= 6 && x + w <= W - 6 && y >= top && y + h <= bottom;
-      const free = ([x, y]) => !taken.some(r => x < r[0] + r[2] && x + w > r[0] && y < r[1] + r[3] && y + h > r[1]);
-      const side = order.find(k => fits(at[k]) && free(at[k])) || order.find(k => fits(at[k])) || order[0];
-      taken.push([at[side][0], at[side][1], w, h]);
-      const anchor = { right: 'left', left: 'right', top: 'bottom', bottom: 'top' }[side];
-      const dx = cx - (p.x - w / 2);
-      const offset = { right: [g, 0], left: [-g, 0], top: [dx, -g], bottom: [dx, g] }[side];
-      CM.labels.push(new maplibregl.Marker({ element: el, anchor, offset }).setLngLat([st.lng, st.lat]).addTo(CM.map));
-    });
-  }
-
   function selectCityRoute(rid, instant) {
     CM.sel = rid || null;
     const m = CM.map, sel = CM.sel;
@@ -1357,7 +1318,8 @@
       const sts = cur.t.stops, last = sts.length - 1;
       sts.forEach((st, i) => {
         const el = document.createElement('div');
-        el.className = 'cm-stop' + (i === 0 || i === last ? ' is-end' : '');
+        // La 1 y la última, más grandes; la última lleva la bandera a cuadros de llegada
+        el.className = 'cm-stop' + (i === 0 ? ' is-end' : i === last ? ' is-end is-last' : '');
         el.style.background = cur.color; el.textContent = i + 1;
         CM.marks.push(new maplibregl.Marker({ element: el }).setLngLat([st.lng, st.lat]).addTo(m));
       });
@@ -1372,11 +1334,9 @@
     renderCityChips();
     renderCityCard();
     if (m) fitCity(instant);
-    if (instant) placeEndLabels();          // si no, al terminar el movimiento (moveend)
   }
   function clearCityMarkers() {
     CM.marks.forEach(mk => mk.remove()); CM.marks = [];
-    CM.labels.forEach(mk => mk.remove()); CM.labels = [];
   }
 
   function renderCityChips() {

@@ -1991,6 +1991,116 @@
         "ok": "invalides-ok.mp3",
         "ko": "invalides-ko.mp3",
         "skip": "invalides-skip.mp3"
+      },
+      "dome-des-invalides": {
+        "paras": [
+          "dome-des-invalides-p0.mp3",
+          "dome-des-invalides-p1.mp3",
+          "dome-des-invalides-p2.mp3",
+          "dome-des-invalides-p3.mp3",
+          "dome-des-invalides-p4.mp3"
+        ],
+        "quiz": "dome-des-invalides-q.mp3",
+        "ok": "dome-des-invalides-ok.mp3",
+        "ko": "dome-des-invalides-ko.mp3",
+        "skip": "dome-des-invalides-skip.mp3",
+        "more": {
+          "ask": "dome-des-invalides-mas.mp3",
+          "paras": [
+            "dome-des-invalides-m0.mp3",
+            "dome-des-invalides-m1.mp3",
+            "dome-des-invalides-m2.mp3",
+            "dome-des-invalides-m3.mp3"
+          ]
+        }
+      },
+      "ecole-militaire": {
+        "paras": [
+          "ecole-militaire-p0.mp3",
+          "ecole-militaire-p1.mp3",
+          "ecole-militaire-p2.mp3",
+          "ecole-militaire-p3.mp3",
+          "ecole-militaire-p4.mp3",
+          "ecole-militaire-p5.mp3"
+        ],
+        "quiz": "ecole-militaire-q.mp3",
+        "ok": "ecole-militaire-ok.mp3",
+        "ko": "ecole-militaire-ko.mp3",
+        "skip": "ecole-militaire-skip.mp3",
+        "more": {
+          "ask": "ecole-militaire-mas.mp3",
+          "paras": [
+            "ecole-militaire-m0.mp3",
+            "ecole-militaire-m1.mp3",
+            "ecole-militaire-m2.mp3",
+            "ecole-militaire-m3.mp3"
+          ]
+        }
+      },
+      "champ-de-mars": {
+        "paras": [
+          "champ-de-mars-p0.mp3",
+          "champ-de-mars-p1.mp3",
+          "champ-de-mars-p2.mp3",
+          "champ-de-mars-p3.mp3",
+          "champ-de-mars-p4.mp3",
+          "champ-de-mars-p5.mp3"
+        ],
+        "quiz": "champ-de-mars-q.mp3",
+        "ok": "champ-de-mars-ok.mp3",
+        "ko": "champ-de-mars-ko.mp3",
+        "skip": "champ-de-mars-skip.mp3"
+      },
+      "tour-eiffel": {
+        "paras": [
+          "tour-eiffel-p0.mp3",
+          "tour-eiffel-p1.mp3",
+          "tour-eiffel-p2.mp3",
+          "tour-eiffel-p3.mp3",
+          "tour-eiffel-p4.mp3",
+          "tour-eiffel-p5.mp3"
+        ],
+        "quiz": "tour-eiffel-q.mp3",
+        "ok": "tour-eiffel-ok.mp3",
+        "ko": "tour-eiffel-ko.mp3",
+        "skip": "tour-eiffel-skip.mp3",
+        "more": {
+          "ask": "tour-eiffel-mas.mp3",
+          "paras": [
+            "tour-eiffel-m0.mp3",
+            "tour-eiffel-m1.mp3",
+            "tour-eiffel-m2.mp3",
+            "tour-eiffel-m3.mp3"
+          ]
+        }
+      },
+      "pont-d-iena": {
+        "paras": [
+          "pont-d-iena-p0.mp3",
+          "pont-d-iena-p1.mp3",
+          "pont-d-iena-p2.mp3",
+          "pont-d-iena-p3.mp3",
+          "pont-d-iena-p4.mp3",
+          "pont-d-iena-p5.mp3"
+        ],
+        "quiz": "pont-d-iena-q.mp3",
+        "ok": "pont-d-iena-ok.mp3",
+        "ko": "pont-d-iena-ko.mp3",
+        "skip": "pont-d-iena-skip.mp3"
+      },
+      "jardins-du-trocadero": {
+        "paras": [
+          "jardins-du-trocadero-p0.mp3",
+          "jardins-du-trocadero-p1.mp3",
+          "jardins-du-trocadero-p2.mp3",
+          "jardins-du-trocadero-p3.mp3",
+          "jardins-du-trocadero-p4.mp3",
+          "jardins-du-trocadero-p5.mp3"
+        ],
+        "quiz": "jardins-du-trocadero-q.mp3",
+        "ok": "jardins-du-trocadero-ok.mp3",
+        "ko": "jardins-du-trocadero-ko.mp3",
+        "skip": "jardins-du-trocadero-skip.mp3"
       }
     }
   }
