@@ -47,6 +47,15 @@
           "color": "#7A4E9C",
           "file": "data/paris/torre-eiffel.json",
           "status": "ready"
+        },
+        {
+          "id": "marais",
+          "label": "Marais",
+          "title": "El París de los palacios escondidos",
+          "subtitle": "Del Marais a la isla de San Luis, entre reyes, amantes y poetas",
+          "color": "#B5487A",
+          "file": "data/paris/marais.json",
+          "status": "ready"
         }
       ],
       "icon": "icons/ciudades/paris.svg",

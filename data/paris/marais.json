@@ -1,0 +1,2348 @@
+{
+  "id": "marais",
+  "city": "paris",
+  "title": "El París de los palacios escondidos",
+  "subtitle": "Del Marais a la isla de San Luis, entre reyes, amantes y poetas",
+  "lang": "es-ES",
+  "meeting": {
+    "name": "Marché des Enfants Rouges",
+    "address": "39 Rue de Bretagne, 75003 París, Francia",
+    "note": "En la entrada del mercado en la rue de Bretagne (cierra los lunes). Metro: Filles du Calvaire o Temple."
+  },
+  "stops": [
+    {
+      "id": "enfants-rouges",
+      "title": "El mercado de los Niños Rojos",
+      "subtitle": "El mercado cubierto más antiguo de París",
+      "lat": 48.862807,
+      "lng": 2.362,
+      "radius": 45,
+      "where": "En la entrada del mercado, en la rue de Bretagne.",
+      "paras": [
+        "¡Bonjour! Bienvenido a tu free tour de bolsillo por el Marais y la isla de San Luis. Hoy vamos a ir de este mercado hasta la punta de la isla, con Notre-Dame de fondo. Son unos tres kilómetros y medio, todo llano y casi todo por calles estrechas, así que vas a ver el París de antes de los grandes bulevares. Como en todo buen free tour, de vez en cuando te haré una pregunta para adivinar. Y en algunas paradas, si te quedas con ganas, te ofreceré una historia extra para curiosos.",
+        "Empezamos con el estómago, que es como empiezan las cosas importantes. Este es el mercado cubierto más antiguo de París: abrió en 1615, en tiempos de Luis trece, cuando por estas calles pasaban carros y gallinas. Hoy, en vez de gallinas, hay puestos de comida marroquí, japonesa, italiana o libanesa, y mesas para comer de pie. Si te apetece un café antes de empezar, este es el momento.",
+        "En 1536, Margarita de Navarra, la hermana del rey Francisco primero, fundó aquí al lado un hospital para niños huérfanos. Y los vistió de rojo, el color de la caridad. Los parisinos los llamaban los niños rojos. El orfanato cerró en el siglo dieciocho, pero el nombre se quedó pegado al mercado. Si sacas el móvil, tienes a Margarita retratada por el pintor de la corte.",
+        "Y ya que estamos, ¿por qué se llama Marais este barrio? Marais quiere decir pantano. Hace mil años, esto era una zona encharcada junto a un viejo brazo del Sena. Los monjes la fueron secando y la llenaron de huertas. Por eso, todavía hoy, en francés al hortelano se le llama maraîcher, el del pantano. Y de ese barro, ya verás, salieron algunos de los palacios más bonitos de París."
+      ],
+      "images": [
+        {
+          "src": "img/paris/marais/enfants-rouges.webp",
+          "w": 846,
+          "h": 1000,
+          "para": 2,
+          "after": "Si sacas el móvil, tienes a Margarita retratada por el pintor de la corte.",
+          "caption": "Margarita de Navarra, la fundadora del orfanato, hacia 1527",
+          "credit": "Atribuido a Jean Clouet · Walker Art Gallery · Dominio público",
+          "source": "https://commons.wikimedia.org/wiki/File:Jean_Clouet_(Attributed)_-_Portrait_of_Marguerite_of_Navarre_-_Google_Art_Project.jpg"
+        }
+      ],
+      "quiz": {
+        "before": 2,
+        "q": "Mercado de los Niños Rojos: vaya nombre. ¿De dónde crees que viene?",
+        "options": [
+          "De los tomates que se vendían aquí",
+          "De un orfanato cuyos niños vestían de rojo",
+          "De una revuelta de niños en la Revolución"
+        ],
+        "answer": 1
+      },
+      "toNext": "Con la entrada del mercado a tu espalda, gira a la izquierda por la rue de Bretagne y, enseguida, otra vez a la izquierda por la rue de Beauce, que baja junto al mercado. Al final, gira a la derecha por la rue Pastourelle hasta la rue des Archives, y bájala hacia la izquierda. A mitad de bajada, a tu izquierda, verás una puerta medieval entre dos torrecillas: es de 1375, de cuando aquí vivía un condestable de Francia. Al llegar al cruce con la rue des Francs-Bourgeois, gira a la izquierda y para frente a la gran verja con un patio de columnas."
+    },
+    {
+      "id": "archives",
+      "title": "El palacio de Soubise",
+      "subtitle": "Una princesa pelirroja y el diario de un rey",
+      "lat": 48.859333,
+      "lng": 2.357969,
+      "radius": 45,
+      "where": "En la rue des Francs-Bourgeois, frente a la verja del número 60, mirando al patio rodeado de columnas.",
+      "paras": [
+        "Mira qué patio: una herradura de columnas y, al fondo, un palacio que parece pensado para recibir carrozas. Es el palacio de Soubise, y lo que guarda hoy vale más que el edificio: son los Archivos Nacionales de Francia. Leyes, tratados, cartas de reyes… kilómetros y kilómetros de papeles. Vamos, la memoria de Francia, ordenadita en cajas.",
+        "El palacio lo compró en 1700 el príncipe de Soubise. Su mujer, Ana de Rohan, era una pelirroja de las que no pasaban desapercibidas en Versalles, y desde luego no le pasó desapercibida a Luis catorce: fue su amante durante unos años. En el móvil la tienes retratada. El marido, muy comprensivo, miraba para otro lado. Y el rey, agradecido, le hizo llegar sumas de dinero muy generosas. En la corte se decía que este palacio salió de ahí. Vamos, que a algunos los cuernos les salieron a cuenta.",
+        "Y ahora imagínate que entras: dentro de estos archivos hay un armario de hierro, el armario de hierro, donde se guardan los papeles más valiosos. El testamento de Napoleón. La última carta de María Antonieta, que nunca llegó a su destinataria. Las llaves de la Bastilla. Y el diario de Luis dieciséis.",
+        "Y no, no era un rey despistado: aquel era su diario de caza, y ese día no había cazado nada. Se enteró de lo de la Bastilla esa misma noche. Cuentan que, al oír la noticia, preguntó si era una revuelta, y le contestaron: no, señor, es una revolución.",
+        "Y, ya que pasas por aquí, la rue des Francs-Bourgeois es la calle más animada del barrio. Los domingos, cuando casi todo París cierra, aquí las tiendas abren. El Marais fue de los primeros barrios de París en abrir en domingo, y los parisinos lo saben: si vienes en domingo, prepárate para pasear despacito."
+      ],
+      "images": [
+        {
+          "src": "img/paris/marais/archives.webp",
+          "w": 504,
+          "h": 631,
+          "para": 1,
+          "after": "En el móvil la tienes retratada.",
+          "caption": "Ana de Rohan-Chabot, princesa de Soubise",
+          "credit": "Pintor desconocido · Dominio público",
+          "source": "https://commons.wikimedia.org/wiki/File:Anne_de_Rohan-Chabot,_Princess_of_Soubise.jpg"
+        }
+      ],
+      "quiz": {
+        "before": 3,
+        "q": "El 14 de julio de 1789, el día de la toma de la Bastilla, Luis dieciséis escribió en su diario una sola palabra. ¿Cuál crees que fue?",
+        "options": [
+          "Revolución",
+          "Socorro",
+          "Nada"
+        ],
+        "answer": 2
+      },
+      "toNext": "Sigue por la rue des Francs-Bourgeois, gira a la derecha por la rue Vieille-du-Temple, enseguida a la izquierda por la rue du Marché-des-Blancs-Manteaux y, al final, a la derecha por la rue des Hospitalières-Saint-Gervais hasta la rue des Rosiers. Para ahí, donde empiezan las colas de los faláfeles."
+    },
+    {
+      "id": "rosiers",
+      "title": "La rue des Rosiers",
+      "subtitle": "El Pletzl, el barrio judío de París",
+      "lat": 48.857211,
+      "lng": 2.359294,
+      "radius": 45,
+      "where": "En la rue des Rosiers, a la altura de la rue des Hospitalières-Saint-Gervais, entre las panaderías y los puestos de faláfel.",
+      "paras": [
+        "Bienvenido a la calle de los Rosales. Rosales ya no quedan, pero huele a pan recién hecho, a pastrami y a faláfel. Fíjate en las colas: hay restaurantes de faláfel con más cola que algunos museos, y te lo digo yo, que he visto las del Louvre. Si te pilla con hambre, es de las mejores comidas baratas de París.",
+        "Este es el corazón del barrio judío de París. Los judíos que llegaron de Europa del Este le pusieron un nombre en yidis: el Pletzl.",
+        "Un nombre muy cariñoso para un barrio que fue refugio. A finales del siglo diecinueve empezaron a llegar aquí miles de judíos de Europa del Este, sobre todo del imperio ruso, huyendo de la pobreza y de las persecuciones. Hablaban yidis, abrieron sinagogas, panaderías, talleres de sastre. Por entonces, el Marais ya no era el barrio elegante de antes: los nobles se habían ido y los palacios se habían llenado de talleres y de familias obreras. Si sacas el móvil, verás esta calle fotografiada en 1910.",
+        "Ese barrio vivió su peor momento en la Segunda Guerra Mundial. En 1942, durante la ocupación, la policía detuvo a miles de judíos de París para deportarlos, muchos de estas mismas calles. Aquí mismo, en la escuela de la rue des Hospitalières-Saint-Gervais, una placa recuerda a ciento sesenta y cinco alumnos judíos deportados. Merece la pena pararse a leerla.",
+        "Hoy el Marais es otra cosa: tiendas de diseño, galerías, bares, y es también el barrio gay de París, con la vida más animada de la ciudad. Pero el Pletzl sigue aquí, con sus panaderías de siempre, sus librerías hebreas y su sinagoga. Y sobre todo con sus vecinos, que siguen comprando el pan en la misma esquina que sus abuelos."
+      ],
+      "images": [
+        {
+          "src": "img/paris/marais/rosiers.webp",
+          "w": 785,
+          "h": 1000,
+          "para": 2,
+          "after": "Si sacas el móvil, verás esta calle fotografiada en 1910.",
+          "caption": "La rue des Rosiers desde la rue des Écouffes, en 1910",
+          "credit": "Foto: Eugène Atget · Museo Carnavalet · CC0",
+          "source": "https://commons.wikimedia.org/wiki/File:Rue_des_Rosiers_depuis_la_rue_des_Ecouffes,_4%C3%A8me_arrondissement,_Paris._PH16184.jpg"
+        }
+      ],
+      "quiz": {
+        "before": 2,
+        "q": "¿Qué crees que significa Pletzl en yidis?",
+        "options": [
+          "Calle de las rosas",
+          "Plaza pequeña",
+          "Pan con semillas"
+        ],
+        "answer": 1
+      },
+      "toNext": "Sigue la rue des Rosiers hasta el final, gira a la izquierda por la rue Pavée y, arriba, a la derecha por la rue des Francs-Bourgeois. En el siguiente cruce, gira a la izquierda por la rue de Sévigné: la entrada del museo Carnavalet está a pocos pasos, a tu izquierda."
+    },
+    {
+      "id": "carnavalet",
+      "title": "El museo Carnavalet",
+      "subtitle": "La casa de la cotilla más famosa de Francia",
+      "lat": 48.857402,
+      "lng": 2.363192,
+      "radius": 45,
+      "where": "En la rue de Sévigné, frente a la entrada del museo Carnavalet.",
+      "paras": [
+        "Este palacio es hoy el museo de la historia de París, y su colección permanente es gratuita. Dentro tienes de todo: maquetas de la Bastilla, letreros antiguos de tiendas, el dormitorio de Marcel Proust, recuerdos de Napoleón… Y el nombre tiene su gracia. En el siglo dieciséis lo compró la viuda de un noble bretón, la señora de Kernevenoy. Los parisinos no había manera de que lo pronunciaran, y de tanto destrozarlo acabó en Carnavalet. Vamos, que el palacio se quedó con el apodo.",
+        "Pero su inquilina más famosa llegó en 1677: madame de Sévigné. Vivió aquí casi veinte años, y se pasó la vida escribiendo cartas. Se conservan más de mil, y unas setecientas cincuenta son para su hija, que se había casado y vivía en la Provenza. Ella le contaba todo lo que pasaba en París y en la corte: bodas, escándalos, ejecuciones, quién se acostaba con quién. Si hubiera existido el teléfono, esta señora no lo habría soltado. En el móvil tienes su retrato.",
+        "Una de sus cartas más famosas cuenta la muerte de Vatel, el maestresala del príncipe de Condé, el encargado de sus banquetes. En 1671, el príncipe invitó al rey Luis catorce a su castillo de Chantilly, con toda la corte. Tres días de banquetes. La primera noche faltó asado en un par de mesas, y Vatel ya andaba con los nervios de punta. Y a la mañana siguiente, viernes, la cosa acabó en tragedia.",
+        "Era día de vigilia, sin carne, y había encargado pescado fresco a los puertos de la costa. Al amanecer solo llegaron dos cestas. Vatel creyó que no vendría nada más y que su honor estaba perdido. Subió a su cuarto, apoyó la espada contra la puerta y se dejó caer sobre ella. Poco después, el resto del pescado empezó a llegar por todas partes. Madame de Sévigné lo contó con todo detalle, y así se convirtió en la leyenda de los cocineros perfeccionistas.",
+        "Y si entras al patio del museo, verás a Luis catorce en persona, en bronce, vestido de emperador romano con peluca. Una combinación que solo él se podía permitir."
+      ],
+      "images": [
+        {
+          "src": "img/paris/marais/carnavalet.webp",
+          "w": 778,
+          "h": 1000,
+          "para": 1,
+          "after": "En el móvil tienes su retrato.",
+          "caption": "Madame de Sévigné hacia 1665",
+          "credit": "Atribuido a Claude Lefèbvre · Museo Carnavalet · CC0",
+          "source": "https://commons.wikimedia.org/wiki/File:Claude_Lef%C3%A8bvre_-_Marie_de_Rabutin-Chantal,_marquise_de_S%C3%A9vign%C3%A9_(1626-1696)_-_La_marquise_de_S%C3%A9vign%C3%A9_-_mus%C3%A9e_Carnavalet.jpg"
+        }
+      ],
+      "quiz": {
+        "before": 3,
+        "q": "¿Por qué crees que Vatel, el gran maestro de banquetes, se quitó la vida aquel día?",
+        "options": [
+          "Porque el pescado no llegaba",
+          "Porque se le quemó el pastel del rey",
+          "Por un amor imposible"
+        ],
+        "answer": 0
+      },
+      "toNext": "Vuelve a la rue des Francs-Bourgeois y síguela hacia la izquierda hasta el final. Desembocarás en una plaza cuadrada, rodeada de soportales de ladrillo rojo. Entra al jardín por una de las puertas de la verja y ponte junto a la estatua del rey a caballo, en el centro."
+    },
+    {
+      "id": "place-des-vosges",
+      "title": "La plaza de los Vosgos",
+      "subtitle": "La plaza más bonita de París y un nombre con truco",
+      "lat": 48.855709,
+      "lng": 2.365371,
+      "radius": 60,
+      "where": "En el jardín del centro de la plaza, junto a la estatua de Luis trece a caballo.",
+      "paras": [
+        "Para muchos, esta es la plaza más bonita de París. Fíjate: treinta y seis casas casi idénticas, de ladrillo rojo y piedra, con tejados de pizarra y soportales por debajo, alrededor de un jardín cuadrado. En 1612, cuando se inauguró, fue la primera plaza de París diseñada así, toda de una pieza. Se llamaba plaza Real.",
+        "Y aquí hay una historia de reyes con mala suerte. Antes había un palacio, el de las Tournelles. En 1559, el rey Enrique segundo participó en un torneo aquí al lado, en la rue Saint-Antoine, y una astilla de la lanza de su rival se le metió por la visera del casco. Murió diez días después en ese palacio. Su viuda, Catalina de Médicis, no quiso volver a verlo y lo mandó derribar. El solar se quedó vacío.",
+        "Hasta que llegó Enrique cuarto, en 1605, y decidió hacer aquí una gran plaza. Pero si hiciste nuestra ruta del centro, ya sabes cómo acabó: en 1610 lo apuñaló Ravaillac, y no llegó a verla terminada. La inauguró su hijo, Luis trece, el de la estatua, con tres días de fiestas por su compromiso de boda con Ana de Austria. Desfiles a caballo, fuegos artificiales y miles de espectadores en los balcones. Si sacas el móvil, verás aquella fiesta pintada.",
+        "Era la época de la Revolución, con ejércitos por media Europa y la caja vacía, y aquel departamento fue el primero en pasar por caja. En 1800, París, agradecida, le puso su nombre a la plaza. Vamos, que esto es un monumento al contribuyente cumplidor. No conozco otro.",
+        "Y en el número seis, en una esquina del lado sur de la plaza, vivió Victor Hugo, entre 1832 y 1848. Allí escribió obras de teatro y empezó Los miserables. Hoy su casa es un museo. Y en el número veintiuno vivió el cardenal Richelieu. Sí, el de los mosqueteros. Y no le hacía ninguna gracia lo que pasaba en esta plaza."
+      ],
+      "images": [
+        {
+          "src": "img/paris/marais/place-des-vosges.webp",
+          "w": 1000,
+          "h": 654,
+          "para": 2,
+          "after": "Si sacas el móvil, verás aquella fiesta pintada.",
+          "caption": "El gran carrusel de abril de 1612 en la plaza Real",
+          "credit": "Anónimo · Museo Carnavalet · Dominio público",
+          "source": "https://commons.wikimedia.org/wiki/File:Anonymous_-_Le_%22Roman_des_chevaliers_de_la_gloire%22,_grand_carrousel_donn%C3%A9_du_5_au_7_avril_1612,_%C3%A0_l'occasion_du_mariage_de_Louis_XIII_avec_Anne_d'Autriche,_place_Royale_-_P50_-_Mus%C3%A9e_Carnavalet.jpg"
+        }
+      ],
+      "quiz": {
+        "before": 3,
+        "q": "¿Por qué crees que esta plaza se llama de los Vosgos, una región del este de Francia?",
+        "options": [
+          "Por un general vosgo que la salvó de la Revolución",
+          "Por los abetos de los Vosgos que la decoraban",
+          "Porque los Vosgos fueron los primeros en pagar sus impuestos"
+        ],
+        "answer": 2
+      },
+      "more": {
+        "title": "El duelo que costó una cabeza",
+        "ask": "Esta plaza fue el escenario de un desafío a Richelieu en toda regla, a plena luz del día. Acabó mal, muy mal. ¿Te lo cuento? Si te apetece, toca «Cuéntame más». Si no, seguimos.",
+        "paras": [
+          "En la Francia de Luis trece, los nobles se mataban en duelos por cualquier cosa: una mirada, un empujón, una broma de mal gusto. Morían cientos al año. Así que, en 1626, Richelieu prohibió los duelos bajo pena de muerte. Y el que más se lo tomó a broma fue el conde de Bouteville, un noble joven, rico y de los Montmorency, la familia más ilustre de Francia. Se dice que había peleado en una veintena de duelos.",
+          "Bouteville tuvo que huir a Bruselas, y pidió al rey que lo perdonara. El rey le contestó que no. ¿Y qué hizo él? Volver a París y, para que quedara clarito, batirse en duelo aquí mismo, en la plaza Real, a plena luz del día y delante de todo el mundo, el 12 de mayo de 1627. Tres contra tres, con sus padrinos. Uno de ellos murió en la pelea. En la app tienes el duelo, tal como lo imaginó un dibujante casi trescientos años después.",
+          "Esta vez no hubo escapatoria. A Bouteville lo detuvieron cuando huía, y toda la nobleza pidió clemencia: su familia, sus amigos, hasta la mujer del rey. Pero Richelieu no cedió. El 22 de junio de 1627, Bouteville fue decapitado en la plaza de Grève, la que hoy es la plaza del Ayuntamiento, donde empieza nuestra ruta del centro.",
+          "Lo curioso es que su hijo, que nació pocos meses después, acabó siendo uno de los mejores mariscales de Luis catorce. Y a Richelieu, que vivía aquí al lado, en el número veintiuno, le quedó claro que con aquella cabeza había ganado la partida. Al menos, de momento: los duelos siguieron, aunque ya con mucho más disimulo."
+        ],
+        "images": [
+          {
+            "src": "img/paris/marais/place-des-vosges-mas.webp",
+            "w": 850,
+            "h": 602,
+            "para": 1,
+            "after": "En la app tienes el duelo, tal como lo imaginó un dibujante casi trescientos años después.",
+            "caption": "El duelo de Bouteville en la plaza Real, imaginado por Albert Robida en 1895",
+            "credit": "Albert Robida · Dominio público",
+            "source": "https://commons.wikimedia.org/wiki/File:Albert_Robida_-_Duel_Bouteville-Beuvron_at_Place_Royale,_1627.jpg"
+          }
+        ]
+      },
+      "toNext": "Mira hacia el lado sur de la plaza, donde está el pabellón más alto, el Pabellón del Rey, y ve a la esquina de tu derecha. Bajo los soportales, junto al número siete, hay una puerta que da a un jardín escondido. Crúzala y para en el jardín."
+    },
+    {
+      "id": "hotel-de-sully",
+      "title": "El palacio de Sully",
+      "subtitle": "El jardín secreto de un ministro",
+      "lat": 48.854915,
+      "lng": 2.364229,
+      "radius": 30,
+      "where": "En el jardín del palacio de Sully, frente a la fachada con esculturas, entre la plaza de los Vosgos y la rue Saint-Antoine.",
+      "paras": [
+        "¿A que no esperabas un jardín aquí? Es uno de los pasadizos secretos más bonitos de París: has entrado por la plaza y saldrás por la rue Saint-Antoine atravesando un palacio entero. El edificio pequeño que tienes detrás era el invernadero de los naranjos, y el palacio que tienes delante tiene las fachadas llenas de esculturas. Hoy aquí tienen su sede los monumentos nacionales de Francia.",
+        "El palacio lo mandó construir un financiero, Mesme Gallet, hacia 1624. Pero no lo disfrutó mucho.",
+        "Mucha gente cuenta que lo perdió jugando a las cartas, pero lo más probable es que lo arruinaran las propias obras. Vamos, como cualquier reforma. En 1634 lo compró el duque de Sully, el ministro de Enrique cuarto, el que le llenó las arcas al rey. Para entonces ya era un señor mayor, retirado de la política, con más de setenta años.",
+        "Y aquí viene el chisme. Cuentan que Sully le dio a su mujer una buena suma de dinero y le dijo: esto es para la casa, esto para usted, y esto para sus amantes. Pero que no se los encuentre yo por mi escalera. La frase se ha repetido durante siglos. El problema es que su mujer tenía entonces sesenta y ocho años. Así que, o la señora tenía una energía admirable, o esto es un cotilleo de los buenos."
+      ],
+      "images": [],
+      "quiz": {
+        "before": 2,
+        "q": "¿Cómo crees que perdió el palacio aquel financiero?",
+        "options": [
+          "En una partida de cartas",
+          "Arruinado por las obras",
+          "Se lo confiscó el rey"
+        ],
+        "answer": 1
+      },
+      "toNext": "Atraviesa el patio del palacio y sal por el portón grande a la rue Saint-Antoine. Gira a la derecha y camina un par de minutos por la acera hasta la gran iglesia con cúpula que verás a tu izquierda."
+    },
+    {
+      "id": "saint-paul",
+      "title": "La iglesia de Saint-Paul-Saint-Louis",
+      "subtitle": "Corazones de reyes y la Bastilla al fondo",
+      "lat": 48.854585,
+      "lng": 2.36155,
+      "radius": 45,
+      "where": "En la rue Saint-Antoine, frente a la fachada de la iglesia, de forma que puedas mirar la calle hacia el este.",
+      "paras": [
+        "Esta iglesia la construyeron los jesuitas, y la primera piedra la puso el propio Luis trece en 1627. Fíjate en la fachada, con tres pisos de columnas, y en la cúpula, de las primeras de París. Nada que ver con las catedrales góticas como Notre-Dame: aquí, los jesuitas querían algo al estilo de Roma, con mucha luz y mucho mármol.",
+        "Durante más de un siglo, esta iglesia guardó en relicarios de oro los corazones de Luis trece y de Luis catorce. Era la costumbre: a los reyes se les enterraba el cuerpo en un sitio y el corazón en otro. Con la Revolución, los relicarios se fundieron y los corazones desaparecieron. Lo que pasó después con ellos es una historia de las que no se olvidan.",
+        "Y ahora mira la calle hacia tu izquierda, hacia el este. Al fondo de la rue Saint-Antoine, a unos diez minutos, está la plaza de la Bastilla. De la fortaleza no queda nada: la columna con un genio dorado que, si los árboles te dejan, se ve allí al fondo, recuerda otra revolución, la de 1830. Pero el 14 de julio de 1789, miles de parisinos subieron por esta misma calle para asaltarla. Iban a por pólvora para sus fusiles, y ya de paso liberaron a los presos.",
+        "Y no eran precisamente presos políticos: cuatro falsificadores, dos hombres con problemas mentales y un conde encerrado a petición de su propia familia por, digamos, sus costumbres. Y luego vino lo mejor: un constructor espabilado, Palloy, se encargó de derribarla y vendió sus piedras como recuerdo. Mandó tallar maquetas de la Bastilla con sus piedras y envió una a cada departamento. Y una de sus llaves acabó, a través de Lafayette, en manos de George Washington: todavía se conserva en su casa de Virginia. En la app tienes la toma de la Bastilla, pintada aquel mismo año.",
+        "Una última cosa antes de entrar, si te apetece. A la entrada, las dos pilas de agua bendita, con forma de concha gigante, cuentan que las regaló Victor Hugo, vecino de la parroquia, para la boda de su hija Leopoldina en 1843. Y en su novela Los miserables, Cosette y Marius se casan en esta misma iglesia."
+      ],
+      "images": [
+        {
+          "src": "img/paris/marais/saint-paul.webp",
+          "w": 1100,
+          "h": 836,
+          "para": 3,
+          "after": "En la app tienes la toma de la Bastilla, pintada aquel mismo año.",
+          "caption": "La toma de la Bastilla, el 14 de julio de 1789, en una acuarela de Jean-Pierre Houël",
+          "credit": "Jean-Pierre Houël · Dominio público",
+          "source": "https://commons.wikimedia.org/wiki/File:Prise_de_la_Bastille.jpg"
+        }
+      ],
+      "quiz": {
+        "before": 3,
+        "q": "¿Cuántos presos crees que había en la Bastilla aquel 14 de julio?",
+        "options": [
+          "Siete",
+          "Unos setecientos",
+          "Ninguno, estaba vacía"
+        ],
+        "answer": 0
+      },
+      "more": {
+        "title": "Los reyes que acabaron en un cuadro",
+        "ask": "¿Quieres saber qué pasó con los corazones de los dos reyes? Te aviso: hay pintores, un cuadro del Louvre y una caja de rapé de oro. Si te apetece, toca «Cuéntame más». Si no, seguimos.",
+        "paras": [
+          "En la Revolución, los relicarios de oro de esta iglesia se fundieron para hacer monedas. Y los corazones de los reyes, embalsamados, acabaron en el mercado. No es tan raro como suena: en aquella época, los pintores usaban un pigmento muy apreciado, el marrón momia, que se hacía moliendo restos de momias egipcias. Daba unos marrones transparentes preciosos. Y un corazón real embalsamado, pues… servía igual.",
+          "Según cuenta la historia, los compraron dos pintores. Uno de ellos, Martin Drolling, los molió para hacer pintura y la usó en sus cuadros. Entre ellos, dicen, el Interior de una cocina, que está hoy en el Louvre. Si sacas el móvil, lo tienes. Míralo bien: en esos marrones, dicen, hay un poco de rey.",
+          "El otro pintor no se atrevió a usarlo todo. Años después, cuando los Borbones volvieron al trono, devolvió lo que le quedaba a Luis dieciocho, el hermano de Luis dieciséis. Y el rey, agradecido, le regaló una caja de rapé de oro. Vamos, que no hay mal negocio si sabes esperar.",
+          "Ahora, ojo: esta historia se cuenta mucho, pero nadie ha podido demostrarla con documentos. Así que queda en ese territorio que tanto nos gusta a los guías: el de las historias que, si no son verdad, merecerían serlo."
+        ],
+        "images": [
+          {
+            "src": "img/paris/marais/saint-paul-mas.webp",
+            "w": 1100,
+            "h": 880,
+            "para": 1,
+            "after": "Si sacas el móvil, lo tienes.",
+            "caption": "Interior de una cocina, de Martin Drolling, 1815",
+            "credit": "Martin Drolling · Museo del Louvre · Dominio público",
+            "source": "https://commons.wikimedia.org/wiki/File:Martin_Drolling_-_Interior_of_a_Kitchen_-_WGA6678.jpg"
+          }
+        ]
+      },
+      "toNext": "Sigue por la rue Saint-Antoine en el mismo sentido que venías y, pasada la iglesia, gira a la izquierda por la rue du Prévôt, una calle estrechita. Al final, gira un momento a la derecha por la rue Charlemagne y enseguida a la izquierda por la rue du Figuier, hasta un palacio con torrecillas puntiagudas."
+    },
+    {
+      "id": "hotel-de-sens",
+      "title": "El palacio de Sens",
+      "subtitle": "Un castillo de cuento en pleno París",
+      "lat": 48.853348,
+      "lng": 2.358768,
+      "radius": 45,
+      "where": "En la rue du Figuier, frente a la fachada del palacio, con sus torrecillas y su gran puerta de arco.",
+      "paras": [
+        "¿Te parece que te has equivocado de siglo? Esto parece un castillo de cuento: torrecillas puntiagudas, una gran puerta en arco, tejados empinados. Es el palacio de Sens, levantado entre finales del siglo quince y principios del dieciséis, y junto al de Cluny, el del Barrio Latino, es una de las poquísimas casas nobles medievales que le quedan a París.",
+        "Lo construyeron los arzobispos de Sens, una ciudad a más de cien kilómetros de aquí. ¿Y qué pintaban en París? Pues mandaban. Hasta 1622, París ni siquiera era arzobispado: su obispo dependía del de Sens. Así que el arzobispo necesitaba una casa en la capital, y se la hizo a lo grande. Después tuvo épocas peores: en el siglo diecinueve llegó a ser fábrica y taller, y hoy es una biblioteca de artes decorativas. En la app tienes cómo estaba en 1899, antes de su restauración.",
+        "Busca en la fachada una bola de hierro incrustada en la piedra, con una fecha grabada debajo.",
+        "La fecha dice 28 de julio de 1830, en plena revolución de julio, la misma de la columna de la Bastilla. Aunque hay quien sospecha que la pusieron después, de recuerdo. Sea como sea, ahí sigue, casi dos siglos después. Y por detrás del palacio hay un jardín a la francesa, con setos recortados, donde se está de maravilla.",
+        "Pero la inquilina más famosa de esta casa fue una reina: Margarita de Valois, la reina Margot, que vivió aquí en 1605. Era la hija de Enrique segundo, el del torneo de la plaza de los Vosgos, y la primera mujer de Enrique cuarto. Y tenía una fama, digamos, de corazón muy grande."
+      ],
+      "images": [
+        {
+          "src": "img/paris/marais/hotel-de-sens.webp",
+          "w": 777,
+          "h": 1000,
+          "para": 1,
+          "after": "En la app tienes cómo estaba en 1899, antes de su restauración.",
+          "caption": "El palacio de Sens en junio de 1899",
+          "credit": "Foto: Eugène Atget · Biblioteca Nacional de Francia · Dominio público",
+          "source": "https://commons.wikimedia.org/wiki/File:Atget_-_H%C3%B4tel_de_Sens_-_juin_1899,_btv1b10517491f.jpeg"
+        }
+      ],
+      "quiz": {
+        "before": 3,
+        "q": "¿Qué crees que es esa bola de hierro incrustada en la fachada?",
+        "options": [
+          "Una pesa de la balanza del arzobispo",
+          "Un adorno puesto en una reforma",
+          "Una bala de cañón"
+        ],
+        "answer": 2
+      },
+      "more": {
+        "title": "La reina Margot y el crimen de la puerta",
+        "ask": "Aquí la reina Margot vivió un crimen pasional a la puerta de su carroza. Y su respuesta fue de reina. ¿Te lo cuento? Si te apetece, toca «Cuéntame más». Si no, seguimos.",
+        "paras": [
+          "La reina Margot se casó con Enrique de Navarra, el futuro Enrique cuarto, en 1572. Y la boda acabó en la matanza de San Bartolomé, en la que murieron miles de protestantes en París. Mal comienzo. El matrimonio nunca funcionó: él tenía sus amantes y ella los suyos, y vivieron separados casi siempre. En 1599 el Papa anuló la boda, y ella volvió a París ya cincuentona, con mucho dinero y muchas ganas de vivir. Si sacas el móvil, la tienes retratada en sus buenos tiempos.",
+          "Aquí, en el palacio de Sens, se instaló con su favorito, un joven de dieciocho años. Pero había un antiguo favorito, de veinte, que no lo había superado. En abril de 1606, cuando la reina volvía a casa en su carroza, el despechado se acercó a la puerta y le pegó un tiro al joven, delante de ella. Murió en el acto.",
+          "Margot no lloró: se puso furiosa. Juró que no comería ni bebería hasta que el asesino pagara. Y lo consiguió: al cabo de muy pocos días, lo decapitaron aquí mismo, delante del palacio. Y cuentan que ella lo vio desde la ventana. Después se mudó al otro lado del río, porque esta casa ya le traía malos recuerdos.",
+          "Y un último chisme de la época, que conste que es chisme: dicen que la reina llevaba pelucas rubias hechas con el pelo de sus lacayos, a los que elegía, precisamente, bien rubios."
+        ],
+        "images": [
+          {
+            "src": "img/paris/marais/hotel-de-sens-mas.webp",
+            "w": 700,
+            "h": 1000,
+            "para": 0,
+            "after": "Si sacas el móvil, la tienes retratada en sus buenos tiempos.",
+            "caption": "Margarita de Valois, la reina Margot, hacia 1571",
+            "credit": "Anónimo, antes atribuido a François Clouet · Dominio público",
+            "source": "https://commons.wikimedia.org/wiki/File:Marguerite_de_France_ou_Marguerite_de_Valois,_surnomm%C3%A9e_Margot.jpg"
+          }
+        ]
+      },
+      "toNext": "Baja por la rue du Figuier y la rue de l'Hôtel-de-Ville hasta el río, que está a un minuto. En el muelle, a tu derecha, verás el puente de piedra, el puente Marie: crúzalo y para en el centro."
+    },
+    {
+      "id": "pont-marie",
+      "title": "El puente Marie",
+      "subtitle": "Una isla que eran dos y un beso inventado",
+      "lat": 48.85273,
+      "lng": 2.3571,
+      "radius": 45,
+      "where": "En el centro del puente Marie, mirando hacia la isla de San Luis.",
+      "paras": [
+        "Tienes delante la isla de San Luis. Y ojo, que hace cuatrocientos años no era una isla: eran dos islotes, separados por un canal, donde no había casi nada: prados, algún árbol y barcas amarradas.",
+        "Los islotes eran de los canónigos de Notre-Dame, que los usaban de pasto, y el nombre se le quedó a uno de ellos. Hasta que, en 1614, el rey encargó a un empresario, Christophe Marie, que lo urbanizara todo. Marie y sus socios rellenaron el canal, unieron los dos islotes, trazaron calles rectas y vendieron solares a los ricos de la época. Si sacas el móvil, verás los dos islotes en un plano de París de 1550.",
+        "Y este puente es el suyo: por eso se llama puente Marie. Se terminó en 1635, y encima tenía unas cincuenta casas, como el Puente Viejo de Florencia. Pero en 1658, una gran crecida del Sena se llevó dos arcos y una veintena de casas, y murieron decenas de personas. Después, las casas que quedaron se derribaron, y el puente se quedó así de despejado, como lo ves hoy.",
+        "Y una cosa más. Igual has oído que si pasas por debajo de este puente en barco y besas a tu pareja, se cumple un deseo. Pues te digo la verdad: esa tradición no tiene ninguna base histórica. Ahora, tampoco te va a hacer ningún daño probarlo."
+      ],
+      "images": [
+        {
+          "src": "img/paris/marais/pont-marie.webp",
+          "w": 800,
+          "h": 771,
+          "para": 1,
+          "after": "Si sacas el móvil, verás los dos islotes en un plano de París de 1550.",
+          "caption": "La isla de Notre-Dame y la isla de las Vacas en el plano de París de hacia 1550",
+          "credit": "Plano de Truschet y Hoyau · Dominio público",
+          "source": "https://commons.wikimedia.org/wiki/File:%C3%8Ele_aux_Vaches_%26_%C3%AEle_Notre-Dame,_Plan_de_Paris_vers_1550.jpg"
+        }
+      ],
+      "quiz": {
+        "before": 1,
+        "q": "Uno de los dos islotes tenía un nombre muy campestre. ¿Qué crees que pastaba allí?",
+        "options": [
+          "Vacas",
+          "Ovejas",
+          "Cerdos del rey"
+        ],
+        "answer": 0
+      },
+      "toNext": "Baja del puente a la isla y gira a la izquierda por el muelle de Anjou. Camina un par de minutos, con el río a tu izquierda, hasta un palacio con un balcón de hierro dorado, en el número diecisiete."
+    },
+    {
+      "id": "hotel-de-lauzun",
+      "title": "El palacio de Lauzun",
+      "subtitle": "Un poeta, un club secreto y una cuchara muy especial",
+      "lat": 48.851707,
+      "lng": 2.35909,
+      "radius": 45,
+      "where": "En el muelle de Anjou, frente al número diecisiete, el palacio de Lauzun.",
+      "paras": [
+        "Por fuera parece una casa más del muelle, solo con un balcón de hierro dorado. Pero por dentro es puro oro: techos pintados, espejos y molduras. Lo construyó en 1657 un financiero riquísimo: por fuera, discreto; por dentro, de escándalo. No era mala idea. Cuatro años después, el ministro Fouquet acabó en prisión, en buena parte por presumir demasiado de su riqueza.",
+        "Pero el vecino más famoso vivió en la buhardilla, entre 1843 y 1845. Era un joven de veintidós años que se estaba fundiendo la herencia de su padre en trajes, cuadros y vida nocturna: Charles Baudelaire. Aquí escribió algunos de los primeros poemas de Las flores del mal, el libro que más tarde le llevó a juicio por inmoral. En el móvil tienes su retrato, pintado justo en esa época.",
+        "Y en el salón de abajo se reunía un club muy particular: el Club de los Hachisinos. Lo montaron el escritor Théophile Gautier y un médico, Moreau de Tours, que estudiaba los efectos del hachís en la mente. Por allí pasaron escritores como Gérard de Nerval o Alejandro Dumas, y hasta el pintor Delacroix. Eso sí, lo tomaban de una forma muy suya.",
+        "Se llamaba dawamesk: hachís con miel, pistachos y especias, verde como la envidia. Un médico la repartía en una cuchara, y luego todos tomaban café y apuntaban lo que les pasaba por la cabeza. Vamos, un experimento científico. Baudelaire lo contó años después en Los paraísos artificiales, y no salió muy convencido: dijo que lo de los paraísos tenía un precio."
+      ],
+      "images": [
+        {
+          "src": "img/paris/marais/hotel-de-lauzun.webp",
+          "w": 806,
+          "h": 1000,
+          "para": 1,
+          "after": "En el móvil tienes su retrato, pintado justo en esa época.",
+          "caption": "Charles Baudelaire en 1844, cuando vivía en este palacio",
+          "credit": "Émile Deroy · Dominio público",
+          "source": "https://commons.wikimedia.org/wiki/File:%C3%89mile_Deroy_-_Charles_Baudelaire_(1844).jpg"
+        }
+      ],
+      "quiz": {
+        "before": 3,
+        "q": "¿Cómo crees que tomaban el hachís los miembros de aquel club?",
+        "options": [
+          "Fumado en pipas de agua",
+          "Comido a cucharadas, en una pasta dulce",
+          "Disuelto en vino"
+        ],
+        "answer": 1
+      },
+      "more": {
+        "title": "El cortesano que se coló por la chimenea",
+        "ask": "El palacio se llama así por el duque de Lauzun, el cortesano que quiso casarse con la prima del rey y acabó diez años en una prisión de montaña. ¿Te cuento cómo? Si te apetece, toca «Cuéntame más». Si no, seguimos.",
+        "paras": [
+          "Lauzun era bajito, descarado y muy gracioso, y se convirtió en uno de los favoritos de Luis catorce. Tanto, que se atrevió con lo imposible: casarse con la Grande Mademoiselle, la prima del rey, la mujer más rica de Francia. Ella tenía cuarenta y tres años y estaba loca por él. Y el rey, al principio, dijo que sí. La boda se fijó para diciembre de 1670. Si sacas el móvil, tienes a la novia.",
+          "Pero, a pocos días de la boda, el rey cambió de opinión: la familia real no podía mezclarse con un simple noble de provincias. Lauzun no se lo tomó bien, y se le escapó más de una impertinencia. Un año después lo detuvieron y lo mandaron a la fortaleza de Pinerolo, en los Alpes. Allí estaba preso otro ilustre: Fouquet, el antiguo ministro de finanzas.",
+          "Y aquí viene lo bueno. Lauzun abrió un agujero en la chimenea de su celda y se coló por ella hasta la de Fouquet. Durante meses se visitaron en secreto, contándose los chismes de la corte. Fouquet, que llevaba años encerrado, no se creía nada de lo que le contaba Lauzun. Que hubiera estado a punto de casarse con la prima del rey le parecía una locura de preso.",
+          "Lauzun salió en 1681, después de diez años, gracias a la Grande Mademoiselle, que entregó a cambio buena parte de sus tierras a un hijo del rey. Algo después, Lauzun compró este palacio. Y cuentan que, una vez libre, se casaron en secreto. Pero duraron poco: dicen que un día él le pidió que le quitara las botas, y ella lo echó de casa. Diez años esperándolo para eso."
+        ],
+        "images": [
+          {
+            "src": "img/paris/marais/hotel-de-lauzun-mas.webp",
+            "w": 784,
+            "h": 1000,
+            "para": 0,
+            "after": "Si sacas el móvil, tienes a la novia.",
+            "caption": "Ana María Luisa de Orleans, la Grande Mademoiselle",
+            "credit": "Atribuido a Gilbert de Sève · Palacio de Versalles · Dominio público",
+            "source": "https://commons.wikimedia.org/wiki/File:Anne_Marie_Louise_d'Orl%C3%A9ans,_Duchess_of_Montpensier,_La_Grande_Mademoiselle_-_Versailles_MV_3476.jpg"
+          }
+        ]
+      },
+      "toNext": "Vuelve un poco por el muelle y gira a la izquierda por la rue Poulletier. Al final, gira a la derecha por la rue Saint-Louis-en-l'Île, la calle mayor de la isla. Pasarás junto a una iglesia con un reloj que sobresale sobre la calle y, más adelante, por el número treinta y uno, Berthillon, la heladería más famosa de París. Después, gira a la izquierda hacia el río y sigue el muelle, con el agua a tu izquierda, hasta la punta de la isla."
+    },
+    {
+      "id": "quai-d-orleans",
+      "title": "La punta de la isla de San Luis",
+      "subtitle": "Notre-Dame por detrás y un helado de despedida",
+      "lat": 48.852106,
+      "lng": 2.353522,
+      "radius": 60,
+      "where": "En el muelle de Orleans, junto al puente de San Luis, frente a la parte trasera de Notre-Dame.",
+      "paras": [
+        "Y aquí está: Notre-Dame, pero por detrás. Desde aquí se ve lo que la fachada esconde: los arbotantes, esos arcos de piedra que sujetan las paredes por fuera, como las patas de una araña gigante. Si sacas el móvil, la verás hacia 1853, todavía sin aguja. Tras el incendio de 2019, la catedral volvió a abrir sus puertas en diciembre de 2024. Y la aguja, que se añadió pocos años después de esa foto, ha vuelto a su sitio, igual que antes.",
+        "Por el camino has pasado junto a la iglesia de la isla, la de Saint-Louis-en-l'Île. Fíjate en su reloj, que sobresale sobre la calle desde 1741, para que lo vieran los vecinos desde lejos. En 1805, el papa Pío séptimo dijo misa en ella: había venido a París para la coronación de Napoleón.",
+        "Abierta desde 1954, Berthillon echa el cierre unas semanas cuando los parisinos se van de vacaciones. Justo cuando más calor hace y más turistas hay. Muy francés, ¿no? Pero, si está abierta, te recomiendo que vuelvas sobre tus pasos a por uno: sus helados y sorbetes se venden también en varios cafés de la isla.",
+        "Y aquí me despido. Has recorrido el París de los palacios escondidos: del mercado de los niños rojos al diario de un rey sin caza, de la plaza de los impuestos al jardín secreto de Sully, de los corazones de los reyes a la reina Margot y del club de la mermelada verde a esta isla que fue de las vacas. Ahora te toca a ti: busca un hueco en el muelle, mira cómo pasan los barcos y deja que París haga el resto. ¡Merci, y hasta la próxima!"
+      ],
+      "images": [
+        {
+          "src": "img/paris/marais/quai-d-orleans.webp",
+          "w": 1100,
+          "h": 823,
+          "para": 0,
+          "after": "Si sacas el móvil, la verás hacia 1853, todavía sin aguja.",
+          "caption": "El ábside de Notre-Dame hacia 1853, todavía sin aguja",
+          "credit": "Foto: Charles Marville · Museo Carnavalet · CC0",
+          "source": "https://commons.wikimedia.org/wiki/File:Abside_de_Notre-Dame,_PH13166.jpg"
+        }
+      ],
+      "quiz": {
+        "before": 2,
+        "q": "La heladería Berthillon, por la que acabas de pasar, tiene una costumbre muy francesa. ¿Cuándo crees que cierra unas semanas?",
+        "options": [
+          "En Navidad",
+          "En pleno verano",
+          "En Semana Santa"
+        ],
+        "answer": 1
+      }
+    }
+  ],
+  "legs": [
+    [
+      [
+        48.862807,
+        2.362
+      ],
+      [
+        48.862896,
+        2.361824
+      ],
+      [
+        48.862926,
+        2.361749
+      ],
+      [
+        48.863085,
+        2.361461
+      ],
+      [
+        48.863089,
+        2.361453
+      ],
+      [
+        48.862917,
+        2.361257
+      ],
+      [
+        48.862544,
+        2.360843
+      ],
+      [
+        48.862525,
+        2.360792
+      ],
+      [
+        48.862445,
+        2.360696
+      ],
+      [
+        48.862346,
+        2.360579
+      ],
+      [
+        48.862265,
+        2.360485
+      ],
+      [
+        48.862266,
+        2.360483
+      ],
+      [
+        48.862273,
+        2.360471
+      ],
+      [
+        48.862279,
+        2.36046
+      ],
+      [
+        48.86228,
+        2.360458
+      ],
+      [
+        48.862275,
+        2.360451
+      ],
+      [
+        48.862275,
+        2.360443
+      ],
+      [
+        48.862594,
+        2.359872
+      ],
+      [
+        48.862591,
+        2.359868
+      ],
+      [
+        48.862579,
+        2.359851
+      ],
+      [
+        48.862562,
+        2.359825
+      ],
+      [
+        48.862558,
+        2.35982
+      ],
+      [
+        48.862523,
+        2.359765
+      ],
+      [
+        48.862148,
+        2.359333
+      ],
+      [
+        48.861886,
+        2.359034
+      ],
+      [
+        48.861673,
+        2.358779
+      ],
+      [
+        48.861257,
+        2.35829
+      ],
+      [
+        48.861231,
+        2.358302
+      ],
+      [
+        48.861223,
+        2.358292
+      ],
+      [
+        48.8612,
+        2.358265
+      ],
+      [
+        48.861161,
+        2.358219
+      ],
+      [
+        48.861154,
+        2.358209
+      ],
+      [
+        48.861156,
+        2.358177
+      ],
+      [
+        48.860588,
+        2.357529
+      ],
+      [
+        48.86053,
+        2.357466
+      ],
+      [
+        48.860084,
+        2.35697
+      ],
+      [
+        48.860054,
+        2.356979
+      ],
+      [
+        48.859905,
+        2.357186
+      ],
+      [
+        48.85995,
+        2.357257
+      ],
+      [
+        48.859941,
+        2.357273
+      ],
+      [
+        48.859938,
+        2.357279
+      ],
+      [
+        48.859929,
+        2.357266
+      ],
+      [
+        48.859917,
+        2.357286
+      ],
+      [
+        48.859926,
+        2.357298
+      ],
+      [
+        48.859914,
+        2.357319
+      ],
+      [
+        48.859894,
+        2.357342
+      ],
+      [
+        48.859881,
+        2.357352
+      ],
+      [
+        48.85987,
+        2.357356
+      ],
+      [
+        48.859858,
+        2.357354
+      ],
+      [
+        48.859845,
+        2.357344
+      ],
+      [
+        48.859835,
+        2.357331
+      ],
+      [
+        48.859789,
+        2.357405
+      ],
+      [
+        48.859768,
+        2.357404
+      ],
+      [
+        48.859757,
+        2.357387
+      ],
+      [
+        48.85973,
+        2.357425
+      ],
+      [
+        48.859643,
+        2.357547
+      ],
+      [
+        48.859564,
+        2.357657
+      ],
+      [
+        48.859541,
+        2.35769
+      ],
+      [
+        48.859499,
+        2.357747
+      ],
+      [
+        48.859454,
+        2.35781
+      ],
+      [
+        48.859339,
+        2.357961
+      ],
+      [
+        48.859333,
+        2.357969
+      ]
+    ],
+    [
+      [
+        48.859333,
+        2.357969
+      ],
+      [
+        48.859222,
+        2.358114
+      ],
+      [
+        48.85922,
+        2.358117
+      ],
+      [
+        48.859248,
+        2.358161
+      ],
+      [
+        48.85924,
+        2.358171
+      ],
+      [
+        48.859171,
+        2.358266
+      ],
+      [
+        48.859128,
+        2.358325
+      ],
+      [
+        48.859078,
+        2.358393
+      ],
+      [
+        48.859007,
+        2.358491
+      ],
+      [
+        48.858883,
+        2.358661
+      ],
+      [
+        48.858867,
+        2.358682
+      ],
+      [
+        48.858848,
+        2.358709
+      ],
+      [
+        48.858783,
+        2.358798
+      ],
+      [
+        48.858775,
+        2.358752
+      ],
+      [
+        48.858758,
+        2.358717
+      ],
+      [
+        48.858739,
+        2.358682
+      ],
+      [
+        48.858717,
+        2.358641
+      ],
+      [
+        48.858705,
+        2.358617
+      ],
+      [
+        48.858667,
+        2.358598
+      ],
+      [
+        48.858622,
+        2.358552
+      ],
+      [
+        48.858417,
+        2.358333
+      ],
+      [
+        48.858385,
+        2.3583
+      ],
+      [
+        48.858378,
+        2.358287
+      ],
+      [
+        48.858345,
+        2.358262
+      ],
+      [
+        48.858328,
+        2.358249
+      ],
+      [
+        48.858322,
+        2.358257
+      ],
+      [
+        48.858316,
+        2.358261
+      ],
+      [
+        48.858308,
+        2.358262
+      ],
+      [
+        48.858301,
+        2.358259
+      ],
+      [
+        48.858295,
+        2.358252
+      ],
+      [
+        48.858237,
+        2.358186
+      ],
+      [
+        48.858228,
+        2.358204
+      ],
+      [
+        48.858219,
+        2.358224
+      ],
+      [
+        48.858211,
+        2.358218
+      ],
+      [
+        48.858196,
+        2.358214
+      ],
+      [
+        48.858185,
+        2.358218
+      ],
+      [
+        48.858163,
+        2.358195
+      ],
+      [
+        48.857881,
+        2.358633
+      ],
+      [
+        48.85787,
+        2.358647
+      ],
+      [
+        48.857854,
+        2.358655
+      ],
+      [
+        48.857839,
+        2.358654
+      ],
+      [
+        48.857824,
+        2.358643
+      ],
+      [
+        48.857707,
+        2.358466
+      ],
+      [
+        48.857677,
+        2.358422
+      ],
+      [
+        48.857503,
+        2.358827
+      ],
+      [
+        48.857358,
+        2.359057
+      ],
+      [
+        48.857211,
+        2.359294
+      ]
+    ],
+    [
+      [
+        48.857211,
+        2.359294
+      ],
+      [
+        48.857204,
+        2.359305
+      ],
+      [
+        48.857011,
+        2.359774
+      ],
+      [
+        48.857008,
+        2.359828
+      ],
+      [
+        48.856922,
+        2.359996
+      ],
+      [
+        48.856877,
+        2.360086
+      ],
+      [
+        48.856852,
+        2.360133
+      ],
+      [
+        48.856532,
+        2.360758
+      ],
+      [
+        48.856515,
+        2.360774
+      ],
+      [
+        48.856514,
+        2.360831
+      ],
+      [
+        48.856514,
+        2.360841
+      ],
+      [
+        48.8567,
+        2.361205
+      ],
+      [
+        48.856736,
+        2.361274
+      ],
+      [
+        48.856795,
+        2.361357
+      ],
+      [
+        48.856832,
+        2.361386
+      ],
+      [
+        48.856824,
+        2.361407
+      ],
+      [
+        48.856817,
+        2.361429
+      ],
+      [
+        48.85681,
+        2.361451
+      ],
+      [
+        48.856809,
+        2.361459
+      ],
+      [
+        48.857077,
+        2.361669
+      ],
+      [
+        48.857205,
+        2.361769
+      ],
+      [
+        48.857207,
+        2.361784
+      ],
+      [
+        48.857214,
+        2.361798
+      ],
+      [
+        48.857228,
+        2.361821
+      ],
+      [
+        48.857244,
+        2.361845
+      ],
+      [
+        48.857249,
+        2.361851
+      ],
+      [
+        48.857152,
+        2.362146
+      ],
+      [
+        48.856951,
+        2.362754
+      ],
+      [
+        48.85694,
+        2.362797
+      ],
+      [
+        48.856955,
+        2.362825
+      ],
+      [
+        48.857059,
+        2.362901
+      ],
+      [
+        48.857045,
+        2.362945
+      ],
+      [
+        48.857402,
+        2.363192
+      ]
+    ],
+    [
+      [
+        48.857402,
+        2.363192
+      ],
+      [
+        48.857045,
+        2.362945
+      ],
+      [
+        48.856943,
+        2.362873
+      ],
+      [
+        48.856932,
+        2.362913
+      ],
+      [
+        48.856929,
+        2.362925
+      ],
+      [
+        48.856905,
+        2.362945
+      ],
+      [
+        48.856824,
+        2.363242
+      ],
+      [
+        48.856787,
+        2.363347
+      ],
+      [
+        48.856771,
+        2.363369
+      ],
+      [
+        48.856512,
+        2.364229
+      ],
+      [
+        48.856504,
+        2.364224
+      ],
+      [
+        48.856487,
+        2.364212
+      ],
+      [
+        48.856476,
+        2.364204
+      ],
+      [
+        48.856465,
+        2.3642
+      ],
+      [
+        48.856428,
+        2.364194
+      ],
+      [
+        48.856425,
+        2.364207
+      ],
+      [
+        48.856411,
+        2.364251
+      ],
+      [
+        48.856403,
+        2.364283
+      ],
+      [
+        48.856374,
+        2.364334
+      ],
+      [
+        48.856389,
+        2.36438
+      ],
+      [
+        48.85637,
+        2.36447
+      ],
+      [
+        48.856327,
+        2.364742
+      ],
+      [
+        48.856318,
+        2.364795
+      ],
+      [
+        48.856305,
+        2.364829
+      ],
+      [
+        48.856298,
+        2.364826
+      ],
+      [
+        48.856298,
+        2.364834
+      ],
+      [
+        48.856267,
+        2.364906
+      ],
+      [
+        48.856229,
+        2.364991
+      ],
+      [
+        48.856212,
+        2.365007
+      ],
+      [
+        48.856198,
+        2.365019
+      ],
+      [
+        48.856177,
+        2.364965
+      ],
+      [
+        48.855794,
+        2.364818
+      ],
+      [
+        48.855755,
+        2.364803
+      ],
+      [
+        48.855751,
+        2.364825
+      ],
+      [
+        48.85574,
+        2.36482
+      ],
+      [
+        48.855709,
+        2.365012
+      ],
+      [
+        48.855744,
+        2.365026
+      ],
+      [
+        48.855695,
+        2.365355
+      ],
+      [
+        48.855709,
+        2.365371
+      ]
+    ],
+    [
+      [
+        48.855709,
+        2.365371
+      ],
+      [
+        48.855695,
+        2.365355
+      ],
+      [
+        48.855744,
+        2.365026
+      ],
+      [
+        48.855709,
+        2.365012
+      ],
+      [
+        48.85574,
+        2.36482
+      ],
+      [
+        48.855747,
+        2.364787
+      ],
+      [
+        48.855751,
+        2.36477
+      ],
+      [
+        48.855762,
+        2.3647
+      ],
+      [
+        48.855774,
+        2.364628
+      ],
+      [
+        48.855775,
+        2.364623
+      ],
+      [
+        48.855176,
+        2.36439
+      ],
+      [
+        48.855177,
+        2.364348
+      ],
+      [
+        48.855151,
+        2.364339
+      ],
+      [
+        48.855129,
+        2.36433
+      ],
+      [
+        48.85512,
+        2.364327
+      ],
+      [
+        48.855113,
+        2.364325
+      ],
+      [
+        48.855099,
+        2.36432
+      ],
+      [
+        48.855087,
+        2.364312
+      ],
+      [
+        48.854954,
+        2.364248
+      ],
+      [
+        48.854915,
+        2.364229
+      ]
+    ],
+    [
+      [
+        48.854915,
+        2.364229
+      ],
+      [
+        48.854813,
+        2.364181
+      ],
+      [
+        48.854868,
+        2.363989
+      ],
+      [
+        48.854855,
+        2.363991
+      ],
+      [
+        48.854846,
+        2.363985
+      ],
+      [
+        48.854769,
+        2.363943
+      ],
+      [
+        48.854751,
+        2.363931
+      ],
+      [
+        48.854673,
+        2.363887
+      ],
+      [
+        48.854659,
+        2.363872
+      ],
+      [
+        48.854652,
+        2.363868
+      ],
+      [
+        48.854648,
+        2.363864
+      ],
+      [
+        48.854469,
+        2.363741
+      ],
+      [
+        48.854403,
+        2.363695
+      ],
+      [
+        48.854383,
+        2.363685
+      ],
+      [
+        48.854398,
+        2.363636
+      ],
+      [
+        48.85442,
+        2.363569
+      ],
+      [
+        48.854584,
+        2.363142
+      ],
+      [
+        48.854568,
+        2.363126
+      ],
+      [
+        48.854543,
+        2.363103
+      ],
+      [
+        48.854516,
+        2.363076
+      ],
+      [
+        48.854501,
+        2.363062
+      ],
+      [
+        48.854486,
+        2.363048
+      ],
+      [
+        48.854467,
+        2.36303
+      ],
+      [
+        48.854568,
+        2.362748
+      ],
+      [
+        48.854572,
+        2.362736
+      ],
+      [
+        48.854572,
+        2.362726
+      ],
+      [
+        48.85457,
+        2.362709
+      ],
+      [
+        48.854564,
+        2.362697
+      ],
+      [
+        48.854558,
+        2.362689
+      ],
+      [
+        48.854565,
+        2.362671
+      ],
+      [
+        48.854574,
+        2.362649
+      ],
+      [
+        48.854582,
+        2.362613
+      ],
+      [
+        48.854583,
+        2.362605
+      ],
+      [
+        48.854584,
+        2.362603
+      ],
+      [
+        48.854604,
+        2.362546
+      ],
+      [
+        48.854622,
+        2.362497
+      ],
+      [
+        48.854638,
+        2.362453
+      ],
+      [
+        48.854658,
+        2.362401
+      ],
+      [
+        48.854674,
+        2.362357
+      ],
+      [
+        48.854692,
+        2.362308
+      ],
+      [
+        48.85471,
+        2.362243
+      ],
+      [
+        48.85473,
+        2.362172
+      ],
+      [
+        48.854744,
+        2.36211
+      ],
+      [
+        48.854747,
+        2.362099
+      ],
+      [
+        48.85476,
+        2.362041
+      ],
+      [
+        48.854772,
+        2.361988
+      ],
+      [
+        48.854813,
+        2.361815
+      ],
+      [
+        48.854818,
+        2.361794
+      ],
+      [
+        48.854825,
+        2.36177
+      ],
+      [
+        48.854789,
+        2.361748
+      ],
+      [
+        48.854795,
+        2.361729
+      ],
+      [
+        48.85479,
+        2.361726
+      ],
+      [
+        48.854797,
+        2.361701
+      ],
+      [
+        48.854788,
+        2.361694
+      ],
+      [
+        48.854585,
+        2.36155
+      ],
+      [
+        48.854585,
+        2.36155
+      ]
+    ],
+    [
+      [
+        48.854585,
+        2.36155
+      ],
+      [
+        48.854585,
+        2.36155
+      ],
+      [
+        48.854788,
+        2.361694
+      ],
+      [
+        48.854825,
+        2.361579
+      ],
+      [
+        48.854846,
+        2.361588
+      ],
+      [
+        48.854866,
+        2.361519
+      ],
+      [
+        48.854857,
+        2.361513
+      ],
+      [
+        48.854863,
+        2.361488
+      ],
+      [
+        48.854859,
+        2.361484
+      ],
+      [
+        48.854866,
+        2.361459
+      ],
+      [
+        48.854873,
+        2.361434
+      ],
+      [
+        48.854878,
+        2.361437
+      ],
+      [
+        48.854883,
+        2.361419
+      ],
+      [
+        48.854876,
+        2.361414
+      ],
+      [
+        48.854877,
+        2.361409
+      ],
+      [
+        48.854875,
+        2.361408
+      ],
+      [
+        48.854875,
+        2.361403
+      ],
+      [
+        48.854872,
+        2.361401
+      ],
+      [
+        48.854877,
+        2.361381
+      ],
+      [
+        48.854884,
+        2.361358
+      ],
+      [
+        48.854913,
+        2.361381
+      ],
+      [
+        48.854914,
+        2.361376
+      ],
+      [
+        48.854915,
+        2.361372
+      ],
+      [
+        48.854932,
+        2.361301
+      ],
+      [
+        48.854947,
+        2.361233
+      ],
+      [
+        48.854949,
+        2.361225
+      ],
+      [
+        48.854967,
+        2.361154
+      ],
+      [
+        48.85497,
+        2.361142
+      ],
+      [
+        48.854979,
+        2.361101
+      ],
+      [
+        48.854982,
+        2.361089
+      ],
+      [
+        48.854988,
+        2.361066
+      ],
+      [
+        48.854993,
+        2.361046
+      ],
+      [
+        48.855014,
+        2.360959
+      ],
+      [
+        48.85503,
+        2.360892
+      ],
+      [
+        48.855034,
+        2.360878
+      ],
+      [
+        48.855039,
+        2.360852
+      ],
+      [
+        48.855082,
+        2.360655
+      ],
+      [
+        48.855088,
+        2.360627
+      ],
+      [
+        48.855097,
+        2.360584
+      ],
+      [
+        48.855114,
+        2.360503
+      ],
+      [
+        48.855132,
+        2.360421
+      ],
+      [
+        48.855129,
+        2.36042
+      ],
+      [
+        48.855137,
+        2.360381
+      ],
+      [
+        48.855149,
+        2.360313
+      ],
+      [
+        48.855153,
+        2.360296
+      ],
+      [
+        48.855157,
+        2.360275
+      ],
+      [
+        48.855163,
+        2.360278
+      ],
+      [
+        48.855171,
+        2.360232
+      ],
+      [
+        48.855174,
+        2.36022
+      ],
+      [
+        48.855186,
+        2.360155
+      ],
+      [
+        48.855198,
+        2.360093
+      ],
+      [
+        48.8552,
+        2.360076
+      ],
+      [
+        48.85503,
+        2.35992
+      ],
+      [
+        48.854659,
+        2.359553
+      ],
+      [
+        48.854409,
+        2.359303
+      ],
+      [
+        48.85443,
+        2.359143
+      ],
+      [
+        48.854426,
+        2.35913
+      ],
+      [
+        48.854414,
+        2.359117
+      ],
+      [
+        48.854393,
+        2.359093
+      ],
+      [
+        48.85439,
+        2.359059
+      ],
+      [
+        48.854367,
+        2.359052
+      ],
+      [
+        48.854325,
+        2.359022
+      ],
+      [
+        48.854096,
+        2.358996
+      ],
+      [
+        48.853976,
+        2.358989
+      ],
+      [
+        48.853909,
+        2.358989
+      ],
+      [
+        48.85376,
+        2.359032
+      ],
+      [
+        48.853733,
+        2.359038
+      ],
+      [
+        48.853477,
+        2.359199
+      ],
+      [
+        48.853446,
+        2.359213
+      ],
+      [
+        48.853408,
+        2.359209
+      ],
+      [
+        48.853338,
+        2.3592
+      ],
+      [
+        48.853335,
+        2.359197
+      ],
+      [
+        48.853329,
+        2.358962
+      ],
+      [
+        48.853348,
+        2.358768
+      ]
+    ],
+    [
+      [
+        48.853348,
+        2.358768
+      ],
+      [
+        48.853358,
+        2.358671
+      ],
+      [
+        48.85338,
+        2.358587
+      ],
+      [
+        48.8534,
+        2.358522
+      ],
+      [
+        48.853559,
+        2.358128
+      ],
+      [
+        48.853552,
+        2.358123
+      ],
+      [
+        48.853537,
+        2.35811
+      ],
+      [
+        48.853525,
+        2.358101
+      ],
+      [
+        48.853527,
+        2.358091
+      ],
+      [
+        48.853525,
+        2.358069
+      ],
+      [
+        48.853518,
+        2.358056
+      ],
+      [
+        48.853442,
+        2.357993
+      ],
+      [
+        48.853463,
+        2.357931
+      ],
+      [
+        48.853485,
+        2.357869
+      ],
+      [
+        48.853504,
+        2.357814
+      ],
+      [
+        48.853495,
+        2.357763
+      ],
+      [
+        48.853471,
+        2.357742
+      ],
+      [
+        48.853463,
+        2.357736
+      ],
+      [
+        48.853452,
+        2.357727
+      ],
+      [
+        48.853435,
+        2.357712
+      ],
+      [
+        48.853386,
+        2.35767
+      ],
+      [
+        48.853327,
+        2.357621
+      ],
+      [
+        48.853321,
+        2.35763
+      ],
+      [
+        48.85331,
+        2.357641
+      ],
+      [
+        48.853299,
+        2.357649
+      ],
+      [
+        48.853289,
+        2.357651
+      ],
+      [
+        48.853278,
+        2.357652
+      ],
+      [
+        48.853267,
+        2.357649
+      ],
+      [
+        48.853259,
+        2.357645
+      ],
+      [
+        48.853264,
+        2.357569
+      ],
+      [
+        48.853011,
+        2.357352
+      ],
+      [
+        48.85298,
+        2.357325
+      ],
+      [
+        48.852931,
+        2.357281
+      ]
+    ],
+    [
+      [
+        48.852931,
+        2.357281
+      ],
+      [
+        48.852929,
+        2.35728
+      ],
+      [
+        48.852854,
+        2.357213
+      ],
+      [
+        48.852831,
+        2.357191
+      ],
+      [
+        48.852682,
+        2.357059
+      ],
+      [
+        48.852656,
+        2.357036
+      ],
+      [
+        48.852538,
+        2.356935
+      ],
+      [
+        48.852527,
+        2.356965
+      ],
+      [
+        48.852525,
+        2.356951
+      ],
+      [
+        48.852514,
+        2.356956
+      ],
+      [
+        48.852508,
+        2.356952
+      ],
+      [
+        48.852484,
+        2.356935
+      ],
+      [
+        48.852444,
+        2.357063
+      ],
+      [
+        48.852402,
+        2.357161
+      ],
+      [
+        48.852388,
+        2.357149
+      ],
+      [
+        48.852379,
+        2.357141
+      ],
+      [
+        48.852369,
+        2.357172
+      ],
+      [
+        48.852353,
+        2.357201
+      ],
+      [
+        48.85212,
+        2.357955
+      ],
+      [
+        48.851909,
+        2.358538
+      ],
+      [
+        48.851902,
+        2.358557
+      ],
+      [
+        48.851896,
+        2.358562
+      ],
+      [
+        48.851893,
+        2.358569
+      ],
+      [
+        48.851885,
+        2.358586
+      ],
+      [
+        48.851878,
+        2.358603
+      ],
+      [
+        48.851873,
+        2.358615
+      ],
+      [
+        48.851877,
+        2.35862
+      ],
+      [
+        48.851876,
+        2.358634
+      ],
+      [
+        48.851871,
+        2.358645
+      ],
+      [
+        48.851861,
+        2.358672
+      ],
+      [
+        48.851851,
+        2.358692
+      ],
+      [
+        48.851707,
+        2.35909
+      ]
+    ],
+    [
+      [
+        48.851707,
+        2.35909
+      ],
+      [
+        48.851851,
+        2.358692
+      ],
+      [
+        48.851861,
+        2.358672
+      ],
+      [
+        48.851871,
+        2.358645
+      ],
+      [
+        48.851876,
+        2.358634
+      ],
+      [
+        48.851877,
+        2.35862
+      ],
+      [
+        48.851873,
+        2.358615
+      ],
+      [
+        48.851878,
+        2.358603
+      ],
+      [
+        48.851885,
+        2.358586
+      ],
+      [
+        48.851885,
+        2.358586
+      ],
+      [
+        48.851315,
+        2.358111
+      ],
+      [
+        48.851322,
+        2.358089
+      ],
+      [
+        48.851324,
+        2.358083
+      ],
+      [
+        48.85132,
+        2.35808
+      ],
+      [
+        48.851318,
+        2.358072
+      ],
+      [
+        48.851321,
+        2.358064
+      ],
+      [
+        48.851316,
+        2.35806
+      ],
+      [
+        48.851297,
+        2.358045
+      ],
+      [
+        48.851279,
+        2.358031
+      ],
+      [
+        48.851273,
+        2.358026
+      ],
+      [
+        48.851345,
+        2.35782
+      ],
+      [
+        48.85136,
+        2.357792
+      ],
+      [
+        48.851383,
+        2.357727
+      ],
+      [
+        48.851426,
+        2.357605
+      ],
+      [
+        48.851433,
+        2.357577
+      ],
+      [
+        48.851771,
+        2.356637
+      ],
+      [
+        48.85177,
+        2.356605
+      ],
+      [
+        48.851769,
+        2.356594
+      ],
+      [
+        48.851767,
+        2.356582
+      ],
+      [
+        48.851757,
+        2.356557
+      ],
+      [
+        48.851163,
+        2.356029
+      ],
+      [
+        48.851171,
+        2.356008
+      ],
+      [
+        48.851189,
+        2.355964
+      ],
+      [
+        48.851199,
+        2.355938
+      ],
+      [
+        48.851205,
+        2.355924
+      ],
+      [
+        48.851198,
+        2.355917
+      ],
+      [
+        48.851195,
+        2.355903
+      ],
+      [
+        48.851216,
+        2.355845
+      ],
+      [
+        48.851211,
+        2.355833
+      ],
+      [
+        48.851192,
+        2.355787
+      ],
+      [
+        48.851183,
+        2.355765
+      ],
+      [
+        48.851176,
+        2.355747
+      ],
+      [
+        48.851279,
+        2.355404
+      ],
+      [
+        48.851309,
+        2.355284
+      ],
+      [
+        48.851355,
+        2.355109
+      ],
+      [
+        48.851338,
+        2.355098
+      ],
+      [
+        48.851363,
+        2.355001
+      ],
+      [
+        48.851349,
+        2.354952
+      ],
+      [
+        48.851517,
+        2.354303
+      ],
+      [
+        48.851594,
+        2.354004
+      ],
+      [
+        48.851603,
+        2.353976
+      ],
+      [
+        48.851615,
+        2.353949
+      ],
+      [
+        48.85163,
+        2.353926
+      ],
+      [
+        48.851647,
+        2.35391
+      ],
+      [
+        48.851776,
+        2.353802
+      ],
+      [
+        48.851866,
+        2.353731
+      ],
+      [
+        48.852106,
+        2.353522
+      ]
+    ]
+  ]
+}

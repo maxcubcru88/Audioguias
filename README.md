@@ -59,7 +59,7 @@ y el del punto junto a su nombre. Si falta, se elige uno de una paleta por defec
 
 Cada archivo de ruta, como `data/paris/centro.json`, contiene:
 
-- `meeting`: el punto de encuentro (`name`, `address`, `note`). La dirección se puede copiar y abrir en Google Maps
+- `meeting`: dónde empieza la ruta, que en la portada sale como «Dónde empezamos» (`name`, `address`, `note`). La dirección se puede copiar y abrir en Google Maps
   desde la portada de la ruta. Si falta, se usa la primera parada.
 - `stops`: cada parada tiene `title`, `subtitle`, `lat`, `lng`, `radius` (metros para el aviso),
   `where` (dónde ponerse), `paras` (párrafos del guion) y `toNext` (cómo llegar a la siguiente).

@@ -659,7 +659,7 @@
       const prev = S.target > 0 ? tour.stops[S.target - 1] : null;
       const how = (prev && S.visited.includes(S.target - 1) && prev.toNext) ? prev.toNext : t.where;
       h += '<div class="c-head"><span class="plaque">' + pad(S.target + 1) + '</span><div class="c-main">' +
-        '<p class="eyebrow">' + (S.visited.length ? 'Siguiente parada' : 'Punto de partida') + '</p>' +
+        '<p class="eyebrow">' + (S.visited.length ? 'Siguiente parada' : 'Dónde empezamos') + '</p>' +
         '<h2 class="c-title">' + esc(t.title) + '</h2></div>' +
         (d != null ? '<span class="c-dist">' + fmtDist(d) + '</span>' : '') + '</div>' +
         '<p class="c-text">' + esc(how) + '</p>';
@@ -1555,7 +1555,7 @@
     renderCard();
   }
 
-  // Punto de encuentro: el de la ruta o, si no hay, la primera parada
+  // Dónde empezamos (campo «meeting» de la ruta) o, si no hay, la primera parada
   function meeting() {
     const m = tour.meeting || {}, st = tour.stops[0];
     return { name: m.name || st.title, address: m.address || '', note: m.note || st.where, lat: st.lat, lng: st.lng };
