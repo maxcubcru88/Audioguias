@@ -1181,8 +1181,7 @@
       selectCityRoute(b.dataset.rid === CM.sel ? null : b.dataset.rid);
     });
     $('#cmCard').addEventListener('click', e => {
-      if (e.target.closest('[data-cm="close"]')) { selectCityRoute(null); return; }
-      const ch = e.target.closest('[data-rid]'); if (ch) selectCityRoute(ch.dataset.rid);
+      if (e.target.closest('[data-cm="close"]')) selectCityRoute(null);
     });
     $('#cmLocate').addEventListener('click', () => cityLocate(true));
   }
@@ -1192,8 +1191,7 @@
   const ROUTE_COLORS = ['#2D5DA8', '#2E8B57', '#C4532D', '#7B4BA8', '#B07A12', '#1F7A8C'];
   const routeColorOf = (c, r) => r.color || ROUTE_COLORS[Math.max(0, (c.routes || []).indexOf(r)) % ROUTE_COLORS.length];
   const VIEW_KEY = 'paseito-vista-ciudad';
-  const OFF = '#AEB7BD';
-  const CHAIN_M = 1200;                     // «acabas cerca de la salida de otra ruta» (en línea recta)                    // rutas apagadas cuando hay una elegida
+  const OFF = '#AEB7BD';                    // rutas apagadas cuando hay una elegida
   const fc = features => ({ type: 'FeatureCollection', features });
   const CM = { map: null, ready: null, city: null, sel: null, routes: [], marks: [], labels: [], me: null, pos: null, token: 0 };
 
@@ -1405,22 +1403,12 @@
       const s0 = t.stops[0], sN = t.stops[t.stops.length - 1];
       let note = 'De ' + esc(s0.title) + ' a ' + esc(sN.title);
       if (cityNear()) note += ' · la salida está a ' + fmtDist(dist(CM.pos[0], CM.pos[1], s0.lat, s0.lng)) + ' de ti';
-      // Encadenar: otra ruta que empieza cerca de donde acaba esta
-      let chain = null;
-      CM.routes.forEach(o => {
-        if (o === cur) return;
-        const d = dist(sN.lat, sN.lng, o.t.stops[0].lat, o.t.stops[0].lng);
-        if (d <= CHAIN_M && (!chain || d < chain.d)) chain = { o, d };
-      });
       card.className = 'cm-card';
       card.innerHTML = '<button class="x" type="button" data-cm="close" aria-label="Ver todas las rutas">' + ICON.close + '</button>' +
         '<p class="eyebrow"><i class="rc-dot" style="background:' + esc(color) + '"></i>' + esc(r.label || '') + '</p>' +
         '<h2 class="rc-title">' + esc(t.title) + '</h2>' +
         '<p class="rc-meta">' + t.stops.length + ' paradas · ' + fmtDist(t.totalM) + ' · ' + durText(t, true) + '</p>' +
         '<p class="cm-note">' + note + (done ? ' · llevas ' + done + ' de ' + t.stops.length : '') + '</p>' +
-        (chain ? '<button type="button" class="cm-chain" data-rid="' + esc(chain.o.r.id) + '"><i class="rc-dot" style="background:' + esc(chain.o.color) + '"></i>' +
-          '<span>Acabas a unos ' + fmtDist(Math.max(100, Math.round(chain.d / 100) * 100)) + ' de la salida de <b>' + esc(chain.o.r.label || chain.o.t.title) + '</b></span>' +
-          '<span class="chev" aria-hidden="true">›</span></button>' : '') +
         '<a class="btn btn-primary" href="#' + c.id + '/' + r.id + '">' + (done && done < t.stops.length ? 'Continuar ruta' : 'Empezar ruta') + '</a>';
       card.hidden = false;
     }

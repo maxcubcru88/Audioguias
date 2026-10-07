@@ -265,8 +265,6 @@ button{cursor:pointer}
 .cm-end{width:16px;height:16px;border-radius:3px;background:conic-gradient(var(--c) 25%,#fff 0 50%,var(--c) 0 75%,#fff 0) 0 0/7px 7px}
 .cm-label{pointer-events:none;max-width:160px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:12px;font-weight:600;line-height:1.2;padding:4px 9px;border-radius:999px;background:#fff;color:#16212A;border:1.5px solid var(--c);box-shadow:0 1px 3px rgba(0,0,0,.25);z-index:2}
 .cm-label.is-filled{background:var(--c);color:#fff;border-color:#fff}
-.cm-chain{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:0;margin:-4px 0 10px;padding:9px 12px;border:0;border-radius:10px;background:var(--bg);color:var(--ink);font-size:13.5px;text-align:left;line-height:1.35}
-.cm-chain .chev{font-size:20px;margin-left:8px}
 
 /* ---------- Paradas y ajustes ---------- */
 .sheet{position:fixed;inset:0;z-index:15;background:rgba(10,18,25,.45);display:flex;align-items:flex-end;justify-content:center}

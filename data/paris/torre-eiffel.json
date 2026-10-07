@@ -1959,5 +1959,39 @@
         2.28838
       ]
     ]
-  ]
+  ],
+  "audio": {
+    "base": "audio/paris/torre-eiffel/",
+    "credit": "Voz generada con IA (ElevenLabs)",
+    "stops": {
+      "pont-alexandre-iii": {
+        "paras": [
+          "pont-alexandre-iii-p0.mp3",
+          "pont-alexandre-iii-p1.mp3",
+          "pont-alexandre-iii-p2.mp3",
+          "pont-alexandre-iii-p3.mp3",
+          "pont-alexandre-iii-p4.mp3",
+          "pont-alexandre-iii-p5.mp3"
+        ],
+        "quiz": "pont-alexandre-iii-q.mp3",
+        "ok": "pont-alexandre-iii-ok.mp3",
+        "ko": "pont-alexandre-iii-ko.mp3",
+        "skip": "pont-alexandre-iii-skip.mp3"
+      },
+      "invalides": {
+        "paras": [
+          "invalides-p0.mp3",
+          "invalides-p1.mp3",
+          "invalides-p2.mp3",
+          "invalides-p3.mp3",
+          "invalides-p4.mp3",
+          "invalides-p5.mp3"
+        ],
+        "quiz": "invalides-q.mp3",
+        "ok": "invalides-ok.mp3",
+        "ko": "invalides-ko.mp3",
+        "skip": "invalides-skip.mp3"
+      }
+    }
+  }
 }
