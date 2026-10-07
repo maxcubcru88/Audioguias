@@ -2101,6 +2101,462 @@
         "ok": "jardins-du-trocadero-ok.mp3",
         "ko": "jardins-du-trocadero-ko.mp3",
         "skip": "jardins-du-trocadero-skip.mp3"
+      },
+      "trocadero": {
+        "paras": [
+          "trocadero-p0.mp3",
+          "trocadero-p1.mp3",
+          "trocadero-p2.mp3",
+          "trocadero-p3.mp3",
+          "trocadero-p4.mp3"
+        ],
+        "quiz": "trocadero-q.mp3",
+        "ok": "trocadero-ok.mp3",
+        "ko": "trocadero-ko.mp3",
+        "skip": "trocadero-skip.mp3",
+        "more": {
+          "ask": "trocadero-mas.mp3",
+          "paras": [
+            "trocadero-m0.mp3",
+            "trocadero-m1.mp3",
+            "trocadero-m2.mp3",
+            "trocadero-m3.mp3"
+          ]
+        }
+      }
+    },
+    "files": {
+      "pont-alexandre-iii-p0.mp3": {
+        "v": "fde9157b",
+        "b": 504102
+      },
+      "pont-alexandre-iii-p1.mp3": {
+        "v": "f0a71a33",
+        "b": 474845
+      },
+      "pont-alexandre-iii-p2.mp3": {
+        "v": "b96efc41",
+        "b": 635759
+      },
+      "pont-alexandre-iii-p3.mp3": {
+        "v": "a7b7a9f2",
+        "b": 461888
+      },
+      "pont-alexandre-iii-p4.mp3": {
+        "v": "9a7f53f1",
+        "b": 356981
+      },
+      "pont-alexandre-iii-p5.mp3": {
+        "v": "b5d43ddf",
+        "b": 234101
+      },
+      "pont-alexandre-iii-q.mp3": {
+        "v": "847a5fc1",
+        "b": 134208
+      },
+      "pont-alexandre-iii-ok.mp3": {
+        "v": "b752486e",
+        "b": 16344
+      },
+      "pont-alexandre-iii-ko.mp3": {
+        "v": "59c6871f",
+        "b": 59812
+      },
+      "pont-alexandre-iii-skip.mp3": {
+        "v": "38e145dc",
+        "b": 66499
+      },
+      "invalides-p0.mp3": {
+        "v": "84bdb6af",
+        "b": 492399
+      },
+      "invalides-p1.mp3": {
+        "v": "d0893723",
+        "b": 384984
+      },
+      "invalides-p2.mp3": {
+        "v": "0853db66",
+        "b": 454365
+      },
+      "invalides-p3.mp3": {
+        "v": "bb455082",
+        "b": 482368
+      },
+      "invalides-p4.mp3": {
+        "v": "e2192410",
+        "b": 287599
+      },
+      "invalides-p5.mp3": {
+        "v": "8456a59d",
+        "b": 271299
+      },
+      "invalides-q.mp3": {
+        "v": "1dbbeb92",
+        "b": 221144
+      },
+      "invalides-ok.mp3": {
+        "v": "b752486e",
+        "b": 18852
+      },
+      "invalides-ko.mp3": {
+        "v": "382a4ce6",
+        "b": 62319
+      },
+      "invalides-skip.mp3": {
+        "v": "bfc5d82f",
+        "b": 66499
+      },
+      "dome-des-invalides-p0.mp3": {
+        "v": "a04d9d7a",
+        "b": 400448
+      },
+      "dome-des-invalides-p1.mp3": {
+        "v": "917fcde0",
+        "b": 497833
+      },
+      "dome-des-invalides-p2.mp3": {
+        "v": "33f1f631",
+        "b": 615279
+      },
+      "dome-des-invalides-p3.mp3": {
+        "v": "e71c8fff",
+        "b": 323544
+      },
+      "dome-des-invalides-p4.mp3": {
+        "v": "b3a0528c",
+        "b": 386238
+      },
+      "dome-des-invalides-q.mp3": {
+        "v": "60fc6433",
+        "b": 230339
+      },
+      "dome-des-invalides-ok.mp3": {
+        "v": "b752486e",
+        "b": 18852
+      },
+      "dome-des-invalides-ko.mp3": {
+        "v": "5e3e25d0",
+        "b": 59812
+      },
+      "dome-des-invalides-skip.mp3": {
+        "v": "d86f9fc1",
+        "b": 65245
+      },
+      "dome-des-invalides-mas.mp3": {
+        "v": "4268bce2",
+        "b": 152181
+      },
+      "dome-des-invalides-m0.mp3": {
+        "v": "0c556770",
+        "b": 501595
+      },
+      "dome-des-invalides-m1.mp3": {
+        "v": "cb1ca0aa",
+        "b": 474845
+      },
+      "dome-des-invalides-m2.mp3": {
+        "v": "9c673323",
+        "b": 588530
+      },
+      "dome-des-invalides-m3.mp3": {
+        "v": "88f1f9db",
+        "b": 511626
+      },
+      "ecole-militaire-p0.mp3": {
+        "v": "81bce945",
+        "b": 497833
+      },
+      "ecole-militaire-p1.mp3": {
+        "v": "0da07b82",
+        "b": 473591
+      },
+      "ecole-militaire-p2.mp3": {
+        "v": "4b1fc800",
+        "b": 387492
+      },
+      "ecole-militaire-p3.mp3": {
+        "v": "d8f81d34",
+        "b": 507864
+      },
+      "ecole-militaire-p4.mp3": {
+        "v": "2b7fffe3",
+        "b": 132955
+      },
+      "ecole-militaire-p5.mp3": {
+        "v": "6efa09d6",
+        "b": 212367
+      },
+      "ecole-militaire-q.mp3": {
+        "v": "30fe0a3e",
+        "b": 246639
+      },
+      "ecole-militaire-ok.mp3": {
+        "v": "b752486e",
+        "b": 16344
+      },
+      "ecole-militaire-ko.mp3": {
+        "v": "845de185",
+        "b": 75276
+      },
+      "ecole-militaire-skip.mp3": {
+        "v": "aa994425",
+        "b": 79038
+      },
+      "ecole-militaire-mas.mp3": {
+        "v": "63430019",
+        "b": 198156
+      },
+      "ecole-militaire-m0.mp3": {
+        "v": "74a4e363",
+        "b": 555511
+      },
+      "ecole-militaire-m1.mp3": {
+        "v": "4cb31323",
+        "b": 491146
+      },
+      "ecole-militaire-m2.mp3": {
+        "v": "09b16496",
+        "b": 502848
+      },
+      "ecole-militaire-m3.mp3": {
+        "v": "4636e4ea",
+        "b": 387492
+      },
+      "champ-de-mars-p0.mp3": {
+        "v": "68367389",
+        "b": 309751
+      },
+      "champ-de-mars-p1.mp3": {
+        "v": "00c215f8",
+        "b": 548824
+      },
+      "champ-de-mars-p2.mp3": {
+        "v": "b3382b7c",
+        "b": 524582
+      },
+      "champ-de-mars-p3.mp3": {
+        "v": "75156afe",
+        "b": 363250
+      },
+      "champ-de-mars-p4.mp3": {
+        "v": "f253dc15",
+        "b": 312259
+      },
+      "champ-de-mars-p5.mp3": {
+        "v": "ab579174",
+        "b": 259596
+      },
+      "champ-de-mars-q.mp3": {
+        "v": "6a4a21ac",
+        "b": 180184
+      },
+      "champ-de-mars-ok.mp3": {
+        "v": "b752486e",
+        "b": 18852
+      },
+      "champ-de-mars-ko.mp3": {
+        "v": "c92e3f80",
+        "b": 53542
+      },
+      "champ-de-mars-skip.mp3": {
+        "v": "be0d8460",
+        "b": 56050
+      },
+      "tour-eiffel-p0.mp3": {
+        "v": "ad69a3ad",
+        "b": 597725
+      },
+      "tour-eiffel-p1.mp3": {
+        "v": "ebd90a14",
+        "b": 483622
+      },
+      "tour-eiffel-p2.mp3": {
+        "v": "d7b752ed",
+        "b": 494071
+      },
+      "tour-eiffel-p3.mp3": {
+        "v": "46abe6bb",
+        "b": 468158
+      },
+      "tour-eiffel-p4.mp3": {
+        "v": "ae5a5bbd",
+        "b": 563035
+      },
+      "tour-eiffel-p5.mp3": {
+        "v": "bf4e8ac5",
+        "b": 157196
+      },
+      "tour-eiffel-q.mp3": {
+        "v": "22c204ac",
+        "b": 130447
+      },
+      "tour-eiffel-ok.mp3": {
+        "v": "b752486e",
+        "b": 16344
+      },
+      "tour-eiffel-ko.mp3": {
+        "v": "093265d0",
+        "b": 52288
+      },
+      "tour-eiffel-skip.mp3": {
+        "v": "4e951e53",
+        "b": 53542
+      },
+      "tour-eiffel-mas.mp3": {
+        "v": "b611fc83",
+        "b": 189379
+      },
+      "tour-eiffel-m0.mp3": {
+        "v": "6ed09b52",
+        "b": 437647
+      },
+      "tour-eiffel-m1.mp3": {
+        "v": "ff62c5b0",
+        "b": 309751
+      },
+      "tour-eiffel-m2.mp3": {
+        "v": "10c73216",
+        "b": 445170
+      },
+      "tour-eiffel-m3.mp3": {
+        "v": "98112eab",
+        "b": 494071
+      },
+      "pont-d-iena-p0.mp3": {
+        "v": "8ee055f9",
+        "b": 314767
+      },
+      "pont-d-iena-p1.mp3": {
+        "v": "88c650e1",
+        "b": 473591
+      },
+      "pont-d-iena-p2.mp3": {
+        "v": "d6f26736",
+        "b": 420928
+      },
+      "pont-d-iena-p3.mp3": {
+        "v": "14d861ab",
+        "b": 517059
+      },
+      "pont-d-iena-p4.mp3": {
+        "v": "0c4207c1",
+        "b": 326052
+      },
+      "pont-d-iena-p5.mp3": {
+        "v": "4d140ea0",
+        "b": 217382
+      },
+      "pont-d-iena-q.mp3": {
+        "v": "3e371a02",
+        "b": 211113
+      },
+      "pont-d-iena-ok.mp3": {
+        "v": "b752486e",
+        "b": 18852
+      },
+      "pont-d-iena-ko.mp3": {
+        "v": "39bb73b3",
+        "b": 53542
+      },
+      "pont-d-iena-skip.mp3": {
+        "v": "c5526826",
+        "b": 56050
+      },
+      "jardins-du-trocadero-p0.mp3": {
+        "v": "54ab8c50",
+        "b": 360742
+      },
+      "jardins-du-trocadero-p1.mp3": {
+        "v": "52f13f09",
+        "b": 432631
+      },
+      "jardins-du-trocadero-p2.mp3": {
+        "v": "bcf3a14d",
+        "b": 454365
+      },
+      "jardins-du-trocadero-p3.mp3": {
+        "v": "45a2fc49",
+        "b": 577245
+      },
+      "jardins-du-trocadero-p4.mp3": {
+        "v": "f78b6af0",
+        "b": 345278
+      },
+      "jardins-du-trocadero-p5.mp3": {
+        "v": "a8f60159",
+        "b": 178930
+      },
+      "jardins-du-trocadero-q.mp3": {
+        "v": "e2785d42",
+        "b": 182692
+      },
+      "jardins-du-trocadero-ok.mp3": {
+        "v": "b752486e",
+        "b": 16344
+      },
+      "jardins-du-trocadero-ko.mp3": {
+        "v": "e143215b",
+        "b": 65245
+      },
+      "jardins-du-trocadero-skip.mp3": {
+        "v": "8443ee30",
+        "b": 69007
+      },
+      "trocadero-p0.mp3": {
+        "v": "a00ab1f6",
+        "b": 424690
+      },
+      "trocadero-p1.mp3": {
+        "v": "b13140bd",
+        "b": 443916
+      },
+      "trocadero-p2.mp3": {
+        "v": "d74bee2f",
+        "b": 328559
+      },
+      "trocadero-p3.mp3": {
+        "v": "f90fb7dc",
+        "b": 405464
+      },
+      "trocadero-p4.mp3": {
+        "v": "4066fcba",
+        "b": 432631
+      },
+      "trocadero-q.mp3": {
+        "v": "60a4deee",
+        "b": 150927
+      },
+      "trocadero-ok.mp3": {
+        "v": "b752486e",
+        "b": 16344
+      },
+      "trocadero-ko.mp3": {
+        "v": "ca32f731",
+        "b": 62319
+      },
+      "trocadero-skip.mp3": {
+        "v": "a83b54f1",
+        "b": 66499
+      },
+      "trocadero-mas.mp3": {
+        "v": "333f6e6b",
+        "b": 286346
+      },
+      "trocadero-m0.mp3": {
+        "v": "8e32c937",
+        "b": 579753
+      },
+      "trocadero-m1.mp3": {
+        "v": "1aceb28b",
+        "b": 433885
+      },
+      "trocadero-m2.mp3": {
+        "v": "ea89f3b4",
+        "b": 323544
+      },
+      "trocadero-m3.mp3": {
+        "v": "e431804e",
+        "b": 438901
       }
     }
   }

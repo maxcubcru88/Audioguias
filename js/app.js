@@ -1180,9 +1180,6 @@
       const b = e.target.closest('[data-rid]'); if (!b) return;
       selectCityRoute(b.dataset.rid === CM.sel ? null : b.dataset.rid);
     });
-    $('#cmCard').addEventListener('click', e => {
-      if (e.target.closest('[data-cm="close"]')) selectCityRoute(null);
-    });
     $('#cmLocate').addEventListener('click', () => cityLocate(true));
   }
 
@@ -1213,6 +1210,15 @@
       dragRotate: false, pitchWithRotate: false, touchPitch: false, maxZoom: 18
     });
     m.touchZoomRotate.disableRotation();
+    // Créditos del mapa plegados en la «i» (se despliegan al tocarla). MapLibre los abre solo
+    // la primera vez que llegan; en cuanto aparecen, se pliegan y ya no se vuelve a tocar.
+    const fold = () => {
+      const a = m.getContainer().querySelector('.maplibregl-ctrl-attrib.maplibregl-compact');
+      if (!a) return;
+      a.classList.remove('maplibregl-compact-show');
+      m.off('styledata', fold); m.off('sourcedata', fold);
+    };
+    m.on('styledata', fold); m.on('sourcedata', fold);
     CM.ready = new Promise(res => m.on('load', () => {
       m.addSource('cr', { type: 'geojson', data: fc([]) });
       m.addSource('cs', { type: 'geojson', data: fc([]) });
@@ -1342,8 +1348,10 @@
   function renderCityChips() {
     $('#cmChips').innerHTML = CM.routes.map(({ r, color }) =>
       '<button type="button" class="cm-chip" data-rid="' + esc(r.id) + '" aria-pressed="' + (r.id === CM.sel) + '" style="--c:' + esc(color) + '"><i></i>' + esc(r.label || r.title) + '</button>').join('');
-    // El botón de ubicación va justo debajo de los nombres (pueden ocupar dos filas)
-    $('#cityMapBox').style.setProperty('--cm-top', ($('#cmChips').offsetHeight + 18) + 'px');
+    // Los nombres van en una sola fila deslizable: el elegido se pone a la vista
+    const row = $('#cmChips'), chip = row.querySelector('[aria-pressed="true"]');
+    if (chip && (chip.offsetLeft < row.scrollLeft || chip.offsetLeft + chip.offsetWidth > row.scrollLeft + row.clientWidth))
+      row.scrollTo({ left: chip.offsetLeft - 8, behavior: 'smooth' });
   }
 
   function cityNear() {
@@ -1360,16 +1368,17 @@
     } else {
       const { r, t, color } = cur, c = CM.city;
       const done = (readJSON('audioguia-' + c.id + '-' + r.id + '-v1').visited || []).filter(i => t.stops[i]).length;
-      const s0 = t.stops[0], sN = t.stops[t.stops.length - 1];
-      let note = 'De ' + esc(s0.title) + ' a ' + esc(sN.title);
-      if (cityNear()) note += ' · la salida está a ' + fmtDist(dist(CM.pos[0], CM.pos[1], s0.lat, s0.lng)) + ' de ti';
+      // Tarjeta mínima, de una línea: toda ella lleva a la ruta. Para volver a ver todas, se toca el mapa o el nombre de la ruta.
+      const s0 = t.stops[0];
+      let meta = t.stops.length + ' paradas · ' + fmtDist(t.totalM) + ' · ' + durText(t, true).replace('unas ', '');
+      if (done) meta += ' · llevas ' + done + '/' + t.stops.length;
+      else if (cityNear()) meta += ' · a ' + fmtDist(dist(CM.pos[0], CM.pos[1], s0.lat, s0.lng));
+      const go = done && done < t.stops.length ? 'Continuar ruta' : 'Empezar ruta';
       card.className = 'cm-card';
-      card.innerHTML = '<button class="x" type="button" data-cm="close" aria-label="Ver todas las rutas">' + ICON.close + '</button>' +
-        '<p class="eyebrow"><i class="rc-dot" style="background:' + esc(color) + '"></i>' + esc(r.label || '') + '</p>' +
-        '<h2 class="rc-title">' + esc(t.title) + '</h2>' +
-        '<p class="rc-meta">' + t.stops.length + ' paradas · ' + fmtDist(t.totalM) + ' · ' + durText(t, true) + '</p>' +
-        '<p class="cm-note">' + note + (done ? ' · llevas ' + done + ' de ' + t.stops.length : '') + '</p>' +
-        '<a class="btn btn-primary" href="#' + c.id + '/' + r.id + '">' + (done && done < t.stops.length ? 'Continuar ruta' : 'Empezar ruta') + '</a>';
+      card.innerHTML = '<a class="cm-mini" href="#' + c.id + '/' + r.id + '" aria-label="' + go + ': ' + esc(t.title) + '">' +
+        '<i class="rc-dot" style="background:' + esc(color) + '"></i>' +
+        '<span class="cm-txt"><span class="cm-title">' + esc(t.title) + '</span><span class="cm-meta">' + meta + '</span></span>' +
+        '<span class="cm-go" aria-hidden="true">' + ICON.play + '</span></a>';
       card.hidden = false;
     }
     $('#cityMapBox').style.setProperty('--cm-card', (card.hidden ? 0 : card.offsetHeight + 10) + 'px');
