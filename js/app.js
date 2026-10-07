@@ -199,7 +199,7 @@
     markers.forEach(m => m.m.remove()); markers = [];
     tour.stops.forEach((st, i) => {
       const el = document.createElement('button');
-      el.type = 'button'; el.className = 'mk';
+      el.type = 'button'; el.className = 'mk' + (i === tour.stops.length - 1 ? ' is-last' : '');
       el.setAttribute('aria-label', (i + 1) + '. ' + st.title);
       el.innerHTML = '<span class="plaque">' + (i + 1) + '</span>';
       el.addEventListener('click', e => {
@@ -1180,7 +1180,10 @@
       const b = e.target.closest('[data-rid]'); if (!b) return;
       selectCityRoute(b.dataset.rid === CM.sel ? null : b.dataset.rid);
     });
-    $('#cmCard').addEventListener('click', e => { if (e.target.closest('[data-cm="close"]')) selectCityRoute(null); });
+    $('#cmCard').addEventListener('click', e => {
+      if (e.target.closest('[data-cm="close"]')) { selectCityRoute(null); return; }
+      const ch = e.target.closest('[data-rid]'); if (ch) selectCityRoute(ch.dataset.rid);
+    });
     $('#cmLocate').addEventListener('click', () => cityLocate(true));
   }
 
@@ -1189,9 +1192,10 @@
   const ROUTE_COLORS = ['#2D5DA8', '#2E8B57', '#C4532D', '#7B4BA8', '#B07A12', '#1F7A8C'];
   const routeColorOf = (c, r) => r.color || ROUTE_COLORS[Math.max(0, (c.routes || []).indexOf(r)) % ROUTE_COLORS.length];
   const VIEW_KEY = 'paseito-vista-ciudad';
-  const OFF = '#AEB7BD';                    // rutas apagadas cuando hay una elegida
+  const OFF = '#AEB7BD';
+  const CHAIN_M = 1200;                     // «acabas cerca de la salida de otra ruta» (en línea recta)                    // rutas apagadas cuando hay una elegida
   const fc = features => ({ type: 'FeatureCollection', features });
-  const CM = { map: null, ready: null, city: null, sel: null, routes: [], marks: [], me: null, pos: null, token: 0 };
+  const CM = { map: null, ready: null, city: null, sel: null, routes: [], marks: [], labels: [], me: null, pos: null, token: 0 };
 
   function cityViewPref() { try { return localStorage.getItem(VIEW_KEY) === 'map' ? 'map' : 'list'; } catch (e) { return 'list'; } }
   function setCityView(v, token) {
@@ -1217,6 +1221,11 @@
       const round = { 'line-cap': 'round', 'line-join': 'round' };
       m.addLayer({ id: 'cr-casing', type: 'line', source: 'cr', layout: round, paint: { 'line-color': '#FFFFFF', 'line-width': 8, 'line-opacity': .9 } });
       m.addLayer({ id: 'cr-line', type: 'line', source: 'cr', layout: round, paint: { 'line-color': ['get', 'color'], 'line-width': 4.5 } });
+      // Flechitas blancas a lo largo de la ruta elegida: indican el sentido de la marcha
+      m.addImage('cr-arrow', arrowImage(), { pixelRatio: 2 });
+      m.addLayer({ id: 'cr-arrows', type: 'symbol', source: 'cr', filter: ['==', ['get', 'rid'], ''], layout: {
+        'symbol-placement': 'line', 'symbol-spacing': 60, 'icon-image': 'cr-arrow',
+        'icon-allow-overlap': true, 'icon-ignore-placement': true, 'icon-rotation-alignment': 'map' } });
       m.addLayer({ id: 'cr-stops', type: 'circle', source: 'cs', paint: {
         'circle-radius': 4.5, 'circle-color': ['get', 'color'], 'circle-stroke-color': '#FFFFFF', 'circle-stroke-width': 2 } });
       // Franja invisible y ancha para que sea fácil tocar una ruta con el dedo
@@ -1225,6 +1234,7 @@
       m.on('mouseleave', 'cr-hit', () => { m.getCanvas().style.cursor = ''; });
       res();
     }));
+    m.on('moveend', placeEndLabels);
     m.on('click', e => {
       const p = e.point;
       const hits = m.queryRenderedFeatures([[p.x - 14, p.y - 14], [p.x + 14, p.y + 14]], { layers: ['cr-hit', 'cr-stops'] });
@@ -1271,7 +1281,59 @@
     const list = CM.sel ? CM.routes.filter(x => x.r.id === CM.sel) : CM.routes;
     if (!list.length) return;
     const card = $('#cmCard'), bottom = (card.hidden ? 0 : card.offsetHeight) + 34;
-    CM.map.fitBounds(cityBounds(list), { padding: { top: $('#cmChips').offsetHeight + 30, bottom, left: 34, right: 58 }, maxZoom: 16, duration: instant ? 0 : 650 });
+    // Con una ruta elegida, más margen a los lados para que quepan las etiquetas de salida y llegada
+    const side = CM.sel ? 70 : 34;
+    CM.map.fitBounds(cityBounds(list), { padding: { top: $('#cmChips').offsetHeight + 30, bottom, left: side, right: Math.max(side, 58) }, maxZoom: 16, duration: instant ? 0 : 650 });
+  }
+
+  function arrowImage() {
+    const n = 32, cv = document.createElement('canvas'); cv.width = cv.height = n;
+    const g = cv.getContext('2d');
+    g.strokeStyle = '#FFFFFF'; g.lineWidth = 5; g.lineCap = 'round'; g.lineJoin = 'round';
+    g.beginPath(); g.moveTo(12, 9.5); g.lineTo(19, 16); g.lineTo(12, 22.5); g.stroke();
+    return g.getImageData(0, 0, n, n);
+  }
+  // Marca de salida (círculo con ▶) y de llegada (cuadrado a cuadros) de una ruta
+  function endMark(kind, color, at) {
+    const el = document.createElement('div');
+    el.className = 'cm-' + kind; el.style.setProperty('--c', color);
+    return new maplibregl.Marker({ element: el }).setLngLat(at).addTo(CM.map);
+  }
+  // Etiquetas «Salida · …» y «Llegada · …» de la ruta elegida. Se colocan tras cada movimiento del mapa:
+  // primero del lado contrario a la parada vecina (para no tapar la línea) y, si no caben, en otro lado.
+  function placeEndLabels() {
+    CM.labels.forEach(mk => mk.remove()); CM.labels = [];
+    const cur = CM.routes.find(x => x.r.id === CM.sel);
+    if (!cur || !CM.map || $('#cityMapBox').hidden) return;
+    const sts = cur.t.stops, last = sts.length - 1;
+    if (last < 1) return;
+    const box = CM.map.getContainer(), W = box.clientWidth, card = $('#cmCard');
+    const top = $('#cmChips').offsetHeight + 14, bottom = box.clientHeight - (card.hidden ? 0 : card.offsetHeight + 14);
+    // Huecos ocupados: el botón de ubicación y los números de las paradas
+    const g = 20, taken = [[W - 56, top - 2, 56, 50]];
+    sts.forEach(st => { const c = CM.map.project([st.lng, st.lat]); taken.push([c.x - 14, c.y - 14, 28, 28]); });
+    [[0, 1, 'Salida · ', true], [last, last - 1, 'Llegada · ', false]].forEach(([i, j, pre, filled]) => {
+      const st = sts[i], p = CM.map.project([st.lng, st.lat]), q = CM.map.project([sts[j].lng, sts[j].lat]);
+      const el = document.createElement('div');
+      el.className = 'cm-label' + (filled ? ' is-filled' : ''); el.style.setProperty('--c', cur.color);
+      el.textContent = pre + st.title;
+      el.style.position = 'absolute'; el.style.visibility = 'hidden'; box.appendChild(el);
+      const w = el.offsetWidth, h = el.offsetHeight;
+      el.remove(); el.style.position = ''; el.style.visibility = '';
+      // Encima o debajo, la etiqueta se desplaza a los lados lo justo para no salirse del mapa
+      const cx = Math.max(6, Math.min(W - 6 - w, p.x - w / 2));
+      const at = { right: [p.x + g, p.y - h / 2], left: [p.x - g - w, p.y - h / 2], top: [cx, p.y - g - h], bottom: [cx, p.y + g] };
+      const h1 = q.x > p.x ? 'left' : 'right', v1 = q.y > p.y ? 'top' : 'bottom';
+      const order = [h1, v1, v1 === 'top' ? 'bottom' : 'top', h1 === 'left' ? 'right' : 'left'];
+      const fits = ([x, y]) => x >= 6 && x + w <= W - 6 && y >= top && y + h <= bottom;
+      const free = ([x, y]) => !taken.some(r => x < r[0] + r[2] && x + w > r[0] && y < r[1] + r[3] && y + h > r[1]);
+      const side = order.find(k => fits(at[k]) && free(at[k])) || order.find(k => fits(at[k])) || order[0];
+      taken.push([at[side][0], at[side][1], w, h]);
+      const anchor = { right: 'left', left: 'right', top: 'bottom', bottom: 'top' }[side];
+      const dx = cx - (p.x - w / 2);
+      const offset = { right: [g, 0], left: [-g, 0], top: [dx, -g], bottom: [dx, g] }[side];
+      CM.labels.push(new maplibregl.Marker({ element: el, anchor, offset }).setLngLat([st.lng, st.lat]).addTo(CM.map));
+    });
   }
 
   function selectCityRoute(rid, instant) {
@@ -1281,8 +1343,9 @@
       const on = ['==', ['get', 'rid'], sel || ''];
       const pick = (a, b) => sel ? ['case', on, a, b] : a;
       m.setPaintProperty('cr-line', 'line-color', pick(['get', 'color'], OFF));
-      m.setPaintProperty('cr-line', 'line-width', pick(5.5, 3));
-      m.setPaintProperty('cr-casing', 'line-width', pick(10, 6));
+      m.setPaintProperty('cr-line', 'line-width', pick(8, 3));
+      m.setFilter('cr-arrows', ['==', ['get', 'rid'], sel || '']);
+      m.setPaintProperty('cr-casing', 'line-width', pick(12, 6));
       m.setLayoutProperty('cr-line', 'line-sort-key', pick(1, 0));
       m.setLayoutProperty('cr-casing', 'line-sort-key', pick(1, 0));
       // La ruta elegida lleva sus paradas numeradas; las demás, puntos grises
@@ -1292,17 +1355,31 @@
     }
     clearCityMarkers();
     const cur = CM.routes.find(x => x.r.id === sel);
-    if (cur) cur.t.stops.forEach((st, i) => {
-      const el = document.createElement('div');
-      el.className = 'cm-stop' + (i === 0 ? ' is-first' : '');
-      el.style.background = cur.color; el.textContent = i + 1;
-      CM.marks.push(new maplibregl.Marker({ element: el }).setLngLat([st.lng, st.lat]).addTo(m));
-    });
+    if (cur) {
+      const sts = cur.t.stops, last = sts.length - 1;
+      sts.forEach((st, i) => {
+        const el = document.createElement('div');
+        el.className = 'cm-stop' + (i === 0 || i === last ? ' is-end' : '');
+        el.style.background = cur.color; el.textContent = i + 1;
+        CM.marks.push(new maplibregl.Marker({ element: el }).setLngLat([st.lng, st.lat]).addTo(m));
+      });
+    } else if (m) {
+      // Todas las rutas: dónde empieza y dónde acaba cada una
+      CM.routes.forEach(({ t, color }) => {
+        const a = t.stops[0], z = t.stops[t.stops.length - 1];
+        CM.marks.push(endMark('end', color, [z.lng, z.lat]));
+        CM.marks.push(endMark('start', color, [a.lng, a.lat]));
+      });
+    }
     renderCityChips();
     renderCityCard();
     if (m) fitCity(instant);
+    if (instant) placeEndLabels();          // si no, al terminar el movimiento (moveend)
   }
-  function clearCityMarkers() { CM.marks.forEach(mk => mk.remove()); CM.marks = []; }
+  function clearCityMarkers() {
+    CM.marks.forEach(mk => mk.remove()); CM.marks = [];
+    CM.labels.forEach(mk => mk.remove()); CM.labels = [];
+  }
 
   function renderCityChips() {
     $('#cmChips').innerHTML = CM.routes.map(({ r, color }) =>
@@ -1325,15 +1402,25 @@
     } else {
       const { r, t, color } = cur, c = CM.city;
       const done = (readJSON('audioguia-' + c.id + '-' + r.id + '-v1').visited || []).filter(i => t.stops[i]).length;
-      const s0 = t.stops[0];
-      let note = 'Empieza en ' + esc(s0.title);
-      if (cityNear()) note += ' · a ' + fmtDist(dist(CM.pos[0], CM.pos[1], s0.lat, s0.lng)) + ' de ti';
+      const s0 = t.stops[0], sN = t.stops[t.stops.length - 1];
+      let note = 'De ' + esc(s0.title) + ' a ' + esc(sN.title);
+      if (cityNear()) note += ' · la salida está a ' + fmtDist(dist(CM.pos[0], CM.pos[1], s0.lat, s0.lng)) + ' de ti';
+      // Encadenar: otra ruta que empieza cerca de donde acaba esta
+      let chain = null;
+      CM.routes.forEach(o => {
+        if (o === cur) return;
+        const d = dist(sN.lat, sN.lng, o.t.stops[0].lat, o.t.stops[0].lng);
+        if (d <= CHAIN_M && (!chain || d < chain.d)) chain = { o, d };
+      });
       card.className = 'cm-card';
       card.innerHTML = '<button class="x" type="button" data-cm="close" aria-label="Ver todas las rutas">' + ICON.close + '</button>' +
         '<p class="eyebrow"><i class="rc-dot" style="background:' + esc(color) + '"></i>' + esc(r.label || '') + '</p>' +
         '<h2 class="rc-title">' + esc(t.title) + '</h2>' +
         '<p class="rc-meta">' + t.stops.length + ' paradas · ' + fmtDist(t.totalM) + ' · ' + durText(t, true) + '</p>' +
         '<p class="cm-note">' + note + (done ? ' · llevas ' + done + ' de ' + t.stops.length : '') + '</p>' +
+        (chain ? '<button type="button" class="cm-chain" data-rid="' + esc(chain.o.r.id) + '"><i class="rc-dot" style="background:' + esc(chain.o.color) + '"></i>' +
+          '<span>Acabas a unos ' + fmtDist(Math.max(100, Math.round(chain.d / 100) * 100)) + ' de la salida de <b>' + esc(chain.o.r.label || chain.o.t.title) + '</b></span>' +
+          '<span class="chev" aria-hidden="true">›</span></button>' : '') +
         '<a class="btn btn-primary" href="#' + c.id + '/' + r.id + '">' + (done && done < t.stops.length ? 'Continuar ruta' : 'Empezar ruta') + '</a>';
       card.hidden = false;
     }
