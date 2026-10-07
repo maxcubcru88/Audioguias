@@ -2361,6 +2361,177 @@
         "ok": "enfants-rouges-ok.mp3",
         "ko": "enfants-rouges-ko.mp3",
         "skip": "enfants-rouges-skip.mp3"
+      },
+      "archives": {
+        "paras": [
+          "archives-p0.mp3",
+          "archives-p1.mp3",
+          "archives-p2.mp3",
+          "archives-p3.mp3",
+          "archives-p4.mp3",
+          "archives-p5.mp3"
+        ],
+        "quiz": "archives-q.mp3",
+        "ok": "archives-ok.mp3",
+        "ko": "archives-ko.mp3",
+        "skip": "archives-skip.mp3"
+      },
+      "rosiers": {
+        "paras": [
+          "rosiers-p0.mp3",
+          "rosiers-p1.mp3",
+          "rosiers-p2.mp3",
+          "rosiers-p3.mp3",
+          "rosiers-p4.mp3",
+          "rosiers-p5.mp3"
+        ],
+        "quiz": "rosiers-q.mp3",
+        "ok": "rosiers-ok.mp3",
+        "ko": "rosiers-ko.mp3",
+        "skip": "rosiers-skip.mp3"
+      },
+      "carnavalet": {
+        "paras": [
+          "carnavalet-p0.mp3",
+          "carnavalet-p1.mp3",
+          "carnavalet-p2.mp3",
+          "carnavalet-p3.mp3",
+          "carnavalet-p4.mp3",
+          "carnavalet-p5.mp3"
+        ],
+        "quiz": "carnavalet-q.mp3",
+        "ok": "carnavalet-ok.mp3",
+        "ko": "carnavalet-ko.mp3",
+        "skip": "carnavalet-skip.mp3"
+      },
+      "place-des-vosges": {
+        "paras": [
+          "place-des-vosges-p0.mp3",
+          "place-des-vosges-p1.mp3",
+          "place-des-vosges-p2.mp3",
+          "place-des-vosges-p3.mp3",
+          "place-des-vosges-p4.mp3",
+          "place-des-vosges-p5.mp3"
+        ],
+        "quiz": "place-des-vosges-q.mp3",
+        "ok": "place-des-vosges-ok.mp3",
+        "ko": "place-des-vosges-ko.mp3",
+        "skip": "place-des-vosges-skip.mp3",
+        "more": {
+          "ask": "place-des-vosges-mas.mp3",
+          "paras": [
+            "place-des-vosges-m0.mp3",
+            "place-des-vosges-m1.mp3",
+            "place-des-vosges-m2.mp3",
+            "place-des-vosges-m3.mp3"
+          ]
+        }
+      },
+      "hotel-de-sully": {
+        "paras": [
+          "hotel-de-sully-p0.mp3",
+          "hotel-de-sully-p1.mp3",
+          "hotel-de-sully-p2.mp3",
+          "hotel-de-sully-p3.mp3",
+          "hotel-de-sully-p4.mp3"
+        ],
+        "quiz": "hotel-de-sully-q.mp3",
+        "ok": "hotel-de-sully-ok.mp3",
+        "ko": "hotel-de-sully-ko.mp3",
+        "skip": "hotel-de-sully-skip.mp3"
+      },
+      "saint-paul": {
+        "paras": [
+          "saint-paul-p0.mp3",
+          "saint-paul-p1.mp3",
+          "saint-paul-p2.mp3",
+          "saint-paul-p3.mp3",
+          "saint-paul-p4.mp3",
+          "saint-paul-p5.mp3"
+        ],
+        "quiz": "saint-paul-q.mp3",
+        "ok": "saint-paul-ok.mp3",
+        "ko": "saint-paul-ko.mp3",
+        "skip": "saint-paul-skip.mp3",
+        "more": {
+          "ask": "saint-paul-mas.mp3",
+          "paras": [
+            "saint-paul-m0.mp3",
+            "saint-paul-m1.mp3",
+            "saint-paul-m2.mp3",
+            "saint-paul-m3.mp3"
+          ]
+        }
+      },
+      "hotel-de-sens": {
+        "paras": [
+          "hotel-de-sens-p0.mp3",
+          "hotel-de-sens-p1.mp3",
+          "hotel-de-sens-p2.mp3",
+          "hotel-de-sens-p3.mp3",
+          "hotel-de-sens-p4.mp3",
+          "hotel-de-sens-p5.mp3"
+        ],
+        "quiz": "hotel-de-sens-q.mp3",
+        "ok": "hotel-de-sens-ok.mp3",
+        "ko": "hotel-de-sens-ko.mp3",
+        "skip": "hotel-de-sens-skip.mp3",
+        "more": {
+          "ask": "hotel-de-sens-mas.mp3",
+          "paras": [
+            "hotel-de-sens-m0.mp3",
+            "hotel-de-sens-m1.mp3",
+            "hotel-de-sens-m2.mp3",
+            "hotel-de-sens-m3.mp3"
+          ]
+        }
+      },
+      "pont-marie": {
+        "paras": [
+          "pont-marie-p0.mp3",
+          "pont-marie-p1.mp3",
+          "pont-marie-p2.mp3",
+          "pont-marie-p3.mp3",
+          "pont-marie-p4.mp3"
+        ],
+        "quiz": "pont-marie-q.mp3",
+        "ok": "pont-marie-ok.mp3",
+        "ko": "pont-marie-ko.mp3",
+        "skip": "pont-marie-skip.mp3"
+      },
+      "hotel-de-lauzun": {
+        "paras": [
+          "hotel-de-lauzun-p0.mp3",
+          "hotel-de-lauzun-p1.mp3",
+          "hotel-de-lauzun-p2.mp3",
+          "hotel-de-lauzun-p3.mp3",
+          "hotel-de-lauzun-p4.mp3"
+        ],
+        "quiz": "hotel-de-lauzun-q.mp3",
+        "ok": "hotel-de-lauzun-ok.mp3",
+        "ko": "hotel-de-lauzun-ko.mp3",
+        "skip": "hotel-de-lauzun-skip.mp3",
+        "more": {
+          "ask": "hotel-de-lauzun-mas.mp3",
+          "paras": [
+            "hotel-de-lauzun-m0.mp3",
+            "hotel-de-lauzun-m1.mp3",
+            "hotel-de-lauzun-m2.mp3",
+            "hotel-de-lauzun-m3.mp3"
+          ]
+        }
+      },
+      "quai-d-orleans": {
+        "paras": [
+          "quai-d-orleans-p0.mp3",
+          "quai-d-orleans-p1.mp3",
+          "quai-d-orleans-p2.mp3",
+          "quai-d-orleans-p3.mp3"
+        ],
+        "quiz": "quai-d-orleans-q.mp3",
+        "ok": "quai-d-orleans-ok.mp3",
+        "ko": "quai-d-orleans-ko.mp3",
+        "skip": "quai-d-orleans-skip.mp3"
       }
     },
     "files": {
@@ -2399,6 +2570,466 @@
       "enfants-rouges-skip.mp3": {
         "v": "018dfc29",
         "b": 91995
+      },
+      "archives-p0.mp3": {
+        "v": "d807f20b",
+        "b": 397941
+      },
+      "archives-p1.mp3": {
+        "v": "127dc913",
+        "b": 543808
+      },
+      "archives-p2.mp3": {
+        "v": "3b9a030f",
+        "b": 342770
+      },
+      "archives-p3.mp3": {
+        "v": "fadfcc29",
+        "b": 308079
+      },
+      "archives-p4.mp3": {
+        "v": "aba4161a",
+        "b": 282584
+      },
+      "archives-p5.mp3": {
+        "v": "951776ee",
+        "b": 318528
+      },
+      "archives-q.mp3": {
+        "v": "3d5b16c9",
+        "b": 248311
+      },
+      "archives-ok.mp3": {
+        "v": "b752486e",
+        "b": 18852
+      },
+      "archives-ko.mp3": {
+        "v": "b02ec9de",
+        "b": 72768
+      },
+      "archives-skip.mp3": {
+        "v": "648676de",
+        "b": 77784
+      },
+      "rosiers-p0.mp3": {
+        "v": "103faa8b",
+        "b": 330231
+      },
+      "rosiers-p1.mp3": {
+        "v": "33a53d1e",
+        "b": 132955
+      },
+      "rosiers-p2.mp3": {
+        "v": "578222f8",
+        "b": 540047
+      },
+      "rosiers-p3.mp3": {
+        "v": "c507b38a",
+        "b": 438901
+      },
+      "rosiers-p4.mp3": {
+        "v": "4dbd2f97",
+        "b": 355727
+      },
+      "rosiers-p5.mp3": {
+        "v": "7207ebda",
+        "b": 299302
+      },
+      "rosiers-q.mp3": {
+        "v": "8c8239c2",
+        "b": 114982
+      },
+      "rosiers-ok.mp3": {
+        "v": "b752486e",
+        "b": 18852
+      },
+      "rosiers-ko.mp3": {
+        "v": "d71e9dd9",
+        "b": 57304
+      },
+      "rosiers-skip.mp3": {
+        "v": "de45ad7c",
+        "b": 61066
+      },
+      "carnavalet-p0.mp3": {
+        "v": "39d9776a",
+        "b": 461888
+      },
+      "carnavalet-p1.mp3": {
+        "v": "5d755132",
+        "b": 528344
+      },
+      "carnavalet-p2.mp3": {
+        "v": "510e1dc2",
+        "b": 465650
+      },
+      "carnavalet-p3.mp3": {
+        "v": "354ab5dd",
+        "b": 530852
+      },
+      "carnavalet-p4.mp3": {
+        "v": "953f4db7",
+        "b": 182692
+      },
+      "carnavalet-p5.mp3": {
+        "v": "22e714af",
+        "b": 283838
+      },
+      "carnavalet-q.mp3": {
+        "v": "9738339a",
+        "b": 178930
+      },
+      "carnavalet-ok.mp3": {
+        "v": "b752486e",
+        "b": 18852
+      },
+      "carnavalet-ko.mp3": {
+        "v": "bd725192",
+        "b": 71515
+      },
+      "carnavalet-skip.mp3": {
+        "v": "20a292e2",
+        "b": 72768
+      },
+      "place-des-vosges-p0.mp3": {
+        "v": "cf54cb48",
+        "b": 382476
+      },
+      "place-des-vosges-p1.mp3": {
+        "v": "2b3b4041",
+        "b": 468158
+      },
+      "place-des-vosges-p2.mp3": {
+        "v": "c69b7b23",
+        "b": 506610
+      },
+      "place-des-vosges-p3.mp3": {
+        "v": "42252a49",
+        "b": 347786
+      },
+      "place-des-vosges-p4.mp3": {
+        "v": "5907bd71",
+        "b": 409226
+      },
+      "place-des-vosges-p5.mp3": {
+        "v": "5454366a",
+        "b": 275061
+      },
+      "place-des-vosges-q.mp3": {
+        "v": "cc42a690",
+        "b": 242878
+      },
+      "place-des-vosges-ok.mp3": {
+        "v": "b752486e",
+        "b": 16344
+      },
+      "place-des-vosges-ko.mp3": {
+        "v": "04508512",
+        "b": 98264
+      },
+      "place-des-vosges-skip.mp3": {
+        "v": "4c69ecf2",
+        "b": 100772
+      },
+      "place-des-vosges-mas.mp3": {
+        "v": "ec7210c4",
+        "b": 231593
+      },
+      "place-des-vosges-m0.mp3": {
+        "v": "3da8680b",
+        "b": 473591
+      },
+      "place-des-vosges-m1.mp3": {
+        "v": "bc00d7f2",
+        "b": 502848
+      },
+      "place-des-vosges-m2.mp3": {
+        "v": "6bf57e24",
+        "b": 395433
+      },
+      "place-des-vosges-m3.mp3": {
+        "v": "c9045e0e",
+        "b": 347786
+      },
+      "hotel-de-sully-p0.mp3": {
+        "v": "d454f4d4",
+        "b": 395433
+      },
+      "hotel-de-sully-p1.mp3": {
+        "v": "81496da9",
+        "b": 135462
+      },
+      "hotel-de-sully-p2.mp3": {
+        "v": "fcbf78f5",
+        "b": 367012
+      },
+      "hotel-de-sully-p3.mp3": {
+        "v": "3e064c65",
+        "b": 464396
+      },
+      "hotel-de-sully-p4.mp3": {
+        "v": "56f76d97",
+        "b": 222398
+      },
+      "hotel-de-sully-q.mp3": {
+        "v": "3cfc22c8",
+        "b": 127939
+      },
+      "hotel-de-sully-ok.mp3": {
+        "v": "b752486e",
+        "b": 18852
+      },
+      "hotel-de-sully-ko.mp3": {
+        "v": "5978341d",
+        "b": 67753
+      },
+      "hotel-de-sully-skip.mp3": {
+        "v": "de64eebc",
+        "b": 72768
+      },
+      "saint-paul-p0.mp3": {
+        "v": "b4d0b7c2",
+        "b": 381222
+      },
+      "saint-paul-p1.mp3": {
+        "v": "4ac3186e",
+        "b": 372445
+      },
+      "saint-paul-p2.mp3": {
+        "v": "9a2ef08a",
+        "b": 545062
+      },
+      "saint-paul-p3.mp3": {
+        "v": "b9727982",
+        "b": 605248
+      },
+      "saint-paul-p4.mp3": {
+        "v": "04f29266",
+        "b": 364504
+      },
+      "saint-paul-p5.mp3": {
+        "v": "e7fa209f",
+        "b": 336501
+      },
+      "saint-paul-q.mp3": {
+        "v": "105d8ef2",
+        "b": 136716
+      },
+      "saint-paul-ok.mp3": {
+        "v": "b752486e",
+        "b": 18852
+      },
+      "saint-paul-ko.mp3": {
+        "v": "5843c0b2",
+        "b": 51035
+      },
+      "saint-paul-skip.mp3": {
+        "v": "5706014c",
+        "b": 52288
+      },
+      "saint-paul-mas.mp3": {
+        "v": "bd98918f",
+        "b": 214875
+      },
+      "saint-paul-m0.mp3": {
+        "v": "87dbd1f5",
+        "b": 450186
+      },
+      "saint-paul-m1.mp3": {
+        "v": "ef5ea490",
+        "b": 346532
+      },
+      "saint-paul-m2.mp3": {
+        "v": "8a4beae8",
+        "b": 303064
+      },
+      "saint-paul-m3.mp3": {
+        "v": "7ae55dfe",
+        "b": 240370
+      },
+      "hotel-de-sens-p0.mp3": {
+        "v": "d8a25bba",
+        "b": 361996
+      },
+      "hotel-de-sens-p1.mp3": {
+        "v": "740d9387",
+        "b": 574319
+      },
+      "hotel-de-sens-p2.mp3": {
+        "v": "acd5367b",
+        "b": 93248
+      },
+      "hotel-de-sens-p3.mp3": {
+        "v": "15468488",
+        "b": 376207
+      },
+      "hotel-de-sens-p4.mp3": {
+        "v": "29e766c9",
+        "b": 353219
+      },
+      "hotel-de-sens-p5.mp3": {
+        "v": "cc4a0a3c",
+        "b": 236608
+      },
+      "hotel-de-sens-q.mp3": {
+        "v": "7e39e5c3",
+        "b": 159704
+      },
+      "hotel-de-sens-ok.mp3": {
+        "v": "b752486e",
+        "b": 18852
+      },
+      "hotel-de-sens-ko.mp3": {
+        "v": "a607898e",
+        "b": 65245
+      },
+      "hotel-de-sens-skip.mp3": {
+        "v": "78c046db",
+        "b": 65245
+      },
+      "hotel-de-sens-mas.mp3": {
+        "v": "8b0c5b6d",
+        "b": 201918
+      },
+      "hotel-de-sens-m0.mp3": {
+        "v": "ec74f55d",
+        "b": 560527
+      },
+      "hotel-de-sens-m1.mp3": {
+        "v": "17406793",
+        "b": 369519
+      },
+      "hotel-de-sens-m2.mp3": {
+        "v": "46231a4c",
+        "b": 361996
+      },
+      "hotel-de-sens-m3.mp3": {
+        "v": "af3d0193",
+        "b": 198156
+      },
+      "pont-marie-p0.mp3": {
+        "v": "59c50e33",
+        "b": 231593
+      },
+      "pont-marie-p1.mp3": {
+        "v": "b0956034",
+        "b": 502848
+      },
+      "pont-marie-p2.mp3": {
+        "v": "51c2a4a6",
+        "b": 455619
+      },
+      "pont-marie-p3.mp3": {
+        "v": "0d62db20",
+        "b": 264612
+      },
+      "pont-marie-p4.mp3": {
+        "v": "e79648a0",
+        "b": 223652
+      },
+      "pont-marie-q.mp3": {
+        "v": "342f1e40",
+        "b": 144239
+      },
+      "pont-marie-ok.mp3": {
+        "v": "b752486e",
+        "b": 16344
+      },
+      "pont-marie-ko.mp3": {
+        "v": "6c07c7ed",
+        "b": 53542
+      },
+      "pont-marie-skip.mp3": {
+        "v": "47c28094",
+        "b": 56050
+      },
+      "hotel-de-lauzun-p0.mp3": {
+        "v": "c4d7f63a",
+        "b": 455619
+      },
+      "hotel-de-lauzun-p1.mp3": {
+        "v": "1319dd2a",
+        "b": 455619
+      },
+      "hotel-de-lauzun-p2.mp3": {
+        "v": "30875397",
+        "b": 374953
+      },
+      "hotel-de-lauzun-p3.mp3": {
+        "v": "039cdae5",
+        "b": 447678
+      },
+      "hotel-de-lauzun-p4.mp3": {
+        "v": "7196497a",
+        "b": 479861
+      },
+      "hotel-de-lauzun-q.mp3": {
+        "v": "c12107f5",
+        "b": 150927
+      },
+      "hotel-de-lauzun-ok.mp3": {
+        "v": "b752486e",
+        "b": 16344
+      },
+      "hotel-de-lauzun-ko.mp3": {
+        "v": "29a9c62d",
+        "b": 84471
+      },
+      "hotel-de-lauzun-skip.mp3": {
+        "v": "a0883dd5",
+        "b": 86979
+      },
+      "hotel-de-lauzun-mas.mp3": {
+        "v": "8589b62b",
+        "b": 234101
+      },
+      "hotel-de-lauzun-m0.mp3": {
+        "v": "cbe9816b",
+        "b": 479861
+      },
+      "hotel-de-lauzun-m1.mp3": {
+        "v": "5d35f710",
+        "b": 397941
+      },
+      "hotel-de-lauzun-m2.mp3": {
+        "v": "d48ada83",
+        "b": 384984
+      },
+      "hotel-de-lauzun-m3.mp3": {
+        "v": "be76ffdb",
+        "b": 441408
+      },
+      "quai-d-orleans-p0.mp3": {
+        "v": "4efba7f2",
+        "b": 514551
+      },
+      "quai-d-orleans-p1.mp3": {
+        "v": "94dfb78a",
+        "b": 333993
+      },
+      "quai-d-orleans-p2.mp3": {
+        "v": "7e3c01ed",
+        "b": 277568
+      },
+      "quai-d-orleans-p3.mp3": {
+        "v": "1a90ecb8",
+        "b": 470666
+      },
+      "quai-d-orleans-q.mp3": {
+        "v": "1d198051",
+        "b": 189379
+      },
+      "quai-d-orleans-ok.mp3": {
+        "v": "b752486e",
+        "b": 17598
+      },
+      "quai-d-orleans-ko.mp3": {
+        "v": "1611f802",
+        "b": 61066
+      },
+      "quai-d-orleans-skip.mp3": {
+        "v": "66cd498c",
+        "b": 65245
       }
     }
   }
