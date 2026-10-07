@@ -57,11 +57,11 @@
       "radius": 45,
       "where": "En la rue des Francs-Bourgeois, frente a la verja del número 60, mirando al patio rodeado de columnas.",
       "paras": [
-        "Mira qué patio: una herradura de columnas y, al fondo, un palacio que parece pensado para recibir carrozas. Es el palacio de Soubise, y lo que guarda hoy vale más que el edificio: son los Archivos Nacionales de Francia. Leyes, tratados, cartas de reyes… kilómetros y kilómetros de papeles. Vamos, la memoria de Francia, ordenadita en cajas.",
+        "Mira qué patio: una herradura de columnas y, al fondo, un palacio que parece pensado para recibir carrozas. Es el palacio de Soubise, y lo que guarda hoy vale más que el edificio: son los Archivos Nacionales de Francia. Leyes, tratados, cartas de reyes… kilómetros y kilómetros de papeles. Es la memoria de Francia, ordenadita en cajas.",
         "El palacio lo compró en 1700 el príncipe de Soubise. Su mujer, Ana de Rohan, era una pelirroja de las que no pasaban desapercibidas en Versalles, y desde luego no le pasó desapercibida a Luis catorce: fue su amante durante unos años. En el móvil la tienes retratada. El marido, muy comprensivo, miraba para otro lado. Y el rey, agradecido, le hizo llegar sumas de dinero muy generosas. En la corte se decía que este palacio salió de ahí. Vamos, que a algunos los cuernos les salieron a cuenta.",
         "Y ahora imagínate que entras: dentro de estos archivos hay un armario de hierro, el armario de hierro, donde se guardan los papeles más valiosos. El testamento de Napoleón. La última carta de María Antonieta, que nunca llegó a su destinataria. Las llaves de la Bastilla. Y el diario de Luis dieciséis.",
         "Y no, no era un rey despistado: aquel era su diario de caza, y ese día no había cazado nada. Se enteró de lo de la Bastilla esa misma noche. Cuentan que, al oír la noticia, preguntó si era una revuelta, y le contestaron: no, señor, es una revolución.",
-        "Y, ya que pasas por aquí, la rue des Francs-Bourgeois es la calle más animada del barrio. Los domingos, cuando casi todo París cierra, aquí las tiendas abren. El Marais fue de los primeros barrios de París en abrir en domingo, y los parisinos lo saben: si vienes en domingo, prepárate para pasear despacito."
+        "Y, ya que pasas por aquí, la rue des Francs-Bourgeois es la calle más animada del barrio. Los domingos, cuando muchas tiendas de París cierran, aquí abren: el Marais fue de los primeros barrios en hacerlo. Así que, si vienes ese día, prepárate para pasear despacito."
       ],
       "images": [
         {
@@ -81,7 +81,7 @@
         "options": [
           "Revolución",
           "Socorro",
-          "Nada"
+          "Rien, es decir, nada"
         ],
         "answer": 2
       },
@@ -97,10 +97,10 @@
       "where": "En la rue des Rosiers, a la altura de la rue des Hospitalières-Saint-Gervais, entre las panaderías y los puestos de faláfel.",
       "paras": [
         "Bienvenido a la calle de los Rosales. Rosales ya no quedan, pero huele a pan recién hecho, a pastrami y a faláfel. Fíjate en las colas: hay restaurantes de faláfel con más cola que algunos museos, y te lo digo yo, que he visto las del Louvre. Si te pilla con hambre, es de las mejores comidas baratas de París.",
-        "Este es el corazón del barrio judío de París. Los judíos que llegaron de Europa del Este le pusieron un nombre en yidis: el Pletzl.",
-        "Un nombre muy cariñoso para un barrio que fue refugio. A finales del siglo diecinueve empezaron a llegar aquí miles de judíos de Europa del Este, sobre todo del imperio ruso, huyendo de la pobreza y de las persecuciones. Hablaban yidis, abrieron sinagogas, panaderías, talleres de sastre. Por entonces, el Marais ya no era el barrio elegante de antes: los nobles se habían ido y los palacios se habían llenado de talleres y de familias obreras. Si sacas el móvil, verás esta calle fotografiada en 1910.",
-        "Ese barrio vivió su peor momento en la Segunda Guerra Mundial. En 1942, durante la ocupación, la policía detuvo a miles de judíos de París para deportarlos, muchos de estas mismas calles. Aquí mismo, en la escuela de la rue des Hospitalières-Saint-Gervais, una placa recuerda a ciento sesenta y cinco alumnos judíos deportados. Merece la pena pararse a leerla.",
-        "Hoy el Marais es otra cosa: tiendas de diseño, galerías, bares, y es también el barrio gay de París, con la vida más animada de la ciudad. Pero el Pletzl sigue aquí, con sus panaderías de siempre, sus librerías hebreas y su sinagoga. Y sobre todo con sus vecinos, que siguen comprando el pan en la misma esquina que sus abuelos."
+        "Este es el corazón del barrio judío de París. Los judíos que se instalaron aquí le pusieron un nombre en yidis: el Pletzl.",
+        "Un nombre muy cariñoso para un barrio que fue refugio. A finales del siglo diecinueve empezaron a llegar aquí miles de judíos de Europa del Este, sobre todo del imperio ruso, huyendo de la pobreza y de las persecuciones. Hablaban yidis, abrieron sinagogas, panaderías, talleres de sastre. Por entonces, el Marais ya no era el barrio elegante de antes: los nobles se habían ido y los palacios se habían llenado de talleres y de familias obreras. En la pantalla tienes esta misma calle en 1910.",
+        "Y luego llegó lo peor. En 1942, durante la ocupación nazi, la policía francesa detuvo a miles de judíos de París para deportarlos, muchos de estas mismas calles. Aquí mismo, en la escuela de la rue des Hospitalières-Saint-Gervais, una placa recuerda a ciento sesenta y cinco alumnos judíos de esta escuela, deportados y asesinados en los campos nazis. Merece la pena pararse a leerla.",
+        "Hoy el Marais es otra cosa: tiendas de diseño, galerías, bares, y es también el barrio gay de París, con una vida nocturna muy animada. Pero el Pletzl sigue aquí, con sus panaderías de siempre, sus librerías hebreas y su sinagoga. Y sobre todo con sus vecinos, que siguen comprando el pan en la misma esquina que sus abuelos."
       ],
       "images": [
         {
@@ -108,7 +108,7 @@
           "w": 785,
           "h": 1000,
           "para": 2,
-          "after": "Si sacas el móvil, verás esta calle fotografiada en 1910.",
+          "after": "En la pantalla tienes esta misma calle en 1910.",
           "caption": "La rue des Rosiers desde la rue des Écouffes, en 1910",
           "credit": "Foto: Eugène Atget · Museo Carnavalet · CC0",
           "source": "https://commons.wikimedia.org/wiki/File:Rue_des_Rosiers_depuis_la_rue_des_Ecouffes,_4%C3%A8me_arrondissement,_Paris._PH16184.jpg"
@@ -135,10 +135,10 @@
       "radius": 45,
       "where": "En la rue de Sévigné, frente a la entrada del museo Carnavalet.",
       "paras": [
-        "Este palacio es hoy el museo de la historia de París, y su colección permanente es gratuita. Dentro tienes de todo: maquetas de la Bastilla, letreros antiguos de tiendas, el dormitorio de Marcel Proust, recuerdos de Napoleón… Y el nombre tiene su gracia. En el siglo dieciséis lo compró la viuda de un noble bretón, la señora de Kernevenoy. Los parisinos no había manera de que lo pronunciaran, y de tanto destrozarlo acabó en Carnavalet. Vamos, que el palacio se quedó con el apodo.",
+        "Este palacio es hoy el museo de la historia de París, y su colección permanente es gratuita. Dentro tienes de todo: maquetas de la Bastilla, letreros antiguos de tiendas, el dormitorio de Marcel Proust, recuerdos de Napoleón… Y el nombre tiene su gracia. En el siglo dieciséis lo compró la viuda de un noble bretón, la señora de Kernevenoy. Los parisinos no había manera de que lo pronunciaran, y de tanto destrozarlo acabó en Carnavalet.",
         "Pero su inquilina más famosa llegó en 1677: madame de Sévigné. Vivió aquí casi veinte años, y se pasó la vida escribiendo cartas. Se conservan más de mil, y unas setecientas cincuenta son para su hija, que se había casado y vivía en la Provenza. Ella le contaba todo lo que pasaba en París y en la corte: bodas, escándalos, ejecuciones, quién se acostaba con quién. Si hubiera existido el teléfono, esta señora no lo habría soltado. En el móvil tienes su retrato.",
         "Una de sus cartas más famosas cuenta la muerte de Vatel, el maestresala del príncipe de Condé, el encargado de sus banquetes. En 1671, el príncipe invitó al rey Luis catorce a su castillo de Chantilly, con toda la corte. Tres días de banquetes. La primera noche faltó asado en un par de mesas, y Vatel ya andaba con los nervios de punta. Y a la mañana siguiente, viernes, la cosa acabó en tragedia.",
-        "Era día de vigilia, sin carne, y había encargado pescado fresco a los puertos de la costa. Al amanecer solo llegaron dos cestas. Vatel creyó que no vendría nada más y que su honor estaba perdido. Subió a su cuarto, apoyó la espada contra la puerta y se dejó caer sobre ella. Poco después, el resto del pescado empezó a llegar por todas partes. Madame de Sévigné lo contó con todo detalle, y así se convirtió en la leyenda de los cocineros perfeccionistas.",
+        "Era día de vigilia, sin carne, y Vatel había encargado pescado fresco a los puertos de la costa. Al amanecer solo llegaron dos cestas. Vatel creyó que no vendría nada más y que su honor estaba perdido. Subió a su cuarto, apoyó la empuñadura de su espada contra la puerta y se arrojó sobre la punta. Poco después, el resto del pescado empezó a llegar por todas partes. Madame de Sévigné lo contó con todo detalle, y así se convirtió en la leyenda de los cocineros perfeccionistas.",
         "Y si entras al patio del museo, verás a Luis catorce en persona, en bronce, vestido de emperador romano con peluca. Una combinación que solo él se podía permitir."
       ],
       "images": [
@@ -177,7 +177,7 @@
         "Para muchos, esta es la plaza más bonita de París. Fíjate: treinta y seis casas casi idénticas, de ladrillo rojo y piedra, con tejados de pizarra y soportales por debajo, alrededor de un jardín cuadrado. En 1612, cuando se inauguró, fue la primera plaza de París diseñada así, toda de una pieza. Se llamaba plaza Real.",
         "Y aquí hay una historia de reyes con mala suerte. Antes había un palacio, el de las Tournelles. En 1559, el rey Enrique segundo participó en un torneo aquí al lado, en la rue Saint-Antoine, y una astilla de la lanza de su rival se le metió por la visera del casco. Murió diez días después en ese palacio. Su viuda, Catalina de Médicis, no quiso volver a verlo y lo mandó derribar. El solar se quedó vacío.",
         "Hasta que llegó Enrique cuarto, en 1605, y decidió hacer aquí una gran plaza. Pero si hiciste nuestra ruta del centro, ya sabes cómo acabó: en 1610 lo apuñaló Ravaillac, y no llegó a verla terminada. La inauguró su hijo, Luis trece, el de la estatua, con tres días de fiestas por su compromiso de boda con Ana de Austria. Desfiles a caballo, fuegos artificiales y miles de espectadores en los balcones. Si sacas el móvil, verás aquella fiesta pintada.",
-        "Era la época de la Revolución, con ejércitos por media Europa y la caja vacía, y aquel departamento fue el primero en pasar por caja. En 1800, París, agradecida, le puso su nombre a la plaza. Vamos, que esto es un monumento al contribuyente cumplidor. No conozco otro.",
+        "Durante la Revolución, la plaza perdió su nombre real. Y con ejércitos por media Europa y las arcas vacías, el departamento de los Vosgos fue el primero en pagar sus impuestos. En 1800, París, agradecida, le puso su nombre a la plaza. Vamos, que esto es un monumento al contribuyente cumplidor. No conozco otro.",
         "Y en el número seis, en una esquina del lado sur de la plaza, vivió Victor Hugo, entre 1832 y 1848. Allí escribió obras de teatro y empezó Los miserables. Hoy su casa es un museo. Y en el número veintiuno vivió el cardenal Richelieu. Sí, el de los mosqueteros. Y no le hacía ninguna gracia lo que pasaba en esta plaza."
       ],
       "images": [
@@ -208,7 +208,7 @@
         "paras": [
           "En la Francia de Luis trece, los nobles se mataban en duelos por cualquier cosa: una mirada, un empujón, una broma de mal gusto. Morían cientos al año. Así que, en 1626, Richelieu prohibió los duelos bajo pena de muerte. Y el que más se lo tomó a broma fue el conde de Bouteville, un noble joven, rico y de los Montmorency, la familia más ilustre de Francia. Se dice que había peleado en una veintena de duelos.",
           "Bouteville tuvo que huir a Bruselas, y pidió al rey que lo perdonara. El rey le contestó que no. ¿Y qué hizo él? Volver a París y, para que quedara clarito, batirse en duelo aquí mismo, en la plaza Real, a plena luz del día y delante de todo el mundo, el 12 de mayo de 1627. Tres contra tres, con sus padrinos. Uno de ellos murió en la pelea. En la app tienes el duelo, tal como lo imaginó un dibujante casi trescientos años después.",
-          "Esta vez no hubo escapatoria. A Bouteville lo detuvieron cuando huía, y toda la nobleza pidió clemencia: su familia, sus amigos, hasta la mujer del rey. Pero Richelieu no cedió. El 22 de junio de 1627, Bouteville fue decapitado en la plaza de Grève, la que hoy es la plaza del Ayuntamiento, donde empieza nuestra ruta del centro.",
+          "Esta vez no hubo escapatoria. A Bouteville lo detuvieron cuando huía, y toda la nobleza pidió clemencia: su familia, sus amigos, hasta su mujer, embarazada. Pero Richelieu no cedió. El 22 de junio de 1627, Bouteville fue decapitado en la plaza de Grève, la que hoy es la plaza del Ayuntamiento, donde empieza nuestra ruta del centro.",
           "Lo curioso es que su hijo, que nació pocos meses después, acabó siendo uno de los mejores mariscales de Luis catorce. Y a Richelieu, que vivía aquí al lado, en el número veintiuno, le quedó claro que con aquella cabeza había ganado la partida. Al menos, de momento: los duelos siguieron, aunque ya con mucho más disimulo."
         ],
         "images": [
@@ -237,7 +237,7 @@
       "paras": [
         "¿A que no esperabas un jardín aquí? Es uno de los pasadizos secretos más bonitos de París: has entrado por la plaza y saldrás por la rue Saint-Antoine atravesando un palacio entero. El edificio pequeño que tienes detrás era el invernadero de los naranjos, y el palacio que tienes delante tiene las fachadas llenas de esculturas. Hoy aquí tienen su sede los monumentos nacionales de Francia.",
         "El palacio lo mandó construir un financiero, Mesme Gallet, hacia 1624. Pero no lo disfrutó mucho.",
-        "Mucha gente cuenta que lo perdió jugando a las cartas, pero lo más probable es que lo arruinaran las propias obras. Vamos, como cualquier reforma. En 1634 lo compró el duque de Sully, el ministro de Enrique cuarto, el que le llenó las arcas al rey. Para entonces ya era un señor mayor, retirado de la política, con más de setenta años.",
+        "Mucha gente cuenta que lo perdió jugando a las cartas, pero lo más probable es que lo arruinaran las propias obras. Lo normal en una reforma. En 1634 lo compró el duque de Sully, el ministro de Enrique cuarto, el que le llenó las arcas al rey. Para entonces ya era un señor mayor, retirado de la política, con más de setenta años.",
         "Y aquí viene el chisme. Cuentan que Sully le dio a su mujer una buena suma de dinero y le dijo: esto es para la casa, esto para usted, y esto para sus amantes. Pero que no se los encuentre yo por mi escalera. La frase se ha repetido durante siglos. El problema es que su mujer tenía entonces sesenta y ocho años. Así que, o la señora tenía una energía admirable, o esto es un cotilleo de los buenos."
       ],
       "images": [],
@@ -265,8 +265,8 @@
         "Esta iglesia la construyeron los jesuitas, y la primera piedra la puso el propio Luis trece en 1627. Fíjate en la fachada, con tres pisos de columnas, y en la cúpula, de las primeras de París. Nada que ver con las catedrales góticas como Notre-Dame: aquí, los jesuitas querían algo al estilo de Roma, con mucha luz y mucho mármol.",
         "Durante más de un siglo, esta iglesia guardó en relicarios de oro los corazones de Luis trece y de Luis catorce. Era la costumbre: a los reyes se les enterraba el cuerpo en un sitio y el corazón en otro. Con la Revolución, los relicarios se fundieron y los corazones desaparecieron. Lo que pasó después con ellos es una historia de las que no se olvidan.",
         "Y ahora mira la calle hacia tu izquierda, hacia el este. Al fondo de la rue Saint-Antoine, a unos diez minutos, está la plaza de la Bastilla. De la fortaleza no queda nada: la columna con un genio dorado que, si los árboles te dejan, se ve allí al fondo, recuerda otra revolución, la de 1830. Pero el 14 de julio de 1789, miles de parisinos subieron por esta misma calle para asaltarla. Iban a por pólvora para sus fusiles, y ya de paso liberaron a los presos.",
-        "Y no eran precisamente presos políticos: cuatro falsificadores, dos hombres con problemas mentales y un conde encerrado a petición de su propia familia por, digamos, sus costumbres. Y luego vino lo mejor: un constructor espabilado, Palloy, se encargó de derribarla y vendió sus piedras como recuerdo. Mandó tallar maquetas de la Bastilla con sus piedras y envió una a cada departamento. Y una de sus llaves acabó, a través de Lafayette, en manos de George Washington: todavía se conserva en su casa de Virginia. En la app tienes la toma de la Bastilla, pintada aquel mismo año.",
-        "Una última cosa antes de entrar, si te apetece. A la entrada, las dos pilas de agua bendita, con forma de concha gigante, cuentan que las regaló Victor Hugo, vecino de la parroquia, para la boda de su hija Leopoldina en 1843. Y en su novela Los miserables, Cosette y Marius se casan en esta misma iglesia."
+        "Y no eran precisamente presos políticos: cuatro falsificadores, dos hombres con problemas mentales y un conde encerrado a petición de su propia familia por, digamos, sus costumbres. Y luego vino lo mejor: un constructor espabilado, Palloy, se encargó de derribarla y vendió las piedras como recuerdo y mandó tallar con ellas maquetas de la fortaleza, una para cada departamento. Y otra de las llaves de la Bastilla acabó, a través de Lafayette, en manos de George Washington: todavía se conserva en su casa de Virginia. En la app tienes la toma de la Bastilla, pintada aquel mismo año.",
+        "Una última cosa antes de entrar, si te apetece. Nada más entrar verás dos pilas de agua bendita con forma de concha gigante. Según la tradición, las regaló Victor Hugo, vecino de la parroquia, para la boda de su hija Leopoldina en 1843. Y en su novela Los miserables, Cosette y Marius se casan en esta misma iglesia."
       ],
       "images": [
         {
@@ -327,7 +327,7 @@
         "Lo construyeron los arzobispos de Sens, una ciudad a más de cien kilómetros de aquí. ¿Y qué pintaban en París? Pues mandaban. Hasta 1622, París ni siquiera era arzobispado: su obispo dependía del de Sens. Así que el arzobispo necesitaba una casa en la capital, y se la hizo a lo grande. Después tuvo épocas peores: en el siglo diecinueve llegó a ser fábrica y taller, y hoy es una biblioteca de artes decorativas. En la app tienes cómo estaba en 1899, antes de su restauración.",
         "Busca en la fachada una bola de hierro incrustada en la piedra, con una fecha grabada debajo.",
         "La fecha dice 28 de julio de 1830, en plena revolución de julio, la misma de la columna de la Bastilla. Aunque hay quien sospecha que la pusieron después, de recuerdo. Sea como sea, ahí sigue, casi dos siglos después. Y por detrás del palacio hay un jardín a la francesa, con setos recortados, donde se está de maravilla.",
-        "Pero la inquilina más famosa de esta casa fue una reina: Margarita de Valois, la reina Margot, que vivió aquí en 1605. Era la hija de Enrique segundo, el del torneo de la plaza de los Vosgos, y la primera mujer de Enrique cuarto. Y tenía una fama, digamos, de corazón muy grande."
+        "Pero la inquilina más famosa de esta casa fue una reina: Margarita de Valois, la reina Margot, que vivió aquí en 1605. Era la hija de Enrique segundo, el que murió en aquel torneo junto a la plaza de los Vosgos, y la primera mujer de Enrique cuarto. Y tenía una fama, digamos, de corazón muy grande."
       ],
       "images": [
         {
@@ -385,7 +385,7 @@
       "where": "En el centro del puente Marie, mirando hacia la isla de San Luis.",
       "paras": [
         "Tienes delante la isla de San Luis. Y ojo, que hace cuatrocientos años no era una isla: eran dos islotes, separados por un canal, donde no había casi nada: prados, algún árbol y barcas amarradas.",
-        "Los islotes eran de los canónigos de Notre-Dame, que los usaban de pasto, y el nombre se le quedó a uno de ellos. Hasta que, en 1614, el rey encargó a un empresario, Christophe Marie, que lo urbanizara todo. Marie y sus socios rellenaron el canal, unieron los dos islotes, trazaron calles rectas y vendieron solares a los ricos de la época. Si sacas el móvil, verás los dos islotes en un plano de París de 1550.",
+        "Los islotes eran de los canónigos de Notre-Dame, que llevaban allí su ganado a pastar. Por eso a uno lo llamaban la isla de las Vacas. Hasta que, en 1614, el rey encargó a un empresario, Christophe Marie, que lo urbanizara todo. Marie y sus socios rellenaron el canal, unieron los dos islotes, trazaron calles rectas y vendieron solares a los ricos de la época. Si sacas el móvil, verás los dos islotes en un plano de París de 1550.",
         "Y este puente es el suyo: por eso se llama puente Marie. Se terminó en 1635, y encima tenía unas cincuenta casas, como el Puente Viejo de Florencia. Pero en 1658, una gran crecida del Sena se llevó dos arcos y una veintena de casas, y murieron decenas de personas. Después, las casas que quedaron se derribaron, y el puente se quedó así de despejado, como lo ves hoy.",
         "Y una cosa más. Igual has oído que si pasas por debajo de este puente en barco y besas a tu pareja, se cumple un deseo. Pues te digo la verdad: esa tradición no tiene ninguna base histórica. Ahora, tampoco te va a hacer ningún daño probarlo."
       ],
@@ -411,21 +411,21 @@
         ],
         "answer": 0
       },
-      "toNext": "Baja del puente a la isla y gira a la izquierda por el muelle de Anjou. Camina un par de minutos, con el río a tu izquierda, hasta un palacio con un balcón de hierro dorado, en el número diecisiete."
+      "toNext": "Baja del puente a la isla y gira a la izquierda por el muelle de Anjou. Camina un par de minutos, con el río a tu izquierda, hasta un palacio con un balcón de hierro forjado, en el número diecisiete."
     },
     {
       "id": "hotel-de-lauzun",
       "title": "El palacio de Lauzun",
-      "subtitle": "Un poeta, un club secreto y una cuchara muy especial",
+      "subtitle": "Un poeta, un club secreto y un cortesano en apuros",
       "lat": 48.851707,
       "lng": 2.35909,
       "radius": 45,
       "where": "En el muelle de Anjou, frente al número diecisiete, el palacio de Lauzun.",
       "paras": [
-        "Por fuera parece una casa más del muelle, solo con un balcón de hierro dorado. Pero por dentro es puro oro: techos pintados, espejos y molduras. Lo construyó en 1657 un financiero riquísimo: por fuera, discreto; por dentro, de escándalo. No era mala idea. Cuatro años después, el ministro Fouquet acabó en prisión, en buena parte por presumir demasiado de su riqueza.",
+        "Por fuera parece una casa más del muelle, solo con un balcón de hierro forjado con detalles dorados. Pero por dentro es puro oro: techos pintados, espejos y molduras. Lo construyó en 1657 un financiero riquísimo, amigo del ministro Fouquet. Y la discreción no le sirvió de mucho: cuando Fouquet cayó, en 1661, él cayó detrás, y acabó sus días en la cárcel.",
         "Pero el vecino más famoso vivió en la buhardilla, entre 1843 y 1845. Era un joven de veintidós años que se estaba fundiendo la herencia de su padre en trajes, cuadros y vida nocturna: Charles Baudelaire. Aquí escribió algunos de los primeros poemas de Las flores del mal, el libro que más tarde le llevó a juicio por inmoral. En el móvil tienes su retrato, pintado justo en esa época.",
         "Y en el salón de abajo se reunía un club muy particular: el Club de los Hachisinos. Lo montaron el escritor Théophile Gautier y un médico, Moreau de Tours, que estudiaba los efectos del hachís en la mente. Por allí pasaron escritores como Gérard de Nerval o Alejandro Dumas, y hasta el pintor Delacroix. Eso sí, lo tomaban de una forma muy suya.",
-        "Se llamaba dawamesk: hachís con miel, pistachos y especias, verde como la envidia. Un médico la repartía en una cuchara, y luego todos tomaban café y apuntaban lo que les pasaba por la cabeza. Vamos, un experimento científico. Baudelaire lo contó años después en Los paraísos artificiales, y no salió muy convencido: dijo que lo de los paraísos tenía un precio."
+        "Se llamaba dawamesk: hachís con miel, pistachos y especias, verde como la envidia. Era una pasta espesa, y el propio Moreau la repartía con una cuchara, y luego todos tomaban café y apuntaban lo que les pasaba por la cabeza. Todo muy científico, claro. Baudelaire lo contó años después en Los paraísos artificiales, y no salió muy convencido: dijo que lo de los paraísos tenía un precio."
       ],
       "images": [
         {
@@ -482,9 +482,9 @@
       "radius": 60,
       "where": "En el muelle de Orleans, junto al puente de San Luis, frente a la parte trasera de Notre-Dame.",
       "paras": [
-        "Y aquí está: Notre-Dame, pero por detrás. Desde aquí se ve lo que la fachada esconde: los arbotantes, esos arcos de piedra que sujetan las paredes por fuera, como las patas de una araña gigante. Si sacas el móvil, la verás hacia 1853, todavía sin aguja. Tras el incendio de 2019, la catedral volvió a abrir sus puertas en diciembre de 2024. Y la aguja, que se añadió pocos años después de esa foto, ha vuelto a su sitio, igual que antes.",
-        "Por el camino has pasado junto a la iglesia de la isla, la de Saint-Louis-en-l'Île. Fíjate en su reloj, que sobresale sobre la calle desde 1741, para que lo vieran los vecinos desde lejos. En 1805, el papa Pío séptimo dijo misa en ella: había venido a París para la coronación de Napoleón.",
-        "Abierta desde 1954, Berthillon echa el cierre unas semanas cuando los parisinos se van de vacaciones. Justo cuando más calor hace y más turistas hay. Muy francés, ¿no? Pero, si está abierta, te recomiendo que vuelvas sobre tus pasos a por uno: sus helados y sorbetes se venden también en varios cafés de la isla.",
+        "Y aquí está: Notre-Dame, pero por detrás. Desde aquí se ve lo que la fachada esconde: los arbotantes, esos arcos de piedra que sujetan las paredes por fuera, como las patas de una araña gigante. En la pantalla la tienes hacia 1853, todavía sin aguja. Tras el incendio de 2019, la catedral volvió a abrir sus puertas en diciembre de 2024. Y la aguja, que se añadió pocos años después de esa foto, ha vuelto a su sitio, igual que antes.",
+        "Por el camino has pasado junto a la iglesia de la isla, la de Saint-Louis-en-l'Île. ¿Te fijaste en su reloj? Sobresale sobre la calle desde 1741, para que lo vieran los vecinos desde lejos. En 1805, el papa Pío séptimo dijo misa en ella: había venido a París para la coronación de Napoleón.",
+        "Abierta desde 1954, Berthillon se va de vacaciones como buena parisina: justo cuando más calor hace y más turistas hay. Muy francés, ¿no? Si está abierta, vuelve a por un helado; sus sorbetes se venden también en varios cafés de la isla.",
         "Y aquí me despido. Has recorrido el París de los palacios escondidos: del mercado de los niños rojos al diario de un rey sin caza, de la plaza de los impuestos al jardín secreto de Sully, de los corazones de los reyes a la reina Margot y del club de la cuchara verde a esta isla que fue de las vacas. Ahora te toca a ti: busca un hueco en el muelle, mira cómo pasan los barcos y deja que París haga el resto. ¡Merci, y hasta la próxima!"
       ],
       "images": [
@@ -493,7 +493,7 @@
           "w": 1100,
           "h": 823,
           "para": 0,
-          "after": "Si sacas el móvil, la verás hacia 1853, todavía sin aguja.",
+          "after": "En la pantalla la tienes hacia 1853, todavía sin aguja.",
           "caption": "El ábside de Notre-Dame hacia 1853, todavía sin aguja",
           "credit": "Foto: Charles Marville · Museo Carnavalet · CC0",
           "source": "https://commons.wikimedia.org/wiki/File:Abside_de_Notre-Dame,_PH13166.jpg"
@@ -2344,5 +2344,62 @@
         2.353522
       ]
     ]
-  ]
+  ],
+  "audio": {
+    "base": "audio/paris/marais/",
+    "credit": "Voz generada con IA (ElevenLabs)",
+    "stops": {
+      "enfants-rouges": {
+        "paras": [
+          "enfants-rouges-p0.mp3",
+          "enfants-rouges-p1.mp3",
+          "enfants-rouges-p2.mp3",
+          "enfants-rouges-p3.mp3",
+          "enfants-rouges-p4.mp3"
+        ],
+        "quiz": "enfants-rouges-q.mp3",
+        "ok": "enfants-rouges-ok.mp3",
+        "ko": "enfants-rouges-ko.mp3",
+        "skip": "enfants-rouges-skip.mp3"
+      }
+    },
+    "files": {
+      "enfants-rouges-p0.mp3": {
+        "v": "37e93e7b",
+        "b": 487384
+      },
+      "enfants-rouges-p1.mp3": {
+        "v": "f6f097dd",
+        "b": 437647
+      },
+      "enfants-rouges-p2.mp3": {
+        "v": "103a38ba",
+        "b": 412151
+      },
+      "enfants-rouges-p3.mp3": {
+        "v": "909bad66",
+        "b": 427198
+      },
+      "enfants-rouges-p4.mp3": {
+        "v": "ded1e0a0",
+        "b": 587276
+      },
+      "enfants-rouges-q.mp3": {
+        "v": "fce12495",
+        "b": 211113
+      },
+      "enfants-rouges-ok.mp3": {
+        "v": "b752486e",
+        "b": 16344
+      },
+      "enfants-rouges-ko.mp3": {
+        "v": "39878e59",
+        "b": 88233
+      },
+      "enfants-rouges-skip.mp3": {
+        "v": "018dfc29",
+        "b": 91995
+      }
+    }
+  }
 }
