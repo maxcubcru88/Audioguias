@@ -374,6 +374,123 @@
             "organo-m2.mp3"
           ]
         }
+      },
+      "mayos": {
+        "paras": [
+          "mayos-p0.mp3",
+          "mayos-p1.mp3",
+          "mayos-p2.mp3",
+          "mayos-p3.mp3"
+        ],
+        "quiz": "mayos-q.mp3",
+        "ok": "mayos-ok.mp3",
+        "ko": "mayos-ko.mp3",
+        "skip": "mayos-skip.mp3"
+      },
+      "rosa-norte": {
+        "paras": [
+          "rosa-norte-p0.mp3",
+          "rosa-norte-p1.mp3",
+          "rosa-norte-p2.mp3",
+          "rosa-norte-p3.mp3"
+        ],
+        "quiz": "rosa-norte-q.mp3",
+        "ok": "rosa-norte-ok.mp3",
+        "ko": "rosa-norte-ko.mp3",
+        "skip": "rosa-norte-skip.mp3"
+      },
+      "crucero": {
+        "paras": [
+          "crucero-p0.mp3",
+          "crucero-p1.mp3",
+          "crucero-p2.mp3",
+          "crucero-p3.mp3",
+          "crucero-p4.mp3",
+          "crucero-p5.mp3"
+        ],
+        "quiz": "crucero-q.mp3",
+        "ok": "crucero-ok.mp3",
+        "ko": "crucero-ko.mp3",
+        "skip": "crucero-skip.mp3",
+        "more": {
+          "ask": "crucero-mas.mp3",
+          "paras": [
+            "crucero-m0.mp3",
+            "crucero-m1.mp3",
+            "crucero-m2.mp3"
+          ]
+        }
+      },
+      "cerca-coro": {
+        "paras": [
+          "cerca-coro-p0.mp3",
+          "cerca-coro-p1.mp3",
+          "cerca-coro-p2.mp3",
+          "cerca-coro-p3.mp3"
+        ],
+        "quiz": "cerca-coro-q.mp3",
+        "ok": "cerca-coro-ok.mp3",
+        "ko": "cerca-coro-ko.mp3",
+        "skip": "cerca-coro-skip.mp3"
+      },
+      "corona": {
+        "paras": [
+          "corona-p0.mp3",
+          "corona-p1.mp3",
+          "corona-p2.mp3",
+          "corona-p3.mp3",
+          "corona-p4.mp3"
+        ],
+        "quiz": "corona-q.mp3",
+        "ok": "corona-ok.mp3",
+        "ko": "corona-ko.mp3",
+        "skip": "corona-skip.mp3"
+      },
+      "voto": {
+        "paras": [
+          "voto-p0.mp3",
+          "voto-p1.mp3",
+          "voto-p2.mp3",
+          "voto-p3.mp3",
+          "voto-p4.mp3"
+        ],
+        "quiz": "voto-q.mp3",
+        "ok": "voto-ok.mp3",
+        "ko": "voto-ko.mp3",
+        "skip": "voto-skip.mp3"
+      },
+      "virgen-pilar": {
+        "paras": [
+          "virgen-pilar-p0.mp3",
+          "virgen-pilar-p1.mp3",
+          "virgen-pilar-p2.mp3",
+          "virgen-pilar-p3.mp3",
+          "virgen-pilar-p4.mp3"
+        ],
+        "quiz": "virgen-pilar-q.mp3",
+        "ok": "virgen-pilar-ok.mp3",
+        "ko": "virgen-pilar-ko.mp3",
+        "skip": "virgen-pilar-skip.mp3"
+      },
+      "salida": {
+        "paras": [
+          "salida-p0.mp3",
+          "salida-p1.mp3",
+          "salida-p2.mp3",
+          "salida-p3.mp3"
+        ],
+        "quiz": "salida-q.mp3",
+        "ok": "salida-ok.mp3",
+        "ko": "salida-ko.mp3",
+        "skip": "salida-skip.mp3",
+        "more": {
+          "ask": "salida-mas.mp3",
+          "paras": [
+            "salida-m0.mp3",
+            "salida-m1.mp3",
+            "salida-m2.mp3"
+          ]
+        }
       }
     },
     "files": {
@@ -428,6 +545,314 @@
       "organo-m2.mp3": {
         "v": "baeaa590",
         "b": 392925
+      },
+      "mayos-p0.mp3": {
+        "v": "57ebd1a6",
+        "b": 349039
+      },
+      "mayos-p1.mp3": {
+        "v": "a5b007e1",
+        "b": 412151
+      },
+      "mayos-p2.mp3": {
+        "v": "9bd9ede3",
+        "b": 381222
+      },
+      "mayos-p3.mp3": {
+        "v": "9bd995de",
+        "b": 188125
+      },
+      "mayos-q.mp3": {
+        "v": "a10b3af7",
+        "b": 185199
+      },
+      "mayos-ok.mp3": {
+        "v": "b752486e",
+        "b": 16344
+      },
+      "mayos-ko.mp3": {
+        "v": "81cd054c",
+        "b": 82799
+      },
+      "mayos-skip.mp3": {
+        "v": "78b8ca19",
+        "b": 86979
+      },
+      "rosa-norte-p0.mp3": {
+        "v": "ce05a9b7",
+        "b": 332739
+      },
+      "rosa-norte-p1.mp3": {
+        "v": "9a07a7e8",
+        "b": 396687
+      },
+      "rosa-norte-p2.mp3": {
+        "v": "4af6a261",
+        "b": 290525
+      },
+      "rosa-norte-p3.mp3": {
+        "v": "b7a255b5",
+        "b": 137970
+      },
+      "rosa-norte-q.mp3": {
+        "v": "50af468c",
+        "b": 178930
+      },
+      "rosa-norte-ok.mp3": {
+        "v": "b752486e",
+        "b": 18852
+      },
+      "rosa-norte-ko.mp3": {
+        "v": "0d34e18e",
+        "b": 67753
+      },
+      "rosa-norte-skip.mp3": {
+        "v": "271fe93a",
+        "b": 69007
+      },
+      "crucero-p0.mp3": {
+        "v": "19bb70d7",
+        "b": 359488
+      },
+      "crucero-p1.mp3": {
+        "v": "4070ccac",
+        "b": 505356
+      },
+      "crucero-p2.mp3": {
+        "v": "df9d02ff",
+        "b": 218636
+      },
+      "crucero-p3.mp3": {
+        "v": "4c6bba37",
+        "b": 383730
+      },
+      "crucero-p4.mp3": {
+        "v": "91df3bf6",
+        "b": 267119
+      },
+      "crucero-p5.mp3": {
+        "v": "5d9e1d20",
+        "b": 173915
+      },
+      "crucero-q.mp3": {
+        "v": "7127c65e",
+        "b": 139224
+      },
+      "crucero-ok.mp3": {
+        "v": "b752486e",
+        "b": 16344
+      },
+      "crucero-ko.mp3": {
+        "v": "bd8ebc2f",
+        "b": 54796
+      },
+      "crucero-skip.mp3": {
+        "v": "f3dc2bad",
+        "b": 58558
+      },
+      "crucero-mas.mp3": {
+        "v": "7d1442f3",
+        "b": 224906
+      },
+      "crucero-m0.mp3": {
+        "v": "c4856d89",
+        "b": 396687
+      },
+      "crucero-m1.mp3": {
+        "v": "a05da3b9",
+        "b": 273807
+      },
+      "crucero-m2.mp3": {
+        "v": "97e69f63",
+        "b": 404210
+      },
+      "cerca-coro-p0.mp3": {
+        "v": "4b36fbf0",
+        "b": 341516
+      },
+      "cerca-coro-p1.mp3": {
+        "v": "8b03e773",
+        "b": 328559
+      },
+      "cerca-coro-p2.mp3": {
+        "v": "da3fa04e",
+        "b": 458127
+      },
+      "cerca-coro-p3.mp3": {
+        "v": "6d230244",
+        "b": 167645
+      },
+      "cerca-coro-q.mp3": {
+        "v": "f9474a52",
+        "b": 224906
+      },
+      "cerca-coro-ok.mp3": {
+        "v": "b752486e",
+        "b": 16344
+      },
+      "cerca-coro-ko.mp3": {
+        "v": "9b882e2a",
+        "b": 82799
+      },
+      "cerca-coro-skip.mp3": {
+        "v": "00248394",
+        "b": 85725
+      },
+      "corona-p0.mp3": {
+        "v": "2d32ad9e",
+        "b": 427198
+      },
+      "corona-p1.mp3": {
+        "v": "ea520231",
+        "b": 265866
+      },
+      "corona-p2.mp3": {
+        "v": "81182ce3",
+        "b": 374953
+      },
+      "corona-p3.mp3": {
+        "v": "ceacd958",
+        "b": 429706
+      },
+      "corona-p4.mp3": {
+        "v": "a55877d0",
+        "b": 248311
+      },
+      "corona-q.mp3": {
+        "v": "d103e206",
+        "b": 183946
+      },
+      "corona-ok.mp3": {
+        "v": "b752486e",
+        "b": 16344
+      },
+      "corona-ko.mp3": {
+        "v": "fdfb1de5",
+        "b": 84471
+      },
+      "corona-skip.mp3": {
+        "v": "8ae74350",
+        "b": 91995
+      },
+      "voto-p0.mp3": {
+        "v": "f8c78450",
+        "b": 244132
+      },
+      "voto-p1.mp3": {
+        "v": "0759c1fe",
+        "b": 438901
+      },
+      "voto-p2.mp3": {
+        "v": "53f9e991",
+        "b": 399195
+      },
+      "voto-p3.mp3": {
+        "v": "8bdd4c08",
+        "b": 277568
+      },
+      "voto-p4.mp3": {
+        "v": "78655f7c",
+        "b": 198156
+      },
+      "voto-q.mp3": {
+        "v": "3f4dca0a",
+        "b": 136716
+      },
+      "voto-ok.mp3": {
+        "v": "b752486e",
+        "b": 16344
+      },
+      "voto-ko.mp3": {
+        "v": "4e093fbb",
+        "b": 70261
+      },
+      "voto-skip.mp3": {
+        "v": "6184fa93",
+        "b": 71515
+      },
+      "virgen-pilar-p0.mp3": {
+        "v": "32ad9f3c",
+        "b": 413405
+      },
+      "virgen-pilar-p1.mp3": {
+        "v": "f5ef5afa",
+        "b": 264612
+      },
+      "virgen-pilar-p2.mp3": {
+        "v": "5d306f61",
+        "b": 448932
+      },
+      "virgen-pilar-p3.mp3": {
+        "v": "42772862",
+        "b": 395433
+      },
+      "virgen-pilar-p4.mp3": {
+        "v": "0a3c821f",
+        "b": 181438
+      },
+      "virgen-pilar-q.mp3": {
+        "v": "71f9b750",
+        "b": 234101
+      },
+      "virgen-pilar-ok.mp3": {
+        "v": "b752486e",
+        "b": 16344
+      },
+      "virgen-pilar-ko.mp3": {
+        "v": "e95c6a81",
+        "b": 69007
+      },
+      "virgen-pilar-skip.mp3": {
+        "v": "52cf2d5a",
+        "b": 72768
+      },
+      "salida-p0.mp3": {
+        "v": "72fd85fc",
+        "b": 459381
+      },
+      "salida-p1.mp3": {
+        "v": "39392c86",
+        "b": 227831
+      },
+      "salida-p2.mp3": {
+        "v": "3e058c1d",
+        "b": 321036
+      },
+      "salida-p3.mp3": {
+        "v": "92dfcdc9",
+        "b": 435139
+      },
+      "salida-q.mp3": {
+        "v": "ec9e4433",
+        "b": 144239
+      },
+      "salida-ok.mp3": {
+        "v": "b752486e",
+        "b": 16344
+      },
+      "salida-ko.mp3": {
+        "v": "002c515a",
+        "b": 79038
+      },
+      "salida-skip.mp3": {
+        "v": "82a973a5",
+        "b": 80292
+      },
+      "salida-mas.mp3": {
+        "v": "dc58b9d7",
+        "b": 258342
+      },
+      "salida-m0.mp3": {
+        "v": "9a2be6a9",
+        "b": 230339
+      },
+      "salida-m1.mp3": {
+        "v": "4d00698f",
+        "b": 400448
+      },
+      "salida-m2.mp3": {
+        "v": "b9e1178c",
+        "b": 360742
       }
     }
   }
