@@ -128,7 +128,8 @@ def main():
         sid = st["id"]
         partes = list(st["paras"])
         if st.get("toNext"):
-            partes.append("Para ir a la siguiente parada: " + st["toNext"])
+            prefijo = "Para ir al siguiente punto: " if tour.get("type") == "visit" else "Para ir a la siguiente parada: "
+            partes.append(prefijo + st["toNext"])
         textos = []  # (archivo, texto, anterior, siguiente)
         q = st.get("quiz")
         for i, p in enumerate(partes):

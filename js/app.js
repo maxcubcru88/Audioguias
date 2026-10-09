@@ -77,7 +77,7 @@
     const sentences = s => s.replace(/([.!?…])\s+(?=[A-ZÁÉÍÓÚÑ¿¡«"])/g, '$1\u0001').split('\u0001').map(x => x.trim()).filter(Boolean);
     t.stops.forEach((st, i) => {
       const parts = st.paras.slice();
-      if (st.toNext) parts.push('Para ir a la siguiente parada: ' + st.toNext);
+      if (st.toNext) parts.push((isVisit(t) ? 'Para ir al siguiente punto: ' : 'Para ir a la siguiente parada: ') + st.toNext);
       const n = st.paras.length;
       // Historia para curiosos (opcional): la guía la ofrece y, si se acepta, la cuenta.
       // Sus párrafos se numeran después del «camino a la siguiente» (n + 1 + k) y la oferta, detrás (n + 1 + m).
@@ -122,7 +122,7 @@
         .sort((a, b) => a.para - b.para);
       recalcTimes(st);
       st.min = Math.max(1, Math.round(st.words / WPM));
-      st.legNext = t.legs[i] ? pathLen(t.legs[i]) : 0;
+      st.legNext = t.legs && t.legs[i] ? pathLen(t.legs[i]) : 0;
     });
     // Lista de audios de la ruta (para descargarlos y usarlos sin conexión)
     t.audioList = [];
@@ -135,6 +135,7 @@
         t.audioList.push({ u, b: (t.audio.files && t.audio.files[f] && t.audio.files[f].b) || 0 });
       }));
     }
+    t.legs = t.legs || [];
     t.totalM = t.legs.reduce((s, l) => s + pathLen(l), 0);
     const audioMin = t.stops.reduce((s, st) => s + st.words, 0) / WPM;
     t.totalH = (audioMin + t.totalM / 75 + t.stops.length * 3) / 60; // ~4,5 km/h y 3 min de margen por parada
@@ -197,6 +198,7 @@
   }
   function drawRoute() {
     markers.forEach(m => m.m.remove()); markers = [];
+    if (isVisit(tour)) { drawPlan(); return; }
     tour.stops.forEach((st, i) => {
       const el = document.createElement('button');
       el.type = 'button'; el.className = 'mk' + (i === tour.stops.length - 1 ? ' is-last' : '');
@@ -214,8 +216,35 @@
     map.fitBounds(routeBounds(), { padding: { top: 64, bottom: 220, left: 36, right: 64 }, duration: 0 });
     mapReady.then(() => { map.setPaintProperty('legs-main', 'line-color', routeColor()); refreshMap(); });
   }
-  function fitRoute() { map.fitBounds(routeBounds(), { padding: fitPad(), duration: 600 }); }
+  // Plano de la visita: un SVG (con los colores del tema) y encima las placas numeradas, que se tocan como en el mapa
+  let planToken = 0;
+  async function drawPlan() {
+    const box = $('#plan'), t = tour, pl = t.plan || {}, tok = ++planToken;
+    box.innerHTML = '<div class="plan-box" style="aspect-ratio:' + (pl.w || 760) + '/' + (pl.h || 340) + '"><div class="plan-svg"></div></div>';
+    const inner = box.firstChild;
+    t.stops.forEach((st, i) => {
+      const el = document.createElement('button');
+      el.type = 'button'; el.className = 'mk pk' + (i === t.stops.length - 1 ? ' is-last' : '');
+      el.style.left = (st.x / (pl.w || 760) * 100) + '%'; el.style.top = (st.y / (pl.h || 340) * 100) + '%';
+      el.setAttribute('aria-label', (i + 1) + '. ' + st.title);
+      el.innerHTML = '<span class="plaque">' + (i + 1) + '</span>';
+      el.addEventListener('click', e => {
+        e.stopPropagation();
+        if (S.mode === 'sim' && !S.visited.includes(i)) arrive(i);
+        else if (S.view !== i) openView(i);
+      });
+      inner.appendChild(el);
+      markers.push({ el, m: { remove: () => el.remove() } });
+    });
+    refreshMap();
+    try {
+      const svg = await fetch(pl.src).then(r => { if (!r.ok) throw 0; return r.text(); });
+      if (tok === planToken) inner.querySelector('.plan-svg').innerHTML = svg;
+    } catch (e) {}
+  }
+  function fitRoute() { if (isVisit(tour)) return; map.fitBounds(routeBounds(), { padding: fitPad(), duration: 600 }); }
   function flyTo(lat, lng, zoom) {
+    if (isVisit(tour) || !map) return;
     map.easeTo({ center: [lng, lat], zoom: zoom || Math.max(map.getZoom(), 16), offset: [0, -cardH / 2 + 20], duration: 600 });
   }
   function refreshMap() {
@@ -289,7 +318,7 @@
 
   function setMode(mode) {
     S.mode = mode; gpsError = ''; save();
-    $('#modeBadge').hidden = mode !== 'sim';
+    $('#modeBadge').hidden = mode !== 'sim' || isVisit(tour);
     $('#gpsIntro').checked = mode === 'gps';
     S.pos = null;
     if (userDot) { userDot.remove(); userDot = null; }
@@ -628,7 +657,7 @@
       const isArrival = i === S.arrived;
       h += '<button class="grab" id="grab" type="button" data-act="text" aria-label="' + (S.showText ? 'Ocultar texto' : 'Ver texto') + '"><span></span></button>' +
         '<div class="c-head"><span class="plaque">' + pad(i + 1) + '</span><div class="c-main">' +
-        '<p class="eyebrow' + (isArrival ? ' ok' : '') + '">' + (isArrival ? 'Has llegado' : 'Parada ' + (i + 1) + ' de ' + tour.stops.length) + '</p>' +
+        '<p class="eyebrow' + (isArrival ? ' ok' : '') + '">' + (isArrival ? (isVisit(tour) ? 'Punto ' + (i + 1) + ' de ' + tour.stops.length : 'Has llegado') : (isVisit(tour) ? 'Punto ' : 'Parada ') + (i + 1) + ' de ' + tour.stops.length) + '</p>' +
         '<h2 class="c-title">' + esc(st.title) + '</h2></div>' +
         (st.images.length ? '<button class="c-thumb" type="button" data-act="img" data-i="0" aria-label="Ver imágenes de la parada"><img src="' + esc(st.images[0].src) + '" alt="">' +
           (st.images.length > 1 ? '<span class="c-count">' + st.images.length + '</span>' : '') + '</button>' : '') +
@@ -646,11 +675,11 @@
           '<p class="where"><b>Dónde ponerte</b>' + esc(st.where) + '</p>' +
           st.paras.map((p, pi) => paraHTML(st, p, pi) + (st.more && moreBefore(st) === pi + 1 && pi + 1 < st.paras.length ? moreHTML(st) : '')).join('') +
           (st.more && moreBefore(st) >= st.paras.length ? moreHTML(st) : '') +
-          (st.toNext ? '<p class="next-box" data-p="' + st.paras.length + '"><b>Camino a la siguiente · ' + fmtDist(st.legNext) + '</b>' + esc(st.toNext) + '</p>' : '') +
+          (st.toNext ? '<p class="next-box" data-p="' + st.paras.length + '"><b>' + (isVisit(tour) ? 'Al siguiente punto' : 'Camino a la siguiente · ' + fmtDist(st.legNext)) + '</b>' + esc(st.toNext) + '</p>' : '') +
         '</div>';
     } else if (S.target == null) {
       h += '<div class="c-head"><span class="plaque">✓</span><div class="c-main"><p class="eyebrow ok">Recorrido completado</p><h2 class="c-title">¡Bravo!</h2></div></div>' +
-        '<p class="c-text">Has visitado las ' + tour.stops.length + ' paradas. Puedes volver a escuchar cualquiera tocando su número en el mapa.</p>' +
+        '<p class="c-text">' + (isVisit(tour) ? 'Has visto los ' + tour.stops.length + ' puntos. Puedes volver a escuchar cualquiera tocando su número en el plano.' : 'Has visitado las ' + tour.stops.length + ' paradas. Puedes volver a escuchar cualquiera tocando su número en el mapa.') + '</p>' +
         (Object.keys(S.score).length ? '<p class="score">Has acertado <b>' + Object.values(S.score).filter(Boolean).length + ' de ' + Object.keys(S.score).length + '</b> preguntas</p>' : '') +
         '<button class="btn btn-primary btn-big" type="button" data-act="restart">Empezar de nuevo</button>';
     } else {
@@ -659,13 +688,13 @@
       const prev = S.target > 0 ? tour.stops[S.target - 1] : null;
       const how = (prev && S.visited.includes(S.target - 1) && prev.toNext) ? prev.toNext : t.where;
       h += '<div class="c-head"><span class="plaque">' + pad(S.target + 1) + '</span><div class="c-main">' +
-        '<p class="eyebrow">' + (S.visited.length ? 'Siguiente parada' : 'Dónde empezamos') + '</p>' +
+        '<p class="eyebrow">' + (S.visited.length ? (isVisit(tour) ? 'Siguiente punto' : 'Siguiente parada') : 'Dónde empezamos') + '</p>' +
         '<h2 class="c-title">' + esc(t.title) + '</h2></div>' +
         (d != null ? '<span class="c-dist">' + fmtDist(d) + '</span>' : '') + '</div>' +
         '<p class="c-text">' + esc(how) + '</p>';
       if (!S.visited.length && S.target === 0) h += '<a class="link" href="' + esc(mapsUrl(meeting())) + '" target="_blank" rel="noopener">Cómo llegar con Google Maps</a>';
       if (S.mode === 'gps' && !S.pos) h += '<p class="c-text muted">' + esc(gpsError || 'Buscando tu posición…') + '</p>';
-      if (S.mode === 'sim') h += '<button class="btn btn-ghost btn-big" type="button" data-act="sim-go">Ya estoy aquí</button>';
+      if (S.mode === 'sim') h += '<button class="btn ' + (isVisit(tour) ? 'btn-primary' : 'btn-ghost') + ' btn-big" type="button" data-act="sim-go">' + (isVisit(tour) ? (S.visited.length ? 'Ya estoy en el punto ' + (S.target + 1) : 'Empezar') : 'Ya estoy aquí') + '</button>';
     }
     card.innerHTML = h;
     card.classList.toggle('is-open', S.view != null && S.showText);
@@ -736,6 +765,7 @@
     if (!('caches' in window) || !navigator.onLine) return;
     try {
       const c = await caches.open(MEDIA_CACHE);
+      if (tour.plan && tour.plan.src && !(await c.match(tour.plan.src))) { try { await c.add(tour.plan.src); } catch (e) {} }
       for (const st of tour.stops) {
         for (const im of st.images) { if (!(await c.match(im.src))) { try { await c.add(im.src); } catch (e) {} } }
       }
@@ -1062,10 +1092,12 @@
   function begin(mode) {
     unlockAudio(); requestWake();
     showScreen('tour');
-    map.resize();
+    const V = isVisit(tour);
+    if (!V) map.resize();
     measureCard();
-    setMode(mode);
-    if (!S.mapSaved) setTimeout(saveOffline, 4000);
+    setMode(V ? 'sim' : mode);
+    if (V) $('#modeBadge').hidden = true;
+    else if (!S.mapSaved) setTimeout(saveOffline, 4000);
     setTimeout(cacheImages, 2500);
   }
   function bind() {
@@ -1258,8 +1290,8 @@
     if (CM.sel && !CM.routes.some(x => x.r.id === CM.sel)) CM.sel = null;
     const lines = [], stops = [];
     CM.routes.forEach(({ r, t, color }) => {
-      lines.push({ type: 'Feature', properties: { rid: r.id, color }, geometry: { type: 'MultiLineString', coordinates: t.legs.map(l => l.map(ll)) } });
-      t.stops.forEach((st, i) => stops.push({ type: 'Feature', properties: { rid: r.id, color, i }, geometry: { type: 'Point', coordinates: [st.lng, st.lat] } }));
+      if (t.legs.length) lines.push({ type: 'Feature', properties: { rid: r.id, color }, geometry: { type: 'MultiLineString', coordinates: t.legs.map(l => l.map(ll)) } });
+      (isVisit(t) ? t.stops.slice(0, 1) : t.stops).forEach((st, i) => stops.push({ type: 'Feature', properties: { rid: r.id, color, i }, geometry: { type: 'Point', coordinates: [st.lng, st.lat] } }));
     });
     CM.map.getSource('cr').setData(fc(lines));
     CM.map.getSource('cs').setData(fc(stops));
@@ -1277,7 +1309,7 @@
 
   function cityBounds(list) {
     const b = new maplibregl.LngLatBounds();
-    list.forEach(({ t }) => t.legs.flat().forEach(p => b.extend(ll(p))));
+    list.forEach(({ t }) => { t.legs.flat().forEach(p => b.extend(ll(p))); t.stops.forEach(st => b.extend([st.lng, st.lat])); });
     return b;
   }
   function fitCity(instant) {
@@ -1321,7 +1353,7 @@
     clearCityMarkers();
     const cur = CM.routes.find(x => x.r.id === sel);
     if (cur) {
-      const sts = cur.t.stops, last = sts.length - 1;
+      const sts = isVisit(cur.t) ? cur.t.stops.slice(0, 1) : cur.t.stops, last = sts.length - 1;
       sts.forEach((st, i) => {
         const el = document.createElement('div');
         // La 1 y la última, más grandes; la última lleva la bandera a cuadros de llegada
@@ -1333,7 +1365,7 @@
       // Todas las rutas: dónde empieza y dónde acaba cada una
       CM.routes.forEach(({ t, color }) => {
         const a = t.stops[0], z = t.stops[t.stops.length - 1];
-        CM.marks.push(endMark('end', color, [z.lng, z.lat]));
+        if (!isVisit(t)) CM.marks.push(endMark('end', color, [z.lng, z.lat]));
         CM.marks.push(endMark('start', color, [a.lng, a.lat]));
       });
     }
@@ -1370,10 +1402,10 @@
       const done = (readJSON('audioguia-' + c.id + '-' + r.id + '-v1').visited || []).filter(i => t.stops[i]).length;
       // Tarjeta mínima, de una línea: toda ella lleva a la ruta. Para volver a ver todas, se toca el mapa o el nombre de la ruta.
       const s0 = t.stops[0];
-      let meta = t.stops.length + ' paradas · ' + fmtDist(t.totalM) + ' · ' + durText(t, true).replace('unas ', '');
+      let meta = statsText(t, true).replace('unas ', '');
       if (done) meta += ' · llevas ' + done + '/' + t.stops.length;
       else if (cityNear()) meta += ' · a ' + fmtDist(dist(CM.pos[0], CM.pos[1], s0.lat, s0.lng));
-      const go = done && done < t.stops.length ? 'Continuar ruta' : 'Empezar ruta';
+      const go = (done && done < t.stops.length ? 'Continuar ' : 'Empezar ') + (isVisit(t) ? 'visita' : 'ruta');
       card.className = 'cm-card';
       card.innerHTML = '<a class="cm-mini" href="#' + c.id + '/' + r.id + '" aria-label="' + go + ': ' + esc(t.title) + '">' +
         '<i class="rc-dot" style="background:' + esc(color) + '"></i>' +
@@ -1444,8 +1476,17 @@
   }
   const hoursText = t => (Math.round(t.totalH * 2) / 2).toString().replace('.', ',');
   // «una hora» / «unas 1,5 horas» (y en corto, «1 h» / «unas 1,5 h»)
-  const durText = (t, short) => { const h = hoursText(t); return h === '1' ? (short ? '1 h' : 'una hora') : 'unas ' + h + (short ? ' h' : ' horas'); };
+  const durText = (t, short) => {
+    if (isVisit(t)) { const m = Math.max(10, Math.round(t.totalH * 12) * 5); return short ? m + ' min' : 'unos ' + m + ' minutos'; }
+    const h = hoursText(t); return h === '1' ? (short ? '1 h' : 'una hora') : 'unas ' + h + (short ? ' h' : ' horas');
+  };
   const readyRoutes = c => (c.routes || []).filter(r => r.status === 'ready' && r.file);
+  // Visitas por dentro de un monumento (type: "visit"): sin GPS ni mapa, con un plano y avance manual
+  const isVisit = t => !!(t && t.type === 'visit');
+  const word = (t, pl) => isVisit(t) ? (pl ? 'puntos' : 'punto') : (pl ? 'paradas' : 'parada');
+  const statsText = (t, short) => isVisit(t)
+    ? t.stops.length + ' puntos · ' + (short ? '' : (t.place || 'por dentro') + ' · ') + durText(t, short)
+    : t.stops.length + ' paradas · ' + fmtDist(t.totalM) + (short ? '' : ' a pie') + ' · ' + durText(t, short);
 
   function leaveRoute() {
     if (!tour) return;
@@ -1453,6 +1494,7 @@
     markers.forEach(m => m.m.remove()); markers = [];
     if (userDot) { userDot.remove(); userDot = null; }
     tour = null; routeMeta = null; STORE = '';
+    document.body.classList.remove('is-visit'); $('#plan').hidden = true; $('#plan').innerHTML = ''; $('#map').hidden = false;
     S = fresh(); load();
     P.stop = -1; P.c = 0;
   }
@@ -1504,7 +1546,7 @@
       try {
         const t = await getTour(city, r);
         const el = list.querySelector('[data-meta="' + r.id + '"]');
-        if (el) el.textContent = t.stops.length + ' paradas · ' + fmtDist(t.totalM) + ' · ' + durText(t, true);
+        if (el) el.textContent = statsText(t, true);
       } catch (e) {}
     }
   }
@@ -1532,9 +1574,9 @@
     $('#introLabel').textContent = r.label || '';
     $('#introTitle').textContent = tour.title;
     $('#introSub').textContent = tour.subtitle + '.';
-    $('#introStats').textContent = tour.stops.length + ' paradas · ' + fmtDist(tour.totalM) + ' a pie · ' + durText(tour);
+    $('#introStats').textContent = statsText(tour);
     $('#sheetTitle').textContent = tour.title;
-    $('#sheetSub').textContent = tour.stops.length + ' paradas · ' + fmtDist(tour.totalM) + ' · ' + durText(tour, true);
+    $('#sheetSub').textContent = statsText(tour, true);
     refreshIntro();
     renderMeeting();
     const vc = $('#voiceCredit');
@@ -1549,8 +1591,17 @@
     $('#offlineMsg').textContent = S.mapSaved ? 'Mapa de la zona guardado: funciona sin datos.' : 'El mapa de la zona se guarda solo al empezar, para usarlo sin datos.';
     if (synth) loadVoices();
 
+    const V = isVisit(tour);
+    document.body.classList.toggle('is-visit', V);
+    $('#gpsRow').hidden = V;
+    $('#offlineMsg').hidden = V;
+    $('#btnLocate').hidden = V;
+    $('#plan').hidden = !V;
+    $('#map').hidden = V;
+    $('#startGps').dataset.word = V ? 'visita' : 'recorrido';
+    refreshIntro();
     showScreen('intro');
-    ensureMap();
+    if (!V) ensureMap();
     drawRoute();
     renderCard();
   }
@@ -1588,7 +1639,8 @@
   function refreshIntro() {
     if (!tour) return;
     $('#gpsIntro').checked = S.mode !== 'sim';
-    $('#startGps').textContent = (S.visited.length && S.target != null) ? 'Continuar el recorrido (' + S.visited.length + '/' + tour.stops.length + ')' : 'Empezar el recorrido';
+    const w = isVisit(tour) ? 'la visita' : 'el recorrido';
+    $('#startGps').textContent = (S.visited.length && S.target != null) ? 'Continuar ' + w + ' (' + S.visited.length + '/' + tour.stops.length + ')' : 'Empezar ' + w;
   }
 
   function router() {

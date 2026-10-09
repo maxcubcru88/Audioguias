@@ -51,6 +51,14 @@ button{cursor:pointer}
 
 /* ---------- Mapa ---------- */
 #map{position:fixed;inset:0;background:var(--line)}
+/* Visitas por dentro: un plano en lugar del mapa */
+#map[hidden],#plan[hidden]{display:none}
+#plan{position:fixed;inset:0;background:var(--bg);overflow:auto;padding:70px 6px calc(var(--card-h,240px) + 8px);display:flex;justify-content:center;align-items:center;transition:padding .25s}
+.plan-box{position:relative;height:100%;max-width:100%;max-height:100%}
+.plan-svg,.plan-svg svg{position:absolute;inset:0;width:100%;height:100%;display:block}
+.mk.pk{position:absolute;transform:translate(-50%,-50%);padding:4px}
+.mk.pk .plaque{min-width:26px;height:26px;font-size:15px}
+.mk.pk.is-next .plaque,.mk.pk.is-here .plaque{transform:scale(1.15)}
 .maplibregl-map{font-family:var(--f-body)}
 .maplibregl-ctrl-attrib{font-size:10px}
 .maplibregl-ctrl-bottom-right,.maplibregl-ctrl-bottom-left{bottom:var(--card-h,0px)}

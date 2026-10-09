@@ -16,11 +16,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:wght@700&display=swap">
 <link rel="stylesheet" href="vendor/maplibre/maplibre-gl.css">
-<link rel="stylesheet" href="css/app.css?v=36">
+<link rel="stylesheet" href="css/app.css?v=37">
 </head>
 <body>
 
 <div id="map" aria-label="Mapa del recorrido"></div>
+<div id="plan" aria-label="Plano de la visita" hidden></div>
 
 <!-- Interfaz de la ruta: botones del mapa y tarjeta -->
 <div id="tourUI" hidden>
@@ -81,7 +82,7 @@
     <p class="intro-stats" id="introStats"></p>
     <button class="btn btn-primary btn-big" id="startGps" type="button">Empezar el recorrido</button>
     <div class="opts-box">
-      <label class="switch-row" for="gpsIntro">
+      <label class="switch-row" for="gpsIntro" id="gpsRow">
         <span><span class="sw-title">Usar GPS</span><span class="help">Apágalo para avanzar tú, parada a parada. Sirve también para escucharla desde casa.</span></span>
         <input type="checkbox" id="gpsIntro" class="switch" checked>
       </label>
@@ -160,6 +161,6 @@
 <div id="toast" class="toast" hidden></div>
 
 <script src="vendor/maplibre/maplibre-gl.js"></script>
-<script src="js/app.js?v=39"></script>
+<script src="js/app.js?v=40"></script>
 </body>
 </html>

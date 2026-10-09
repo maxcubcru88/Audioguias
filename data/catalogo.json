@@ -56,6 +56,16 @@
           "color": "#B5487A",
           "file": "data/paris/marais.json",
           "status": "ready"
+        },
+        {
+          "id": "notre-dame",
+          "label": "Visita · Notre-Dame",
+          "title": "Notre-Dame por dentro",
+          "subtitle": "Una visita a la catedral, del gran órgano a la corona de espinas",
+          "color": "#B8862B",
+          "kind": "visit",
+          "file": "data/paris/notre-dame.json",
+          "status": "ready"
         }
       ],
       "icon": "icons/ciudades/paris.svg",

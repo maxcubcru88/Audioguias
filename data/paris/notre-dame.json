@@ -1,0 +1,353 @@
+{
+  "id": "notre-dame",
+  "city": "paris",
+  "type": "visit",
+  "place": "dentro de la catedral",
+  "title": "Notre-Dame por dentro",
+  "subtitle": "Una visita a la catedral, del gran órgano a la corona de espinas",
+  "lang": "es-ES",
+  "meeting": {
+    "name": "Notre-Dame de París, puerta central",
+    "address": "6 Parvis Notre-Dame - Pl. Jean-Paul II, 75004 París, Francia",
+    "note": "La entrada es gratuita, por la puerta central de la fachada; se puede reservar hora en la web oficial. Durante las misas, parte del recorrido puede estar cerrado. Lleva auriculares y baja el volumen."
+  },
+  "plan": {
+    "src": "img/paris/notre-dame/plano.svg",
+    "w": 520,
+    "h": 800
+  },
+  "stops": [
+    {
+      "id": "organo",
+      "title": "La nave y el gran órgano",
+      "subtitle": "Una catedral recién lavada",
+      "lat": 48.85297,
+      "lng": 2.34989,
+      "radius": 40,
+      "x": 260,
+      "y": 630,
+      "where": "Nada más entrar, a unos pasos de la puerta, junto a la gran pila bautismal de bronce, mirando hacia el altar.",
+      "paras": [
+        "Bienvenido a Notre-Dame. Ahora sí, por dentro. Si hiciste nuestra ruta del centro, ya la conoces por fuera; hoy vamos a recorrerla en nueve puntos, en unos cuarenta y cinco minutos. Aquí dentro el GPS no sirve de mucho, así que, cuando acabe cada punto, toca «Siguiente» y te diré adónde ir. Y un favor: esto es una iglesia viva, con misas y gente rezando. Volumen bajito y, si hay una celebración, paciencia.",
+        "Mira hacia delante: unos ciento veintiocho metros de largo y treinta y tres de alto hasta las bóvedas. Y fíjate en el color de la piedra. Tras el incendio de 2019 se limpió entera, con una especie de mascarilla de látex que se extendía sobre las paredes y, a los pocos días, se arrancaba con la suciedad pegada. Siglos de humo de velas, fuera. Quien la conocía de antes dice que ahora parece otra: rubia, luminosa, casi nueva. Ahora date la vuelta y mira hacia arriba, sobre la puerta: ese es el gran órgano, el más grande de Francia.",
+        "El fuego no lo tocó, pero el humo y el polvo de plomo sí. Así que lo desmontaron casi entero, lo limpiaron pieza a pieza y lo volvieron a montar. Volvió a sonar el 7 de diciembre de 2024, el día de la reapertura. Si tienes suerte y hay ensayo, lo vas a notar en el estómago.",
+        "El gran cuenco de bronce que tienes al lado es la pila bautismal, una de las piezas que se estrenaron con la reapertura. Las diseñó un mismo artista, Guillaume Bardet: la pila, el altar que verás más adelante, la sede del obispo y el atril de las lecturas. Todo de bronce oscuro, muy sencillo. Las sillas de roble también son nuevas: unas mil quinientas. A unos les parece demasiado moderno; a otros, justo lo que pedía la piedra limpia. Tú decides."
+      ],
+      "images": [],
+      "quiz": {
+        "before": 2,
+        "q": "¿Cuántos tubos crees que tiene el gran órgano de Notre-Dame?",
+        "options": [
+          "Unos ochocientos",
+          "Casi ocho mil",
+          "Más de treinta mil"
+        ],
+        "answer": 1
+      },
+      "more": {
+        "title": "El organista que murió tocando",
+        "ask": "Este órgano tiene una historia increíble: la de un organista casi ciego que tocó aquí durante treinta y siete años, hasta su último aliento. ¿Te la cuento? Si te apetece, toca «Cuéntame más». Si no, seguimos.",
+        "paras": [
+          "Se llamaba Louis Vierne. Nació en 1870 casi ciego, por unas cataratas de nacimiento, y aprendió música con partituras en braille. En 1900 ganó la plaza de organista titular de Notre-Dame, y durante treinta y siete años fue la voz de este órgano. Componía, improvisaba, y venía gente de media Europa a escucharle. En la app tienes su foto, hacia 1910.",
+          "Su vida fue una ristra de desgracias. Perdió a un hijo y a un hermano en la Primera Guerra Mundial, y un accidente le rompió una pierna y casi le impide volver a tocar los pedales. Mientras tanto, el órgano se caía a pedazos, así que él mismo se fue a Estados Unidos a dar conciertos para pagar su restauración.",
+          "El 2 de junio de 1937 dio aquí su concierto número mil setecientos cincuenta. Al final, leyó en braille el tema que le propuso el público para improvisar, eligió los registros… y se desplomó sobre el teclado, con el pie sobre un pedal. Dicen que la última nota se quedó sonando por toda la catedral. Murió donde había vivido: en el banco de su órgano."
+        ],
+        "images": [
+          {
+            "src": "img/paris/notre-dame/organo-mas.webp",
+            "w": 665,
+            "h": 900,
+            "para": 0,
+            "after": "En la app tienes su foto, hacia 1910.",
+            "caption": "Louis Vierne hacia 1910",
+            "credit": "Autor desconocido · Dominio público",
+            "source": "https://commons.wikimedia.org/wiki/File:Vierne_1910.JPG"
+          }
+        ]
+      },
+      "toNext": "Camina por la nave lateral de la izquierda, la del lado norte, hacia el fondo. Para junto a las capillas, donde verás cuadros enormes colgados."
+    },
+    {
+      "id": "mayos",
+      "title": "Los cuadros de mayo",
+      "subtitle": "Un regalo cada primavera durante casi ochenta años",
+      "lat": 48.85297,
+      "lng": 2.34989,
+      "radius": 40,
+      "x": 178,
+      "y": 540,
+      "where": "En la nave lateral norte, frente a uno de los grandes cuadros de las capillas.",
+      "paras": [
+        "Fíjate en estos cuadros enormes. Tienen un nombre curioso: los mayos. Durante casi ochenta años, entre 1630 y 1707, la cofradía de los orfebres de París regaló a la catedral un gran cuadro cada primero de mayo, encargado a los mejores pintores del momento. Setenta y seis en total.",
+        "Todo empezó con un árbol. Desde el siglo quince, cada primero de mayo los orfebres plantaban un árbol verde, un mayo, ante la catedral, en honor a la Virgen, que es la dueña de esta casa: Notre-Dame quiere decir Nuestra Señora. Con los años, el árbol se convirtió en un pequeño altar, luego en poemas, y al final en un gran cuadro. Vamos, que la cosa fue creciendo.",
+        "La Revolución se los llevó casi todos a otros sitios. Aquí quedan trece, recién restaurados y colgados de nuevo en las capillas de la nave en noviembre de 2024. Busca, por ejemplo, la Conversión de San Pablo, de Laurent de La Hyre, con el santo cayéndose del caballo, o el Martirio de San Andrés, de Charles Le Brun, el pintor que luego decoraría Versalles."
+      ],
+      "images": [],
+      "quiz": {
+        "before": 1,
+        "q": "¿Por qué crees que los orfebres regalaban un cuadro cada mes de mayo?",
+        "options": [
+          "Para pagar una deuda con el obispo",
+          "Por una vieja costumbre en honor a la Virgen",
+          "Para colgar su escudo en la catedral"
+        ],
+        "answer": 1
+      },
+      "toNext": "Sigue por la nave lateral hasta el crucero, donde la catedral se ensancha en forma de cruz. Gira a la izquierda y ponte bajo el gran rosetón del brazo norte."
+    },
+    {
+      "id": "rosa-norte",
+      "title": "El rosetón norte",
+      "subtitle": "Ochocientos años de luz",
+      "lat": 48.85297,
+      "lng": 2.34989,
+      "radius": 40,
+      "x": 160,
+      "y": 410,
+      "where": "En el brazo norte del crucero, mirando hacia arriba, al gran rosetón.",
+      "paras": [
+        "Y ahora, levanta la vista. Este rosetón mide unos trece metros de diámetro y tiene casi ochocientos años: se hizo hacia 1250. Y conserva gran parte de sus vidrios originales. Piénsalo: esa luz azul y roja que te cae encima es la misma que vieron los parisinos de la Edad Media.",
+        "En el centro está la Virgen con el Niño. A su alrededor, en círculos, los personajes del Antiguo Testamento: profetas, reyes, jueces, sacerdotes. Es una especie de árbol genealógico de cristal: todos los que, según la Biblia, prepararon la llegada de Jesús. Y ahora piensa en la noche del incendio, con el tejado ardiendo justo encima.",
+        "Fue casi un milagro. Con el tejado ardiendo encima y el plomo derretido cayendo, los grandes rosetones medievales aguantaron: solo hubo que limpiarlos de humo y de polvo. El rosetón sur, el de enfrente, es más joven, porque lo han rehecho varias veces. Ya lo verás al final."
+      ],
+      "images": [],
+      "quiz": {
+        "before": 2,
+        "q": "La noche del incendio de 2019, ¿qué crees que les pasó a los grandes rosetones?",
+        "options": [
+          "Se fundieron con el calor",
+          "Se salvaron todos",
+          "Los bomberos los sacaron enteros"
+        ],
+        "answer": 1
+      },
+      "toNext": "Da unos pasos hacia el centro del crucero, donde se cruzan los dos brazos, y mira hacia arriba, a la bóveda."
+    },
+    {
+      "id": "crucero",
+      "title": "El crucero",
+      "subtitle": "Donde cayó la aguja",
+      "lat": 48.85297,
+      "lng": 2.34989,
+      "radius": 40,
+      "x": 260,
+      "y": 410,
+      "where": "En el crucero, lo más cerca que puedas del centro, con el altar de bronce a la vista.",
+      "paras": [
+        "Estás en el punto más delicado de toda la catedral. Justo encima del altar, sobre la bóveda, se levanta la aguja. Y la noche del 15 de abril de 2019, hacia las ocho menos diez, la aguja en llamas se vino abajo y atravesó la bóveda, aquí mismo. Medio mundo lo vio en directo, y París lloraba en las orillas del Sena.",
+        "Los bomberos tardaron unas quince horas en dar el fuego por vencido. Durante la noche, todo dependió de una pregunta: ¿aguantarían las torres? Si caía la torre norte, con sus campanas, podía arrastrar media catedral. Un pequeño grupo de bomberos subió a luchar contra el fuego justo debajo de las campanas, y lo pararon. Hacia las once menos diez de la noche, el jefe de los bomberos anunció por fin que las torres se habían salvado. Y con ellas, la catedral.",
+        "Lo que ardió aquella noche fue la armadura del tejado: una maraña de vigas de madera del siglo trece, escondida sobre las bóvedas. Si sacas el móvil, la verás en una foto de 2018, un año antes del fuego.",
+        "Y con razón: para hacerla hicieron falta unos mil trescientos robles. Para la reconstrucción se hizo como en la Edad Media: robles franceses, cortados en invierno y labrados a mano, con hacha. Y la aguja se rehízo idéntica a la que diseñó en el siglo diecinueve Viollet-le-Duc, el gran restaurador de la catedral. Apúntate el nombre: va a salir más veces.",
+        "Y delante tienes el nuevo altar, de bronce oscuro. Por esta zona han pasado grandes momentos de la historia de Francia. Aquí se coronó Napoleón, en 1804: si hiciste nuestra ruta del centro, ya sabes que se puso la corona él solito."
+      ],
+      "images": [
+        {
+          "src": "img/paris/notre-dame/crucero.webp",
+          "w": 1000,
+          "h": 746,
+          "para": 2,
+          "after": "Si sacas el móvil, la verás en una foto de 2018, un año antes del fuego.",
+          "caption": "La armadura medieval del tejado, en 2018",
+          "credit": "Foto: Bernard Hasquenoph · CC BY-SA 4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Charpentes_Notre_Dame_2018_6.jpg"
+        }
+      ],
+      "quiz": {
+        "before": 3,
+        "q": "A esa armadura de madera los parisinos le tenían un apodo. ¿Cuál crees que era?",
+        "options": [
+          "El bosque",
+          "La jaula",
+          "El barco"
+        ],
+        "answer": 0
+      },
+      "more": {
+        "title": "La boda que acabó en matanza",
+        "ask": "Mucho antes de Napoleón, a las puertas de esta catedral se celebró la boda más famosa, y más trágica, de la historia de Francia. ¿Te la cuento? Si te apetece, toca «Cuéntame más». Si no, seguimos.",
+        "paras": [
+          "El 18 de agosto de 1572, París celebró la boda del año. Ella, Margarita de Valois, la reina Margot, hermana del rey de Francia y católica. Él, Enrique de Navarra, el jefe de los protestantes. La idea era sellar la paz después de años de guerras de religión. Si hiciste nuestra ruta del Marais, a Margot ya la conoces.",
+          "Pero había un problema: un protestante no podía oír misa. Así que se casaron fuera, en un estrado delante de la puerta de la catedral. Después, ella entró a la misa y él se quedó fuera, esperando fuera con sus caballeros. Una boda a medias.",
+          "Seis días después, la noche de San Bartolomé, empezó la matanza: miles de protestantes asesinados en París, muchos de ellos invitados a la boda. Enrique salvó la vida haciéndose católico. Años después sería el rey Enrique cuarto, y se le atribuye aquello de que París bien vale una misa. Aunque esa frase, como tantas, seguramente nunca la dijo."
+        ]
+      },
+      "toNext": "Rodea el coro por la izquierda, por el pasillo que lo envuelve, que se llama girola. Para frente a los relieves de piedra pintada del muro del coro."
+    },
+    {
+      "id": "cerca-coro",
+      "title": "El muro del coro",
+      "subtitle": "Un cómic de piedra de hace setecientos años",
+      "lat": 48.85297,
+      "lng": 2.34989,
+      "radius": 40,
+      "x": 206,
+      "y": 312,
+      "where": "En la girola norte, frente a los relieves de colores del muro que rodea el coro.",
+      "paras": [
+        "Esto que tienes delante es como un cómic de piedra de hace setecientos años. Es el muro que cierra el coro, la zona reservada a los canónigos, tallado con escenas de la vida de Jesús, pintadas y doradas. Se hizo a principios del siglo catorce, cuando muy poca gente sabía leer. Esto era la Biblia para todos los demás.",
+        "Ahí tienes la Visitación, el nacimiento con los pastores, los Reyes Magos, la matanza de los inocentes, la huida a Egipto, Jesús entre los doctores del templo… hasta la última cena y el huerto de los olivos. Y al otro lado del coro, en el muro sur, la historia sigue: lo que pasó después de la resurrección.",
+        "Las tallas sí son medievales, de los maestros Pierre de Chelles, Jean Ravy y Jean le Bouteiller. Pero los colores se rascaron y se repintaron en el siglo diecinueve, otra vez con Viollet-le-Duc al mando. Así que lo que ves es una Edad Media pasada por el siglo diecinueve: muy vistosa, aunque no exactamente como la vieron los parisinos de entonces. Eso sí, las catedrales medievales eran mucho más coloridas de lo que solemos imaginar."
+      ],
+      "images": [],
+      "quiz": {
+        "before": 2,
+        "q": "Esos colores tan vivos, ¿crees que son los originales de la Edad Media?",
+        "options": [
+          "Sí, intactos desde el siglo catorce",
+          "No, se repintaron en el siglo diecinueve",
+          "No, se pintaron después del incendio"
+        ],
+        "answer": 1
+      },
+      "toNext": "Sigue por la girola hasta el fondo de la catedral, detrás del altar mayor. Para frente a la capilla central, la del gran relicario de madera."
+    },
+    {
+      "id": "corona",
+      "title": "La corona de espinas",
+      "subtitle": "La reliquia más valiosa de la catedral",
+      "lat": 48.85297,
+      "lng": 2.34989,
+      "radius": 40,
+      "x": 260,
+      "y": 166,
+      "where": "En la girola, frente a la capilla central del fondo, la del gran relicario de madera.",
+      "paras": [
+        "Esta es la capilla más importante de la catedral, justo en su eje, detrás del altar mayor. Y aquí se guarda la reliquia más valiosa de Notre-Dame: la corona de espinas que, según la tradición, llevó Jesús en la cruz. Es un aro de juncos trenzados; las espinas se fueron repartiendo con los siglos por media Europa. Casi ocho siglos después de llegar a París, estuvo a punto de perderse.",
+        "La trajo a Francia el rey San Luis, en 1239. Se la compró al emperador de Constantinopla, que andaba escaso de dinero, por una fortuna: más de lo que le costó la Sainte-Chapelle, la capilla que mandó construir para guardarla, aquí al lado, en la isla.",
+        "La noche del incendio, el capellán de los bomberos de París, el padre Jean-Marc Fournier, entró con ellos en la catedral en llamas. Con bomberos, policías y personal de la catedral formaron una cadena humana y fueron sacando los tesoros de mano en mano, la corona entre ellos. Aquella noche salió de la catedral hacia un lugar seguro, y no volvió hasta la reapertura.",
+        "El relicario que ves es nuevo, de madera de cedro y más de tres metros de alto, diseñado por Sylvain Dubuisson. En el centro, una media esfera azul. La corona no está siempre a la vista: se guarda en una caja fuerte en la base y se muestra en días señalados. Si hoy no la ves, al menos ya sabes dónde duerme. En la app tienes el relicario anterior, de 1862, para que compares."
+      ],
+      "images": [
+        {
+          "src": "img/paris/notre-dame/corona.webp",
+          "w": 750,
+          "h": 1000,
+          "para": 3,
+          "after": "En la app tienes el relicario anterior, de 1862, para que compares.",
+          "caption": "El relicario de la corona de espinas de 1862, de Poussielgue-Rusand",
+          "credit": "Foto: Tangopaso · Dominio público",
+          "source": "https://commons.wikimedia.org/wiki/File:Reliquaire_de_la_Couronne_d'%C3%89pines_(1862).jpg"
+        }
+      ],
+      "quiz": {
+        "before": 2,
+        "q": "La noche del incendio, ¿quién crees que sacó la corona de la catedral?",
+        "options": [
+          "Un bombero que entró solo",
+          "Una cadena humana con el capellán de los bomberos",
+          "La policía, al día siguiente"
+        ],
+        "answer": 1
+      },
+      "toNext": "Sigue la girola, ahora por el lado sur. Pasarás junto a la entrada del tesoro, por si quieres verlo después. Para cuando, a tu derecha, entre las rejas del coro, veas un grupo de esculturas de mármol blanco."
+    },
+    {
+      "id": "voto",
+      "title": "El voto de Luis trece",
+      "subtitle": "Una promesa de rey y un hijo muy esperado",
+      "lat": 48.85297,
+      "lng": 2.34989,
+      "radius": 40,
+      "x": 318,
+      "y": 296,
+      "where": "En la girola sur, mirando a través de las rejas del coro hacia el grupo de esculturas de mármol blanco.",
+      "paras": [
+        "Al fondo del coro hay un grupo de esculturas de mármol blanco: la Virgen con Jesús muerto en el regazo, una Piedad. Y a los lados, dos reyes de rodillas: Luis trece, ofreciendo su corona, y su hijo, Luis catorce.",
+        "Tiene su historia. Luis trece y Ana de Austria llevaban más de veinte años casados y no tenían hijos. Si hiciste la ruta del Marais, te acordarás de las fiestas de su compromiso en la plaza de los Vosgos. En 1638, el rey consagró Francia a la Virgen y prometió renovar el altar de Notre-Dame. Ese mismo año nació por fin el heredero. Los franceses lo llamaron el regalo de Dios.",
+        "Luis trece murió antes de hacerlo, y el encargo se quedó en el cajón. Hasta que Luis catorce, ya mayor, decidió cumplir la promesa de su padre. Las obras del coro duraron de 1708 a 1725, así que ni siquiera él las vio terminadas: murió en 1715. Promesas de reyes: llegan, pero sin prisa.",
+        "Las sillerías de madera tallada del coro son de la misma época, y todo este conjunto salió casi intacto del incendio. Fíjate también en el muro del coro de este lado: sigue el cómic de piedra que viste en el norte, ahora con las apariciones de Jesús después de resucitar."
+      ],
+      "images": [],
+      "quiz": {
+        "before": 2,
+        "q": "¿Quién crees que acabó cumpliendo la promesa de renovar el altar?",
+        "options": [
+          "El propio Luis trece",
+          "Su hijo, Luis catorce",
+          "Napoleón"
+        ],
+        "answer": 1
+      },
+      "toNext": "Sigue por la girola hacia el crucero. Justo antes de llegar, en el pilar de la esquina, a tu derecha, verás una estatua de la Virgen con el Niño. Ponte frente a ella."
+    },
+    {
+      "id": "virgen-pilar",
+      "title": "La Virgen del pilar",
+      "subtitle": "La Virgen que da nombre a la catedral",
+      "lat": 48.85297,
+      "lng": 2.34989,
+      "radius": 40,
+      "x": 312,
+      "y": 372,
+      "where": "Junto al pilar sureste del crucero, frente a la estatua de la Virgen con el Niño.",
+      "paras": [
+        "Esta es Notre-Dame de París, así, con mayúsculas: la Virgen que da nombre a la catedral. Es una estatua del siglo catorce, que llegó a la catedral en 1818. Y, ¿quién si no?, fue Viollet-le-Duc quien la colocó en este pilar en 1855. Fíjate en la cadera ladeada y en cómo mira al Niño: es una de las imágenes más queridas de los parisinos.",
+        "A la mañana siguiente, entre escombros, agua y carbón, ahí estaba, en su pilar, sin un rasguño. Las fotos dieron la vuelta al mundo. La llevaron a otra iglesia mientras duraban las obras, y volvió en noviembre de 2024.",
+        "Y en este mismo rincón pasó algo que cambió la literatura francesa. En la Navidad de 1886, un joven de dieciocho años, que no creía en nada, entró por curiosidad a las vísperas. Mientras el coro cantaba el Magníficat, junto a este pilar, sintió una certeza que no le abandonaría nunca. Se llamaba Paul Claudel, y llegaría a ser uno de los grandes escritores de Francia.",
+        "Ahora mira hacia el brazo sur del crucero: ahí tienes el rosetón sur. En el centro está Cristo, rodeado de apóstoles, santos y ángeles: es el compañero del rosetón norte, el de la Virgen. A simple vista no se nota, pero este está un poquito girado: nuestro amigo Viollet-le-Duc lo rehízo en 1861 y lo giró unos quince grados."
+      ],
+      "images": [],
+      "quiz": {
+        "before": 1,
+        "q": "La noche del incendio, la bóveda se hundió a pocos metros de esta estatua. ¿Qué crees que le pasó?",
+        "options": [
+          "Quedó destrozada y esto es una copia",
+          "La encontraron intacta",
+          "La habían sacado días antes para restaurarla"
+        ],
+        "answer": 1
+      },
+      "toNext": "Sal al brazo sur del crucero y toma la nave lateral sur, hacia la salida, con las capillas a tu izquierda. Para a medio camino, junto a ellas."
+    },
+    {
+      "id": "salida",
+      "title": "Las vidrieras nuevas y la despedida",
+      "subtitle": "Polémica, un general y un adiós",
+      "lat": 48.85297,
+      "lng": 2.34989,
+      "radius": 40,
+      "x": 342,
+      "y": 548,
+      "where": "En la nave lateral sur, junto a las capillas, de camino a la salida.",
+      "paras": [
+        "Para estas capillas del lado sur, la catedral encargó unas vidrieras nuevas, contemporáneas, a la pintora Claire Tabouret, sobre el día de Pentecostés. Sustituyen a seis vidrieras del siglo diecinueve que sobrevivieron al incendio. Y han levantado mucha polémica: cientos de miles de personas firmaron en contra, y hubo recursos en los tribunales. Mira las ventanas: si ya están las nuevas, juzga tú mismo; si no, estás viendo las que se van.",
+        "El 26 de agosto de 1944, al día siguiente de la Liberación de París, aquí se celebró una ceremonia de acción de gracias con el general De Gaulle. En el móvil tienes a la multitud que le esperaba delante de la catedral.",
+        "Desde lo alto de las tribunas, alguien abrió fuego, y nunca se supo bien quién. La gente se tiró al suelo, pero De Gaulle siguió de pie, sin inmutarse. En lugar del Te Deum previsto, se cantó un Magníficat, más corto. Aquella imagen del general sin agacharse se convirtió en leyenda.",
+        "Y aquí me despido. Has recorrido Notre-Dame por dentro: del órgano que sobrevivió al fuego a los cuadros de mayo, del crucero donde cayó la aguja a la corona de San Luis, y de la promesa de un rey al rincón donde Claudel encontró la fe. Al salir, mira atrás un momento: ochocientos años, una revolución, una novela y un incendio, y aquí sigue. ¡Merci, y hasta la próxima!"
+      ],
+      "images": [
+        {
+          "src": "img/paris/notre-dame/salida.webp",
+          "w": 752,
+          "h": 1000,
+          "para": 1,
+          "after": "En el móvil tienes a la multitud que le esperaba delante de la catedral.",
+          "caption": "La multitud espera al general De Gaulle ante Notre-Dame, el 26 de agosto de 1944",
+          "credit": "Prefectura de Policía de París · Museo Carnavalet · CC0",
+          "source": "https://commons.wikimedia.org/wiki/File:Lib%C3%A9ration_de_Paris_-_26_ao%C3%BBt_1944_-_La_foule_attend_le_g%C3%A9n%C3%A9ral_de_Gaulle_devant_la_cath%C3%A9drale_Notre-Dame,_rue_de_la_Cit,_PH11024.jpg"
+        }
+      ],
+      "quiz": {
+        "before": 2,
+        "q": "¿Qué crees que pasó en plena ceremonia?",
+        "options": [
+          "Se fue la luz",
+          "Sonaron disparos dentro de la catedral",
+          "Repicaron todas las campanas a la vez"
+        ],
+        "answer": 1
+      },
+      "more": {
+        "title": "La campana que anunció la libertad",
+        "ask": "Dos días antes de esa ceremonia, la campana más grande de esta catedral anunció a París que llegaba la libertad. Y los primeros en llegar hablaban español. ¿Te lo cuento? Si te apetece, toca «Cuéntame más». Si no, nos despedimos.",
+        "paras": [
+          "En la torre sur de esta catedral vive Emmanuel, el gran bordón: una campana de unas trece toneladas, fundida en 1686, con Luis catorce de padrino. Solo suena en las grandes ocasiones.",
+          "La noche del 24 de agosto de 1944, unos pocos blindados de las tropas del general Leclerc entraron en París y llegaron hasta la plaza del Ayuntamiento, a unos pasos de aquí. Al saberlo, el bordón de Notre-Dame empezó a sonar, y detrás, poco a poco, las campanas de París. Después de cuatro años de ocupación, era la señal: ya están aquí.",
+          "Y ojo al dato: aquella avanzadilla era la Novena Compañía, la Nueve, formada en buena parte por republicanos españoles que habían perdido su guerra y seguían luchando en esta. Sus vehículos llevaban nombres como Guadalajara, Teruel o Ebro. Hoy, junto al Ayuntamiento, un jardín lleva su nombre: el de los combatientes de la Nueve."
+        ],
+        "before": 3
+      }
+    }
+  ],
+  "legs": []
+}
