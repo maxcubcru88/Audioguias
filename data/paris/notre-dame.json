@@ -349,5 +349,86 @@
       }
     }
   ],
-  "legs": []
+  "legs": [],
+  "audio": {
+    "base": "audio/paris/notre-dame/",
+    "credit": "Voz generada con IA (ElevenLabs)",
+    "stops": {
+      "organo": {
+        "paras": [
+          "organo-p0.mp3",
+          "organo-p1.mp3",
+          "organo-p2.mp3",
+          "organo-p3.mp3",
+          "organo-p4.mp3"
+        ],
+        "quiz": "organo-q.mp3",
+        "ok": "organo-ok.mp3",
+        "ko": "organo-ko.mp3",
+        "skip": "organo-skip.mp3",
+        "more": {
+          "ask": "organo-mas.mp3",
+          "paras": [
+            "organo-m0.mp3",
+            "organo-m1.mp3",
+            "organo-m2.mp3"
+          ]
+        }
+      }
+    },
+    "files": {
+      "organo-p0.mp3": {
+        "v": "858255ad",
+        "b": 488638
+      },
+      "organo-p1.mp3": {
+        "v": "814d8513",
+        "b": 597725
+      },
+      "organo-p2.mp3": {
+        "v": "b396e004",
+        "b": 323544
+      },
+      "organo-p3.mp3": {
+        "v": "076e1d8e",
+        "b": 489892
+      },
+      "organo-p4.mp3": {
+        "v": "9380ab2c",
+        "b": 180184
+      },
+      "organo-q.mp3": {
+        "v": "d6ff2e38",
+        "b": 132955
+      },
+      "organo-ok.mp3": {
+        "v": "b752486e",
+        "b": 16344
+      },
+      "organo-ko.mp3": {
+        "v": "7b8c21fb",
+        "b": 57304
+      },
+      "organo-skip.mp3": {
+        "v": "9cc55ac5",
+        "b": 65245
+      },
+      "organo-mas.mp3": {
+        "v": "5c288e05",
+        "b": 250819
+      },
+      "organo-m0.mp3": {
+        "v": "ba188083",
+        "b": 427198
+      },
+      "organo-m1.mp3": {
+        "v": "228eba04",
+        "b": 311005
+      },
+      "organo-m2.mp3": {
+        "v": "baeaa590",
+        "b": 392925
+      }
+    }
+  }
 }
