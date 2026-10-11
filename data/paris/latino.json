@@ -58,7 +58,15 @@
         ],
         "answer": 2
       },
-      "toNext": "Aquí al lado, a tu izquierda según miras la librería, está la verja de un pequeño jardín, el square René-Viviani. Entra y busca un árbol viejísimo, sujeto con muletas de hormigón."
+      "toNext": "Aquí al lado, a tu izquierda según miras la librería, está la verja de un pequeño jardín, el square René-Viviani. Entra y busca un árbol viejísimo, sujeto con muletas de hormigón.",
+      "spot": {
+        "src": "img/paris/latino/shakespeare-and-company-sitio.webp",
+        "w": 1600,
+        "h": 1200,
+        "caption": "Así es el sitio: la fachada verde de la librería, en la rue de la Bûcherie",
+        "credit": "Foto: Hcallas · CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Shakespeare_and_Company.JPG"
+      }
     },
     {
       "id": "saint-julien-le-pauvre",
@@ -97,7 +105,15 @@
         ],
         "answer": 1
       },
-      "toNext": "Sal del jardín a la calle de la iglesia, la rue Saint-Julien-le-Pauvre, y pasa por delante de su fachada. Al final, gira a la derecha por la rue Galande, cruza la rue Saint-Jacques y sigue de frente por la rue Saint-Séverin. La iglesia gótica que aparece a tu izquierda es la siguiente parada."
+      "toNext": "Sal del jardín a la calle de la iglesia, la rue Saint-Julien-le-Pauvre, y pasa por delante de su fachada. Al final, gira a la derecha por la rue Galande, cruza la rue Saint-Jacques y sigue de frente por la rue Saint-Séverin. La iglesia gótica que aparece a tu izquierda es la siguiente parada.",
+      "spot": {
+        "src": "img/paris/latino/saint-julien-le-pauvre-sitio.webp",
+        "w": 1600,
+        "h": 1200,
+        "caption": "Así es el sitio: el árbol apuntalado del square René-Viviani",
+        "credit": "Foto: Tangopaso · Dominio público",
+        "source": "https://commons.wikimedia.org/wiki/File:Robinier_St-Julien-le-Pauvre.jpg"
+      }
     },
     {
       "id": "saint-severin",
@@ -146,7 +162,15 @@
         ],
         "answer": 0
       },
-      "toNext": "Sigue por la rue Saint-Séverin hasta el bulevar Saint-Michel. Crúzalo hasta la placita de Saint-André-des-Arts, baja a la izquierda por la rue Danton hasta el bulevar Saint-Germain y síguelo a la derecha hasta la estatua de Danton. Allí, sube a la derecha por la rue de l'Ancienne-Comédie: el Procope está a unos sesenta metros."
+      "toNext": "Sigue por la rue Saint-Séverin hasta el bulevar Saint-Michel. Crúzalo hasta la placita de Saint-André-des-Arts, baja a la izquierda por la rue Danton hasta el bulevar Saint-Germain y síguelo a la derecha hasta la estatua de Danton. Allí, sube a la derecha por la rue de l'Ancienne-Comédie: el Procope está a unos sesenta metros.",
+      "spot": {
+        "src": "img/paris/latino/saint-severin-sitio.webp",
+        "w": 1600,
+        "h": 1200,
+        "caption": "Así es el sitio: la portada principal, en la rue des Prêtres-Saint-Séverin",
+        "credit": "Foto: Britchi Mirela · CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Paris%2C_France._EGLISE_SAINT-SEVERIN._%28Facade%29_%28PA00088419%29.jpg"
+      }
     },
     {
       "id": "le-procope",
@@ -217,6 +241,14 @@
             "after": "En el móvil tienes un grabado de aquella audiencia."
           }
         ]
+      },
+      "spot": {
+        "src": "img/paris/latino/le-procope-sitio.webp",
+        "w": 1600,
+        "h": 1200,
+        "caption": "Así es el sitio: la fachada del café, en la rue de l'Ancienne-Comédie",
+        "credit": "Foto: Beyond My Ken · CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:2018_Le_Procope_facade_on_Rue_de_l%27Ancienne_Com%C3%A9die.jpg"
       }
     },
     {
@@ -256,7 +288,15 @@
         ],
         "answer": 0
       },
-      "toNext": "Rodea el teatro por la derecha hasta la calle de atrás, la rue de Vaugirard. Enfrente está la verja del Jardín de Luxemburgo. Entra, deja a tu izquierda la Fuente Médicis y sigue recto, con el palacio a tu derecha, hasta el gran estanque."
+      "toNext": "Rodea el teatro por la derecha hasta la calle de atrás, la rue de Vaugirard. Enfrente está la verja del Jardín de Luxemburgo. Entra, deja a tu izquierda la Fuente Médicis y sigue recto, con el palacio a tu derecha, hasta el gran estanque.",
+      "spot": {
+        "src": "img/paris/latino/odeon-sitio.webp",
+        "w": 1600,
+        "h": 1200,
+        "caption": "Así es el sitio: el teatro, visto desde el centro de la plaza",
+        "credit": "Foto: Chabe01 · CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Th%C3%A9%C3%A2tre_Od%C3%A9on_-_Paris_VI_%28FR75%29_-_2024-03-24_-_1.jpg"
+      }
     },
     {
       "id": "luxembourg",
@@ -265,7 +305,7 @@
       "lat": 48.84661,
       "lng": 2.337,
       "radius": 60,
-      "where": "Junto al gran estanque redondo, en el lado del palacio. Busca una silla verde: aquí también las hay.",
+      "where": "Junto al gran estanque, en el lado de enfrente del palacio, con el agua y el palacio delante. Busca una silla verde: aquí también las hay.",
       "paras": [
         "Bienvenido al Jardín de Luxemburgo, el jardín favorito de los parisinos. Antes de los reyes ya hubo aquí villas romanas y, más tarde, un convento de monjes cartujos. Pero lo que ves se lo debemos a una reina: María de Médicis, la viuda de Enrique IV, que en 1612 compró estos terrenos para construirse un palacio que le recordara a su Florencia natal.",
         "Y ojo, que su boda no había sido un cuento de hadas. Mientras negociaba casarse con ella, Enrique IV le había firmado a su amante una promesa de matrimonio por escrito. Luego se casó con María, por la dote, y siguió con la amante como si nada. En el móvil tienes cómo lo pintó Rubens para ella: un rey que se enamora de un retrato. Cosas del marketing. Ya viuda, María se hizo este palacio a su gusto, pero le duró poco: perdió el pulso de poder con el cardenal Richelieu y en 1631 acabó en el exilio. Hoy el palacio es el Senado de Francia.",
@@ -317,14 +357,22 @@
             "after": "En la app tienes la escena tal como la pintó Rubens para este palacio."
           }
         ]
+      },
+      "spot": {
+        "src": "img/paris/latino/luxembourg-sitio.webp",
+        "w": 1600,
+        "h": 1200,
+        "caption": "Así es el sitio: el gran estanque, con el palacio al otro lado",
+        "credit": "Foto: The wub · CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Jardin_du_Luxembourg_2025-09-05_%281%29.jpg"
       }
     },
     {
       "id": "pantheon",
       "title": "Panteón",
       "subtitle": "La ciudad romana bajo tus pies y un templo para los grandes",
-      "lat": 48.8465,
-      "lng": 2.3443,
+      "lat": 48.84668,
+      "lng": 2.34341,
       "radius": 45,
       "where": "En la rue Soufflot, a la altura del cruce con la rue Saint-Jacques, mirando hacia las columnas y la cúpula.",
       "paras": [
@@ -378,6 +426,14 @@
             "after": "En el móvil tienes cómo lo dibujaron en 1902, cuando repitieron el experimento aquí mismo."
           }
         ]
+      },
+      "spot": {
+        "src": "img/paris/latino/pantheon-sitio.webp",
+        "w": 1600,
+        "h": 1200,
+        "caption": "Así es el sitio: la rue Soufflot, con el Panteón al fondo",
+        "credit": "Foto: iMahesh · CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Panth%C3%A9on_de_Paris_-_Main_facade_and_dome_framed_by_Rue_Soufflot_buildings.jpg"
       }
     },
     {
@@ -427,14 +483,22 @@
         ],
         "answer": 0
       },
-      "toNext": "Sal de la plaza hacia el bulevar Saint-Michel y síguelo a la derecha, cuesta abajo. Antes de llegar al bulevar Saint-Germain verás a tu derecha, tras una verja, unos muros muy antiguos de piedra y ladrillo. Ponte en la esquina de los dos bulevares."
+      "toNext": "Sal de la plaza hacia el bulevar Saint-Michel y síguelo a la derecha, cuesta abajo. Antes de llegar al bulevar Saint-Germain verás a tu derecha, tras una verja, unos muros muy antiguos de piedra y ladrillo. Ponte en la esquina de los dos bulevares.",
+      "spot": {
+        "src": "img/paris/latino/sorbonne-sitio.webp",
+        "w": 1600,
+        "h": 1200,
+        "caption": "Así es el sitio: las fuentes de la plaza y la capilla de la cúpula",
+        "credit": "Foto: randreu · CC BY 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Chapelle_Sainte-Ursule_de_la_Sorbonne_-_Paris_-_panoramio.jpg"
+      }
     },
     {
       "id": "cluny",
       "title": "Termas de Cluny",
       "subtitle": "Unas termas romanas en pleno bulevar",
-      "lat": 48.85105,
-      "lng": 2.34345,
+      "lat": 48.8512,
+      "lng": 2.34329,
       "radius": 40,
       "where": "En la esquina del bulevar Saint-Michel con el bulevar Saint-Germain, mirando los muros romanos tras la verja.",
       "paras": [
@@ -498,6 +562,14 @@
             "after": "Te lo he dejado en la app."
           }
         ]
+      },
+      "spot": {
+        "src": "img/paris/latino/cluny-sitio.webp",
+        "w": 1600,
+        "h": 1200,
+        "caption": "Así es el sitio: los muros romanos tras la verja, en el bulevar Saint-Michel",
+        "credit": "Foto: Artvill · CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Kiosques_%C3%A0_journaux_boulevard_Saint-Michel%2C_Paris%2C_octobre_2021.jpg"
       }
     }
   ],
@@ -852,17 +924,9 @@
       [
         48.84668,
         2.34341
-      ],
-      [
-        48.84649,
-        2.34429
       ]
     ],
     [
-      [
-        48.84649,
-        2.34429
-      ],
       [
         48.84668,
         2.34341
@@ -924,10 +988,6 @@
       [
         48.8512,
         2.34329
-      ],
-      [
-        48.85112,
-        2.34349
       ]
     ]
   ],
