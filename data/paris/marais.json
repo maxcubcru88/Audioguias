@@ -52,10 +52,10 @@
       "id": "archives",
       "title": "El palacio de Soubise",
       "subtitle": "Una princesa pelirroja y el diario de un rey",
-      "lat": 48.859333,
-      "lng": 2.357969,
+      "lat": 48.859704,
+      "lng": 2.357319,
       "radius": 45,
-      "where": "En la rue des Francs-Bourgeois, frente a la verja del número 60, mirando al patio rodeado de columnas.",
+      "where": "En la rue des Francs-Bourgeois, casi en la esquina con la rue des Archives, frente a la gran puerta con columnas que da al patio en herradura. Es la puerta abierta: las demás puertas de esta fachada, más adelante, suelen estar cerradas.",
       "paras": [
         "Mira qué patio: una herradura de columnas y, al fondo, un palacio que parece pensado para recibir carrozas. Es el palacio de Soubise, y lo que guarda hoy vale más que el edificio: son los Archivos Nacionales de Francia. Leyes, tratados, cartas de reyes… kilómetros y kilómetros de papeles. Es la memoria de Francia, ordenadita en cajas.",
         "El palacio lo compró en 1700 el príncipe de Soubise. Su mujer, Ana de Rohan, era una pelirroja de las que no pasaban desapercibidas en Versalles, y desde luego no le pasó desapercibida a Luis catorce: fue su amante durante unos años. En el móvil la tienes retratada. El marido, muy comprensivo, miraba para otro lado. Y el rey, agradecido, le hizo llegar sumas de dinero muy generosas. En la corte se decía que este palacio salió de ahí. Vamos, que a algunos los cuernos les salieron a cuenta.",
@@ -85,7 +85,15 @@
         ],
         "answer": 2
       },
-      "toNext": "Sigue por la rue des Francs-Bourgeois, gira a la derecha por la rue Vieille-du-Temple, enseguida a la izquierda por la rue du Marché-des-Blancs-Manteaux y, al final, a la derecha por la rue des Hospitalières-Saint-Gervais hasta la rue des Rosiers. Para ahí, donde empiezan las colas de los faláfeles."
+      "toNext": "Sigue por la rue des Francs-Bourgeois, gira a la derecha por la rue Vieille-du-Temple, enseguida a la izquierda por la rue du Marché-des-Blancs-Manteaux y, al final, a la derecha por la rue des Hospitalières-Saint-Gervais hasta la rue des Rosiers. Para ahí, donde empiezan las colas de los faláfeles.",
+      "spot": {
+        "src": "img/paris/marais/archives-sitio.webp",
+        "w": 1000,
+        "h": 750,
+        "caption": "Así es el sitio: la puerta del patio, a la izquierda, en la rue des Francs-Bourgeois",
+        "credit": "Foto: Romainbehar · CC0",
+        "source": "https://commons.wikimedia.org/wiki/File:Paris_3e_-_Rue_des_Francs-Bourgeois_-_H%C3%B4tel_de_Soubise_-_Entr%C3%A9e_principale.jpg"
+      }
     },
     {
       "id": "rosiers",
@@ -318,10 +326,10 @@
       "id": "hotel-de-sens",
       "title": "El palacio de Sens",
       "subtitle": "Un castillo de cuento en pleno París",
-      "lat": 48.853348,
-      "lng": 2.358768,
+      "lat": 48.8534,
+      "lng": 2.35922,
       "radius": 45,
-      "where": "En la rue du Figuier, frente a la fachada del palacio, con sus torrecillas y su gran puerta de arco.",
+      "where": "En la rue du Figuier, junto a la esquina con la rue de l'Hôtel-de-Ville, frente a la gran puerta en arco que hay entre dos torrecillas puntiagudas. El palacio ocupa toda la manzana: esta es la fachada de la entrada, no la del jardín.",
       "paras": [
         "¿Te parece que te has equivocado de siglo? Esto parece un castillo de cuento: torrecillas puntiagudas, una gran puerta en arco, tejados empinados. Es el palacio de Sens, levantado entre finales del siglo quince y principios del dieciséis, y junto al de Cluny, el del Barrio Latino, es una de las poquísimas casas nobles medievales que le quedan a París.",
         "Lo construyeron los arzobispos de Sens, una ciudad a más de cien kilómetros de aquí. ¿Y qué pintaban en París? Pues mandaban. Hasta 1622, París ni siquiera era arzobispado: su obispo dependía del de Sens. Así que el arzobispo necesitaba una casa en la capital, y se la hizo a lo grande. Después tuvo épocas peores: en el siglo diecinueve llegó a ser fábrica y taller, y hoy es una biblioteca de artes decorativas. En la app tienes cómo estaba en 1899, antes de su restauración.",
@@ -373,7 +381,15 @@
           }
         ]
       },
-      "toNext": "Baja por la rue du Figuier y la rue de l'Hôtel-de-Ville hasta el río, que está a un minuto. En el muelle, a tu derecha, verás el puente de piedra, el puente Marie: crúzalo y para en el centro."
+      "toNext": "Baja por la rue du Figuier y la rue de l'Hôtel-de-Ville hasta el río, que está a un minuto. En el muelle, a tu derecha, verás el puente de piedra, el puente Marie: crúzalo y para en el centro.",
+      "spot": {
+        "src": "img/paris/marais/hotel-de-sens-sitio.webp",
+        "w": 1000,
+        "h": 750,
+        "caption": "Así es el sitio: la fachada de la entrada, en la rue du Figuier",
+        "credit": "Foto: Florian Pépellin · CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:L%27H%C3%B4tel_de_Sens_%C3%A0_Paris_(juillet_2025).JPG"
+      }
     },
     {
       "id": "pont-marie",
@@ -662,174 +678,70 @@
         2.356979
       ],
       [
-        48.859905,
-        2.357186
+        48.860049,
+        2.356973
       ],
       [
-        48.85995,
-        2.357257
+        48.860035,
+        2.356957
       ],
       [
-        48.859941,
-        2.357273
+        48.860019,
+        2.356938
       ],
       [
-        48.859938,
-        2.357279
+        48.860009,
+        2.356925
       ],
       [
-        48.859929,
-        2.357266
+        48.859806,
+        2.357208
       ],
       [
-        48.859917,
-        2.357286
+        48.859759,
+        2.357243
       ],
       [
-        48.859926,
-        2.357298
-      ],
-      [
-        48.859914,
+        48.859704,
         2.357319
-      ],
-      [
-        48.859894,
-        2.357342
-      ],
-      [
-        48.859881,
-        2.357352
-      ],
-      [
-        48.85987,
-        2.357356
-      ],
-      [
-        48.859858,
-        2.357354
-      ],
-      [
-        48.859845,
-        2.357344
-      ],
-      [
-        48.859835,
-        2.357331
-      ],
-      [
-        48.859789,
-        2.357405
-      ],
-      [
-        48.859768,
-        2.357404
-      ],
-      [
-        48.859757,
-        2.357387
-      ],
-      [
-        48.85973,
-        2.357425
-      ],
-      [
-        48.859643,
-        2.357547
-      ],
-      [
-        48.859564,
-        2.357657
-      ],
-      [
-        48.859541,
-        2.35769
-      ],
-      [
-        48.859499,
-        2.357747
-      ],
-      [
-        48.859454,
-        2.35781
-      ],
-      [
-        48.859339,
-        2.357961
-      ],
-      [
-        48.859333,
-        2.357969
       ]
     ],
     [
       [
-        48.859333,
-        2.357969
+        48.859704,
+        2.357319
       ],
       [
-        48.859222,
-        2.358114
+        48.859239,
+        2.35796
       ],
       [
-        48.85922,
-        2.358117
+        48.859198,
+        2.358035
       ],
       [
-        48.859248,
-        2.358161
+        48.859042,
+        2.358236
       ],
       [
-        48.85924,
-        2.358171
+        48.859034,
+        2.358239
       ],
       [
-        48.859171,
-        2.358266
+        48.859013,
+        2.358247
       ],
       [
-        48.859128,
-        2.358325
+        48.858987,
+        2.358256
       ],
       [
-        48.859078,
-        2.358393
+        48.85898,
+        2.358258
       ],
       [
-        48.859007,
-        2.358491
-      ],
-      [
-        48.858883,
-        2.358661
-      ],
-      [
-        48.858867,
-        2.358682
-      ],
-      [
-        48.858848,
-        2.358709
-      ],
-      [
-        48.858783,
-        2.358798
-      ],
-      [
-        48.858775,
-        2.358752
-      ],
-      [
-        48.858758,
-        2.358717
-      ],
-      [
-        48.858739,
-        2.358682
-      ],
-      [
-        48.858717,
-        2.358641
+        48.858759,
+        2.358546
       ],
       [
         48.858705,
@@ -1834,23 +1746,23 @@
         2.359209
       ],
       [
-        48.853338,
-        2.3592
+        48.8534,
+        2.35922
+      ]
+    ],
+    [
+      [
+        48.8534,
+        2.35922
       ],
       [
-        48.853335,
-        2.359197
+        48.853338,
+        2.3592
       ],
       [
         48.853329,
         2.358962
       ],
-      [
-        48.853348,
-        2.358768
-      ]
-    ],
-    [
       [
         48.853348,
         2.358768

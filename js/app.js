@@ -672,7 +672,7 @@
             '<div class="times"><span id="tNow">0:00</span><span id="tTot">' + fmtTime(st.secs / (st.isAudio ? S.rate : 1)) + '</span></div></div>' +
         '</div>' +
         '<div class="c-body" id="cBody"' + (S.showText ? '' : ' hidden') + '>' +
-          '<p class="where"><b>Dónde ponerte</b>' + esc(st.where) + '</p>' +
+          '<p class="where"><b>Dónde ponerte</b>' + esc(st.where) + '</p>' + spotHTML(st) +
           st.paras.map((p, pi) => paraHTML(st, p, pi) + (st.more && moreBefore(st) === pi + 1 && pi + 1 < st.paras.length ? moreHTML(st) : '')).join('') +
           (st.more && moreBefore(st) >= st.paras.length ? moreHTML(st) : '') +
           (st.toNext ? '<p class="next-box" data-p="' + st.paras.length + '"><b>' + (isVisit(tour) ? 'Al siguiente punto' : 'Camino a la siguiente · ' + fmtDist(st.legNext)) + '</b>' + esc(st.toNext) + '</p>' : '') +
@@ -691,7 +691,7 @@
         '<p class="eyebrow">' + (S.visited.length ? (isVisit(tour) ? 'Siguiente punto' : 'Siguiente parada') : 'Dónde empezamos') + '</p>' +
         '<h2 class="c-title">' + esc(t.title) + '</h2></div>' +
         (d != null ? '<span class="c-dist">' + fmtDist(d) + '</span>' : '') + '</div>' +
-        '<p class="c-text">' + esc(how) + '</p>';
+        '<p class="c-text">' + esc(how) + '</p>' + spotHTML(t);
       if (!S.visited.length && S.target === 0) h += '<a class="link" href="' + esc(mapsUrl(meeting())) + '" target="_blank" rel="noopener">Cómo llegar con Google Maps</a>';
       if (S.mode === 'gps' && !S.pos) h += '<p class="c-text muted">' + esc(gpsError || 'Buscando tu posición…') + '</p>';
       if (S.mode === 'sim') h += '<button class="btn ' + (isVisit(tour) ? 'btn-primary' : 'btn-ghost') + ' btn-big" type="button" data-act="sim-go">' + (isVisit(tour) ? (S.visited.length ? 'Ya estoy en el punto ' + (S.target + 1) : 'Empezar') : 'Ya estoy aquí') + '</button>';
@@ -767,7 +767,7 @@
       const c = await caches.open(MEDIA_CACHE);
       if (tour.plan && tour.plan.src && !(await c.match(tour.plan.src))) { try { await c.add(tour.plan.src); } catch (e) {} }
       for (const st of tour.stops) {
-        for (const im of st.images) { if (!(await c.match(im.src))) { try { await c.add(im.src); } catch (e) {} } }
+        for (const im of st.images.concat(st.spot && st.spot.src ? [st.spot] : [])) { if (!(await c.match(im.src))) { try { await c.add(im.src); } catch (e) {} } }
       }
     } catch (e) {}
   }
@@ -1027,6 +1027,15 @@
     card.addEventListener('mousedown', e => start(e.clientY, e.target));
     window.addEventListener('mousemove', e => { if (y0 != null) move(e.clientY, e); });
     window.addEventListener('mouseup', e => end(e.clientY));
+  }
+
+  // Foto del sitio (campo «spot»): para reconocer dónde ponerse antes de llegar
+  function spotHTML(st) {
+    const s = st.spot;
+    if (!s || !s.src) return '';
+    return '<figure class="spot"><img src="' + esc(s.src) + '" alt="' + esc(s.caption || 'Así es el sitio') + '" loading="lazy"' +
+      (s.w ? ' width="' + s.w + '" height="' + s.h + '"' : '') + '>' +
+      '<figcaption>' + esc(s.caption || 'Así es el sitio') + (s.credit ? '<span class="credit">' + esc(s.credit) + '</span>' : '') + '</figcaption></figure>';
   }
 
   // ---------- Paradas y ajustes ----------
