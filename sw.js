@@ -1,6 +1,6 @@
 /* Service worker: la app y el recorrido funcionan sin conexión una vez abiertos.
    Al publicar cambios: sube VERSION aquí y el ?v= de css/js en index.html y en FILES. */
-const VERSION = 'v50';
+const VERSION = 'v51';
 const SHELL = 'shell-' + VERSION;
 const MAP = 'map-v1';
 const FONTS = 'fonts-v1';
@@ -19,6 +19,8 @@ const FILES = [
   'data/paris/marais.json',
   'data/paris/notre-dame.json',
   'img/paris/notre-dame/plano.svg',
+  'data/paris/arco-triunfo.json',
+  'img/paris/arco-triunfo/plano.svg',
   'data/londres/westminster.json',
   'data/londres/city.json',
   'vendor/maplibre/maplibre-gl.css',

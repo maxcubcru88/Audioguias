@@ -66,6 +66,16 @@
           "kind": "visit",
           "file": "data/paris/notre-dame.json",
           "status": "ready"
+        },
+        {
+          "id": "arco-triunfo",
+          "label": "Visita · Arco de Triunfo",
+          "title": "El Arco de Triunfo",
+          "subtitle": "Una visita desde abajo: el Arco, los Campos Elíseos y la plaza de la Estrella",
+          "color": "#8C5A3C",
+          "kind": "visit",
+          "file": "data/paris/arco-triunfo.json",
+          "status": "ready"
         }
       ],
       "icon": "icons/ciudades/paris.svg",

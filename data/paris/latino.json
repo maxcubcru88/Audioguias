@@ -308,6 +308,7 @@
       "where": "Junto al gran estanque, en el lado de enfrente del palacio, con el agua y el palacio delante. Busca una silla verde: aquí también las hay.",
       "paras": [
         "Bienvenido al Jardín de Luxemburgo, el jardín favorito de los parisinos. Antes de los reyes ya hubo aquí villas romanas y, más tarde, un convento de monjes cartujos. Pero lo que ves se lo debemos a una reina: María de Médicis, la viuda de Enrique IV, que en 1612 compró estos terrenos para construirse un palacio que le recordara a su Florencia natal.",
+        "Por cierto, ¿te has fijado en la fuente que has dejado a la izquierda al entrar, la de la gruta? Es la Fuente Médicis, de hacia 1630: María la quería como las grutas de los jardines de su Florencia. En el siglo diecinueve la movieron unos treinta metros para abrir una calle y le añadieron ese estanque alargado. Arriba, en el centro, el cíclope Polifemo, en bronce, pilla a los enamorados Acis y Galatea, en mármol blanco. Según el mito, los celos del gigante le costaron la vida al pobre Acis: lo aplastó con una roca. Mal sitio para una cita.",
         "Y ojo, que su boda no había sido un cuento de hadas. Mientras negociaba casarse con ella, Enrique IV le había firmado a su amante una promesa de matrimonio por escrito. Luego se casó con María, por la dote, y siguió con la amante como si nada. En el móvil tienes cómo lo pintó Rubens para ella: un rey que se enamora de un retrato. Cosas del marketing. Ya viuda, María se hizo este palacio a su gusto, pero le duró poco: perdió el pulso de poder con el cardenal Richelieu y en 1631 acabó en el exilio. Hoy el palacio es el Senado de Francia.",
         "Al duque Decazes, que mandaba en el palacio, le parecían demasiados desnudos para un jardín respetable, y encargó una tanda de reinas bien vestidas para poner orden. La decencia por decreto. Aunque, entre tú y yo, los desnudos siguen ahí.",
         "Y ahora, las famosas sillas verdes. Hay unas cuatro mil quinientas, son gratis desde 1974 y pesan más de siete kilos cada una, para que no se las lleve el viento... ni nadie con demasiado cariño por el mobiliario. En el estanque, los niños empujan barquitos de vela con un palo, como hace más de cien años. Y en el lado oeste del jardín hay una pequeña Estatua de la Libertad, de Bartholdi, el mismo escultor de la de Nueva York. La hermana pequeña, vamos.",
@@ -318,7 +319,7 @@
           "src": "img/paris/latino/luxembourg.webp",
           "w": 870,
           "h": 1100,
-          "para": 1,
+          "para": 2,
           "after": "En el móvil tienes cómo lo pintó Rubens para ella: un rey que se enamora de un retrato. Cosas del marketing.",
           "caption": "Enrique IV recibe el retrato de María de Médicis, de Rubens",
           "credit": "Pedro Pablo Rubens · Museo del Louvre · Dominio público",
@@ -326,7 +327,7 @@
         }
       ],
       "quiz": {
-        "before": 2,
+        "before": 3,
         "q": "Alrededor del estanque hay veinte estatuas de reinas y mujeres ilustres de Francia. Se encargaron en el siglo diecinueve por un motivo muy curioso. ¿Cuál crees que fue?",
         "options": [
           "Para celebrar una boda real",
@@ -404,7 +405,7 @@
         ],
         "answer": 1
       },
-      "toNext": "Baja por la rue Soufflot hasta el bulevar Saint-Michel y gira a la derecha. A unos cien metros, a tu derecha, se abre una plaza con fuentes y una cúpula al fondo: la plaza de la Sorbona.",
+      "toNext": "Sube por la rue Soufflot hasta la plaza del Panteón y rodéalo por la izquierda, por el lado de la biblioteca. Al fondo, en la esquina, aparece una iglesia con una fachada muy curiosa, de tres frontones uno encima de otro. Ponte delante.",
       "more": {
         "title": "El día que París vio girar la Tierra",
         "ask": "¿Tienes un par de minutos? Te cuento cómo un estudiante de medicina que se mareaba con la sangre consiguió que medio París viniera a ver girar la Tierra. Si te apetece, toca «Cuéntame más». Si no, seguimos.",
@@ -435,6 +436,54 @@
         "credit": "Foto: iMahesh · CC BY-SA 4.0",
         "source": "https://commons.wikimedia.org/wiki/File:Panth%C3%A9on_de_Paris_-_Main_facade_and_dome_framed_by_Rue_Soufflot_buildings.jpg"
       }
+    },
+    {
+      "id": "saint-etienne-du-mont",
+      "title": "Saint-Étienne-du-Mont",
+      "subtitle": "La casa de santa Genoveva, el último jubé de París y una cita a medianoche",
+      "lat": 48.84664,
+      "lng": 2.34725,
+      "radius": 35,
+      "where": "En la plaza Sainte-Geneviève, frente a la fachada de los tres frontones, con el Panteón a tu espalda.",
+      "paras": [
+        "¿Te acuerdas de santa Genoveva, la patrona de París, la que estaba enterrada en esta colina? Justo al lado, donde hoy está el instituto Henri-IV, hubo durante más de mil años una gran abadía con su nombre. Allí la enterraron a ella, y allí estaba enterrado también Clodoveo, el primer rey franco que se hizo cristiano. La torre que asoma a la derecha es casi lo único que queda de aquella iglesia.",
+        "El barrio creció tanto que los vecinos ya no cabían en su parroquia, así que en 1492, el año en que Colón llegó a América, empezaron esta iglesia, pegada a la abadía. Tardaron más de un siglo en acabarla, y se nota: por dentro es gótica, pero la fachada ya es renacentista, con tres frontones uno encima de otro, como una tarta de pisos. Como si el arquitecto no acabara de decidirse.",
+        "Si está abierta, entra un momento, porque dentro esconde algo único: el último jubé de París. Un jubé es una especie de puente de piedra que separaba a los fieles del coro de los curas. Este tiene dos escaleras de caracol que suben sin apoyo, caladas como un encaje. Antes los había en muchas iglesias, pero se fueron derribando porque tapaban la vista del altar. Este, terminado en 1545, se libró. Si no puedes entrar, en el móvil lo tienes.",
+        "Aquí dentro descansan dos genios: Blaise Pascal, el matemático y filósofo que inventó una de las primeras calculadoras, y el dramaturgo Jean Racine. Y en una capilla está la estrella de la casa: el relicario de santa Genoveva.",
+        "En 1793, los revolucionarios fundieron el oro del relicario y quemaron sus huesos en la plaza de Grève, la del Ayuntamiento. Dicen que las cenizas acabaron en el Sena. Se salvó la piedra de su primera tumba, y eso es lo que se venera aquí. Y su gran iglesia nueva, la que le había prometido Luis XV, acabó convertida en el Panteón. La patrona de París, desahuciada en su propio barrio. Ahí es nada.",
+        "Y una última cosa, para cinéfilos. En la película Midnight in Paris, de Woody Allen, el protagonista se sienta en unos escalones junto a esta iglesia, dan las doce y aparece un coche antiguo que se lo lleva al París de los años veinte, a tomar copas con Hemingway y Fitzgerald. Sí, el mismo Hemingway que cazaba palomas en el Luxemburgo. Si pasas por aquí a medianoche, prueba suerte. Yo no prometo nada."
+      ],
+      "images": [
+        {
+          "src": "img/paris/latino/saint-etienne-du-mont.webp",
+          "w": 1100,
+          "h": 733,
+          "para": 2,
+          "after": "Si no puedes entrar, en el móvil lo tienes.",
+          "caption": "El jubé de Saint-Étienne-du-Mont, terminado en 1545",
+          "credit": "Foto: Miguel Hermoso Cuesta · CC BY-SA 3.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Jub%C3%A9_Saint_%C3%89tienne_du_Mont._01.JPG"
+        }
+      ],
+      "quiz": {
+        "before": 4,
+        "q": "Durante siglos, los restos de Genoveva estuvieron en la abadía de al lado, en un relicario de oro y piedras preciosas. ¿Qué crees que pasó con ellos en la Revolución?",
+        "options": [
+          "Unos monjes los escondieron en las catacumbas",
+          "Se los llevaron a Roma",
+          "Los quemaron en una plaza"
+        ],
+        "answer": 2
+      },
+      "spot": {
+        "src": "img/paris/latino/saint-etienne-du-mont-sitio.webp",
+        "w": 1600,
+        "h": 1200,
+        "caption": "Así es el sitio: la fachada de los tres frontones, con la torre de la antigua abadía a la derecha",
+        "credit": "Foto: Francisco Anzola · CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Saint-%C3%89tienne-du-Mont%2C_Paris_23_July_2013.jpg"
+      },
+      "toNext": "Vuelve hacia la rue Soufflot por el lado de la biblioteca y, antes de llegar, baja a la derecha por la rue Cujas, cruzando la rue Saint-Jacques. En la rue Victor-Cousin, gira a la derecha: enseguida, a tu izquierda, se abre la plaza de la Sorbona."
     },
     {
       "id": "sorbonne",
@@ -932,24 +981,278 @@
         2.34341
       ],
       [
-        48.84682,
-        2.3427
+        48.84671,
+        2.34343
       ],
       [
-        48.84703,
-        2.3418
+        48.84672,
+        2.34343
       ],
       [
-        48.84722,
-        2.34102
+        48.84651,
+        2.34436
+      ],
+      [
+        48.84657,
+        2.34439
+      ],
+      [
+        48.84655,
+        2.34449
+      ],
+      [
+        48.8468,
+        2.34524
+      ],
+      [
+        48.84677,
+        2.34527
+      ],
+      [
+        48.84677,
+        2.34529
+      ],
+      [
+        48.84678,
+        2.3453
+      ],
+      [
+        48.84662,
+        2.34597
+      ],
+      [
+        48.84663,
+        2.34599
+      ],
+      [
+        48.84664,
+        2.346
+      ],
+      [
+        48.8467,
+        2.34603
+      ],
+      [
+        48.84671,
+        2.34605
+      ],
+      [
+        48.84671,
+        2.34607
+      ],
+      [
+        48.84667,
+        2.34627
+      ],
+      [
+        48.84663,
+        2.34647
+      ],
+      [
+        48.84668,
+        2.3465
+      ],
+      [
+        48.84658,
+        2.34694
+      ],
+      [
+        48.84651,
+        2.34724
+      ],
+      [
+        48.84645,
+        2.34737
+      ],
+      [
+        48.84641,
+        2.34751
+      ],
+      [
+        48.84644,
+        2.34752
+      ],
+      [
+        48.84645,
+        2.34746
+      ],
+      [
+        48.84647,
+        2.3474
+      ],
+      [
+        48.84651,
+        2.34732
+      ],
+      [
+        48.84658,
+        2.34718
+      ],
+      [
+        48.84659,
+        2.34716
+      ],
+      [
+        48.84661,
+        2.34715
+      ],
+      [
+        48.84662,
+        2.34717
+      ],
+      [
+        48.84664,
+        2.34723
+      ],
+      [
+        48.84664,
+        2.34725
+      ]
+    ],
+    [
+      [
+        48.84664,
+        2.34725
+      ],
+      [
+        48.84669,
+        2.34691
+      ],
+      [
+        48.84677,
+        2.34655
+      ],
+      [
+        48.84678,
+        2.34651
+      ],
+      [
+        48.84678,
+        2.3465
+      ],
+      [
+        48.84679,
+        2.34645
+      ],
+      [
+        48.8468,
+        2.3464
+      ],
+      [
+        48.8468,
+        2.34638
+      ],
+      [
+        48.84681,
+        2.34635
+      ],
+      [
+        48.84705,
+        2.34526
+      ],
+      [
+        48.84723,
+        2.34459
+      ],
+      [
+        48.84737,
+        2.34379
+      ],
+      [
+        48.84739,
+        2.34379
+      ],
+      [
+        48.8474,
+        2.34377
+      ],
+      [
+        48.84741,
+        2.34373
+      ],
+      [
+        48.84741,
+        2.34372
+      ],
+      [
+        48.84742,
+        2.34369
+      ],
+      [
+        48.84743,
+        2.34365
+      ],
+      [
+        48.84744,
+        2.34361
+      ],
+      [
+        48.84744,
+        2.3436
+      ],
+      [
+        48.84743,
+        2.34356
       ],
       [
         48.84761,
-        2.3412
+        2.34307
       ],
       [
-        48.84876,
-        2.34188
+        48.84782,
+        2.34253
+      ],
+      [
+        48.84784,
+        2.34251
+      ],
+      [
+        48.84785,
+        2.3425
+      ],
+      [
+        48.84787,
+        2.34247
+      ],
+      [
+        48.8479,
+        2.34241
+      ],
+      [
+        48.84791,
+        2.34241
+      ],
+      [
+        48.84807,
+        2.34251
+      ],
+      [
+        48.84838,
+        2.34271
+      ],
+      [
+        48.8484,
+        2.34272
+      ],
+      [
+        48.84842,
+        2.34273
+      ],
+      [
+        48.84845,
+        2.34275
+      ],
+      [
+        48.84857,
+        2.34228
+      ],
+      [
+        48.84862,
+        2.34227
+      ],
+      [
+        48.84866,
+        2.34228
       ],
       [
         48.84868,
@@ -1081,7 +1384,8 @@
           "luxembourg-p2.mp3",
           "luxembourg-p3.mp3",
           "luxembourg-p4.mp3",
-          "luxembourg-p5.mp3"
+          "luxembourg-p5.mp3",
+          "luxembourg-p6.mp3"
         ],
         "quiz": "luxembourg-q.mp3",
         "ok": "luxembourg-ok.mp3",
@@ -1155,6 +1459,21 @@
             "cluny-m3.mp3"
           ]
         }
+      },
+      "saint-etienne-du-mont": {
+        "paras": [
+          "saint-etienne-du-mont-p0.mp3",
+          "saint-etienne-du-mont-p1.mp3",
+          "saint-etienne-du-mont-p2.mp3",
+          "saint-etienne-du-mont-p3.mp3",
+          "saint-etienne-du-mont-p4.mp3",
+          "saint-etienne-du-mont-p5.mp3",
+          "saint-etienne-du-mont-p6.mp3"
+        ],
+        "quiz": "saint-etienne-du-mont-q.mp3",
+        "ok": "saint-etienne-du-mont-ok.mp3",
+        "ko": "saint-etienne-du-mont-ko.mp3",
+        "skip": "saint-etienne-du-mont-skip.mp3"
       }
     },
     "files": {
@@ -1383,24 +1702,28 @@
         "b": 409226
       },
       "luxembourg-p1.mp3": {
-        "v": "ea7d5d8d",
-        "b": 607756
+        "v": "beee6dee",
+        "b": 591038
       },
       "luxembourg-p2.mp3": {
-        "v": "e485678c",
-        "b": 263358
+        "v": "ea7d5d8d",
+        "b": 619459
       },
       "luxembourg-p3.mp3": {
-        "v": "7d29df24",
-        "b": 511626
+        "v": "e485678c",
+        "b": 264612
       },
       "luxembourg-p4.mp3": {
-        "v": "00da21a9",
-        "b": 332739
+        "v": "7d29df24",
+        "b": 499087
       },
       "luxembourg-p5.mp3": {
+        "v": "00da21a9",
+        "b": 328559
+      },
+      "luxembourg-p6.mp3": {
         "v": "8fb6b4c5",
-        "b": 272553
+        "b": 271299
       },
       "luxembourg-q.mp3": {
         "v": "0348c28a",
@@ -1459,8 +1782,8 @@
         "b": 775358
       },
       "pantheon-p5.mp3": {
-        "v": "f172abe5",
-        "b": 230339
+        "v": "8c4d9c5c",
+        "b": 278822
       },
       "pantheon-q.mp3": {
         "v": "b62e6eea",
@@ -1593,6 +1916,50 @@
       "cluny-m3.mp3": {
         "v": "d1a8cb37",
         "b": 432631
+      },
+      "saint-etienne-du-mont-p0.mp3": {
+        "v": "dede54c4",
+        "b": 400448
+      },
+      "saint-etienne-du-mont-p1.mp3": {
+        "v": "00cedb63",
+        "b": 433885
+      },
+      "saint-etienne-du-mont-p2.mp3": {
+        "v": "9cf74cc7",
+        "b": 519567
+      },
+      "saint-etienne-du-mont-p3.mp3": {
+        "v": "df56b504",
+        "b": 260850
+      },
+      "saint-etienne-du-mont-p4.mp3": {
+        "v": "c6235856",
+        "b": 448932
+      },
+      "saint-etienne-du-mont-p5.mp3": {
+        "v": "9c9540e9",
+        "b": 432631
+      },
+      "saint-etienne-du-mont-p6.mp3": {
+        "v": "4facabfc",
+        "b": 287599
+      },
+      "saint-etienne-du-mont-q.mp3": {
+        "v": "2e3df5d0",
+        "b": 276315
+      },
+      "saint-etienne-du-mont-ok.mp3": {
+        "v": "b752486e",
+        "b": 17598
+      },
+      "saint-etienne-du-mont-ko.mp3": {
+        "v": "92548e05",
+        "b": 69007
+      },
+      "saint-etienne-du-mont-skip.mp3": {
+        "v": "88252fd1",
+        "b": 71515
       }
     }
   }

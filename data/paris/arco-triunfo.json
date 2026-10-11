@@ -1,0 +1,569 @@
+{
+  "id": "arco-triunfo",
+  "city": "paris",
+  "type": "visit",
+  "place": "alrededor del Arco",
+  "title": "El Arco de Triunfo",
+  "subtitle": "Una visita desde abajo: el Arco, los Campos Elíseos y la plaza de la Estrella",
+  "lang": "es-ES",
+  "meeting": {
+    "name": "Arco de Triunfo, en lo alto de los Campos Elíseos",
+    "address": "Place Charles de Gaulle, 75008 París, Francia",
+    "note": "Metro y RER: Charles de Gaulle – Étoile. Al pie del Arco se llega por el paso subterráneo que sale de la acera norte de los Campos Elíseos: no cruces la rotonda. Para estar al pie del Arco no hace falta entrada; solo para subir."
+  },
+  "plan": {
+    "src": "img/paris/arco-triunfo/plano.svg",
+    "w": 520,
+    "h": 800
+  },
+  "stops": [
+    {
+      "id": "arco",
+      "title": "El Arco, visto de lejos",
+      "subtitle": "Un arco romano para un emperador que nunca lo vio acabado",
+      "lat": 48.87378,
+      "lng": 2.29504,
+      "radius": 60,
+      "x": 298,
+      "y": 560,
+      "where": "En lo alto de los Campos Elíseos, en la acera de la derecha según miras al Arco, junto a la bajada al paso subterráneo.",
+      "paras": [
+        "Bienvenido al Arco de Triunfo. Hoy no subimos: lo vamos a ver desde abajo, que es donde están las mejores historias. Son seis puntos, muy cerca unos de otros. Cuando acabe cada uno, toca «Siguiente» y te diré adónde ir. Y un consejo: para llegar al pie del Arco, ni se te ocurra cruzar la rotonda, que aquí los coches no perdonan. Hay un paso subterráneo.",
+        "Empecemos por lo que tienes delante: cincuenta metros de alto, cuarenta y cinco de ancho y veintidós de fondo. Lo encargó Napoleón en 1806, después de su gran victoria de Austerlitz, cuando les prometió a sus soldados que volverían a casa bajo arcos de triunfo. La idea viene de Roma: cuando un general ganaba una guerra, desfilaba con su ejército por la ciudad, y para recordarlo se levantaba un arco. El modelo, de hecho, es el arco de Tito, en Roma. Pero en tamaño gigante, claro.",
+        "Y fíjate en una cosa: no tiene ni una columna. Solo grandes paños de piedra lisa, con esculturas. Hubo pelea entre dos arquitectos, Chalgrin y Raymond, porque uno quería columnas y el otro no. Napoleón consultó a un tercero, que sentenció que desde lejos ni se iban a ver. Ganó Chalgrin, el de sin columnas, y por eso el Arco tiene esa pinta tan maciza, como un bloque tallado de una pieza.",
+        "Ni más ni menos: una réplica a tamaño real, de madera y lona pintada, levantada sobre los cimientos. En el móvil tienes cómo quedó. Un decorado de cine, cien años antes del cine. Luego llegaron las derrotas y la caída del Imperio, las obras se pararon, y el Arco no se terminó hasta 1836, con el rey Luis Felipe. Napoleón nunca lo vio acabado. Bueno, vivo no. Ya te contaré."
+      ],
+      "images": [
+        {
+          "src": "img/paris/arco-triunfo/arco.webp",
+          "w": 614,
+          "h": 650,
+          "para": 3,
+          "after": "En el móvil tienes cómo quedó.",
+          "caption": "El arco de madera y lona para la entrada de Napoleón y María Luisa, en 1810",
+          "credit": "Pierre-François-Léonard Fontaine · Dominio público",
+          "source": "https://commons.wikimedia.org/wiki/File:Entree-napoleon-marie-louise(fontaine).jpg"
+        }
+      ],
+      "quiz": {
+        "before": 3,
+        "q": "En 1810, Napoleón se casó con María Luisa de Austria y quiso entrar en París con ella bajo su arco. Pero el Arco apenas levantaba unos metros del suelo. ¿Qué crees que hizo?",
+        "options": [
+          "Retrasar la boda hasta que estuviera listo",
+          "Construir una maqueta a tamaño real, de madera y lona",
+          "Pasar bajo el otro arco, el del Louvre"
+        ],
+        "answer": 1
+      },
+      "toNext": "Baja unos pasos por esta misma acera, date la vuelta y mira la avenida, cuesta abajo."
+    },
+    {
+      "id": "campos-eliseos",
+      "title": "Los Campos Elíseos",
+      "subtitle": "La avenida con nombre de paraíso",
+      "lat": 48.87378,
+      "lng": 2.29504,
+      "radius": 60,
+      "x": 298,
+      "y": 616,
+      "where": "Unos pasos más abajo, en la misma acera, de espaldas al Arco y mirando la avenida cuesta abajo.",
+      "paras": [
+        "Ahí la tienes: casi dos kilómetros de avenida hasta la plaza de la Concordia. ¿Ves al fondo una aguja de piedra? Es el obelisco de Luxor, de más de tres mil años. Y más allá, en línea recta, empiezan las Tullerías y el Louvre. Es el eje histórico de París: una línea recta que va del Louvre hasta aquí y que, por detrás del Arco, sigue hasta los rascacielos de La Défense.",
+        "Los Campos Elíseos eran, para los antiguos griegos, el paraíso de los héroes: unos prados eternos donde descansaban los valientes y los justos. Y esto, en el siglo diecisiete, eran campos y huertas a las afueras de París. En 1667, Le Nôtre, el jardinero de Versalles, prolongó el paseo de las Tullerías con una avenida de árboles, y a principios del siglo dieciocho ya se llamaba así. Por cierto, el Palacio del Elíseo, donde vive el presidente de Francia, se llama así por la avenida, y no al revés.",
+        "Por aquí han pasado los grandes momentos de Francia, los buenos y los malos. En junio de 1940 desfilaron las tropas alemanas, y cuentan que muchos parisinos lo vieron con las persianas bajadas. El 26 de agosto de 1944, el general De Gaulle bajó a pie por esta avenida, entre una multitud que no se acababa nunca. En el móvil tienes aquel día. Y desde 1975, el Tour de Francia termina casi siempre aquí, con los ciclistas subiendo y bajando la avenida.",
+        "Y ojo al dato: esta avenida no es llana. Desde la Concordia hasta aquí se sube todo el rato, porque el Arco está en lo alto de una colina. Por eso, visto desde abajo, parece todavía más grande. Si un día la bajas entera, fíjate en cómo cambia: arriba, tiendas y cines; abajo, jardines y teatros, y a la derecha, los palacios de la Exposición de 1900, el Grand Palais y el Petit Palais."
+      ],
+      "images": [
+        {
+          "src": "img/paris/arco-triunfo/campos-eliseos.webp",
+          "w": 1100,
+          "h": 864,
+          "para": 2,
+          "after": "En el móvil tienes aquel día.",
+          "caption": "Los Campos Elíseos el 26 de agosto de 1944, el día del desfile de la Liberación",
+          "credit": "Foto: Jack Downey · Oficina de Información de Guerra de EE. UU. · Dominio público",
+          "source": "https://commons.wikimedia.org/wiki/File:Crowds_of_French_patriots_line_the_Champs_Elysees-edit.jpg"
+        }
+      ],
+      "quiz": {
+        "before": 1,
+        "q": "¿De dónde crees que viene el nombre de Campos Elíseos?",
+        "options": [
+          "Del paraíso de los héroes de la mitología griega",
+          "De los campos de un noble llamado Élysée",
+          "De una batalla de Napoleón"
+        ],
+        "answer": 0
+      },
+      "toNext": "Baja al paso subterráneo por las escaleras de esta acera y síguelo hasta el Arco. Al salir, colócate frente a la cara que mira a los Campos Elíseos y busca el grupo de esculturas de la derecha: un genio con alas, gritando, sobre un grupo de soldados."
+    },
+    {
+      "id": "marsellesa",
+      "title": "La Marsellesa de piedra",
+      "subtitle": "La escultura más famosa del Arco y un himno con nombre prestado",
+      "lat": 48.87378,
+      "lng": 2.29504,
+      "radius": 60,
+      "x": 281,
+      "y": 392,
+      "where": "Al pie del Arco, en la cara que mira a los Campos Elíseos, frente al grupo de esculturas de la derecha.",
+      "paras": [
+        "Mírala bien, porque es una de las esculturas más famosas de Francia. Se llama La partida de los voluntarios de 1792, y es de François Rude. Abajo, soldados de todas las edades, unos desnudos como héroes antiguos y otros con armadura, salen a defender la patria. Y arriba, con las alas abiertas y la boca a punto de romperse de tanto gritar, el genio de la Libertad, que los lanza al combate. Pero nadie la llama así: para todo el mundo es, simplemente, La Marsellesa.",
+        "En el otro pilar, a la izquierda, está El triunfo de 1810, de Cortot: Napoleón coronado por una Victoria. Mucho más quieto, más solemne. Al de Rude lo fotografía todo el mundo; al de Cortot, casi nadie. Sobre el gran arco hay dos figuras tumbadas con trompetas: son dos Famas, la diosa romana que lo pregonaba todo. De ella viene nuestra palabra fama. Y alrededor de todo el Arco, bajo la cornisa, corre un friso con la partida y el regreso de los ejércitos: ciento cincuenta y siete metros de soldados de piedra.",
+        "Ni más ni menos. Su autor, Rouget de Lisle, la escribió en Estrasburgo como canción de guerra para el ejército del Rin. Pero en el verano de 1792 llegaron a París unos voluntarios de Marsella cantándola por las calles, y la gente empezó a llamarla la canción de los marselleses. Y con ese nombre se quedó. En el móvil tienes un cuadro de Rouget de Lisle cantándola por primera vez. Estrasburgo se quedó sin himno con su nombre. Cosas de la fama."
+      ],
+      "images": [
+        {
+          "src": "img/paris/arco-triunfo/marsellesa.webp",
+          "w": 1100,
+          "h": 881,
+          "para": 2,
+          "after": "En el móvil tienes un cuadro de Rouget de Lisle cantándola por primera vez.",
+          "caption": "Rouget de Lisle canta La Marsellesa por primera vez, de Isidore Pils, 1849",
+          "credit": "Isidore Pils · Museo Histórico de Estrasburgo · Dominio público",
+          "source": "https://commons.wikimedia.org/wiki/File:46a_Isidore_Pils,_Rouget_de_Lisle_chantant_la_Marseillaise_pour_la_premi%C3%A8re_fois,_1849.jpg"
+        }
+      ],
+      "quiz": {
+        "before": 2,
+        "q": "La Marsellesa, el himno de Francia, se compuso en 1792 en Estrasburgo, en la otra punta del país. ¿Por qué crees que se llama así?",
+        "options": [
+          "Porque el autor era de Marsella",
+          "Porque se estrenó en el puerto de Marsella",
+          "Porque la cantaban los voluntarios de Marsella al llegar a París"
+        ],
+        "answer": 2
+      },
+      "toNext": "Pasa bajo el gran arco y acércate a la losa del suelo, en el centro, donde arde una llama."
+    },
+    {
+      "id": "soldado-desconocido",
+      "title": "El Soldado Desconocido",
+      "subtitle": "Una tumba sin nombre y una llama que no se apaga",
+      "lat": 48.87378,
+      "lng": 2.29504,
+      "radius": 60,
+      "x": 260,
+      "y": 330,
+      "where": "Bajo el gran arco, junto a la tumba del suelo, la de la llama. Es un lugar de recuerdo: aquí, mejor bajar la voz.",
+      "paras": [
+        "Estás ante la tumba del Soldado Desconocido. La inscripción dice: aquí reposa un soldado francés muerto por la patria, 1914, 1918. En la Primera Guerra Mundial murieron casi un millón cuatrocientos mil soldados franceses, y cientos de miles nunca fueron identificados. Muchas familias no tenían ni una tumba a la que ir. Así que se decidió enterrar aquí a uno, sin nombre, por todos ellos.",
+        "Se llamaba Auguste Thin, tenía veintiún años y era del regimiento ciento treinta y dos. Uno más tres más dos: seis. Así que dejó un ramo de claveles sobre el sexto ataúd. Ese soldado llegó aquí y fue enterrado el 28 de enero de 1921. Desde entonces, cualquier madre que perdió a un hijo sin tumba puede pensar que es el suyo.",
+        "El 11 de noviembre de 1923 se encendió la llama, y desde entonces no se ha apagado nunca: cada tarde, a las seis y media, asociaciones de veteranos la reavivan en una ceremonia sencilla. Se dice que ni siquiera se interrumpió durante la ocupación alemana. Si te pilla a esa hora, quédate un momento: es corta y emociona."
+      ],
+      "images": [],
+      "quiz": {
+        "before": 1,
+        "q": "En 1920, en Verdun, colocaron ocho ataúdes iguales con soldados sin identificar, y un joven soldado tenía que elegir uno. ¿Cómo crees que lo eligió?",
+        "options": [
+          "Echándolo a suertes con una moneda",
+          "Sumando las cifras de su regimiento",
+          "Eligiendo el más cercano a la puerta"
+        ],
+        "answer": 1
+      },
+      "more": {
+        "title": "El piloto que pasó por debajo del Arco",
+        "ask": "Por el hueco que tienes encima pasó una vez un avión. Sí, un avión, con piloto y todo. ¿Te cuento cómo fue? Si te apetece, toca «Cuéntame más». Si no, seguimos.",
+        "paras": [
+          "El 14 de julio de 1919 se celebró en París el gran desfile de la victoria, bajo este Arco. Y a los aviadores, los héroes de la guerra en el aire, les tocó desfilar a pie, como a cualquiera. Se lo tomaron como un insulto. Y uno de ellos, Charles Godefroy, decidió protestar a su manera.",
+          "El 7 de agosto de 1919, a primera hora de la mañana, despegó en un Nieuport, un biplano de guerra pequeñito, bajó por los Campos Elíseos y se metió por debajo del Arco. El hueco tiene unos catorce metros y medio de ancho; las alas del avión, unos nueve. Vamos, que le sobraban dos metros y pico por cada lado. A toda velocidad.",
+          "Un amigo periodista lo filmó, y las imágenes dieron la vuelta al mundo. Le retiraron la licencia de piloto, pero el público estaba de su parte y la cosa no pasó de ahí. Fue su último vuelo de exhibición. En el móvil tienes la foto del momento. Y no, ni se te ocurra intentarlo con un dron."
+        ],
+        "images": [
+          {
+            "src": "img/paris/arco-triunfo/soldado-desconocido-mas.webp",
+            "w": 1100,
+            "h": 815,
+            "para": 2,
+            "after": "En el móvil tienes la foto del momento.",
+            "caption": "Charles Godefroy pasa en avión bajo el Arco, el 7 de agosto de 1919",
+            "credit": "Foto: Jacques Mortane · Dominio público",
+            "source": "https://commons.wikimedia.org/wiki/File:Godefroy_flight.jpg"
+          }
+        ]
+      },
+      "toNext": "Ahora fíjate en las paredes de dentro del Arco, las de los lados: están llenas de nombres. Acércate a cualquiera de ellas."
+    },
+    {
+      "id": "nombres",
+      "title": "Los nombres de las paredes",
+      "subtitle": "Seiscientos generales, un subrayado y un emperador que llegó tarde",
+      "lat": 48.87378,
+      "lng": 2.29504,
+      "radius": 60,
+      "x": 206,
+      "y": 330,
+      "where": "Bajo el Arco, junto a una de las paredes interiores cubiertas de nombres.",
+      "paras": [
+        "Mira las paredes: columnas y columnas de nombres. Arriba, las batallas de la Revolución y del Imperio, unas ciento veintiocho. Debajo, los generales que lucharon en ellas: en total, más de seiscientos nombres. Hay batallas de toda Europa, de Egipto y, cómo no, de España, de cuando Napoleón invadió la península. Y arriba del todo, en la parte alta del Arco, la que se llama ático, treinta escudos con más victorias. Este Arco no se cansa de presumir.",
+        "Así es: una línea bajo el nombre es la marca de los que cayeron en el campo de batalla. Más discreto que una medalla, pero bastante peor para el interesado. Busca alguno que te suene: muchos se repiten en las avenidas de alrededor, como Kléber, Marceau o Hoche. Luego te cuento por qué.",
+        "¿Y Napoleón, que lo empezó todo? Murió en 1821, desterrado en la isla de Santa Elena, en mitad del Atlántico. Pero en 1840 el rey Luis Felipe trajo sus restos de vuelta a Francia, y el 15 de diciembre, con un frío terrible, el cortejo pasó bajo este Arco camino de los Inválidos. Así que, al final, Napoleón pasó bajo su Arco de Triunfo. Eso sí, muerto. Si hiciste nuestra ruta de la Torre Eiffel, ya sabes dónde acabó."
+      ],
+      "images": [],
+      "quiz": {
+        "before": 1,
+        "q": "Fíjate bien: algunos nombres están subrayados. ¿Qué crees que significa?",
+        "options": [
+          "Que murieron en combate",
+          "Que llegaron a ser mariscales",
+          "Que traicionaron a Napoleón"
+        ],
+        "answer": 0
+      },
+      "toNext": "Sal por el otro lado del Arco, el que mira a la avenida de la Grande Armée. Aléjate unos pasos por la explanada y date la vuelta para ver esa cara del Arco."
+    },
+    {
+      "id": "estrella",
+      "title": "La Estrella",
+      "subtitle": "Doce avenidas, muchos nombres y la despedida",
+      "lat": 48.87378,
+      "lng": 2.29504,
+      "radius": 60,
+      "x": 260,
+      "y": 252,
+      "where": "En la explanada que rodea el Arco, en el lado de la avenida de la Grande Armée, de cara al monumento.",
+      "paras": [
+        "Esta es la cara de atrás, la que mira hacia La Défense. Aquí los dos grupos son de Antoine Étex: a un lado, La Resistencia, y al otro, La Paz. Menos famosos que La Marsellesa, pero con mejores vistas: por este lado se pone el sol, y dicen que un par de días al año, en mayo y en agosto, se pone justo dentro del Arco, visto desde los Campos Elíseos.",
+        "Ahora gira despacio sobre ti mismo: doce avenidas salen de esta plaza, como los rayos de una estrella. Por eso se llamó la plaza de la Estrella, l'Étoile. En 1970, al morir el general, la rebautizaron como plaza Charles de Gaulle, pero los parisinos, y hasta el metro, la siguen llamando l'Étoile. Las doce avenidas las trazó el barón Haussmann en tiempos de Napoleón tercero, y los palacetes iguales que las separan los diseñó el arquitecto Hittorff, para que todo pareciera un solo decorado.",
+        "Los cambió, claro. La avenida de la Emperatriz acabó siendo la avenida Foch; la del Rey de Roma, el hijo de Napoleón, es hoy la de Kléber, un general de la Revolución; la de la reina Hortensia, la de Hoche, y la de Josefina, la de Marceau. Y se quedaron las batallas: Wagram, Friedland, Jena. Lo de la Grande Armée es por el ejército de Napoleón. En París, las calles cambian de nombre según quién mande. Y los vecinos, a cambiar las tarjetas de visita.",
+        "Y mi favorita: la avenida Victor Hugo. En 1881, por su setenta y nueve cumpleaños, le pusieron su nombre a la avenida donde vivía. Así que, en sus últimos años, Victor Hugo vivía en la avenida Victor Hugo. Dicen que las cartas le llegaban con una dirección de lo más sencilla: a Victor Hugo, en su avenida, París. Cuando murió, en 1885, su ataúd pasó una noche entera aquí, bajo el Arco, con un enorme velo negro colgando, antes de ir al Panteón. En el móvil tienes cómo quedó el Arco aquellos días.",
+        "Y aquí me despido. Has visto el Arco de Napoleón sin subir ni un escalón: el decorado de madera de una boda, la Marsellesa que nació en Estrasburgo, el soldado sin nombre, la llama que no se apaga y doce avenidas que han cambiado de nombre más que de asfalto. Si te quedan ganas, baja por los Campos Elíseos: es todo cuesta abajo, y al final, en las Tullerías, termina nuestra ruta por el corazón de París. ¡Merci, y hasta la próxima!"
+      ],
+      "images": [
+        {
+          "src": "img/paris/arco-triunfo/estrella.webp",
+          "w": 1100,
+          "h": 882,
+          "para": 3,
+          "after": "En el móvil tienes cómo quedó el Arco aquellos días.",
+          "caption": "El Arco con el catafalco de Victor Hugo, el 1 de junio de 1885",
+          "credit": "Fotógrafo anónimo · Paris Musées · CC0",
+          "source": "https://commons.wikimedia.org/wiki/File:Fun%C3%A9railles_de_Victor_Hugo_vue_du_catafalque_sous_l%E2%80%99Arc_de_Triomphe_depuis_la_Place_de_l%E2%80%99Etoile,_1er_Juin_1885,_4240.jpg"
+        }
+      ],
+      "quiz": {
+        "before": 2,
+        "q": "Con Napoleón tercero, varias de estas avenidas llevaban nombres de su familia: la emperatriz, la reina Hortensia, el príncipe Jerónimo… Cuando cayó, en 1870, ¿qué crees que hizo la República con esos nombres?",
+        "options": [
+          "Los dejó, por respeto a la historia",
+          "Los cambió por generales y batallas",
+          "Les puso números, como en Nueva York"
+        ],
+        "answer": 1
+      }
+    }
+  ],
+  "legs": [],
+  "audio": {
+    "base": "audio/paris/arco-triunfo/",
+    "credit": "Voz generada con IA (ElevenLabs)",
+    "stops": {
+      "arco": {
+        "paras": [
+          "arco-p0.mp3",
+          "arco-p1.mp3",
+          "arco-p2.mp3",
+          "arco-p3.mp3",
+          "arco-p4.mp3"
+        ],
+        "quiz": "arco-q.mp3",
+        "ok": "arco-ok.mp3",
+        "ko": "arco-ko.mp3",
+        "skip": "arco-skip.mp3"
+      },
+      "campos-eliseos": {
+        "paras": [
+          "campos-eliseos-p0.mp3",
+          "campos-eliseos-p1.mp3",
+          "campos-eliseos-p2.mp3",
+          "campos-eliseos-p3.mp3",
+          "campos-eliseos-p4.mp3"
+        ],
+        "quiz": "campos-eliseos-q.mp3",
+        "ok": "campos-eliseos-ok.mp3",
+        "ko": "campos-eliseos-ko.mp3",
+        "skip": "campos-eliseos-skip.mp3"
+      },
+      "marsellesa": {
+        "paras": [
+          "marsellesa-p0.mp3",
+          "marsellesa-p1.mp3",
+          "marsellesa-p2.mp3",
+          "marsellesa-p3.mp3"
+        ],
+        "quiz": "marsellesa-q.mp3",
+        "ok": "marsellesa-ok.mp3",
+        "ko": "marsellesa-ko.mp3",
+        "skip": "marsellesa-skip.mp3"
+      },
+      "soldado-desconocido": {
+        "paras": [
+          "soldado-desconocido-p0.mp3",
+          "soldado-desconocido-p1.mp3",
+          "soldado-desconocido-p2.mp3",
+          "soldado-desconocido-p3.mp3"
+        ],
+        "quiz": "soldado-desconocido-q.mp3",
+        "ok": "soldado-desconocido-ok.mp3",
+        "ko": "soldado-desconocido-ko.mp3",
+        "skip": "soldado-desconocido-skip.mp3",
+        "more": {
+          "ask": "soldado-desconocido-mas.mp3",
+          "paras": [
+            "soldado-desconocido-m0.mp3",
+            "soldado-desconocido-m1.mp3",
+            "soldado-desconocido-m2.mp3"
+          ]
+        }
+      },
+      "nombres": {
+        "paras": [
+          "nombres-p0.mp3",
+          "nombres-p1.mp3",
+          "nombres-p2.mp3",
+          "nombres-p3.mp3"
+        ],
+        "quiz": "nombres-q.mp3",
+        "ok": "nombres-ok.mp3",
+        "ko": "nombres-ko.mp3",
+        "skip": "nombres-skip.mp3"
+      },
+      "estrella": {
+        "paras": [
+          "estrella-p0.mp3",
+          "estrella-p1.mp3",
+          "estrella-p2.mp3",
+          "estrella-p3.mp3",
+          "estrella-p4.mp3"
+        ],
+        "quiz": "estrella-q.mp3",
+        "ok": "estrella-ok.mp3",
+        "ko": "estrella-ko.mp3",
+        "skip": "estrella-skip.mp3"
+      }
+    },
+    "files": {
+      "arco-p0.mp3": {
+        "v": "46e3cf48",
+        "b": 401702
+      },
+      "arco-p1.mp3": {
+        "v": "9c195eba",
+        "b": 510372
+      },
+      "arco-p2.mp3": {
+        "v": "d6cabbef",
+        "b": 442662
+      },
+      "arco-p3.mp3": {
+        "v": "a371fc60",
+        "b": 469412
+      },
+      "arco-p4.mp3": {
+        "v": "819d2e0a",
+        "b": 126685
+      },
+      "arco-q.mp3": {
+        "v": "b0f392c6",
+        "b": 346532
+      },
+      "arco-ok.mp3": {
+        "v": "b752486e",
+        "b": 16344
+      },
+      "arco-ko.mp3": {
+        "v": "7485af01",
+        "b": 98264
+      },
+      "arco-skip.mp3": {
+        "v": "9e57641c",
+        "b": 103279
+      },
+      "campos-eliseos-p0.mp3": {
+        "v": "e7a9e816",
+        "b": 401702
+      },
+      "campos-eliseos-p1.mp3": {
+        "v": "d05a8a1b",
+        "b": 574319
+      },
+      "campos-eliseos-p2.mp3": {
+        "v": "bf326434",
+        "b": 551332
+      },
+      "campos-eliseos-p3.mp3": {
+        "v": "fc9b9127",
+        "b": 450186
+      },
+      "campos-eliseos-p4.mp3": {
+        "v": "98985ada",
+        "b": 289271
+      },
+      "campos-eliseos-q.mp3": {
+        "v": "e782b415",
+        "b": 180184
+      },
+      "campos-eliseos-ok.mp3": {
+        "v": "b752486e",
+        "b": 16344
+      },
+      "campos-eliseos-ko.mp3": {
+        "v": "335ccc59",
+        "b": 86979
+      },
+      "campos-eliseos-skip.mp3": {
+        "v": "473f31bd",
+        "b": 90741
+      },
+      "marsellesa-p0.mp3": {
+        "v": "1c36a6e3",
+        "b": 553839
+      },
+      "marsellesa-p1.mp3": {
+        "v": "6fa91154",
+        "b": 621967
+      },
+      "marsellesa-p2.mp3": {
+        "v": "cf18cc85",
+        "b": 482368
+      },
+      "marsellesa-p3.mp3": {
+        "v": "8b1678ca",
+        "b": 127939
+      },
+      "marsellesa-q.mp3": {
+        "v": "590c37e4",
+        "b": 300556
+      },
+      "marsellesa-ok.mp3": {
+        "v": "b752486e",
+        "b": 16344
+      },
+      "marsellesa-ko.mp3": {
+        "v": "1c1aafb4",
+        "b": 94502
+      },
+      "marsellesa-skip.mp3": {
+        "v": "e0ef4a49",
+        "b": 99518
+      },
+      "soldado-desconocido-p0.mp3": {
+        "v": "20786458",
+        "b": 482368
+      },
+      "soldado-desconocido-p1.mp3": {
+        "v": "edbe7541",
+        "b": 399195
+      },
+      "soldado-desconocido-p2.mp3": {
+        "v": "16b1cde2",
+        "b": 367012
+      },
+      "soldado-desconocido-p3.mp3": {
+        "v": "e543beff",
+        "b": 167645
+      },
+      "soldado-desconocido-q.mp3": {
+        "v": "ec430947",
+        "b": 299302
+      },
+      "soldado-desconocido-ok.mp3": {
+        "v": "b752486e",
+        "b": 18852
+      },
+      "soldado-desconocido-ko.mp3": {
+        "v": "e1545902",
+        "b": 76530
+      },
+      "soldado-desconocido-skip.mp3": {
+        "v": "fb0a11d8",
+        "b": 79038
+      },
+      "soldado-desconocido-mas.mp3": {
+        "v": "ad3a057a",
+        "b": 200664
+      },
+      "soldado-desconocido-m0.mp3": {
+        "v": "c6c624ed",
+        "b": 326052
+      },
+      "soldado-desconocido-m1.mp3": {
+        "v": "a55c6c87",
+        "b": 364504
+      },
+      "soldado-desconocido-m2.mp3": {
+        "v": "37989cb3",
+        "b": 311005
+      },
+      "nombres-p0.mp3": {
+        "v": "dc289012",
+        "b": 523328
+      },
+      "nombres-p1.mp3": {
+        "v": "c4e97ead",
+        "b": 306826
+      },
+      "nombres-p2.mp3": {
+        "v": "158839a9",
+        "b": 497833
+      },
+      "nombres-p3.mp3": {
+        "v": "9a5405b2",
+        "b": 189379
+      },
+      "nombres-q.mp3": {
+        "v": "5e7e2557",
+        "b": 173915
+      },
+      "nombres-ok.mp3": {
+        "v": "b752486e",
+        "b": 16344
+      },
+      "nombres-ko.mp3": {
+        "v": "ce044cee",
+        "b": 66499
+      },
+      "nombres-skip.mp3": {
+        "v": "77576724",
+        "b": 67753
+      },
+      "estrella-p0.mp3": {
+        "v": "4773946f",
+        "b": 376207
+      },
+      "estrella-p1.mp3": {
+        "v": "14e559b4",
+        "b": 555511
+      },
+      "estrella-p2.mp3": {
+        "v": "eec564f9",
+        "b": 479861
+      },
+      "estrella-p3.mp3": {
+        "v": "f807b4e9",
+        "b": 589784
+      },
+      "estrella-p4.mp3": {
+        "v": "cd985b0c",
+        "b": 456873
+      },
+      "estrella-q.mp3": {
+        "v": "dafb0086",
+        "b": 371191
+      },
+      "estrella-ok.mp3": {
+        "v": "b752486e",
+        "b": 16344
+      },
+      "estrella-ko.mp3": {
+        "v": "b94e7e2b",
+        "b": 84471
+      },
+      "estrella-skip.mp3": {
+        "v": "dee484ee",
+        "b": 84471
+      }
+    }
+  }
+}
