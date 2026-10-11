@@ -49,9 +49,9 @@
       },
       "toNext": "Baja del puente hacia la gran explanada de césped que tienes delante y camina por ella hasta el fondo, hacia el edificio largo con la cúpula dorada detrás. Párate antes del foso, frente a la entrada principal.",
       "spot": {
-        "src": "img/paris/torre-eiffel/pont-alexandre-iii-sitio.webp",
-        "w": 1000,
-        "h": 750,
+        "src": "img/paris/torre-eiffel/pont-alexandre-iii-sitio-v2.webp",
+        "w": 1600,
+        "h": 1200,
         "caption": "Así es el sitio: las farolas y la columna de la figura dorada, con el Grand Palais detrás",
         "credit": "Foto: Eric Pouhier · CC BY-SA 4.0",
         "source": "https://commons.wikimedia.org/wiki/File:Le_Grand_Palais_depuis_le_pont_Alexandre_III_%C3%A0_Paris.jpg"
@@ -96,9 +96,9 @@
       },
       "toNext": "De cara al edificio, rodéalo por la izquierda: sigue el bulevar de los Inválidos, la calle ancha de ese lado, hasta la parte de atrás, donde se levanta la cúpula dorada sobre una fachada con columnas. Ponte enfrente, en la plaza Vauban.",
       "spot": {
-        "src": "img/paris/torre-eiffel/invalides-sitio.webp",
-        "w": 1000,
-        "h": 750,
+        "src": "img/paris/torre-eiffel/invalides-sitio-v2.webp",
+        "w": 1600,
+        "h": 1200,
         "caption": "Así es el sitio: el foso con los cañones, frente a la puerta principal del edificio",
         "credit": "Foto: Juanedc · CC BY 2.0",
         "source": "https://commons.wikimedia.org/wiki/File:Les_Invalides_%288237570227%29.jpg"
@@ -164,9 +164,9 @@
       },
       "toNext": "Ponte de espaldas a la cúpula y toma la avenida que sale a tu derecha, la de Tourville. Síguela recta hasta el gran edificio clásico del final: la Escuela Militar. Bordéalo por la avenida de La Motte-Picquet, dejándolo a tu izquierda, hasta su fachada principal, la que da a los jardines del Campo de Marte, en la plaza Joffre, la de la estatua de un militar a caballo.",
       "spot": {
-        "src": "img/paris/torre-eiffel/dome-des-invalides-sitio.webp",
-        "w": 1000,
-        "h": 750,
+        "src": "img/paris/torre-eiffel/dome-des-invalides-sitio-v2.webp",
+        "w": 1600,
+        "h": 1200,
         "caption": "Así es el sitio: la fachada de la cúpula, vista desde la plaza Vauban",
         "credit": "Foto: ndiggity · CC BY-SA 2.0",
         "source": "https://commons.wikimedia.org/wiki/File:D%C3%B4me_des_Invalides%2C_Paris_28_July_2015.jpg"
@@ -222,9 +222,9 @@
       },
       "toNext": "Cruza hacia los jardines y camina por el paseo de la derecha del Campo de Marte, hacia la torre. A mitad de camino, donde lo cruza una calle, la avenida Joseph Bouvard, párate.",
       "spot": {
-        "src": "img/paris/torre-eiffel/ecole-militaire-sitio.webp",
-        "w": 1000,
-        "h": 750,
+        "src": "img/paris/torre-eiffel/ecole-militaire-sitio-v2.webp",
+        "w": 1600,
+        "h": 1200,
         "caption": "Así es el sitio: la fachada de la Escuela Militar, con la estatua a caballo de Joffre delante",
         "credit": "Foto: Делфина · CC BY-SA 4.0",
         "source": "https://commons.wikimedia.org/wiki/File:%C3%89cole_militaire_%2CMilitary_School_%2C_Paris_France_3.JPG"
@@ -269,9 +269,9 @@
       },
       "toNext": "Sigue por el paseo hacia la torre. Cuando llegues a los paneles de cristal que la rodean, bordéalos por la derecha hasta el muelle, la calle ancha que pasa entre la torre y el río, junto al primer pilar que da al río, el pilar norte.",
       "spot": {
-        "src": "img/paris/torre-eiffel/champ-de-mars-sitio.webp",
-        "w": 1000,
-        "h": 750,
+        "src": "img/paris/torre-eiffel/champ-de-mars-sitio-v2.webp",
+        "w": 1600,
+        "h": 1200,
         "caption": "Así es el sitio: los jardines del Campo de Marte, con la torre al fondo",
         "credit": "Foto: Diego Delso · CC BY 3.0",
         "source": "https://commons.wikimedia.org/wiki/File:Torre_Efiffel-Paris065.jpg"
@@ -281,8 +281,8 @@
       "id": "tour-eiffel",
       "title": "La Torre Eiffel",
       "subtitle": "El mecano que nadie quería",
-      "lat": 48.85938,
-      "lng": 2.29373,
+      "lat": 48.85923,
+      "lng": 2.29395,
       "radius": 50,
       "where": "En el muelle, entre la torre y el río, junto al pilar norte, por fuera de los cristales: si miras hacia la torre desde el arranque del puente de Jena, unos pasos a tu izquierda.",
       "paras": [
@@ -348,9 +348,9 @@
       },
       "toNext": "Mirando al río, camina por el muelle hacia tu izquierda hasta el puente de piedra, el puente de Jena, y párate en el centro.",
       "spot": {
-        "src": "img/paris/torre-eiffel/tour-eiffel-sitio.webp",
-        "w": 1000,
-        "h": 750,
+        "src": "img/paris/torre-eiffel/tour-eiffel-sitio-v2.webp",
+        "w": 1600,
+        "h": 1200,
         "caption": "Así es el sitio: el arranque del puente de Jena, entre los dos caballos de piedra. Tú ponte en el muelle, frente al pilar de la izquierda, el pilar norte",
         "credit": "Foto: xiquinhosilva · CC BY 2.0",
         "source": "https://commons.wikimedia.org/wiki/File:56382-Paris_%2836279211876%29.jpg"
@@ -384,9 +384,9 @@
       },
       "toNext": "Cruza el puente hasta la otra orilla, atraviesa la avenida por el paso de peatones y entra en los jardines del Trocadero. El gran estanque de las fuentes está ahí mismo, subiendo un poco.",
       "spot": {
-        "src": "img/paris/torre-eiffel/pont-d-iena-sitio.webp",
-        "w": 1000,
-        "h": 750,
+        "src": "img/paris/torre-eiffel/pont-d-iena-sitio-v2.webp",
+        "w": 1600,
+        "h": 1200,
         "caption": "Así es el sitio: el centro del puente, con el Trocadero delante y la torre a tu espalda",
         "credit": "Foto: Chabe01 · CC BY-SA 4.0",
         "source": "https://commons.wikimedia.org/wiki/File:Pont_I%C3%A9na_-_Paris_VII_%28FR75%29_-_2024-09-02_-_2.jpg"
@@ -431,9 +431,9 @@
       },
       "toNext": "Sube por los jardines, por las escaleras de cualquiera de los dos lados, hasta la gran explanada que queda entre las dos alas del palacio, arriba del todo.",
       "spot": {
-        "src": "img/paris/torre-eiffel/jardins-du-trocadero-sitio.webp",
-        "w": 1000,
-        "h": 750,
+        "src": "img/paris/torre-eiffel/jardins-du-trocadero-sitio-v2.webp",
+        "w": 1600,
+        "h": 1200,
         "caption": "Así es el sitio: el estanque de las fuentes, con el palacio de Chaillot detrás",
         "credit": "Foto: Moonik · CC BY-SA 3.0",
         "source": "https://commons.wikimedia.org/wiki/File:Fountains_of_Trocadero_in_Paris_002.JPG"
@@ -489,9 +489,9 @@
         ]
       },
       "spot": {
-        "src": "img/paris/torre-eiffel/trocadero-sitio.webp",
-        "w": 1000,
-        "h": 750,
+        "src": "img/paris/torre-eiffel/trocadero-sitio-v2.webp",
+        "w": 1600,
+        "h": 1200,
         "caption": "Así es el sitio: la explanada entre las dos alas del palacio, con la torre enfrente",
         "credit": "Foto: Juanedc · CC BY 2.0",
         "source": "https://commons.wikimedia.org/wiki/File:Eiffel_Tower_from_Palais_de_Chaillot%2C_18_April_2011.jpg"
@@ -1773,14 +1773,14 @@
         2.29351
       ],
       [
-        48.85938,
-        2.29373
+        48.85923,
+        2.29395
       ]
     ],
     [
       [
-        48.85938,
-        2.29373
+        48.85923,
+        2.29395
       ],
       [
         48.85922,
