@@ -69,7 +69,15 @@
           }
         ]
       },
-      "toNext": "Sube por la rue Lepic, que enseguida hace una curva. Unos doscientos metros más arriba, a tu derecha, en el número 54, busca una placa blanca junto a un portal."
+      "toNext": "Sube por la rue Lepic, que enseguida hace una curva. Unos doscientos metros más arriba, a tu derecha, en el número 54, busca una placa blanca junto a un portal.",
+      "spot": {
+        "src": "img/paris/montmartre/deux-moulins-sitio.webp",
+        "w": 1600,
+        "h": 1200,
+        "caption": "Así es el sitio: la fachada roja del café, en la esquina de la rue Lepic",
+        "credit": "Foto: Mig Gilbert · CC BY-SA 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Cafe_des_2_Moulins%2C_Paris_24_August_2019.jpg"
+      }
     },
     {
       "id": "van-gogh",
@@ -129,6 +137,14 @@
             "source": "https://commons.wikimedia.org/wiki/File:In_het_caf%C3%A9_Agostina_Segatori_in_Le_Tambourin_-_s0017V1962_-_Van_Gogh_Museum.jpg"
           }
         ]
+      },
+      "spot": {
+        "src": "img/paris/montmartre/van-gogh-sitio.webp",
+        "w": 1600,
+        "h": 1200,
+        "caption": "Así es el sitio: el portal azul del número 54 de la rue Lepic, con la placa a la izquierda",
+        "credit": "Foto: ptwo · CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:54_rue_Lepic%2C_Theo_and_Vincent_Van_Goghs_Paris_house_2010.jpg"
       }
     },
     {
@@ -168,7 +184,15 @@
         ],
         "answer": 2
       },
-      "toNext": "Sube por la rue Girardon, la calle que sale junto al molino. Enseguida llegarás a una placita, la place Marcel-Aymé, donde un hombre de bronce sale de una pared."
+      "toNext": "Sube por la rue Girardon, la calle que sale junto al molino. Enseguida llegarás a una placita, la place Marcel-Aymé, donde un hombre de bronce sale de una pared.",
+      "spot": {
+        "src": "img/paris/montmartre/moulin-de-la-galette-sitio.webp",
+        "w": 1600,
+        "h": 1200,
+        "caption": "Así es el sitio: el molino sobre el restaurante, en la esquina de la rue Lepic con la rue Girardon",
+        "credit": "Foto: Giorgio Galeotti · CC BY 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Le_Moulin_de_la_Galette_-_Paris%2C_France_-_April_21%2C_2011.jpg"
+      }
     },
     {
       "id": "passe-muraille",
@@ -246,7 +270,15 @@
         ],
         "answer": 0
       },
-      "toNext": "Sigue por la rue de l'Abreuvoir. Al final de la calle, en la esquina con la rue des Saules, verás una casita rosa con las contraventanas verdes."
+      "toNext": "Sigue por la rue de l'Abreuvoir. Al final de la calle, en la esquina con la rue des Saules, verás una casita rosa con las contraventanas verdes.",
+      "spot": {
+        "src": "img/paris/montmartre/dalida-sitio.webp",
+        "w": 1600,
+        "h": 1200,
+        "caption": "Así es el sitio: la placita en el cruce de la rue Girardon con la rue de l'Abreuvoir",
+        "credit": "Foto: Riggwelter · CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Place_Dalida_Montmartre_Paris_France.JPG"
+      }
     },
     {
       "id": "maison-rose",
@@ -305,7 +337,15 @@
           "Por el Bateau-Lavoir pasaron también Juan Gris, Max Jacob o Modigliani. En 1970 el edificio se quemó y solo quedó la fachada. Se reconstruyó después y todavía hoy alberga talleres de artistas. Si te sobra un rato al final del paseo, acércate: en el escaparate hay fotos de cómo era."
         ]
       },
-      "toNext": "Baja por la rue des Saules, cuesta abajo. A pocos pasos, a tu derecha, verás tras una verja una viña en pendiente."
+      "toNext": "Baja por la rue des Saules, cuesta abajo. A pocos pasos, a tu derecha, verás tras una verja una viña en pendiente.",
+      "spot": {
+        "src": "img/paris/montmartre/maison-rose-sitio.webp",
+        "w": 1600,
+        "h": 1200,
+        "caption": "Así es el sitio: la casa rosa de contraventanas verdes, en la esquina de la rue des Saules",
+        "credit": "Foto: Moonik · CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Montmartre_Maison_Rose_002.JPG"
+      }
     },
     {
       "id": "vigne",
@@ -354,7 +394,15 @@
         ],
         "answer": 1
       },
-      "toNext": "Unos pasos más abajo, en la esquina con la rue Saint-Vincent, verás un caserón con un conejo pintado en el cartel: el Lapin Agile."
+      "toNext": "Unos pasos más abajo, en la esquina con la rue Saint-Vincent, verás un caserón con un conejo pintado en el cartel: el Lapin Agile.",
+      "spot": {
+        "src": "img/paris/montmartre/vigne-sitio.webp",
+        "w": 1600,
+        "h": 1200,
+        "caption": "Así es el sitio: la viña tras la verja, desde la rue des Saules",
+        "credit": "Foto: Tangopaso · Dominio público",
+        "source": "https://commons.wikimedia.org/wiki/File:Filets_sur_la_vigne_de_Montmartre.jpg"
+      }
     },
     {
       "id": "lapin-agile",
@@ -403,7 +451,15 @@
           "Hoy el cuadro se conserva en un centro cultural de Milly-la-Forêt, cerca de Fontainebleau. Y la pregunta sigue en el aire: ¿es arte o no es arte? Yo solo digo que, de todos los pintores de Montmartre, Lolo fue el único que cobró en zanahorias y no se quejó."
         ]
       },
-      "toNext": "Ahora toca subir. Vuelve por la rue des Saules, cuesta arriba, y gira a la izquierda por la rue Cortot. En esa calle, en el museo de Montmartre, tenía Renoir el estudio cuando pintó el baile del molino, y después vivieron allí Suzanne Valadon y su hijo Utrillo. Al final de la calle, sube a la derecha por la rue du Mont-Cenis y enseguida, a tu derecha, se abre una plaza llena de caballetes."
+      "toNext": "Ahora toca subir. Vuelve por la rue des Saules, cuesta arriba, y gira a la izquierda por la rue Cortot. En esa calle, en el museo de Montmartre, tenía Renoir el estudio cuando pintó el baile del molino, y después vivieron allí Suzanne Valadon y su hijo Utrillo. Al final de la calle, sube a la derecha por la rue du Mont-Cenis y enseguida, a tu derecha, se abre una plaza llena de caballetes.",
+      "spot": {
+        "src": "img/paris/montmartre/lapin-agile-sitio.webp",
+        "w": 1600,
+        "h": 1200,
+        "caption": "Así es el sitio: el cabaret de la valla verde, en la esquina con la rue Saint-Vincent",
+        "credit": "Foto: David McSpadden · CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Au_Lapin_Agile%2C_Paris_20_May_2014.jpg"
+      }
     },
     {
       "id": "place-du-tertre",
@@ -440,7 +496,15 @@
         ],
         "answer": 2
       },
-      "toNext": "Sal de la plaza por la esquina de la iglesia de Saint-Pierre, una de las más antiguas de París, y sigue la callecita que la bordea, con la iglesia a tu izquierda, hacia la cúpula blanca. En un par de minutos saldrás a la explanada, delante de la basílica."
+      "toNext": "Sal de la plaza por la esquina de la iglesia de Saint-Pierre, una de las más antiguas de París, y sigue la callecita que la bordea, con la iglesia a tu izquierda, hacia la cúpula blanca. En un par de minutos saldrás a la explanada, delante de la basílica.",
+      "spot": {
+        "src": "img/paris/montmartre/place-du-tertre-sitio.webp",
+        "w": 1600,
+        "h": 1200,
+        "caption": "Así es el sitio: los caballetes y las sombrillas de los pintores, bajo los árboles",
+        "credit": "Foto: Mister No · CC BY 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Place_du_Tertre_-_panoramio.jpg"
+      }
     },
     {
       "id": "sacre-coeur",
@@ -501,6 +565,14 @@
             "source": "https://commons.wikimedia.org/wiki/File:Commune_de_Paris_Canons_à_Montmartre_le_18_mars.jpg"
           }
         ]
+      },
+      "spot": {
+        "src": "img/paris/montmartre/sacre-coeur-sitio.webp",
+        "w": 1600,
+        "h": 1200,
+        "caption": "Así es el sitio: la basílica y las escaleras; tú, arriba, en la explanada",
+        "credit": "Foto: Luca Margheriti · CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:South_facade_of_the_Basilique_du_Sacr%C3%A9-C%C5%93ur_de_Montmartre_in_2008.jpg"
       }
     }
   ],
